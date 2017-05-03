@@ -11,6 +11,8 @@ Pre-Release
 - Find a way to incorporate more advanced modifiers (such as fire rate) into traits 
 (a start has been made using events. the on_actions thingie can also be used for this apparently)
 
+- Repair the interface. Various trait menus need to be enlarged to fit the increased number of icons and description.
+
 
 
 Future stuff:
