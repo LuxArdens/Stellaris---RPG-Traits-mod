@@ -1,0 +1,1446 @@
+##################
+# Species Traits #
+##################
+
+
+trait_cybernetic = {
+	cost = 0
+
+	initial = no
+	randomized = no
+	modification = yes
+	must_match_primary_species = yes
+	
+	modifier = {
+		pop_environment_tolerance = 0.20
+		tile_resource_minerals_mult = 0.05
+		army_damage_mult = 0.10
+	}
+}
+
+
+trait_uplifted = {
+	cost = 0
+	
+	initial = no
+	modification = no
+	randomized = no				
+}
+
+trait_mechanical = {
+	cost = 0
+	
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	
+	modifier = {
+		pop_environment_tolerance = 2.0
+	}
+}
+
+trait_robotic_1 = {
+	cost = 0
+	
+	initial = no
+	randomized = no
+	modification = no
+	forced_happiness = yes
+	
+	modifier = {
+		tile_resource_engineering_research_mult = -0.8
+		tile_resource_physics_research_mult = -0.8
+		tile_resource_society_research_mult = -0.8
+		tile_resource_unity_mult = -0.8
+		tile_resource_energy_mult = -0.4
+		tile_resource_minerals_mult = 0.10
+								
+	}
+}
+
+trait_robotic_2 = {
+	cost = 0
+	
+	initial = no
+	randomized = no
+	modification = no
+	forced_happiness = yes
+	
+	modifier = {
+		tile_resource_engineering_research_mult = -0.4
+		tile_resource_physics_research_mult = -0.4
+		tile_resource_society_research_mult = -0.4
+		tile_resource_unity_mult = -0.4
+		tile_resource_energy_mult = -0.2
+		tile_resource_minerals_mult = 0.15
+								
+	}
+}
+
+trait_robotic_3 = {
+	cost = 0
+	
+	initial = no
+	randomized = no
+	modification = no
+	
+	modifier = {
+		tile_resource_engineering_research_mult = 0.20
+		tile_resource_physics_research_mult = 0.20
+		tile_resource_society_research_mult = 0.20
+		tile_resource_energy_mult = 0.20
+		tile_resource_minerals_mult = 0.20
+		pop_consumer_goods_mult = -0.25
+	}
+}
+
+trait_latent_psionic = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+
+	initial = no
+	randomized = no
+	modification = no
+	
+	modifier = {
+	}
+}
+
+trait_psionic = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+
+	initial = no
+	randomized = no
+	modification = no
+	
+	modifier = {
+		tile_resource_engineering_research_mult = 0.05
+		tile_resource_physics_research_mult = 0.05
+		tile_resource_society_research_mult = 0.05
+		tile_resource_energy_mult = 0.05
+		pop_happiness = 0.05
+	}
+}
+
+###############################
+# Pre-Sentient Species Traits #
+###############################
+
+trait_presentient_starborn = {
+	cost = 1
+	opposites = { "trait_presentient_earthbound" }
+	sentient = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	modifier = {
+		pop_migration_speed = 1
+		tile_resource_physics_research_mult = 0.2
+		tile_resource_engineering_research_mult = 0.2
+		tile_resource_society_research_mult = 0.2
+	}
+}
+
+trait_presentient_earthbound = {
+	cost = 1
+	opposites = { "trait_presentient_starborn" }
+	sentient = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	modifier = {
+		tile_resource_minerals_mult = 0.2
+		tile_resource_energy_mult = 0.2
+		tile_resource_food_mult = 0.2
+		army_damage_mult = 0.5
+		pop_migration_speed = -0.9
+	}
+}
+
+trait_presentient_natural_intellectuals = {
+	cost = 1
+	opposites = { "trait_presentient_proles" }
+	sentient = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	modifier = {
+		tile_resource_physics_research_mult = 0.4
+		tile_resource_engineering_research_mult = 0.4
+		tile_resource_society_research_mult = 0.4
+	}
+}
+
+trait_presentient_brutes = {
+	cost = 2
+	opposites = { "trait_presentient_proles" }
+	sentient = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	modifier = {
+		tile_resource_minerals_mult = 0.25
+		army_damage_mult = 1
+		army_health = 1
+	}
+}
+
+trait_presentient_proles = {
+	cost = 1
+	opposites = { "trait_presentient_natural_intellectuals" }
+	sentient = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	modifier = {
+		tile_resource_minerals_mult = 0.4
+		tile_resource_food_mult = 0.4
+		tile_resource_physics_research_mult = -0.25
+		tile_resource_engineering_research_mult = -0.25
+		tile_resource_society_research_mult = -0.25
+		pop_government_ethic_attraction = 0.25
+	}
+}
+
+trait_presentient_conservative = {
+	cost = 1
+	sentient = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	modifier = {
+		species_leader_exp_gain = -0.25
+		pop_government_ethic_attraction = 0.25
+	}
+}
+
+trait_presentient_irradiated = {
+	cost = 1
+	sentient = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	modifier = {
+		pc_nuked_habitability = 1
+	}
+}
+
+trait_hive_mind = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	must_match_primary_species = yes 	# can't be added unless your founder species has it, can't be removed if your founder species do
+	forced_happiness = yes
+	alters_species_identity = yes							  
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ruler_hive_mind.dds"
+}
+
+
+
+
+
+
+
+
+
+
+
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+######################################################										###############################################################
+######################################################		#   #   ###   ##     ###		###############################################################
+######################################################		## ##   # #   # #   ##			###############################################################
+######################################################		# # #   # #   # #     ##		###############################################################
+######################################################		#   #   ###   ##    ###			###############################################################
+######################################################										###############################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+############################################### Compleet herschreven want alles was één grote zooi ########################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+###########################################################################################################################################################
+
+
+
+##################################
+##  Natural Negatives		    ##
+##################################
+
+
+
+
+trait_iconoclastic1 = {
+	cost = -1
+	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic2" "trait_iconoclastic3" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = { 
+		pop_government_ethic_attraction = -0.25
+		tile_resource_unity_mult = -0.1
+	}
+}
+trait_iconoclastic2 = {
+	cost = -2
+	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic1" "trait_iconoclastic3" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = { 
+		pop_government_ethic_attraction = -0.5
+		tile_resource_unity_mult = -0.25
+	}
+}
+trait_iconoclastic3 = {
+	cost = -5
+	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic2" "trait_iconoclastic1" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = { 
+		pop_government_ethic_attraction = -1
+		tile_resource_unity_mult = -0.5
+	}
+}
+
+trait_slow_breeders1 = {
+	cost = -1
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders3" }
+	
+	modifier = {
+		pop_growth_req_mult = 0.5
+	}
+}
+trait_slow_breeders2 = {
+	cost = -3
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders3" }
+	
+	modifier = {
+		pop_growth_req_mult = 1
+	}
+}
+trait_slow_breeders3 = {
+	cost = -6
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders1" }
+	
+	modifier = {
+		pop_growth_req_mult = 2
+	}
+}
+
+trait_sedentary = {
+	cost = -1
+	opposites = { "trait_nomadic" }
+	
+	modifier = {
+		pop_migration_speed = -0.75
+		pop_resettlement_cost_mult = 1
+	}
+}
+
+trait_weak1 = {
+	cost = -1
+	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak2" "trait_weak3" }
+	
+	modifier = {
+		tile_resource_energy_mult = -0.1
+		tile_resource_minerals_mult = -0.1
+		army_damage_mult = -0.25
+	}
+}
+trait_weak2 = {
+	cost = -2
+	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak1" "trait_weak3" }
+	
+	modifier = {
+		tile_resource_energy_mult = -0.15
+		tile_resource_minerals_mult = -0.15
+		army_damage_mult = -0.5
+	}
+}
+trait_weak3 = {
+	cost = -4
+	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak2" "trait_weak1" }
+	
+	modifier = {
+		tile_resource_energy_mult = -0.2
+		tile_resource_minerals_mult = -0.2
+		army_damage_mult = -0.75
+	}
+}
+
+trait_dumb1 = {
+	cost = -2
+	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb2" "trait_dumb3" }
+	
+	modifier = {
+		tile_resource_physics_research_mult = -0.25
+		tile_resource_society_research_mult = -0.25
+		tile_resource_engineering_research_mult = -0.25
+		species_leader_exp_gain = -0.25
+	}
+}
+trait_dumb2 = {
+	cost = -5
+	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb1" "trait_dumb3" }
+	
+	modifier = {
+		tile_resource_energy_mult = -0.1
+		tile_resource_minerals_mult = -0.1
+		tile_resource_food_mult = -0.1
+		tile_resource_physics_research_mult = -0.5
+		tile_resource_society_research_mult = -0.5
+		tile_resource_engineering_research_mult = -0.5
+		species_leader_exp_gain = -0.5
+		army_damage_mult = -0.2
+	}
+}
+trait_dumb3 = {
+	cost = -8
+	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb2" "trait_dumb1" }
+	
+	modifier = {
+		tile_resource_energy_mult = -0.25
+		tile_resource_minerals_mult = -0.25
+		tile_resource_food_mult = -0.25
+		tile_resource_physics_research_mult = -0.9
+		tile_resource_society_research_mult = -0.9
+		tile_resource_engineering_research_mult = -0.9
+		species_leader_exp_gain = -0.9
+		army_damage_mult = -0.5
+	}
+}
+
+trait_lazy1 = {
+	cost = -1
+	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy3" }
+	
+	modifier = {
+		tile_resource_energy_mult = -0.1
+		tile_resource_minerals_mult = -0.1
+	}
+}
+trait_lazy2 = {
+	cost = -2
+	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy1" "trait_lazy3" }
+	
+	modifier = {
+		tile_resource_energy_mult = -0.2
+		tile_resource_minerals_mult = -0.2
+	}
+}
+trait_lazy3 = {
+	cost = -4
+	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy1" }
+	
+	modifier = {
+		tile_resource_energy_mult = -0.5
+		tile_resource_minerals_mult = -0.5
+	}
+}
+
+trait_badfarmers1 = {
+	cost = -1
+	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers2" "trait_badfarmers3" }
+	
+	modifier = {
+		tile_resource_food_mult = -0.2
+	}
+}
+trait_badfarmers2 = {
+	cost = -2
+	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers1" "trait_badfarmers3" }
+	
+	modifier = {
+		tile_resource_food_mult = -0.4
+	}
+}
+trait_badfarmers3 = {
+	cost = -4
+	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers2" "trait_badfarmers1" }
+	
+	modifier = {
+		tile_resource_food_mult = -0.6
+	}
+}
+
+trait_frail1 = {
+	cost = -1
+	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail2" "trait_frail3" }
+	
+	modifier = {
+		army_health = -0.25
+		garrison_health = -0.1
+		pop_environment_tolerance = -0.05
+	}
+}
+trait_frail2 = {
+	cost = -3
+	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail1" "trait_frail3" }
+	
+	modifier = {
+		army_health = -0.5
+		garrison_health = -0.25
+		pop_environment_tolerance = -0.1
+	}
+}
+trait_frail3 = {
+	cost = -5
+	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail2" "trait_frail1" }
+	
+	modifier = {
+		army_health = -0.75
+		garrison_health = -0.5
+		pop_environment_tolerance = -0.2
+	}
+}
+
+trait_solitary1 = {
+	cost = -1
+	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary2" "trait_solitary3" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = {
+		tile_resource_unity_mult = -0.25
+		pop_happiness = -0.05
+	}
+}
+trait_solitary2 = {
+	cost = -2
+	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary1" "trait_solitary3" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = {
+		tile_resource_unity_mult = -0.5
+		pop_happiness = -0.1
+	}
+}
+trait_solitary3 = {
+	cost = -4
+	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary2" "trait_solitary1" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = {
+		pop_happiness = -0.2
+		tile_resource_unity_mult = -0.75
+	}
+}
+
+trait_repugnant1 = {
+	cost = -1
+	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant2"  "trait_repugnant3" }
+	
+	modifier = {
+		pop_other_species_happiness = -0.05
+	}
+}
+trait_repugnant2 = {
+	cost = -2
+	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant1"  "trait_repugnant3" }
+	
+	modifier = {
+		pop_other_species_happiness = -0.15
+	}
+}
+trait_repugnant3 = {
+	cost = -3
+	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant2"  "trait_repugnant1" }
+	
+	modifier = {
+		pop_other_species_happiness = -0.5
+	}
+}
+
+trait_fleeting1 = {
+	cost = -1
+	modifier = { leader_age = -10 }
+	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting2" "trait_fleeting3" }
+}
+trait_fleeting2 = {
+	cost = -2
+	modifier = { leader_age = -20 }
+	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting1" "trait_fleeting3" }
+}
+trait_fleeting3 = {
+	cost = -4
+	modifier = { leader_age = -40 }
+	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting2" "trait_fleeting1" }
+}
+
+trait_wasteful1 = {
+	cost = -1
+	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
+	modifier = {
+		pop_consumer_goods_mult = 0.25
+		tile_resource_food_mult = -0.05
+	}
+}
+trait_wasteful2 = {
+	cost = -2
+	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
+	modifier = {
+		pop_consumer_goods_mult = 0.5
+		tile_resource_food_mult = -0.1
+	}
+}
+trait_wasteful3 = {
+	cost = -3
+	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
+	modifier = {
+		pop_consumer_goods_mult = 1
+		tile_resource_food_mult = -0.25
+	}
+}
+
+trait_weakwilled1 = {
+	cost = -1
+	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
+	modifier = {
+		pop_fortification_defense = -0.25
+		army_damage_mult = -0.25
+		army_morale = -0.25
+		army_health = -0.25
+	}
+}
+trait_weakwilled2 = {
+	cost = -2
+	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
+	modifier = {
+		pop_fortification_defense = -0.5
+		army_damage_mult = -0.33
+		army_morale = -0.5
+		army_health = -0.33
+	}
+}
+trait_weakwilled3 = {
+	cost = -4
+	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
+	modifier = {
+		pop_fortification_defense = -0.75
+		army_damage_mult = -0.5
+		army_morale = -0.75
+		army_health = -0.5
+	}
+}
+
+
+
+##################################
+##  Natural Positives		    ##
+##################################
+
+
+trait_smart1 = {
+	cost = 2
+	initial = yes
+	randomized = no
+	advanced_trait = yes
+	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart2" "trait_smart3" "trait_nerve_stapled" }
+	modifier = {
+		tile_resource_engineering_research_mult = 0.2
+		tile_resource_physics_research_mult = 0.2
+		tile_resource_society_research_mult = 0.2
+		species_leader_exp_gain = 0.25
+	}
+}
+trait_smart2 = {
+	cost = 5
+	initial = yes
+	randomized = no
+	advanced_trait = yes
+	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart1" "trait_smart3" "trait_nerve_stapled" }
+	modifier = {
+		tile_resource_engineering_research_mult = 0.5
+		tile_resource_physics_research_mult = 0.5
+		tile_resource_society_research_mult = 0.5
+		species_leader_exp_gain = 1
+	}
+}
+trait_smart3 = {
+	cost = 10
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart2" "trait_smart1" "trait_nerve_stapled" }
+	modifier = {
+		tile_resource_energy_mult = 0.25
+		tile_resource_food_mult = 0.25
+		tile_resource_minerals_mult = 0.25
+		tile_resource_engineering_research_mult = 2
+		tile_resource_physics_research_mult = 2
+		tile_resource_society_research_mult = 2
+		leader_skill_levels = 1
+		species_leader_exp_gain = 2.5
+		army_damage_mult = 0.25
+	}
+}
+
+trait_agrarian1 = {   
+	cost = 1
+	modifier = {
+		tile_resource_food_mult = 0.33
+	}
+	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian2" "trait_agrarian3" }
+}
+trait_agrarian2 = {   
+	cost = 3
+	modifier = {
+		tile_resource_food_mult = 1
+	}
+	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian1" "trait_agrarian3" }
+}
+trait_agrarian3 = {   
+	cost = 5
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	modifier = {
+		tile_resource_food_mult = 20
+	}
+	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian2" "trait_agrarian1" }
+}
+
+trait_robust1 = {
+	cost = 3
+	initial = yes
+	randomized = no
+	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust2" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
+	
+	modifier = {
+		pop_environment_tolerance = 0.1
+		army_health = 0.25
+	}
+}
+trait_robust2 = {
+	cost = 5
+	initial = yes
+	randomized = no
+	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust1" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
+	
+	modifier = {
+		pop_environment_tolerance = 0.25
+		army_health = 0.5
+	}
+}
+trait_robust3 = {
+	cost = 8
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = {  "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust2" "trait_robust1" "trait_weak1" "trait_weak2" "trait_weak3" }
+	
+	modifier = {
+		pop_environment_tolerance = 0.4
+		army_health = 2
+	}
+}
+
+trait_thrifty1 = {
+	cost = 1
+	
+	modifier = {
+		tile_resource_energy_mult = 0.15
+		tile_resource_minerals_mult = 0.15
+	}
+	opposites = { "trait_lazy1" "trait_lazy2" "trait_lazy3" "trait_thrifty2" "trait_thrifty3" }
+}
+trait_thrifty2 = {
+	cost = 2
+	
+	modifier = {
+		tile_resource_energy_mult = 0.3
+		tile_resource_minerals_mult = 0.3
+	}
+	opposites = { "trait_lazy1" "trait_lazy2" "trait_lazy3" "trait_thrifty1" "trait_thrifty3" }
+}
+trait_thrifty3 = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	
+	modifier = {
+		tile_resource_energy_mult = 0.75
+		tile_resource_minerals_mult = 0.75
+	}
+	opposites = { "trait_lazy1" "trait_lazy2" "trait_lazy3" "trait_thrifty2" "trait_thrifty1" }
+}
+
+trait_rapid_breeders1 = {
+	cost = 1
+	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders2" "trait_rapid_breeders3" }
+	
+	modifier = {
+		pop_growth_req_mult = -0.25
+	}
+}
+trait_rapid_breeders2 = {
+	cost = 4
+	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders1" "trait_rapid_breeders3" }
+	
+	modifier = {
+		pop_growth_req_mult = -0.5
+	}
+}
+trait_rapid_breeders3 = {
+	cost = 1
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders2" "trait_rapid_breeders1" }
+	
+	modifier = {
+		pop_growth_req_mult = -0.95
+	}
+}
+
+trait_gifted1 = {
+	cost = 1
+	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted2" }
+	
+	modifier = {
+		leader_skill_levels = 1
+	}
+}
+trait_gifted2 = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted1" }
+	
+	modifier = {
+		leader_skill_levels = 2
+	}
+}
+
+trait_strong1 = {
+	cost = 1
+	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong2" "trait_strong3" "trait_frail1" "trait_frail2" "trait_frail3" }
+	
+	modifier = {
+		army_damage_mult = 0.25
+		tile_resource_minerals_mult = 0.10
+		tile_resource_energy_mult = 0.10
+	}
+}
+trait_strong2 = {
+	cost = 3
+	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong1" "trait_strong3" "trait_frail1" "trait_frail2" "trait_frail3" }
+	
+	modifier = {
+		army_damage_mult = 0.6
+		tile_resource_minerals_mult = 0.25
+		tile_resource_energy_mult = 0.25
+	}
+}
+trait_strong3 = {
+	cost = 5
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong2" "trait_strong1" "trait_frail1" "trait_frail2" "trait_frail3" }
+	
+	modifier = {
+		army_damage_mult = 1.5
+		tile_resource_minerals_mult = 0.5
+		tile_resource_energy_mult = 0.5
+	}
+}
+
+trait_nomadic = {
+	cost = 1
+	opposites = { "trait_sedentary" }
+	
+	modifier = {
+		pop_migration_speed = 1
+		pop_resettlement_cost_mult = -0.5
+	}
+}
+
+trait_communal1 = {
+	cost = 1
+	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal2" "trait_communal3" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = {
+		pop_happiness = 0.05
+		pop_other_species_happiness = 0.025
+		tile_resource_unity_mult = 0.25
+	}
+}
+trait_communal2 = {
+	cost = 2
+	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal1" "trait_communal3" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = {
+		pop_happiness = 0.1
+		pop_other_species_happiness = 0.05
+		tile_resource_unity_mult = 0.5
+	}
+}
+trait_communal3 = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal2" "trait_communal1" }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	modifier = {
+		pop_happiness = 0.4
+		pop_other_species_happiness = 0.1
+		tile_resource_unity_mult = 1
+	}
+}
+
+trait_charismatic1 = {
+	cost = 1
+	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic2" "trait_charismatic3" }
+	
+	modifier = {
+		pop_other_species_happiness = 0.05
+	}
+}
+trait_charismatic2 = {
+	cost = 2
+	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic1" "trait_charismatic3" }
+	
+	modifier = {
+		pop_other_species_happiness = 0.1
+	}
+}
+trait_charismatic3 = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic2" "trait_charismatic1" }
+	
+	modifier = {
+		pop_other_species_happiness = 0.25
+	}
+}
+
+trait_conformists1 = {
+	cost = 1
+	modifier = { pop_government_ethic_attraction = 0.25 }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	opposites = { "trait_iconoclastic1" "trait_iconoclastic2" "trait_iconoclastic3" "trait_conformists2" "trait_conformists3" }
+}
+trait_conformists2 = {
+	cost = 2
+	modifier = { pop_government_ethic_attraction = 0.5 }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	opposites = { "trait_iconoclastic1" "trait_iconoclastic2" "trait_iconoclastic3" "trait_conformists1" "trait_conformists3" }
+}
+trait_conformists3 = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	modifier = { pop_government_ethic_attraction = 4 }
+	
+	valid_for_all_ethics = no
+	allowed_ethics = {
+		ethic_authoritarian
+		ethic_fanatic_authoritarian
+		ethic_egalitarian
+		ethic_fanatic_egalitarian
+		ethic_xenophobe
+		ethic_fanatic_xenophobe
+		ethic_xenophile
+		ethic_fanatic_xenophile
+		ethic_materialist
+		ethic_fanatic_materialist
+		ethic_spiritualist
+		ethic_fanatic_spiritualist
+		ethic_militarist
+		ethic_fanatic_militarist
+		ethic_pacifist
+		ethic_fanatic_pacifist
+	}
+	opposites = { "trait_iconoclastic1" "trait_iconoclastic2" "trait_iconoclastic3" "trait_conformists2" "trait_conformists1" }
+}
+
+trait_venerable1 = {
+	cost = 2
+	modifier = { leader_age = 50 }
+	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable2" "trait_venerable3" "trait_frail2" "trait_frail3" }
+}
+trait_venerable2 = {
+	cost = 4
+	modifier = { leader_age = 200 }
+	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable1" "trait_venerable3" "trait_frail2" "trait_frail3" }
+}
+trait_venerable3 = {
+	cost = 6
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	modifier = { leader_age = 2000 }
+	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable2" "trait_venerable1" "trait_frail2" "trait_frail3" }
+}
+
+trait_resilient1 = {
+	cost = 1
+	modifier = {
+		garrison_health = 1.0
+		army_damage_mult = 0.1
+		army_morale = 0.25
+		pop_fortification_defense = 0.5
+	}
+	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
+}
+trait_resilient2 = {
+	cost = 2
+	modifier = {
+		garrison_health = 2.5
+		army_damage_mult = 0.1
+		army_morale = 0.5
+		pop_fortification_defense = 1
+	}
+	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
+}
+trait_resilient3 = {
+	cost = 3
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	modifier = {
+		garrison_health = 5.0
+		army_damage_mult = 0.1
+		army_morale = 2
+		pop_fortification_defense = 2
+	}
+	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
+}
+
+trait_conservational1 = {
+	cost = 1
+	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational2" "trait_conservational3" }
+	modifier = {
+		pop_consumer_goods_mult = -0.2
+	}
+}
+trait_conservational2 = {
+	cost = 2
+	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational1" "trait_conservational3" }
+	modifier = {
+		pop_consumer_goods_mult = -0.4
+	}
+}
+trait_conservational3 = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational2" "trait_conservational1" }
+	modifier = {
+		pop_consumer_goods_mult = -0.75
+	}
+}
+
+##################################
+##  Truly ambiguous traits	    ##
+##################################
+
+trait_genemod_pest = {
+	cost = 4
+	modifier = {
+		pop_happiness = -0.05
+		pop_growth_req_mult = -0.9
+		leader_age = -20
+		tile_resource_engineering_research_mult = -0.15
+		tile_resource_physics_research_mult = -0.15
+		tile_resource_society_research_mult = -0.15
+		}
+		opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" }
+}
+
+# voor testen/cheaten
+trait_custom_testing = {
+	cost = 400
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = {  }
+	modifier = {
+		leader_age = 3000
+		tile_resource_engineering_research_mult = 2
+		tile_resource_physics_research_mult = 2
+		tile_resource_society_research_mult = 2
+		species_leader_exp_gain = 1
+		army_damage_mult = 1
+		tile_resource_unity_mult = 1
+		pop_happiness = 0.1
+		pop_government_ethic_attraction = 0.25
+	}
+}
+
+##################################
+##  NEGATIVE GENE MOD DICKERY   ##
+##################################
+
+trait_genemod_enraged = {
+	initial = no 	
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	cost = 2
+	modifier = {
+		pop_government_ethic_attraction = -1
+		pop_happiness = -0.8
+		pop_other_species_happiness = -0.5
+		tile_resource_food_mult = -0.5
+		tile_resource_minerals_mult = -2
+		tile_resource_energy_mult = -2
+		tile_resource_engineering_research_mult = -2
+		tile_resource_physics_research_mult = -2
+		tile_resource_society_research_mult = -2
+		army_damage_mult = 0.5
+		}
+		opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_nerve_stapled" "trait_genemod_lobotomized" }
+}
+
+trait_genemod_lobotomized = {
+	initial = no
+	randomized = no
+	modification = yes
+	forced_happiness = yes
+	cost = -2
+	modifier = {
+		tile_resource_food_mult = -4
+		tile_resource_minerals_mult = -4
+		tile_resource_energy_mult = -4
+		tile_resource_engineering_research_mult = -4
+		tile_resource_physics_research_mult = -4
+		tile_resource_society_research_mult = -4
+		tile_resource_unity_mult = -4
+		army_damage_mult = -4
+		garrison_health = -4
+		pop_fortification_defense = -4
+		species_leader_exp_gain = -10
+		}
+		opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_nerve_stapled" "trait_genemod_enraged" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
+}
+
+trait_delicious = {
+	cost = 3
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	modifier = {
+		pop_food_mult = 1
+		army_damage_mult = -0.25
+	}
+		opposites = { "trait_delicious2" }
+}
+
+trait_delicious2 = {
+	cost = 6
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	modifier = {
+		pop_food_mult = 3
+		army_damage_mult = -0.25
+		pop_other_species_happiness = 0.1
+	}
+		opposites = { "trait_delicious" }
+}
+
+trait_constant_pain = {
+	cost = 8
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	modifier = {
+		leader_age = 2000
+		pop_happiness = -4
+		tile_resource_food_mult = -4
+		tile_resource_minerals_mult = -4
+		tile_resource_energy_mult = -4
+		tile_resource_engineering_research_mult = -4
+		tile_resource_physics_research_mult = -4
+		tile_resource_society_research_mult = -4
+		tile_resource_unity_mult = -4
+	}
+}
+
+trait_nerve_stapled = {
+	cost = 6
+	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_genemod_enraged" "trait_genemod_lobotomized" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	forced_happiness = yes
+	modifier = {
+		tile_resource_minerals_mult = 0.1
+		tile_resource_food_mult = 0.1
+		pop_other_species_happiness = 0.05
+		tile_resource_energy_mult = -0.2
+		tile_resource_physics_research_mult = -0.75
+		tile_resource_engineering_research_mult = -0.75
+		tile_resource_society_research_mult = -20
+		tile_resource_unity_mult = -2
+		garrison_health = -2.0
+		pop_fortification_defense = -2.0
+		army_damage_mult = -2.0
+		species_leader_exp_gain = -10
+	}
+}
+
+trait_crippled = {
+	cost = -2
+	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_strong1" "trait_strong2" "trait_strong3" }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	modifier = {
+		pop_other_species_happiness = -0.05
+		tile_resource_energy_mult = -0.25
+		tile_resource_minerals_mult = -0.25
+		garrison_health = -2.0
+		pop_fortification_defense = -2.0
+		army_damage_mult = -2.0
+		pop_environment_tolerance = -0.2
+	}
+}
+
+
+###########################################################################################################################################################
+###########################################################################################################################################################
+# Ambiguous Stuff!
+###########################################################################################################################################################
+###########################################################################################################################################################
+
+
+
+
+
+
+
+
+
+

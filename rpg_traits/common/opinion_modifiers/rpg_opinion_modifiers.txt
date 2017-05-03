@@ -1,0 +1,38 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+
+# Charismatic
+# opinion_charismatic_species = {
+	# opinion = {
+		# base = 0
+		# modifier = {
+			# add = 15
+			# FROM = {
+				# exists = ruler
+				# ruler = {
+					# species = {
+						# has_trait = "trait_charismatic"		
+					# }
+				# }			
+			# }
+		# }		
+	# }
+# }
+
+opinion_hateful_species = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = -30
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_additrait_hateful"		
+					}
+				}			
+			}
+		}		
+	}
+}

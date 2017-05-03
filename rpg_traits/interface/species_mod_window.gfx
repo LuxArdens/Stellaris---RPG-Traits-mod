@@ -1,0 +1,15 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_species_mod_window_bg"
+		textureFile = "gfx/interface/tiles/green_bg_tile.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		borderSize = { x=8 y=8 }
+	}
+	spriteType = {
+		name = "GFX_dummy_species_mod_planet"
+		texturefile = "gfx/interface/transp_white.dds"
+		effectFile = "gfx/FX/buttonstate_rendertarget.lua"
+		alwaystransparent = yes
+		transparencecheck = no
+	}
+}

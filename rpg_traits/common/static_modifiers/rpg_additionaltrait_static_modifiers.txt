@@ -1,0 +1,58 @@
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+##########################################################################
+# Traits !!
+##########################################################################
+wear_trait_additrait_sociable = {
+	country_trust_growth = 0.25
+}
+
+wear_trait_additrait_hateful = {
+	country_trust_growth = -0.25
+}
+
+wear_trait_additrait_born_warriors = {
+	ship_weapon_damage = 0.05
+}
+
+wear_trait_additrait_competitive = {
+	rivalry_influence_gain = 0.50
+}
+
+#wear_trait_additrait_focused = {
+#	num_tech_alternatives_add = -1
+#}
+
+wear_trait_additrait_aggressive = {
+	max_rivalries = 1
+}
+
+wear_trait_additrait_extremely_aggressive = {
+	max_rivalries = 2
+}
+
+wear_trait_additrait_lateral_thinkers = { 
+	ship_weapon_damage = 0.08
+}
+
+#wear_trait_additrait_roboticians doesn't exist, no need for.
+
+wear_trait_additrait_belligerent = {
+	rivalry_influence_gain = 0.50
+	max_rivalries = 1
+}
+
+wear_trait_additrait_fast_analysers = {
+	science_ship_survey_speed = 0.10
+}
+
+#wear_trait_additrait_psionics doesn't exist, no need for.
+
+# wear_trait_additrait_war_lovers = {
+	# science_ship_survey_speed = 0.10
+# }
+
+# wear_trait_additrait_peace_lovers = {
+	# science_ship_survey_speed = 0.10
+# }
