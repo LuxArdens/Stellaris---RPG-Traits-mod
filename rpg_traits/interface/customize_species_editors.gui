@@ -525,8 +525,8 @@ guiTypes = {
 	containerWindowType = {
 		name = "species_traits_editor"
 		moveable = @movable_editors
-		position = { x = -400 y = -10 }
-		size = { width = 1030 height = 360 }
+		position = { x = -400 y = -410 }
+		size = { width = 1030 height = 860 }
 		orientation = center
 		
 		background = {
@@ -616,7 +616,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "details"
-			size = { width = 410 height = 360 }
+			size = { width = 410 height = 560 }
 			position = { x = 12 y = 150 }
 			
 				background = {
@@ -650,7 +650,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "trait_modifier"
 				font = "cg_16b"
-				position = { x = 10 y = 100 }
+				position = { x = 10 y = 200 }
 				maxWidth = 395
 				text =	 ""
 				format = left
@@ -660,7 +660,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "available"
-			size = { width = 280 height = 289 }
+			size = { width = 280 height = 789 }
 			position = { x = 428 y = 21 }
 			
 			background = {
@@ -672,7 +672,7 @@ guiTypes = {
 			smoothListboxType = {
 				name = "entries"
 				position = { x = 10 y = 12 }
-				size = { x = 251 y = 267 }
+				size = { x = 251 y = 767 }
 				scrollbarType = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }
 				orientation = "UPPER_LEFT"
@@ -683,7 +683,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "current"
-			size = { width = 270 height = 289 }
+			size = { width = 270 height = 789 }
 			position = { x = 715 y = 21 }
 			
 			background = {
@@ -695,7 +695,7 @@ guiTypes = {
 			smoothListboxType = {
 				name = "entries"
 				position = { x = 10 y = 12 }
-				size = { x = 251 y = 267 }
+				size = { x = 251 y = 767 }
 				scrollbarType = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }
 				orientation = "UPPER_LEFT"
