@@ -1,0 +1,11 @@
+##########################################################################
+# Pop Modifiers
+##########################################################################
+
+bp_increased_reproduction = {
+	pop_growth_req_mult = -0.1
+}
+
+bp_reduced_reproduction = {
+	pop_growth_req_mult = 0.1
+}
