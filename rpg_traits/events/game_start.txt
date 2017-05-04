@@ -306,7 +306,7 @@ planet_event = {
 			create_species = {
 				traits = {
 					trait = trait_presentient_proles
-					trait = trait_strong1
+					trait = trait_strong
 				}
 				homeworld = this
 			}
@@ -351,7 +351,7 @@ planet_event = {
 				portrait = pre_mam13
 				traits = {
 					trait = trait_presentient_proles
-					trait = trait_strong1
+					trait = trait_strong
 				}
 				homeworld = this
 			}

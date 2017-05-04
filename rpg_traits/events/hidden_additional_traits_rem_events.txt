@@ -1,11 +1,8 @@
-#Some traits use empire range. We use these events to cheat the modifiers into traits.
-
-namespace = additional_traits_rem
-
-### Hidden Game Start Event
+namespace = remove_traits
 
 #################################################################################################################################################
-#####Removing traits bonus from non-eligible nations.
+######## Removing traits after genemodding ######################################################################################################
+#################################################################################################################################################
 
 #Sociable
 event = {

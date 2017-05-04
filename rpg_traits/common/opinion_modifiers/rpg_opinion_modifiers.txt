@@ -1,35 +1,204 @@
 #########################################################################
 # OPINION MODIFIERS
-##########################################################################
+#########################################################################
 
-# Charismatic
-# opinion_charismatic_species = {
-	# opinion = {
-		# base = 0
-		# modifier = {
-			# add = 15
-			# FROM = {
-				# exists = ruler
-				# ruler = {
-					# species = {
-						# has_trait = "trait_charismatic"		
-					# }
-				# }			
-			# }
-		# }		
-	# }
-# }
-
-opinion_hateful_species = {
+opinion_lingua_idumentis_species = {
 	opinion = {
 		base = 0
 		modifier = {
-			add = -30
+			add = -25
 			FROM = {
 				exists = ruler
 				ruler = {
 					species = {
-						has_trait = "trait_additrait_hateful"		
+						has_trait = "trait_lingua_idumentis"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_olfactory = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = -10
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_olfactory"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_repugnant1 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = -5
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_repugnant1"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_repugnant2 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = -15
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_repugnant2"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_repugnant3 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = -50
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_repugnant3"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_charismatic1 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 5
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_charismatic1"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_charismatic2 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 15
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_charismatic2"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_charismatic3 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 50
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_charismatic3"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_enraged = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = -500
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_enraged"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_communal1 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 2
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_communal1"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_communal2 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 5
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_communal2"		
+					}
+				}			
+			}
+		}		
+	}
+}
+
+opinion_trait_communal3 = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 10
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_communal3"		
 					}
 				}			
 			}
