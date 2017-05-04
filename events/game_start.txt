@@ -1,0 +1,483 @@
+namespace = game_start
+
+### Hidden Game Start Event
+event = {
+	id = game_start.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = game_started
+
+		every_country = {
+			limit = { is_ai = no }
+			country_event = { id = country.900 days = 360 random = 60 }
+		}
+		
+		### SPAWN UNIQUE SYSTEMS
+		# If any Empire is Commonwealth and UN is unplayed
+		if = {
+			limit = {
+				any_country = { has_country_flag = human_2 }
+				#NOT = { any_country = { has_country_flag = human_1 } }
+				# Replaced UN check with generic Sol check
+				NOT = { any_system = { has_star_flag = sol } }
+			}
+			random_system = {
+				spawn_system = { initializer = "com_sol_system" }
+			}
+			else = {
+				# If there are no Sols
+				if = {
+					limit = {
+						NOT = {
+							any_system = {
+								has_star_flag = sol
+							}
+						}
+					}
+					random_list = {
+						60 = { }
+						30 = {
+							random_system = {
+								spawn_system = { initializer = "special_init_03" }
+							}
+						}
+						10 = {
+							random_system = {
+								spawn_system = { initializer = "special_init_04" }
+							}
+						}
+					}
+				}
+			}
+		}
+
+		### SPAWN SPECIAL COUNTRIES
+		create_country = {
+			name = "The Shroud"
+			type = shroud
+			flag = {
+				icon = {
+					category = "special"
+					file = "the_shroud.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"red"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+	}
+}
+
+event = {
+	id = game_start.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = { exists = capital_scope }
+			capital_scope = {
+				solar_system = {
+					every_system_planet = {
+						if = {
+							limit = { has_modifier = hazardous_weather }
+							remove_modifier = hazardous_weather
+						}
+						if = {
+							limit = { has_modifier = dangerous_wildlife }
+							remove_modifier = dangerous_wildlife
+						}
+						if = {
+							limit = { has_modifier = weak_magnetic_field }
+							remove_modifier = weak_magnetic_field
+						}
+						if = {
+							limit = { has_modifier = strong_magnetic_field }
+							remove_modifier = strong_magnetic_field
+						}
+						if = {
+							limit = { has_modifier = unstable_tectonics }
+							remove_modifier = unstable_tectonics
+						}
+						if = {
+							limit = { has_modifier = tidal_locked }
+							remove_modifier = tidal_locked
+						}
+						if = {
+							limit = { has_modifier = chthonian_planet }
+							remove_modifier = chthonian_planet
+						}
+						if = {
+							limit = { has_modifier = asteroid_impacts }
+							remove_modifier = asteroid_impacts
+						}
+						if = {
+							limit = { has_modifier = extensive_moon_system }
+							remove_modifier = extensive_moon_system
+						}
+						if = {
+							limit = { has_modifier = carbon_world }
+							remove_modifier = carbon_world
+						}
+						if = {
+							limit = { has_modifier = wild_storms }
+							remove_modifier = wild_storms
+						}
+						if = {
+							limit = { has_modifier = low_gravity }
+							remove_modifier = low_gravity
+						}
+						if = {
+							limit = { has_modifier = high_gravity }
+							remove_modifier = high_gravity
+						}
+						#if = {
+						#	limit = { has_modifier = hollow_planet }
+						#	remove_modifier = hollow_planet
+						#}
+						if = {
+							limit = { has_modifier = mineral_rich }
+							remove_modifier = mineral_rich
+						}
+						if = {
+							limit = { has_modifier = ultra_rich }
+							remove_modifier = ultra_rich
+						}
+						if = {
+							limit = { has_modifier = mineral_poor }
+							remove_modifier = mineral_poor
+						}
+						if = {
+							limit = { has_modifier = titanic_life }
+							remove_modifier = titanic_life
+						}
+						if = {
+							limit = { has_modifier = mineral_poor }
+							remove_modifier = mineral_poor
+						}
+						if = {
+							limit = { has_modifier = asteroid_belt }
+							remove_modifier = asteroid_belt
+						}
+						if = {
+							limit = { has_modifier = natural_beauty }
+							remove_modifier = natural_beauty
+						}
+						if = {
+							limit = { has_modifier = atmospheric_aphrodisiac }
+							remove_modifier = atmospheric_aphrodisiac
+						}
+						if = {
+							limit = { has_modifier = atmospheric_hallucinogen }
+							remove_modifier = atmospheric_hallucinogen
+						}
+						if = {
+							limit = { has_modifier = lush_planet }
+							remove_modifier = lush_planet
+						}
+						if = {
+							limit = { has_modifier = bleak_planet }
+							remove_modifier = bleak_planet
+						}
+						if = {
+							limit = { has_modifier = irradiated_planet }
+							remove_modifier = irradiated_planet
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### Hidden Game Start Event that resets tutorial for advisor trigger purposes
+event = {
+	id = game_start.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = { is_ai = no }
+			country_event = { id = tutorial.104 }
+		}
+	}
+}
+
+### Countdown to Horrid Swarm
+event = {
+	id = game_start.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = { is_ai = no }
+			random_list = {
+				10 = { country_event = { id = crisis.10 days = 61200 random = 500 } } # 170 years
+				20 = { country_event = { id = crisis.10 days = 72000 random = 500 } } # 200 years
+				30 = { country_event = { id = crisis.10 days = 90000 random = 500 } } # 250 years
+				15 = { country_event = { id = crisis.10 days = 108000 random = 500 } } # 300 years
+				25 = { } # No Prethoryn Invasion
+			}
+		}
+	}
+}
+
+### Countdown to Nomad Fleet
+event = {
+	id = game_start.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = { is_ai = no }
+			random_list = {
+				#1 = { country_event = { id = nomad.1 days = 1 } } # DEBUG
+				20 = { country_event = { id = nomad.1 days = 7300 random = 500 } } # 25 years
+				25 = { country_event = { id = nomad.1 days = 14600 random = 500 } } # 40 years
+				25 = { country_event = { id = nomad.1 days = 20075 random = 500 } } # 55 years
+				30 = { } # No nomads
+			}
+		}
+	}
+}
+
+### Country-scope start event for advanced empires
+country_event = {
+	id = game_start.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		give_technology = { tech = "tech_ship_armor_1" message = no }
+		give_technology = { tech = "tech_shields_1" message = no }
+		give_technology = { tech = "tech_solar_panel_network" message = no }
+		give_technology = { tech = "tech_biolab_1" message = no }
+		give_technology = { tech = "tech_engineering_lab_1" message = no }
+		give_technology = { tech = "tech_physics_lab_1" message = no }
+		give_technology = { tech = "tech_planetary_unification" message = no }
+	}
+}
+
+### initialize capital pops
+# called from the create_capital_initial_pops on_action
+planet_event = {
+	id = game_start.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { owner = { has_civic = civic_mechanists } }
+			while = {
+				count = 4
+				random_tile = {
+					limit = {
+						OR = {
+							has_building = building_mining_network_1
+							has_building = building_hydroponics_farm_1
+						}
+						has_pop = no
+					}				
+					build_pop = {
+						name = buildable_robot_pop_1
+					}
+				}
+			}
+		}
+
+		if = { 
+			limit = { 
+				owner = { 
+					has_civic = civic_syncretic_evolution
+					capital_scope = { NOT = { has_planet_flag = planet_earth } }
+				}
+			}
+			create_species = {
+				traits = {
+					trait = trait_presentient_proles
+					trait = trait_strong
+				}
+				homeworld = this
+			}
+			owner = {
+				last_created_species = {
+					set_citizenship_type = {
+						country = prev
+						type = citizenship_slavery
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = {
+						OR = {
+							has_building = building_mining_network_1
+							has_building = building_hydroponics_farm_1
+						}
+						has_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = random
+					}					
+				}
+			}
+		}
+
+		if = { 
+			limit = { 
+				owner = { 
+					has_civic = civic_syncretic_evolution
+					capital_scope = { has_planet_flag = planet_earth }
+				}
+			}
+			create_species = {
+				name = "Neo-Chimp"
+				plural = "Neo-Chimps"
+				adjective = "Neo-Chimp"
+				class = "MAM"
+				portrait = pre_mam13
+				traits = {
+					trait = trait_presentient_proles
+					trait = trait_strong
+				}
+				homeworld = this
+			}
+			owner = {
+				last_created_species = {
+					set_citizenship_type = {
+						country = prev
+						type = citizenship_slavery
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = {
+						OR = {
+							has_building = building_mining_network_1
+							has_building = building_hydroponics_farm_1
+						}
+						has_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = random
+					}					
+				}
+			}
+		}
+
+		if = {	limit = { owner = { has_authority = auth_hive_mind } }
+			owner = {
+				modify_species = {
+					species = this
+					add_trait = trait_hive_mind
+					add_traits_at_start_of_list = yes
+				}
+				change_dominant_species = last_created_species
+			}
+		}
+
+		while = {
+			limit = { num_pops < 8 }
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+	}
+}
+### Empire init - add technologies
+country_event = {
+	id = game_start.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_mechanists } 
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+		}
+	}
+}
+
+### Empire init - add ships
+country_event = {
+	id = game_start.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		
+		#science
+		create_fleet = {
+			effect = {
+				set_owner = prev
+
+				create_ship = {
+					name = random
+					random_existing_design = science
+				}
+
+				set_fleet_stance = evasive				
+				set_location = prev.capital_scope
+				
+				owner = {
+					create_leader = {
+						type = scientist
+						sub_type = survey
+						name = random
+						species = owner_main_species
+					}
+				}
+				set_leader = last_created_leader
+			}			
+		}
+			
+		#constructor
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				
+				create_ship = {
+					name = random
+					random_existing_design = constructor
+				}
+				
+				set_fleet_stance = evasive
+				set_location = prev.capital_scope
+			}
+		}
+
+		#military
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				
+				while = {
+					count = 3
+					create_ship = {
+						name = random
+						random_existing_design = corvette
+					}
+				}
+				
+				set_location = prev.capital_scope
+			}
+		}
+	}
+}
