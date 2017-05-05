@@ -481,3 +481,103 @@ country_event = {
 		}
 	}
 }
+
+
+####################
+#### RPG traits ####
+####################
+
+
+planet_event = {
+	id = game_start.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { owner = { has_trait = trait_precursor1 } }
+			while = {
+				count = 4
+				random_tile = {
+					limit = {
+						OR = {
+							has_building = building_mining_network_3
+							has_building = building_hydroponics_farm_3
+						}
+						has_pop = no
+					}
+				}
+			}
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+		give_technology = { tech = tech_mine_living_metal }
+		give_technology = { tech = tech_mine_dark_matter }
+		give_technology = { tech = tech_mine_neutronium }
+		give_technology = { tech = tech_ship_armor_5 }
+		give_technology = { tech = tech_antimatter_power }
+		give_technology = { tech = tech_zero_point_power }
+		give_technology = { tech = tech_climate_restoration }
+		give_technology = { tech = tech_gaia_creation }
+		give_technology = { tech = tech_nutrient_replication }
+	give_technology = { tech = tech_repeatable_improved_tile_energy_output }
+			give_technology = { message = no tech = tech_tb_mountain_range }
+			give_technology = { message = no tech = tech_tb_volcano }
+			give_technology = { message = no tech = tech_tb_dangerous_wildlife }
+			give_technology = { message = no tech = tech_tb_dense_jungle }
+			give_technology = { message = no tech = tech_tb_quicksand_basin }
+			give_technology = { message = no tech = tech_tb_noxious_swamp }
+			give_technology = { message = no tech = tech_tb_massive_glacier }
+			give_technology = { message = no tech = tech_tb_toxic_kelp }
+			give_technology = { message = no tech = tech_tb_deep_sinkhole }
+		}
+
+		if = { 
+			limit = { 
+				owner = { 
+					has_civic = civic_syncretic_evolution
+					capital_scope = { NOT = { has_planet_flag = planet_earth } }
+				}
+			}
+			create_species = {
+				traits = {
+					trait = trait_presentient_proles
+					trait = trait_strong
+				}
+				homeworld = this
+			}
+			owner = {
+				last_created_species = {
+					set_citizenship_type = {
+						country = prev
+						type = citizenship_slavery
+					}
+				}
+			}
+			while = {
+				count = 4
+				random_tile = {
+					limit = {
+						OR = {
+							has_building = building_mining_network_1
+							has_building = building_hydroponics_farm_1
+						}
+						has_pop = no
+					}
+					create_pop = {
+						species = last_created
+						ethos = random
+					}					
+				}
+			}
+		}
+		
+		while = {
+			limit = { num_pops < 25 }
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+	}
+}

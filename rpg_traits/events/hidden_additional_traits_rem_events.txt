@@ -1,0 +1,252 @@
+namespace = remove_traits
+
+#################################################################################################################################################
+######## Removing traits after genemodding ######################################################################################################
+#################################################################################################################################################
+
+#Sociable
+event = {
+    id = additional_traits_rem.1
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_sociable
+					NOT = {has_trait = trait_additrait_sociable}
+				}
+            }
+            remove_modifier =  wear_trait_additrait_sociable
+			remove_country_flag = flag_trait_additrait_sociable
+        }
+	}
+}
+
+#Hateful
+event = {
+    id = additional_traits_rem.2
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_hateful
+					NOT = {has_trait = trait_additrait_hateful}
+				}
+            }
+            remove_modifier = wear_trait_additrait_hateful
+			remove_country_flag = flag_trait_additrait_hateful
+        }
+    }
+}
+
+#Born Warriors
+event = {
+    id = additional_traits_rem.3
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_born_warriors
+					NOT = {has_trait = trait_additrait_born_warriors}
+				}
+            }
+            remove_modifier = wear_trait_additrait_born_warriors
+			remove_country_flag = flag_trait_additrait_born_warriors
+        }
+    }
+}
+
+#Competitive
+event = {
+    id = additional_traits_rem.4
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_competitive
+					NOT = {has_trait = trait_additrait_competitive}
+				}
+            }
+			remove_modifier =  wear_trait_additrait_competitive
+			remove_country_flag = flag_trait_additrait_competitive
+        }
+    }
+}
+
+#Focused
+#event = {
+#	id = additional_traits_rem.5
+#	hide_window = yes
+#	is_triggered_only = yes
+  
+#	immediate = {
+#		every_country = {
+#			limit = {
+#				AND = {
+#					has_country_flag = flag_trait_additrait_focused
+#					NOT = {has_trait = trait_additrait_focused}
+#				}
+#			}
+#			remove_modifier = wear_trait_additrait_focused
+#			remove_country_flag = flag_trait_additrait_focused
+#		}
+#	}
+#}
+
+#Agressive
+event = {
+    id = additional_traits_rem.6
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_aggressive
+					NOT = {has_trait = trait_additrait_aggressive}
+				}
+            }
+            remove_modifier = wear_trait_additrait_aggressive
+			remove_country_flag = flag_trait_additrait_aggressive
+        }
+    }
+}
+
+
+#Extremely Agressive
+event = {
+    id = additional_traits_rem.7
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_extremely_aggressive
+					NOT = {has_trait = trait_additrait_extremely_aggressive}
+				}
+            }
+            remove_modifier = wear_trait_additrait_extremely_aggressive
+			remove_country_flag = flag_trait_additrait_extremely_aggressive
+        }
+    }
+}
+
+#Lateral Thinkers
+event = {
+    id = additional_traits_rem.8
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_lateral_thinkers
+					NOT = {has_trait = trait_additrait_lateral_thinkers}
+				}
+            }
+            remove_modifier = wear_trait_additrait_lateral_thinkers
+			remove_country_flag = flag_trait_additrait_lateral_thinkers
+        }
+    }
+}
+
+#Roboticians
+#Roboticians has no remove event. You can't remove a technology.
+
+#Belligerent
+event = {
+    id = additional_traits_rem.10
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_belligerent
+					NOT = {has_trait = trait_additrait_belligerent}
+				}
+            }
+            remove_modifier = wear_trait_additrait_belligerent
+			remove_country_flag = flag_trait_additrait_belligerent
+        }
+    }
+}
+
+#Fast Analyzers
+event = {
+    id = additional_traits_rem.11
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				AND = {
+					has_country_flag = flag_trait_additrait_fast_analysers
+					NOT = {has_trait = trait_additrait_fast_analysers}
+				}
+            }
+            remove_modifier = wear_trait_additrait_fast_analysers
+			remove_country_flag = flag_trait_additrait_fast_analysers
+        }
+    }
+}
+
+#Psionics
+#Psionics has no remove event. You can't remove a technology.
+
+#War Lovers
+# event = {
+    # id = additional_traits_rem.13
+    # hide_window = yes
+    # is_triggered_only = yes
+   
+    # immediate = {
+        # every_country = {
+            # limit = {
+				# AND = {
+					# has_country_flag = flag_trait_additrait_fast_analysers
+					# NOT = {has_trait = trait_additrait_fast_analysers}
+				# }
+            # }
+            # remove_modifier = wear_trait_additrait_fast_analysers
+			# remove_country_flag = flag_trait_additrait_fast_analysers
+        # }
+    # }
+# }
+
+#Peace Lovers
+# event = {
+    # id = additional_traits_rem.14
+    # hide_window = yes
+    # is_triggered_only = yes
+   
+    # immediate = {
+        # every_country = {
+            # limit = {
+				# AND = {
+					# has_country_flag = flag_trait_additrait_fast_analysers
+					# NOT = {has_trait = trait_additrait_fast_analysers}
+				# }
+            # }
+            # remove_modifier = wear_trait_additrait_fast_analysers
+			# remove_country_flag = flag_trait_additrait_fast_analysers
+        # }
+    # }
+# }
