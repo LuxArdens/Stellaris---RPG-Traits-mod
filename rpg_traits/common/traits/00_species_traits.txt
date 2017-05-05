@@ -1482,31 +1482,6 @@ trait_weirdass = {
 	}
 }
 
-trait_lithovore = {
-	cost = 0
-	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_energy_lifeform" }
-	initial = yes
-	randomized = yes
-	modification = no
-	modifier = {
-		pop_food_req_mult = -10
-		pop_consumer_goods_mult = 1
-	}
-}
-
-trait_energy_lifeform = {
-	cost = 0
-	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_lithovore" }
-	initial = yes
-	randomized = yes
-	modification = no
-	modifier = {
-		pop_food_req_mult = -10
-		country_resource_energy_mult = -0.2
-		army_upkeep_mult = 1
-	}
-}
-
 trait_euphoria = {
 	cost = 4
 	opposites = {  }
@@ -1660,7 +1635,7 @@ trait_hoarders = {
 }
 
 trait_curious = {
-	cost = 0
+	cost = 1
 	opposites = { "trait_uncreative" }
 	initial = yes
 	randomized = yes
@@ -1670,7 +1645,7 @@ trait_curious = {
 }
 
 trait_uncreative = {
-	cost = 0
+	cost = -1
 	opposites = { "trait_curious" }
 	initial = yes
 	randomized = yes
@@ -1689,6 +1664,24 @@ trait_airborne = {
 	}
 }
 
+trait_shield_obsessed = {
+	cost = 0
+	opposites = {  }
+	initial = yes
+	randomized = no
+	modification = no
+	modifier = {
+	}
+}
+
+
+###########################################################################################################################################################
+###########################################################################################################################################################
+# Game-changers/big traits, not necessarily balanced
+###########################################################################################################################################################
+###########################################################################################################################################################
+
+
 trait_titanic = {
 	cost = 4
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" }
@@ -1705,12 +1698,36 @@ trait_titanic = {
 		garrison_health = 2
 		pop_fortification_defense = 2
 		pop_growth_req_mult = 5
-		
-		
+		pop_consumer_goods_mult = 5
 	}
 }
 
-trait_shield_obsessed = {
+trait_lithovore = {
+	cost = 0
+	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_energy_lifeform" }
+	initial = yes
+	randomized = yes
+	modification = no
+	modifier = {
+		pop_food_req_mult = -10
+		pop_consumer_goods_mult = 1
+	}
+}
+
+trait_energy_lifeform = {
+	cost = 0
+	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_lithovore" }
+	initial = yes
+	randomized = yes
+	modification = no
+	modifier = {
+		pop_food_req_mult = -10
+		country_resource_energy_mult = -0.2
+		army_upkeep_mult = 1
+	}
+}
+
+trait_precursor1 = {
 	cost = 0
 	opposites = {  }
 	initial = yes
@@ -1719,7 +1736,6 @@ trait_shield_obsessed = {
 	modifier = {
 	}
 }
-
 
 
 
