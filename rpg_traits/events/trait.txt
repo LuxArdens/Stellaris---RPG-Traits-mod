@@ -8,8 +8,8 @@ namespace = trait
 event = {
     id = "trait.1"
     hide_window = no
-	title = Yo I add a modifier yo
-	desc = Great
+	title = "Yo your mod works yo"
+	desc = "Great"
     is_triggered_only = yes
    
     immediate = {
@@ -27,7 +27,7 @@ event = {
 
 event = {
 	id = "trait.1011"
-	hide_window = no
+	hide_window = yes
 	title = This triggers an event that gives you a modifier
 	is_triggered_only = yes
    
@@ -41,7 +41,7 @@ event = {
 
 country_event = {
 	id = "trait.1012"
-	hide_window = no
+	hide_window = yes
 	title = I add a trait, I shouldn't be here in a normal game
 	is_triggered_only = yes
 

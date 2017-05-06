@@ -3,9 +3,9 @@
 ##########################################################################
 
 bp_increased_reproduction = {
-	pop_growth_req_mult = -0.1
+	pop_growth_req_mult = -0.5
 }
 
 bp_reduced_reproduction = {
-	pop_growth_req_mult = 0.1
+	pop_growth_req_mult = 1
 }

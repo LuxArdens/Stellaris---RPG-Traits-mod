@@ -1664,16 +1664,6 @@ trait_airborne = {
 	}
 }
 
-trait_shield_obsessed = {
-	cost = 0
-	opposites = {  }
-	initial = yes
-	randomized = no
-	modification = no
-	modifier = {
-	}
-}
-
 
 ###########################################################################################################################################################
 ###########################################################################################################################################################
@@ -1728,6 +1718,16 @@ trait_energy_lifeform = {
 }
 
 trait_precursor1 = {
+	cost = 0
+	opposites = {  }
+	initial = yes
+	randomized = no
+	modification = no
+	modifier = {
+	}
+}
+
+trait_shield_obsessed = {
 	cost = 0
 	opposites = {  }
 	initial = yes

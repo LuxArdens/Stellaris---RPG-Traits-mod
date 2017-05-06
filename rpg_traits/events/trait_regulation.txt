@@ -9,8 +9,39 @@ event = {
 
 	immediate = {
 		every_country = {
-			limit = { is_ai = yes }
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = {
+						is_country_type = tiyanki
+						is_country_type = neutral_faction
+						is_country_type = faction
+						is_country_type = pirate
+						#is_country_type = nomad #triggered in a special case event
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+					}
+				}
+			}
 			country_event = { id = trait_regulation.2 }
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = tiyanki
+					is_country_type = neutral_faction
+					is_country_type = faction
+					is_country_type = pirate
+					#is_country_type = nomad #triggered in a special case event
+					is_country_type = amoeba
+					is_country_type = crystal
+					is_country_type = drone
+					is_country_type = cloud
+				}
+			}
+			country_event = { id = trait_regulation.4 }
 		}
 	}
 }
@@ -35,7 +66,7 @@ country_event = {
 						}
 					}
 					
-					every_owned_planet = { 
+					every_owned_planet = {
 						if = { 
 							limit = { has_spaceport = yes }
 							destroy_fleet = spaceport
@@ -106,7 +137,6 @@ country_event = {
 	}
 				}
 				1 = { }
-			}
 	}
 }
 
@@ -120,5 +150,43 @@ ship_event = {
 		fromfrom = {
 			fleet = { destroy_fleet = this}
 		}
+	}
+}
+
+
+country_event = {
+	id = trait_regulation.4		# trait regulation for event spawned non-empire races
+	hide_window = no
+	title = Regulation
+	desc = KABOOM
+	picture = GFX_evt_ship_in_orbit
+	is_triggered_only = yes
+
+	immediate = {
+			every_owned_pop = {
+				modify_species = {
+					species = this
+					remove_trait = trait_titanic
+				}
+			}
+	}
+}
+
+
+country_event = {
+	id = trait_regulation.5		# trait regulation for event spawned races
+	hide_window = no
+	title = Regulation
+	desc = KABOOM
+	picture = GFX_evt_ship_in_orbit
+	is_triggered_only = yes
+
+	immediate = {
+			every_owned_pop = {
+				modify_species = {
+					species = this
+					remove_trait = trait_titanic
+				}
+			}
 	}
 }
