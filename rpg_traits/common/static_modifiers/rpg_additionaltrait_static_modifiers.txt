@@ -9,8 +9,8 @@ trait_effects_weirdass = {
 trait_hoarders = {
 	country_resource_energy_mult = -0.05
 	country_resource_minerals_mult = -0.05
-	max_minerals = 2000000
-	max_energy = 2000000
+	max_minerals = 200000
+	max_energy = 200000
 }
 
 trait_titanic = {
@@ -146,8 +146,8 @@ trait_tiny = {
 	ship_weapon_range_mult = -0.5
 	
 	# tiny storages
-	max_minerals = -1000
-	max_energy = -10000
+	#max_minerals = -1000
+	#max_energy = -10000
 }
 
 
