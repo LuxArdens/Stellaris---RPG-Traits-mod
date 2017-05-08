@@ -281,6 +281,7 @@ trait_hive_mind = {
 trait_iconoclastic1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_iconoclastic1.dds"
 	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic2" "trait_iconoclastic3" }
 	
 	valid_for_all_ethics = no
@@ -310,6 +311,7 @@ trait_iconoclastic1 = {
 trait_iconoclastic2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_iconoclastic2.dds"
 	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic1" "trait_iconoclastic3" }
 	
 	valid_for_all_ethics = no
@@ -339,6 +341,7 @@ trait_iconoclastic2 = {
 trait_iconoclastic3 = {
 	cost = -5
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_iconoclastic3.dds"
 	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic2" "trait_iconoclastic1" }
 	
 	valid_for_all_ethics = no
@@ -369,6 +372,7 @@ trait_iconoclastic3 = {
 trait_slow_breeders1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_slow_breeders1.dds"
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders3" }
 	
 	modifier = {
@@ -378,6 +382,7 @@ trait_slow_breeders1 = {
 trait_slow_breeders2 = {
 	cost = -3
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_slow_breeders2.dds"
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders3" }
 	
 	modifier = {
@@ -387,6 +392,7 @@ trait_slow_breeders2 = {
 trait_slow_breeders3 = {
 	cost = -6
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_slow_breeders3.dds"
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders1" }
 	
 	modifier = {
@@ -397,6 +403,7 @@ trait_slow_breeders3 = {
 trait_sedentary = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_sedentary.dds"
 	opposites = { "trait_nomadic" }
 	
 	modifier = {
@@ -408,6 +415,7 @@ trait_sedentary = {
 trait_weak1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_weak1.dds"
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak2" "trait_weak3" }
 	
 	modifier = {
@@ -419,6 +427,7 @@ trait_weak1 = {
 trait_weak2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_weak2.dds"
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak1" "trait_weak3" }
 	
 	modifier = {
@@ -430,6 +439,7 @@ trait_weak2 = {
 trait_weak3 = {
 	cost = -4
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_weak3.dds"
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak2" "trait_weak1" }
 	
 	modifier = {
@@ -442,6 +452,7 @@ trait_weak3 = {
 trait_dumb1 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_dumb1.dds"
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb2" "trait_dumb3" }
 	
 	modifier = {
@@ -454,6 +465,7 @@ trait_dumb1 = {
 trait_dumb2 = {
 	cost = -6
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_dumb2.dds"
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb1" "trait_dumb3" }
 	
 	modifier = {
@@ -470,6 +482,7 @@ trait_dumb2 = {
 trait_dumb3 = {
 	cost = -10
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_dumb3.dds"
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb2" "trait_dumb1" }
 	
 	modifier = {
@@ -487,6 +500,7 @@ trait_dumb3 = {
 trait_lazy1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_lazy1.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy3" }
 	
 	modifier = {
@@ -497,6 +511,7 @@ trait_lazy1 = {
 trait_lazy2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_lazy2.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy1" "trait_lazy3" }
 	
 	modifier = {
@@ -507,6 +522,7 @@ trait_lazy2 = {
 trait_lazy3 = {
 	cost = -4
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_lazy3.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy1" }
 	
 	modifier = {
@@ -518,6 +534,7 @@ trait_lazy3 = {
 trait_badfarmers1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_badfarmers1.dds"
 	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers2" "trait_badfarmers3" }
 	
 	modifier = {
@@ -527,6 +544,7 @@ trait_badfarmers1 = {
 trait_badfarmers2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_badfarmers2.dds"
 	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers1" "trait_badfarmers3" }
 	
 	modifier = {
@@ -536,6 +554,7 @@ trait_badfarmers2 = {
 trait_badfarmers3 = {
 	cost = -4
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_badfarmers3.dds"
 	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers2" "trait_badfarmers1" }
 	
 	modifier = {
@@ -546,6 +565,7 @@ trait_badfarmers3 = {
 trait_frail1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_frail1.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail2" "trait_frail3" }
 	
 	modifier = {
@@ -557,6 +577,7 @@ trait_frail1 = {
 trait_frail2 = {
 	cost = -3
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_frail2.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail1" "trait_frail3" }
 	
 	modifier = {
@@ -568,6 +589,7 @@ trait_frail2 = {
 trait_frail3 = {
 	cost = -5
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_frail3.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail2" "trait_frail1" }
 	
 	modifier = {
@@ -580,6 +602,7 @@ trait_frail3 = {
 trait_solitary1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_solitary1.dds"
 	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary2" "trait_solitary3" }
 	
 	valid_for_all_ethics = no
@@ -609,6 +632,7 @@ trait_solitary1 = {
 trait_solitary2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_solitary2.dds"
 	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary1" "trait_solitary3" }
 	
 	valid_for_all_ethics = no
@@ -638,6 +662,7 @@ trait_solitary2 = {
 trait_solitary3 = {
 	cost = -4
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_solitary3.dds"
 	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary2" "trait_solitary1" }
 	
 	valid_for_all_ethics = no
@@ -668,6 +693,7 @@ trait_solitary3 = {
 trait_repugnant1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_repugnant1.dds"
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant2"  "trait_repugnant3" }
 	
 	modifier = {
@@ -677,6 +703,7 @@ trait_repugnant1 = {
 trait_repugnant2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_repugnant2.dds"
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant1"  "trait_repugnant3" }
 	
 	modifier = {
@@ -686,6 +713,7 @@ trait_repugnant2 = {
 trait_repugnant3 = {
 	cost = -3
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_repugnant3.dds"
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant2"  "trait_repugnant1" }
 	
 	modifier = {
@@ -696,18 +724,21 @@ trait_repugnant3 = {
 trait_fleeting1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_fleeting1.dds"
 	modifier = { leader_age = -10 }
 	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting2" "trait_fleeting3" }
 }
 trait_fleeting2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_fleeting2.dds"
 	modifier = { leader_age = -20 }
 	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting1" "trait_fleeting3" }
 }
 trait_fleeting3 = {
 	cost = -4
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_fleeting3.dds"
 	modifier = { leader_age = -40 }
 	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting2" "trait_fleeting1" }
 }
@@ -715,6 +746,7 @@ trait_fleeting3 = {
 trait_wasteful1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_wasteful1.dds"
 	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
 	modifier = {
 		pop_consumer_goods_mult = 0.25
@@ -724,6 +756,7 @@ trait_wasteful1 = {
 trait_wasteful2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_wasteful2.dds"
 	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
 	modifier = {
 		pop_consumer_goods_mult = 0.5
@@ -733,6 +766,7 @@ trait_wasteful2 = {
 trait_wasteful3 = {
 	cost = -3
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_wasteful3.dds"
 	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
 	modifier = {
 		pop_consumer_goods_mult = 1
@@ -743,6 +777,7 @@ trait_wasteful3 = {
 trait_weakwilled1 = {
 	cost = -1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_weakwilled1.dds"
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
 	modifier = {
 		pop_fortification_defense = -0.25
@@ -754,6 +789,7 @@ trait_weakwilled1 = {
 trait_weakwilled2 = {
 	cost = -2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_weakwilled2.dds"
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
 	modifier = {
 		pop_fortification_defense = -0.5
@@ -765,6 +801,7 @@ trait_weakwilled2 = {
 trait_weakwilled3 = {
 	cost = -4
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_weakwilled3.dds"
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
 	modifier = {
 		pop_fortification_defense = -0.75
@@ -797,6 +834,7 @@ trait_smart1 = {
 	initial = yes
 	randomized = no
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_smart1.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart2" "trait_smart3" "trait_nerve_stapled" }
 	modifier = {
 		tile_resource_engineering_research_mult = 0.25
@@ -810,6 +848,7 @@ trait_smart2 = {
 	initial = yes
 	randomized = no
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_smart2.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart1" "trait_smart3" "trait_nerve_stapled" }
 	modifier = {
 		tile_resource_engineering_research_mult = 1
@@ -824,6 +863,7 @@ trait_smart3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_smart3.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart2" "trait_smart1" "trait_nerve_stapled" }
 	modifier = {
 		tile_resource_energy_mult = 0.25
@@ -842,6 +882,7 @@ trait_agrarian1 = {
 	cost = 1
 	initial = yes
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_agrarian1.dds"
 	modifier = {
 		pop_food_req_mult = -0.33
 	}
@@ -851,6 +892,7 @@ trait_agrarian2 = {
 	cost = 2
 	initial = yes
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_agrarian2.dds"
 	modifier = {
 		pop_food_req_mult = -0.5
 	}
@@ -862,6 +904,7 @@ trait_agrarian3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_agrarian3.dds"
 	modifier = {
 		pop_food_req_mult = -1
 	}
@@ -872,6 +915,7 @@ trait_robust1 = {
 	cost = 3
 	initial = yes
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_robust1.dds"
 	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust2" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
 	
 	modifier = {
@@ -883,6 +927,7 @@ trait_robust2 = {
 	cost = 5
 	initial = yes
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_robust2.dds"
 	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust1" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
 	
 	modifier = {
@@ -896,6 +941,7 @@ trait_robust3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_robust3.dds"
 	opposites = {  "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust2" "trait_robust1" "trait_weak1" "trait_weak2" "trait_weak3" }
 	
 	modifier = {
@@ -907,6 +953,7 @@ trait_robust3 = {
 trait_thrifty1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_thrifty1.dds"
 	
 	modifier = {
 		tile_resource_energy_mult = 0.15
@@ -917,6 +964,7 @@ trait_thrifty1 = {
 trait_thrifty2 = {
 	cost = 2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_thrifty2.dds"
 	
 	modifier = {
 		tile_resource_energy_mult = 0.3
@@ -930,6 +978,7 @@ trait_thrifty3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_thrifty3.dds"
 	
 	modifier = {
 		tile_resource_energy_mult = 0.75
@@ -941,6 +990,7 @@ trait_thrifty3 = {
 trait_rapid_breeders1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_rapid_breeders1.dds"
 	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders2" "trait_rapid_breeders3" }
 	
 	modifier = {
@@ -950,6 +1000,7 @@ trait_rapid_breeders1 = {
 trait_rapid_breeders2 = {
 	cost = 4
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_rapid_breeders2.dds"
 	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders1" "trait_rapid_breeders3" }
 	
 	modifier = {
@@ -962,6 +1013,7 @@ trait_rapid_breeders3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_rapid_breeders3.dds"
 	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders2" "trait_rapid_breeders1" }
 	
 	modifier = {
@@ -972,6 +1024,7 @@ trait_rapid_breeders3 = {
 trait_gifted1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_gifted1.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted2" }
 	
 	modifier = {
@@ -984,6 +1037,7 @@ trait_gifted2 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_gifted2.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted1" }
 	
 	modifier = {
@@ -994,6 +1048,7 @@ trait_gifted2 = {
 trait_strong1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_strong1.dds"
 	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong2" "trait_strong3" "trait_frail1" "trait_frail2" "trait_frail3" }
 	
 	modifier = {
@@ -1005,6 +1060,7 @@ trait_strong1 = {
 trait_strong2 = {
 	cost = 3
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_strong2.dds"
 	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong1" "trait_strong3" "trait_frail1" "trait_frail2" "trait_frail3" }
 	
 	modifier = {
@@ -1019,6 +1075,7 @@ trait_strong3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_strong3.dds"
 	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong2" "trait_strong1" "trait_frail1" "trait_frail2" "trait_frail3" }
 	
 	modifier = {
@@ -1042,6 +1099,7 @@ trait_nomadic = {
 trait_communal1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_communal1.dds"
 	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal2" "trait_communal3" }
 	
 	valid_for_all_ethics = no
@@ -1072,6 +1130,7 @@ trait_communal1 = {
 trait_communal2 = {
 	cost = 2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_communal2.dds"
 	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal1" "trait_communal3" }
 	
 	valid_for_all_ethics = no
@@ -1105,6 +1164,7 @@ trait_communal3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_communal3.dds"
 	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal2" "trait_communal1" }
 	
 	valid_for_all_ethics = no
@@ -1136,6 +1196,7 @@ trait_communal3 = {
 trait_charismatic1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_charismatic1.dds"
 	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic2" "trait_charismatic3" }
 	
 	modifier = {
@@ -1145,6 +1206,7 @@ trait_charismatic1 = {
 trait_charismatic2 = {
 	cost = 2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_charismatic2.dds"
 	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic1" "trait_charismatic3" }
 	
 	modifier = {
@@ -1157,6 +1219,7 @@ trait_charismatic3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_charismatic3.dds"
 	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic2" "trait_charismatic1" }
 	
 	modifier = {
@@ -1167,6 +1230,7 @@ trait_charismatic3 = {
 trait_conformists1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_conformists1.dds"
 	modifier = { pop_government_ethic_attraction = 0.25 }
 	
 	valid_for_all_ethics = no
@@ -1193,6 +1257,7 @@ trait_conformists1 = {
 trait_conformists2 = {
 	cost = 2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_conformists2.dds"
 	modifier = { pop_government_ethic_attraction = 0.5 }
 	
 	valid_for_all_ethics = no
@@ -1222,6 +1287,7 @@ trait_conformists3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_conformists3.dds"
 	modifier = { pop_government_ethic_attraction = 4 }
 	
 	valid_for_all_ethics = no
@@ -1249,12 +1315,14 @@ trait_conformists3 = {
 trait_venerable1 = {
 	cost = 2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_venerable1.dds"
 	modifier = { leader_age = 50 }
 	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable2" "trait_venerable3" "trait_frail2" "trait_frail3" }
 }
 trait_venerable2 = {
 	cost = 4
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_venerable2.dds"
 	modifier = { leader_age = 200 }
 	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable1" "trait_venerable3" "trait_frail2" "trait_frail3" }
 }
@@ -1264,6 +1332,7 @@ trait_venerable3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_venerable3.dds"
 	modifier = { leader_age = 2000 }
 	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable2" "trait_venerable1" "trait_frail2" "trait_frail3" }
 }
@@ -1271,6 +1340,7 @@ trait_venerable3 = {
 trait_resilient1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_resilient1.dds"
 	modifier = {
 		garrison_health = 1.0
 		army_damage_mult = 0.1
@@ -1282,6 +1352,7 @@ trait_resilient1 = {
 trait_resilient2 = {
 	cost = 2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_resilient2.dds"
 	modifier = {
 		garrison_health = 2.5
 		army_damage_mult = 0.1
@@ -1296,6 +1367,7 @@ trait_resilient3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_resilient3.dds"
 	modifier = {
 		garrison_health = 5.0
 		army_damage_mult = 0.1
@@ -1308,6 +1380,7 @@ trait_resilient3 = {
 trait_conservational1 = {
 	cost = 1
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_conservational1.dds"
 	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational2" "trait_conservational3" }
 	modifier = {
 		pop_consumer_goods_mult = -0.2
@@ -1316,6 +1389,7 @@ trait_conservational1 = {
 trait_conservational2 = {
 	cost = 2
 	randomized = no
+	icon = "gfx/interface/icons/traits/trait_conservational2.dds"
 	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational1" "trait_conservational3" }
 	modifier = {
 		pop_consumer_goods_mult = -0.4
@@ -1327,6 +1401,7 @@ trait_conservational3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_conservational3.dds"
 	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational2" "trait_conservational1" }
 	modifier = {
 		pop_consumer_goods_mult = -0.75
@@ -1343,6 +1418,7 @@ trait_genemod_pest = {
 	randomized = no
 	modification = yes
 	advanced_trait = no
+	icon = "gfx/interface/icons/traits/trait_pest.dds"
 	modifier = {
 		pop_happiness = -0.05
 		pop_growth_req_mult = -0.9
@@ -1360,6 +1436,7 @@ trait_custom_testing = {
 	initial = no
 	randomized = no
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_cheat.dds"
 	opposites = {  }
 	modifier = {
 		leader_age = 3000
@@ -1384,6 +1461,7 @@ trait_genemod_enraged = {
 	modification = yes
 	advanced_trait = yes
 	cost = 2
+	icon = "gfx/interface/icons/traits/trait_enraged.dds"
 	modifier = {
 		pop_government_ethic_attraction = -1
 		pop_happiness = -0.8
@@ -1405,6 +1483,7 @@ trait_genemod_lobotomized = {
 	modification = yes
 	forced_happiness = yes
 	cost = -2
+	icon = "gfx/interface/icons/traits/trait_lobotomized.dds"
 	modifier = {
 		tile_resource_food_mult = -4
 		tile_resource_minerals_mult = -4
@@ -1438,6 +1517,7 @@ trait_delicious2 = {
 	initial = no
 	randomized = no
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_delicious2.dds"
 	modifier = {
 		pop_food_mult = 3
 		army_damage_mult = -0.25
@@ -1451,6 +1531,7 @@ trait_constant_pain = {
 	initial = no
 	randomized = no
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_pain.dds"
 	modifier = {
 		leader_age = 2000
 		pop_happiness = -4
@@ -1493,6 +1574,7 @@ trait_crippled = {
 	initial = no
 	randomized = no
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_crippled.dds"
 	modifier = {
 		pop_other_species_happiness = -0.05
 		tile_resource_energy_mult = -0.25
@@ -1517,6 +1599,7 @@ trait_lingua_idumentis = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_lingua.dds"
 	modifier = {
 		pop_other_species_happiness = -0.1
 	}
@@ -1528,6 +1611,7 @@ trait_olfactory = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_olfactory.dds"
 	modifier = {
 		pop_other_species_happiness = -0.1
 	}
@@ -1536,9 +1620,10 @@ trait_olfactory = {
 trait_weirdass = {
 	cost = 200
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" }
-	initial = yes
+	initial = no
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_cheat.dds"
 	modifier = {
 		# no modifier but should add 2000% fire rate to ships
 	}
@@ -1550,6 +1635,7 @@ trait_euphoria = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_euphoria.dds"
 	modifier = {
 		pop_happiness = 0.5
 		army_morale = 4
@@ -1565,6 +1651,7 @@ trait_turtles = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_turtles.dds"
 	modifier = {
 		garrison_health = 1
 		pop_fortification_defense = 2
@@ -1577,6 +1664,7 @@ trait_utterly_terrifying = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_utterly_terrifying.dds"
 	modifier = {
 		army_attack_morale_mult = 1
 		pop_other_species_happiness = -0.25
@@ -1589,6 +1677,7 @@ trait_sociology_elitists = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_sociology_elitists.dds"
 	modifier = {
 		tile_resource_society_research_mult = 1.5
 		tile_resource_physics_research_mult = -0.75
@@ -1603,6 +1692,7 @@ trait_engineering_elitists = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_engineering_elitists.dds"
 	modifier = {
 		tile_resource_society_research_mult = -0.75
 		tile_resource_physics_research_mult = -0.75
@@ -1617,6 +1707,7 @@ trait_physics_elitists = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_physics_elitists.dds"
 	modifier = {
 		tile_resource_society_research_mult = -0.75
 		tile_resource_physics_research_mult = 1.5
@@ -1631,6 +1722,7 @@ trait_irradiated = {
 	initial = yes
 	randomized = no
 	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_irradiated.dds"
 	modifier = {
 		pc_nuked_habitability = 0.25
 	}
@@ -1642,6 +1734,7 @@ trait_independent = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_independent.dds"
 	modifier = {
 			garrison_health = 2
 			pop_government_ethic_attraction = -0.5
@@ -1655,6 +1748,7 @@ trait_timid = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_timid.dds"
 	modifier = {
 			garrison_health = -0.75
 			pop_government_ethic_attraction = 0.5
@@ -1669,6 +1763,7 @@ trait_silent_observers = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_silent_observers.dds"
 	modifier = {
 	}
 }
@@ -1679,6 +1774,7 @@ trait_egg_born = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_egg_born.dds"
 	modifier = {
 	}
 }
@@ -1690,6 +1786,7 @@ trait_hoarders = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_hoarders.dds"
 	modifier = {
 		tile_resource_energy_mult = -0.1
 		tile_resource_minerals_mult = -0.1
@@ -1702,6 +1799,7 @@ trait_curious = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_curious.dds"
 	modifier = {
 	}
 }
@@ -1712,17 +1810,33 @@ trait_uncreative = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_uncreative.dds"
 	modifier = {
 	}
 }
 
 trait_airborne = {
-	cost = 2
-	opposites = {  }
+	cost = 3
+	opposites = { "trait_subterranean" }
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_airborne.dds"
 	modifier = {
+	}
+}
+
+trait_subterranean = {
+	cost = 4
+	opposites = { "trait_airborne" }
+	initial = yes
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_subterranean.dds"
+	modifier = {
+		pop_fortification_defense = 2
+		garrison_health = 1
+		tile_resource_minerals_mult = 0.25
 	}
 }
 
@@ -1740,6 +1854,7 @@ trait_titanic = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_titanic.dds"
 	modifier = {
 		pop_food_req_mult = 10
 		tile_resource_energy_mult = 5
@@ -1762,6 +1877,7 @@ trait_tiny = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_tiny.dds"
 	modifier = {
 		pop_food_req_mult = -0.75
 		tile_resource_energy_mult = -0.8
@@ -1783,6 +1899,7 @@ trait_lithovore = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_lithovore.dds"
 	modifier = {
 		pop_food_req_mult = -10
 		pop_consumer_goods_mult = 1
@@ -1795,6 +1912,7 @@ trait_energy_lifeform = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_energy_lifeform.dds"
 	modifier = {
 		pop_food_req_mult = -10
 		country_resource_energy_mult = -0.2
@@ -1808,6 +1926,7 @@ trait_precursor1 = {
 	initial = no
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_precursor1.dds"
 	modifier = {
 	}
 }
@@ -1818,6 +1937,7 @@ trait_shield_obsessed = {
 	initial = yes
 	randomized = no
 	modification = no
+	icon = "gfx/interface/icons/traits/trait_shield_obsessed.dds"
 	modifier = {
 	}
 }

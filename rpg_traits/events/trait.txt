@@ -366,3 +366,24 @@ event = {
         }
     }
 }
+planet_event = {
+    id = trait.8321
+    hide_window = yes
+
+    trigger = {
+        any_pop = {
+            has_trait = trait_subterranean
+            is_being_purged = no
+			is_enslaved = no
+        }
+        planet_size < 25
+    }
+
+    mean_time_to_happen = {
+        moons = 30
+    }
+
+    immediate = {
+        change_planet_size = 1
+    }
+}
