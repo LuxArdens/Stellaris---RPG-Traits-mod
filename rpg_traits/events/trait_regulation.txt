@@ -278,10 +278,10 @@ event = {
 				}
 			}
 			random_list = { # decadent?
-				90 = {
+				10 = {
 					country_event = { id = trait_regulation.162 }
 				}
-				10 = {
+				90 = {
 					# no traits gained
 				}
 			}
