@@ -452,7 +452,7 @@ trait_dumb1 = {
 	}
 }
 trait_dumb2 = {
-	cost = -5
+	cost = -6
 	randomized = no
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb1" "trait_dumb3" }
 	
@@ -468,7 +468,7 @@ trait_dumb2 = {
 	}
 }
 trait_dumb3 = {
-	cost = -8
+	cost = -10
 	randomized = no
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb2" "trait_dumb1" }
 	

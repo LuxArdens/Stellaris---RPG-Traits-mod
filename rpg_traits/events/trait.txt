@@ -300,3 +300,69 @@ event = {
         }
     }
 }
+event = {
+    id = "trait.16"
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				has_trait = trait_dumb2
+            }
+            add_modifier = {
+                modifier = trait_dumb2
+                days = -1
+            }
+        }
+    }
+}
+event = {
+    id = "trait.17"
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				has_trait = trait_dumb3
+            }
+            add_modifier = {
+                modifier = trait_dumb3
+                days = -1
+            }
+        }
+    }
+}
+event = {
+    id = "trait.1601"
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				NOT = { has_trait = trait_dumb2 }
+            }
+            remove_modifier = {
+                modifier = trait_dumb2
+            }
+        }
+    }
+}
+event = {
+    id = "trait.1701"
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				NOT = { has_trait = trait_dumb3 }
+            }
+            remove_modifier = {
+                modifier = trait_dumb3
+            }
+        }
+    }
+}

@@ -8,6 +8,39 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
+		every_country  = { # decadent
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = {
+						is_country_type = tiyanki
+						is_country_type = neutral_faction
+						is_country_type = faction
+						is_country_type = pirate
+						is_country_type = nomad #triggered in a special case event
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+						#is_country_type = fallen_empire # lazy, will edit later
+					}
+					OR = { # only races that can enslave shit
+						has_ethic = ethic_authoritarian
+						has_ethic = ethic_fanatic_authoritarian
+						has_ethic = ethic_xenophobe
+						has_ethic = ethic_fanatic_xenophobe
+					}
+				}
+			}
+			random_list = {
+				25 = {
+					country_event = { id = trait_regulation.162 }
+				}
+				75 = {
+					# no traits gained
+				}
+			}
+		}
 		every_country = {
 			limit = {
 				AND = {
@@ -274,14 +307,6 @@ event = {
 					country_event = { id = trait_regulation.161 }
 				}
 				44 = {
-					# no traits gained
-				}
-			}
-			random_list = { # decadent?
-				10 = {
-					country_event = { id = trait_regulation.162 }
-				}
-				90 = {
 					# no traits gained
 				}
 			}
@@ -1932,17 +1957,17 @@ country_event = {
 	immediate = {
 		every_owned_pop = {
 			limit = {
-				NOR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-					has_trait = trait_mechanical
-					has_trait = trait_presentient_proles
-					has_trait = trait_presentient_starborn
-					has_trait = trait_presentient_earthbound
-					has_trait = trait_presentient_natural_intellectuals
-					has_trait = trait_presentient_brutes
-					has_trait = trait_presentient_conservative
-					has_trait = trait_presentient_irradiated
+				AND = {
+					NOR = {
+						has_trait = trait_mechanical
+						has_trait = trait_presentient_proles
+						has_trait = trait_presentient_starborn
+						has_trait = trait_presentient_earthbound
+						has_trait = trait_presentient_natural_intellectuals
+						has_trait = trait_presentient_brutes
+						has_trait = trait_presentient_conservative
+						has_trait = trait_presentient_irradiated
+					}
 				}
 			}
 			modify_species = {

@@ -70,11 +70,13 @@ trait_effects_energy_lifeform = {
 
 trait_curious = {
 	num_tech_alternatives_add = 2
-	ship_anomaly_generation_chance_mult = 0.5
+	ship_anomaly_generation_chance_mult = 1
+	science_ship_survey_speed = -0.5
 }
 trait_uncreative = {
 	num_tech_alternatives_add = -10
 	ship_anomaly_generation_chance_mult = -0.5
+	science_ship_survey_speed = 1
 }
 
 egg_born = {
@@ -92,6 +94,14 @@ turtles = {
 	shipclass_military_station_hit_points_mult = 5.0
 	shipclass_military_station_build_cost_mult = -0.8
 	navy_size_mult = -0.9
+}
+
+trait_dumb2 = {
+	all_technology_research_speed = -0.25
+}
+
+trait_dumb3 = {
+	all_technology_research_speed = -0.5
 }
 
 sociology_elitists = {

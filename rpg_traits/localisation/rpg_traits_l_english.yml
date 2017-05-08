@@ -163,7 +163,7 @@
  trait_rapid_breeders2_desc:0 "§LThis species doesn't really breed like rabbits. They breed somewhat faster.§!\n"
  
  trait_rapid_breeders3:0 "Machine-assisted reproduction"
- trait_rapid_breeders3_desc:0 "§LArtifical wombs allow combined with neural implants allow for explosive population growth. Unlike clones these are genetically unique.§!\n"
+ trait_rapid_breeders3_desc:0 "§LArtifical wombs combined with neural implants allow for explosive population growth. Unlike clones these are genetically unique.§!\n"
  
  trait_gifted1:0 "Talented"
  trait_gifted1_desc:0 "§LThis species has a great amount of variance. Consequently there are many individuals with very particular talents or skill sets.§!\n"
@@ -307,10 +307,10 @@
  trait_hoarders_desc:0 "§LLike dragons, this species hoards its riches into endlessly large piles. The logistics of storing so much material reduce their production efficiency somewhat though.\n\n +200000 storage cap \n\n tiny production penalty§!\n"
  
  trait_curious:0 "Curious"
- trait_curious_desc:0 "§LThis species is naturally curious and creative thorough in their searches. They find more anomalies and think of alternative solutions.\n\n 2 research alternatives +50% anomaly chance§!\n"
+ trait_curious_desc:0 "§LThis species is naturally curious and creative, making them very thorough in their searches. They find more anomalies and think of alternative solutions.\n\n 2 research alternatives +100% anomaly chance -50% survey speed§!\n"
  
  trait_uncreative:0 "Uncreative"
- trait_uncreative_desc:0 "§LThis species is bland and boring. They have a distinctive lack of love for exploration and are extremely inept at finding innovative solutions to problems.§!\n"
+ trait_uncreative_desc:0 "§LThis species has no creativity and exploration bores them. They are extremely inept at finding innovative solutions to problems and their usual interstellar exploration protocol is to take one picture and leave.\n\n -10 research alternatives -50% anomaly chance +100% survey speed§!\n"
  
  trait_airborne:0 "Airborne"
  trait_airborne_desc:0 "§L"I believe I can fly... -Wait what? I have no Avian portrait? Well, just imagine I have one then." - This species is comfortable with 3 dimensional engagements and performs better in stellar combat as well.\n\n ship_fire_rate_mult = 0.1 \n\n ship_tracking_add = 5 §!\n"

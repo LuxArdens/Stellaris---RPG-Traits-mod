@@ -22,6 +22,10 @@ on_press_begin = {
 		trait.13
 		trait.14
 		trait.15
+		trait.16
+		trait.17
+		trait.1601
+		trait.1701
 	}
 }
 
@@ -42,6 +46,10 @@ on_modification_complete = {
 		trait.13
 		trait.14
 		trait.15
+		trait.16
+		trait.17
+		trait.1601
+		trait.1701
 	}
 }
 
