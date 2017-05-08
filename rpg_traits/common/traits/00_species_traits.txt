@@ -1665,7 +1665,7 @@ trait_timid = {
 
 trait_silent_observers = {
 	cost = 2
-	opposites = {  }
+	opposites = { "trait_turtles" "trait_titanic" "trait_tiny" }
 	initial = yes
 	randomized = no
 	modification = no
@@ -1736,7 +1736,7 @@ trait_airborne = {
 
 trait_titanic = {
 	cost = 4
-	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_tiny" }
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_tiny" "trait_turtles" "trait_silent_observers" }
 	initial = yes
 	randomized = no
 	modification = no
