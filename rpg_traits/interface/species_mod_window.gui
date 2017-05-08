@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "species_mod_window"
 		position = { x = 0 y = -10 }
-		size = { width = 814 height = 996 }
+		size = { width = 800 height = 800 }
 		orientation = center
 		origo = center
 		moveable = yes
@@ -52,7 +52,7 @@ guiTypes = {
 			font = "malgun_goth_24"
 			position = { x = 20 y = 5 }
 			maxWidth = 344
-			maxHeight = 22
+			maxHeight = 22	`
 			fixedSize = yes
 			format = left
 			alwaysTransparent = yes
@@ -94,7 +94,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "has_traits_frame_box"
-			size = { width = 390 height = 50 }
+			size = { width = 390 height = 100 }
 			position = { x = 10 y = 170 }
 			
 				background = {
@@ -117,14 +117,14 @@ guiTypes = {
 			gridBoxType = {
 				name = "traits"
 				slotSize = { width = 42 height = 45 }
-				max_slots_horizontal = 6
+				max_slots_horizontal = 9
 				format = "UPPER_LEFT"
 			}
 		}
 		instantTextBoxType = {
 			name = "planet_traits_header"
 			font = "cg_16b"
-			position = { x = 20 y = 228 }
+			position = { x = 20 y = 278 }
 			maxWidth = 344
 			maxHeight = 22
 			fixedSize = yes
@@ -134,7 +134,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "planet_class_traits_frame_box"
 			size = { width = 390 height = 50 }
-			position = { x = 10 y = 245 }
+			position = { x = 10 y = 295 }
 			
 				background = {
 					name = "has_traits_frame"
@@ -145,7 +145,7 @@ guiTypes = {
 			name = "planet_class_traits_container"
 			size = { width = 322 height = 84 }
 			verticalScrollbar = "right_vertical_slider"
-			position = { x = 17 y = 251}
+			position = { x = 17 y = 301}
 			
 			#background = {
 			#	name = "current_traits_background"
@@ -180,8 +180,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "possible_traits_frame_box"
-			size = { width = 390 height = 210 }
-			position = { x = 10 y = 320 }
+			size = { width = 390 height = 410 }
+			position = { x = 10 y = 336 }
 			
 				background = {
 					name = "possible_traits_frame"
@@ -191,9 +191,9 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "available_traits_container"
-			size = { width = 272 height = 126 }
+			size = { width = 272 height = 426 }
 			verticalScrollbar = "right_vertical_slider"
-			position = { x = 17 y = 325 }
+			position = { x = 17 y = 345 }
 			
 			#background = {
 			#	name = "available_traits_background"
@@ -212,7 +212,7 @@ guiTypes = {
 			name = "species_mod_footer"
 			font = "cg_16b"
 			text = "SPECIES_MOD_SELECT_TRAITS"
-			position = { x = -58 y = -292 }
+			position = { x = -58 y = -192 }
 			orientation = "LOWER_LEFT"
 			maxWidth = 360
 			maxHeight = 30

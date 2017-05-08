@@ -1,4 +1,4 @@
 ﻿	NSpecies = {
-		MAX_TRAIT_POINTS 					= 600			# Free trait points at start
+		MAX_TRAIT_POINTS 					= 8			# Free trait points at start
 		MAX_TRAITS 							= 80		# Max racial traits. If annoyed at the amount of traits random civs have, reduce this number to something more reasonable, but standard it is set as high to allow lots of customization
 	}
