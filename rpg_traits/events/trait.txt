@@ -380,7 +380,7 @@ planet_event = {
     }
 
     mean_time_to_happen = {
-        moons = 30
+        months = 30
     }
 
     immediate = {
