@@ -25,9 +25,9 @@ trait_titanic = {
 	planet_army_build_speed_mult = -0.8
 	
 	# Huge ships
-	shipsize_colonizer_construction_speed_mult = -0.5
-	shipsize_colonizer_build_cost_mult = 5
-	spaceport_ship_build_speed_mult = -0.95 # this combined with the other modifier means you can't reasonably build colony ships until a level 2 spaceport is built
+	shipsize_colonizer_construction_speed_mult = -0.25 # downtuned penalty a bit
+	shipsize_colonizer_build_cost_mult = 1 # downtuned penalty a bit
+	spaceport_ship_build_speed_mult = -0.90 # this combined with the other modifier means you can't reasonably build colony ships until a level 2 spaceport is built
 	spaceport_ship_build_cost_mult = 5
 	ship_speed_mult = -0.5
 	ship_combat_speed_mult = -0.5
@@ -45,7 +45,7 @@ trait_titanic = {
 	ship_tracking_add = -5
 	ship_evasion_add = -25
 	navy_size_mult = -0.8
-	ship_weapon_range_mult = 0.25
+	ship_weapon_range_mult = 1
 	
 	
 	ship_shield_regen_mult = 4
@@ -105,6 +105,10 @@ turtles = {
 	navy_size_mult = -0.9
 }
 
+trait_dumb1 = {
+	all_technology_research_speed = -0.1
+}
+
 trait_dumb2 = {
 	all_technology_research_speed = -0.25
 }
@@ -113,9 +117,21 @@ trait_dumb3 = {
 	all_technology_research_speed = -0.5
 }
 
+trait_smart1 = {
+	all_technology_research_speed = 0.11
+}
+
+trait_smart2 = {
+	all_technology_research_speed = 0.33
+}
+
+trait_smart3 = {
+	all_technology_research_speed = 1
+}
+
 sociology_elitists = {
-	country_resource_influence_mult = 0.5
-	tile_resource_energy_mult = 0.5
+	country_resource_influence_mult = 0.25
+	tile_resource_influence_mult = 0.5
 }
 
 engineering_elitists = {
@@ -132,20 +148,20 @@ physics_elitists = {
 
 trait_tiny = {
 	# tiny buildings, tile blockers are a big problem
-	planet_building_cost_mult = -0.8
+	planet_building_cost_mult = -0.7 # can get free buildings by stacking modifiers. I don't care.
 	planet_clear_blocker_time_mult = 1
 	planet_clear_blocker_cost_mult = 1
 	
 	# tiny soldiers
-	army_upkeep_mult = -0.75
-	planet_army_build_cost_mult = -0.75
+	army_upkeep_mult = -0.7
+	planet_army_build_cost_mult = -0.7
 	planet_army_build_speed_mult = 2
 	
 	# tiny ships
-	shipsize_colonizer_construction_speed_mult = 3
-	shipsize_colonizer_build_cost_mult = -0.1 # combined with general bonus means (almost) free colony ships
-	spaceport_ship_build_speed_mult = 3 
-	spaceport_ship_build_cost_mult = -0.75
+	shipsize_colonizer_construction_speed_mult = 1
+	#shipsize_colonizer_build_cost_mult = -0.25 # combined with general bonus means (almost) free colony ships
+	spaceport_ship_build_speed_mult = 3
+	spaceport_ship_build_cost_mult = -0.6 # enough to prevent free ships?
 	ship_speed_mult = 1
 	ship_combat_speed_mult = 1
 	ship_windup_mult = -0.2

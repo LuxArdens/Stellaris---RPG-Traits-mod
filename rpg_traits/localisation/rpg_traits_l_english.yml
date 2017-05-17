@@ -40,22 +40,22 @@
  trait_weak3_desc:0 "§LThis species is too weak to move without technological aid. They have no strength in their bodies to perform even the lightest of tasks.§!\n"
  
  trait_dumb1:0 "Slow"
- trait_dumb1_desc:0 "§LNot the brightest minds in the galaxy, this species struggles with logic and advanced reasoning.§!\n"
+ trait_dumb1_desc:0 "§LNot the brightest minds in the galaxy, this species struggles with logic and advanced reasoning.\n\n Additional -10% global research speed!§!\n"
  
  trait_dumb2:0 "Dumb"
- trait_dumb2_desc:0 "§LThis species is incredibly dim-witted. Their memory is very short, they are slow to learn anything, slow to reason and only a small percentage of their population can perform advanced tasks such as research, long term planning, and... math.§!\n"
+ trait_dumb2_desc:0 "§LThis species is incredibly dim-witted. Their memory is very short, they are slow to learn anything, slow to reason and only a small percentage of their population can perform advanced tasks such as research, long term planning, and... math.\n\n Additional -25% global research speed!§!\n"
  
  trait_dumb3:0 "Retarded"
- trait_dumb3_desc:0 "§LThis species is utterly mentally retarded. How they ever achieved spaceflight is a great mystery and one that will remain so, because they were largely incapable of writing down their own history. Even the brightest among them suffer from a terrible memory and can barely perform abstract thinking. Most members are more akin to smart animals than truly sentient creatures.§!\n"
+ trait_dumb3_desc:0 "§LThis species is utterly mentally retarded. How they ever achieved spaceflight is a great mystery and one that will remain so, because they were largely incapable of writing down their own history. Even the brightest among them suffer from a terrible memory and can barely perform abstract thinking. Most members are more akin to smart animals than truly sentient creatures.\n\n Additional -50% global research speed!§!\n"
  
  trait_lazy1:0 "Unmotivated"
- trait_lazy1_desc:0 "§LWhy work?.§!\n"
+ trait_lazy1_desc:0 "§LWhy work?§!\n"
  
  trait_lazy2:0 "Lazy"
- trait_lazy2_desc:0 "§LWhy wake up?.§!\n"
+ trait_lazy2_desc:0 "§LWhy wake up?§!\n"
  
  trait_lazy3:0 "Slothful"
- trait_lazy3_desc:0 "§LWhy?... Ah whatever.§!\n"
+ trait_lazy3_desc:0 "§LWhy?... Ah whatever§!\n"
  
  trait_badfarmers1:0 "Carnivorous"
  trait_badfarmers1_desc:0 "§LThis species can only eat meat, and requires more farms to feed their population.§!\n"
@@ -112,13 +112,13 @@
  trait_wasteful3_desc:0 "§LThis species has an intolerance to anything but the finest food and the most priceless items covered in rare metals..§!\n"
  
  trait_weakwilled1:0 "Flexible"
- trait_weakwilled1_desc:0 "§L"We're not surrendering; we're doing a tactical power exchange!".§!\n"
+ trait_weakwilled1_desc:0 "§L"We're not retreating; we're just advancing in a different direction!".§!\n"
  
- trait_weakwilled2:0 "Lethargic"
- trait_weakwilled2_desc:0 "§L"Giving up is so much easier."§!\n"
+ trait_weakwilled2:0 "Cowards"
+ trait_weakwilled2_desc:0 "§L"We're not surrendering; we're just doing a tactical power exchange!"§!\n"
  
- trait_weakwilled3:0 "Losers"
- trait_weakwilled3_desc:0 "§L"Why fight? We'll lose anyway."§!\n"
+ trait_weakwilled3:0 "Lethargic"
+ trait_weakwilled3_desc:0 "§L"Fight. back?!... Are you mad?! What if they shoot back?"§!\n"
  
  trait_smart1:0 "Smart"
  trait_smart1_desc:0 "§LThis species is rather bright. Even average members are known to be reasonable and quick to learn.§!\n"
@@ -283,7 +283,7 @@
  trait_utterly_terrifying_desc:0 "§LThe stuff of nightmares, these ghostly critters are masters of dread and psychological warfare. They instill fear in even the bravest of soldiers.§!\n"
  
  trait_sociology_elitists:0 "Liberal Arts"
- trait_sociology_elitists_desc:0 "§LThis species pursues the biological studies and the liberal arts above all. They don't mind being cashier for the rest of their live either.\n\n +50% influence empire-wide +50% tile influence output §!\n"
+ trait_sociology_elitists_desc:0 "§LThis species pursues the biological studies and the liberal arts above all. They don't mind being cashier for the rest of their live either.\n\n +25% influence empire-wide +50% tile influence output §!\n"
  
  trait_engineering_elitists:0 "Engineers"
  trait_engineering_elitists_desc:0 "§LObsessed with machines and materials, this species has little interest in things that grow or pointless theories.\n\n -25% building cost, +20% ship build speed, +20% ship hitpoints, +20% ship armor§!\n"
@@ -313,10 +313,10 @@
  trait_uncreative_desc:0 "§LThis species has no creativity and exploration bores them. They are extremely inept at finding innovative solutions to problems and their usual interstellar exploration protocol is to take one picture and leave.\n\n -10 research alternatives -50% anomaly chance +100% survey speed§!\n"
  
  trait_airborne:0 "Airborne"
- trait_airborne_desc:0 "§L"I believe I can fly... -Wait what? I have no Avian portrait? Well, just imagine I have one then." - This species is comfortable with 3 dimensional engagements and performs better in stellar combat as well.\n\n ship_fire_rate_mult = 0.1 \n\n ship_tracking_add = 5 §!\n"
+ trait_airborne_desc:0 "§L"I believe I can fly... -Wait what? I have no Avian portrait? Well, just imagine I have one then." - This species is comfortable with 3 dimensional engagements and performs better in stellar combat as well.\n\n ship_fire_rate_mult = 0.2 \n\n ship_tracking_add = 10 \n\n ship_evasion_add = 10 §!\n"
  
  trait_titanic:0 "Titanic"
- trait_titanic_desc:0 "§L"Rise up! Rise up! Rise up you sleeping giant!"\n\n Titanic lifeforms, towering above the trees. Their buildings, tools, weapons and ships fit their size, as does their stomach.§!\n"
+ trait_titanic_desc:0 "§L"Rise up! Rise up! Rise up you sleeping giant!"\n\n Titanic lifeforms, towering above the trees. Their buildings, tools, weapons and ships fit their size, as do their stomachs.§!\n"
  
  trait_shield_obsessed:0 "Obsessed with shields"
  trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +400% shield power, -75% hull integrity §!\n"
