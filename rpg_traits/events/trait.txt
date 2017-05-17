@@ -377,6 +377,7 @@ planet_event = {
 			is_enslaved = no
         }
         planet_size < 25
+		NOT = { is_planet_class = pc_habitat }
     }
 
     mean_time_to_happen = {
