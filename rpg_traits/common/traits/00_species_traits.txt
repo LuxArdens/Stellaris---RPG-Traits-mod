@@ -1943,6 +1943,59 @@ trait_precursor1 = {
 	}
 }
 
+trait_positive_doom = {
+	cost = 0
+	opposites = { "trait_negative_doom" }
+	initial = no
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_positive_doom.dds"
+	modifier = {
+		garrison_health = -2
+		army_morale = -2
+		army_damage_mult = -2
+		pop_fortification_defense = -2
+		pop_happiness = -0.2
+		
+	}
+}
+
+trait_negative_doom = {
+	cost = 0
+	opposites = { "trait_positive_doom" }
+	initial = no
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_negative_doom.dds"
+	modifier = {
+		garrison_health = 2
+		army_morale = 2
+		army_damage_mult = 2
+		pop_fortification_defense = 2
+		pop_happiness = 0.2
+	}
+}
+
+trait_doom_unleashed = {
+	cost = 0
+	opposites = {  }
+	initial = no
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_negative_doom.dds"
+	modifier = {
+		garrison_health = -2
+		army_morale = -2
+		army_damage_mult = -2
+		pop_fortification_defense = -20
+		pop_happiness = -0.5
+		pop_other_species_happiness = -1
+		pop_food_req_mult = 5
+		pop_government_ethic_attraction = -5
+		pop_environment_tolerance = -0.5
+	}
+}
+
 trait_shield_obsessed = {
 	cost = 0
 	opposites = {  }
@@ -1958,16 +2011,16 @@ trait_shield_obsessed = {
 #############################
 # Credits to /u/Sriseru     #
 #############################
-#trait_broodparasite = {
-#	opposites = { "trait_charismatic" "trait_repugnant" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
-#	cost = 0
-#	initial = yes
-#	randomized = no
-#	modification = no
-#	modifier = {
-#		pop_other_species_happiness = 0.1
-#	}
-#}
+trait_broodparasite = {
+	opposites = { "trait_charismatic" "trait_repugnant" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
+	cost = 0
+	initial = yes
+	randomized = no
+	modification = no
+	modifier = {
+		pop_other_species_happiness = 0.1
+	}
+}
 
 
 

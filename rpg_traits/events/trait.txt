@@ -7,7 +7,7 @@ namespace = trait
 
 event = {
     id = "trait.1"
-    hide_window = no
+    hide_window = yes
 	title = "Yo your trait overhaul mod works yo"
 	desc = "Great"
     is_triggered_only = yes
@@ -335,6 +335,42 @@ event = {
     }
 }
 event = {
+    id = "trait.18"
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				has_trait = trait_positive_doom
+            }
+			country_event = { id = trait.8322 days = 18000 random = 400 } # 50 years
+            add_modifier = {
+                modifier = trait_positive_doom
+                days = -1
+            }
+        }
+    }
+}
+event = {
+    id = "trait.19"
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				has_trait = trait_negative_doom
+            }
+			country_event = { id = trait.8323 days = 18000 random = 400 } # 50 years
+            add_modifier = {
+                modifier = trait_negative_doom
+                days = -1
+            }
+        }
+    }
+}
+event = {
     id = "trait.1601"
     hide_window = yes
     is_triggered_only = yes
@@ -386,5 +422,72 @@ planet_event = {
 
     immediate = {
         change_planet_size = 1
+    }
+}
+country_event = {
+    id = trait.8322
+    hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+            remove_modifier = {
+                modifier = trait_positive_doom
+            }
+            add_modifier = {
+                modifier = doom_lifted
+                days = -1
+            }
+	}
+}
+country_event = {
+    id = "trait.8323"
+    hide_window = no
+	title = "DOOM HAS COME"
+	desc = "DEATH COMETH"
+	is_triggered_only = yes
+	
+	immediate = {
+            remove_modifier = {
+                modifier = trait_negative_doom
+            }
+            add_modifier = {
+                modifier = doom_unleashed
+                days = -1
+            }
+			country_event = { id = crisis.10 }
+		every_owned_pop = {
+			random_list = {
+				75 = { kill_pop = yes }
+				25 = {
+					modify_species = {
+						species = this
+						add_trait = trait_doom_unleashed
+					}
+				}
+			}
+		}
+	}
+}
+planet_event = {
+    id = trait.8324
+    hide_window = no
+	title = "DEATH COMETH TO EARTH"
+	desc = "DEATH"
+
+    trigger = {
+        any_pop = {
+            has_trait = trait_doom_unleashed
+            is_being_purged = no
+			is_enslaved = no
+        }
+        planet_size > 5
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    immediate = {
+        change_planet_size = -4
     }
 }
