@@ -322,10 +322,28 @@
  trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +400% shield power, -75% hull integrity §!\n"
  
  trait_tiny:0 "Tiny"
- trait_tiny_desc:0 "§L"What's this? A ship for ants?"\n\n This species is less than 0.05 meters. No amount of tools or machines can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"
+ trait_tiny_desc:0 "§L"What's this? A ship for ants?"\n\n This species stands less than 5 centimeters tall. No amount of tools or machines can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"
  
  trait_subterranean:0 "Subterranean"
  trait_subterranean_desc:0 "§LNative tunnelers, this species dwells mostly underground, digging ever deeper and deeper. They make great use of even the smallest planets, given enough time to build their tunnel networks.\n\n Any planet habited by this species slowly goes up to 25 tiles.§!\n"
+ 
+ trait.8326.name:0 "Chemical Accident"
+ trait.8326.desc:0 "Incredible power and incredible lack of intelligence are a bad combination. Today this was proven in a rather spectacular fashion, when workers of a major chemical factory managed to complete clog an important exhaust pipe with fluffy pet toys. A several megaton explosion followed that spread poisonous substances over a large area, killing millions and completely ruining the land."
+ trait.8326.option:0 "Oh not again..."
+ 
+ trait.8327.name:0 "Headbanger"
+ trait.8327.desc:0 "Our species is not exactly known for great intelligence, but occasionally we produce individuals with an above average intelligence. One of these individuals, our lead researcher, was known to need the occasional 'percussive maintenance' to kickstart his brain; generally done by bashing his head against the wall a couple of times. Today he bashed it a little too hard however, critically damaging his central nervous system and reducing him to a vegetative state."
+ trait.8327.option:0 "I told you not to hire a head-banger!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
