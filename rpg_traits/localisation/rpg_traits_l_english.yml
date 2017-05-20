@@ -328,7 +328,7 @@
  trait_subterranean_desc:0 "§LNative tunnelers, this species dwells mostly underground, digging ever deeper and deeper. They make great use of even the smallest planets, given enough time to build their tunnel networks.\n\n Any planet habited by this species slowly goes up to 25 tiles.§!\n"
  
  trait.8326.name:0 "Chemical Accident"
- trait.8326.desc:0 "Incredible power and incredible lack of intelligence are a bad combination. Today this was proven in a rather spectacular fashion, when workers of a major chemical factory managed to complete clog an important exhaust pipe with fluffy pet toys. A several megaton explosion followed that spread poisonous substances over a large area, killing millions and completely ruining the land."
+ trait.8326.desc:0 "Incredible power and incredible lack of intelligence are a bad combination. Today this was proven in a rather spectacular fashion, when workers of a major chemical factory managed to completely clog an important exhaust pipe with fluffy pet toys. A several megaton explosion followed that spread poisonous substances over a large area, killing millions and completely ruining the land."
  trait.8326.option:0 "Oh not again..."
  
  trait.8327.name:0 "Headbanger"
