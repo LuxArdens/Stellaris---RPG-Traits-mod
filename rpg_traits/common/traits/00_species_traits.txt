@@ -2007,6 +2007,21 @@ trait_shield_obsessed = {
 	}
 }
 
+trait_quantity = {
+	cost = 0
+	opposites = { "trait_quality" "trait_titanic" "trait_tiny" }
+	initial = no
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_quantity.dds"
+	modifier = {
+		army_upkeep_mult = -0.75
+		army_health = -0.5
+		army_damage_mult = -0.5
+		army_morale = -0.5
+	}
+}
+
 
 #############################
 # Credits to /u/Sriseru     #

@@ -256,6 +256,30 @@ doom_unleashed = {
 }
 
 
+trait_quantity = {
+	planet_army_build_cost_mult = -0.75
+	planet_army_build_speed_mult = 3
+	
+	# tiny ships
+	spaceport_ship_build_speed_mult = 3
+	spaceport_ship_build_cost_mult = -0.5 # enough to prevent free ships?
+	ship_speed_mult = -0.25
+	ship_combat_speed_mult = -0.25
+	ship_windup_mult = 0.2
+	ship_winddown_mult = 0.2
+	ship_emergency_ftl_mult = 0.2
+	ship_armor_mult = -0.5
+	ship_hitpoints_mult = -0.5
+	ship_weapon_damage = -0.5
+	ship_fire_rate_mult = -0.25
+	ship_shield_hp_mult = -0.5
+	ship_upkeep_mult = -0.75
+	ship_tracking_add = -20
+	ship_evasion_add = -20
+	ship_weapon_range_mult = -0.25
+	navy_size_mult = 1
+}
+
 
 
 

@@ -117,8 +117,8 @@
  trait_weakwilled2:0 "Cowards"
  trait_weakwilled2_desc:0 "§L"We're not surrendering; we're just doing a tactical power exchange!"§!\n"
  
- trait_weakwilled3:0 "Lethargic"
- trait_weakwilled3_desc:0 "§L"Fight. back?!... Are you mad?! What if they shoot back?"§!\n"
+ trait_weakwilled3:0 "Craven"
+ trait_weakwilled3_desc:0 "§L"Fight?!... Are you mad?! What if they hurt us?"§!\n"
  
  trait_smart1:0 "Smart"
  trait_smart1_desc:0 "§LThis species is rather bright. Even average members are known to be reasonable and quick to learn.§!\n"

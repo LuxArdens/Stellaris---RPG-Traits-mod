@@ -362,9 +362,26 @@ event = {
             limit = {
 				has_trait = trait_negative_doom
             }
-			country_event = { id = trait.8323 days = 18000 random = 400 } # 50 years
+			#country_event = { id = trait.8323 days = 18000 random = 400 } # 50 years
             add_modifier = {
                 modifier = trait_negative_doom
+                days = 18
+            }
+        }
+    }
+}
+event = {
+    id = "trait.20"
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				has_trait = trait_quantity
+            }
+            add_modifier = {
+                modifier = trait_quantity
                 days = -1
             }
         }
@@ -403,7 +420,7 @@ event = {
     }
 }
 planet_event = {
-    id = trait.8321
+    id = "trait.8321"
     hide_window = yes
 
     trigger = {
@@ -425,7 +442,7 @@ planet_event = {
     }
 }
 country_event = {
-    id = trait.8322
+    id = "trait.8322"
     hide_window = yes
 	is_triggered_only = yes
 	
@@ -444,17 +461,24 @@ country_event = {
     hide_window = no
 	title = "DOOM HAS COME"
 	desc = "DEATH COMETH"
-	is_triggered_only = yes
-	
-	immediate = {
-            remove_modifier = {
-                modifier = trait_negative_doom
-            }
+
+    trigger = {
+		AND = {
+			any_owned_pop = { has_trait = trait_negative_doom }
+			NOT = { has_country_modifier = trait_negative_doom }
+		}
+    }
+
+    mean_time_to_happen = {
+		days = 1
+    }
+
+    immediate = {
             add_modifier = {
                 modifier = doom_unleashed
                 days = -1
             }
-			country_event = { id = crisis.10 }
+			country_event = { id = crisis.14 }
 		every_owned_pop = {
 			random_list = {
 				75 = { kill_pop = yes }
@@ -466,10 +490,10 @@ country_event = {
 				}
 			}
 		}
-	}
+    }
 }
 planet_event = {
-    id = trait.8324
+    id = "trait.8324"
     hide_window = no
 	title = "DEATH COMETH TO EARTH"
 	desc = "DEATH"
