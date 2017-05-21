@@ -2,6 +2,7 @@
 on_game_start = {
 	events = {
 		trait_regulation.1
+		trait_regulation.2
 	}
 }
 
