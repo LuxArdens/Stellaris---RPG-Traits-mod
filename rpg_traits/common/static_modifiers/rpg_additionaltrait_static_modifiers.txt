@@ -280,6 +280,53 @@ trait_quantity = {
 	navy_size_mult = 1
 }
 
+trait_hibernation = {
+	# ships disabled
+	spaceport_ship_build_speed_mult = -20
+	ship_speed_mult = -5
+	ship_combat_speed_mult = -5
+	ship_windup_mult = 200
+	ship_winddown_mult = 200
+	ship_emergency_ftl_mult = 200
+	ship_evasion_add = -200
+	ship_upkeep_mult = -10
+	
+	planet_building_cost_mult = 40
+	planet_clear_blocker_time_mult = 40
+	planet_clear_blocker_cost_mult = 40
+	building_time_mult = 100
+	pop_migration_speed = -10
+	
+	shipsize_military_station_small_build_cost_mult = 10
+	shipsize_military_station_medium_build_cost_mult = 10
+	shipsize_military_station_large_build_cost_mult = 10
+	shipsize_military_station_small_upkeep_mult = -10
+	shipsize_military_station_medium_upkeep_mult = -10
+	shipsize_military_station_large_upkeep_mult = -10
+	
+	pop_consumer_goods_mult = -20
+	pop_happiness = 2
+	pop_growth_speed = -0.9
+	country_resource_energy_mult = -10
+	country_resource_minerals_mult = -10
+	country_resource_unity_mult = -10
+	country_resource_influence_mult = -10
+	all_technology_research_speed = -10
+	planet_army_build_cost_mult = 40
+	planet_army_build_speed_mult = -10
+	army_upkeep_mult = -10
+	army_morale = -5
+	
+	
+	
+	
+	
+	
+	country_trade_attractiveness = -10
+	ship_anomaly_fail_risk = 10
+	science_ship_survey_speed = -2
+}
+
 
 
 

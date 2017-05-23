@@ -6,6 +6,12 @@ on_game_start = {
 	}
 }
 
+on_decade_pulse = {
+	events = {
+		trait.8325
+	}
+}
+
 on_press_begin = {
 	events = {
 		trait.1

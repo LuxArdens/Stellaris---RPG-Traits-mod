@@ -327,13 +327,22 @@
  trait_subterranean:0 "Subterranean"
  trait_subterranean_desc:0 "§LNative tunnelers, this species dwells mostly underground, digging ever deeper and deeper. They make great use of even the smallest planets, given enough time to build their tunnel networks.\n\n Any planet habited by this species slowly goes up to 25 tiles.§!\n"
  
- trait.8326.name:0 "Chemical Accident"
- trait.8326.desc:0 "Incredible power and incredible lack of intelligence are a bad combination. Today this was proven in a rather spectacular fashion, when workers of a major chemical factory managed to completely clog an important exhaust pipe with fluffy pet toys. A several megaton explosion followed that spread poisonous substances over a large area, killing millions and completely ruining the land."
- trait.8326.option:0 "Oh not again..."
+ trait_winter:0 "Hibernation"
+ trait_winter_desc:0 "§LThis species comes from a planet with long, long winters. They naturally hibernate for an entire year, once every decade.\n\n Every decade, your species enters hibernation, crippling production and military efforts.§!\n"
  
- trait.8327.name:0 "Headbanger"
- trait.8327.desc:0 "Our species is not exactly known for great intelligence, but occasionally we produce individuals with an above average intelligence. One of these individuals, our lead researcher, was known to need the occasional 'percussive maintenance' to kickstart his brain; generally done by bashing his head against the wall a couple of times. Today he bashed it a little too hard however, critically damaging his central nervous system and reducing him to a vegetative state."
- trait.8327.option:0 "I told you not to hire a head-banger!"
+ trait.8326.title:0 "Winter has come"
+ trait.8326.desc:0 "Even though our species has since long the technology to keep working through the ancient winter period of our homeworld, our bodies just refuse to do so. We must all sleep a dreamless sleep and hope we awaken peacefully again one day."
+ trait.8326.a:0 "*Yawn*"
+ 
+ trait_hibernation:0 "Hibernation"
+ 
+ trait.8328.name:0 "Chemical Accident"
+ trait.8328.desc:0 "Incredible power and incredible lack of intelligence are a bad combination. Today this was proven in a rather spectacular fashion, when workers of a major chemical factory managed to completely clog an important exhaust pipe with fluffy pet toys. A several megaton explosion followed that spread poisonous substances over a large area, killing millions and completely ruining the land."
+ trait.8328.option:0 "Oh not again..."
+ 
+ trait.8329.name:0 "Headbanger"
+ trait.8329.desc:0 "Our species is not exactly known for great intelligence, but occasionally we produce individuals with an above average intelligence. One of these individuals, our lead researcher, was known to need the occasional 'percussive maintenance' to kickstart his brain; generally done by bashing his head against the wall a couple of times. Today he bashed it a little too hard however, critically damaging his central nervous system and reducing him to a vegetative state."
+ trait.8329.option:0 "I told you not to hire a head-banger!"
  
  
  

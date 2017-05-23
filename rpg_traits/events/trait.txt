@@ -515,3 +515,91 @@ planet_event = {
         change_planet_size = -4
     }
 }
+event = {
+    id = "trait.8325"
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+				has_trait = trait_winter
+            }
+			country_event = { id = trait.8326 }
+        }
+    }
+}
+country_event = {
+    id = "trait.8326"
+	title = "trait.8326.title"
+	desc = trait.8326.desc
+    is_triggered_only = yes
+
+	option = {
+		name = trait.8326.a
+            add_modifier = {
+                modifier = trait_hibernation
+                months = 12
+            }
+	}
+}
+
+
+#####################
+## Stupdity Events ##
+#####################
+
+country_event = {
+    id = "trait.8327"
+	title = "Stupdity Trigger"
+	desc = "Yay!"
+
+    trigger = {
+		OR = {
+			has_trait = trait_dumb1
+			has_trait = trait_dumb2
+			has_trait = trait_dumb3
+		}
+    }
+
+    mean_time_to_happen = {
+        months = 120
+		
+		modifier = {
+			factor = 5.0
+			has_trait = trait_dumb1
+		}
+		modifier = {
+			factor = 0.2
+			has_trait = trait_dumb3
+		}
+    }
+
+    immediate = {
+        random_list ={
+			25 = { country_event = { id = trait.8326 } }
+			5 = { country_event = { id = trait.8327 } }
+			20 = { country_event = { id = trait.8328 } }
+			25 = { country_event = { id = trait.8329 } }
+			25 = { country_event = { id = trait.8330 } }
+		}
+    }
+}
+country_event = {
+    id = "trait.8328"
+	title = "trait.8328.name"
+	desc = trait.8328.desc
+	picture = GFX_evt_exploding_ship
+	is_triggered_only = yes
+
+    immediate = {
+	}
+	option = {
+		name = trait.8326.option
+		random_owned_planet = {
+			limit = { has_building = yes }
+			kill_pop = yes
+			random_tile = { limit = { has_building = yes } set_blocker = "tb_failing_infrastructure" }
+		}
+	}
+}
