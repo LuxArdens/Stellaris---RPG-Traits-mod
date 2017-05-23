@@ -515,34 +515,34 @@ planet_event = {
         change_planet_size = -4
     }
 }
-event = {
-    id = "trait.8325"
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        every_country = {
-            limit = {
-				has_trait = trait_winter
-            }
-			country_event = { id = trait.8326 }
-        }
-    }
-}
-country_event = {
-    id = "trait.8326"
-	title = "trait.8326.title"
-	desc = trait.8326.desc
-    is_triggered_only = yes
-
-	option = {
-		name = trait.8326.a
-            add_modifier = {
-                modifier = trait_hibernation
-                months = 12
-            }
-	}
-}
+#event = {
+#    id = "trait.8325"
+#    hide_window = yes
+#    is_triggered_only = yes
+#
+#    immediate = {
+#        every_country = {
+#            limit = {
+#				has_trait = trait_winter
+#            }
+#			country_event = { id = trait.8326 }
+#        }
+#    }
+#}
+#country_event = {
+#    id = "trait.8326"
+#	title = "trait.8326.title"
+#	desc = trait.8326.desc
+#    is_triggered_only = yes
+#
+#	option = {
+#		name = trait.8326.a
+#            add_modifier = {
+#                modifier = trait_hibernation
+#                months = 12
+#            }
+#	}
+#}
 
 
 #####################
@@ -551,6 +551,7 @@ country_event = {
 
 country_event = {
     id = "trait.8327"
+    hide_window = yes
 	title = "Stupdity Trigger"
 	desc = "Yay!"
 
@@ -577,8 +578,8 @@ country_event = {
 
     immediate = {
         random_list ={
-			25 = { country_event = { id = trait.8326 } }
-			5 = { country_event = { id = trait.8327 } }
+			25 = { country_event = { id = trait.8332 } }
+			5 = { country_event = { id = trait.8331 } }
 			20 = { country_event = { id = trait.8328 } }
 			25 = { country_event = { id = trait.8329 } }
 			25 = { country_event = { id = trait.8330 } }
