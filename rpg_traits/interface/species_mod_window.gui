@@ -143,7 +143,7 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "planet_class_traits_container"
-			size = { width = 322 height = 84 }
+			size = { width = 332 height = 84 }
 			verticalScrollbar = "right_vertical_slider"
 			position = { x = 17 y = 301}
 			
@@ -180,7 +180,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "possible_traits_frame_box"
-			size = { width = 390 height = 410 }
+			size = { width = 400 height = 410 }
 			position = { x = 10 y = 336 }
 			
 				background = {
@@ -191,7 +191,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "available_traits_container"
-			size = { width = 272 height = 426 }
+			size = { width = 395 height = 426 }
 			verticalScrollbar = "right_vertical_slider"
 			position = { x = 17 y = 345 }
 			
@@ -202,8 +202,8 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "traits"
-				slotSize = { width = 42 height = 40 }
-				max_slots_horizontal = 9
+				slotSize = { width = 32 height = 40 }
+				max_slots_horizontal = 12
 				format = "UPPER_LEFT"
 			}
 		}
@@ -212,7 +212,7 @@ guiTypes = {
 			name = "species_mod_footer"
 			font = "cg_16b"
 			text = "SPECIES_MOD_SELECT_TRAITS"
-			position = { x = -58 y = -192 }
+			position = { x = -958 y = -192 }
 			orientation = "LOWER_LEFT"
 			maxWidth = 360
 			maxHeight = 30
