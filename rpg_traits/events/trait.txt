@@ -388,6 +388,23 @@ event = {
     }
 }
 event = {
+    id = "trait.21"
+    hide_window = yes
+    is_triggered_only = yes
+   
+    immediate = {
+        every_country = {
+            limit = {
+				has_trait = trait_living_planet
+            }
+            add_modifier = {
+                modifier = trait_living_planet
+                days = -1
+            }
+        }
+    }
+}
+event = {
     id = "trait.1601"
     hide_window = yes
     is_triggered_only = yes
@@ -421,7 +438,7 @@ planet_event = {
 
     trigger = {
         any_pop = {
-            has_trait = trait_subterranean
+			OR = { has_trait = trait_subterranean has_trait = trait_living_planet }
             is_being_purged = no
 			is_enslaved = no
         }
@@ -558,7 +575,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 120
+        months = 1200
 		
 		modifier = {
 			factor = 5.0

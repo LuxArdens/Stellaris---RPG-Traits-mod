@@ -327,6 +327,25 @@ trait_hibernation = {
 	science_ship_survey_speed = -2
 }
 
+trait_living_planet = {
+	country_border_mult = 2					# wider influence area
+	navy_size_mult = 9						# just one planet means cap is too low
+	spaceport_ship_build_speed_mult = -20	# just one spaceport
+	country_core_sector_system_cap = -2		# ehh..
+	pop_happiness = 2
+	planet_building_cost_mult = -0.25
+	planet_clear_blocker_time_mult = -1		# for game start
+	planet_clear_blocker_cost_mult = -1
+	building_time_mult = -0.25
+	planet_sensor_range_mult = 1
+	
+	#megastructure_build_speed_mult = 0.5
+	#mod_megastructure_build_cost_mult = -0.25				
+	
+	shipsize_colonizer_construction_speed_mult = -2000 		# maybe more zeroes?
+	shipsize_colonizer_build_cost_mult = 2000
+}
+
 
 
 
