@@ -1,1 +1,5 @@
-0.1.0
+
+0.2.0 - Custom races and Living Planet implemented
+0.1.2 - Stellaris 1.6.1 patch
+0.1.1 - Hotfix
+0.1.0 - Alpha Release on Nexus
