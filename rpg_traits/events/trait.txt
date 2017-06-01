@@ -401,6 +401,12 @@ event = {
                 modifier = trait_living_planet
                 days = -1
             }
+			change_government = {
+				civics = {
+					civic = civic_hive_devouring_swarm		# needed to prevent diplomacy and permanent occupation
+				}
+			}
+			
         }
     }
 }
@@ -614,4 +620,47 @@ country_event = {
 			random_tile = { limit = { has_building = yes } set_blocker = "tb_failing_infrastructure" }
 		}
 	}
+}
+
+planet_event = {
+    id = "trait.8333"
+	title = "trait.8333.name"
+	desc = "trait.8333.desc"
+	picture = "GFX_evt_nuclear_explosion"
+	show_sound = event_super_explosion
+
+    trigger = {
+		AND = {
+			owner = {
+				has_trait = trait_living_planet
+			}
+			any_pop = {
+				NOT = { has_trait = trait_living_planet }
+				is_being_purged = yes
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    immediate = {
+	}
+	option = {
+		name = trait.8333.option
+				if = {
+					limit = { is_ringworld = yes }
+					change_pc = pc_ringworld_habitable_damaged
+				}
+				if = {
+					limit = { is_ringworld = no }
+					change_pc = pc_molten
+				}
+				every_tile = {
+					limit = { has_building = yes }
+					remove_building = yes
+				}
+		destroy_colony = yes
+    }
 }

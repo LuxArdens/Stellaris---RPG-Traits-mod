@@ -330,11 +330,25 @@
  trait_winter:0 "Hibernation"
  trait_winter_desc:0 "§LThis species comes from a planet with long, long winters. They naturally hibernate for an entire year, once every decade.\n\n Every decade, your species enters hibernation, crippling production and military efforts.§!\n"
  
+ trait_bonus:0 "Blatant Bonus"
+ trait_bonus_desc:0 "§LGive this species a free trait point bonus. Purely for roleplaying and making more powerful custom races, otherwise it's just blatant cheating. Which is fine- just don't whine if the game is no fun anymore when you've picked all the best traits.§!\n"
+ 
+ trait_penalty:0 "Penalty"
+ trait_penalty_desc:0 "§LFor a bigger challenge, give yourself this trait point penalty.\n\n§!\n"
+ 
+ trait_custom_race:0 "Custom Race"
+ trait_custom_race_desc:0 "§LIf you're making a custom AI race, you NEED to include this trait. It prevents the other random traits from being assigned to it on game start. If you don't give your custom AI race this trait it will have additional random traits which will completely screw up your creatively thought up fantasy race.\n\n This is not required for PLAYER races.§!\n"
+ 
+ trait_living_planet:0 "Living Planet"
+ trait_living_planet_desc:0 "§LThis organism encompasses its entire homeworld and is ingrained with it. It *is* the planet and the planet *is* the organism. Single-minded and in perfect unity; the Living Planet does not tolerate other species or planets to exist.\n\nA single, powerful homeworld for the entire game. Cannot colonize other planets. Cannot annex planets. Cannot accept xenos. No migration. No diplomacy. Upon annexation, enemy planets are permanently destroyed.§!\n"
+ 
+ ########################################
+ # Events / oefening creatief schrijven #
+ ########################################
+ 
  trait.8326.title:0 "Winter has come"
  trait.8326.desc:0 "Even though our species has since long the technology to keep working through the ancient winter period of our homeworld, our bodies just refuse to do so. We must all sleep a dreamless sleep and hope we awaken peacefully again one day."
  trait.8326.a:0 "*Yawn*"
- 
- trait_hibernation:0 "Hibernation"
  
  trait.8328.name:0 "Chemical Accident"
  trait.8328.desc:0 "Incredible power and incredible lack of intelligence are a bad combination. Today this was proven in a rather spectacular fashion, when workers of a major chemical factory managed to completely clog an important exhaust pipe with fluffy pet toys. A several megaton explosion followed that spread poisonous substances over a large area, killing millions and completely ruining the land."
@@ -344,12 +358,9 @@
  trait.8329.desc:0 "Our species is not exactly known for great intelligence, but occasionally we produce individuals with an above average intelligence. One of these individuals, our lead researcher, was known to need the occasional 'percussive maintenance' to kickstart his brain; generally done by bashing his head against the wall a couple of times. Today he bashed it a little too hard however, critically damaging his central nervous system and reducing him to a vegetative state."
  trait.8329.option:0 "I told you not to hire a head-banger!"
  
- 
- 
- 
- 
- 
- 
+ trait.8333.name:0 "Extermination"
+ trait.8333.desc:0 "The Others must be destroyed. With enormous fusion bombs we have turned this world into a giant molten slug."
+ trait.8333.option:0 "We are the Only"
  
  
  

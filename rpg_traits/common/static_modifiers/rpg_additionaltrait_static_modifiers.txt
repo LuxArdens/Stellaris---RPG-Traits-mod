@@ -317,33 +317,33 @@ trait_hibernation = {
 	army_upkeep_mult = -10
 	army_morale = -5
 	
-	
-	
-	
-	
-	
 	country_trade_attractiveness = -10
 	ship_anomaly_fail_risk = 10
 	science_ship_survey_speed = -2
 }
 
 trait_living_planet = {
+	country_resource_influence_mult = 4		# Living planet is reliant on frontier posts
 	country_border_mult = 2					# wider influence area
 	navy_size_mult = 9						# just one planet means cap is too low
-	spaceport_ship_build_speed_mult = -20	# just one spaceport
+	spaceport_ship_build_speed_mult = 2		# just one spaceport
 	country_core_sector_system_cap = -2		# ehh..
-	pop_happiness = 2
-	planet_building_cost_mult = -0.25
-	planet_clear_blocker_time_mult = -1		# for game start
+	#pop_happiness = 2
+	planet_building_cost_mult = -0.75		# (close to) none
+	planet_clear_blocker_time_mult = -1		# for quick game start
 	planet_clear_blocker_cost_mult = -1
-	building_time_mult = -0.25
-	planet_sensor_range_mult = 1
+	building_time_mult = -0.5				# extremely fast
+	planet_sensor_range_mult = 2
 	
-	#megastructure_build_speed_mult = 0.5
-	#mod_megastructure_build_cost_mult = -0.25				
+	#shipsize_military_station_small_upkeep_mult = -0.5
+	#shipsize_military_station_medium_upkeep_mult = -0.5
+	#shipsize_military_station_large_upkeep_mult = -0.5
+	
+	megastructure_build_speed_mult = 1				# late-game living planet should build lots of megastructures to keep up
+	mod_megastructure_build_cost_mult = -0.25		
 	
 	shipsize_colonizer_construction_speed_mult = -2000 		# maybe more zeroes?
-	shipsize_colonizer_build_cost_mult = 2000
+	shipsize_colonizer_build_cost_mult = 2000				# should be fine
 }
 
 

@@ -23,6 +23,7 @@ event = {
 						is_country_type = drone
 						is_country_type = cloud
 						is_country_type = fallen_empire
+						has_trait = trait_custom_race			# custom races krijgen geen extra traits
 					}
 					OR = { # only races that can enslave shit
 						has_ethic = ethic_authoritarian
@@ -33,10 +34,10 @@ event = {
 				}
 			}
 			random_list = {
-				25 = {
+				20 = {
 					country_event = { id = trait_regulation.162 }
 				}
-				75 = {
+				80 = {
 					# no traits gained
 				}
 			}
@@ -56,11 +57,12 @@ event = {
 						is_country_type = drone
 						is_country_type = cloud
 						is_country_type = fallen_empire
+						has_trait = trait_custom_race			# custom races krijgen geen extra traits
 					}
 				}
 			}
 			random_list = { # strength based traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.100 }
 				}
 				8 = {
@@ -69,18 +71,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.102 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.103 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.104 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # intelligence based traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.105 }
 				}
 				8 = {
@@ -89,18 +91,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.107 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.108 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.109 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # endurance based traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.110 }
 				}
 				8 = {
@@ -109,18 +111,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.112 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.113 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.114 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # conformism based traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.115 }
 				}
 				8 = {
@@ -129,18 +131,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.117 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.118 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.119 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # breeding based traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.120 }
 				}
 				8 = {
@@ -149,18 +151,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.122 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.123 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.124 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # food based traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.125 }
 				}
 				8 = {
@@ -169,13 +171,13 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.127 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.128 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.129 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
@@ -191,7 +193,7 @@ event = {
 				}
 			}
 			random_list = { # laziness traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.132 }
 				}
 				8 = {
@@ -200,18 +202,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.134 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.135 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.136 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # community traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.137 }
 				}
 				8 = {
@@ -220,18 +222,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.139 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.140 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.141 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # attractiveness traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.142 }
 				}
 				8 = {
@@ -240,18 +242,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.144 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.145 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.146 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # age traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.147 }
 				}
 				8 = {
@@ -260,18 +262,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.149 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.150 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.151 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # conservation traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.152 }
 				}
 				8 = {
@@ -280,18 +282,18 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.154 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.155 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.156 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
 			random_list = { # bravery traits
-				16 = {
+				12 = {
 					country_event = { id = trait_regulation.157 }
 				}
 				8 = {
@@ -300,13 +302,13 @@ event = {
 				4 = {
 					country_event = { id = trait_regulation.159 }
 				}
-				20 = {
+				24 = {
 					country_event = { id = trait_regulation.160 }
 				}
-				8 = {
+				12 = {
 					country_event = { id = trait_regulation.161 }
 				}
-				44 = {
+				40 = {
 					# no traits gained
 				}
 			}
