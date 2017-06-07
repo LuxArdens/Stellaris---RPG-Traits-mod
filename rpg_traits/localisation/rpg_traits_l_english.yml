@@ -175,7 +175,7 @@
  trait_strong1_desc:0 "§LThis species has an animal-like high body strength.§!\n"
  
  trait_strong2:0 "Brutes"
- trait_strong2_desc:0 "§LCapable of running at immense speeds, lifting object a dozen times their own weight and breaking through walls of solid rock; this species is exceptionally strong. They can literally rip lesser species in halve and can do certain tasks by hand where others would require specialized tools.§!\n"
+ trait_strong2_desc:0 "§LCapable of running at immense speeds, lifting object a dozen times their own weight and breaking through walls of solid rock; this species is exceptionally strong. They can literally rip lesser species in half and can do certain tasks by hand where others would require specialized tools.§!\n"
  
  trait_strong3:0 "Hulking"
  trait_strong3_desc:0 "§LGenetic alterations reach the limit of what biological tissue can output in terms of raw strength. Added with integrated biomechanical actuators, this species has a strength equivalent to that of the best robotic counterparts. They can tear and bend metal like paper.§!\n"
@@ -289,7 +289,7 @@
  trait_engineering_elitists_desc:0 "§LObsessed with machines and materials, this species has little interest in things that grow or pointless theories.\n\n -25% building cost, +20% ship build speed, +20% ship hitpoints, +20% ship armor§!\n"
  
  trait_physics_elitists:0 "Lab Rats"
- trait_physics_elitists_desc:0 "§LTheories and invisble particles - if it has a practical application it is of no interest to this species. They care only for what is unseen and the great "Why?".\n\n +20% shield points, +20% weapon damage§!\n"
+ trait_physics_elitists_desc:0 "§LTheories and invisible particles - if it has a practical application it is of no interest to this species. They care only for what is unseen and the great "Why?".\n\n +20% shield points, +20% weapon damage§!\n"
  
  trait_irradiated:0 "Irradiated"
  trait_irradiated_desc:0 "§LThis species is naturally resistant to radiation and can comfortably inhabit places that are lit up with gamma rays.§!\n"
@@ -322,10 +322,10 @@
  trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +400% shield power, -75% hull integrity §!\n"
  
  trait_tiny:0 "Tiny"
- trait_tiny_desc:0 "§L"What's this? A ship for ants?"\n\n This species stands less than 5 centimeters tall. No amount of tools or machines can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"
+ trait_tiny_desc:0 "§L"What's this? A ship for ants?"\n\n This species stands less than 5 centimetres tall. No amount of tools or machines can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"
  
  trait_subterranean:0 "Subterranean"
- trait_subterranean_desc:0 "§LNative tunnelers, this species dwells mostly underground, digging ever deeper and deeper. They make great use of even the smallest planets, given enough time to build their tunnel networks.\n\n Any planet habited by this species slowly goes up to 25 tiles.§!\n"
+ trait_subterranean_desc:0 "§LNative tunnellers, this species dwells mostly underground, digging ever deeper and deeper. They make great use of even the smallest planets, given enough time to build their tunnel networks.\n\n Any planet habited by this species slowly goes up to 25 tiles.§!\n"
  
  trait_winter:0 "Hibernation"
  trait_winter_desc:0 "§LThis species comes from a planet with long, long winters. They naturally hibernate for an entire year, once every decade.\n\n Every decade, your species enters hibernation, crippling production and military efforts.§!\n"
@@ -335,6 +335,12 @@
  
  trait_penalty:0 "Penalty"
  trait_penalty_desc:0 "§LFor a bigger challenge, give yourself this trait point penalty.\n\n§!\n"
+ 
+ trait_penalty2:0 "Bring it on"
+ trait_penalty2_desc:0 "§LCan't stop min-maxing? Give yourself this penalty to feel less guilty about it.\n\n§!\n"
+ 
+ trait_penalty3:0 "Masochist"
+ trait_penalty3_desc:0 "§LThis is the best trait in the game... if you like suffering needlessly for hours.\n\n§!\n"
  
  trait_custom_race:0 "Custom Race"
  trait_custom_race_desc:0 "§LIf you're making a custom AI race, you NEED to include this trait. It prevents the other random traits from being assigned to it on game start. If you don't give your custom AI race this trait it will have additional random traits which will completely screw up your creatively thought up fantasy race.\n\n This is not required for PLAYER races.§!\n"
