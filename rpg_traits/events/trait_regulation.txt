@@ -42,6 +42,49 @@ event = {
 				}
 			}
 		}
+		every_country  = { # hive minds cannot get conformism
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = {
+						is_country_type = tiyanki
+						is_country_type = neutral_faction
+						is_country_type = faction
+						is_country_type = pirate
+						is_country_type = nomad #triggered in a special case event
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+						is_country_type = fallen_empire
+						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+					}
+					NOT = {
+						has_ethic = ethic_hive_mind
+					}
+				}
+			}
+			random_list = { # conformism based traits
+				12 = {
+					country_event = { id = trait_regulation.115 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.116 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.117 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.118 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.119 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+		}
 		every_country = {
 			limit = {
 				AND = {
@@ -116,26 +159,6 @@ event = {
 				}
 				12 = {
 					country_event = { id = trait_regulation.114 }
-				}
-				40 = {
-					# no traits gained
-				}
-			}
-			random_list = { # conformism based traits
-				12 = {
-					country_event = { id = trait_regulation.115 }
-				}
-				8 = {
-					country_event = { id = trait_regulation.116 }
-				}
-				4 = {
-					country_event = { id = trait_regulation.117 }
-				}
-				24 = {
-					country_event = { id = trait_regulation.118 }
-				}
-				12 = {
-					country_event = { id = trait_regulation.119 }
 				}
 				40 = {
 					# no traits gained

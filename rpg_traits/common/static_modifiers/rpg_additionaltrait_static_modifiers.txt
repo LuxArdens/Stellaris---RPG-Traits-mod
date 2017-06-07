@@ -6,6 +6,17 @@ trait_effects_weirdass = {
 	ship_fire_rate_mult = 20
 }
 
+
+bp_increased_reproduction = {
+	#pop_growth_req_mult = -0.5 # old
+	pop_growth_speed = 2
+}
+
+bp_reduced_reproduction = {
+	#pop_growth_req_mult = 1
+	pop_growth_speed = -0.5
+}
+
 trait_hoarders = {
 	country_resource_energy_mult = -0.05
 	country_resource_minerals_mult = -0.05
@@ -149,6 +160,7 @@ physics_elitists = {
 trait_tiny = {
 	# tiny buildings, tile blockers are a big problem
 	planet_building_cost_mult = -0.7 # can get free buildings by stacking modifiers. I don't care.
+	planet_building_upkeep_mult = -0.7
 	planet_clear_blocker_time_mult = 1
 	planet_clear_blocker_cost_mult = 1
 	
@@ -296,6 +308,7 @@ trait_hibernation = {
 	planet_clear_blocker_cost_mult = 40
 	building_time_mult = 100
 	pop_migration_speed = -10
+	planet_building_upkeep_mult = -0.9
 	
 	shipsize_military_station_small_build_cost_mult = 10
 	shipsize_military_station_medium_build_cost_mult = 10
@@ -324,16 +337,17 @@ trait_hibernation = {
 
 trait_living_planet = {
 	country_resource_influence_mult = 4		# Living planet is reliant on frontier posts
-	country_border_mult = 2					# wider influence area
+	country_border_mult = 1					# wider influence area
 	navy_size_mult = 9						# just one planet means cap is too low
 	spaceport_ship_build_speed_mult = 2		# just one spaceport
 	country_core_sector_system_cap = -2		# ehh..
 	#pop_happiness = 2
 	planet_building_cost_mult = -0.75		# (close to) none
+	planet_building_upkeep_mult = -0.75
 	planet_clear_blocker_time_mult = -1		# for quick game start
 	planet_clear_blocker_cost_mult = -1
 	building_time_mult = -0.5				# extremely fast
-	planet_sensor_range_mult = 2
+	planet_sensor_range_mult = 1
 	
 	#shipsize_military_station_small_upkeep_mult = -0.5
 	#shipsize_military_station_medium_upkeep_mult = -0.5

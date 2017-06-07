@@ -2091,9 +2091,9 @@ trait_living_planet = {
 		pop_consumer_goods_mult = -10
 		pop_growth_speed = 10
 		tile_resource_unity_mult = 1
-		tile_resource_physics_research_mult = 1
-		tile_resource_society_research_mult = 1
-		tile_resource_engineering_research_mult = 1
+		#tile_resource_physics_research_mult = 1
+		#tile_resource_society_research_mult = 1
+		#tile_resource_engineering_research_mult = 1
 		
 		pop_migration_speed = -10			# no migration
 		pop_resettlement_cost_mult = 100	# no resettlement

@@ -401,12 +401,11 @@ event = {
                 modifier = trait_living_planet
                 days = -1
             }
-			change_government = {
-				civics = {
-					civic = civic_hive_devouring_swarm		# needed to prevent diplomacy and permanent occupation
-				}
-			}
-			
+			#change_government = {
+			#	civics = {
+			#		civic = civic_rpg_hive_devouring_swarm		# needed to prevent diplomacy and permanent occupation
+			#	}
+			#}
         }
     }
 }
