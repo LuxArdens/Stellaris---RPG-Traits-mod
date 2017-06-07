@@ -1,8 +1,0 @@
-﻿l_english:
- ####################################
- # Traits
- ####################################
-
-
- trait_broodparasite:0 "Brood Parasite"
- trait_broodparasite_desc:0 "§LMembers of this species are universally attractive, but reproduce asexually. As a result, they attract alien mates who raise their young; increasing their own reproductive success while reducing that of other species.§!\n"
