@@ -1,4 +1,4 @@
-
+0.2.1 - Improved Living Planet + synth&psionics buff
 0.2.0 - Custom races and Living Planet implemented
 0.1.2 - Stellaris 1.6.1 patch
 0.1.1 - Hotfix
