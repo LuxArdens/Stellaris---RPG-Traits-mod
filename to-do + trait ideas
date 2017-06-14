@@ -1,22 +1,35 @@
 ## To Do:
 
-- add new stupidity events
-- draft plan climate traits overhaul
-- draft plan civics overhaul
-- add example custom empires as an optional download
-- Rework robotic traits et cetera
-- Fix the Hibernation modifiers so you don't go bankrupt or anything, then finish it
-- Reduce global trait frequency, then reduce it some more and call it a separate version
+CONCEPT PHASES:
+- draft plan civics overhaul for HEAVY
 
-Done:
+CORE:
+- Draft plan for further robotic traits overhaul
+- Fix the Hibernation modifiers so you don't go bankrupt or anything, then finish it
+- Add anti-living planet condition for Advanced AI start
+- Inject custom races and smoothen
+- add new stupidity events
+
+Project HEAVY
+- Fix terraforming routes
+- Add stellar core race for energy lifeforms?
+- Add proper techs for various terraforming routes
+- 
+
+
+
+
+DONE:
 - Spell check
 - balance Living Planet for Large-sized map with 1x planets
 - Give psionics flat buff
 - Give synths flat buff
 - Add more levels of penalties, including one for obsessive munchkins
-
-
-
+- Fix default races
+- Add game start Cybernetic and Synthetic trait
+- draft plan climate traits overhaul
+- Started HEAVY version with complete climate overhaul
+- Made a LITE version, and ULTRALITE with lower frequencies
 
 
 ################################################################################################################
