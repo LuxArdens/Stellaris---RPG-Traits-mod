@@ -1,0 +1,9 @@
+corroding_atmosphere_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_nature
+}
+
+cosmic_radiation_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_alien_nature
+}

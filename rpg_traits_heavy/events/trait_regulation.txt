@@ -1,0 +1,2951 @@
+namespace = trait_regulation
+
+## now adds random traits instead of removing
+
+event = {
+	id = trait_regulation.1		# trigger at start of game
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country  = { # decadent
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = {
+						is_country_type = tiyanki
+						is_country_type = neutral_faction
+						is_country_type = faction
+						is_country_type = pirate
+						is_country_type = nomad #triggered in a special case event
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+						is_country_type = fallen_empire
+						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+					}
+					OR = { # only races that can enslave shit
+						has_ethic = ethic_authoritarian
+						has_ethic = ethic_fanatic_authoritarian
+						has_ethic = ethic_xenophobe
+						has_ethic = ethic_fanatic_xenophobe
+					}
+				}
+			}
+			random_list = {
+				20 = {
+					country_event = { id = trait_regulation.162 }
+				}
+				80 = {
+					# no traits gained
+				}
+			}
+		}
+		every_country  = { # hive minds cannot get conformism
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = {
+						is_country_type = tiyanki
+						is_country_type = neutral_faction
+						is_country_type = faction
+						is_country_type = pirate
+						is_country_type = nomad #triggered in a special case event
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+						is_country_type = fallen_empire
+						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+					}
+					NOT = {
+						has_ethic = ethic_hive_mind
+					}
+				}
+			}
+			random_list = { # conformism based traits
+				12 = {
+					country_event = { id = trait_regulation.115 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.116 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.117 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.118 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.119 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = {
+						is_country_type = tiyanki
+						is_country_type = neutral_faction
+						is_country_type = faction
+						is_country_type = pirate
+						is_country_type = nomad #triggered in a special case event
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+						is_country_type = fallen_empire
+						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+					}
+				}
+			}
+			random_list = { # strength based traits
+				12 = {
+					country_event = { id = trait_regulation.100 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.101 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.102 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.103 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.104 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # intelligence based traits
+				12 = {
+					country_event = { id = trait_regulation.105 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.106 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.107 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.108 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.109 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # endurance based traits
+				12 = {
+					country_event = { id = trait_regulation.110 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.111 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.112 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.113 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.114 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # breeding based traits
+				12 = {
+					country_event = { id = trait_regulation.120 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.121 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.122 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.123 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.124 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # food based traits
+				12 = {
+					country_event = { id = trait_regulation.125 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.126 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.127 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.128 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.129 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # sedentary or nomadic
+				20 = {
+					country_event = { id = trait_regulation.130 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.131 }
+				}
+				60 = {
+					# no traits gained
+				}
+			}
+			random_list = { # laziness traits
+				12 = {
+					country_event = { id = trait_regulation.132 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.133 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.134 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.135 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.136 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # community traits
+				12 = {
+					country_event = { id = trait_regulation.137 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.138 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.139 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.140 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.141 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # attractiveness traits
+				12 = {
+					country_event = { id = trait_regulation.142 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.143 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.144 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.145 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.146 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # age traits
+				12 = {
+					country_event = { id = trait_regulation.147 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.148 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.149 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.150 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.151 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # conservation traits
+				12 = {
+					country_event = { id = trait_regulation.152 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.153 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.154 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.155 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.156 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # bravery traits
+				12 = {
+					country_event = { id = trait_regulation.157 }
+				}
+				8 = {
+					country_event = { id = trait_regulation.158 }
+				}
+				4 = {
+					country_event = { id = trait_regulation.159 }
+				}
+				24 = {
+					country_event = { id = trait_regulation.160 }
+				}
+				12 = {
+					country_event = { id = trait_regulation.161 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # research obsessions
+				10 = {
+					country_event = { id = trait_regulation.163 }
+				}
+				10 = {
+					country_event = { id = trait_regulation.164 }
+				}
+				10 = {
+					country_event = { id = trait_regulation.165 }
+				}
+				70 = {
+					# no traits gained
+				}
+			}
+			random_list = { # rare/special traits
+				1 = {
+					country_event = { id = trait_regulation.166 } # lingua weirdo
+				}
+				2 = {
+					country_event = { id = trait_regulation.167 } # olfactory
+				}
+				2 = {
+					country_event = { id = trait_regulation.168 } # euphoric
+				}
+				2 = {
+					country_event = { id = trait_regulation.169 } # dread masters
+				}
+				5 = {
+					country_event = { id = trait_regulation.170 } # irradiated
+				}
+				10 = {
+					country_event = { id = trait_regulation.171 } # egg born
+				}
+				10 = {
+					country_event = { id = trait_regulation.172 } # curious
+				}
+				10 = {
+					country_event = { id = trait_regulation.173 } # uncreative
+				}
+				10 = {
+					country_event = { id = trait_regulation.174 } # airborne
+				}
+				4 = {
+					country_event = { id = trait_regulation.175 } # titanic
+				}
+				4 = {
+					country_event = { id = trait_regulation.176 } # tiny
+				}
+				5 = {
+					country_event = { id = trait_regulation.177 } # energy
+				}
+				5 = {
+					country_event = { id = trait_regulation.178 } # lithovore
+				}
+				30 = {
+					# no traits gained
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = tiyanki
+					is_country_type = neutral_faction
+					is_country_type = faction
+					is_country_type = pirate
+					#is_country_type = nomad #triggered in a special case event
+					is_country_type = amoeba
+					is_country_type = crystal
+					is_country_type = drone
+					is_country_type = cloud
+				}
+			}
+			country_event = { id = trait_regulation.4 }
+		}
+	}
+}
+
+
+
+##########################
+# Fallen Empire Trait Regulation
+##########################
+
+
+event = {
+	id = trait_regulation.2		# trigger at start of game
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = fallen_empire # lazy, will edit later
+			}
+			random_list = { # strength based traits
+				20 = {
+					country_event = { id = trait_regulation.103 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.104 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.201 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # intelligence based traits
+				20 = {
+					country_event = { id = trait_regulation.108 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.109 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.202 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # endurance based traits
+				20 = {
+					country_event = { id = trait_regulation.113 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.114 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.203 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # conformism based traits
+				20 = {
+					country_event = { id = trait_regulation.118 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.119 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.204 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # breeding based traits
+				20 = {
+					country_event = { id = trait_regulation.123 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.124 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.205 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # food based traits
+				20 = {
+					country_event = { id = trait_regulation.128 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.129 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.206 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # laziness traits
+				20 = {
+					country_event = { id = trait_regulation.135 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.136 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.207 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # community traits
+				20 = {
+					country_event = { id = trait_regulation.140 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.141 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.208 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # attractiveness traits
+				20 = {
+					country_event = { id = trait_regulation.145 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.146 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.209 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # age traits
+				20 = {
+					country_event = { id = trait_regulation.151 }
+				}
+				80 = {
+					country_event = { id = trait_regulation.210 }
+				}
+			}
+			random_list = { # bravery traits
+				20 = {
+					country_event = { id = trait_regulation.160 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.161 }
+				}
+				20 = {
+					country_event = { id = trait_regulation.211 }
+				}
+				40 = {
+					# no traits gained
+				}
+			}
+			random_list = { # research obsessions
+				10 = {
+					country_event = { id = trait_regulation.163 }
+				}
+				10 = {
+					country_event = { id = trait_regulation.164 }
+				}
+				10 = {
+					country_event = { id = trait_regulation.165 }
+				}
+				70 = {
+					# no traits gained
+				}
+			}
+			random_list = { # rare/special traits
+				1 = {
+					country_event = { id = trait_regulation.166 } # lingua weirdo
+				}
+				1 = {
+					country_event = { id = trait_regulation.167 } # olfactory
+				}
+				98 = {
+					# no traits gained
+				}
+			}
+			random_list = { # rare/special traits
+				20 = {
+					country_event = { id = trait_regulation.169 } # dread masters
+				}
+				20 = {
+					country_event = { id = trait_regulation.174 } # airborne
+				}
+				60 = {
+					# no traits gained
+				}
+			}
+			random_list = { # rare/special traits
+				20 = {
+					country_event = { id = trait_regulation.154 } # special precursor trait
+				}
+				5 = {
+					country_event = { id = trait_regulation.175 } # titanic
+				}
+				5 = {
+					country_event = { id = trait_regulation.176 } # tiny
+				}
+				5 = {
+					country_event = { id = trait_regulation.177 } # energy
+				}
+				5 = {
+					country_event = { id = trait_regulation.178 } # lithovore
+				}
+				60 = {
+					# no traits gained
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+##########################
+# Trait add country events
+##########################
+
+
+
+country_event = {
+	id = trait_regulation.100			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_weak1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.101			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_weak2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.102			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_weak3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.103			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_strong1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.104			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_strong2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.105			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_dumb1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.106			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_dumb2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.107			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_dumb3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.108			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_smart1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.109			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_smart2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.110			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_frail1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.111			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_frail2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.112			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_frail3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.113			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_robust1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.114			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_robust2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.115			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_iconoclastic1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.116			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_iconoclastic2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.117			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_iconoclastic3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.118			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_conformists1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.119			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_conformists2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.120			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_slow_breeders1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.121			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_slow_breeders2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.122			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_slow_breeders3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.123			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_rapid_breeders1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.124			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_rapid_breeders2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.125			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_badfarmers1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.126			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_badfarmers2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.127			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_badfarmers3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.128			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_agrarian1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.129		#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_agrarian2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.130			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_sedentary
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.131			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_nomadic
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.132			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_lazy1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.133			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_lazy2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.134			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_lazy3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.135			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_thrifty1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.136		#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_thrifty2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.137			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_solitary1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.138			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_solitary2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.139			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_solitary3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.140			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_communal1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.141			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_communal2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.142			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_repugnant1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.143			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_repugnant2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.144			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_repugnant3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.145			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_charismatic1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.146			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_charismatic2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.147			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_fleeting1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.148			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_fleeting2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.149			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_fleeting3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.150			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_venerable1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.151			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_venerable2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.152			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_wasteful1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.153			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_wasteful2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.154			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_wasteful3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.155			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_conservational1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.156		#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_conservational2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.157			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_weakwilled1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.158			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_weakwilled2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.159			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_weakwilled3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.160			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_resilient1
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.161			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_resilient2
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.162			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					NOR = {
+						has_trait = trait_mechanical
+						has_trait = trait_presentient_proles
+						has_trait = trait_presentient_starborn
+						has_trait = trait_presentient_earthbound
+						has_trait = trait_presentient_natural_intellectuals
+						has_trait = trait_presentient_brutes
+						has_trait = trait_presentient_conservative
+						has_trait = trait_presentient_irradiated
+					}
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_decadent
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.163			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_sociology_elitists
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.164			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_physics_elitists
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.165			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_engineering_elitists
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.166			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_lingua_idumentis
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.167			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_olfactory
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.168			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_euphoria
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.169			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_utterly_terrifying
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.170			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_irradiated
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.171			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_egg_born
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.172			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_curious
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.173			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_uncreative
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.174			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_airborne
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.175			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_titanic
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.176			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_tiny
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.177			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_energy_lifeform
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.178			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_lithovore
+			}
+		}
+	}
+}
+
+
+
+
+##########################
+# Tier 3 Traits for FE
+##########################
+
+
+country_event = {
+	id = trait_regulation.201			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_strong3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.202			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_smart3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.203			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_robust3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.204			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_conformists3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.205			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_rapid_breeders3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.206			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_agrarian3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.207			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_thrifty3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.208			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_communal3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.209			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_charismatic3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.210			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_venerable3
+			}
+		}
+	}
+}
+country_event = {
+	id = trait_regulation.211			#
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_presentient_proles
+					has_trait = trait_presentient_starborn
+					has_trait = trait_presentient_earthbound
+					has_trait = trait_presentient_natural_intellectuals
+					has_trait = trait_presentient_brutes
+					has_trait = trait_presentient_conservative
+					has_trait = trait_presentient_irradiated
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_resilient3
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ship_event = {
+#	id = trait_regulation.3			#placeholder for fleet destruction event
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#
+#	immediate = {
+#		fromfrom = {
+#			fleet = { destroy_fleet = this}
+#		}
+#	}
+#}

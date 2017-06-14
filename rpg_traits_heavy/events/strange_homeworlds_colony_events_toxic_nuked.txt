@@ -1,0 +1,77 @@
+namespace = strange_homeworlds
+
+#Toxic/Nuked Event
+planet_event = {
+	id = sh.toxic.1
+	title = "sh.toxic.1.title"
+	desc = "sh.toxic.1.desc"
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	location = ROOT
+
+	trigger = {
+		has_owner = yes
+		original_owner = yes
+		is_homeworld = no
+		owner = { is_ai = no }
+		has_ground_combat = no
+		is_occupied_flag = no
+		num_pops > 0
+		is_capital = no
+		OR = {
+			is_planet_class = pc_toxic
+			is_planet_class = pc_nuked
+		}
+		NOT = {
+			has_planet_flag = has_corroded_atmosphere_solved
+		}
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_planet_flag = has_corroded_atmosphere_solved
+		add_modifier = {
+			modifier = "corroding_atmosphere"
+			days = -1
+		}
+	}
+
+	option = {
+		name = sh.toxic.1.a
+		begin_event_chain = {
+			event_chain = "corroding_atmosphere_chain"
+			target = ROOT
+		}
+		enable_special_project = {
+			name = "SH_CORRODED_ATMOSPHERE_1"
+			location = this
+			owner = root
+		}
+	}
+	option = {
+		name = sh.toxic.2.a
+		begin_event_chain = {
+			event_chain = "corroding_atmosphere_chain"
+			target = ROOT
+		}
+	}
+}
+
+#Toxic/Nuked Event - Solved
+planet_event = {
+	id = sh.toxic.1.solved
+	title = "PROJECT_COMPLETE"
+	desc = "sh.toxic.1.solved.desc"
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	location = ROOT
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+		remove_modifier = "corroding_atmosphere"
+		custom_tooltip = colony.2.a.tooltip
+	}
+}

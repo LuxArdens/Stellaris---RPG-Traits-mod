@@ -1,0 +1,116 @@
+namespace = bp
+
+planet_event = {
+	id = bp.1
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			has_trait = trait_broodparasite
+			is_enslaved = no
+			is_being_purged = no
+			NOT = { has_modifier = bp_increased_reproduction }
+		}
+		any_pop = {
+			NOT = { has_trait = trait_broodparasite }
+			is_being_purged = no
+			is_robot_pop = no
+			NOT = { has_modifier = bp_reduced_reproduction }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				NOT = { has_trait = trait_broodparasite }
+				NOT = { has_modifier = bp_reduced_reproduction }
+				is_being_purged = no
+				is_robot_pop = no
+			}
+			add_modifier = {
+				modifier = bp_reduced_reproduction
+				days = -1
+			}
+		}
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_broodparasite
+				NOT = { has_modifier = bp_increased_reproduction }
+				is_enslaved = no
+				is_being_purged = no
+			}
+			add_modifier = {
+				modifier = bp_increased_reproduction
+				days = -1
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = bp.2
+	hide_window = yes
+	
+	trigger = {
+		NOT = {
+			any_pop = {
+				has_trait = trait_broodparasite
+				is_enslaved = no
+				is_being_purged = no
+			}
+		}
+		any_pop = {
+			has_modifier = bp_reduced_reproduction
+			NOT = { has_trait = trait_broodparasite }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_pop = {
+			limit = {
+				has_modifier = bp_reduced_reproduction
+			}
+			remove_modifier = bp_reduced_reproduction
+		}
+	}
+}
+
+planet_event = {
+	id = bp.3
+	hide_window = yes
+	
+	trigger = {
+		NOT = {
+			any_pop = {
+				NOT = { has_trait = trait_broodparasite }
+				is_being_purged = no
+				is_robot_pop = no
+			}
+		}
+		any_pop = {
+			has_modifier = bp_increased_reproduction
+			has_trait = trait_broodparasite
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_pop = {
+			limit = {
+				has_modifier = bp_increased_reproduction
+			}
+			remove_modifier = bp_increased_reproduction
+		}
+	}
+}

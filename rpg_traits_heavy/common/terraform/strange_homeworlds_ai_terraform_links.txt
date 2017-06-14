@@ -1,0 +1,211 @@
+################
+## AI World ##
+################
+
+terraform_link = {
+  from = "pc_tundra"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_alpine"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_arctic"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_savannah"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_arid"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_desert"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_continental"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_tropical"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_ocean"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_toxic"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_molten"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_nuked"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_barren"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_barren_cold"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_frozen"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_shielded"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}

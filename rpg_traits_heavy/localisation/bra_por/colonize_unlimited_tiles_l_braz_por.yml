@@ -1,0 +1,13 @@
+﻿l_braz_por:
+  pc_barren_tile: "Terreno Infértil"
+  pc_barren_tile_desc: "Terreno sem vida e sem atmosfera."
+  pc_toxic_tile: "Terreno Tóxico"
+  pc_toxic_tile_desc: "Terreno sem vida coberto por uma camada espessa de gases tóxicos."
+  pc_barren_cold_tile: "Terreno infértil"
+  pc_barren_cold_tile_desc: "Terreno sem vida e sem atmosfera."
+  pc_frozen_tile: "Terreno congelado"
+  pc_frozen_tile_desc: "Terreno coberto por uma camada espessa de gelo com uma atmosfera quase inexistente."
+  pc_molten_tile: "Terreno derretido"
+  pc_molten_tile_desc: "Lava quase derretida com uma fina atmosfera."
+  pc_gas_giant_tile: "Atmosfera Gasosa"
+  pc_gas_giant_tile_desc: "Uma mistura espessa de gases. A vida é inexistente ou rara."

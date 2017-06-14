@@ -1,0 +1,13 @@
+﻿l_german:
+  trait_pc_gas_giant_preference:0 "Gasriesen Vorliebe"
+  trait_pc_gas_giant_preference_desc:1 "§LDurch geschickte Genmanipulation oder langsamer Evolution passte sich diese Spezies an das Leben in den dichten Atmosphäre von Gasriesen an§!"
+  trait_pc_molten_preference:0 "Geschmolzene Vorliebe"
+  trait_pc_molten_preference_desc:1 "§LHitzebeständigkeit entwickelte sich (oder wurde eingebaut) in dieser Spezies. Sie sind in der Lange heißen Temperaturen zu wiederstehen und schwimmen druch Lavaseen§!"
+  trait_pc_barren_preference:0 "Karge Vorliebe"
+  trait_pc_barren_preference_desc:1 "§LDiese Spezies passte sich an das Leben mit sehr wenig an. Zumeist nur durch Sonnelicht, Mineralien und seltenen Bakterien auf der Oberfläche genährt§!"
+  trait_pc_barren_cold_preference:0 "Karge Vorliebe"
+  trait_pc_barren_cold_preference_desc:1 "§LDiese Spezies passte sich dan das Leben mit sehr wenig an, zumeist nur durch Sonnelich, Mineralien und seltenen Bacterien auf der Oberfläche genährt§!"
+  trait_pc_toxic_preference:0 "Giftig Vorliebe"
+  trait_pc_toxic_preference_desc:1 "§LDiese Spezies mutierte um die heißen giftige Gase dieser Atmosphäre zu Atmen, Sauerstoff ist für sie ein Gift.§!"
+  trait_pc_frozen_preference:0 "Gefrorene Vorliebe"
+  trait_pc_frozen_preference_desc:1 "§LKältebeständigkeit entwickelte sich (oder wurde eingebaut) in dieser Spezies. Es heißt sie können Temperaturen nahe dem absoluten Nullpunkt überleben§!"

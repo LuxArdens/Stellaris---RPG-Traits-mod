@@ -1,0 +1,77 @@
+namespace = strange_homeworlds
+
+#Barren/Barren Cold Event
+planet_event = {
+	id = sh.barren.1
+	title = "sh.barren.1.title"
+	desc = "sh.barren.1.desc"
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	location = ROOT
+
+	trigger = {
+		has_owner = yes
+		original_owner = yes
+		is_homeworld = no
+		owner = { is_ai = no }
+		has_ground_combat = no
+		is_occupied_flag = no
+		num_pops > 0
+		is_capital = no
+		OR = {
+			is_planet_class = pc_barren
+			is_planet_class = pc_barren_cold
+		}
+		NOT = {
+			has_planet_flag = has_cosmic_radiation
+		}
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_planet_flag = has_cosmic_radiation
+		add_modifier = {
+			modifier = "cosmic_radiation"
+			days = -1
+		}
+	}
+
+	option = {
+		name = sh.barren.1.a
+		begin_event_chain = {
+			event_chain = "cosmic_radiation_chain"
+			target = ROOT
+		}
+		enable_special_project = {
+			name = "SH_COSMIC_RADIATION_1"
+			location = this
+			owner = root
+		}
+	}
+	option = {
+		name = sh.barren.2.a
+		begin_event_chain = {
+			event_chain = "cosmic_radiation_chain"
+			target = ROOT
+		}
+	}
+}
+
+#Barren/Barren Cold Event
+planet_event = {
+	id = sh.barren.1.solved
+	title = "PROJECT_COMPLETE"
+	desc = "sh.barren.1.solved.desc"
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	location = ROOT
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+		remove_modifier = "corroding_atmosphere"
+		custom_tooltip = colony.2.a.tooltip
+	}
+}

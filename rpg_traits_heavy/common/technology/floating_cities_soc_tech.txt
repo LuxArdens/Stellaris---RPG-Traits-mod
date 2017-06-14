@@ -1,0 +1,46 @@
+@tier3cost3 = 3360
+
+tech_floating_cities = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	category = { new_worlds }
+	weight = 200
+	is_rare = yes
+
+	#Floating Cities
+	#Allows us to colonize Gas Giants by building floating cities.
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_TITLE"
+			desc = "TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	weight_groups = {
+		colonization
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+}

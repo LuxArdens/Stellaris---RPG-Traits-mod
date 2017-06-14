@@ -1,0 +1,7 @@
+﻿l_english:
+  trait_pc_shielded_preference:0 "Shielded Planet Preference"
+  trait_pc_shielded_preference_desc:1 "§LThrough skillful genetic manipulation or slow evolution this species can only survived when shielded from the evils of Space.§!"
+  pc_shielded_habitability:1 "Shielded Planet Habitability"
+  trait_pc_asteroid_preference:0 "Asteroid Preference"
+  trait_pc_asteroid_preference_desc:1 "§LThrough skillful genetic manipulation or slow evolution this species is particularly adapted to living inside asteroids.§!"
+  pc_asteroid_habitability:1 "Asteroid Habitability"

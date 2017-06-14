@@ -1,0 +1,52 @@
+tb_cloud_storm = {
+	picture = tb_cloud_storm
+	time = 100
+	cost = {
+		energy = 10
+		minerals = 120
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 10
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
+	}
+}
+
+tb_floater_herd = {
+	picture = tb_floater_herd
+	time = 100
+	cost = {
+		energy = 75
+		minerals = 75
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 5
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
+	}
+}
+
+tb_poisonous_gas = {
+	picture = tb_poisonous_gas
+	time = 100
+	cost = {
+		energy = 120
+		minerals = 75
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 5
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
+	}

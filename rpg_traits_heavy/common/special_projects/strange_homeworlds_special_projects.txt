@@ -1,0 +1,32 @@
+special_project = {
+	key = "SH_CORRODED_ATMOSPHERE_1"
+	event_chain = "corroding_atmosphere_chain"
+	cost = 500
+	tech_department = engineering_technology
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = sh.toxic.1.solved }
+		owner = { end_event_chain = "corroding_atmosphere_chain" }
+	}
+
+	on_fail = {
+	}
+}
+
+special_project = {
+	event_chain = "cosmic_radiation_chain"
+	cost = 500
+	tech_department = engineering_technology
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = sh.barren.1.solved }
+		owner = { end_event_chain = "cosmic_radiation_chain" }
+	}
+
+	on_fail = {
+	}
+}

@@ -1,0 +1,13 @@
+﻿l_english:
+  pc_barren_tile: "Barren Terrain"
+  pc_barren_tile_desc: "Lifeless terrain with no natural air supply."
+  pc_toxic_tile: "Toxic Terrain"
+  pc_toxic_tile_desc: "Lifeless terrain hidden under a thick layer of toxic gases."
+  pc_barren_cold_tile: "Barren Terrain"
+  pc_barren_cold_tile_desc: "Lifeless terrain with no natural air supply."
+  pc_frozen_tile: "Frozen Terrain"
+  pc_frozen_tile_desc: "Terrain buried under a thick layer of ice with barely any atmosphere above that."
+  pc_molten_tile: "Molten Terrain"
+  pc_molten_tile_desc: "Half-molten lava terrain with a very thin atmosphere above it."
+  pc_gas_giant_tile: "Gas Giant Atmosphere"
+  pc_gas_giant_tile_desc: "Mixture of thick gases. Life is almost always inexistant."

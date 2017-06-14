@@ -1,0 +1,165 @@
+##################
+## Inhospitable ##
+##################
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_barren"
+
+	energy = 2000
+	minerals = 2000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_barren_cold"
+
+	energy = 2000
+	minerals = 2000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_barren_cold"
+
+	energy = 2000
+	minerals = 2000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_frozen"
+
+	energy = 2000
+	minerals = 2000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_barren"
+
+	energy = 2000
+	minerals = 2000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_frozen"
+
+	energy = 2000
+	minerals = 2000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+###########
+## Harsh ##
+###########
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_toxic"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_nuked"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_toxic"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_nuked"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}

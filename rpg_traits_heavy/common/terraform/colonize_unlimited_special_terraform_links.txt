@@ -1,0 +1,51 @@
+################
+## Gaia World ##
+################
+
+terraform_link = {
+  from = "pc_toxic"
+	to = "pc_gaia"
+
+	energy = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_gaia"
+
+	energy = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+  from = "pc_savannah"
+	to = "pc_gaia"
+
+	energy = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+  from = "pc_alpine"
+	to = "pc_gaia"
+
+	energy = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
