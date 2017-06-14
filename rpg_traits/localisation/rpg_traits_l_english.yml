@@ -148,7 +148,7 @@
  trait_robust3_desc:0 "§LGenetically enhanced tissue structures, bones infused with advanced alloys and nanotics that filter toxins and repair damage; this species is close to indestructible. They can survive on worlds that are completely alien to them and fight on despite sustaining hits that would shred lesser species.§!\n"
  
  trait_thrifty1:0 "Motivated"
- trait_thrifty1_desc:0 "§LThis species like organising stuff. And doing stuff. And writing stuff. And making stuff. And building stuff. Let's do some stuff.§!\n"
+ trait_thrifty1_desc:0 "§LThis species likes organising stuff. And doing stuff. And writing stuff. And making stuff. And building stuff. Let's do some stuff.§!\n"
  
  trait_thrifty2:0 "Restless"
  trait_thrifty2_desc:0 "§LThis species barely ever rests. Literally, because they barely need sleep except for healing physically. As a result they tend to get a lot done.§!\n"
@@ -348,6 +348,12 @@
  trait_living_planet:0 "Living Planet"
  trait_living_planet_desc:0 "§LThis organism encompasses its entire homeworld and is ingrained with it. It *is* the planet and the planet *is* the organism. Single-minded and in perfect unity; the Living Planet does not tolerate other species or planets to exist.\n\nA single, powerful homeworld for the entire game. Cannot colonize other planets. Cannot annex planets. Cannot accept xenos. No migration. No diplomacy. Upon annexation, enemy planets are permanently destroyed.§!\n"
  
+ trait_cyborg:0 "Cyborgs"
+ trait_cyborg_desc:0 "§LEven before discovering FTL travel, this species experimented with cybernetics, and long since they have all started replacing their organic bodyparts with synthetic counterparts. Limbs, neural implants, sensors... members are often already 'enhanced' during infancy.§!\n"
+ 
+ trait_synthetic_lifeform:0 "Synthethic Lifeform"
+ trait_synthetic_lifeform_desc:0 "§LThis lifeform was artificially constructed.§!\n"
+ 
  ########################################
  # Events / oefening creatief schrijven #
  ########################################
@@ -370,7 +376,21 @@
  
  civic_rpg_hive_devouring_swarm:0 "Devouring Swarm"
  
+ NAME_Gas:0 "Gas Giant System"
+ gas_system_initializer_NAME:0 "Gas Giant System"
+ gas_system_initializer_DESC:0 "A Gas Giant System for Gaseous lifeforms. If you don't pick this as a gaseous lifeform, you're going to have a bad day. If you pick this without the Gaseous Lifeform trait, you're going to have a bad day."
  
  
  
  
+ 
+ 
+ 
+ 
+ trait_broodparasite:0 "Brood Parasite"
+ trait_broodparasite_desc:0 "§LMembers of this species are universally attractive, but reproduce asexually. As a result, they attract alien mates who raise their young; increasing their own reproductive success while reducing that of other species.§!\n"
+ 
+ bp_increased_reproduction:0 "Increased Reproduction"
+ bp_increased_reproduction_desc:0 "This Pop is mating with and having its kids raised by an alien Pop."
+ bp_reduced_reproduction:0 "Reduced Reproduction"
+ bp_reduced_reproduction_desc:0 "This Pop is mating with and raising the kids of an alien Pop."
