@@ -27,6 +27,7 @@ I cannot stress enough that this is an OVERHAUL mod with a different philosophy 
 ##################
 # Versions
 ##################
+
 HEAVY is everything that CORE has and more. In addition to overhauling the traits, it will completely overhaul the climate system as well as civics and more. Expect less compatibility with other mods, but more immersion, less nonsensical limits, and more role-playing opportunity.
 HEAVY is standalone and you should use EITHER the CORE/normal version OR Heavy, not both. Counter-intuitively, HEAVY is compatible with LITE.
 
@@ -42,6 +43,9 @@ Why is it not recommended/standard? Because reducing the amount of traits makes 
 
 
 
+##################
+# Suggestions et cetera
+##################
 
 
 Suggestions are welcome in the subreddit /r/stellarisrpg
