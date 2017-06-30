@@ -12,7 +12,7 @@ trait_cybernetic = {
 	must_match_primary_species = yes
 	
 	modifier = {
-		pop_environment_tolerance = 0.1		# reduced for planet overhaul (but still can't live on molten worlds for example)
+		pop_environment_tolerance = 0.2
 		tile_resource_minerals_mult = 0.25
 		tile_resource_energy_mult = 0.25
 		army_damage_mult = 0.25
@@ -38,7 +38,7 @@ trait_mechanical = {
 	immortal_leaders = yes
 	
 	modifier = {
-		pop_environment_tolerance = 0.3		# can live on anything except for ultra-extreme places (like stellar cores)
+		pop_environment_tolerance = 2.0		# can live on anything except for ultra-extreme places (like stellar cores)
 	}
 }
 
@@ -582,11 +582,11 @@ trait_frail1 = {
 	modifier = {
 		army_health = -0.25
 		garrison_health = -0.1
-		#pop_environment_tolerance = -0.05
+		pop_environment_tolerance = -0.05
 	}
 }
 trait_frail2 = {
-	cost = -2
+	cost = -3
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_frail2.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail1" "trait_frail3" }
@@ -594,11 +594,11 @@ trait_frail2 = {
 	modifier = {
 		army_health = -0.5
 		garrison_health = -0.25
-		pop_environment_tolerance = -0.05
+		pop_environment_tolerance = -0.1
 	}
 }
 trait_frail3 = {
-	cost = -3
+	cost = -5
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_frail3.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail2" "trait_frail1" }
@@ -606,7 +606,7 @@ trait_frail3 = {
 	modifier = {
 		army_health = -0.75
 		garrison_health = -0.5
-		pop_environment_tolerance = -0.1
+		pop_environment_tolerance = -0.2
 	}
 }
 
@@ -923,31 +923,31 @@ trait_agrarian3 = {
 }
 
 trait_robust1 = {
-	cost = 1
+	cost = 3
 	initial = yes
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_robust1.dds"
 	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust2" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
 	
 	modifier = {
-		#pop_environment_tolerance = 0.1
+		pop_environment_tolerance = 0.1
 		army_health = 0.5
 	}
 }
 trait_robust2 = {
-	cost = 2
+	cost = 5
 	initial = yes
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_robust2.dds"
 	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust1" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
 	
 	modifier = {
-		pop_environment_tolerance = 0.05
+		pop_environment_tolerance = 0.2
 		army_health = 1
 	}
 }
 trait_robust3 = {
-	cost = 3
+	cost = 8
 	initial = no
 	randomized = no
 	modification = yes
@@ -956,7 +956,7 @@ trait_robust3 = {
 	opposites = {  "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust2" "trait_robust1" "trait_weak1" "trait_weak2" "trait_weak3" }
 	
 	modifier = {
-		pop_environment_tolerance = 0.1
+		pop_environment_tolerance = 0.4
 		army_health = 3
 	}
 }
@@ -2148,7 +2148,7 @@ trait_cyborg = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_cybernetic.dds"
 	modifier = {
-		pop_environment_tolerance = 0.1		# reduced for planet overhaul (but still can't live on molten worlds for example)
+		pop_environment_tolerance = 0.20
 		tile_resource_minerals_mult = 0.25
 		tile_resource_energy_mult = 0.25
 		tile_resource_physics_research_mult = 0.25
@@ -2172,7 +2172,7 @@ trait_synthetic_lifeform = {
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_mechanical.dds"
 	modifier = {
-		pop_environment_tolerance = 0.3		# reduced for planet overhaul (but still can't live on molten worlds for example)
+		pop_environment_tolerance = 2.0
 		tile_resource_minerals_mult = 0.5
 		tile_resource_energy_mult = 0.5
 		tile_resource_physics_research_mult = 0.5
