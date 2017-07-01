@@ -38,7 +38,7 @@ trait_mechanical = {
 	immortal_leaders = yes
 
 	modifier = {
-		pop_environment_tolerance = = 2.0		# can live on anything except for ultra-extreme places (like stellar cores)
+		pop_environment_tolerance = 2.0		# can live on anything except for ultra-extreme places (like stellar cores)
 	}
 }
 
