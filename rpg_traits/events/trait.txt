@@ -706,3 +706,41 @@ country_event = {
 		#}
 	}
 }
+
+########################
+## Genemod On_Actions ##
+########################
+
+country_event = {
+	id = trait.9000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		from = { save_event_target_as = genemod_species }
+		hidden_effect = {
+			every_owned_leader = {
+				limit = { is_same_species = event_target:genemod_species }
+				change_species = event_target:genemod_species
+			}
+			every_pool_leader = {
+				limit = { is_same_species = event_target:genemod_species }
+				change_species = event_target:genemod_species
+			}
+			every_owned_army = {
+				limit = { is_same_species = event_target:genemod_species }
+				change_species = event_target:genemod_species
+			}
+			every_owned_ship = {
+				limit = {
+					is_ship_class = shipclass_colonizer
+					is_same_species = event_target:genemod_species
+				}
+				change_species = event_target:genemod_species
+			}
+		}
+	}
+}
