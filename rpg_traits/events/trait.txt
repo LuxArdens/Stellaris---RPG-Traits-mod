@@ -658,8 +658,13 @@ country_event = {
 		name = trait.8326.option
 		random_owned_planet = {
 			limit = { has_building = yes }
-			kill_pop = yes
-			random_tile = { limit = { has_building = yes } set_blocker = "tb_failing_infrastructure" }
+			random_tile = {
+        limit = {
+          has_building = yes
+          has_pop = yes
+        }
+        set_blocker = "tb_failing_infrastructure"
+      }
 		}
 	}
 }
@@ -699,7 +704,7 @@ planet_event = {
 				limit = { has_building = yes }
 				remove_building = yes
 			}
-		  destroy_colony = yes
+		  destroy_colony = { keep_buildings = no }
   }
 }
 
