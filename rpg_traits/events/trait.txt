@@ -439,7 +439,7 @@ event = {
       limit = {
 				has_trait = trait_gas_lifeform
       }
-			every_owned_planet = { planet_event = { id = trait.8334 } }
+			country_event = { id = trait.8334 }
     }
   }
 }
