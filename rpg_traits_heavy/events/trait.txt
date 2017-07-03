@@ -489,6 +489,7 @@ planet_event = {
       }
       planet_size < 25
 		  NOT = { is_planet_class = pc_habitat }
+		  NOT = { is_planet_class = pc_asteroid }
     }
 
     mean_time_to_happen = {
