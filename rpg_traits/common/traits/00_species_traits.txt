@@ -12,11 +12,15 @@ trait_cybernetic = {
 	must_match_primary_species = yes
 
 	modifier = {
-		pop_environment_tolerance = 0.25
+		tile_resource_physics_research_mult = 0.25
+		tile_resource_society_research_mult = 0.25
+		tile_resource_engineering_research_mult = 0.25
 		tile_resource_minerals_mult = 0.25
 		tile_resource_energy_mult = 0.25
 		army_damage_mult = 0.25
 		army_health = 0.25
+	
+		pop_environment_tolerance = 0.25
 	}
 }
 
@@ -97,6 +101,7 @@ trait_robotic_3 = {
 		army_health = 1
 		garrison_health = 1.0
 		pop_consumer_goods_mult = -0.5
+		pop_food_req_mult = -100
 	}
 }
 
@@ -2149,17 +2154,15 @@ trait_cyborg = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_cybernetic.dds"
 	modifier = {
-		pop_environment_tolerance = 0.25		# reduced for planet overhaul (but still can't live on molten worlds for example)
-		tile_resource_minerals_mult = 0.25
-		tile_resource_energy_mult = 0.25
 		tile_resource_physics_research_mult = 0.25
 		tile_resource_society_research_mult = 0.25
 		tile_resource_engineering_research_mult = 0.25
-		pop_consumer_goods_mult = -0.25
-
+		tile_resource_minerals_mult = 0.25
+		tile_resource_energy_mult = 0.25
 		army_damage_mult = 0.25
 		army_health = 0.25
-		garrison_health = 0.25
+	
+		pop_environment_tolerance = 0.25)
 	}
 }
 
@@ -2173,17 +2176,19 @@ trait_synthetic_lifeform = {
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_mechanical.dds"
 	modifier = {
-		pop_environment_tolerance = 2.0		# reduced for planet overhaul (but still can't live on molten worlds for example)
-		tile_resource_minerals_mult = 0.5
-		tile_resource_energy_mult = 0.5
-		tile_resource_physics_research_mult = 0.5
-		tile_resource_society_research_mult = 0.5
-		tile_resource_engineering_research_mult = 0.5
+		tile_resource_engineering_research_mult = 1
+		tile_resource_physics_research_mult = 1
+		tile_resource_society_research_mult = 1
+		tile_resource_energy_mult = 1.0
+		tile_resource_minerals_mult = 1.0
+		army_damage_mult = 1.0
+		army_health = 1
+		garrison_health = 1.0
+		
 		pop_consumer_goods_mult = -0.5
-
-		army_damage_mult = 0.5
-		army_health = 0.5
-		garrison_health = 0.5
+		pop_food_req_mult = -100
+	
+		pop_environment_tolerance = 2.0
 	}
 }
 

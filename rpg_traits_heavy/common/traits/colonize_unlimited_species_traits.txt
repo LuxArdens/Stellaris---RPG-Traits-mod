@@ -4,12 +4,15 @@
 @4 = 0.40
 @5 = 0.20
 @6 = 0.0
+@7 = -0.2	# testing negative values / works!
 
 trait_pc_gas_giant_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_gas_giant_preference.dds"
 	modification = no
 	modifier = {
 			pc_gas_giant_habitability = @1
+			
+			pc_barren_cold_habitability = @7
 	}
 }
 
@@ -144,10 +147,25 @@ trait_pc_shielded_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_shielded_preference.dds"
 	modification = no
 	modifier = {
-		pc_ai_habitability = 1.0
 		pc_habitat_habitability = 1.0
 		pc_shielded_habitability = 1.0
 		pc_ringworld_habitable_habitability = 1.0
+		
+			pc_frozen_habitability = @7
+			pc_barren_habitability = @7
+			pc_barren_cold_habitability = @7
+			pc_nuked_habitability = @7
+			pc_desert_habitability = @7
+			pc_tropical_habitability = @7
+			pc_continental_habitability = @7
+			pc_arctic_habitability = @7
+			pc_tundra_habitability = @7
+			pc_arid_habitability = @7
+			pc_savannah_habitability = @7
+			pc_alpine_habitability = @7
+			pc_ocean_habitability = @7
+			pc_toxic_habitability = @7
+			pc_molten_habitability = @7
 	}
 }
 
