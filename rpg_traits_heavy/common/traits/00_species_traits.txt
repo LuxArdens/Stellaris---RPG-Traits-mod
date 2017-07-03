@@ -88,13 +88,14 @@ trait_robotic_3 = {
 	modification = no
 	
 	modifier = {
-		tile_resource_engineering_research_mult = 0.4
-		tile_resource_physics_research_mult = 0.4
-		tile_resource_society_research_mult = 0.4
-		tile_resource_energy_mult = 0.5
-		tile_resource_minerals_mult = 0.5
-		army_damage_mult = 0.5
-		garrison_health = 0.5
+		tile_resource_engineering_research_mult = 1
+		tile_resource_physics_research_mult = 1
+		tile_resource_society_research_mult = 1
+		tile_resource_energy_mult = 1.0
+		tile_resource_minerals_mult = 1.0
+		army_damage_mult = 1.0
+		army_health = 1
+		garrison_health = 1.0
 		pop_consumer_goods_mult = -0.5
 	}
 }
@@ -1349,8 +1350,8 @@ trait_venerable3 = {
 	randomized = no
 	modification = yes
 	advanced_trait = yes
+	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_venerable3.dds"
-	modifier = { leader_age = 2000 }
 	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable2" "trait_venerable1" "trait_frail2" "trait_frail3" }
 }
 
@@ -2172,7 +2173,7 @@ trait_synthetic_lifeform = {
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_mechanical.dds"
 	modifier = {
-		pop_environment_tolerance = 0.3		# reduced for planet overhaul (but still can't live on molten worlds for example)
+		pop_environment_tolerance = 0.3		# reduced for planet overhaul (but still can't just live on molten worlds or worse for example)
 		tile_resource_minerals_mult = 0.5
 		tile_resource_energy_mult = 0.5
 		tile_resource_physics_research_mult = 0.5
@@ -2199,9 +2200,3 @@ trait_broodparasite = {
 		pop_other_species_happiness = 0.1
 	}
 }
-
-
-
-
-
-
