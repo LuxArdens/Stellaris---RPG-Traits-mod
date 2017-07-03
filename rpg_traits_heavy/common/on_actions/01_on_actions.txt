@@ -12,6 +12,10 @@ on_decade_pulse = {
 	}
 }
 
+#on_planet_surveyed = {
+#	trait.1802
+#}
+
 on_press_begin = {
 	events = {
 		trait.1
