@@ -678,11 +678,12 @@ planet_event = {
 
   trigger = {
 	   AND = {
-		   owner = { has_trait = trait_living_planet }
-			 any_pop = {
-			    NOT = { has_trait = trait_living_planet }
-			    is_being_purged = yes
-			 }
+			owner = { has_trait = trait_living_planet }
+			#any_pop = {
+			#		NOT = { has_trait = trait_living_planet }
+			#		is_being_purged = yes
+			#}
+			is_homeworld = no		# zou extra planeten bij advanced start moeten verwijderen
 		 }
   }
 
