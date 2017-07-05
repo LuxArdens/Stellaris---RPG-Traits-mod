@@ -88,15 +88,16 @@ trait_robotic_3 = {
 	modification = no
 
 	modifier = {
-		tile_resource_engineering_research_mult = 2.0
-		tile_resource_physics_research_mult = 2.0
-		tile_resource_society_research_mult = 2.0
-		tile_resource_energy_mult = 1.5
-		tile_resource_minerals_mult = 1.5
-		army_damage_mult = 1.5
-		army_health = 3.0
-		garrison_health = 4.0
+		tile_resource_engineering_research_mult = 1.75
+		tile_resource_physics_research_mult = 1.75
+		tile_resource_society_research_mult = 1.75
+		tile_resource_energy_mult = 1.25
+		tile_resource_minerals_mult = 1.25
+		army_damage_mult = 1.0
+		army_health = 1.5
+		garrison_health = 2.5
 		pop_consumer_goods_mult = -0.5
+		leader_skill_levels = 1
 	}
 }
 
