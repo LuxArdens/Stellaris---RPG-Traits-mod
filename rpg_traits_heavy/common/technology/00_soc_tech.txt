@@ -2933,16 +2933,16 @@ tech_psionic_theory = {
 	gateway = psionics
 	
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.1
 		modifier = {
-			factor = 0
-			NOR = {
+			factor = 10
+			OR = {
 				has_ethic = "ethic_spiritualist"
 				has_ethic = "ethic_fanatic_spiritualist"
 			}
 		}
 		modifier = {
-			factor = 1.10
+			factor = 2
 			research_leader = {
 				area = society
 				has_level > 2
@@ -2950,7 +2950,7 @@ tech_psionic_theory = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 3
 			research_leader = {
 				area = society
 				has_level > 3
@@ -2958,7 +2958,7 @@ tech_psionic_theory = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 4
 			research_leader = {
 				area = society
 				has_level > 4
@@ -2968,6 +2968,10 @@ tech_psionic_theory = {
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_fanatic_spiritualist"
+		}
+		modifier = {
+			factor = 0
+			has_ethic = "ethic_hive_mind"
 		}
 		modifier = {
 			factor = 5
@@ -2987,6 +2991,10 @@ tech_psionic_theory = {
 					research_leader = {
 						area = society
 						has_trait = "leader_trait_expertise_psionics"
+					}
+					research_leader = {
+						area = society
+						has_trait = "leader_trait_curator"
 					}
 				}
 			}
