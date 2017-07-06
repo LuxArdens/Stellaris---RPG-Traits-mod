@@ -381,4 +381,16 @@
  gas_system_initializer_DESC:0 "A Gas Giant System for Gaseous lifeforms. If you don't pick this as a gaseous lifeform, you're going to have a bad day. If you pick this without the Gaseous Lifeform trait, you're going to have a bad day."
  
  
+ ########################################
+ # Civics - veel creatieve mogelijkheden
+ ########################################
+ 
+ civic_galaxy_shapers:0 "Galaxy Shapers"
+ civic_galaxy_shapers_desc:0 "Some adapt to alien planets. Others make the planet adapt."
+ 
+ civic_robot_obsession:0 "Robotic Obsession"
+ civic_robot_obsession_desc:0 "Obsessed with robots and artifical intelligence - this society is built around robots doing all the hard work and organics doing nothing but building more robots."
+ 
+ 
+ 
  
