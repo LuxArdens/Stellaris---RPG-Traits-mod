@@ -98,6 +98,32 @@ terraform_link = {
 	}
 }
 
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
 
 terraform_link = {
 	from = "pc_nuked"

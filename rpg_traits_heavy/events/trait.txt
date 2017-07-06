@@ -774,6 +774,19 @@ planet_event = {
 }
 
 
+country_event = {
+	id = "trait.8100"			# cheat event for rapid start
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+			add_modifier = {
+				modifier = trait_effects_weirdass
+				days = -1
+			}
+	}
+}
+
 ########################
 ## Genemod On_Actions ##
 ########################

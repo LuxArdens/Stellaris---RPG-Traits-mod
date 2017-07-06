@@ -9,6 +9,10 @@ tech_hollow_asteroids = {
 	category = { new_worlds }
 	weight = @tier2weight1
 	is_rare = yes
+	
+	modifier = { 
+		pc_asteroid_habitability = 0.3
+	}
 
 	prereqfor_desc = {
 		diplo_action = {

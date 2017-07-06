@@ -1533,7 +1533,7 @@ trait_custom_race = {
 	initial = yes
 	randomized = no
 	modification = no
-	icon = "gfx/interface/icons/traits/trait_cheat.dds"
+	icon = "gfx/interface/icons/traits/trait_custom.dds"
 	opposites = {  }
 	modifier = {
 	}
