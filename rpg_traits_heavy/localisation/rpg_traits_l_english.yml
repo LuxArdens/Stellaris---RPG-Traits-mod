@@ -381,16 +381,16 @@
  gas_system_initializer_DESC:0 "A Gas Giant System for Gaseous lifeforms. If you don't pick this as a gaseous lifeform, you're going to have a bad day. If you pick this without the Gaseous Lifeform trait, you're going to have a bad day."
  
  
- ########################################
- # Civics - veel creatieve mogelijkheden
- ########################################
- 
- civic_galaxy_shapers:0 "Galaxy Shapers"
- civic_galaxy_shapers_desc:0 "Some adapt to alien planets. Others make the planet adapt."
- 
- civic_robot_obsession:0 "Robotic Obsession"
- civic_robot_obsession_desc:0 "Obsessed with robots and artifical intelligence - this society is built around robots doing all the hard work and organics doing nothing but building more robots."
  
  
  
  
+ 
+ 
+ trait_broodparasite:0 "Brood Parasite"
+ trait_broodparasite_desc:0 "§LAn asexual parasite, this species can only reproduce inside a living host. They reproduce exceptionally fast in alien lifeforms, rapidly adapting inside their bodies, whilst injecting them with stimulating chemicals. Infected hosts are completely infatuated with their parasite and its offspring, reducing their own reproduction speed, but making them happier... in a very creepy, unhealthy way. \n\n +200% growth speed when xeno pop present on planet, -50% growth speed for infected xeno pop.§!\n"
+ 
+ bp_increased_reproduction:0 "Increased Reproduction"
+ bp_increased_reproduction_desc:0 "This Pop is mating with and having its kids raised by an alien Pop."
+ bp_reduced_reproduction:0 "Reduced Reproduction"
+ bp_reduced_reproduction_desc:0 "This Pop is mating with and raising the kids of an alien Pop."
