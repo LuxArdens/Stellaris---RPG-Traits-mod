@@ -710,7 +710,7 @@ pc_b_star = {
 
 	planet_size = { min = 25 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_a_star = {
@@ -735,7 +735,7 @@ pc_a_star = {
 
 	planet_size = { min = 25 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_f_star = {
@@ -760,7 +760,7 @@ pc_f_star = {
 
 	planet_size = { min = 25 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_g_star = {
@@ -785,7 +785,7 @@ pc_g_star = {
 
 	planet_size = { min = 25 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_k_star = {
@@ -810,7 +810,7 @@ pc_k_star = {
 
 	planet_size = { min = 25 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_m_star = {
@@ -835,7 +835,7 @@ pc_m_star = {
 
 	planet_size = { min = 25 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_black_hole = {
@@ -880,7 +880,7 @@ pc_neutron_star = {
 
 	planet_size = { min = 20 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_pulsar = {
@@ -906,7 +906,7 @@ pc_pulsar = {
 
 	planet_size = { min = 20 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 # ###########

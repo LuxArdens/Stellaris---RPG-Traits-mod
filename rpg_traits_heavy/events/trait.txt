@@ -490,6 +490,7 @@ planet_event = {
 			planet_size < 25
 			NOT = { is_planet_class = pc_habitat }
 			NOT = { is_planet_class = pc_asteroid }
+			NOT = { is_planet_class = pc_gas_giant }
 		}
 
 		mean_time_to_happen = {
@@ -576,34 +577,35 @@ planet_event = {
 	}
 }
 
-#event = {
-#		id = "trait.8325"
-#		hide_window = yes
-#		is_triggered_only = yes
-#
-#		immediate = {
-#				every_country = {
-#						limit = {
-#				has_trait = trait_winter
-#						}
-#			country_event = { id = trait.8326 }
-#				}
-#		}
-#}
-#country_event = {
-#		id = "trait.8326"
-#	title = "trait.8326.title"
-#	desc = trait.8326.desc
-#		is_triggered_only = yes
-#
-#	option = {
-#		name = trait.8326.a
-#						add_modifier = {
-#								modifier = trait_hibernation
-#								months = 12
-#						}
-#	}
-#}
+
+event = {
+		id = "trait.8325"
+		hide_window = yes
+		is_triggered_only = yes
+
+		immediate = {
+				every_country = {
+						limit = {
+				has_trait = trait_winter
+						}
+			country_event = { id = trait.8326 }
+				}
+		}
+}
+country_event = {
+		id = "trait.8326"
+		title = "trait.8326.title"
+		desc = trait.8326.desc
+		is_triggered_only = yes
+
+	option = {
+		name = trait.8326.a
+						add_modifier = {
+								modifier = trait_hibernation
+								months = 12
+						}
+	}
+}
 
 
 #####################

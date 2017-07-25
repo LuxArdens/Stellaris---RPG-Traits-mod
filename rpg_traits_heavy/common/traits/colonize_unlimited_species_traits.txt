@@ -1,10 +1,52 @@
-@1 = 0.60
-@2 = 0.55
-@3 = 0.50
-@4 = 0.40
-@5 = 0.20
-@6 = 0.0
-@7 = -0.2	# testing negative values / works!
+# Base hab is 10%, so factor that in!
+
+@1 = 0.50		# yes, that's the top level - things've gotten a little harsher
+@2 = 0.45
+@3 = 0.40
+@4 = 0.30
+@5 = 0.10
+@6 = -0.10
+@7 = -0.3	# testing negative values / works!
+@8 = -2 # for star-nonstar separation
+
+trait_pc_a_star_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_a_star_preference.dds"
+	modification = no
+	modifier = {
+			pc_b_star_habitability = @1
+			
+			pc_a_star_habitability = @2
+			pc_f_star_habitability = @2
+			
+			pc_g_star_habitability = @3
+			pc_k_star_habitability = @3
+			pc_m_star_habitability = @4
+			
+			pc_neutron_star_habitability = @5
+			pc_pulsar_habitability = @5
+			
+			pc_gas_giant_habitability = @7
+			pc_gaia_habitability = @8
+			pc_habitat_habitability = @8
+			pc_shielded_habitability = @8
+			pc_ringworld_habitable_habitability = @8
+			pc_frozen_habitability = @8
+			pc_barren_habitability = @8
+			pc_barren_cold_habitability = @8
+			pc_nuked_habitability = @8
+			pc_desert_habitability = @8
+			pc_tropical_habitability = @8
+			pc_continental_habitability = @8
+			pc_arctic_habitability = @8
+			pc_tundra_habitability = @8
+			pc_arid_habitability = @8
+			pc_savannah_habitability = @8
+			pc_alpine_habitability = @8
+			pc_ocean_habitability = @8
+			pc_toxic_habitability = @8
+			pc_molten_habitability = @8
+	}
+}
 
 trait_pc_gas_giant_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_gas_giant_preference.dds"
@@ -12,7 +54,15 @@ trait_pc_gas_giant_preference = {
 	modifier = {
 			pc_gas_giant_habitability = @1
 			
-			pc_barren_cold_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 
@@ -36,6 +86,16 @@ trait_pc_molten_preference = {
 			pc_frozen_habitability = @5
 			pc_barren_habitability = @5
 			pc_barren_cold_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 
@@ -62,6 +122,16 @@ trait_pc_toxic_preference = {
 			pc_ocean_habitability = @4
 			
 			pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 
@@ -88,6 +158,16 @@ trait_pc_barren_preference = {
 			
 			pc_toxic_habitability = @5
 			pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 
@@ -114,6 +194,16 @@ trait_pc_barren_cold_preference = {
 
 			pc_toxic_habitability = @5
 			pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 
@@ -140,6 +230,16 @@ trait_pc_frozen_preference = {
 
 			pc_toxic_habitability = @5
 			pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 
@@ -166,6 +266,16 @@ trait_pc_shielded_preference = {
 			pc_ocean_habitability = @7
 			pc_toxic_habitability = @7
 			pc_molten_habitability = @7
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 
@@ -178,6 +288,16 @@ trait_pc_asteroid_preference = {
 		pc_barren_habitability = @5
 		pc_barren_cold_habitability = @5
 		pc_nuked_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 		
 	}
 }

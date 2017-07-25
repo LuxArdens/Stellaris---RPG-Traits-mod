@@ -2102,14 +2102,15 @@ trait_quantity = {
 }
 
 trait_winter = {
-	cost = -2
-	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" }
-	initial = no
+	cost = -3
+	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_living_planet" "trait_titanic" "trait_titanic" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
+	initial = yes
 	randomized = no
 	modification = yes
-	icon = "gfx/interface/icons/traits/trait_quantity.dds"
+	icon = "gfx/interface/icons/traits/trait_winter.dds"
 	modifier = {
-		pop_happiness = 0.5
+		#pop_happiness = 0.5
+		pop_food_req_mult = -0.1
 	}
 }
 

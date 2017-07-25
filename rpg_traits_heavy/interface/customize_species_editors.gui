@@ -1563,10 +1563,22 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
+				name = "TYPE_HEADER_09"
+				font = "malgun_goth_24"
+				text = "climate_star"
+				position = { x = @planet_col2 y = @horizontal_level_text }
+				maxWidth = @planet_text_max_width_horizontal
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
+
+			instantTextBoxType = {
 				name = "TYPE_HEADER_08"
 				font = "malgun_goth_24"
 				text = "climate_other"
-				position = { x = @planet_col3 y = @horizontal_level_text }
+				position = { x = @planet_col4 y = @horizontal_level_text }
 				maxWidth = @planet_text_max_width_horizontal
 				maxHeight = @planet_text_max_height
 				Orientation = "UPPER_LEFT"
@@ -1822,6 +1834,14 @@ guiTypes = {
 			buttonType = {
 				name = "pc_gas_giant"
 				position = { x = @planet_col2 y = @horizontal_level }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_a_star"
+				position = { x = @planet_col3 y = @horizontal_level }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"

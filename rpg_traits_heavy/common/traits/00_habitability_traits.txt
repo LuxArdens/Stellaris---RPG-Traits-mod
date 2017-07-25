@@ -1,9 +1,13 @@
-@1 = 0.60
-@2 = 0.55
-@3 = 0.50
-@4 = 0.40
-@5 = 0.20
-@6 = 0.0
+# Base hab is 10%, so factor that in!
+
+@1 = 0.50		# yes, that's the top level - things've gotten a little harsher
+@2 = 0.45
+@3 = 0.40
+@4 = 0.30
+@5 = 0.10
+@6 = -0.10
+@7 = -0.3	# testing negative values / works!
+@8 = -2 # for star-nonstar separation
 
 trait_pc_desert_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
@@ -27,6 +31,16 @@ trait_pc_desert_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_arid_preference = {
@@ -51,6 +65,16 @@ trait_pc_arid_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_savannah_preference = {
@@ -75,6 +99,16 @@ trait_pc_savannah_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_tropical_preference = {
@@ -99,6 +133,16 @@ trait_pc_tropical_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_continental_preference = {
@@ -123,6 +167,16 @@ trait_pc_continental_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_ocean_preference = {
@@ -147,6 +201,16 @@ trait_pc_ocean_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_arctic_preference = {
@@ -171,6 +235,16 @@ trait_pc_arctic_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_tundra_preference = {
@@ -195,6 +269,16 @@ trait_pc_tundra_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_alpine_preference = {
@@ -219,6 +303,16 @@ trait_pc_alpine_preference = {
 		pc_nuked_habitability = @5
 		pc_toxic_habitability = @5
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_ai_preference = {
@@ -244,6 +338,16 @@ trait_pc_ai_preference = {
 		pc_ocean_habitability = @7
 		pc_toxic_habitability = @7
 		pc_molten_habitability = @7
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_nuked_preference = {
@@ -268,6 +372,16 @@ trait_pc_nuked_preference = {
 		pc_ocean_habitability = @4
 		
 		pc_molten_habitability = @5
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_gaia_preference = {
@@ -300,6 +414,16 @@ trait_pc_ringworld_habitable_preference = {
 			pc_ocean_habitability = @7
 			pc_toxic_habitability = @7
 			pc_molten_habitability = @7
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
 }
 trait_pc_habitat_preference = {
@@ -326,4 +450,14 @@ trait_pc_habitat_preference = {
 			pc_ocean_habitability = @7
 			pc_toxic_habitability = @7
 			pc_molten_habitability = @7
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
 	}
