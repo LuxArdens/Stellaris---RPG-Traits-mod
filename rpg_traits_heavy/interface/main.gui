@@ -305,32 +305,32 @@ guiTypes = {
 			size = { width=200 height=200 }
 			Orientation = UPPER_LEFT
 
-			iconType = {
-				name = "ic_icon"
-				spriteType = "GFX_resource_ic"
-				position = { x= 0 y = 9 }
-				frame = 1
-				pdx_tooltip = "IC_IRO"
-				pdx_tooltip_delayed = "IC_DRO"
-				alwaysTransparent = yes
-				tooltip_mode_enabled = yes
-			}
-			
-			buttonType = {
-				name = "ic"
-				spriteType = "GFX_invisible"
-				size = { x = 65 y = 18 }
-				position = { x = 10 y = 9 }
-			}
-
-			instantTextBoxType={
-				name = "ic_text"
-				font = "cg_16b"
-				position = { x= 17 y= @resource_amount_y }
-				maxWidth = 65
-				maxHeight = 16
-				alwaysTransparent = yes
-			}
+		#	iconType = {
+		#		name = "ic_icon"
+		#		spriteType = "GFX_resource_ic"
+		#		position = { x= 0 y = 9 }
+		#		frame = 1
+		#		pdx_tooltip = "IC_IRO"
+		#		pdx_tooltip_delayed = "IC_DRO"
+		#		alwaysTransparent = yes
+		#		tooltip_mode_enabled = yes
+		#	}
+		#	
+		#	buttonType = {
+		#		name = "ic"
+		#		spriteType = "GFX_invisible"
+		#		size = { x = 65 y = 18 }
+		#		position = { x = 10 y = 9 }
+		#	}
+		#
+		#	instantTextBoxType={
+		#		name = "ic_text"
+		#		font = "cg_16b"
+		#		position = { x= 17 y= @resource_amount_y }
+		#		maxWidth = 65
+		#		maxHeight = 16
+		#		alwaysTransparent = yes
+		#	}
 
 			iconType = {
 				name = "energy_icon"

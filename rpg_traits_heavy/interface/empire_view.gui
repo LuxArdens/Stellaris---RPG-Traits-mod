@@ -592,21 +592,21 @@ guiTypes = {
 				orientation = upper_left
 			}	
 
-			iconType = {
-				name = "ic_icon"
-				spriteType = "GFX_resource_ic"
-				position = { x = 5 y = @icon_y }
-			}	
-
-			instantTextBoxType = {
-				name = "ic"
-				font = "cg_16b"
-				position = { x = -5 y = @texy_y }
-				maxWidth = 55
-				maxHeight = 16
-				text = "+0.00"
-				format = center
-			}
+		#	iconType = {
+		#		name = "ic_icon"
+		#		spriteType = "GFX_resource_ic"
+		#		position = { x = 5 y = @icon_y }
+		#	}	
+		#
+		#	instantTextBoxType = {
+		#		name = "ic"
+		#		font = "cg_16b"
+		#		position = { x = -5 y = @texy_y }
+		#		maxWidth = 55
+		#		maxHeight = 16
+		#		text = "+0.00"
+		#		format = center
+		#	}
 
 			iconType = {
 				name = "energy_icon"
@@ -1176,35 +1176,35 @@ guiTypes = {
 			position = { x = 208 y = 38 }
 			size = { width = 250 height = 20 }
 
-			containerWindowType = {
-				name = "ic"
-				position = { x = -10 y = 0 }
-				size = { width = @resource_w height = @resource_h }
-
-				background = {
-					name = "ic"
-					spriteType = "GFX_invisible"
-				}
-
-				iconType = {
-					name = "icon"
-					alwaysTransparent = yes
-					spriteType = "GFX_resource_ic"
-					position = { x = -7 y = -20 }
-					orientation = center
-				}
-
-				instantTextBoxType = {
-					name = "value"
-					alwaysTransparent = yes
-					font = "cg_16b"
-					position = { x = 0 y = @resource_value_y }
-					maxWidth = @resource_w
-					maxHeight = 16
-					text = "+0.00"
-					format = center
-				}
-			}
+		#	containerWindowType = {
+		#		name = "ic"
+		#		position = { x = -10 y = 0 }
+		#		size = { width = @resource_w height = @resource_h }
+		#
+		#		background = {
+		#			name = "ic"
+		#			spriteType = "GFX_invisible"
+		#		}
+		#
+		#		iconType = {
+		#			name = "icon"
+		#			alwaysTransparent = yes
+		#			spriteType = "GFX_resource_ic"
+		#			position = { x = -7 y = -20 }
+		#			orientation = center
+		#							}
+		#
+		#		instantTextBoxType = {
+		#			name = "value"
+		#			alwaysTransparent = yes
+		#			font = "cg_16b"
+		#			position = { x = 0 y = @resource_value_y }
+		#			maxWidth = @resource_w
+		#			maxHeight = 16
+		#			text = "+0.00"
+		#			format = center
+		#		}
+		#	}
 
 			containerWindowType = {
 				name = "energy"
@@ -1579,35 +1579,35 @@ guiTypes = {
 			position = { x = 288 y = 38 }
 			size = { width = 250 height = 20 }
 
-			containerWindowType = {
-				name = "ic"
-				position = { x = -10 y = 0 }
-				size = { width = @resource_w height = @resource_h }
-
-				background = {
-					name = "ic"
-					spriteType = "GFX_invisible"
-				}
-
-				iconType = {
-					name = "icon"
-					alwaysTransparent = yes
-					spriteType = "GFX_resource_ic"
-					position = { x = -7 y = -20 }
-					orientation = center
-				}
-
-				instantTextBoxType = {
-					name = "value"
-					alwaysTransparent = yes
-					font = "cg_16b"
-					position = { x = 0 y = @resource_value_y }
-					maxWidth = @resource_w
-					maxHeight = 16
-					text = "+0.00"
-					format = center
-				}
-			}
+		#	containerWindowType = {
+		#		name = "ic"
+		#		position = { x = -10 y = 0 }
+		#		size = { width = @resource_w height = @resource_h }
+		#
+		#		background = {
+		#			name = "ic"
+		#			spriteType = "GFX_invisible"
+		#		}
+		#
+		#		iconType = {
+		#			name = "icon"
+		#			alwaysTransparent = yes
+		#			spriteType = "GFX_resource_ic"
+		#			position = { x = -7 y = -20 }
+		#			orientation = center
+		#		}
+		#
+		#		instantTextBoxType = {
+		#			name = "value"
+		#			alwaysTransparent = yes
+		#			font = "cg_16b"
+		#			position = { x = 0 y = @resource_value_y }
+		#			maxWidth = @resource_w
+		3			maxHeight = 16
+		#			text = "+0.00"
+		#			format = center
+		#		}
+		#	}
 
 			containerWindowType = {
 				name = "energy"
