@@ -289,6 +289,10 @@ trait_quantity = {
 }
 
 trait_hibernation = {
+	# robots continue at partial efficiency! Yay
+	pop_robot_production_output = 0.75
+	country_robot_build_speed_mult = -1	# but you can't build em
+
 	# ships check
 	spaceport_ship_build_speed_mult = -20
 	ship_speed_mult = -2
