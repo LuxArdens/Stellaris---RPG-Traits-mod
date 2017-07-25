@@ -46,6 +46,13 @@ tech_psionic_synthetics = {
   is_rare = yes
   weight = @tier3weight4
 
+  prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_PSIONIC_SYNTHETICS_TITLE"
+			desc = "TECH_UNLOCK_PSIONIC_SYNTHETICS_DESC"
+		}
+	}
+
   weight_modifier = {
     factor = 0.5
     modifier = {

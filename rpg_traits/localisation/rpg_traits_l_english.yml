@@ -402,4 +402,7 @@
  tech_psionic_synthetics:0 "Dimensional Communication"
  tech_psionic_synthetics_desc:0 "Breaching the fourth spatial dimension allows for synthetics to interface directly with organic conciousnesses."
 
+ TECH_UNLOCK_PSIONIC_SYNTHETICS_TITLE:0 "§HUnlocks Feature:§! Remote Organic Neural Interface"
+ TECH_UNLOCK_PSIONIC_SYNTHETICS_DESC:0 "§HRemote Organic Neural Interface§!\nAllows the simultaneous use of the psionic and synthetic ascension paths."
+
  requires_tech_psionic_synthetics:0 "$TRIGGER_FAIL$Requires the £physics  §Y$tech_psionic_synthetics$§! technology."
