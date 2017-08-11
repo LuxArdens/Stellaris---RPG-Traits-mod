@@ -2169,7 +2169,7 @@ trait_cyborg = {
 
 trait_synthetic_lifeform = {
 	cost = 9
-	opposites = { "trait_broodparasite" "trait_energy_lifeform" "trait_egg_born" "trait_cyborg" }
+	opposites = { "trait_broodparasite" "trait_energy_lifeform" "trait_egg_born" "trait_cyborg" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" }
 
 	initial = yes
 	randomized = no
