@@ -89,6 +89,7 @@ on_yearly_pulse = {
 		trait.16
 		trait.17
 		trait.1601
+		trait.1602
 		trait.1701
 	}
 }

@@ -460,6 +460,21 @@ event = {
 }
 
 event = {
+	id = "trait.1602"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = { has_trait = trait_energy_lifeform }
+			}
+			remove_modifier = "trait_effects_energy_lifeform"
+		}
+	}
+}
+
+event = {
 	id = "trait.1701"
 	hide_window = yes
 	is_triggered_only = yes
