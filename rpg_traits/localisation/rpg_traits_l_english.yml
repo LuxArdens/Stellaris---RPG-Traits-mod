@@ -352,7 +352,7 @@
  trait_cyborg_desc:0 "§LEven before discovering FTL travel, this species experimented with cybernetics, and long since they have all started replacing their organic bodyparts with synthetic counterparts. Limbs, neural implants, sensors... members are often already 'enhanced' during infancy.§!\n"
  
  trait_synthetic_lifeform:0 "Synthethic Lifeform"
- trait_synthetic_lifeform_desc:0 "§LThis lifeform was artificially constructed.§!\n"
+ trait_synthetic_lifeform_desc:0 "§LThis lifeform was artificially constructed. They require no organic produce, do not breathe, do not die of old age, and are stronger, faster and smarter than most organics.§!\n"
  
  ########################################
  # Events / oefening creatief schrijven #
