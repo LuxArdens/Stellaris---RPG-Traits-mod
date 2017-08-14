@@ -87,9 +87,12 @@ building_ic_1 = {
 				has_building = "building_colony_shelter"
 			}
 		}
-#		planet = {
-#			NOT = { is_planet_class = pc_habitat }	
-#		}		
+		planet = {
+			is_planet_class = pc_habitat # disabled
+		}
+		planet = {
+			NOT = { is_planet_class = pc_habitat } # disabled
+		}		
 	}
 	
 	ai_allow = {
