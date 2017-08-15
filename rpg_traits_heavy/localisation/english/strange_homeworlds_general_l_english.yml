@@ -9,3 +9,8 @@
   harsh:0 "§R(Harsh Climate)§!"
   artificial:0 "§M(Artificial)§!"
   other:0 "(Other)"
+
+  
+  climate_star:0 "Stellar"
+  star:0 "§M(Stellar)§!"
+  TYPE_HEADER_09::0 "Stellar"

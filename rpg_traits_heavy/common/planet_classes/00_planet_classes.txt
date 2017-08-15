@@ -880,7 +880,7 @@ pc_neutron_star = {
 
 	planet_size = { min = 20 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_pulsar = {
@@ -906,7 +906,7 @@ pc_pulsar = {
 
 	planet_size = { min = 20 max = 35 }
 
-	colonizable = no
+	colonizable = yes
 }
 
 # ###########

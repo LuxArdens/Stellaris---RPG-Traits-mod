@@ -3,4 +3,4 @@ path="mod/rpg_traits_heavy"
 tags={
 	"Balance"
 }
-supported_version="1.6.1"
+supported_version="1.7.2"

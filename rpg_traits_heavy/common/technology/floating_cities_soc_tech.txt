@@ -7,6 +7,10 @@ tech_floating_cities = {
 	category = { new_worlds }
 	weight = 200
 	is_rare = yes
+	
+	modifier = { 
+		pc_gas_giant_habitability = 0.3
+	}
 
 	#Floating Cities
 	#Allows us to colonize Gas Giants by building floating cities.

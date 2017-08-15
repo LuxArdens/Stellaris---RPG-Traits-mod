@@ -19,7 +19,7 @@
   tech_gas_reforming_desc:0 "Using state of the art, self-driven fusion processes, we can eject unprecedented amounts of gas and supercritical fluids from Gas Giants, as well as form heavier elements in large quantities, leaving only a large rocky core."
   TECH_UNLOCK_GAS_REFORM_TITLE:0 "Gas Giant Reformation"
   TECH_UNLOCK_GAS_REFORM_DESC:0 "Using state of the art, self-driven fusion processes, we can eject unprecedented amounts of gas and supercritical fluids from Gas Giants, as well as form heavier elements in large quantities, leaving only a large rocky core."
-  tech_asteroid_reformingn:0 "Asteroid Assembly"
+  tech_asteroid_reforming:0 "Asteroid Assembly"
   tech_asteroid_reforming_desc:0 "Allows us to smash rocks together on an astronomical scale."
   TECH_UNLOCK_AST_REFORM_TITLE:0 "Asteroid Assembly"
   TECH_UNLOCK_AST_REFORM_DESC:0 "Smash big rocks together with science."
