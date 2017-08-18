@@ -115,10 +115,10 @@ event = {
 				}
 			}
 			random_list = {
-				85 = {
+				95 = {
 					country_event = { id = trait_regulation.174 } # airborne
 				}
-				15 = {
+				5 = {
 					# no trait gained, still a chance that they might be an ostrich
 				}
 			}
