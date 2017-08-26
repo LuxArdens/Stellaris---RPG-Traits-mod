@@ -85,6 +85,44 @@ event = {
 				}
 			}
 		}
+		every_country = {	# not everyone should get airborne
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = {
+						is_country_type = tiyanki
+						is_country_type = neutral_faction
+						is_country_type = faction
+						is_country_type = pirate
+						is_country_type = nomad #triggered in a special case event
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+						is_country_type = fallen_empire
+						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+					}
+					OR = { # only races that can actually fly around
+						is_species_class = AVI			# all avians
+						species_portrait = "mam1"		# monkeys with wings
+						species_portrait = "rep17"		# strange dragons
+						species_portrait = "art1"		# big rgasshoppers
+						species_portrait = "art18"      # big butterflies
+						species_portrait = "mol7"       # balloons-like molluscoids
+						species_portrait = "fun3"		# balloons-like fungoids
+						species_portrait = "pla3"		# balloons-like plants
+					}
+				}
+			}
+			random_list = {
+				95 = {
+					country_event = { id = trait_regulation.174 } # airborne
+				}
+				5 = {
+					# no trait gained, still a chance that they might be an ostrich
+				}
+			}
+		}
 		every_country = {
 			limit = {
 				AND = {
@@ -350,13 +388,13 @@ event = {
 				}
 			}
 			random_list = { # rare/special traits
-				1 = {
+				2 = {
 					country_event = { id = trait_regulation.166 } # lingua weirdo
 				}
-				2 = {
+				4 = {
 					country_event = { id = trait_regulation.167 } # olfactory
 				}
-				2 = {
+				3 = {
 					country_event = { id = trait_regulation.168 } # euphoric
 				}
 				2 = {
@@ -365,17 +403,14 @@ event = {
 				5 = {
 					country_event = { id = trait_regulation.170 } # irradiated
 				}
-				10 = {
+				12 = {
 					country_event = { id = trait_regulation.171 } # egg born
 				}
-				10 = {
+				12 = {
 					country_event = { id = trait_regulation.172 } # curious
 				}
-				10 = {
+				12 = {
 					country_event = { id = trait_regulation.173 } # uncreative
-				}
-				10 = {
-					country_event = { id = trait_regulation.174 } # airborne
 				}
 				4 = {
 					country_event = { id = trait_regulation.175 } # titanic
