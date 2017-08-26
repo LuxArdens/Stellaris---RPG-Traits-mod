@@ -55,3 +55,13 @@ If you wish to contribute, think of a good trait/event/whatever and send me the 
 
 Cheers,
 LuxArdens
+
+
+
+Notable Contributors:
+/u/Mithril_Leaf - subterranean trait and various ideas
+/u/2byzantine4med - almost all of the icons
+/u/thefoxymulder - for making some example custom species
+/u/dosaki - for the wonderful Strange Homeworlds mod, which I butchered into the HEAVY version
+/u/hypernova1912 for various bits and patches
+/u/SiceX - portrait-specific trait assignment
