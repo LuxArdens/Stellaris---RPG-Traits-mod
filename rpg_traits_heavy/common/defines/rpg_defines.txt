@@ -1,0 +1,12 @@
+﻿	NGameplay = {
+		MIN_HABITABILITY = 0.2		# Planet habitability must be at least this value to be able to colonize
+		MIN_HABITABILITY_FOR_MIGRATE = 0.40		# Planet habitability must be at least this for Pops to want to move there
+
+		HABITABILITY_IDEAL_PLANET		= 1.00			# Habitability of Gaia worlds
+		HABITABILITY_WRONG_PLANET		= 0.40			# Below which point we color habitability icons and text yellow
+		HABITABILITY_OPPOSITE_PLANET	= 0.20			# Below which point we color habitability icons and text red
+	}	
+	
+	NSpecies = {
+		HOMEWORLD_HABITABILITY				= 1.0		# Habitability on homeworld is increased by this value
+	}

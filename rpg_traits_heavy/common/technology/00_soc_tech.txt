@@ -531,7 +531,7 @@ tech_colonization_1 = {
 }
 
 #Atmospheric Filtering
-tech_colonization_2 = {
+tech_colonization_2_rpg = {
 	cost = @tier1cost3
 	area = society
 	tier = 2
@@ -581,7 +581,7 @@ tech_colonization_2 = {
 }
 
 #Hostile Environment Adaptation
-tech_colonization_3 = {
+tech_colonization_3_rpg = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
@@ -631,7 +631,7 @@ tech_colonization_3 = {
 }
 
 #Foreign Soil Enrichment
-tech_colonization_4 = {
+tech_colonization_4_rpg = {
 	cost = @tier3cost3
 	area = society
 	tier = 3
@@ -681,7 +681,7 @@ tech_colonization_4 = {
 }
 
 #Eco-Integration Studies
-tech_colonization_5 = {
+tech_colonization_5_rpg = {
 	cost = @tier4cost3
 	area = society
 	tier = 4

@@ -3,15 +3,15 @@
 @tier3cost3 = 3360
 
 tech_hollow_asteroids = {
-	cost = @tier2cost1
+	cost = 4000			# pretty expensive for tier 2
 	area = engineering
 	tier = 2
 	category = { new_worlds }
-	weight = @tier2weight1
+	weight = 50
 	is_rare = yes
 	
 	modifier = { 
-		pc_asteroid_habitability = 0.3
+		pc_asteroid_habitability = 0.4
 	}
 
 	prereqfor_desc = {
@@ -23,7 +23,7 @@ tech_hollow_asteroids = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
@@ -34,7 +34,7 @@ tech_hollow_asteroids = {
 	ai_weight = {
 		factor = 1.5
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
@@ -45,11 +45,11 @@ tech_hollow_asteroids = {
 
 
 tech_planet_modernization = {
-	cost = @tier3cost3
+	cost = 8000
 	area = engineering
 	tier = 2
 	category = { new_worlds }
-	weight = @tier2weight1
+	weight = 50
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -61,7 +61,7 @@ tech_planet_modernization = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
@@ -72,7 +72,7 @@ tech_planet_modernization = {
 	ai_weight = {
 		factor = 1.5
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
@@ -83,11 +83,11 @@ tech_planet_modernization = {
 
 
 tech_planet_life_restoration = {
-	cost = @tier3cost3
+	cost = 8000
 	area = society
 	tier = 2
 	category = { new_worlds }
-	weight = @tier2weight1
+	weight = 50
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -99,7 +99,7 @@ tech_planet_life_restoration = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
@@ -110,7 +110,7 @@ tech_planet_life_restoration = {
 	ai_weight = {
 		factor = 1.5
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
@@ -118,52 +118,13 @@ tech_planet_life_restoration = {
 		}
 	}
 }
-
-
-tech_planet_life_restoration = {
-	cost = @tier3cost3
-	area = society
-	tier = 2
-	category = { new_worlds }
-	weight = @tier2weight1
-	is_rare = yes
-
-	prereqfor_desc = {
-		diplo_action = {
-			title = "TECH_UNLOCK_PLANET_LIFE_RESTORATION_CHANGE_TITLE"
-			desc = "TECH_UNLOCK_PLANET_LIFE_RESTORATION_CHANGE_DESC"
-		}
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = 1.5
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-	}
-}
-
 
 tech_gas_reforming = {
 	cost = 24000
 	area = physics
 	tier = 3
 	category = { particles }
-	weight = @tier2weight1
+	weight = 30
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -175,7 +136,7 @@ tech_gas_reforming = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
@@ -197,11 +158,11 @@ tech_gas_reforming = {
 
 
 tech_asteroid_reforming = {
-	cost = 12000
+	cost = 24000
 	area = engineering
 	tier = 3
 	category = { voidcraft }
-	weight = @tier2weight1
+	weight = 30
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -213,7 +174,7 @@ tech_asteroid_reforming = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"

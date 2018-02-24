@@ -349,7 +349,7 @@ pc_gas_giant = {
 
 pc_asteroid = {
 	entity = "asteroid"
-	entity_scale = 1.5
+	entity_scale = 0.75
 	icon_frame = 18
 	
 	asteroid = yes
@@ -697,7 +697,7 @@ pc_gaia = {
 
 	min_distance_from_sun = 60
 	max_distance_from_sun = 95
-	spawn_odds = 0.05
+	spawn_odds = 0.025
 	
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -708,7 +708,7 @@ pc_gaia = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
-	ideal = yes
+	ideal = no
 	starting_planet = no
 }
 
