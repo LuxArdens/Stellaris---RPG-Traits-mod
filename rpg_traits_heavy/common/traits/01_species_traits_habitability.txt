@@ -12,6 +12,8 @@
 
 trait_pc_desert_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_desert_habitability = @1
 		
@@ -46,6 +48,8 @@ trait_pc_desert_preference = {
 }
 trait_pc_arid_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_arid_habitability = @1
 		
@@ -80,6 +84,8 @@ trait_pc_arid_preference = {
 }
 trait_pc_savannah_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_savannah_habitability = @1
 		
@@ -114,6 +120,8 @@ trait_pc_savannah_preference = {
 }
 trait_pc_tropical_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_tropical_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_tropical_habitability = @1
 		
@@ -148,6 +156,8 @@ trait_pc_tropical_preference = {
 }
 trait_pc_continental_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_continental_habitability = @1
 		
@@ -182,6 +192,8 @@ trait_pc_continental_preference = {
 }
 trait_pc_ocean_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ocean_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_ocean_habitability = @1
 		
@@ -216,6 +228,8 @@ trait_pc_ocean_preference = {
 }
 trait_pc_arctic_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @1
 		
@@ -250,6 +264,8 @@ trait_pc_arctic_preference = {
 }
 trait_pc_tundra_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_tundra_habitability = @1
 		
@@ -284,6 +300,8 @@ trait_pc_tundra_preference = {
 }
 trait_pc_alpine_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modifier = {
 		pc_alpine_habitability = @1
 		
@@ -318,6 +336,8 @@ trait_pc_alpine_preference = {
 }
 trait_pc_ai_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ai_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 		pc_ai_habitability = @0
@@ -354,6 +374,8 @@ trait_pc_ai_preference = {
 }
 trait_pc_nuked_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_nuked_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 		pc_nuked_habitability = @1
@@ -388,6 +410,8 @@ trait_pc_nuked_preference = {
 }
 trait_pc_gaia_preference = {		# heavily penalized for coming from a 'perfect' world
 	icon = "gfx/interface/icons/traits/trait_pc_gaia_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 		pc_gaia_habitability = @0
@@ -431,6 +455,8 @@ trait_pc_gaia_preference = {		# heavily penalized for coming from a 'perfect' wo
 }
 trait_pc_ringworld_habitable_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 		pc_ringworld_habitable_habitability = 1.0
@@ -466,6 +492,8 @@ trait_pc_ringworld_habitable_preference = {
 }
 trait_pc_habitat_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 		pc_habitat_habitability = 1.0
@@ -507,6 +535,8 @@ trait_pc_habitat_preference = {
 
 trait_pc_a_star_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_a_star_preference.dds"
+	allowed_archetypes = { ENERGY }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 			pc_b_star_habitability = @1
@@ -546,6 +576,8 @@ trait_pc_a_star_preference = {
 
 trait_pc_gas_giant_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_gas_giant_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 			pc_gas_giant_habitability = @1
@@ -564,6 +596,8 @@ trait_pc_gas_giant_preference = {
 
 trait_pc_molten_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_molten_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 			pc_molten_habitability = @1
@@ -597,6 +631,8 @@ trait_pc_molten_preference = {
 
 trait_pc_toxic_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_toxic_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 			pc_toxic_habitability = @1
@@ -633,6 +669,8 @@ trait_pc_toxic_preference = {
 
 trait_pc_barren_preference = {		# barren is more compatible with non-barren planets than vice versa
 	icon = "gfx/interface/icons/traits/trait_pc_barren_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 			pc_barren_habitability = @1
@@ -668,6 +706,8 @@ trait_pc_barren_preference = {		# barren is more compatible with non-barren plan
 
 trait_pc_barren_cold_preference = {		# barren is more compatible with non-barren planets than vice versa
 	icon = "gfx/interface/icons/traits/trait_pc_barren_cold_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 			pc_barren_cold_habitability = @1
@@ -706,6 +746,8 @@ trait_pc_barren_cold_preference = {		# barren is more compatible with non-barren
 
 trait_pc_frozen_preference = {	# previous one but different name. Shows up identical in game, not sure why PDX made it at all
 	icon = "gfx/interface/icons/traits/trait_pc_frozen_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 			pc_frozen_habitability = @1
@@ -746,6 +788,8 @@ trait_pc_frozen_preference = {	# previous one but different name. Shows up ident
 
 trait_pc_shielded_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_shielded_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 		pc_habitat_habitability = @0
@@ -782,6 +826,8 @@ trait_pc_shielded_preference = {
 
 trait_pc_asteroid_preference = {		# low gravity
 	icon = "gfx/interface/icons/traits/trait_pc_asteroid_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
 	modification = no
 	modifier = {
 		pc_asteroid_habitability = @1

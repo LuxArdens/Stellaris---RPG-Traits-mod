@@ -445,9 +445,9 @@ trait_decadent = {
 }
 
 trait_cybernetic = {
-	cost = 0
+	cost = 5
 
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	alters_species_identity = yes
@@ -2488,7 +2488,7 @@ trait_titanic = {
 
 
 trait_tiny = {
-	cost = 4
+	cost = -2
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_titanic" }
 	initial = yes
 	randomized = no
@@ -2532,7 +2532,7 @@ trait_energy_lifeform = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_energy_lifeform.dds"
-	allowed_archetypes = { BIOLOGICAL  MACHINE }
+	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		pop_food_req_mult = -10
 		country_resource_energy_mult = -0.2
@@ -2683,32 +2683,32 @@ trait_living_planet = {
 }
 
 
-trait_cyborg = {
-	cost = 5
-	opposites = { "trait_broodparasite" "trait_energy_lifeform" "trait_egg_born" "trait_synthetic_lifeform" }
-	allowed_archetypes = { BIOLOGICAL MACHINE }
+# trait_cyborg = {
+	# cost = 5
+	# opposites = { "trait_broodparasite" "trait_energy_lifeform" "trait_egg_born" "trait_synthetic_lifeform" }
+	# allowed_archetypes = { BIOLOGICAL }
 	
-	initial = yes
-	randomized = no
-	modification = no
-	icon = "gfx/interface/icons/traits/trait_cybernetic.dds"
-	modifier = {
-		tile_resource_physics_research_mult = 0.25
-		tile_resource_society_research_mult = 0.25
-		tile_resource_engineering_research_mult = 0.25
-		tile_resource_minerals_mult = 0.25
-		tile_resource_energy_mult = 0.25
-		army_attack_damage_mult = 0.25
-		#army_health = 0.25
+	# initial = yes
+	# randomized = no
+	# modification = no
+	# icon = "gfx/interface/icons/traits/trait_cybernetic.dds"
+	# modifier = {
+		# tile_resource_physics_research_mult = 0.25
+		# tile_resource_society_research_mult = 0.25
+		# tile_resource_engineering_research_mult = 0.25
+		# tile_resource_minerals_mult = 0.25
+		# tile_resource_energy_mult = 0.25
+		# army_attack_damage_mult = 0.25
+		# #army_health = 0.25
 		
-		pop_environment_tolerance = 0.2
-		pc_ai_habitability = 0.6
-	}
-}
+		# pop_environment_tolerance = 0.2
+		# pc_ai_habitability = 0.6
+	# }
+# }
 
 # trait_synthetic_lifeform = {		# no longer required! Good job PDX
 	# cost = 9
-	# opposites = { "trait_broodparasite" "trait_energy_lifeform" "trait_egg_born" "trait_cyborg" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" }
+	# opposites = { "trait_broodparasite" "trait_energy_lifeform" "trait_egg_born" "trait_cybernetic" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" }
 	
 	# initial = yes
 	# randomized = no
@@ -2738,7 +2738,7 @@ trait_cyborg = {
 #############################
 trait_broodparasite = {
 	opposites = { "trait_charismatic" "trait_repugnant" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
-	allowed_archetypes = { BIOLOGICAL MACHINE }
+	allowed_archetypes = { BIOLOGICAL }
 	cost = 0
 	initial = yes
 	randomized = no

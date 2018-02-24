@@ -1,7 +1,7 @@
 #########################################
-#
+#										
 #  Randomly Generated Starting Systems  #
-#
+#										
 #########################################
 
 @distance = 50
@@ -17,7 +17,7 @@
 random_empire_init_01 = {
 	class = "rl_standard_stars"
 	asteroids_distance = 50
-
+	
 	usage = empire_init
 	
 	flags = { empire_home_system }
@@ -29,6 +29,8 @@ random_empire_init_01 = {
 				set_star_flag = empire_cluster
 			}
 		}
+		
+		generate_home_system_resources = yes
 	}
 	
 	planet = {
@@ -39,22 +41,22 @@ random_empire_init_01 = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-
+	
 	change_orbit = 50
-
+	
 	planet = {
 		count = { min = 1 max = 3 }
 		class = random_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 40 max = 100 }
 	}
-
+	
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_distance = 20
-		class = pc_barren
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -64,7 +66,7 @@ random_empire_init_01 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = 1
 		orbit_distance = 20
@@ -78,154 +80,11 @@ random_empire_init_01 = {
 		init_effect = {
 			prevent_anomaly = yes
 		}
-
+		
 		init_effect = {
-			random_tile = {
-				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
-				set_building = "building_capital_1"
-				add_resource = {
-					resource = energy
-					amount = 1
-					replace = yes
-				}					
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					add_resource = {
-						resource = food
-						amount = 2
-						replace = yes
-					}						
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					add_resource = {
-						resource = food
-						amount = 1
-						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_mining_network_1"
-					add_resource = {
-						resource = minerals
-						amount = 2
-						replace = yes
-					}
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_basic_science_lab_1"
-				random_list = {
-					33 = { 
-						add_resource = {
-							resource = engineering_research
-							amount = 1
-							replace = yes
-						}						
-					}
-					33 = { 
-						add_resource = {
-							resource = physics_research
-							amount = 1
-							replace = yes
-						}						
-					}
-					33 = { 
-						add_resource = {
-							resource = society_research
-							amount = 1
-							replace = yes
-						}						
-					}					
-				}					
-			}	
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_mining_network_1"
-				add_resource = {
-					resource = minerals
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = engineering_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = society_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = physics_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = energy
-					amount = 2
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = food
-					amount = 2
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = minerals
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_power_plant_1"
-				add_resource = {
-					resource = energy
-					amount = 1
-					replace = yes
-				}
-			}
+			generate_start_buildings_and_blockers = yes			
 		}
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -235,13 +94,13 @@ random_empire_init_01 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 2 max = 4 }
 		orbit_distance = 20
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -251,13 +110,13 @@ random_empire_init_01 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 1 max = 2 }
 		orbit_distance = 20
 		class = pc_gas_giant
 		orbit_angle = { min = 90 max = 270 }
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -267,13 +126,13 @@ random_empire_init_01 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }	
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -282,7 +141,7 @@ random_empire_init_01 = {
 random_empire_init_02 = {
 	class = "rl_standard_stars"
 	asteroids_distance = 115
-
+	
 	usage = empire_init
 	
 	flags = { empire_home_system }
@@ -294,6 +153,8 @@ random_empire_init_02 = {
 				set_star_flag = empire_cluster
 			}
 		}
+		
+		generate_home_system_resources = yes
 	}
 		
 	planet = {
@@ -304,9 +165,9 @@ random_empire_init_02 = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-
+	
 	change_orbit = 50
-
+	
 	planet = {
 		count = 1
 		home_planet = yes
@@ -320,154 +181,11 @@ random_empire_init_02 = {
 		init_effect = {
 			prevent_anomaly = yes
 		}
-
+		
 		init_effect = {
-			random_tile = {
-				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
-				set_building = "building_capital_1"
-				add_resource = {
-					resource = energy
-					amount = 1
-					replace = yes
-				}					
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					add_resource = {
-						resource = food
-						amount = 2
-						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					add_resource = {
-						resource = food
-						amount = 1
-						replace = yes
-					}						
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}						
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_mining_network_1"
-					add_resource = {
-						resource = minerals
-						amount = 2
-						replace = yes
-					}
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_basic_science_lab_1"
-				random_list = {
-					33 = { 
-						add_resource = {
-							resource = engineering_research
-							amount = 1
-							replace = yes
-						}						
-					}
-					33 = { 
-						add_resource = {
-							resource = physics_research
-							amount = 1
-							replace = yes
-						}						
-					}
-					33 = { 
-						add_resource = {
-							resource = society_research
-							amount = 1
-							replace = yes
-						}						
-					}					
-				}					
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_mining_network_1"
-				add_resource = {
-					resource = minerals
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = engineering_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = society_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = physics_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = energy
-					amount = 2
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = food
-					amount = 2
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = minerals
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_power_plant_1"
-				add_resource = {
-					resource = energy
-					amount = 2
-					replace = yes
-				}
-			}
+			generate_start_buildings_and_blockers = yes		
 		}
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -477,7 +195,7 @@ random_empire_init_02 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = 2
 		orbit_distance = 20
@@ -492,22 +210,22 @@ random_empire_init_02 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	change_orbit = 25
-
+	
 	planet = {
 		count = { min = 2 max = 3 }
 		class = random_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 40 max = 110 }
 	}
-
+	
 	planet = {
 		count = { min = 2 max = 4 }
 		orbit_distance = 25
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -517,13 +235,13 @@ random_empire_init_02 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 1 max = 2 }
 		orbit_distance = 20
 		class = pc_gas_giant
 		orbit_angle = { min = 90 max = 270 }
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -533,20 +251,20 @@ random_empire_init_02 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_distance = 20
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
-
+	
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }	
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }	
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -555,7 +273,7 @@ random_empire_init_02 = {
 random_empire_init_03 = {
 	class = "rl_standard_stars"
 	asteroids_distance = 85
-
+	
 	usage = empire_init
 	
 	flags = { empire_home_system }
@@ -567,6 +285,8 @@ random_empire_init_03 = {
 				set_star_flag = empire_cluster
 			}
 		}
+		
+		generate_home_system_resources = yes
 	}
 		
 	planet = {
@@ -577,9 +297,9 @@ random_empire_init_03 = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-
+	
 	change_orbit = 40
-
+	
 	planet = {
 		count = 1
 		orbit_distance = 20
@@ -594,16 +314,16 @@ random_empire_init_03 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	change_orbit = 25
-
+	
 	planet = {
 		count = { min = 1 max = 2 }
 		class = random_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 120 max = 300 }
 	}
-
+	
 	planet = {
 		count = 1
 		orbit_distance = 25
@@ -618,23 +338,23 @@ random_empire_init_03 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = 1
 		orbit_distance = 25
 		class = pc_gas_giant
 		orbit_angle = { min = 90 max = 270 }
 		size = 25
-
+		
 		change_orbit = @base_moon_distance
-
+		
 		moon = {
 			count = 1
 			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 4
 		}
-
+		
 		moon = {
 			count = 1
 			home_planet = yes
@@ -648,169 +368,26 @@ random_empire_init_03 = {
 			init_effect = {
 				prevent_anomaly = yes
 			}
-
+		
 			init_effect = {
-				random_tile = {
-					limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
-					set_building = "building_capital_1"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}						
-					random_neighboring_tile = {
-						limit = { has_blocker = no has_building = no }
-						set_building = "building_hydroponics_farm_1"
-						add_resource = {
-							resource = food
-							amount = 2
-							replace = yes
-						}
-					}
-					random_neighboring_tile = {
-						limit = { has_blocker = no has_building = no }
-						set_building = "building_hydroponics_farm_1"
-						add_resource = {
-							resource = food
-							amount = 1
-							replace = yes
-						}
-					}
-					random_neighboring_tile = {
-						limit = { has_blocker = no has_building = no }
-						set_building = "building_power_plant_1"
-						add_resource = {
-							resource = energy
-							amount = 1
-							replace = yes
-						}
-					}
-					random_neighboring_tile = {
-						limit = { has_blocker = no has_building = no }
-						set_building = "building_mining_network_1"
-						add_resource = {
-							resource = minerals
-							amount = 2
-							replace = yes
-						}
-					}
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_basic_science_lab_1"
-					random_list = {
-						33 = { 
-							add_resource = {
-								resource = engineering_research
-								amount = 1
-								replace = yes
-							}						
-						}
-						33 = { 
-							add_resource = {
-								resource = physics_research
-								amount = 1
-								replace = yes
-							}						
-						}
-						33 = { 
-							add_resource = {
-								resource = society_research
-								amount = 1
-								replace = yes
-							}						
-						}					
-					}					
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_mining_network_1"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_failing_infrastructure"
-					add_resource = {
-						resource = engineering_research
-						amount = 1
-						replace = yes
-					}
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_failing_infrastructure"
-					add_resource = {
-						resource = society_research
-						amount = 1
-						replace = yes
-					}
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_failing_infrastructure"
-					add_resource = {
-						resource = physics_research
-						amount = 1
-						replace = yes
-					}
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_decrepit_dwellings"
-					add_resource = {
-						resource = energy
-						amount = 2
-						replace = yes
-					}
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_decrepit_dwellings"
-					add_resource = {
-						resource = food
-						amount = 2
-						replace = yes
-					}
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_decrepit_dwellings"
-					add_resource = {
-						resource = minerals
-						amount = 1
-						replace = yes
-					}
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					add_resource = {
-						resource = energy
-						amount = 2
-						replace = yes
-					}
-				}
+				generate_start_buildings_and_blockers = yes		
 			}
 		}
 	}
-
+	
 	planet = {
 		count = { min = 1 max = 3 }
 		orbit_distance = 25
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
-
+	
 	planet = {
 		count = { min = 1 max = 2 }
 		orbit_distance = 20
 		class = pc_gas_giant
 		orbit_angle = { min = 90 max = 270 }
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -820,20 +397,20 @@ random_empire_init_03 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = 20
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
-
+	
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }		
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }		
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -841,7 +418,7 @@ random_empire_init_03 = {
 # Empire Initializer IV
 random_empire_init_04 = {
 	class = "rl_standard_stars"
-
+	
 	usage = empire_init
 	
 	flags = { empire_home_system }
@@ -853,6 +430,8 @@ random_empire_init_04 = {
 				set_star_flag = empire_cluster
 			}
 		}
+		
+		generate_home_system_resources = yes
 	}
 		
 	planet = {
@@ -863,16 +442,16 @@ random_empire_init_04 = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-
+	
 	change_orbit = 35
-
+	
 	planet = {
 		count = { min = 1 max = 3 }
 		orbit_distance = 15
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
-
+	
 	planet = {
 		count = 1
 		orbit_distance = 20
@@ -886,152 +465,9 @@ random_empire_init_04 = {
 		init_effect = {
 			prevent_anomaly = yes
 		}
-
+		
 		init_effect = {
-			random_tile = {
-				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
-				set_building = "building_capital_1"
-				add_resource = {
-					resource = energy
-					amount = 1
-					replace = yes
-				}					
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					add_resource = {
-						resource = food
-						amount = 1
-						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					add_resource = {
-						resource = food
-						amount = 1
-						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_mining_network_1"
-					add_resource = {
-						resource = minerals
-						amount = 2
-						replace = yes
-					}
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_basic_science_lab_1"
-				random_list = {
-					33 = { 
-						add_resource = {
-							resource = engineering_research
-							amount = 1
-							replace = yes
-						}						
-					}
-					33 = { 
-						add_resource = {
-							resource = physics_research
-							amount = 1
-							replace = yes
-						}						
-					}
-					33 = { 
-						add_resource = {
-							resource = society_research
-							amount = 1
-							replace = yes
-						}						
-					}					
-				}					
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_mining_network_1"
-				add_resource = {
-					resource = minerals
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = engineering_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = society_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_failing_infrastructure"
-				add_resource = {
-					resource = physics_research
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = energy
-					amount = 2
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = food
-					amount = 2
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_blocker = "tb_decrepit_dwellings"
-				add_resource = {
-					resource = minerals
-					amount = 1
-					replace = yes
-				}
-			}
-			random_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_power_plant_1"
-				add_resource = {
-					resource = energy
-					amount = 2
-					replace = yes
-				}
-			}
+			generate_start_buildings_and_blockers = yes			
 		}
 
 		change_orbit = @base_moon_distance
@@ -1043,20 +479,20 @@ random_empire_init_04 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 1 max = 3 }
 		orbit_distance = 25
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
-
+	
 	planet = {
 		count = { min = 1 max = 2 }
 		orbit_distance = 20
 		class = pc_gas_giant
 		orbit_angle = { min = 90 max = 270 }
-
+		
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -1066,20 +502,20 @@ random_empire_init_04 = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = 20
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
-
+	
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }		
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }		
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -1107,27 +543,27 @@ neighbor_t1 = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-
+	
 	change_orbit = 45
-
+	
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_distance = 20
 		change_orbit = @base_moon_distance
-
+		
 		moon = {
 			count = { min = 0 max = 1 }
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 20
 	}
-
+	
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }	
 		initializer = "neighbor_t2_second_colony"
 	}
 }
@@ -1153,21 +589,21 @@ neighbor_t1_first_colony = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-
+	
 	change_orbit = 45
-
+	
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_distance = 20
-
+		
 		change_orbit = @base_moon_distance
-
+		
 		moon = {
 			count = { min = 0 max = 1 }
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = 1
 		orbit_distance = 25
@@ -1177,7 +613,7 @@ neighbor_t1_first_colony = {
 		anomaly = none
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
-
+		
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
 		}
@@ -1210,21 +646,21 @@ neighbor_t1_first_colony = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = random
 			}
-		}
+		}	
 	}
-
+	
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 25
-
+		
 		change_orbit = @base_moon_distance
-
-		moon = {
+		
+		moon = {			
 			count = { min = 0 max = 1 }
 			orbit_distance = 5
 		}
 	}
-
+	
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "neighbor_t2"
@@ -1253,28 +689,28 @@ neighbor_t2 = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-
+	
 	planet = {
 		count = 1
 		orbit_distance = 45
 	}
-
+	
 	change_orbit = 25
-
+	
 	planet = {
 		count = { min = 1 max = 3 }
 		class = random_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 15 max = 110 }
 	}
-
+	
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 25
-
+		
 		change_orbit = @base_moon_distance
-
-		moon = {
+		
+		moon = {		
 			count = { min = 0 max = 1 }
 			orbit_distance = 5
 		}
@@ -1302,27 +738,27 @@ neighbor_t2_second_colony = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-
+	
 	change_orbit = 25
-
+	
 	planet = {
 		count = 2
 		orbit_angle = { min = 90 max = 270 }
 		orbit_distance = 20
 	}
-
+	
 	planet = {
 		count = 1
 		orbit_distance = 25
 		class = ideal_planet_class
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 14 max = 24 }
-
+		
 		change_orbit = @base_moon_distance
-
+		
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
-		}
+		}		
 
 		moon = {
 			count = { min = 0 max = 1 }
@@ -1331,14 +767,14 @@ neighbor_t2_second_colony = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = 2
 		orbit_angle = { min = 90 max = 270 }
 		orbit_distance = 20
-
+		
 		change_orbit = @base_moon_distance
-
+		
 		moon = {
 			count = { min = 0 max = 1 }
 			class = random_non_colonizable
@@ -1346,7 +782,7 @@ neighbor_t2_second_colony = {
 			orbit_distance = 5
 		}
 	}
-
+	
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_angle = { min = 90 max = 270 }

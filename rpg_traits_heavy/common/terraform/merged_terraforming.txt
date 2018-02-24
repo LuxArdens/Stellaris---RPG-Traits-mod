@@ -1,35 +1,13 @@
 #############################################################
 # keyword dump for autofill
 #############################################################
-#	pc_b_star = @1
-#	pc_a_star = @2
-#	pc_f_star = @2
-#	pc_g_star = @3
-#	pc_k_star = @3
-#	pc_m_star = @4
-#	pc_neutron_star = @5
-#	pc_pulsar = @5
-#	pc_gas_giant = @7
-#	pc_gaia = @8
-#	pc_habitat = @8
-#	pc_shielded = @8
-#	pc_ringworld = @8
-#	pc_frozen = @8
-#	pc_barren = @8
-#	pc_barren_cold = @8
-#	pc_nuked = @8
-#	pc_desert = @8
-#	pc_tropical = @8
-#	pc_continental = @8
-#	pc_arctic = @8
-#	pc_tundra = @8
-#	pc_arid = @8
-#	pc_savannah = @8
-#	pc_alpine = @8
-#	pc_ocean = @8
-#	pc_toxic = @8
-#	pc_molten = @8
-#
+@e0 = 1000
+
+@m0 = 1000		# can't do minerals so kind of pointless, was worth a try though
+
+@d0 = 365
+
+
 #terraform_link = {
 #	from = "pc_"
 #	to = "pc_"
@@ -41,4 +19,2105 @@
 #		has_technology = "tech_terrestrial_sculpting"
 #	}
 #}
-#############################################################
+#########################
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_desert"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_arid"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_savannah"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_arctic"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_tundra"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_alpine"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_desert"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_arid"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_savannah"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_arctic"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_tundra"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_alpine"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_desert"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_arid"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_savannah"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_arctic"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_tundra"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_alpine"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_tropical"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_continental"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_ocean"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_arctic"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_tundra"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_alpine"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_tropical"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_continental"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_ocean"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_arctic"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_tundra"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_alpine"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_tropical"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_continental"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_ocean"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_arctic"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_tundra"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_alpine"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_tropical"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_continental"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_ocean"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_arid"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_desert"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_savannah"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_tropical"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_continental"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_ocean"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_arid"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_desert"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_savannah"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_tropical"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_continental"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_ocean"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_arid"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_desert"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_savannah"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+
+terraform_link = {
+  to = "pc_barren"
+	from = "pc_gas_giant"
+
+	energy = 40000
+	minerals = 40000
+	duration = 32000
+
+	condition = {
+		has_technology = "tech_gas_reforming"
+	}
+}
+
+
+terraform_link = {
+  to = "pc_barren"
+	from = "pc_asteroid"
+
+	energy = 10000
+	minerals = 10000
+	duration = 12000
+
+	condition = {
+		has_technology = "tech_asteroid_reforming"
+	}
+}
+
+
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_desert"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_arid"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_savannah"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_arctic"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_tundra"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_alpine"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_continental"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_tropical"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_ocean"
+	
+	energy = 10000
+	duration = 7200
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+}
+
+terraform_link = {
+	to = "pc_gaia"
+	from = "pc_desert"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_gaia"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	to = "pc_gaia"
+	from = "pc_savannah"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	to = "pc_gaia"
+	from = "pc_arctic"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	to = "pc_gaia"
+	from = "pc_tundra"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	to = "pc_gaia"
+	from = "pc_alpine"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	to = "pc_gaia"
+	from = "pc_continental"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	to = "pc_gaia"
+	from = "pc_tropical"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	to = "pc_gaia"
+	from = "pc_ocean"
+	
+	energy = 20000
+	duration = 14600
+	
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_tropical"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_ocean"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_continental"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_tropical"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_continental"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_ocean"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_arctic"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_tundra"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_alpine"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_arctic"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_alpine"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_tundra"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_arid"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_savannah"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_desert"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_arid"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_desert"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_savannah"
+	
+	energy = 2000
+	duration = 1800
+	
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_barren"
+
+	energy = 2000
+	minerals = 2000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_arid"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_savannah"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_toxic"
+
+	energy = 2000
+	minerals = 2000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_desert"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_toxic"
+
+	energy = 5000
+	minerals = 5000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_continental"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_nuked"
+
+	energy = 1000
+	minerals = 1000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_tropical"
+
+	energy = 10000
+	minerals = 10000
+	duration = 3600
+
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_barren"
+
+	energy = 2000
+	minerals = 2000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_frozen"
+
+	energy = 2000
+	minerals = 2000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_nuked"
+	to = "pc_toxic"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_nuked"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_molten"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_toxic"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_nuked"
+
+	energy = 10000
+	minerals = 10000
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+}
+
+
+terraform_link = {
+  from = "pc_toxic"
+	to = "pc_gaia"
+
+	energy = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_gaia"
+
+	energy = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+  from = "pc_savannah"
+	to = "pc_gaia"
+
+	energy = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+terraform_link = {
+  from = "pc_alpine"
+	to = "pc_gaia"
+
+	energy = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_gaia_creation"
+	}
+}
+
+
+terraform_link = {
+  from = "pc_tundra"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_alpine"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_arctic"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_savannah"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_arid"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_desert"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_continental"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_tropical"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_ocean"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_toxic"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_molten"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_nuked"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_barren"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+
+terraform_link = {
+  from = "pc_frozen"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+  from = "pc_shielded"
+	to = "pc_ai"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+
+terraform_link = {
+  from = "pc_tundra"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_alpine"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_arctic"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_savannah"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_arid"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_desert"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_continental"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_tropical"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_ocean"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_toxic"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_molten"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_nuked"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_barren"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+
+terraform_link = {
+  from = "pc_frozen"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+terraform_link = {
+  from = "pc_ai"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planetary_shield_generator"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_tundra"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_alpine"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_arctic"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_savannah"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_arid"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_desert"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_continental"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_tropical"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_ocean"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_toxic"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_molten"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_nuked"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_barren"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_frozen"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}
+
+terraform_link = {
+	from = "pc_ai"
+	to = "pc_shielded"
+
+	energy = 20000
+	minerals = 20000
+	duration = 14600
+
+	condition = {
+		has_technology = "tech_planet_modernization"
+	}
+}

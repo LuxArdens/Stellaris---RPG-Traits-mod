@@ -11,10 +11,12 @@
 
 @robot_trait_points = 0
 @robot_max_traits = 80
-@machine_trait_points = 8
-@machine_max_traits = 80
+@machine_trait_points = 12
+@machine_max_traits = 6				# new idea: machines have more points available than organics but less picks, representing their specialization 
 @species_trait_points = 8
 @species_max_traits = 80
+@energy_trait_points = 16
+@energy_max_traits = 3				# energy lifeforms have even less picks and incredibly strong specialization
 
 BIOLOGICAL = {
 	species_trait_points = @species_trait_points
@@ -31,5 +33,9 @@ MACHINE = {
 PRESAPIENT = {
 	species_trait_points = @species_trait_points
 	species_max_traits = @species_max_traits
+}
+ENERGY = {
+	species_trait_points = @energy_trait_points
+	species_max_traits = @energy_max_traits
 }
 OTHER = {}
