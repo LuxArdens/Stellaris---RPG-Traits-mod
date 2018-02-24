@@ -156,6 +156,43 @@ tech_gas_reforming = {
 	}
 }
 
+tech_gas_escalation = {
+	cost = 24000
+	area = physics
+	tier = 3
+	category = { particles }
+	weight = 30
+	is_rare = yes
+
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_GAS_ESC_TITLE"
+			desc = "TECH_UNLOCK_GAS_ESC_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
 
 tech_asteroid_reforming = {
 	cost = 24000
@@ -169,6 +206,44 @@ tech_asteroid_reforming = {
 		diplo_action = {
 			title = "TECH_UNLOCK_AST_REFORM_TITLE"
 			desc = "TECH_UNLOCK_AST_REFORM_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+
+tech_planet_breaking = {
+	cost = 24000
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	weight = 30
+	is_rare = yes
+
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_PLANET_BREAKING_TITLE"
+			desc = "TECH_UNLOCK_PLANET_BREAKING_DESC"
 		}
 	}
 

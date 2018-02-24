@@ -9,7 +9,7 @@ tech_floating_cities = {
 	is_rare = yes
 	
 	modifier = { 
-		pc_gas_giant_habitability = 0.3
+		pc_gas_giant_habitability = 0.4
 	}
 
 	#Floating Cities
