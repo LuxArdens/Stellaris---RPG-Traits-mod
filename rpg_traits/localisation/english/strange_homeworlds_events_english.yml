@@ -1,0 +1,11 @@
+l_english:
+  sh.toxic.1.title:0 "Corroding Atmosphere"
+  sh.toxic.1.desc:0 "The corroding atmosphere of [Root.GetName] is wasting away our structures. This did not happen back home."
+  sh.toxic.1.a:0 "We cannot work in these conditions! Something must be done."
+  sh.toxic.1.b:0 "So what?"
+  sh.toxic.1.solved.desc:0 "Our scientists have developed an oil full with nanomachines to coat our structures with. They repair the damage done by the corrosive agents."
+  sh.barren.1.title:0 "Cosmic Radiation"
+  sh.barren.1.desc:0 "The lack of an atmosphere makes a planet vulnerable to the cosmos. This one in particular is being bombarded with abnormal quantities of cosmic radiation."
+  sh.barren.1.a:0 "We cannot leave our people like this! Something must be done."
+  sh.barren.1.b:0 "What's your point? Bananas have radiation too!"
+  sh.barren.1.solved.desc:0 "A thin layer of ozone has been created around the planet. Let's hope it holds."

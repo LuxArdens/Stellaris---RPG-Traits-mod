@@ -1,0 +1,7 @@
+﻿l_braz_por:
+  trait_pc_shielded_preference:0 "Preferência por Escudados"
+  trait_pc_shielded_preference_desc:1 "§LAtravés de manipulação genética ou da evolução, esta espécie ficou restrita a planetas com protegidos dos males do espaço.§!"
+  pc_shielded_habitability:1 "Preferência por Habitat Escudado"
+  trait_pc_asteroid_preference:0 "Preferência por Asteróides"
+  trait_pc_asteroid_preference_desc:1 "§LAtravés de manipulação genética ou da evolução, esta espécie adaptou-se particularmente ao modo de vida dentro de um asteróide.§!"
+  pc_asteroid_habitability:1 "Preferência por Habitats em Asteróides"

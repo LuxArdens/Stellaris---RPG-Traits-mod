@@ -23,7 +23,8 @@ event = {
 						is_country_type = drone
 						is_country_type = cloud
 						is_country_type = fallen_empire
-						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+						has_trait = trait_custom_race 
+				 		has_trait = trait_mechanical
 					}
 					OR = { # only races that can enslave shit
 						has_ethic = ethic_authoritarian
@@ -57,7 +58,8 @@ event = {
 						is_country_type = drone
 						is_country_type = cloud
 						is_country_type = fallen_empire
-						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+						has_trait = trait_custom_race 
+				 		has_trait = trait_mechanical
 					}
 					NOT = {
 						has_ethic = ethic_hive_mind
@@ -85,44 +87,6 @@ event = {
 				}
 			}
 		}
-		every_country = {	# not everyone should get airborne
-			limit = {
-				AND = {
-					is_ai = yes
-					NOT = {
-						is_country_type = tiyanki
-						is_country_type = neutral_faction
-						is_country_type = faction
-						is_country_type = pirate
-						is_country_type = nomad #triggered in a special case event
-						is_country_type = amoeba
-						is_country_type = crystal
-						is_country_type = drone
-						is_country_type = cloud
-						is_country_type = fallen_empire
-						has_trait = trait_custom_race			# custom races krijgen geen extra traits
-					}
-					OR = { # only races that can actually fly around
-						is_species_class = AVI			# all avians
-						species_portrait = "mam1"		# monkeys with wings
-						species_portrait = "rep17"		# strange dragons
-						species_portrait = "art1"		# big rgasshoppers
-						species_portrait = "art18"      # big butterflies
-						species_portrait = "mol7"       # balloons-like molluscoids
-						species_portrait = "fun3"		# balloons-like fungoids
-						species_portrait = "pla3"		# balloons-like plants
-					}
-				}
-			}
-			random_list = {
-				95 = {
-					country_event = { id = trait_regulation.174 } # airborne
-				}
-				5 = {
-					# no trait gained, still a chance that they might be an ostrich
-				}
-			}
-		}
 		every_country = {
 			limit = {
 				AND = {
@@ -138,7 +102,8 @@ event = {
 						is_country_type = drone
 						is_country_type = cloud
 						is_country_type = fallen_empire
-						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+						has_trait = trait_custom_race 
+				 		has_trait = trait_mechanical
 					}
 				}
 			}
@@ -388,13 +353,13 @@ event = {
 				}
 			}
 			random_list = { # rare/special traits
-				2 = {
+				1 = {
 					country_event = { id = trait_regulation.166 } # lingua weirdo
 				}
-				4 = {
+				2 = {
 					country_event = { id = trait_regulation.167 } # olfactory
 				}
-				3 = {
+				2 = {
 					country_event = { id = trait_regulation.168 } # euphoric
 				}
 				2 = {
@@ -403,14 +368,17 @@ event = {
 				5 = {
 					country_event = { id = trait_regulation.170 } # irradiated
 				}
-				12 = {
+				10 = {
 					country_event = { id = trait_regulation.171 } # egg born
 				}
-				12 = {
+				10 = {
 					country_event = { id = trait_regulation.172 } # curious
 				}
-				12 = {
+				10 = {
 					country_event = { id = trait_regulation.173 } # uncreative
+				}
+				10 = {
+					country_event = { id = trait_regulation.174 } # airborne
 				}
 				4 = {
 					country_event = { id = trait_regulation.175 } # titanic
@@ -642,9 +610,9 @@ event = {
 				20 = {
 					country_event = { id = trait_regulation.169 } # dread masters
 				}
-				20 = {
-					country_event = { id = trait_regulation.174 } # airborne
-				}
+				#20 = {
+				#	country_event = { id = trait_regulation.174 } # airborne
+				#}
 				60 = {
 					# no traits gained
 				}
@@ -670,6 +638,49 @@ event = {
 				}
 			}
 		}
+		
+		every_country = {	# not everyone should get airborne
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = {
+						is_country_type = tiyanki
+						is_country_type = neutral_faction
+						is_country_type = faction
+						is_country_type = pirate
+						is_country_type = nomad #triggered in a special case event
+						is_country_type = amoeba
+						is_country_type = crystal
+						is_country_type = drone
+						is_country_type = cloud
+						is_country_type = fallen_empire
+						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+					}
+					OR = { # only races that can actually fly around
+						is_species_class = AVI			# all avians
+						species_portrait = "mam1"		# monkeys with wings
+						species_portrait = "rep17"		# strange dragons
+						species_portrait = "art1"		# big rgasshoppers
+						species_portrait = "art18"      # big butterflies
+						species_portrait = "mol7"       # balloons-like molluscoids
+						species_portrait = "fun3"		# balloons-like fungoids
+						species_portrait = "pla3"		# balloons-like plants
+					}
+				}
+			}
+			random_list = {
+				90 = {
+					country_event = { id = trait_regulation.174 } # airborne
+				}
+				10 = {
+					# no trait gained, still a chance that they might be an ostrich
+				}
+			}
+			country_event = { id = trait_regulation.212 }
+		}
+		
+		
+		
 	}
 }
 
@@ -2945,25 +2956,6 @@ country_event = {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

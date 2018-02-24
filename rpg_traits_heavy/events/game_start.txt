@@ -5,7 +5,7 @@ event = {
 	id = game_start.1
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_global_flag = game_started
 
@@ -13,7 +13,7 @@ event = {
 			limit = { is_ai = no }
 			country_event = { id = country.900 days = 360 random = 60 }
 		}
-		
+
 		### SPAWN UNIQUE SYSTEMS
 		# If any Empire is Commonwealth and UN is unplayed
 		if = {
@@ -81,7 +81,7 @@ event = {
 	id = game_start.2
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		every_country = {
 			limit = { exists = capital_scope }
@@ -204,7 +204,7 @@ event = {
 	id = game_start.3
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		every_country = {
 			limit = { is_ai = no }
@@ -288,7 +288,7 @@ planet_event = {
 							has_building = building_hydroponics_farm_1
 						}
 						has_pop = no
-					}				
+					}
 					build_pop = {
 						name = buildable_robot_pop_1
 					}
@@ -296,17 +296,17 @@ planet_event = {
 			}
 		}
 
-		if = { 
-			limit = { 
-				owner = { 
+		if = {
+			limit = {
+				owner = {
 					has_civic = civic_syncretic_evolution
 					capital_scope = { NOT = { has_planet_flag = planet_earth } }
 				}
 			}
 			create_species = {
 				traits = {
-					trait = trait_presentient_proles
-					trait = trait_strong
+					trait = trait_syncretic_proles
+					trait = trait_strong1
 				}
 				homeworld = this
 			}
@@ -331,14 +331,14 @@ planet_event = {
 					create_pop = {
 						species = last_created
 						ethos = random
-					}					
+					}
 				}
 			}
 		}
 
-		if = { 
-			limit = { 
-				owner = { 
+		if = {
+			limit = {
+				owner = {
 					has_civic = civic_syncretic_evolution
 					capital_scope = { has_planet_flag = planet_earth }
 				}
@@ -350,8 +350,8 @@ planet_event = {
 				class = "MAM"
 				portrait = pre_mam13
 				traits = {
-					trait = trait_presentient_proles
-					trait = trait_strong
+					trait = trait_syncretic_proles
+					trait = trait_strong1
 				}
 				homeworld = this
 			}
@@ -376,7 +376,7 @@ planet_event = {
 					create_pop = {
 						species = last_created
 						ethos = random
-					}					
+					}
 				}
 			}
 		}
@@ -408,7 +408,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		if = { limit = { has_civic = civic_mechanists } 
+		if = { limit = { has_civic = civic_mechanists }
 			give_technology = { message = no tech = tech_powered_exoskeletons }
 			give_technology = { message = no tech = tech_robotic_workers }
 		}
@@ -422,7 +422,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		
+
 		#science
 		create_fleet = {
 			effect = {
@@ -433,9 +433,9 @@ country_event = {
 					random_existing_design = science
 				}
 
-				set_fleet_stance = evasive				
+				set_fleet_stance = evasive
 				set_location = prev.capital_scope
-				
+
 				owner = {
 					create_leader = {
 						type = scientist
@@ -445,19 +445,19 @@ country_event = {
 					}
 				}
 				set_leader = last_created_leader
-			}			
+			}
 		}
-			
+
 		#constructor
 		create_fleet = {
 			effect = {
 				set_owner = prev
-				
+
 				create_ship = {
 					name = random
 					random_existing_design = constructor
 				}
-				
+
 				set_fleet_stance = evasive
 				set_location = prev.capital_scope
 			}
@@ -467,7 +467,7 @@ country_event = {
 		create_fleet = {
 			effect = {
 				set_owner = prev
-				
+
 				while = {
 					count = 3
 					create_ship = {
@@ -475,7 +475,7 @@ country_event = {
 						random_existing_design = corvette
 					}
 				}
-				
+
 				set_location = prev.capital_scope
 			}
 		}
@@ -507,42 +507,19 @@ planet_event = {
 					}
 				}
 			}
-			give_technology = { message = no tech = tech_powered_exoskeletons }
-			give_technology = { message = no tech = tech_robotic_workers }
-			give_technology = { message = no tech = tech_powered_exoskeletons }
-			give_technology = { message = no tech = tech_robotic_workers }
-		give_technology = { tech = tech_mine_living_metal }
-		give_technology = { tech = tech_mine_dark_matter }
-		give_technology = { tech = tech_mine_neutronium }
-		give_technology = { tech = tech_ship_armor_5 }
-		give_technology = { tech = tech_antimatter_power }
-		give_technology = { tech = tech_zero_point_power }
-		give_technology = { tech = tech_climate_restoration }
-		give_technology = { tech = tech_gaia_creation }
-		give_technology = { tech = tech_nutrient_replication }
-	give_technology = { tech = tech_repeatable_improved_tile_energy_output }
-			give_technology = { message = no tech = tech_tb_mountain_range }
-			give_technology = { message = no tech = tech_tb_volcano }
-			give_technology = { message = no tech = tech_tb_dangerous_wildlife }
-			give_technology = { message = no tech = tech_tb_dense_jungle }
-			give_technology = { message = no tech = tech_tb_quicksand_basin }
-			give_technology = { message = no tech = tech_tb_noxious_swamp }
-			give_technology = { message = no tech = tech_tb_massive_glacier }
-			give_technology = { message = no tech = tech_tb_toxic_kelp }
-			give_technology = { message = no tech = tech_tb_deep_sinkhole }
 		}
 
-		if = { 
-			limit = { 
-				owner = { 
+		if = {
+			limit = {
+				owner = {
 					has_civic = civic_syncretic_evolution
 					capital_scope = { NOT = { has_planet_flag = planet_earth } }
 				}
 			}
 			create_species = {
 				traits = {
-					trait = trait_presentient_proles
-					trait = trait_strong
+					trait = trait_syncretic_proles
+					trait = trait_strong1
 				}
 				homeworld = this
 			}
@@ -567,17 +544,42 @@ planet_event = {
 					create_pop = {
 						species = last_created
 						ethos = random
-					}					
+					}
 				}
 			}
 		}
-		
+
 		while = {
 			limit = { num_pops < 25 }
 			create_pop = {
 				species = owner_main_species
 				ethos = random
 			}
+		}
+		owner = {
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+			give_technology = { tech = tech_mine_living_metal }
+			give_technology = { tech = tech_mine_dark_matter }
+			give_technology = { tech = tech_mine_neutronium }
+			give_technology = { tech = tech_ship_armor_5 }
+			give_technology = { tech = tech_antimatter_power }
+			give_technology = { tech = tech_zero_point_power }
+			give_technology = { tech = tech_climate_restoration }
+			give_technology = { tech = tech_gaia_creation }
+			give_technology = { tech = tech_nutrient_replication }
+			give_technology = { tech = tech_repeatable_improved_tile_energy_output }
+			give_technology = { message = no tech = tech_tb_mountain_range }
+			give_technology = { message = no tech = tech_tb_volcano }
+			give_technology = { message = no tech = tech_tb_dangerous_wildlife }
+			give_technology = { message = no tech = tech_tb_dense_jungle }
+			give_technology = { message = no tech = tech_tb_quicksand_basin }
+			give_technology = { message = no tech = tech_tb_noxious_swamp }
+			give_technology = { message = no tech = tech_tb_massive_glacier }
+			give_technology = { message = no tech = tech_tb_toxic_kelp }
+			give_technology = { message = no tech = tech_tb_deep_sinkhole }
 		}
 	}
 }

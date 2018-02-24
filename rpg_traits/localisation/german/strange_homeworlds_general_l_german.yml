@@ -1,0 +1,11 @@
+﻿l_german:
+  climate_gas:0 "Gasförmig"
+  climate_inhospitable:0 "Ungastlich"
+  climate_harsh:0 "Hart"
+  climate_artificial:0 "Künstlich"
+  climate_other:0 "Andere"
+  gas:0 "§M(Gas)§!"
+  inhospitable:0 "§H(Ungastlich Klima)§!"
+  harsh:0 "§R(Hartes Klima)§!"
+  artificial:0 "§M(Künstlich)"
+  other:0 "(Andere)"

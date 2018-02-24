@@ -504,8 +504,6 @@ planet_event = {
 			}
 			planet_size < 25
 			NOT = { is_planet_class = pc_habitat }
-			NOT = { is_planet_class = pc_asteroid }
-			NOT = { is_planet_class = pc_gas_giant }
 		}
 
 		mean_time_to_happen = {
@@ -592,7 +590,6 @@ planet_event = {
 	}
 }
 
-
 event = {
 		id = "trait.8325"
 		hide_window = yes
@@ -617,7 +614,7 @@ country_event = {
 		name = trait.8326.a
 						add_modifier = {
 								modifier = trait_hibernation
-								months = 12
+								days = 365
 						}
 	}
 }
@@ -755,41 +752,6 @@ country_event = {
 		#}
 	}
 }
-
-event = {
-	id = "trait.1801"		# cleans up any persistent tile blockers on gas giants
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		every_planet = {
-			limit = {
-				is_planet_class = pc_gas_giant
-			}
-			planet_event = { id = trait.8102 }
-		}
-	}
-}
-
-planet_event = {
-	id = "trait.1802"		# cleans up any persistent tile blockers on gas giants
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-			every_tile = {
-				limit = {
-					OR = {
-						has_blocker = "tb_mountain_range" 
-						has_blocker = "tb_active_volcano" 
-						has_blocker = "tb_dangerous_wildlife" 
-					}
-				}
-				remove_blocker = yes
-			}
-	}
-}
-
 
 country_event = {
 	id = "trait.8100"			# cheat event for rapid start

@@ -205,7 +205,7 @@
  trait_conformists2_desc:0 "§L"United we stand. Divided we fall."§!\n"
  
  trait_conformists3:0 "Redditors"
- trait_conformists3_desc:0 "§LNeural implants link this species consciousness to their very own subreddit. Though not a true hivemind, they will utterly wreck anyone who has a different view on things.§!\n"
+ trait_conformists3_desc:0 "§LNeural implants link this species consciousness to their very own subreddit. Though not a true hivemind, they will utterly shred anyone who has a different view on things.§!\n"
  
  trait_venerable1:0 "Venerable"
  trait_venerable1_desc:0 "§LThis species has a generous lifespan.§!\n"
@@ -277,7 +277,7 @@
  trait_euphoria_desc:0 "§LIn a constant state of euphoria, this species is always happy and content. Sometimes a little too content with nothing.§!\n"
  
  trait_turtles:0 "Defensive Nature"
- trait_turtles_desc:0 "§LThis race instinctively tends to focus on defence only, preferring to wait out the end of a war rather than just finish it.\n\n military stations triple damage, 6 times more hitpoints, -80% cost, but navy size -90%§!\n"
+ trait_turtles_desc:0 "§LThis race instinctively tends to focus on defence only, preferring to wait out the end of a war rather than just finish it.\n\n military stations have vastly more hitpoints and do more damage, can build more starbases, but has reduced naval capacity §!\n"
  
  trait_utterly_terrifying:0 "Dread Masters"
  trait_utterly_terrifying_desc:0 "§LThe stuff of nightmares, these ghostly critters are masters of dread and psychological warfare. They instill fear in even the bravest of soldiers.§!\n"
@@ -301,7 +301,7 @@
  trait_silent_observers_desc:0 "§L"Watch and learn." - this species lurks in far systems, spying on others with vast sensor arrays.\n\n +400% sensor range \n\n -33% naval cap§!\n"
  
  trait_egg_born:0 "Egg Born"
- trait_egg_born_desc:0 "§LThis species matures completely inside eggs. This makes their colonization attempts a lot easier.\n\n Colony ships build 4 times faster and are twice as cheap§!\n"
+ trait_egg_born_desc:0 "§LThis species matures completely inside eggs. This makes their colonization attempts a lot easier.\n\n Colony ships are twice as cheap§!\n"
  
  trait_hoarders:0 "Hoarders"
  trait_hoarders_desc:0 "§LLike dragons, this species hoards its riches into endlessly large piles. The logistics of storing so much material reduce their production efficiency somewhat though.\n\n +200000 storage cap \n\n tiny production penalty§!\n"
