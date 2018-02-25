@@ -36,8 +36,7 @@ trait_titanic = {
 	pop_robot_build_cost_mult = 5
 	
 	# Huge ships
-	shipclass_colonizer_build_cost_mult	= 3		# Colonizers are no longer a standard shiptype
-	starbase_shipyard_build_speed_mult = -0.90  # this combined with the other modifier means you can't reasonably build colony ships until a level 2 spaceport is built
+	shipclass_colonizer_build_cost_mult	= 3
 	ship_speed_mult = -0.5						# combat speed doesnt exist anymore, only speed.
 	ship_windup_mult = 0.25
 	ship_winddown_mult = 0.25
@@ -97,8 +96,8 @@ trait_uncreative = {
 }
 
 egg_born = {
-	shipclass_colonizer_build_speed_mult = 4			#Colonizers are no longer a standard shiptype
-	shipclass_colonizer_build_cost_mult = -0.5
+	shipclass_colonizer_build_cost_mult = -0.6
+		planet_colony_development_speed_mult = 1.00
 }
 
 silent_observers = {
@@ -158,31 +157,31 @@ physics_elitists = {
 
 trait_tiny = {
 	# tiny buildings, tile blockers are a big problem
-	planet_building_cost_mult = -0.7 # can get free buildings by stacking modifiers. I don't care.
-	planet_building_upkeep_mult = -0.7
-	planet_clear_blocker_time_mult = 1
-	planet_clear_blocker_cost_mult = 1
+	planet_building_cost_mult = -0.7 			# can get free buildings by stacking modifiers. I don't care.
+	#planet_building_upkeep_mult = -0.7			# removed with the new energy rework
+	#planet_clear_blocker_time_mult = 1			# this was unnecessarily harsh
+	#planet_clear_blocker_cost_mult = 1
 	
 	# tiny robots
 	pop_robot_upkeep_mult = -0.75
-	pop_robot_production_output = -0.8
-	pop_robot_build_speed_mult = 5
-	pop_robot_build_cost_mult = -0.8
+	pop_robot_production_output = -0.75
+	pop_robot_build_speed_mult = 4
+	pop_robot_build_cost_mult = -0.75
 
 	# tiny soldiers
 	army_upkeep_mult = -0.7
 	planet_army_build_cost_mult = -0.7
-	planet_army_build_speed_mult = 2
+	planet_army_build_speed_mult = 3
+	ship_weapon_range_mult = -0.6			# get up reaaaal close and cosy
 
 	# tiny ships
-	shipclass_colonizer_build_speed_mult = 1		# Colonizers are no longer a standard shiptype
-	#shipclass_colonizer_build_cost_mult = -0.25 	# combined with general bonus means (almost) free colony ships
+	shipclass_colonizer_build_cost_mult = -0.8
 	starbase_shipyard_build_speed_mult = 3
-	starbase_shipyard_build_cost_mult = -0.6 		# enough to prevent free ships?
+	starbase_shipyard_build_cost_mult = -0.6 		# shipyard bonus now only applies to "ships in shipyard" so not science etc
 	ship_speed_mult = 1
-	ship_windup_mult = -0.2
-	ship_winddown_mult = -0.2
-	ship_emergency_ftl_mult = -0.2
+	ship_windup_mult = -0.5
+	ship_winddown_mult = -0.5
+	ship_emergency_ftl_mult = -0.25
 	ship_armor_add = -1
 	ship_armor_mult = -0.75
 	ship_hull_add = -1					#Hitpoints no longer refer to hull
@@ -190,11 +189,10 @@ trait_tiny = {
 	ship_weapon_damage = -0.75
 	ship_fire_rate_mult = 0.25
 	ship_shield_mult = -0.75
-	ship_upkeep_mult = -0.8
+	ship_upkeep_mult = -0.8				# can go negative. Nothing to do be done about that unfortunately
 	ship_tracking_add = 5
-	ship_evasion_add = 20
+	ship_evasion_add = 20			# make it a tracking hell for enemy
 	navy_size_mult = 4
-	ship_weapon_range_mult = -0.5
 
 	# tiny storages
 	#max_minerals = -1000
