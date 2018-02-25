@@ -23,7 +23,8 @@ event = {
 						is_country_type = drone
 						is_country_type = cloud
 						is_country_type = fallen_empire
-						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+						has_trait = trait_custom_race
+				 		has_trait = trait_mechanical			# custom races krijgen geen extra traits
 					}
 					OR = { # only races that can enslave shit
 						has_ethic = ethic_authoritarian
@@ -57,7 +58,8 @@ event = {
 						is_country_type = drone
 						is_country_type = cloud
 						is_country_type = fallen_empire
-						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+						has_trait = trait_custom_race
+				 		has_trait = trait_mechanical			# custom races krijgen geen extra traits
 					}
 					NOT = {
 						has_ethic = ethic_hive_mind
@@ -100,7 +102,8 @@ event = {
 						is_country_type = drone
 						is_country_type = cloud
 						is_country_type = fallen_empire
-						has_trait = trait_custom_race			# custom races krijgen geen extra traits
+						has_trait = trait_custom_race	
+				 		has_trait = trait_mechanical		# custom races krijgen geen extra traits
 					}
 				}
 			}
