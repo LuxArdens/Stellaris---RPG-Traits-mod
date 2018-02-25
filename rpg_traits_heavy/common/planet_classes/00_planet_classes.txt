@@ -325,6 +325,8 @@ pc_gas_giant = {
 	atmosphere_intensity 	= 1.1
 	atmosphere_width 		= 0.5
 	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.tga"
+	
 	min_distance_from_sun = 40
 	max_distance_from_sun = 1000
 	
@@ -345,12 +347,15 @@ pc_gas_giant = {
 	colonizable = yes
 	starting_planet = no
 	colonization_tech = { "tech_floating_cities" }
+	show_city = no
 }
 
 pc_asteroid = {
 	entity = "asteroid"
 	entity_scale = 0.75
 	icon_frame = 18
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.tga"
 	
 	asteroid = yes
 	
@@ -379,6 +384,8 @@ pc_molten = {
 	atmosphere_intensity 	= 0.05
 	atmosphere_width 		= 1.0
 
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
+	
 	min_distance_from_sun = 0
 	max_distance_from_sun = 60
 	spawn_odds = 10
@@ -404,6 +411,8 @@ pc_barren = {
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
+	
 	min_distance_from_sun = 40
 	max_distance_from_sun = 200
 	spawn_odds = 10
@@ -418,6 +427,7 @@ pc_barren = {
 
 	colonizable = yes
 	starting_planet = no
+	show_city = no
 }
 
 pc_barren_cold = {
@@ -429,6 +439,8 @@ pc_barren_cold = {
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.tga"
+	
 	min_distance_from_sun = 40
 	max_distance_from_sun = 200
 	spawn_odds = 0 				# deliberately removed from game. Didn't add anything
@@ -453,6 +465,8 @@ pc_toxic = {
 	atmosphere_color 		= hsv { 0.19 0.45 0.9 }		#DONE
 	atmosphere_intensity 	= 0.1
 	atmosphere_width 		= 1.2
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
 	
 	min_distance_from_sun = 60
 	max_distance_from_sun = 110
@@ -480,6 +494,8 @@ pc_frozen = {
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arctic.dds"
+	
 	min_distance_from_sun = 120
 	max_distance_from_sun = 1000
 	spawn_odds = 10
@@ -494,6 +510,7 @@ pc_frozen = {
 
 	colonizable = yes
 	starting_planet = no
+	show_city = no
 }
 
 
@@ -775,6 +792,8 @@ pc_a_star = {
 	atmosphere_intensity 	= 0.5
 	atmosphere_width 		= 1.2
 	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+	
 	star = yes
 	
 	min_distance_from_sun = 0
@@ -789,6 +808,7 @@ pc_a_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes		# ha!
+	show_city = no
 }
 
 pc_f_star = {
@@ -814,6 +834,7 @@ pc_f_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	show_city = no
 }
 
 pc_g_star = {
@@ -839,6 +860,7 @@ pc_g_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	show_city = no
 }
 
 pc_k_star = {
@@ -864,13 +886,14 @@ pc_k_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	show_city = no
 }
 
 pc_m_star = {
 	entity = "m_star_class_star_entity"
 	entity_scale = 20.0
 	picture = "pc_m_star"
-
+	
 	atmosphere_color 		= hsv { 0.01 0.9 0.6 }
 	atmosphere_intensity 	= 0.10
 	atmosphere_width 		= 1.0	
@@ -889,6 +912,7 @@ pc_m_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	show_city = no
 }
 
 pc_black_hole = {
@@ -934,6 +958,7 @@ pc_neutron_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	show_city = no
 }
 
 pc_pulsar = {
@@ -960,6 +985,7 @@ pc_pulsar = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	show_city = no
 }
 
 # ###########
