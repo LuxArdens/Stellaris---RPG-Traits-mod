@@ -939,7 +939,7 @@ trait_dumb3 = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.75
+		tile_resource_energy_mult = -0.8
 		tile_resource_minerals_mult = -0.25
 		tile_resource_food_mult = -0.25
 		tile_resource_physics_research_mult = -0.9
@@ -951,39 +951,39 @@ trait_dumb3 = {
 }
 
 trait_lazy1 = {
-	cost = -1
+	cost = -2
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_lazy1.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.1
-		tile_resource_minerals_mult = -0.1
+		tile_resource_energy_mult = -0.2
+		tile_resource_minerals_mult = -0.2
 	}
 }
 trait_lazy2 = {
-	cost = -2
+	cost = -4
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_lazy2.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy1" "trait_lazy3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.25
-		tile_resource_minerals_mult = -0.25
+		tile_resource_energy_mult = -0.5
+		tile_resource_minerals_mult = -0.5
 	}
 }
 trait_lazy3 = {
-	cost = -4
+	cost = -6
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_lazy3.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy1" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.5
-		tile_resource_minerals_mult = -0.5
+		tile_resource_energy_mult = -0.75
+		tile_resource_minerals_mult = -0.75
 	}
 }
 
@@ -2044,7 +2044,7 @@ trait_custom_race = {
 ##  NEGATIVE GENE MOD DICKERY   ##
 ##################################
 
-trait_genemod_enraged = {
+trait_genemod_enraged = {			# perfect for making battle thralls out of defeated enemies
 	initial = no 	
 	randomized = no
 	modification = yes
@@ -2063,6 +2063,8 @@ trait_genemod_enraged = {
 		tile_resource_physics_research_mult = -2
 		tile_resource_society_research_mult = -2
 		army_damage_mult = 0.5
+		army_health_mult = 0.25
+		army_attack_morale_mult = 0.25
 		}
 		opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_nerve_stapled" "trait_genemod_lobotomized" }
 }
@@ -2140,7 +2142,7 @@ trait_constant_pain = {
 }
 
 trait_nerve_stapled = {
-	cost = 6
+	cost = 4
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_genemod_enraged" "trait_genemod_lobotomized" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
 	allowed_archetypes = { BIOLOGICAL }
 	initial = no
@@ -2150,14 +2152,12 @@ trait_nerve_stapled = {
 	modifier = {
 		tile_resource_minerals_mult = 0.1
 		tile_resource_food_mult = 0.1
-		pop_other_species_happiness = 0.05
-		tile_resource_energy_mult = -0.2
-		tile_resource_physics_research_mult = -0.75
-		tile_resource_engineering_research_mult = -0.75
+		tile_resource_energy_mult = -0.25					# nerve-stapling doesn't help cognition 
+		tile_resource_physics_research_mult = -1			
+		tile_resource_engineering_research_mult = -1
 		tile_resource_society_research_mult = -20
 		tile_resource_unity_mult = -2
-		army_defense_health_mult = -2.0
-		#no longer works #pop_fortification_defense = -2.0
+		army_defense_health_mult = -2.0			# won't put up a fight
 		army_damage_mult = -2.0
 		species_leader_exp_gain = -10
 	}
@@ -2172,11 +2172,9 @@ trait_crippled = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_crippled.dds"
 	modifier = {
-		pop_other_species_happiness = -0.05
-		tile_resource_energy_mult = -0.25
+		pop_happiness = -0.05
 		tile_resource_minerals_mult = -0.25
-		army_defense_health_mult = -2.0
-		#no longer works #pop_fortification_defense = -2.0
+		army_health_mult = -2.0
 		army_damage_mult = -2.0
 		pop_environment_tolerance = -0.1
 	}
@@ -2190,7 +2188,7 @@ trait_crippled = {
 ########################################################################################################################
 
 trait_lingua_idumentis = {
-	cost = -2
+	cost = -1
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_olfactory" }
 	allowed_archetypes = { BIOLOGICAL }
 	initial = yes
@@ -2199,12 +2197,13 @@ trait_lingua_idumentis = {
 	icon = "gfx/interface/icons/traits/trait_lingua.dds"
 	modifier = {
 		pop_other_species_happiness = -0.1
-		tile_resource_energy_mult = -0.2
+		tile_resource_energy_mult = -0.1
+		tile_resource_unity_mult = 0.1
 	}
 }
 
 trait_olfactory = {
-	cost = -1
+	cost = 0
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_lingua_idumentis" }
 	allowed_archetypes = { BIOLOGICAL }
 	initial = yes
@@ -2213,19 +2212,7 @@ trait_olfactory = {
 	icon = "gfx/interface/icons/traits/trait_olfactory.dds"
 	modifier = {
 		pop_other_species_happiness = -0.1
-	}
-}
-
-trait_weirdass = {
-	cost = 200
-	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" }
-	allowed_archetypes = { BIOLOGICAL }
-	initial = no
-	randomized = no
-	modification = no
-	icon = "gfx/interface/icons/traits/trait_cheat.dds"
-	modifier = {
-		# no modifier but should add 2000% fire rate to ships
+		tile_resource_unity_mult = 0.1
 	}
 }
 
@@ -2255,8 +2242,7 @@ trait_turtles = {
 	icon = "gfx/interface/icons/traits/trait_turtles.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		army_defense_health_mult = 1
-		#no longer works #pop_fortification_defense = 2
+		army_defense_health_mult = 2
 	}
 }
 
@@ -2270,7 +2256,7 @@ trait_utterly_terrifying = {
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		army_attack_morale_mult = 1
-		pop_other_species_happiness = -0.25
+		pop_other_species_happiness = -0.5
 	}
 }
 

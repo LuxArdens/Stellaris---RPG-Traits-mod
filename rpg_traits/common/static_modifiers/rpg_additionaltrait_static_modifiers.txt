@@ -184,8 +184,8 @@ trait_tiny = {
 	ship_emergency_ftl_mult = -0.25
 	ship_armor_add = -1
 	ship_armor_mult = -0.75
-	ship_hull_add = -1					#Hitpoints no longer refer to hull
-	ship_hull_mult = -0.75				#Hitpoints no longer refer to hull
+	ship_hull_add = -1
+	ship_hull_mult = -0.75
 	ship_weapon_damage = -0.75
 	ship_fire_rate_mult = 0.25
 	ship_shield_mult = -0.75
@@ -380,7 +380,7 @@ trait_living_planet = {
 ########################################################################
 
 
-trait_effects_weirdass = {
+trait_effects_supercheat = {
 	ship_fire_rate_mult = 20
 	pop_growth_speed = 200
 	country_resource_energy_mult = 50

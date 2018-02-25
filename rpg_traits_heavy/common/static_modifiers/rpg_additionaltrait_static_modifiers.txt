@@ -380,7 +380,7 @@ trait_living_planet = {
 ########################################################################
 
 
-trait_effects_weirdass = {
+trait_effects_supercheat = {
 	ship_fire_rate_mult = 20
 	pop_growth_speed = 200
 	country_resource_energy_mult = 50
