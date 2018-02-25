@@ -52,6 +52,7 @@ trait_titanic = {
 	ship_tracking_add = -5
 	ship_evasion_add = -40			# made more hefty because their corvettes are really supposed to be like cruiser-sized
 	navy_size_mult = -0.8
+	country_naval_cap_mult = -0.8
 	ship_weapon_range_mult = 1
 
 
@@ -103,6 +104,7 @@ egg_born = {
 silent_observers = {
 	ship_sensor_range_add = 4			# these should still work
 	navy_size_mult = -0.33
+	country_naval_cap_mult = -0.33
 }
 
 turtles = {
@@ -193,6 +195,7 @@ trait_tiny = {
 	ship_tracking_add = 5
 	ship_evasion_add = 20			# make it a tracking hell for enemy
 	navy_size_mult = 4
+	country_naval_cap_mult = 4
 
 	# tiny storages
 	#max_minerals = -1000
@@ -214,6 +217,7 @@ trait_positive_doom = {
 	ship_tracking_add = -20
 	ship_evasion_add = -200
 	navy_size_mult = -0.5
+	country_naval_cap_mult = -0.5
 
 	country_resource_energy_mult = -0.5
 	country_resource_minerals_mult = -0.5
@@ -238,6 +242,7 @@ trait_negative_doom = {
 	ship_tracking_add = 20
 	ship_evasion_add = 20
 	navy_size_mult = 1
+	country_naval_cap_mult = 1
 
 	country_resource_energy_mult = 1
 	country_resource_minerals_mult = 1
@@ -407,6 +412,7 @@ trait_effects_weirdass = {
 	starbase_shipyard_build_cost_mult = -5
 	ship_shield_mult = 40
 	ship_shield_regen_mult = 40
+	ship_shield_regen_add_perc = 40
 	ship_armor_add = 40
 	ship_armor_mult = 40
 	ship_hull_add = 40				# Hitpoints no longer refer to hull
