@@ -354,9 +354,9 @@ cloudbuster = {
 }
 
 dreadnought_power = {
-	ship_shield_hp_mult = 4
+	ship_shield_mult = 4
 	ship_weapon_damage = 8
-	ship_hitpoints_mult = 4
+	ship_hull_mult = 4
 }
 
 pirate_power = {
@@ -383,7 +383,7 @@ sanctuary_power = {
 
 technosphere_power = {
 	ship_weapon_damage = 1.5
-	ship_shield_hp_mult = 5
+	ship_shield_mult = 5
 }
 
 ##########################################################################
