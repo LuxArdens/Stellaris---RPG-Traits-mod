@@ -36,17 +36,16 @@ trait_titanic = {
 	pop_robot_build_cost_mult = 5
 	
 	# Huge ships
-	shipclass_colonizer_build_cost_mult			# Colonizers are no longer a standard shiptype = 3
+	shipclass_colonizer_build_cost_mult	= 3     # Colonizers are no longer a standard shiptype
 	starbase_shipyard_build_speed_mult = -0.90 	# this combined with the other modifier means you can't reasonably build colony ships until a level 2 spaceport is built
-	ship_speed_mult = -0.5
-	ship_combat_speed_mult = -0.5		# doesn't work anymore?
+	ship_speed_mult = -0.5						# combat speed doesnt exist anymore, only speed.
 	ship_windup_mult = 0.25
 	ship_winddown_mult = 0.25
 	ship_emergency_ftl_mult = 0.25
 	ship_armor_add = 1				# armour doesn't exist anymore
 	ship_armor_mult = 4				# armour doesn't exist anymore
-	ship_hull_add = 5				#Hitpoints no longer refer to hull
-	ship_hull_mult = 4				#Hitpoints no longer refer to hull
+	ship_hull_add = 5				# Hitpoints no longer refer to hull
+	ship_hull_mult = 4				# Hitpoints no longer refer to hull
 	ship_weapon_damage = 4
 	ship_fire_rate_mult = -0.25
 	ship_shield_mult = 4
@@ -57,7 +56,7 @@ trait_titanic = {
 	ship_weapon_range_mult = 1
 
 
-	ship_shield_regen_add_perc = 4			# not sure if this still works
+	ship_shield_regen_add_perc = 4			# But this does work
 
 	# huge storages
 	max_minerals = 50000
@@ -76,7 +75,7 @@ trait_subterranean = {
 
 trait_shield_obsessed = {
 	ship_shield_mult = 4
-	ship_hitpoints_mult = -0.75
+	ship_hull_mult = -0.75
 	ship_shield_regen_add_perc = 4
 }
 
@@ -176,12 +175,11 @@ trait_tiny = {
 	planet_army_build_speed_mult = 2
 
 	# tiny ships
-	shipclass_colonizer_build_speed_mult = 1 		#Colonizers are no longer a standard shiptype
+	shipclass_colonizer_build_speed_mult = 1 		# Colonizers are no longer a standard shiptype
 	#shipclass_colonizer_build_cost_mult = -0.25 	# combined with general bonus means (almost) free colony ships
 	starbase_shipyard_build_speed_mult = 3
 	starbase_shipyard_build_cost_mult = -0.6 		# enough to prevent free ships?
 	ship_speed_mult = 1
-	ship_combat_speed_mult = 1
 	ship_windup_mult = -0.2
 	ship_winddown_mult = -0.2
 	ship_emergency_ftl_mult = -0.2
@@ -282,7 +280,6 @@ trait_quantity = {
 	starbase_shipyard_build_speed_mult = 3
 	starbase_shipyard_build_cost_mult = -0.5 # enough to prevent free ships?
 	ship_speed_mult = -0.25
-	ship_combat_speed_mult = -0.25
 	ship_windup_mult = 0.2
 	ship_winddown_mult = 0.2
 	ship_emergency_ftl_mult = 0.2
@@ -306,7 +303,6 @@ trait_hibernation = {
 	# ships check
 	starbase_shipyard_build_speed_mult = -20
 	ship_speed_mult = -2
-	ship_combat_speed_mult = -2
 	ship_windup_mult = 200
 	ship_winddown_mult = 200
 	ship_emergency_ftl_mult = 200
