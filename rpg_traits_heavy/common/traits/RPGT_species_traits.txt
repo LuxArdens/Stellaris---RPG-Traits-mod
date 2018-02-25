@@ -1394,7 +1394,7 @@ trait_agrarian3 = {
 }
 
 trait_robust1 = {
-	cost = 1
+	cost = 2
 	initial = yes
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_robust1.dds"
@@ -1402,12 +1402,12 @@ trait_robust1 = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		#pop_environment_tolerance = 0.1
-		#army_health = 0.5
+		pop_environment_tolerance = 0.025
+		army_health = 0.5
 	}
 }
 trait_robust2 = {
-	cost = 2
+	cost = 3
 	initial = yes
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_robust2.dds"
@@ -1416,11 +1416,11 @@ trait_robust2 = {
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
-		#army_health = 1
+		army_health = 1
 	}
 }
 trait_robust3 = {
-	cost = 3
+	cost = 4
 	initial = no
 	randomized = no
 	modification = yes
@@ -1431,7 +1431,7 @@ trait_robust3 = {
 	
 	modifier = {
 		pop_environment_tolerance = 0.1
-		#army_health = 3
+		army_health = 3
 	}
 }
 

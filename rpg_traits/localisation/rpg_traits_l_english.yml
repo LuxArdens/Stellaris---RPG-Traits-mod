@@ -301,7 +301,7 @@
  trait_silent_observers_desc:0 "§L"Watch and learn." - this species lurks in far systems, spying on others with vast sensor arrays.\n\n +400% sensor range \n\n -33% naval cap§!\n"
  
  trait_egg_born:0 "Egg Born"
- trait_egg_born_desc:0 "§LThis species matures completely inside eggs. This makes their colonization attempts a lot easier.\n\n Colony ships build 4 times faster and are twice as cheap§!\n"
+ trait_egg_born_desc:0 "§LThis species matures completely inside eggs. This makes their colonization attempts a lot easier.\n\n Colony ships are twice as cheap§!\n"
  
  trait_hoarders:0 "Hoarders"
  trait_hoarders_desc:0 "§LLike dragons, this species hoards its riches into endlessly large piles. The logistics of storing so much material reduce their production efficiency somewhat though.\n\n +200000 storage cap \n\n tiny production penalty§!\n"
