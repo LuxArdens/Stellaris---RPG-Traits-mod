@@ -425,6 +425,45 @@ trait_robot_awoken_01 = {
 	}
 }
 
+###############
+# Fancy new Robo-traits
+###############
+
+
+trait_nerve_stapled_robo = {
+	cost = 0
+	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_genemod_enraged" "trait_genemod_lobotomized" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
+	allowed_archetypes = { MACHINE }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/trait_nerve_stapled_robo.dds"
+	forced_happiness = yes
+	modifier = {
+		tile_resource_minerals_mult = -0.1
+		tile_resource_food_mult = -0.1
+		tile_resource_energy_mult = -0.75					# turn annexed synths into robots
+		tile_resource_physics_research_mult = -2
+		tile_resource_engineering_research_mult = -2
+		tile_resource_society_research_mult = -2
+		tile_resource_unity_mult = -2
+		army_defense_health_mult = -2.0			# won't put up a fight
+		army_damage_mult = -2.0
+		species_leader_exp_gain = -10
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 # BIO traits
 
@@ -2074,7 +2113,7 @@ trait_genemod_lobotomized = {
 	randomized = no
 	modification = yes
 	forced_happiness = yes
-	cost = -10
+	cost = 0 		# this is zero so that you can apply it without having the advanced_trait tech
 	icon = "gfx/interface/icons/traits/trait_lobotomized.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
@@ -2240,7 +2279,7 @@ trait_turtles = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_turtles.dds"
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MACHINES }
 	modifier = {
 		army_defense_health_mult = 2
 	}
@@ -2409,7 +2448,7 @@ trait_uncreative = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_uncreative.dds"
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MCAHINE }
 	modifier = {
 	}
 }
@@ -2433,9 +2472,8 @@ trait_subterranean = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_subterranean.dds"
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	modifier = {
-		#no longer works #pop_fortification_defense = 2
 		army_defense_health_mult = 1
 		tile_resource_minerals_mult = 0.25
 	}

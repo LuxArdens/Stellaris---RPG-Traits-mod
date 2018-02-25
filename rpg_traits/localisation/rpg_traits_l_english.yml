@@ -381,6 +381,8 @@
  gas_system_initializer_DESC:0 "A Gas Giant System for Gaseous lifeforms. If you don't pick this as a gaseous lifeform, you're going to have a bad day. If you pick this without the Gaseous Lifeform trait, you're going to have a bad day."
  
  
+ trait_nerve_stapled_robo:0 "Pacification"
+ trait_nerve_stapled_robo_desc:0 "§LOnce a true synthetic lifeform, this frame has been emptied of its 'inhabitant' and is now simply a shell with rudimentary programming. A... Robot.§!\n"
  
  
  
