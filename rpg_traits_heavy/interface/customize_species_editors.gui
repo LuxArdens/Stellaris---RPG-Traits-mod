@@ -2074,7 +2074,7 @@ guiTypes = {
 			}
 
 			buttonType = {
-				name = "pc_machine"
+				name = "pc_ai"
 				position = { x = @planet_col6 y = @planet_row2 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @planet_preference_size y = @planet_preference_size }

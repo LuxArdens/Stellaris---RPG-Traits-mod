@@ -1,7 +1,7 @@
 # base habitability appears to be changed. There's no longer a flat +10% for everything, but there's some wonky hidden bonuses going on for identical-to-homeworld planets
 # own homeworld is ALWAYS 100%, so don't worry about it
 
-
+@10 = 20		# test
 @0 = 0.9		# only for ringworlds (and gaia if organic)
 @1 = 0.70		# identical-to-homeworld and habitats (decided to nerf habitats since they're still just big domes in space, not perfect planets in any way)
 @2 = 0.60		# different climate, slight temperature difference, that kind of minor shit

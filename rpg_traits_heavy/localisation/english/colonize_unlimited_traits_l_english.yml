@@ -17,3 +17,15 @@
   trait_pc_frozen_preference:0 "Frozen Preference"
   trait_pc_frozen_preference_desc:1 "§LCold resistance has developed (or was built into) this species. It's said they could tolerate near-0 temperatures§!"
   pc_frozen_habitability:1 "Frozen Habitability"
+  
+  trait_pc_ai_preference:0 "AI Preference"
+  trait_pc_ai_preference_desc:1 "§LNothing like a big burst of electrons to start the day! This species prefers a superconducting nanolattice as home.§!"
+  pc_frozen_habitability:1 "AI Habitability"
+  
+  trait_pc_a_star_preference:0 "Stellar Preference"
+  trait_pc_a_star_preference_desc:1 "§LNothing like mere 'molecular' lifeforms, this lifeform was born in the core of a star, warmed by the gentle radiation of nuclear fusion.§!"
+  pc_a_star_habitability:1 "Stellar Habitability"
+  
+  trait_pc_asteroid_preference:0 "Asteroid Preference"
+  trait_pc_asteroid_preference_desc:1 "§LWether once from a true planet and displaced, or natural inhabitants from the start, this species makes its home in the various rocks floating through space. Though sometimes several km wide, these still have effectively no gravity, making it hard for them to ever return to the surface of a true planet.§!"
+  pc_pc_asteroid_habitability:1 "Asteroid Habitability"
