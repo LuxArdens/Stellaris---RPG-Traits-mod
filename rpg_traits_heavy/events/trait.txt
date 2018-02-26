@@ -190,7 +190,7 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-					has_trait = trait_armor_obsessed
+				has_trait = trait_armor_obsessed
 			}
 			give_technology = { tech = "tech_ship_armor_2" message = no }
 			give_technology = { tech = "tech_ship_armor_3" message = no }

@@ -2626,7 +2626,7 @@ trait_doom_unleashed = {
 
 trait_shield_obsessed = {
 	cost = 0
-	opposites = {  }
+	opposites = { "trait_armor_obsessed" }
 	initial = yes
 	randomized = no
 	modification = no
@@ -2638,7 +2638,7 @@ trait_shield_obsessed = {
 
 trait_armor_obsessed = {
 	cost = 0
-	opposites = {  }
+	opposites = { "trait_shield_obsessed" }
 	initial = yes
 	randomized = no
 	modification = no
