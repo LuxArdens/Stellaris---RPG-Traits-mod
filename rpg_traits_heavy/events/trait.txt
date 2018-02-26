@@ -183,6 +183,26 @@ event = {
 }
 
 event = {
+	id = "trait.5b"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+					has_trait = trait_armor_obsessed
+			}
+			give_technology = { tech = "tech_ship_armor_2" message = no }
+			give_technology = { tech = "tech_ship_armor_3" message = no }
+			add_modifier = {
+				modifier = trait_armor_obsessed
+				days = -1
+			}
+		}
+	}
+}
+
+event = {
 	id = "trait.6"
 	hide_window = yes
 	is_triggered_only = yes

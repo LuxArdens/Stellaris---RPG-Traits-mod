@@ -78,6 +78,10 @@ trait_shield_obsessed = {
 	ship_shield_regen_add_perc = 4
 }
 
+trait_armor_obsessed = {
+	# placeholder
+}
+
 trait_effects_energy_lifeform = {
 	country_resource_energy_mult = -0.2
 	country_resource_food_mult = -10

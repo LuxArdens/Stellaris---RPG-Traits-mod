@@ -2636,6 +2636,18 @@ trait_shield_obsessed = {
 	}
 }
 
+trait_armor_obsessed = {
+	cost = 0
+	opposites = {  }
+	initial = yes
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_armor_obsessed.dds"
+	allowed_archetypes = { BIOLOGICAL MACHINE }
+	modifier = {
+	}
+}
+
 trait_quantity = {
 	cost = 0
 	opposites = { "trait_quality" "trait_titanic" "trait_tiny" }
