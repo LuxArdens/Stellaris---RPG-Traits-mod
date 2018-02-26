@@ -79,7 +79,8 @@ trait_shield_obsessed = {
 }
 
 trait_armor_obsessed = {
-	# placeholder
+	ship_shield_mult = -1
+	ship_armor_mult = 4
 }
 
 trait_effects_energy_lifeform = {
