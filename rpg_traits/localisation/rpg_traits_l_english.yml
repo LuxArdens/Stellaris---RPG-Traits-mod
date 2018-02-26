@@ -322,7 +322,7 @@
  trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +400% shield power, -75% hull integrity §!\n"
  
  trait_armor_obsessed:0 "Obsessed with armor"
- trait_armor_obsessed_desc:0 "§LThis species never cared for fantasy equipment like shields. They shun even the concept of energy shielding in favour of physical armor protection"\n\n -100% shield power, +400% armor §!\n"
+ trait_armor_obsessed_desc:0 "§LThis species never cared for fantasy equipment like shields. They shun even the concept of energy shielding in favour of thick layers of good ol' armor.\n\n -100% shield power, +400% armor §!\n"
  
  trait_tiny:0 "Tiny"
  trait_tiny_desc:0 "§L"What's this? A ship for ants?"\n\n This species stands less than 5 centimetres tall. No amount of tools or machines can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"
