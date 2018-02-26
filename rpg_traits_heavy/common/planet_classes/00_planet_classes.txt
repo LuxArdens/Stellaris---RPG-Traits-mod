@@ -345,7 +345,7 @@ pc_gas_giant = {
 	space_monster_target = yes
 
 	colonizable = yes
-	starting_planet = yes
+	starting_planet = no
 	colonization_tech = { "tech_floating_cities" }
 	show_city = no
 }
@@ -369,7 +369,7 @@ pc_asteroid = {
 	planet_size = { min = 3 max = 7 }
 	
 	colonizable = yes
-	starting_planet = yes
+	starting_planet = no
 	survey_time_factor = 0.5
 	colonization_tech = { "tech_hollow_asteroids" }
 
@@ -400,7 +400,7 @@ pc_molten = {
 	moon_size = { min = 6 max = 12 }
 	
 	colonizable = yes
-	starting_planet = yes
+	starting_planet = no
 }
 
 pc_barren = {
@@ -427,7 +427,7 @@ pc_barren = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	starting_planet = yes
+	starting_planet = no
 	starting_planet = no
 	show_city = no
 }
@@ -456,7 +456,7 @@ pc_barren_cold = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	starting_planet = yes
+	starting_planet = no
 }
 
 pc_toxic = {
@@ -484,7 +484,7 @@ pc_toxic = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	starting_planet = yes
+	starting_planet = no
 }
 
 pc_frozen = {
@@ -511,7 +511,7 @@ pc_frozen = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	starting_planet = yes
+	starting_planet = no
 	starting_planet = no
 	show_city = no
 }

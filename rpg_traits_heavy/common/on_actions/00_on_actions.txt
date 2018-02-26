@@ -89,8 +89,13 @@ on_decade_pulse = {
 # Triggers when the game starts
 on_game_start = {
 	events = {
+		trait.2292
 		trait_regulation.1
 		trait_regulation.2
+		planet_regulation.3
+		planet_regulation.4
+		planet_regulation.1
+		planet_regulation.2
 		game_start.1
 		game_start.2
 		game_start.3
