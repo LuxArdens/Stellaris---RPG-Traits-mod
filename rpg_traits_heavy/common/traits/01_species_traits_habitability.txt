@@ -57,7 +57,7 @@ trait_pc_desert_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40				# does this actually work?
 	}
 }
 trait_pc_arid_preference = {
@@ -104,7 +104,7 @@ trait_pc_arid_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40
 	}
 }
 trait_pc_savannah_preference = {
@@ -151,7 +151,7 @@ trait_pc_savannah_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40
 	}
 }
 trait_pc_tropical_preference = {
@@ -198,7 +198,7 @@ trait_pc_tropical_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40
 	}
 }
 trait_pc_continental_preference = {
@@ -245,7 +245,7 @@ trait_pc_continental_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40
 	}
 }
 trait_pc_ocean_preference = {
@@ -290,7 +290,7 @@ trait_pc_ocean_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40
 	}
 }
 trait_pc_arctic_preference = {
@@ -337,7 +337,7 @@ trait_pc_arctic_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40
 	}
 }
 trait_pc_tundra_preference = {
@@ -384,7 +384,7 @@ trait_pc_tundra_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40
 	}
 }
 trait_pc_alpine_preference = {
@@ -431,7 +431,7 @@ trait_pc_alpine_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 40
 	}
 }
 #####################
@@ -484,6 +484,13 @@ trait_pc_ai_preference = {
 	}
 	ai_weight = {
 		weight = 0
+		modifier = {		# let's see if this works
+			add = 80
+			OR = {
+				is_species_class = ROBOT
+				is_species_class = MACHINE
+			}
+		}
 	}
 }
 trait_pc_nuked_preference = {
@@ -530,7 +537,13 @@ trait_pc_nuked_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 10
+		modifier = {		# let's see if this works
+			add = 20
+			OR = {
+				is_species_class = ART	# cockroaches and shit have higher chance
+			}
+		}
 	}
 }
 trait_pc_gaia_preference = {		# gaia are a challenge to play as because they're so picky and frail they can't colonize shit
@@ -578,7 +591,13 @@ trait_pc_gaia_preference = {		# gaia are a challenge to play as because they're 
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 5
+		modifier = {		# let's see if this works
+			add = 5
+			OR = {
+				is_species_class = HUM
+			}
+		}
 	}
 }
 trait_pc_ringworld_habitable_preference = {			# also a significant challenge
@@ -626,7 +645,7 @@ trait_pc_ringworld_habitable_preference = {			# also a significant challenge
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 2
 	}
 }
 trait_pc_habitat_preference = {
@@ -686,7 +705,7 @@ trait_pc_a_star_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_a_star_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
 	sorting_priority = 30
-	#modification = no
+	#modification = no		# Ha, keep dreaming
 	modifier = {
 			pc_b_star_habitability = @1
 			
@@ -723,6 +742,12 @@ trait_pc_a_star_preference = {
 	}
 	ai_weight = {
 		weight = 0
+		modifier = {		# let's see if this works
+			add = 10
+			OR = {
+				is_species_class = MOL		# Molluscoid look the most like potential 'energy lifeforms', though not much
+			}
+		}
 	}
 }
 
@@ -767,7 +792,13 @@ trait_pc_gas_giant_preference = {
 			pc_k_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 8000
+		modifier = {		# let's see if this works
+			add = 20
+			OR = {
+				is_species_class = MOL		# Molluscoid look the most like potential 'energy lifeforms', though not much
+			}
+		}
 	}
 }
 
@@ -814,6 +845,14 @@ trait_pc_molten_preference = {
 	}
 	ai_weight = {
 		weight = 0
+		modifier = {		# let's see if this works
+			add = 20
+			OR = {
+				is_species_class = MOL
+				is_species_class = FUN
+				is_species_class = ART
+			}
+		}
 	}
 }
 
@@ -859,7 +898,7 @@ trait_pc_toxic_preference = {
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 10
 	}
 }
 
@@ -907,7 +946,14 @@ trait_pc_barren_preference = {		# barren is more compatible with non-barren plan
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 10
+		modifier = {		# let's see if this works
+			add = 70
+			OR = {
+				is_species_class = ROBOT
+				is_species_class = MACHINE
+			}
+		}
 	}
 }
 
@@ -998,7 +1044,14 @@ trait_pc_frozen_preference = {	# previous one but different name. Shows up ident
 			pc_m_star_habitability = @8
 	}
 	ai_weight = {
-		weight = 0
+		weight = 20
+		modifier = {		# let's see if this works
+			add = 50
+			OR = {
+				is_species_class = ROBOT
+				is_species_class = MACHINE
+			}
+		}
 	}
 }
 
@@ -1085,5 +1138,11 @@ trait_pc_asteroid_preference = {		# low gravity
 	}
 	ai_weight = {
 		weight = 0
+		modifier = {		# let's see if this works
+			add = 40
+			OR = {
+				is_species_class = ART
+			}
+		}
 	}
 }

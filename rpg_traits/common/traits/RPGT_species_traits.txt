@@ -1267,7 +1267,7 @@ trait_wasteful2 = {
 	cost = -2
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_wasteful2.dds"
-	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
+	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful1" "trait_wasteful3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
@@ -1279,7 +1279,7 @@ trait_wasteful3 = {
 	cost = -3
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_wasteful3.dds"
-	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
+	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful1" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
@@ -1306,7 +1306,7 @@ trait_weakwilled2 = {
 	cost = -2
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_weakwilled2.dds"
-	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
+	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled1" "trait_weakwilled3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
@@ -1320,7 +1320,7 @@ trait_weakwilled3 = {
 	cost = -4
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_weakwilled3.dds"
-	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
+	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled1" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {

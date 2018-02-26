@@ -343,7 +343,7 @@ pc_gas_giant = {
 	space_monster_target = yes
 
 	colonizable = yes
-	starting_planet = no
+	starting_planet = yes
 	colonization_tech = { "tech_floating_cities" }
 }
 
@@ -364,6 +364,7 @@ pc_asteroid = {
 	planet_size = { min = 3 max = 7 }
 	
 	colonizable = yes
+	starting_planet = yes
 	survey_time_factor = 0.5
 	colonization_tech = { "tech_hollow_asteroids" }
 
@@ -392,7 +393,7 @@ pc_molten = {
 	moon_size = { min = 6 max = 12 }
 	
 	colonizable = yes
-	starting_planet = no
+	starting_planet = yes
 }
 
 pc_barren = {
@@ -417,7 +418,7 @@ pc_barren = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	starting_planet = no
+	starting_planet = yes
 }
 
 pc_barren_cold = {
@@ -442,7 +443,7 @@ pc_barren_cold = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	starting_planet = no
+	starting_planet = yes
 }
 
 pc_toxic = {
@@ -468,7 +469,7 @@ pc_toxic = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	starting_planet = no
+	starting_planet = yes
 }
 
 pc_frozen = {
@@ -493,7 +494,7 @@ pc_frozen = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	starting_planet = no
+	starting_planet = yes
 }
 
 
@@ -764,6 +765,7 @@ pc_b_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes		# ha!
+	starting_planet = no
 }
 
 pc_a_star = {
@@ -789,6 +791,7 @@ pc_a_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes		# ha!
+	starting_planet = no
 }
 
 pc_f_star = {
@@ -814,6 +817,7 @@ pc_f_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	starting_planet = no
 }
 
 pc_g_star = {
@@ -839,6 +843,7 @@ pc_g_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	starting_planet = no
 }
 
 pc_k_star = {
@@ -864,6 +869,7 @@ pc_k_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	starting_planet = no
 }
 
 pc_m_star = {
@@ -889,6 +895,7 @@ pc_m_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	starting_planet = no
 }
 
 pc_black_hole = {
@@ -934,6 +941,7 @@ pc_neutron_star = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	starting_planet = no
 }
 
 pc_pulsar = {
@@ -960,6 +968,7 @@ pc_pulsar = {
 	planet_size = { min = 20 max = 35 }
 	
 	colonizable = yes
+	starting_planet = no
 }
 
 # ###########
@@ -1208,6 +1217,12 @@ random_list = {
 	planets = {
 		"pc_gaia"
 		"pc_nuked"
+		"pc_gas_giant"
+		"pc_molten"
+		"pc_barren"
+		"pc_toxic"
+		"pc_frozen"
+		"pc_a_star"
 	}
 }
 
