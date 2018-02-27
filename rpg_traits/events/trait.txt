@@ -740,7 +740,7 @@ planet_event = {
 				limit = { has_building = yes }
 				remove_building = yes
 			}
-			destroy_colony = { keep_buildings = no }
+			destroy_colony = yes
 	}
 }
 
