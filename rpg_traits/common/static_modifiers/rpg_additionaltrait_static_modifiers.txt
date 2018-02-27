@@ -106,7 +106,7 @@ egg_born = {
 }
 
 silent_observers = {
-	ship_sensor_range_add = 4			# these should still work
+	ship_sensor_range_add = 2			# Sensor range is much bigger in 2.0
 	country_naval_cap_mult = -0.33
 }
 
