@@ -907,7 +907,7 @@ trait_weak1 = {
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak2" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
-	modifier = {=
+	modifier = {
 		tile_resource_minerals_mult = -0.3
 		army_damage_mult = -0.25
 	}
@@ -919,7 +919,7 @@ trait_weak2 = {
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak1" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
-	modifier = {=
+	modifier = {
 		tile_resource_minerals_mult = -0.5
 		army_damage_mult = -0.5
 	}
