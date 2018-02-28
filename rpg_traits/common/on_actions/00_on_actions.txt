@@ -28,7 +28,6 @@ on_yearly_pulse = {
 		trait.3
 		trait.4
 		trait.5
-		trait.5b
 		trait.23
 		trait.6
 		trait.7
@@ -138,7 +137,6 @@ on_press_begin = {
 		trait.3
 		trait.4
 		trait.5
-		trait.5b
 		trait.23
 		trait.6
 		trait.7
@@ -1127,7 +1125,6 @@ on_modification_complete = {
 		trait.3
 		trait.4
 		trait.5
-		trait.5b
 		trait.23
 		trait.6
 		trait.7

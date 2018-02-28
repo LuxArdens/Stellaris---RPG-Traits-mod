@@ -107,7 +107,6 @@ egg_born = {
 }
 
 silent_observers = {
-	ship_sensor_range_add = 4			# these should still work
 	ship_sensor_range_add = 2			# Sensor range is much bigger in 2.0
 	country_naval_cap_mult = -0.33
 }
@@ -306,7 +305,6 @@ trait_quantity = {
 trait_hibernation = {
 	# robots continue at partial efficiency! Yay
 	pop_robot_production_output = 0.75
-	country_robot_build_speed_mult = -1	# but you can't build em
 	pop_robot_build_speed_mult = -1	# but you can't build em
 
 	# ships check

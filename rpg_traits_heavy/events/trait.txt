@@ -183,7 +183,6 @@ event = {
 }
 
 event = {
-	id = "trait.5b"
 	id = "trait.23"
 	hide_window = yes
 	is_triggered_only = yes
@@ -790,6 +789,38 @@ planet_event = {
 				remove_building = yes
 			}
 			destroy_colony = yes
+<<<<<<< HEAD
+=======
+	}
+}
+
+country_event = {
+	id = "trait.8334"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_planet = {
+				change_pc = pc_gas_giant
+		}
+
+		#every_owned_pop = {
+		#	modify_species = {
+		#		species = this
+		#		add_trait = trait_pc_gas_giant_preference
+		#		remove_trait = trait_pc_tundra_preference
+		#		remove_trait = trait_pc_continental_preference
+		#		remove_trait = trait_pc_arctic_preference
+		#		remove_trait = trait_pc_ocean_preference
+		#		remove_trait = trait_pc_tropical_preference
+		#		remove_trait = trait_pc_savannah_preference
+		#		remove_trait = trait_pc_arid_preference
+		#		remove_trait = trait_pc_desert_preference
+		#		remove_trait = trait_pc_alpine_preference
+		#		remove_trait = trait_gas_lifeform
+		#	}
+		#}
+>>>>>>> 669ea6569f9a5b3807133755292e831766ebf4ba
 	}
 }
 
@@ -816,11 +847,12 @@ event = {				# testing event
 			limit = {
 				has_trait = trait_pc_continental_preference
 			}
+<<<<<<< HEAD
 		
 		
+=======
+>>>>>>> 669ea6569f9a5b3807133755292e831766ebf4ba
 		}
-		
-		
 	}
 }
 
