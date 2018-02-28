@@ -631,13 +631,12 @@ country_event = {
 		}
 		# physics bump
 		create_fleet = {
-			name = NAME_Foundling
+			name = "NAME_Foundling"
 			settings = { spawn_debris = no }
 			effect = {
 				set_owner = root
 				create_ship_design = {
 					design = "NAME_Returned_Science_Ship"
-					ftl = root
 				}
 				create_ship = {
 					name = NAME_Foundling
@@ -1684,7 +1683,6 @@ country_event = {
 					set_owner = root
 					create_ship_design = {
 						design = NAME_Corsair
-						ftl = root
 					}
 					create_ship = {
 						design = last_created_design
@@ -2897,16 +2895,6 @@ planet_event = {
 					limit = { has_growing_pop = yes }
 					kill_pop = yes
 				}
-				if = {
-					limit = {
-						exists = spaceport
-					}
-					spaceport = {
-						fleet = {
-							destroy_fleet = this
-						}
-					}
-				}
 			}
 			every_owned_pop = {
 				kill_pop = yes
@@ -3102,18 +3090,8 @@ planet_event = {
 				limit = { has_growing_pop = yes }
 				kill_pop = yes
 			}
-			if = {
-				limit = {
-					exists = spaceport
-				}
-				spaceport = {
-					fleet = {
-						destroy_fleet = this
-					}
-				}
-			}
 		}
-		destroy_colony = { keep_buildings = no }
+		destroy_colony = yes
 	}
 
 	option = {
@@ -3718,11 +3696,13 @@ planet_event = {
 						is_planet_class = pc_habitat
 						is_star = yes
 					}
+					planet_size > 9
+					planet_size < 26
 				}
 				every_owned_pop = {
 					limit = {
 						is_robot_pop = no
-						is_sentient = yes
+						is_sapient = yes
 					}
 					if = {
 						limit = {

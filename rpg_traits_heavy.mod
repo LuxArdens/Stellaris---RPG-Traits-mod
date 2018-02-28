@@ -1,4 +1,4 @@
-name="RPG Traits HEAVY"
+﻿name="RPG Traits HEAVY"
 path="mod/rpg_traits_heavy"
 tags={
 	"Balance"

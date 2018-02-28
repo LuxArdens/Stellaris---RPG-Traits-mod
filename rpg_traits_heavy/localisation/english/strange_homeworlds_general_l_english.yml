@@ -13,4 +13,5 @@
   
   climate_star:0 "Stellar"
   star:0 "§M(Stellar)§!"
-  TYPE_HEADER_09::0 "Stellar"
+  TYPE_HEADER_09:0 "Stellar"
+  

@@ -93,10 +93,10 @@ on_game_start = {
 		trait.2292
 		trait_regulation.1
 		trait_regulation.2
-		planet_regulation.3
-		planet_regulation.4
-		planet_regulation.1
-		planet_regulation.2
+		planreg.3
+		planreg.4
+		planreg.1
+		planreg.2
 		game_start.1
 		game_start.2
 		game_start.3

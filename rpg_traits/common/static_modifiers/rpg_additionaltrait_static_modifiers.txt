@@ -75,12 +75,13 @@ trait_subterranean = {
 trait_shield_obsessed = {
 	ship_shield_mult = 4
 	ship_hull_mult = -0.75
+	bullshit_modifier_that_doesnt_exist_to_test_how_game_reacts = 10
 	ship_shield_regen_add_perc = 4
 }
 
 trait_armor_obsessed = {
 	ship_shield_mult = -1
-	ship_armor_mult = 4
+	ship_hull_mult = 4
 }
 
 trait_effects_energy_lifeform = {
