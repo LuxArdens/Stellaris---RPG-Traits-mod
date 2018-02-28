@@ -786,19 +786,6 @@ country_event = {
 	}
 }
 
-event = {				# testing event
-	id = "trait.2292"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-				has_trait = trait_pc_continental_preference
-			}
-		}
-	}
-}
 
 ########################
 ## Genemod On_Actions ##

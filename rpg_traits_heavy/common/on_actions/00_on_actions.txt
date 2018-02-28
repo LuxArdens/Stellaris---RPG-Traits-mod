@@ -90,9 +90,8 @@ on_decade_pulse = {
 # Triggers when the game starts
 on_game_start = {
 	events = {
-		trait.2292
-		trait_regulation.1
-		trait_regulation.2
+		traitreg.1
+		traitreg.2
 		planreg.3
 		planreg.4
 		planreg.1

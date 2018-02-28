@@ -29,7 +29,35 @@ trait_mechanical = {
 	
 	modifier = {
 		pop_environment_tolerance = 0.3		# can live on anything except for ultra-extreme places (like stellar cores)
-		pc_ai_habitability = 0.6
+		
+		# New standard Hab modifiers for Machines.
+		pc_ai_habitability = 0.9
+		pc_ringworld_habitable_habitability = 0.9
+		pc_frozen_habitability = 0.6
+		pc_barren_habitability = 0.6
+		pc_barren_cold_habitability = 0.6
+		pc_nuked_habitability = 0.6
+		pc_desert_habitability = 0.4
+		pc_tropical_habitability = 0.4
+		pc_continental_habitability = 0.4
+		pc_arctic_habitability = 0.4
+		pc_tundra_habitability = 0.4
+		pc_arid_habitability = 0.4
+		pc_savannah_habitability = 0.4
+		pc_alpine_habitability = 0.4
+		pc_ocean_habitability = 0.3
+		pc_toxic_habitability = 0.3
+		pc_molten_habitability = 0.2
+		pc_asteroid_habitability = 0.2
+		pc_gas_giant_habitability = -0.2
+		pc_neutron_star_habitability = -2
+		pc_pulsar_habitability = -2
+		pc_a_star_habitability = -2
+		pc_b_star_habitability = -2
+		pc_f_star_habitability = -2
+		pc_g_star_habitability = -2
+		pc_k_star_habitability = -2
+		pc_m_star_habitability = -2
 	}
 }
 
