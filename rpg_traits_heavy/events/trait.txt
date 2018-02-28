@@ -184,6 +184,7 @@ event = {
 
 event = {
 	id = "trait.5b"
+	id = "trait.23"
 	hide_window = yes
 	is_triggered_only = yes
 

@@ -85,6 +85,7 @@ trait_pc_arid_preference = {
 		pc_frozen_habitability = @5
 		pc_barren_habitability = @5
 		pc_barren_cold_habitability = @45
+		pc_barren_cold_habitability = @5
 		
 		pc_nuked_habitability = @6
 		pc_toxic_habitability = @6
