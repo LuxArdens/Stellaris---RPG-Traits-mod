@@ -20,7 +20,7 @@ trait_pc_desert_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0			# gaia now represents purposefully terraforming a world to mimic the homeworld. EXTREMELY rarely found at random
 		
-		pc_habitat_preference = @1
+		
 		pc_desert_habitability = @1			#  this does not get a hidden +30%, nor a flat +10% like before, so it's actually the number given
 		
 		pc_arid_habitability = @2
@@ -68,7 +68,7 @@ trait_pc_arid_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_arid_habitability = @1
 		
 		pc_savannah_habitability = @2
@@ -115,7 +115,7 @@ trait_pc_savannah_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_savannah_habitability = @1
 		
 		pc_arid_habitability = @2
@@ -162,7 +162,7 @@ trait_pc_tropical_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_tropical_habitability = @1
 		
 		pc_continental_habitability = @2
@@ -209,7 +209,7 @@ trait_pc_continental_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_continental_habitability = @1
 		
 		pc_tropical_habitability = @2
@@ -256,7 +256,7 @@ trait_pc_ocean_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_ocean_habitability = @1
 		
 		pc_tropical_habitability = @4
@@ -301,7 +301,7 @@ trait_pc_arctic_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_arctic_habitability = @1
 		
 		pc_alpine_habitability = @2
@@ -348,7 +348,7 @@ trait_pc_tundra_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_tundra_habitability = @1
 		
 		pc_alpine_habitability = @2
@@ -395,7 +395,7 @@ trait_pc_alpine_preference = {
 		pc_ringworld_habitable_habitability = @0
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_alpine_habitability = @1
 		
 		pc_tundra_habitability = @2
@@ -448,7 +448,7 @@ trait_pc_ai_preference = {
 		
 		pc_ringworld_habitable_habitability = @0
 		
-		pc_habitat_preference = @0		# exception because machines really shouldn't care whether they sit in a station or on a planet
+				# exception because machines really shouldn't care whether they sit in a station or on a planet
 
 		pc_frozen_habitability = @2		# missing the fancy extras of an AI world, but being devoid of life is good for machines
 		pc_barren_habitability = @2
@@ -501,7 +501,7 @@ trait_pc_nuked_preference = {
 	modifier = {
 		pc_ringworld_habitable_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_nuked_habitability = @1
 		
 		pc_barren_habitability = @2				#similar enough
@@ -556,7 +556,7 @@ trait_pc_gaia_preference = {		# gaia are a challenge to play as because they're 
 		
 		pc_gaia_habitability = @1
 		
-		pc_habitat_preference = @2		# not being on a 'real' planet
+				# not being on a 'real' planet
 
 		pc_tropical_habitability = @4		# closest to the lush gaia worlds
 		pc_continental_habitability = @4
@@ -610,7 +610,7 @@ trait_pc_ringworld_habitable_preference = {			# also a significant challenge
 		
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @0
+		
 
 		pc_tropical_habitability = @4		# same problem as with gaia, over-adapted to perfect worlds
 		pc_continental_habitability = @4
@@ -658,7 +658,7 @@ trait_pc_habitat_preference = {
 		
 		pc_gaia_habitability = @0
 		
-		pc_habitat_preference = @0
+		
 
 		pc_tropical_habitability = @4		# same problem as with gaia, over-adapted to perfect worlds
 		pc_continental_habitability = @4
@@ -758,7 +758,7 @@ trait_pc_gas_giant_preference = {
 	#modification = no
 	modifier = {
 		pc_ringworld_habitable_habitability = @0			# yea well, their ringworlds are filled with gas alright
-		pc_habitat_preference = @0
+		
 		
 		pc_gas_giant_habitability = @3
 		
@@ -810,7 +810,7 @@ trait_pc_molten_preference = {
 	modifier = {
 		pc_ringworld_habitable_habitability = @0
 		
-		pc_habitat_preference = @1
+		
 		pc_molten_habitability = @1
 		
 		pc_barren_habitability = @5					# far too cold. Requires heated domes
@@ -865,7 +865,7 @@ trait_pc_toxic_preference = {
 		pc_ringworld_habitable_habitability = @0
 		
 		pc_toxic_habitability = @1			# toxic represents a special/rare cocktail of chemicals here that the organism needs to survive
-		pc_habitat_preference = @1
+		
 		
 		pc_barren_habitability = @5
 		pc_arid_habitability = @5
@@ -911,7 +911,7 @@ trait_pc_barren_preference = {		# barren is more compatible with non-barren plan
 		pc_ringworld_habitable_habitability = @0
 		
 		pc_barren_habitability = @1
-		pc_habitat_preference = @1
+		
 		
 		pc_barren_cold_habitability = @2
 		pc_frozen_habitability = @2
@@ -1010,7 +1010,7 @@ trait_pc_frozen_preference = {	# previous one but different name. Shows up ident
 		
 		pc_barren_cold_habitability = @1
 		pc_frozen_habitability = @1
-		pc_habitat_preference = @1
+		
 		
 		pc_barren_habitability = @2
 		
@@ -1105,7 +1105,7 @@ trait_pc_asteroid_preference = {		# low gravity
 		pc_ringworld_habitable_habitability = @0		# ringworlds can be de-spun to remove gravity
 		
 		pc_asteroid_habitability = @3			# gets a +40% bonus out of bloody nowhere for whatever reason
-		pc_habitat_preference = @1
+		
 		
 		pc_barren_habitability = @7			# gravity too high
 		pc_arid_habitability = @7
