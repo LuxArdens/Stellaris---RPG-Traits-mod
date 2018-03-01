@@ -1,4 +1,4 @@
-﻿name="RPG Traits"
+name="RPG Traits"
 path="mod/rpg_traits"
 tags={
 	"Overhaul"
