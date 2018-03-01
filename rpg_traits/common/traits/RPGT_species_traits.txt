@@ -2110,7 +2110,7 @@ trait_genemod_lobotomized = {
 	randomized = no
 	modification = yes
 	forced_happiness = yes
-	cost = 0 		# this is zero so that you can apply it without having the advanced_trait tech
+	cost = -1
 	icon = "gfx/interface/icons/traits/trait_lobotomized.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
@@ -2123,7 +2123,6 @@ trait_genemod_lobotomized = {
 		tile_resource_unity_mult = -4
 		army_damage_mult = -4
 		army_defense_health_mult = -4
-		#no longer works #pop_fortification_defense = -4
 		species_leader_exp_gain = -10
 		}
 		opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_nerve_stapled" "trait_genemod_enraged" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
