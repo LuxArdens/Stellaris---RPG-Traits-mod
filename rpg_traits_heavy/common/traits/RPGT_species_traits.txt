@@ -1939,7 +1939,7 @@ trait_resilient2 = {
 		army_morale = 1
 		#no longer works #pop_fortification_defense = 1
 	}
-	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
+	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient1" "trait_resilient3" }
 }
 trait_resilient3 = {
 	cost = 3
@@ -1955,7 +1955,7 @@ trait_resilient3 = {
 		army_morale = 8
 		#no longer works #pop_fortification_defense = 2
 	}
-	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
+	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient1" }
 }
 
 trait_conservational1 = {
