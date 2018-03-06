@@ -713,6 +713,7 @@ planet_event = {
 
 	trigger = {
 		 AND = {
+			has_owner = yes
 			owner = { has_trait = trait_living_planet }
 			#any_pop = {
 			#		NOT = { has_trait = trait_living_planet }
