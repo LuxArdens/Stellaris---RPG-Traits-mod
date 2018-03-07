@@ -357,6 +357,12 @@
  trait_synthetic_lifeform:0 "Synthethic Lifeform"
  trait_synthetic_lifeform_desc:0 "§LThis lifeform was artificially constructed. They require no organic produce, do not breathe, do not die of old age, and are stronger, faster and smarter than most organics.§!\n"
  
+ trait_robot_killer_bots1:0 "Killer Drones"
+ trait_robot_killer_bots1_desc:0 "§LRobotic drones, bristling with various types of weapons. Though a bit predictable, they have unmatched precision and firepower on the battlefield, destroying organic ground troops and massacring civilians with the greates ease.§!\n"
+ 
+ trait_robot_killer_bots2:0 "Annihilators"
+ trait_robot_killer_bots2_desc:0 "§LI'll be back.§!\n"
+ 
  ########################################
  # Events / oefening creatief schrijven #
  ########################################

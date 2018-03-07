@@ -2648,7 +2648,7 @@ trait_energy_lifeform = {
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		pop_food_req_mult = -10
-		country_resource_energy_mult = -0.2
+		tile_resource_energy_mult = -0.2
 		army_upkeep_mult = 1
 	}
 }
