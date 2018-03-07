@@ -340,7 +340,7 @@
  trait_penalty_desc:0 "§LFor a bigger challenge, give yourself this trait point penalty.\n\n§!\n"
  
  trait_penalty2:0 "Bring it on"
- trait_penalty2_desc:0 "§LCan't stop min-maxing? Give yourself this penalty to feel less guilty about it.\n\n§!\n"
+ trait_penalty2_desc:0 "§LStill can't stop min-maxing? Give yourself this penalty to feel less guilty about it.\n\n§!\n"
  
  trait_penalty3:0 "Masochist"
  trait_penalty3_desc:0 "§LThis is the best trait in the game... if you like suffering needlessly for hours.\n\n§!\n"
