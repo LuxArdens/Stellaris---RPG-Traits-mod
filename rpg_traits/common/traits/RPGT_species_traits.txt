@@ -234,6 +234,7 @@ trait_robot_loyalty_circuits = {
 	opposites = { trait_robotic_2 trait_robotic_1 } # Synth only
 	
 	species_potential_add = {
+		exists = from
 		from = {
 			NOT = { has_policy_flag = ai_outlawed }
 		}
@@ -2138,7 +2139,7 @@ trait_custom_race = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_custom.dds"
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	opposites = {  }
 	modifier = {
 	}
@@ -2343,7 +2344,7 @@ trait_turtles = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_turtles.dds"
-	allowed_archetypes = { BIOLOGICAL MACHINES }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	modifier = {
 		army_defense_health_mult = 2
 	}
@@ -2459,7 +2460,7 @@ trait_silent_observers = {
 	cost = 0
 	opposites = { "trait_turtles" "trait_titanic" "trait_tiny" }
 	allowed_archetypes = { BIOLOGICAL }
-	initial = no
+	initial = yes
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_silent_observers.dds"
