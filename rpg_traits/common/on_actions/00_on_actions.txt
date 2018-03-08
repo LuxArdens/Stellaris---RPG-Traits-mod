@@ -150,8 +150,6 @@ on_press_begin = {
 		trait.15
 		trait.16
 		trait.17
-		trait.18
-		trait.19
 		trait.21
 		trait.1601
 		trait.1701

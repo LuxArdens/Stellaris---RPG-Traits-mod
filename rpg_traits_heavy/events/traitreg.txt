@@ -30,7 +30,7 @@ event = {
 }
 
 country_event = {
-	id = traitreg.12		# triggers all events that do actual stuff (this is because random_list doesn't use proper seeds otherwise )
+	id = traitreg.12		# triggers all events that do actual stuff (this is at a one day interval because random_list doesn't use proper seeds otherwise )
 	hide_window = yes
 	
 	mean_time_to_happen = {

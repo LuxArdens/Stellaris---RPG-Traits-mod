@@ -131,7 +131,7 @@ trait_robotic_3 = {
 
 trait_syncretic_proles = {
 	cost = 1
-	opposites = { "trait_intelligent" "trait_erudite" "trait_natural_engineers" "trait_natural_physicists" "trait_natural_sociologists" "trait_presapient_natural_intellectuals" }
+	opposites = { "trait_intelligent" "trait_erudite" "trait_engineering_elitists" "trait_physics_elitists" "trait_sociology_elitists" "trait_presapient_natural_intellectuals" }
 	initial = no
 	sapient = no
 	modification = no
@@ -2862,7 +2862,7 @@ trait_living_planet = {
 # Credits to /u/Sriseru     #
 #############################
 trait_broodparasite = {
-	opposites = { "trait_charismatic" "trait_repugnant" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
+	opposites = { "trait_charismatic2" "trait_charismatic3" "trait_charismatic1" "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
 	allowed_archetypes = { BIOLOGICAL }
 	cost = 0
 	initial = yes
