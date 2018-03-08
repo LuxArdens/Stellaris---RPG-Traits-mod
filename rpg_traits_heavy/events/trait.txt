@@ -135,26 +135,6 @@ event = {
 }
 
 event = {
-	id = "trait.23"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-				has_trait = trait_armor_obsessed
-			}
-			give_technology = { tech = "tech_ship_armor_2" message = no }
-			give_technology = { tech = "tech_ship_armor_3" message = no }
-			add_modifier = {
-				modifier = trait_armor_obsessed
-				days = -1
-			}
-		}
-	}
-}
-
-event = {
 	id = "trait.6"
 	hide_window = yes
 	is_triggered_only = yes
@@ -463,6 +443,175 @@ event = {
 		}
 	}
 }
+
+event = {
+	id = "trait.23"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_armor_obsessed
+			}
+			give_technology = { tech = "tech_ship_armor_2" message = no }
+			give_technology = { tech = "tech_ship_armor_3" message = no }
+			add_modifier = {
+				modifier = trait_armor_obsessed
+				days = -1
+			}
+		}
+	}
+}
+
+######################
+# PLANet TEchnology REgulation eveNTS (planterents)
+######################
+
+event = {
+	id = "trait.24"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_desert_preference
+					has_trait = trait_pc_arid_preference
+					has_trait = trait_pc_savannah_preference
+					has_trait = trait_pc_tropical_preference
+					has_trait = trait_pc_continental_preference
+					has_trait = trait_pc_ocean_preference
+					has_trait = trait_pc_arctic_preference
+					has_trait = trait_pc_tundra_preference
+					has_trait = trait_pc_alpine_preference
+					has_trait = trait_pc_nuked_preference
+					has_trait = trait_pc_gaia_preference
+					has_trait = trait_pc_ringworld_habitable_preference
+					has_trait = trait_pc_habitat_preference
+				}
+			}
+			give_technology = { message = no tech = tech_normal_worlds }
+		}
+	}
+}
+event = {
+	id = "trait.25"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_ai_preference
+				}
+			}
+			give_technology = { message = no tech = tech_ai_worlds }
+		}
+	}
+}
+event = {
+	id = "trait.26"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_a_star_preference
+				}
+			}
+			give_technology = { message = no tech = tech_star_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.27"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_gas_giant_preference
+				}
+			}
+			give_technology = { message = no tech = tech_gas_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.28"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_molten_preference
+				}
+			}
+			give_technology = { message = no tech = tech_molten_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.29"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_toxic_preference
+				}
+			}
+			give_technology = { message = no tech = tech_toxic_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.30"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_barren_preference
+					has_trait = trait_pc_frozen_preference
+				}
+			}
+			give_technology = { message = no tech = tech_barren_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.31"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_asteroid_preference
+				}
+			}
+			give_technology = { message = no tech = tech_asteroid_habitation }
+		}
+	}
+}
+
+
+
 
 event = {
 	id = "trait.1601"

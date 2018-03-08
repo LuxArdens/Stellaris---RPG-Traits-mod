@@ -101,3 +101,154 @@ tech_psionic_synthetics = {
     }
   }
 }
+
+
+
+#######################################################################
+# "Fake" Technologies. These should ALWAYS be hidden to the user
+#######################################################################
+
+tech_normal_worlds = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_ai_worlds = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_star_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_gas_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_molten_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_toxic_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_barren_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_asteroid_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

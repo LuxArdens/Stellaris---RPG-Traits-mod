@@ -156,7 +156,7 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "planet_class_traits_frame_box"
-			size = { width = 390 height = 50 }
+			size = { width = 690 height = 50 }
 			position = { x = 10 y = 270 }
 
 			background = {
@@ -178,14 +178,14 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "planet_class_traits_container"
-			size = { width = 322 height = 45 }
+			size = { width = 522 height = 45 }
 			verticalScrollbar = "right_vertical_slider"
 			position = { x = 17 y = 276 }
 
 			gridBoxType = {
 				name = "traits"
-				slotSize = { width = 42 height = 45 }
-				max_slots_horizontal = 9
+				slotSize = { width = 32 height = 45 }
+				max_slots_horizontal = 30
 				format = "UPPER_LEFT"
 			}
 		}
