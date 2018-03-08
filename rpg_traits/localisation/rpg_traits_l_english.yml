@@ -363,6 +363,12 @@
  trait_robot_killer_bots2:0 "Annihilators"
  trait_robot_killer_bots2_desc:0 "§LI'll be back.§!\n"
  
+ trait_psionic_shifters:0 "Phase Shifters"
+ trait_psionic_shifters_desc:0 "§LMore than just psionics, these minds took "mind over matter" rather literally. They can alter their physical forms at their own leisure, warping through solid objects, moving at incredible speeds and manipulating the fabric of reality at the lowest levels. §!\n"
+ 
+ trait_psionic_ethereals:0 "Ethereals"
+ trait_psionic_ethereals_desc:0 "§LThese psionics have completely mastered the alteration of physical reality. They have transcended into something else entirely, residing mostly in a super-dimensional place without space, matter or time. Known under many names: Ghosts, Angels, Subspace Anomalies... the Ethereals do not hunger, do not rest and do not die. They influence the physical realm only through powerful psionic interactions. Though more capable than most organics, they can still be temporarily cast out of the physical realm with force.§!\n"
+ 
  ########################################
  # Events / oefening creatief schrijven #
  ########################################

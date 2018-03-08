@@ -102,12 +102,144 @@ tech_psionic_synthetics = {
   }
 }
 
+tech_psionic_shifters = {
+  cost = 10000
+  area = physics
+  tier = 3
+  category = { psionics }
+  prerequisites = { "tech_psionic_theory" }
+  is_rare = yes
+  weight = 50
+
+  weight_modifier = {
+    factor = 0.5
+    modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_level > 2
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				has_level > 3
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 4
+			research_leader = {
+				area = physics
+				has_level > 4
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+  }
+  ai_weight = {
+    weight = 5 #Very rare tech
+    modifier = {
+      factor = 1.25
+      research_leader = {
+        area = physics
+        has_trait = "leader_trait_expertise_psionics"
+      }
+    }
+  }
+}
+
+tech_psionic_ethereals = {
+  cost = 25000
+  area = physics
+  tier = 3
+  category = { psionics }
+  prerequisites = { "tech_psionic_shifters" }
+  is_rare = yes
+  weight = 30
+
+  weight_modifier = {
+    factor = 0.5
+    modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_level > 2
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				has_level > 3
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 4
+			research_leader = {
+				area = physics
+				has_level > 4
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+  }
+  ai_weight = {
+    weight = 5 #Very rare tech
+    modifier = {
+      factor = 1.25
+      research_leader = {
+        area = physics
+        has_trait = "leader_trait_expertise_psionics"
+      }
+    }
+  }
+}
 
 
 #######################################################################
 # "Fake" Technologies. These should ALWAYS be hidden to the user
 #######################################################################
 
+tech_psionic_ascension_get = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
 tech_normal_worlds = {
 	cost = 0
 	area = engineering
@@ -121,7 +253,6 @@ tech_normal_worlds = {
 			factor = 0
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}
@@ -139,7 +270,6 @@ tech_ai_worlds = {
 			factor = 0
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}
@@ -157,7 +287,6 @@ tech_star_habitation = {
 			factor = 0
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}
@@ -175,7 +304,6 @@ tech_gas_habitation = {
 			factor = 0
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}
@@ -193,7 +321,6 @@ tech_molten_habitation = {
 			factor = 0
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}
@@ -211,7 +338,6 @@ tech_toxic_habitation = {
 			factor = 0
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}
@@ -229,7 +355,6 @@ tech_barren_habitation = {
 			factor = 0
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}
@@ -247,7 +372,6 @@ tech_asteroid_habitation = {
 			factor = 0
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}

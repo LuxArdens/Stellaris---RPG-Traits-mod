@@ -97,7 +97,6 @@ on_game_start = {
 		planreg.1
 		planreg.2
 		trait.24
-		trait.25
 		trait.26
 		trait.27
 		trait.29

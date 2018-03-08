@@ -433,6 +433,7 @@ ap_transcendence = {
 		custom_tooltip = "transcendence_tooltip"
 		hidden_effect = {
 			country_event = { id = utopia.2650 }
+			give_technology = { message = no tech = tech_psionic_ascension_get }
 		}
 	}
 	possible = {

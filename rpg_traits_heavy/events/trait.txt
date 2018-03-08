@@ -497,22 +497,6 @@ event = {
 	}
 }
 event = {
-	id = "trait.25"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-				OR = {
-					has_trait = trait_pc_ai_preference
-				}
-			}
-			give_technology = { message = no tech = tech_ai_worlds }
-		}
-	}
-}
-event = {
 	id = "trait.26"
 	hide_window = yes
 	is_triggered_only = yes
@@ -587,6 +571,7 @@ event = {
 				OR = {
 					has_trait = trait_pc_barren_preference
 					has_trait = trait_pc_frozen_preference
+					has_trait = trait_pc_ai_preference
 				}
 			}
 			give_technology = { message = no tech = tech_barren_habitation }
