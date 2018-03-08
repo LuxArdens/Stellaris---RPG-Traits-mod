@@ -506,7 +506,7 @@ trait_robot_awoken_01 = {
 
 
 trait_nerve_stapled_robo = {
-	cost = 0
+	cost = -1
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_genemod_enraged" "trait_genemod_lobotomized" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
 	allowed_archetypes = { MACHINE }
 	initial = no
