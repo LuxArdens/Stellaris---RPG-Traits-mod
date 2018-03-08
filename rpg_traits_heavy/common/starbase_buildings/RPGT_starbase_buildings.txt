@@ -8,7 +8,7 @@ listening_post2 = {
 	
 	potential = {
 		exists = owner
-		owner = {owner_species = { pop_has_trait = trait_silent_observers }}
+		owner = {owner_species = { has_trait = trait_silent_observers }}
 	}	
 	
 	station_modifier = {
