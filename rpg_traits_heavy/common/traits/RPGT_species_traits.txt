@@ -262,6 +262,7 @@ trait_robot_loyalty_circuits = {
 	opposites = { trait_robotic_2 trait_robotic_1 } # Synth only
 	
 	species_potential_add = {
+		exists = from
 		from = {
 			NOT = { has_policy_flag = ai_outlawed }
 		}
