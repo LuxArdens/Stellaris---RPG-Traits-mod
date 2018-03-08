@@ -247,6 +247,8 @@ event = {
 	}
 }
 
+
+
 country_event = {
 	id = planreg.101			#	gaia
 	hide_window = yes
