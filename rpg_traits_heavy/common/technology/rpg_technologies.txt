@@ -218,6 +218,44 @@ tech_psionic_ethereals = {
   }
 }
 
+tech_robo_stapling = {
+  cost = 2000
+  area = engineering
+  tier = 1
+  category = { industry }
+  prerequisites = { "tech_droid_workers" }
+  is_rare = yes
+  weight = 75
+
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+  ai_weight = {
+    weight = 0 # AI can't handle this
+  }
+}
+
 
 #######################################################################
 # "Fake" Technologies. These should ALWAYS be hidden to the user

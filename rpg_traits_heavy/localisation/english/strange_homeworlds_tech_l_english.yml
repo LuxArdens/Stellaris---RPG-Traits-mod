@@ -39,3 +39,8 @@
   tech_gas_escalation_desc:0 "By moving astronomical amounts of gas and gathering it on a single planet, we can increase a rocky planets mass until it can capture gas molecules all on its own. This slowly turns the rocky planet into a true Gas giant."
   TECH_UNLOCK_GAS_ESC_TITLE:0 "Gas Escalation"
   TECH_UNLOCK_GAS_ESC_DESC:0 "By moving astronomical amounts of gas and gathering it on a single planet, we can increase a rocky planets mass until it can capture gas molecules all on its own. This slowly turns the rocky planet into a true Gas giant."
+  
+    tech_psionic_shifters:0 "Phase Shifting"
+    tech_psionic_shifters_desc:0 "Our current psionic capabilities have focused too much on the here and now, the tangible and temporal. If we wish to transcend into something truly greater, we must learn to leave this physical behind, and enter into a new reality."
+    tech_psionic_ethereals:0 "Ethereal Form"
+    tech_psionic_ethereals_desc:0 "Nothing remains. Nothing of what we once were. Now onward, onward for eternity."

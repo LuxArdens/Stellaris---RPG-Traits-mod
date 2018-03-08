@@ -574,24 +574,26 @@ trait_robot_awoken_01 = {
 
 
 trait_nerve_stapled_robo = {
-	cost = -1
-	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_genemod_enraged" "trait_genemod_lobotomized" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
+	cost = 0
+	opposites = {  }
 	allowed_archetypes = { MACHINE }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_crippled.dds"
 	forced_happiness = yes
+	prerequisites = { tech_robo_stapling }
+	
 	modifier = {
-		tile_resource_minerals_mult = -0.1
-		tile_resource_food_mult = -0.1
-		tile_resource_energy_mult = -0.75					# turn annexed synths into robots
-		tile_resource_physics_research_mult = -2
-		tile_resource_engineering_research_mult = -2
-		tile_resource_society_research_mult = -2
-		tile_resource_unity_mult = -2
-		army_defense_health_mult = -2.0			# won't put up a fight
-		army_damage_mult = -2.0
+		tile_resource_minerals_mult = -0.2
+		tile_resource_food_mult = -0.2
+		tile_resource_energy_mult = -5					# effectively turn annexed synths into fancy robots
+		tile_resource_physics_research_mult = -5
+		tile_resource_engineering_research_mult = -5
+		tile_resource_society_research_mult = -5
+		tile_resource_unity_mult = -5
+		army_health_mult = -5			# won't put up a fight
+		army_damage_mult = -5
 		species_leader_exp_gain = -10
 	}
 }
@@ -747,7 +749,7 @@ trait_psionic_ethereals = {
 		pop_consumer_goods_mult = -10			# hope this doesn't go negative, else RIP
 		pop_food_req_mult = -10
 		
-		pop_environment_tolerance = 1			# because screw the physical world
+		pop_environment_tolerance = 2			# because screw the physical world
 	}
 }
 
