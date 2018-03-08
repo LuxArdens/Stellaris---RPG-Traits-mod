@@ -725,7 +725,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "species_traits_editor"
 		moveable = yes
-		position = { x = -400 y = -300 }
+		position = { x = -400 y = -500 }
 		size = { width = 1200 height = 950 }
 		orientation = center
 		

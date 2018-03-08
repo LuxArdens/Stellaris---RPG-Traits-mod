@@ -176,6 +176,12 @@ trait_irradiated = {
 
 trait_robot_power_drills = {
 	cost = 4
+	
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	
 
 	allowed_archetypes = { ROBOT MACHINE }
 	opposites = { "trait_robot_harvesters" "trait_robot_superconductive" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" }
@@ -194,6 +200,12 @@ trait_robot_power_drills = {
 
 trait_robot_harvesters = {
 	cost = 2
+	
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	
 
 	allowed_archetypes = { ROBOT MACHINE }
 	opposites = { "trait_robot_power_drills" "trait_robot_superconductive" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" }
@@ -212,6 +224,12 @@ trait_robot_harvesters = {
 
 trait_robot_superconductive = {
 	cost = 4
+	
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	
 
 	allowed_archetypes = { ROBOT MACHINE }
 	opposites = { "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" }
@@ -240,7 +258,12 @@ trait_robot_efficient_processors = {
 
 trait_robot_logic_engines = {
 	cost = 7
-
+	
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	
 	allowed_archetypes = { ROBOT MACHINE }
 
 	opposites = { trait_robotic_1 trait_robotic_2 "trait_robot_superconductive" "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" } # Synth and Machine only
@@ -442,6 +465,11 @@ trait_robot_luxurious = {
 trait_robot_propaganda_machines = {
 	cost = 3
 
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	
 	allowed_archetypes = { ROBOT MACHINE }
 	opposites = { "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_superconductive" }
 
@@ -461,7 +489,12 @@ trait_robot_propaganda_machines = {
 
 trait_robot_killer_bots1 = {
 	cost = 3
-
+	
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	
 	allowed_archetypes = { ROBOT }
 	opposites = { "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_logic_engines" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" "trait_robot_superconductive" }
 
@@ -477,11 +510,17 @@ trait_robot_killer_bots1 = {
 		pop_robot_build_speed_mult = -0.5
 		pop_robot_build_cost_mult = 10			# very large investment into specialized military hardware
 		army_damage_mult = 3					# Deadly robotic drones
+		army_health = 1
 	}
 }
 
 trait_robot_killer_bots2 = {
 	cost = 5
+	
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
 
 	allowed_archetypes = { ROBOT MACHINE }
 	opposites = { "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_propaganda_machines" "trait_robot_superconductive" }
@@ -498,6 +537,7 @@ trait_robot_killer_bots2 = {
 		pop_robot_build_speed_mult = -0.5
 		pop_robot_build_cost_mult = 10			# very large investment into specialized military hardware
 		army_damage_mult = 7					# Sentient Machines will be unrivaled on the battlefield, except by the best of the best organic armies
+		army_health = 3
 	}
 }
 
@@ -2219,6 +2259,7 @@ trait_genemod_lobotomized = {
 	cost = -1
 	icon = "gfx/interface/icons/traits/trait_lobotomized.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_lobotomization }		# apparently this is possible. My life is a lie
 	modifier = {
 		tile_resource_food_mult = -4
 		tile_resource_minerals_mult = -4
