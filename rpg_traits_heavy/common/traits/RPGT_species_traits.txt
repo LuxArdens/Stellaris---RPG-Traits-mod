@@ -2376,7 +2376,7 @@ trait_turtles = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_turtles.dds"
-	allowed_archetypes = { BIOLOGICAL MACHINES }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	modifier = {
 		army_defense_health_mult = 2
 	}
