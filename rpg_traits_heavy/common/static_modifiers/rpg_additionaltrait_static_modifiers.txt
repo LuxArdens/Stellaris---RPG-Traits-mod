@@ -18,6 +18,22 @@ trait_hoarders = {
 	max_energy = 200000
 }
 
+trait_psionic_shifters = {
+	ship_speed_mult = 0.25
+	ship_windup_mult = -0.1
+	ship_winddown_mult = -0.1
+	ship_emergency_ftl_mult = -0.25
+	ship_evasion_add = 10
+}
+
+trait_psionic_ethereals = {
+	ship_speed_mult = 0.5
+	ship_windup_mult = -0.2
+	ship_winddown_mult = -0.2
+	ship_emergency_ftl_mult = -0.5
+	ship_evasion_add = 20		# very ghostly ships
+}
+
 trait_titanic = {
 	# big buildings, tile blockers are irrelevant
 	planet_building_cost_mult = 4
@@ -37,7 +53,7 @@ trait_titanic = {
 	
 	# Huge ships
 	shipclass_colonizer_build_cost_mult	= 3
-	ship_speed_mult = -0.5
+	ship_speed_mult = -0.6
 	ship_windup_mult = 0.25			# these make them feel really clunky
 	ship_winddown_mult = 0.25
 	ship_emergency_ftl_mult = 0.5
@@ -48,7 +64,8 @@ trait_titanic = {
 	ship_armor_mult = 4
 	ship_weapon_damage = 4
 	ship_fire_rate_mult = -0.25
-	ship_upkeep_mult = 5
+	ship_upkeep_mult = 3			# not 4 because part of this is energy, which is normal. Pretty good deal all in all
+	starbase_shipyard_build_cost_mult = 4
 	ship_tracking_add = -5			# makes enemy corvette spam a more viable strategy
 	ship_evasion_add = -40			# made more hefty because their corvettes are really supposed to be like cruiser-sized
 	country_naval_cap_mult = -0.8	# restricted to ~2 ships early game, up to much more in mid-late
@@ -72,7 +89,7 @@ trait_subterranean = {
 
 trait_shield_obsessed = {
 	ship_shield_mult = 4
-	ship_hull_mult = -0.75
+	ship_armor_mult = -1
 	ship_shield_regen_add_perc = 4
 }
 
@@ -314,14 +331,14 @@ trait_hibernation = {
 	ship_weapon_range_mult = -0.5
 	ship_fire_rate_mult = -0.5
 	ship_weapon_damage = -0.5
-	ship_upkeep_mult = -1						# ship maintenance can go negative as well. What twad didn't put a cap on it?
+	ship_upkeep_mult = -1						# ship maintenance can go negative as well.
 
 	planet_building_cost_mult = 40				
 	planet_clear_blocker_time_mult = 40
 	planet_clear_blocker_cost_mult = 40
 	building_time_mult = 100
 	pop_migration_speed = -10
-	planet_building_upkeep_mult = -1			# maintenance can go negative apparently, whoever made that should be punished
+	planet_building_upkeep_mult = -1			# maintenance can go negative
 
 	# stations check 
 	shipsize_military_station_small_build_cost_mult = 10
@@ -341,7 +358,7 @@ trait_hibernation = {
 	tile_resource_engineering_research_mult = -1
 	tile_resource_physics_research_mult = -1
 	tile_resource_society_research_mult = -1
-	all_technology_research_speed = -1			# even the bloody research can go negative! Useless crap game
+	all_technology_research_speed = -1			# even the bloody research can go negative!
 	planet_army_build_cost_mult = 40
 	planet_army_build_speed_mult = -10
 	army_upkeep_mult = -10						# actually doesn't go negative. Good job whoever didn't screw that up
@@ -384,29 +401,32 @@ trait_living_planet = {
 
 
 trait_effects_supercheat = {
-	ship_fire_rate_mult = 20
 	pop_growth_speed = 200
 	country_resource_energy_mult = 50
 	country_resource_minerals_mult = 50
 	country_resource_influence_mult = 50
 	country_resource_unity_mult = 50
+	country_resource_food_mult = 50
 	all_technology_research_speed = 50
 	megastructure_build_speed_mult = 100
 	mod_megastructure_build_cost_mult = -1
 	building_time_mult = -2
 	pop_happiness = 2
 	country_leader_cap = 10
-	country_resource_food_mult = 50
 	country_trade_attractiveness = 2
 	max_minerals = 200000
 	max_energy = 200000
+	
+	# Super ships
+	ship_fire_rate_mult = 20
 	ship_speed_mult = 5
-	ship_windup_mult = 5
-	ship_winddown_mult = 5
-	ship_emergency_ftl_mult = 5
-	ship_weapon_range_mult = 5
+	ship_windup_mult = -1
+	ship_winddown_mult = -1
+	ship_emergency_ftl_mult = -1
+	ship_weapon_range_mult = 50
 	planet_clear_blocker_time_mult = -2
 	planet_clear_blocker_cost_mult = -2
+	shipclass_colonizer_build_cost_mult = -5
 	starbase_shipyard_build_speed_mult = 50
 	starbase_shipyard_build_cost_mult = -5
 	ship_shield_mult = 40

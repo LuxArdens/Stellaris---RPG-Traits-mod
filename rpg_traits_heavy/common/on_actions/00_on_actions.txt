@@ -1146,6 +1146,10 @@ on_modification_complete = {
 		trait.15
 		trait.16
 		trait.17
+		trait.32
+		trait.33
+		trait.34
+		trait.35
 		trait.1601
 		trait.1701
 		trait.9000

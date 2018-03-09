@@ -711,6 +711,7 @@ trait_psionic_shifters = {
 
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_psionic_shifters }
+	opposites = { "trait_psionic_ethereals" }
 	
 	modifier = {
 		army_morale_damage_mult = 1		# plain frightening
@@ -738,6 +739,7 @@ trait_psionic_ethereals = {
 
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_psionic_ethereals }
+	opposites = { "trait_psionic_shifters" }
 	
 	modifier = {
 		army_morale_damage_mult = 3		# make people piss their pants unintentionally

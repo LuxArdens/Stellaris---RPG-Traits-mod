@@ -18,6 +18,22 @@ trait_hoarders = {
 	max_energy = 200000
 }
 
+trait_psionic_shifters = {
+	ship_speed_mult = 0.25
+	ship_windup_mult = -0.1
+	ship_winddown_mult = -0.1
+	ship_emergency_ftl_mult = -0.25
+	ship_evasion_add = 10
+}
+
+trait_psionic_ethereals = {
+	ship_speed_mult = 0.5
+	ship_windup_mult = -0.2
+	ship_winddown_mult = -0.2
+	ship_emergency_ftl_mult = -0.5
+	ship_evasion_add = 20		# very ghostly ships
+}
+
 trait_titanic = {
 	# big buildings, tile blockers are irrelevant
 	planet_building_cost_mult = 4
@@ -37,7 +53,7 @@ trait_titanic = {
 	
 	# Huge ships
 	shipclass_colonizer_build_cost_mult	= 3
-	ship_speed_mult = -0.5
+	ship_speed_mult = -0.6
 	ship_windup_mult = 0.25			# these make them feel really clunky
 	ship_winddown_mult = 0.25
 	ship_emergency_ftl_mult = 0.5
@@ -48,7 +64,8 @@ trait_titanic = {
 	ship_armor_mult = 4
 	ship_weapon_damage = 4
 	ship_fire_rate_mult = -0.25
-	ship_upkeep_mult = 5
+	ship_upkeep_mult = 3			# not 4 because part of this is energy, which is normal. Pretty good deal all in all
+	starbase_shipyard_build_cost_mult = 4
 	ship_tracking_add = -5			# makes enemy corvette spam a more viable strategy
 	ship_evasion_add = -40			# made more hefty because their corvettes are really supposed to be like cruiser-sized
 	country_naval_cap_mult = -0.8	# restricted to ~2 ships early game, up to much more in mid-late
@@ -72,8 +89,7 @@ trait_subterranean = {
 
 trait_shield_obsessed = {
 	ship_shield_mult = 4
-	ship_hull_mult = -0.75
-	bullshit_modifier_that_doesnt_exist_to_test_how_game_reacts = 10
+	ship_armor_mult = -1
 	ship_shield_regen_add_perc = 4
 }
 
@@ -100,7 +116,7 @@ trait_uncreative = {
 }
 
 egg_born = {
-	shipclass_colonizer_build_cost_mult = -0.6			# cannot go negative it seems!
+	shipclass_colonizer_build_cost_mult = -0.6
 		planet_colony_development_speed_mult = 1.00
 }
 
@@ -188,8 +204,8 @@ trait_tiny = {
 	ship_emergency_ftl_mult = -0.25
 	ship_armor_add = -1
 	ship_armor_mult = -0.75
-	ship_hull_add = -1
-	ship_hull_mult = -0.75
+	ship_hull_add = -1					#Hitpoints no longer refer to hull
+	ship_hull_mult = -0.75				#Hitpoints no longer refer to hull
 	ship_weapon_damage = -0.75
 	ship_fire_rate_mult = 0.25
 	ship_shield_mult = -0.75
@@ -315,14 +331,14 @@ trait_hibernation = {
 	ship_weapon_range_mult = -0.5
 	ship_fire_rate_mult = -0.5
 	ship_weapon_damage = -0.5
-	ship_upkeep_mult = -1						# ship maintenance can go negative as well. What twad didn't put a cap on it?
+	ship_upkeep_mult = -1						# ship maintenance can go negative as well.
 
 	planet_building_cost_mult = 40				
 	planet_clear_blocker_time_mult = 40
 	planet_clear_blocker_cost_mult = 40
 	building_time_mult = 100
 	pop_migration_speed = -10
-	planet_building_upkeep_mult = -1			# maintenance can go negative apparently, whoever made that should be punished
+	planet_building_upkeep_mult = -1			# maintenance can go negative
 
 	# stations check 
 	shipsize_military_station_small_build_cost_mult = 10
@@ -342,7 +358,7 @@ trait_hibernation = {
 	tile_resource_engineering_research_mult = -1
 	tile_resource_physics_research_mult = -1
 	tile_resource_society_research_mult = -1
-	all_technology_research_speed = -1			# even the bloody research can go negative! Useless crap game
+	all_technology_research_speed = -1			# even the bloody research can go negative!
 	planet_army_build_cost_mult = 40
 	planet_army_build_speed_mult = -10
 	army_upkeep_mult = -10						# actually doesn't go negative. Good job whoever didn't screw that up
@@ -369,8 +385,8 @@ trait_living_planet = {
 	megastructure_build_speed_mult = 1				# late-game living planet should build lots of megastructures to keep up
 	#mod_megastructure_build_cost_mult = -0.25
 
-	shipclass_colonizer_build_speed_mult = -2000 		#Colonizers are no longer a standard shiptype
-	shipclass_colonizer_build_cost_mult = 2000			# should be fine
+	shipclass_colonizer_build_speed_mult = -2000 		# maybe more zeroes?
+	shipclass_colonizer_build_cost_mult = 2000				# should be fine
 }
 
 
@@ -418,3 +434,19 @@ trait_effects_supercheat = {
 	ship_hull_mult = 40				# Hitpoints no longer refer to hull
 	ship_weapon_damage = 40
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

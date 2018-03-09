@@ -796,3 +796,80 @@ country_event = {
 		}
 	}
 }
+
+###########################
+# Extra static modifiers
+###########################
+
+event = {
+	id = "trait.32"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_psionic_shifters
+			}
+			add_modifier = {
+				modifier = trait_psionic_shifters
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.33"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_psionic_ethereals
+			}
+			add_modifier = {
+				modifier = trait_psionic_ethereals
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.34"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = { has_trait = trait_psionic_shifters } 
+				has_country_modifier = trait_psionic_shifters
+			}
+			remove_modifier = { modifier = trait_psionic_shifters }
+		}
+	}
+}
+event = {
+	id = "trait.35"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = { has_trait = trait_psionic_ethereals } 
+				has_country_modifier = trait_psionic_ethereals
+			}
+			remove_modifier = { modifier = trait_psionic_ethereals }
+		}
+	}
+}
+
+
+
+
+
+
+
+
