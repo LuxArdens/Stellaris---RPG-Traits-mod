@@ -185,13 +185,13 @@ trait_tiny = {
 	# tiny robots
 	pop_robot_upkeep_mult = -0.75
 	pop_robot_production_output = -0.75
-	pop_robot_build_speed_mult = 4
+	pop_robot_build_speed_mult = 3
 	pop_robot_build_cost_mult = -0.75
 
 	# tiny soldiers
 	army_upkeep_mult = -0.7
 	planet_army_build_cost_mult = -0.7
-	planet_army_build_speed_mult = 3
+	planet_army_build_speed_mult = 4
 	ship_weapon_range_mult = -0.6			# get up reaaaal close and cosy
 
 	# tiny ships

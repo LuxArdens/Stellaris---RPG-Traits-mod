@@ -2709,7 +2709,7 @@ trait_titanic = {
 
 
 trait_tiny = {
-	cost = -3
+	cost = 0
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_titanic" }
 	initial = yes
 	randomized = no
