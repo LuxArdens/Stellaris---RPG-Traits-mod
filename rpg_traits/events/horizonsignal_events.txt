@@ -87,7 +87,7 @@ fleet_event = {
 		NOT = { has_global_flag = akx.9000.fired }
 		owner = {
 			is_ai = no
-			NOT = { has_ethic = ethic_hive_mind }
+			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
 		from = { # solar system scope
 			is_star_class = sc_black_hole
@@ -1225,7 +1225,7 @@ country_event = {
 				}
 				random_owned_pop = {
 					limit = { has_pop_flag = changed_pop }
-					root = { change_dominant_species = prev }
+					root = { change_dominant_species = { species = prev } }
 				}
 			}
 		}
@@ -1275,7 +1275,7 @@ country_event = {
 			}
 			random_owned_pop = {
 				limit = { has_pop_flag = changed_pop }
-				root = { change_dominant_species = prev }
+				root = { change_dominant_species = { species = prev } }
 			}
 		}
 	}
@@ -1404,7 +1404,7 @@ country_event = {
 				}
 				random_owned_pop = {
 					limit = { has_pop_flag = changed_pop }
-					root = { change_dominant_species = prev }
+					root = { change_dominant_species = { species = prev } }
 				}
 			}
 		}
@@ -1454,7 +1454,7 @@ country_event = {
 			}
 			random_owned_pop = {
 				limit = { has_pop_flag = changed_pop }
-				root = { change_dominant_species = prev }
+				root = { change_dominant_species = { species = prev } }
 			}
 		}
 	}
@@ -1796,7 +1796,7 @@ country_event = {
 	}
 
 	option = {
-		name = akx.9310.e.fanaticauthoritarian
+		name = akx.9310.e
 		#response_text = akx.9310.e.fanaticauthoritarian.response
 		trigger = {
 			has_ethic = ethic_fanatic_authoritarian
@@ -1834,7 +1834,7 @@ country_event = {
 country_event = {
 	id = akx.9312
 	title = akx.9310.name
-	desc = akx.9310.e.fanaticauthoritarian.response
+	desc = akx.9310.e.response
 
 	is_triggered_only = yes
 	
@@ -1911,7 +1911,7 @@ country_event = {
 						set_aggro_range = 20
 					}
 				}
-				set_faction_hostility = { set_hostile = yes }
+				set_faction_hostility = { target = root set_hostile = yes }
 			}
 		}
 	}
@@ -1939,6 +1939,7 @@ country_event = {
 		if = {
 			limit = {
 				has_country_flag = worm_events_available
+				exists = event_target:mirrored_syzygy_admiral
 				fromfrom = {
 					OR = {
 						NOT = { exists = leader }
@@ -1954,6 +1955,7 @@ country_event = {
 				if = {
 					limit = {
 						has_country_flag = worm_events_available
+						exists = event_target:mirrored_syzygy_admiral
 						fromfrom = {
 							exists = leader
 							leader = {
@@ -2298,7 +2300,7 @@ country_event = {
 
 	option = {
 		name = akx.9450.d
-		custom_tooltip = akx.9450.d.tooltip
+		#custom_tooltip = akx.9450.d.tooltip
 		hidden_effect = { country_event = { id = akx.9490 days = 360 } }
 	}
 }
@@ -2600,12 +2602,12 @@ country_event = {
 
 	option = {
 		name = akx.9490.a
-		custom_tooltip = 9490.a.tooltip
+		custom_tooltip = akx.9490.a.tooltip
 	}
 
 	option = {
 		name = akx.9490.b
-		custom_tooltip = 9490.a.tooltip
+		custom_tooltip = akx.9490.a.tooltip
 	}
 }
 
@@ -2621,6 +2623,7 @@ planet_event = {
 			is_planet_class = pc_habitat
 			is_planet_class = pc_ringworld_habitable
 		}
+		exists = owner
 		owner = {
 			has_country_flag = worm_events_available
 			NOT = {
@@ -3715,11 +3718,11 @@ planet_event = {
 					}
 					if = {
 						limit = {
-							NOT = { has_trait = trait_repugnant1 }
+							NOT = { has_trait = trait_repugnant2 }
 						}
 						modify_species = {
 							species = this
-							add_trait = trait_repugnant1
+							add_trait = trait_repugnant2
 						}
 					}
 					if = {
