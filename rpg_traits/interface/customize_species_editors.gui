@@ -860,7 +860,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "available"
-			size = { width = 280 height = 889 }
+			size = { width = 280 height = 700 }
 			position = { x = 528 y = 21 }
 			
 			background = {
