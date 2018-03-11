@@ -2881,10 +2881,10 @@ trait_winter = {
 
 trait_living_planet = {
 	cost = 0
-	sorting_priority = 20
 	opposites = { "trait_titanic" "trait_tiny" "trait_broodparasite" "trait_airborne" "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" }
 	allowed_archetypes = { BIOLOGICAL MACHINE }
 	
+	valid_for_all_ethics = no
 	allowed_ethics = {
 		ethic_gestalt_consciousness
 	}
