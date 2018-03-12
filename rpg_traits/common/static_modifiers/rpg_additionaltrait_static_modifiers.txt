@@ -372,16 +372,13 @@ trait_hibernation = {
 }
 
 trait_living_planet = {
-	country_resource_influence_mult = 4		# Living planet is reliant on frontier posts
-	country_naval_cap_add = 100				# just one planet means cap is often too low
-	starbase_shipyard_build_speed_mult = 2		# just one spaceport
-	#pop_happiness = 2
-	planet_building_cost_mult = -0.75		# (close to) none
-	planet_building_upkeep_mult = -0.75
+	country_resource_influence_mult = 0.5		# Living planet is reliant on frontier posts
+	pop_happiness = 2
+	planet_building_cost_mult = -0.9		# (close to) none
+	planet_building_upkeep_mult = -0.9
 	planet_clear_blocker_time_mult = -1		# for quick game start
 	planet_clear_blocker_cost_mult = -1
 	building_time_mult = -0.5				# extremely fast
-	# planet_sensor_range_mult = 1		# doesn't work anymore
 
 	megastructure_build_speed_mult = 1				# late-game living planet should build lots of megastructures to keep up
 	#mod_megastructure_build_cost_mult = -0.25
