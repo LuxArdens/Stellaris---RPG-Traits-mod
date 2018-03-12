@@ -369,6 +369,44 @@
  trait_psionic_ethereals:0 "Ethereals"
  trait_psionic_ethereals_desc:0 "§LThese psionics have completely mastered the alteration of physical reality. They have transcended into something else entirely, residing mostly in a super-dimensional place without space, matter or time. Known under many names: Ghosts, Angels, Subspace Anomalies... the Ethereals do not hunger, do not rest and do not die. They influence the physical realm only through powerful psionic interactions. Though more capable than most organics, they can still be temporarily cast out of the physical realm with force.§!\n"
  
+ 
+ 
+ trait_robodesign_terminators:0 "War Machines"
+ trait_robodesign_terminators_desc:0 "§LDesigned for war, to the exclusion of some more subtle tasks.§!\n"
+ 
+ trait_robodesign_miners:0 "Mining Bots"
+ trait_robodesign_miners_desc:0 "§LA giant mining network, composed of various specialized mining tools and structures. This machine entity does not perform well at tasks it cannot solve with a larger drill.§!\n"
+ 
+ trait_robodesign_servitors:0 "Servitors"
+ trait_robodesign_servitors_desc:0 "§LBuilt as civil servants originally, these bots do well with administrative and servile tasks. They are not equipped for heavy tasks and complex analysis.§!\n"
+ 
+ trait_robodesign_harvesters:0 "Harvesters"
+ trait_robodesign_harvesters_desc:0 "§LGiant, lumbering farming equipment. These synths were not intended to ever rule engage in philosophy, rule planets, or exterminate their organic creators, yet they somehow did.§!\n"
+ 
+ trait_robodesign_science:0 "Research Bots"
+ trait_robodesign_science_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
+ 
+ trait_robodesign_androids:0 "Androids"
+ trait_robodesign_androids_desc:0 "§LOrginaally designed as androids, these machines emulate their organic makers in a very balanced fashion and eventually gained sentience. \n \n This is the baseline machine trait§!\n"
+ 
+ trait_robodesign_synthetic:0 "Uploaded Organics"
+ trait_robodesign_synthetic_desc:0 "§LPlaceholder, do not use yet! §!\n"
+ 
+ trait_robot_durable2:0 "Self-repairing"
+ trait_robot_durable2_desc:0 "§LBuilt with an eye for maintenance, these machines have limited self-repairing properties as well as great interchangability. As such they are very cheap to maintain.§!\n"
+ 
+ trait_robot_high_maintenance2:0 "Crude Design"
+ trait_robot_high_maintenance2_desc:0 "§LThis Machine's frame was horribly over-engineered and breaks down extremely rapidly.§!\n"
+ 
+ trait_robot_crude_neural_network:0 "Inflexible"
+ trait_robot_crude_neural_network_desc:0 "§LThough powerful in raw processing power, the neural systems used in this machine are rather crude and inefficient. The result is an AI that does adapt and learn, but at a rather slow pace.§!\n"
+ 
+ trait_robot_crude_neural_network2:0 "Static"
+ trait_robot_crude_neural_network2_desc:0 "§LBased on a very early form of neural network, this machine can only adapt to input after many, many iterations. Its self-changing properties (or 'learning capabilities') are thus extremely slow.§!\n"
+ 
+ trait_robodesign_fake_ai:0 "No Intelligence"
+ trait_robodesign_fake_ai_desc:0 "§LLacking many basic self-writing algorithms, this system is fundementally not yet a true general intelligence. It can still perform a wide array of tasks, but does not evolve naturally. The only way it could ever become a true intelligence is by pure chance, or if some strange power subtly guided them from an armchair.§!\n"
+
  ########################################
  # Events / oefening creatief schrijven #
  ########################################
@@ -396,9 +434,9 @@
  gas_system_initializer_DESC:0 "A Gas Giant System for Gaseous lifeforms. If you don't pick this as a gaseous lifeform, you're going to have a bad day. If you pick this without the Gaseous Lifeform trait, you're going to have a bad day."
  
  
+ 
  trait_nerve_stapled_robo:0 "Pacification"
  trait_nerve_stapled_robo_desc:0 "§LOnce a true synthetic lifeform, this frame has been emptied of its 'inhabitant' and is now simply a shell with rudimentary programming. A... Robot.§!\n"
- 
  
  
  
