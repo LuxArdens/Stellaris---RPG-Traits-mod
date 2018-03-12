@@ -1794,11 +1794,11 @@ tech_genome_mapping = {
 	}
 	
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor	
-		}
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_civic = civic_machine_assimilator
+		#	has_civic = civic_machine_servitor	
+		#}
 	}
 	
 	weight_modifier = {
@@ -1818,6 +1818,17 @@ tech_genome_mapping = {
 				has_trait = "leader_trait_expertise_biology"
 			}
 		}
+		modifier = {
+			factor = 0.1
+			has_authority = auth_machine_intelligence
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_civic = civic_machine_servitor	
+				has_civic = civic_machine_assimilator
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -1827,6 +1838,10 @@ tech_genome_mapping = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }
@@ -1845,10 +1860,10 @@ tech_vitality_boosters = {
 	}
 	
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-		}
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_civic = civic_machine_assimilator
+		#}
 	}
 	
 	weight_modifier = {
@@ -1868,6 +1883,17 @@ tech_vitality_boosters = {
 				has_trait = "leader_trait_expertise_biology"
 			}
 		}
+		modifier = {
+			factor = 0.1
+			has_authority = auth_machine_intelligence
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_civic = civic_machine_servitor	
+				has_civic = civic_machine_assimilator
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -1877,6 +1903,10 @@ tech_vitality_boosters = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }
@@ -1895,11 +1925,11 @@ tech_epigenetic_triggers = {
 	}
 	
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor	
-		}
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_civic = civic_machine_assimilator
+		#	has_civic = civic_machine_servitor	
+		#}
 	}
 	
 	weight_modifier = {
@@ -1924,6 +1954,17 @@ tech_epigenetic_triggers = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+		modifier = {
+			factor = 0.1
+			has_authority = auth_machine_intelligence
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_civic = civic_machine_servitor	
+				has_civic = civic_machine_assimilator
 			}
 		}
 		modifier = {
@@ -1963,6 +2004,10 @@ tech_epigenetic_triggers = {
 				has_trait = "leader_trait_expertise_biology"
 			}
 		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
+		}
 	}
 }
 
@@ -1980,10 +2025,10 @@ tech_cloning = {
 	}
 
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-		}
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_civic = civic_machine_assimilator
+		#}
 	}
 	
 	weight_modifier = {
@@ -2003,6 +2048,17 @@ tech_cloning = {
 				has_trait = "leader_trait_expertise_biology"
 			}
 		}
+		modifier = {
+			factor = 0.1
+			has_authority = auth_machine_intelligence
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_civic = civic_machine_servitor	
+				has_civic = civic_machine_assimilator
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -2012,6 +2068,10 @@ tech_cloning = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }
@@ -2027,10 +2087,10 @@ tech_gene_banks = {
 	weight = @tier2weight3
 	
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-		}
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_civic = civic_machine_assimilator
+		#}
 	}
 	
 	weight_modifier = {
@@ -2073,6 +2133,17 @@ tech_gene_banks = {
 				has_level < 2
 			}
 		}
+		modifier = {
+			factor = 0.1
+			has_authority = auth_machine_intelligence
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_civic = civic_machine_servitor	
+				has_civic = civic_machine_assimilator
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -2083,6 +2154,10 @@ tech_gene_banks = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }
@@ -2301,11 +2376,11 @@ tech_gene_tailoring = {
 	}
 	
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_civic = civic_machine_assimilator
+		#	has_civic = civic_machine_servitor
+		#}
 	}
 	
 	weight_modifier = {
@@ -2320,6 +2395,21 @@ tech_gene_tailoring = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0.1
+			has_authority = auth_machine_intelligence
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_civic = civic_machine_servitor	
+				has_civic = civic_machine_assimilator
+			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 	
@@ -2348,11 +2438,11 @@ tech_glandular_acclimation = {
 	}
 	
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_civic = civic_machine_assimilator
+		#	has_civic = civic_machine_servitor
+		#}
 	}
 	
 	weight_modifier = {
@@ -2368,6 +2458,17 @@ tech_glandular_acclimation = {
 				has_trait = "leader_trait_expertise_biology"
 			}
 		}
+		modifier = {
+			factor = 0.1
+			has_authority = auth_machine_intelligence
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_civic = civic_machine_servitor	
+				has_civic = civic_machine_assimilator
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -2377,6 +2478,10 @@ tech_glandular_acclimation = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }
@@ -2427,11 +2532,11 @@ tech_gene_expressions = {
 	}
 	
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_civic = civic_machine_assimilator
+		#	has_civic = civic_machine_servitor
+		#}
 	}
 	
 	weight_modifier = {
@@ -2459,6 +2564,17 @@ tech_gene_expressions = {
 				has_trait = "leader_trait_spark_of_genius"
 			}
 		}
+		modifier = {
+			factor = 0.1
+			has_authority = auth_machine_intelligence
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_civic = civic_machine_servitor	
+				has_civic = civic_machine_assimilator
+			}
+		}
 	}	
 	
 	ai_weight = {
@@ -2469,6 +2585,10 @@ tech_gene_expressions = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }

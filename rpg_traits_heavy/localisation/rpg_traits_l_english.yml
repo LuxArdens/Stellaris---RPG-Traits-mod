@@ -387,10 +387,10 @@
  trait_robodesign_science_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
  
  trait_robodesign_androids:0 "Androids"
- trait_robodesign_androids_desc:0 "§LOrginaally designed as androids, these machines emulate their organic makers in a very balanced fashion and eventually gained sentience. \n \n This is the baseline machine trait§!\n"
+ trait_robodesign_androids_desc:0 "§LOrginally designed as androids, these machines emulate their organic makers in a very balanced fashion and eventually gained sentience. \n \n This is the baseline machine trait§!\n"
  
  trait_robodesign_synthetic:0 "Uploaded Organics"
- trait_robodesign_synthetic_desc:0 "§LPlaceholder, do not use yet! §!\n"
+ trait_robodesign_synthetic_desc:0 "§LThese frames carry organic minds that have been uploaded into extremely advanced quantum computers. They have the strengths of both worlds.§!\n"
  
  trait_robot_durable2:0 "Self-repairing"
  trait_robot_durable2_desc:0 "§LBuilt with an eye for maintenance, these machines have limited self-repairing properties as well as great interchangability. As such they are very cheap to maintain.§!\n"
