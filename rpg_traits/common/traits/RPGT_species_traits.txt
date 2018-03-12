@@ -2256,6 +2256,17 @@ trait_crippled = {
 ########################################################################################################################
 ########################################################################################################################
 
+trait_jerry_riggers = {
+	cost = 0
+	opposites = {  }
+	initial = no
+	randomized = no
+	modification = no
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+	}
+}
+
 trait_lingua_idumentis = {
 	cost = -1
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_olfactory" }
