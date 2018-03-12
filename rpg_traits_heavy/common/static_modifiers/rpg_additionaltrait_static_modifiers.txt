@@ -387,7 +387,48 @@ trait_living_planet = {
 	shipclass_colonizer_build_cost_mult = 2000				# should be fine
 }
 
-
+trait_jerry_riggers = {
+	
+	#______Notes______
+	# Cheap stuff
+	# Harder to maintain
+	# Dirty and Quick.
+	# Shoddy Quality
+	# Everyone is skilled at field repairs
+	
+	#Pops
+	pop_consumer_goods_mult = -0.25 # Figure a society of jerry-riggers wouldnt be as wasteful.
+	#Buildings
+	planet_building_cost_mult = -0.75		
+	planet_building_upkeep_mult = 1			
+	building_time_mult = -0.5				
+	#Crappy Cheap Robots
+	pop_robot_upkeep_mult = 1
+	pop_robot_production_output = -0.5
+	pop_robot_build_speed_mult = 2
+	pop_robot_build_cost_mult = -0.5
+	#Ships											Minor debuffs across the board.
+	starbase_shipyard_build_speed_mult = 2
+	starbase_shipyard_build_cost_mult = -0.5
+	ship_windup_mult = 0.1
+	ship_winddown_mult = 0.1
+	ship_armor_add = -1
+	ship_armor_mult = -0.25
+	ship_weapon_damage = -0.1
+	ship_shield_mult = -0.25
+	ship_upkeep_mult = 1
+	ship_tracking_add = -1
+	ship_evasion_add = -1
+	ship_evasion_add = -1
+	ship_weapon_range_mult = -0.25
+	#Armies
+	army_upkeep_mult = 1
+	planet_army_build_cost_mult = -0.25 # They may cut corners in equipment but an army's an army and training costs.
+	planet_army_build_speed_mult = 2
+	#Buffs
+	ship_hull_regen_add_perc = 1 # The big appeal of this trait.
+	ship_armor_regen_add_perc = 0.1 # 
+}
 
 
 

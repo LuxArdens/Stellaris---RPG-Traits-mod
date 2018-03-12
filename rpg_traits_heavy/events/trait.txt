@@ -464,6 +464,24 @@ event = {
 	}
 }
 
+event = {
+	id = "trait.25"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+					has_trait = trait_jerry_riggers
+			}
+			add_modifier = {
+				modifier = trait_jerry_riggers
+				days = -1
+			}
+		}
+	}
+}
+
 ######################
 # PLANet TEchnology REgulation eveNTS (planterents)
 ######################
