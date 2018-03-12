@@ -218,9 +218,114 @@ tech_psionic_ethereals = {
   }
 }
 
+tech_robo_stapling = {
+  cost = 3000
+  area = engineering
+  tier = 2
+  category = { industry }
+  prerequisites = { "tech_droid_workers" }
+  is_rare = yes
+  weight = 50
+
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = 0 # AI can't handle this
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0 # AI can't handle this
+  }
+}
+
+tech_robodesign_core = {
+  cost = 20000
+  area = engineering
+  tier = 5
+  category = { industry }
+  prerequisites = { "tech_sapient_ai" "tech_synthetic_workers" "tech_synthetic_leaders" }
+  is_rare = yes
+  weight = 20
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_mechanists
+		}
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_the_flesh_is_weak
+		}
+		modifier = {
+			factor = 0.20
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_industry"
+				}
+			}
+		}
+		modifier = {
+			factor = 0 # AI can't handle this
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0 # AI can't handle this
+  }
+}
 
 #######################################################################
-# "Fake" Technologies. These should ALWAYS be hidden to the user
+# "Fake" Technologies. These should ALWAYS be hidden to the user. Made compact for reasons
 #######################################################################
 
 tech_psionic_ascension_get = {
@@ -360,19 +465,28 @@ tech_barren_habitation = {
 	}
 }
 tech_asteroid_habitation = {
-	cost = 0
-	area = engineering
-	start_tech = no
-	category = { industry }
-	tier = 0
-	weight = 0
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0
-		}
-	}
-	ai_weight = {
-		factor = 0
-	}
-}
+cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { 	modifier = { 		factor = 0 	} } ai_weight = { factor = 0 } }
+#tech_example_tech = {
+cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

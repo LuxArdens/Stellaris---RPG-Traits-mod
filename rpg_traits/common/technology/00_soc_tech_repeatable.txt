@@ -363,6 +363,10 @@ tech_repeatable_trait_points = {
 	
 	ai_weight = {
 		factor = 1.0
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
+		}
 	}
 	
 	weight_groups = {
