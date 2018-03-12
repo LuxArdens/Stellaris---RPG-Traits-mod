@@ -1,0 +1,149 @@
+###############################################
+# Initial traits - These are varied, powerful, and not available early-game
+###############################################
+
+###################
+# Macro Types - all exclusive
+###################
+
+trait_robodesign_terminators = {		# extremely warfare-oriented robots
+	cost = 0
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = no
+	allowed_archetypes = { MACHINE }
+	opposites = {  }
+
+	modifier = {
+		tile_resource_unity_mult = -0.5
+		tile_resource_energy_mult = -0.25
+		tile_resource_food_mult = -1
+		tile_resource_minerals_mult = -0.5
+		tile_resource_engineering_research_mult = -0.25
+		tile_resource_physics_research_mult = -0.25
+		tile_resource_society_research_mult = -0.25
+		
+		pop_robot_build_speed_mult = -0.5
+		pop_robot_build_cost_mult = 4			# very large investment into specialized military hardware
+		pop_robot_upkeep_mult = 1
+		pop_consumer_goods_mult = 1
+		army_damage_mult = 3					# Deadly robotic drones
+		army_health = 3
+	}
+}
+trait_robodesign_miners = {		# rogue mining drones
+	cost = 0
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = no
+	allowed_archetypes = { MACHINE }
+	opposites = {  }
+
+	modifier = {
+		tile_resource_unity_mult = -0.5
+		tile_resource_energy_mult = -0.5
+		tile_resource_food_mult = -1
+		tile_resource_minerals_mult = 3					# staggering bonus to minerals
+		tile_resource_engineering_research_mult = -0.5
+		tile_resource_physics_research_mult = -0.5
+		tile_resource_society_research_mult = -0.5
+		
+		army_damage_mult = -0.5
+		army_health = -0.25
+	}
+}
+trait_robodesign_servitors = {		# rogue servitors, manage civil aspects
+	cost = 0
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = no
+	allowed_archetypes = { MACHINE }
+	opposites = {  }
+
+	modifier = {
+		tile_resource_unity_mult = 0.5
+		tile_resource_energy_mult = 1
+		tile_resource_food_mult = -1
+		tile_resource_minerals_mult = -0.5
+		tile_resource_engineering_research_mult = -0.25
+		tile_resource_physics_research_mult = -0.25
+		tile_resource_society_research_mult = -0.25
+		
+		army_damage_mult = -0.25
+		pop_owner_happiness = 0.1
+	}
+}
+trait_robodesign_harvesters = {		# for if you really want to screw yourself
+	cost = -5
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = no
+	allowed_archetypes = { MACHINE }
+	opposites = {  }
+
+	modifier = {
+		tile_resource_unity_mult = -0.5
+		tile_resource_energy_mult = -0.75
+		tile_resource_food_mult = 9
+		tile_resource_minerals_mult = -0.75
+		tile_resource_engineering_research_mult = -0.5
+		tile_resource_physics_research_mult = -0.5
+		tile_resource_society_research_mult = -0.5
+		
+		army_damage_mult = -0.75
+		army_health = -0.75
+	}
+}
+trait_robodesign_science = {		# giant scientific mainframe
+	cost = 0
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = no
+	allowed_archetypes = { MACHINE }
+	opposites = {  }
+
+	modifier = {
+		tile_resource_unity_mult = -0.25
+		tile_resource_food_mult = -1
+		tile_resource_minerals_mult = -0.5
+		tile_resource_engineering_research_mult = 2
+		tile_resource_physics_research_mult = 2
+		tile_resource_society_research_mult = 2
+		
+		army_damage_mult = -0.75
+		army_health = -0.75
+		pop_robot_upkeep_mult = 3		# will have a constant struggle for MOAR power
+		pop_consumer_goods_mult = 1		# struggle to support large pop, as to not be completely OP in science department
+	}
+}
+trait_robodesign_androids = {		# droids that became self-aware. Good all-rounders, but not like uploaded organics
+	cost = 0
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = no
+	allowed_archetypes = { MACHINE }
+	opposites = {  }
+
+	modifier = {
+		
+	}
+}
+trait_robodesign_synthetic = {		# uploaded organics, gives you the AP perk on game_start
+	cost = 5
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = no
+	allowed_archetypes = { MACHINE }
+	opposites = {  }
+
+	modifier = {
+		# gives the trait_robotic_3 effects
+	}
+}

@@ -1339,7 +1339,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1352,7 +1351,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1365,7 +1363,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1378,7 +1375,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1391,7 +1387,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1404,7 +1399,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1417,7 +1411,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1430,7 +1423,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1443,7 +1435,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1456,7 +1447,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1469,7 +1459,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1482,7 +1471,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {
@@ -1496,7 +1484,6 @@ terraform_link = {
 	to = "pc_machine"
 
 	energy = 20000
-	minerals = 20000
 	duration = 14600
 
 	condition = {

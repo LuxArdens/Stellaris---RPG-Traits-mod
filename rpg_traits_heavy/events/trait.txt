@@ -640,7 +640,7 @@ event = {
 				NOT = { has_trait = trait_psionic_shifters } 
 				has_country_modifier = trait_psionic_shifters
 			}
-			remove_modifier = { modifier = trait_psionic_shifters }
+			remove_modifier = "trait_psionic_shifters"
 		}
 	}
 }
@@ -655,7 +655,7 @@ event = {
 				NOT = { has_trait = trait_psionic_ethereals } 
 				has_country_modifier = trait_psionic_ethereals
 			}
-			remove_modifier = { modifier = trait_psionic_ethereals }
+			remove_modifier = "trait_psionic_ethereals"
 		}
 	}
 }

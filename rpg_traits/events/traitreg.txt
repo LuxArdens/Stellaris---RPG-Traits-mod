@@ -30,7 +30,7 @@ event = {
 }
 
 country_event = {
-	id = traitreg.12		# triggers all events that do actual stuff (this is because random_list doesn't use proper seeds otherwise )
+	id = traitreg.12		# triggers all events that do actual stuff (this is at a one day interval because random_list doesn't use proper seeds otherwise )
 	hide_window = yes
 	
 	mean_time_to_happen = {
@@ -59,8 +59,10 @@ country_event = {					# give only ONE trait at a time
 	if = {
 			limit = {
 					NOT = {
+							any_owned_pop = { OR = {
 						has_trait = trait_custom_race 
 				 		has_trait = trait_mechanical
+						} }
 					}
 					num_traits < 6
 			}
@@ -70,11 +72,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_strong1		# prevent invalid traits
 							has_trait = trait_strong2
 							has_trait = trait_weak1
 							has_trait = trait_weak2
 							has_trait = trait_weak3
+							} }
 						}
 					}
 			
@@ -131,11 +135,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_smart1
 							has_trait = trait_smart2
 							has_trait = trait_dumb1
 							has_trait = trait_dumb2
 							has_trait = trait_dumb3
+							} }
 						}
 					}
 				
@@ -166,11 +172,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_robust1
 							has_trait = trait_robust2
 							has_trait = trait_frail1
 							has_trait = trait_frail2
 							has_trait = trait_frail3
+							} }
 						}
 					}
 				
@@ -202,11 +210,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_slow_breeders1
 							has_trait = trait_slow_breeders2
 							has_trait = trait_slow_breeders3
 							has_trait = trait_rapid_breeders1
 							has_trait = trait_rapid_breeders2
+							} }
 						}
 					}
 				
@@ -239,11 +249,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_agrarian1
 							has_trait = trait_agrarian2
 							has_trait = trait_badfarmers1
 							has_trait = trait_badfarmers2
 							has_trait = trait_badfarmers3
+							} }
 						}
 					}
 				
@@ -277,11 +289,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_lazy1
 							has_trait = trait_lazy2
 							has_trait = trait_lazy3
 							has_trait = trait_thrifty1
 							has_trait = trait_thrifty2
+							} }
 						}
 					}
 				
@@ -314,11 +328,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_communal1
 							has_trait = trait_communal2
 							has_trait = trait_solitary1
 							has_trait = trait_solitary2
 							has_trait = trait_solitary3
+							} }
 						}
 					}
 				
@@ -352,11 +368,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_charismatic1
 							has_trait = trait_charismatic2
 							has_trait = trait_repugnant1
 							has_trait = trait_repugnant2
 							has_trait = trait_repugnant3
+							} }
 						}
 					}
 				
@@ -390,11 +408,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_venerable1
 							has_trait = trait_venerable2
 							has_trait = trait_fleeting1
 							has_trait = trait_fleeting2
 							has_trait = trait_fleeting3
+							} }
 						}
 					}
 				
@@ -430,11 +450,13 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_conservational1
 							has_trait = trait_conservational2
 							has_trait = trait_wasteful1
 							has_trait = trait_wasteful2
 							has_trait = trait_wasteful3
+							} }
 						}
 					}
 				
@@ -467,12 +489,14 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_resilient1
 							has_trait = trait_resilient2
 							has_trait = trait_resilient3
 							has_trait = trait_weakwilled1
 							has_trait = trait_weakwilled2
 							has_trait = trait_weakwilled3
+							} }
 						}
 					}
 				
@@ -507,9 +531,11 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_physics_elitists
 							has_trait = trait_engineering_elitists
 							has_trait = trait_sociology_elitists
+							} }
 						}
 					}
 				
@@ -645,8 +671,10 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_trait = trait_nomadic
 							has_trait = trait_sedentary
+							} }
 						}
 					}
 				
@@ -669,6 +697,7 @@ country_event = {					# give only ONE trait at a time
 				if = {
 					limit = {
 						NOT = {
+							any_owned_pop = { OR = {
 							has_ethic = ethic_hive_mind
 							has_trait = trait_conformists1
 							has_trait = trait_conformists2
@@ -676,6 +705,7 @@ country_event = {					# give only ONE trait at a time
 							has_trait = trait_trait_iconoclastic1
 							has_trait = trait_trait_iconoclastic2
 							has_trait = trait_trait_iconoclastic3
+							} }
 						}
 					}
 			
@@ -962,10 +992,10 @@ event = {
 				}
 			}
 			random_list = {
-				80 = {
+				50 = {
 					country_event = { id = traitreg.174 } # airborne
 				}
-				20 = {
+				50 = {
 					# no trait gained, still a chance that they might be an ostrich
 				}
 			}
