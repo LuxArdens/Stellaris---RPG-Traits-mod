@@ -398,10 +398,6 @@ trait_jerry_riggers = {
 	
 	#Pops
 	pop_consumer_goods_mult = -0.25 # Figure a society of jerry-riggers wouldnt be as wasteful.
-	#Tiles
-	tile_resource_engineering_research_mult = 0.25
-	tile_resource_physics_research_mult = -0.25
-	tile_resource_society_research_mult = -0.25
 	#Buildings
 	planet_building_cost_mult = -0.75		
 	planet_building_upkeep_mult = 1			
