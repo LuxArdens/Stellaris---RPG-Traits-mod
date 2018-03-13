@@ -406,6 +406,25 @@
  
  trait_robodesign_fake_ai:0 "No Intelligence"
  trait_robodesign_fake_ai_desc:0 "§LLacking many basic self-writing algorithms, this system is fundementally not yet a true general intelligence. It can still perform a wide array of tasks, but does not evolve naturally. The only way it could ever become a true intelligence is by pure chance, or if some strange power subtly guided them from an armchair.§!\n"
+ 
+ 
+ trait_robot_dakka:0 "Dakka"
+ trait_robot_dakka_desc:0 "§LEquipped with the latest in small arms, these machines are a menace on the battlefield with their pin-point accuracy and almost zero reaction time.§!\n"
+ 
+ trait_robot_more_dakka:0 "More Dakka"
+ trait_robot_more_dakka_desc:0 "§L§!\n"
+ 
+ trait_robot_simple1:0 "Simple Design"
+ trait_robot_simple1_desc:0 "§L §!\n"
+ 
+ trait_robot_simple2:0 "Minimalist"
+ trait_robot_simple2_desc:0 "§L §!\n"
+ 
+ trait_robot_complex1:0 "Complex Design"
+ trait_robot_complex1_desc:0 "§L §!\n"
+ 
+ trait_robot_complex2:0 "Cutting Edge"
+ trait_robot_complex2_desc:0 "§L §!\n"
 
  ########################################
  # Events / oefening creatief schrijven #

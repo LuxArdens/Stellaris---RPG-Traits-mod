@@ -38,7 +38,7 @@
 @tier3weight4 = 35
 
 tech_psionic_synthetics = {
-  cost = @tier3cost4
+  cost = 10000
   area = physics
   tier = 3
   category = { psionics }
@@ -103,7 +103,7 @@ tech_psionic_synthetics = {
 }
 
 tech_psionic_shifters = {
-  cost = 10000
+  cost = 20000
   area = physics
   tier = 3
   category = { psionics }
@@ -161,7 +161,7 @@ tech_psionic_shifters = {
 }
 
 tech_psionic_ethereals = {
-  cost = 25000
+  cost = 40000
   area = physics
   tier = 3
   category = { psionics }
@@ -260,14 +260,14 @@ tech_robo_stapling = {
   }
 }
 
-tech_robodesign_core = {
-  cost = 20000
+tech_robomod_1 = {
+  cost = 5000
   area = engineering
-  tier = 5
+  tier = 2
   category = { industry }
-  prerequisites = { "tech_sapient_ai" "tech_synthetic_workers" "tech_synthetic_leaders" }
+  prerequisites = { "tech_droid_workers" }
   is_rare = yes
-  weight = 20
+  weight = 40
 
 	weight_modifier = {
 		factor = 0.5
@@ -324,6 +324,76 @@ tech_robodesign_core = {
   }
 }
 
+tech_robomod_2 = {
+  cost = 20000
+  area = engineering
+  tier = 5
+  category = { industry }
+  prerequisites = { "tech_sapient_ai" "tech_synthetic_workers" "tech_synthetic_leaders" }
+  is_rare = yes
+  weight = 20
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ascension_perk = ap_the_flesh_is_weak 
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 4
+			OR = { 
+				has_ascension_perk = ap_the_flesh_is_weak
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 0 # AI can't handle this
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0 # AI can't handle this
+  }
+}
+
+
+tech_robomod_3 = {
+  cost = 50000
+  area = engineering
+  tier = 5
+  category = { industry }
+  prerequisites = { "tech_robomod_2" }
+  is_rare = yes
+  weight = 10
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			NOR = { 
+				has_ascension_perk = ap_the_flesh_is_weak 
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 4
+			OR = { 
+				has_ascension_perk = ap_synthetic_evolution
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 0 # AI can't handle this
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0 # AI can't handle this
+  }
+}
 #######################################################################
 # "Fake" Technologies. These should ALWAYS be hidden to the user. Made compact for reasons
 #######################################################################
