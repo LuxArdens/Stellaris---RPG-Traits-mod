@@ -2052,7 +2052,7 @@ trait_bonus = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_bonus.dds"
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	opposites = { "trait_penalty" }
 	modifier = {
 	}
@@ -2065,7 +2065,7 @@ trait_penalty = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_penalty.dds"
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	opposites = { "trait_bonus" }
 	modifier = {
 	}
@@ -2078,7 +2078,7 @@ trait_penalty2 = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_penalty2.dds"
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	opposites = { "trait_bonus" }
 	modifier = {
 	}
@@ -2091,7 +2091,7 @@ trait_penalty3 = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_penalty3.dds"
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MACHINE }
 	opposites = { "trait_bonus" }
 	modifier = {
 		pop_government_ethic_attraction = -1
