@@ -103,6 +103,11 @@ on_game_start = {
 		trait.29
 		trait.30
 		trait.31
+		trait.36
+		trait.37
+		trait.38
+		trait.39
+		
 		game_start.1
 		game_start.2
 		game_start.3

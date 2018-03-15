@@ -425,6 +425,18 @@
  
  trait_robot_complex2:0 "Cutting Edge"
  trait_robot_complex2_desc:0 "§L §!\n"
+ 
+ trait_precursor:0 "Precursor"
+ trait_precursor_desc:0 "§LNot the youngest of civilizations. The precursors have been around for a long time. Though lacking in territory, they have not grown complacent like the Fallen Empires. \n\n Alternative start trait - you start with one very advanced planet, lots of resources and many additional starting techs, in addition to extra trait points due to your ancient-ness. Not as powerful as a true FE, but not limited to their civics either. \n\n Alternative start traits are EXTREMELY UNBALANCED. Use them for Roleplaying ONLY (or give it to the AI for a challenge). Don't complain about balance, it will be ignored.§!\n"
+ 
+ trait_psionic_start:0 "Psionics"
+ trait_psionic_start_desc:0 "§LThis species mastered the art of psionics long before they ever left the surface of their planet \n\n Alternative Start - start off with the 2 psionic AP already unlocked. \n\n Alternative start traits are EXTREMELY UNBALANCED. Use them for Roleplaying ONLY (or give it to the AI for a challenge). Don't complain about balance, it will be ignored.§!\n"
+ 
+ trait_ethereal_start:0 "Ethereals"
+ trait_ethereal_start_desc:0 "§LLThese psionics have completely mastered the alteration of physical reality. They have transcended into something else entirely, residing mostly in a super-dimensional place without space, matter or time. Known under many names: Ghosts, Angels, Subspace Anomalies... the Ethereals do not hunger, do not rest and do not die. They influence the physical realm only through powerful psionic interactions. Though more capable than most organics, they can still be temporarily cast out of the physical realm with force.\n\n Alternative start - Starts you off with the 2 psionic AP perks, as well as the special Ethereal super-duper-psionic trait. \n\n Alternative start traits are EXTREMELY UNBALANCED. Use them for Roleplaying ONLY (or give it to the AI for a challenge). Don't complain about balance, it will be ignored.§!\n"
+ 
+ trait_preftl:0 "Pre-FTL"
+ trait_preftl_desc:0 "§LStart off without FTL-tech, and some other basic techs. Why would you want that? I don't know, maybe you like shooting yourself in the foot.\n\n Alternative start traits are EXTREMELY UNBALANCED. Use them for Roleplaying ONLY. Don't complain about balance, it will be ignored.§!\n"
 
  ########################################
  # Events / oefening creatief schrijven #

@@ -476,6 +476,7 @@ trait_nerve_stapled_robo = {
 	allowed_archetypes = { MACHINE }
 	initial = no
 	randomized = no
+	modification = yes
 	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_crippled.dds"
 	forced_happiness = yes
@@ -2665,18 +2666,6 @@ trait_energy_lifeform = {
 	}
 }
 
-trait_precursor1 = {
-	cost = 0
-	opposites = {  }
-	initial = no
-	randomized = no
-	modification = no
-	icon = "gfx/interface/icons/traits/trait_precursor1.dds"
-	allowed_archetypes = { BIOLOGICAL }
-	modifier = {
-	}
-}
-
 trait_positive_doom = {
 	cost = 0
 	opposites = { "trait_negative_doom" }
@@ -2882,5 +2871,60 @@ trait_broodparasite = {
 	modification = no
 	modifier = {
 		pop_other_species_happiness = 0.1
+	}
+}
+
+
+
+#############################
+# Alt-start traits - these don't stay in-game, and generally don't cost trait points
+#############################
+
+trait_precursor = {
+	cost = -5				# actually gives more trait points
+	sorting_priority = 20
+	opposites = { trait_cybernetic trait_psionic_start trait_ethereal_start trait_preftl }
+	initial = yes
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_precursor.dds"
+	allowed_archetypes = { BIOLOGICAL MACHINE }
+	modifier = {
+	}
+}
+trait_psionic_start = {
+	cost = 0
+	sorting_priority = 20
+	opposites = { trait_precursor trait_ethereal_start trait_preftl }
+	initial = no
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_psionic_start.dds"
+	allowed_archetypes = { BIOLOGICAL MACHINE }
+	modifier = {
+	}
+}
+trait_ethereal_start = {
+	cost = 0
+	sorting_priority = 20
+	opposites = { trait_precursor trait_psionic_start trait_preftl }
+	initial = no
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_psionic_ethereals.dds"
+	allowed_archetypes = { BIOLOGICAL MACHINE }
+	modifier = {
+	}
+}
+trait_preftl = {
+	cost = 0
+	sorting_priority = 20
+	opposites = { trait_precursor trait_psionic_start trait_ethereal_start }
+	initial = no
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_preftl.dds"
+	allowed_archetypes = { BIOLOGICAL MACHINE }
+	modifier = {
 	}
 }

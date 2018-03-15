@@ -677,6 +677,62 @@ event = {
 		}
 	}
 }
+event = {
+	id = "trait.36"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_precursor
+			}
+			country_event = { id = altstart.1 }
+		}
+	}
+}
+event = {
+	id = "trait.37"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_psionic_start
+			}
+			country_event = { id = altstart.2 }
+		}
+	}
+}
+event = {
+	id = "trait.38"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_ethereal_start
+			}
+			country_event = { id = altstart.3 }
+		}
+	}
+}
+event = {
+	id = "trait.39"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_preftl
+			}
+			country_event = { id = altstart.4 }
+		}
+	}
+}
 
 
 event = {
