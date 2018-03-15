@@ -13,7 +13,7 @@ trait_robodesign_terminators = {		# extremely warfare-oriented robots
 	randomized = yes
 	modification = yes
 	icon = "gfx/interface/icons/traits/trait_robodesign_terminators.dds"
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 	opposites = { trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai }
 	prerequisites = { tech_robomod_2 }
 
@@ -35,7 +35,7 @@ trait_robodesign_miners = {		# rogue mining drones
 	randomized = yes
 	modification = yes
 	icon = "gfx/interface/icons/traits/trait_robodesign_miners.dds"
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 	opposites = { trait_robodesign_terminators  trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai }
 	prerequisites = { tech_robomod_2 }
 
@@ -57,7 +57,7 @@ trait_robodesign_servitors = {		# rogue servitors, manage civil aspects
 	modification = yes
 	prerequisites = { tech_robomod_2 }
 	icon = "gfx/interface/icons/traits/trait_robodesign_servitors.dds"
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 	opposites = { trait_robodesign_terminators trait_robodesign_miners  trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai }
 
 	modifier = {
@@ -77,7 +77,7 @@ trait_robodesign_harvesters = {		# for if you really want to screw yourself
 	modification = yes
 	prerequisites = { tech_robomod_2 }
 	icon = "gfx/interface/icons/traits/trait_robodesign_harvesters.dds"
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors  trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai }
 
 	modifier = {
@@ -102,7 +102,7 @@ trait_robodesign_science = {		# giant scientific mainframe
 	modification = yes
 	prerequisites = { tech_robomod_2 }
 	icon = "gfx/interface/icons/traits/trait_robodesign_science.dds"
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters  trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai }
 
 	modifier = {
@@ -240,7 +240,7 @@ trait_robot_emotion_emulators = {
 	modification = yes
 	prerequisites = { tech_robomod_1 }
 	opposites = { "trait_robot_uncanny" }
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 	custom_tooltip = TRAIT_EMOTION_EMULATORS_EFFECT
 }
 
@@ -251,7 +251,7 @@ trait_robot_uncanny = {
 	modification = yes
 	prerequisites = { tech_robomod_1 }
 	opposites = { "trait_robot_emotion_emulators" }
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 	custom_tooltip = TRAIT_UNCANNY_EFFECT
 }
 
@@ -427,7 +427,7 @@ trait_robot_learning_algorithms = {
 	prerequisites = { tech_robomod_2 }
 	opposites = { trait_robot_learning_algorithms2 trait_robotic_1 trait_robotic_2 trait_robodesign_science "trait_robot_crude_neural_network" "trait_robot_crude_neural_network2" }
 
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 
 	modifier = {
 		species_leader_exp_gain = 1
@@ -446,7 +446,7 @@ trait_robot_crude_neural_network = {
 	icon = "gfx/interface/icons/traits/trait_robot_crude_neural_network.dds"
 	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_science "trait_robot_learning_algorithms" trait_robot_crude_neural_network2 }
 
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 	
 	modifier = {
 		species_leader_exp_gain = -0.5
