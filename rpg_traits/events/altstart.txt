@@ -87,6 +87,12 @@ country_event = {
 				}
 				set_building = building_ancient_factory
 			}
+			every_tile = {
+				limit = {
+					has_building = building_basic_science_lab_1
+				}
+				set_building = building_ancient_archives
+			}
 			
 			random_tile = {
 				limit = { has_building = no has_blocker = no num_adjacent_tiles > 3 }
@@ -215,7 +221,285 @@ country_event = {
 			give_technology = { message = no tech = tech_battleships }
 			give_technology = { message = no tech = tech_starbase_2 }
 			give_technology = { message = no tech = tech_starbase_3 }
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_mining_network_2 }
+			give_technology = { message = no tech = tech_mining_network_3 }
+			give_technology = { message = no tech = tech_fusion_power }
+			give_technology = { message = no tech = tech_cold_fusion_power }
+			give_technology = { message = no tech = tech_sensors_2 }
+			give_technology = { message = no tech = tech_power_plant_2 }
+			give_technology = { message = no tech = tech_power_plant_3 }
 		
+		
+	}
+}
+
+
+# Game start - Psionic
+country_event = {
+	id = altstart.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = psionic_start
+		
+		modify_species = {
+			species = this
+			remove_trait = trait_psionic_start
+		}	
+			give_technology = { message = no tech = tech_psionic_theory }
+			give_technology = { message = no tech = tech_telepathy }
+		
+		every_owned_pop = {
+			limit = {
+				is_same_species = root
+				NOT = { species = { has_trait = trait_psionic } }
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_psionic
+			}
+		}
+		change_dominant_species = { species = last_created change_all = yes }
+		
+		
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+				every_owned_leader = {
+					limit = {
+						is_same_species = root
+						#species = { 
+						#	has_trait = trait_psionic
+						#	is_same_value = event_target:psionic_species
+						#}
+						NOR = {
+							has_trait =	leader_trait_admiral_psionic
+							has_trait =	leader_trait_general_psionic
+							has_trait =	leader_trait_governor_psionic
+							has_trait =	leader_trait_scientist_psionic
+							has_trait =	leader_trait_ruler_psionic
+						}
+					}
+					if = {
+						limit = { leader_class = admiral }
+						add_trait = leader_trait_admiral_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = general }
+						add_trait = leader_trait_general_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = governor }
+						add_trait = leader_trait_governor_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_scientist_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = ruler }
+						add_trait = leader_trait_ruler_psionic
+					}
+				}
+				every_pool_leader = {
+					limit = {
+						is_same_species = root
+						#species = { 
+						#	has_trait = trait_psionic
+						#	is_same_value = event_target:psionic_species
+						#}
+						NOR = {
+							has_trait = leader_trait_admiral_psionic
+							has_trait = leader_trait_general_psionic
+							has_trait = leader_trait_governor_psionic
+							has_trait = leader_trait_scientist_psionic
+							has_trait = leader_trait_ruler_psionic
+						}
+					}
+					if = {
+						limit = { leader_class = admiral }
+						add_trait = leader_trait_admiral_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = general }
+						add_trait = leader_trait_general_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = governor }
+						add_trait = leader_trait_governor_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_scientist_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = ruler }
+						add_trait = leader_trait_ruler_psionic
+					}
+				}
+			}
+			country_event = { id = utopia.2655 days = 30 random = 20 }
+	}
+}
+
+
+# Game start - Ethereal
+country_event = {
+	id = altstart.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = ethereal_start
+		
+		modify_species = {
+			species = this
+			remove_trait = trait_ethereal_start
+		}	
+		
+			give_technology = { message = no tech = tech_psionic_theory }
+			give_technology = { message = no tech = tech_telepathy }
+			give_technology = { message = no tech = tech_psionic_shifters }
+			give_technology = { message = no tech = tech_psionic_ethereals }
+		
+		every_owned_pop = {
+			limit = {
+				is_same_species = root
+				NOT = { species = { has_trait = trait_psionic_ethereals } }
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_psionic_ethereals
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_psionic
+			}
+		}
+		change_dominant_species = { species = last_created change_all = yes }
+		
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+				every_owned_leader = {
+					limit = {
+						is_same_species = root
+						#species = { 
+						#	has_trait = trait_psionic
+						#	is_same_value = event_target:psionic_species
+						#}
+						NOR = {
+							has_trait =	leader_trait_admiral_psionic
+							has_trait =	leader_trait_general_psionic
+							has_trait =	leader_trait_governor_psionic
+							has_trait =	leader_trait_scientist_psionic
+							has_trait =	leader_trait_ruler_psionic
+						}
+					}
+					if = {
+						limit = { leader_class = admiral }
+						add_trait = leader_trait_admiral_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = general }
+						add_trait = leader_trait_general_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = governor }
+						add_trait = leader_trait_governor_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_scientist_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = ruler }
+						add_trait = leader_trait_ruler_psionic
+					}
+				}
+				every_pool_leader = {
+					limit = {
+						is_same_species = root
+						#species = { 
+						#	has_trait = trait_psionic
+						#	is_same_value = event_target:psionic_species
+						#}
+						NOR = {
+							has_trait = leader_trait_admiral_psionic
+							has_trait = leader_trait_general_psionic
+							has_trait = leader_trait_governor_psionic
+							has_trait = leader_trait_scientist_psionic
+							has_trait = leader_trait_ruler_psionic
+						}
+					}
+					if = {
+						limit = { leader_class = admiral }
+						add_trait = leader_trait_admiral_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = general }
+						add_trait = leader_trait_general_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = governor }
+						add_trait = leader_trait_governor_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_scientist_psionic
+						add_ruler_trait = leader_trait_ruler_psionic
+					}
+					if = {
+						limit = { leader_class = ruler }
+						add_trait = leader_trait_ruler_psionic
+					}
+				}
+			}
+			country_event = { id = utopia.2655 days = 30 random = 20 }
+	}
+}
+
+
+# Game start - Pre-FTL
+country_event = {
+	id = altstart.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		
+		modify_species = {
+			species = this
+			remove_trait = trait_preftl
+		}	
+			give_technology = { message = no tech = tech_telepathy }
 		
 	}
 }

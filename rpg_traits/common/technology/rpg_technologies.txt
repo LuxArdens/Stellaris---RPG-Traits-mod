@@ -109,11 +109,11 @@ tech_psionic_shifters = {
   category = { psionics }
   prerequisites = { "tech_psionic_theory" }
   is_rare = yes
-  weight = 50
+  weight = 5
 
   weight_modifier = {
     factor = 0.5
-    modifier = {
+		modifier = {
 			factor = 2
 			research_leader = {
 				area = physics
@@ -137,26 +137,30 @@ tech_psionic_shifters = {
 				has_trait = "leader_trait_expertise_psionics"
 			}
 		}
-    modifier = {
-      factor = 3
-      research_leader = {
-        area = physics
-        OR = {
-          has_trait = "leader_trait_maniacal"
-          has_trait = "leader_trait_curator"
-        }
-      }
-    }
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ascension_perk = ap_transcendence
+				has_country_flag = psionic_start
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_transcendence
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
   }
   ai_weight = {
     weight = 5 #Very rare tech
-    modifier = {
-      factor = 1.25
-      research_leader = {
-        area = physics
-        has_trait = "leader_trait_expertise_psionics"
-      }
-    }
   }
 }
 
@@ -167,7 +171,7 @@ tech_psionic_ethereals = {
   category = { psionics }
   prerequisites = { "tech_psionic_shifters" }
   is_rare = yes
-  weight = 30
+  weight = 15
 
   weight_modifier = {
     factor = 0.5
@@ -208,13 +212,6 @@ tech_psionic_ethereals = {
   }
   ai_weight = {
     weight = 5 #Very rare tech
-    modifier = {
-      factor = 1.25
-      research_leader = {
-        area = physics
-        has_trait = "leader_trait_expertise_psionics"
-      }
-    }
   }
 }
 

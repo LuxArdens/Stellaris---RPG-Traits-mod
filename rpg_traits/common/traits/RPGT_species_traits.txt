@@ -530,8 +530,8 @@ trait_psionic = {
 		tile_resource_physics_research_mult = 0.4
 		tile_resource_society_research_mult = 0.4
 		tile_resource_unity_mult = 0.4
-		tile_resource_energy_mult = 0.2 		# better organizationally
-		army_morale_damage_mult = 0.25		# better at psychological warfare
+		army_morale_damage_mult = 0.5		# better at psychological warfare
+		tile_resource_energy_mult = 0.5 		# better organizationally
 	}
 }
 
@@ -545,6 +545,7 @@ trait_psionic_shifters = {
 
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_psionic_shifters }
+	opposites = { "trait_psionic_ethereals" }
 	
 	modifier = {
 		army_morale_damage_mult = 1		# plain frightening
@@ -572,13 +573,14 @@ trait_psionic_ethereals = {
 
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_psionic_ethereals }
+	opposites = { "trait_psionic_shifters" }
 	
 	modifier = {
 		army_morale_damage_mult = 3		# make people piss their pants unintentionally
 		army_damage_mult = 1
 		army_health = 4
 		
-		tile_resource_energy_mult = 0.5
+		tile_resource_energy_mult = 0.75
 		tile_resource_unity_mult = 0.5
 		pop_consumer_goods_mult = -10			# hope this doesn't go negative, else RIP
 		pop_food_req_mult = -10
@@ -2816,7 +2818,7 @@ trait_broodparasite = {
 trait_precursor = {
 	cost = -5				# actually gives more trait points
 	sorting_priority = 20
-	opposites = { trait_cybernetic trait_psionic_start trait_ethereal_start trait_preftl }
+	opposites = { trait_cybernetic  trait_preftl }
 	initial = yes
 	randomized = no
 	modification = no
@@ -2828,8 +2830,8 @@ trait_precursor = {
 trait_psionic_start = {
 	cost = 0
 	sorting_priority = 20
-	opposites = { trait_precursor trait_ethereal_start trait_preftl }
-	initial = no
+	opposites = {  trait_ethereal_start trait_preftl }
+	initial = yes
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_psionic_start.dds"
@@ -2840,8 +2842,8 @@ trait_psionic_start = {
 trait_ethereal_start = {
 	cost = 0
 	sorting_priority = 20
-	opposites = { trait_precursor trait_psionic_start trait_preftl }
-	initial = no
+	opposites = {  trait_psionic_start trait_preftl }
+	initial = yes
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_psionic_ethereals.dds"
