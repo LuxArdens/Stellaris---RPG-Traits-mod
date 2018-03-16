@@ -412,19 +412,22 @@
  trait_robot_dakka_desc:0 "§LEquipped with the latest in small arms, these machines are a menace on the battlefield with their pin-point accuracy and almost zero reaction time.§!\n"
  
  trait_robot_more_dakka:0 "More Dakka"
- trait_robot_more_dakka_desc:0 "§L§!\n"
+ trait_robot_more_dakka_desc:0 "§LYou can NEVAR have firepower. Modified frames hold extremely high-powered energy weapons and miniaturized fusion bombs.§!\n"
  
  trait_robot_simple1:0 "Simple Design"
- trait_robot_simple1_desc:0 "§L §!\n"
+ trait_robot_simple1_desc:0 "§LA simple design is both easier and cheaper to mass-produce, but lacks many useful extras.§!\n"
  
  trait_robot_simple2:0 "Minimalist"
- trait_robot_simple2_desc:0 "§L §!\n"
+ trait_robot_simple2_desc:0 "§LThis Machine frame was meant to be produced by the billions for a relatively low price. Full of rough edges and certainly not the most elegant design around, but extremely simple to produce.§!\n"
  
  trait_robot_complex1:0 "Complex Design"
- trait_robot_complex1_desc:0 "§L §!\n"
+ trait_robot_complex1_desc:0 "§LA complex design is harder and thus more expensive to produce, but allows for installation of more advanced systems.§!\n"
  
  trait_robot_complex2:0 "Cutting Edge"
- trait_robot_complex2_desc:0 "§L §!\n"
+ trait_robot_complex2_desc:0 "§LNo expenses were spared in the design of these Machine frames. They are powerful, but very time- and resource consuming to produce.§!\n"
+ 
+ trait_robot_learning_algorithms2:0 "Predictive Learning"
+ trait_robot_learning_algorithms2_desc:0 "§LSophisticated quantum state networks predict optimal paths instead of learning through trial-and-error alone. This creates a vastly stronger form of machine intelligence.§!\n"
  
  trait_precursor:0 "Precursor"
  trait_precursor_desc:0 "§LNot the youngest of civilizations. The precursors have been around for a long time. Though lacking in territory, they have not grown complacent like the Fallen Empires. \n\n Alternative start trait - you start with one very advanced planet, lots of resources and many additional starting techs, in addition to extra trait points due to your ancient-ness. Not as powerful as a true FE, but not limited to their civics either. \n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"

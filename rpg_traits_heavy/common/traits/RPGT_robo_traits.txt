@@ -6,7 +6,7 @@
 # Macro Types - all exclusives. (Tier 2)
 ###################
 
-trait_robodesign_terminators = {		# extremely warfare-oriented robots
+trait_robodesign_terminators = {		# basically Skynet
 	cost = -2
 	sorting_priority = 20
 	initial = yes
@@ -371,6 +371,7 @@ trait_robot_simple1 = {
 	modifier = {
 		pop_robot_build_speed_mult = 3
 		pop_robot_build_cost_mult = -0.5
+		pop_robot_upkeep_mult = -0.25
 	}
 }
 trait_robot_simple2 = {
@@ -386,6 +387,7 @@ trait_robot_simple2 = {
 	modifier = {
 		pop_robot_build_speed_mult = 9
 		pop_robot_build_cost_mult = -0.8
+		pop_robot_upkeep_mult = -0.5
 	}
 }
 trait_robot_complex1 = {
