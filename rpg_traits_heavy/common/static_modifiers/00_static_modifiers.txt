@@ -108,7 +108,7 @@ pop_base = {
 # At 0% habitability
 pop_habitability = {
 	pop_happiness = -0.25
-	pop_resource_output = -0.25
+	pop_resource_output = -0.75
 }
 
 # Happiness Levels
