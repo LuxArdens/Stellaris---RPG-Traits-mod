@@ -262,7 +262,7 @@ tech_robomod_1 = {
   area = engineering
   tier = 2
   category = { industry }
-  prerequisites = { "tech_droid_workers" }
+  prerequisites = { "tech_robomodding_points_2" }
   is_rare = yes
   weight = 40
 
@@ -326,7 +326,7 @@ tech_robomod_2 = {
   area = engineering
   tier = 5
   category = { industry }
-  prerequisites = { "tech_sapient_ai" "tech_synthetic_workers" "tech_synthetic_leaders" }
+  prerequisites = { "tech_robomod_1" }
   is_rare = yes
   weight = 20
 
