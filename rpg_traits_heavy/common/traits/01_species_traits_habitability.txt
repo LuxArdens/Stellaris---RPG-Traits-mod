@@ -473,6 +473,7 @@ trait_pc_ai_preference = {
 		pc_arid_habitability = @3
 		pc_savannah_habitability = @3
 		pc_alpine_habitability = @3
+		pc_gaia_habitability = @3
 		
 		pc_ocean_habitability = @4		# oceans still annoying
 		pc_toxic_habitability = @4		# corrosive stuff

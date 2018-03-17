@@ -319,10 +319,10 @@
  trait_titanic_desc:0 "§L"Rise up! Rise up! Rise up you sleeping giant!"\n\n Titanic lifeforms, towering above the trees. Their buildings, tools, weapons and ships fit their size, as do their stomachs.§!\n"
  
  trait_shield_obsessed:0 "Obsessed with shields"
- trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +400% shield power, -75% hull integrity §!\n"
+ trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +200% shield power, -100% armour §!\n"
  
  trait_armor_obsessed:0 "Obsessed with armor"
- trait_armor_obsessed_desc:0 "§LThis species never cared for fantasy equipment like shields. They shun even the concept of energy shielding in favour of thick layers of good ol' armor.\n\n -100% shield power, +400% armor §!\n"
+ trait_armor_obsessed_desc:0 "§LThis species never cared for fantasy equipment like shields. They shun even the concept of energy shielding in favour of thick layers of good ol' armor.\n\n -100% shield power, +200% armor §!\n"
  
  trait_tiny:0 "Tiny"
  trait_tiny_desc:0 "§L"What's this? A ship for ants?"\n\n This species stands less than 5 centimetres tall. No amount of tools or machines can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"

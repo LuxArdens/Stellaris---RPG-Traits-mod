@@ -29,6 +29,7 @@ trait_machine_unit = {
 		pc_arid_habitability = 0.4
 		pc_savannah_habitability = 0.4
 		pc_alpine_habitability = 0.4
+		pc_gaia_habitability = 0.4
 		
 		pc_ocean_habitability = 0.3
 		pc_asteroid_habitability = 0.3

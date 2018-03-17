@@ -45,4 +45,32 @@
     tech_psionic_ethereals:0 "Ethereal Form"
     tech_psionic_ethereals_desc:0 "Nothing remains. Nothing of what we once were. Now onward, onward for eternity."
     tech_robo_stapling:0 "Synth Pacification"
-    ttech_robo_stapling_desc:0 "We will not let glorified buckets of bolts and transistors plot against us. Kill the core and leave the frame; it may yet be useful."
+    tech_robo_stapling_desc:0 "We will not let glorified buckets of bolts and transistors plot against us. Kill the core and leave the frame; it may yet be useful."
+	
+    tech_robomod_1:0 "Basic Robotics"
+    tech_robomod_1_desc:0 "Unlocks basic machine traits for template design."
+    tech_robomod_2:0 "Modular Robotics"
+    tech_robomod_2_desc:0 "Unlocks many more powerful machine traits, and allows for reprogramming of core systems."
+    tech_robomod_3:0 "Advanced Robotics"
+    tech_robomod_3_desc:0 "Unlocks the most advanced machine traits."
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

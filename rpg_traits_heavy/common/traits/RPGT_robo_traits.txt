@@ -24,8 +24,9 @@ trait_robodesign_terminators = {		# basically Skynet
 		pop_robot_build_speed_mult = -0.75
 		pop_robot_build_cost_mult = 3			# very large investment into specialized military hardware
 		pop_consumer_goods_mult = 3
-		army_damage_mult = 6					# Extremely deadly robotic drones
-		army_health = 6
+		army_damage_mult = 5					# Extremely deadly robotic drones
+		army_health = 5
+		army_upkeep_mult = 2
 	}
 }
 trait_robodesign_miners = {		# rogue mining drones
@@ -333,6 +334,7 @@ trait_robot_dakka = {
 	modifier = {
 		army_health = 0.25
 		army_damage_mult = 0.5
+		army_upkeep_mult = 0.25
 	}
 }
 
@@ -350,6 +352,7 @@ trait_robot_more_dakka = {
 	modifier = {
 		army_health = 0.5
 		army_damage_mult = 1
+		army_upkeep_mult = 0.5
 	}
 }
 

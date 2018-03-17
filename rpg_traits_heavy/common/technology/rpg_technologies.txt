@@ -258,18 +258,17 @@ tech_robo_stapling = {
 }
 
 tech_robomod_1 = {
-  cost = 5000
+  cost = 4000
   area = engineering
-  tier = 2
+  tier = 2		# locked behind significant effort now
   category = { industry }
-  prerequisites = { "tech_robomodding_points_2" }
+  prerequisites = { "tech_powered_exoskeletons" }
   is_rare = yes
-  weight = 40
+  weight = 25
 
 	weight_modifier = {
-		factor = 0.5
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			OR = {
 				has_ethic = "ethic_spiritualist"
 				has_ethic = "ethic_fanatic_spiritualist"
@@ -287,8 +286,16 @@ tech_robomod_1 = {
 			has_valid_civic = civic_mechanists
 		}
 		modifier = {
-			factor = 4
+			factor = 2
+			NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		}
+		modifier = {
+			factor = 10
 			has_ascension_perk = ap_the_flesh_is_weak
+		}
+		modifier = {
+			factor = 10
+			has_ascension_perk = ap_synthetic_age
 		}
 		modifier = {
 			factor = 0.20
@@ -312,16 +319,16 @@ tech_robomod_1 = {
 			}
 		}
 		modifier = {
-			factor = 0 # AI can't handle this
+			factor = 1
 			is_ai = yes
 		}
 	}
   ai_weight = {
-    weight = 0 # AI can't handle this
+    weight = 1
   }
 }
 
-tech_robomod_2 = {
+tech_robomod_2 = {			# high-tech
   cost = 20000
   area = engineering
   tier = 5
@@ -331,7 +338,6 @@ tech_robomod_2 = {
   weight = 20
 
 	weight_modifier = {
-		factor = 0.5
 		modifier = {
 			factor = 0
 			NOR = {
@@ -340,8 +346,8 @@ tech_robomod_2 = {
 			}
 		}
 		modifier = {
-			factor = 4
-			OR = { 
+			factor = 2
+			OR = {
 				has_ascension_perk = ap_the_flesh_is_weak
 				has_ascension_perk = ap_synthetic_age
 			}
@@ -364,10 +370,9 @@ tech_robomod_3 = {
   category = { industry }
   prerequisites = { "tech_robomod_2" }
   is_rare = yes
-  weight = 10
+  weight = 5
 
 	weight_modifier = {
-		factor = 0.5
 		modifier = {
 			factor = 0
 			NOR = { 
@@ -376,7 +381,7 @@ tech_robomod_3 = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 2
 			OR = { 
 				has_ascension_perk = ap_synthetic_evolution
 				has_ascension_perk = ap_synthetic_age
