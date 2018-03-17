@@ -545,6 +545,7 @@ trait_robodesign_nanoswarm = {
 	planet_colony_development_speed_mult = 1
 	
 	megastructure_build_speed_mult = 1				# much faster building
+	terraform_speed_mult = 1
 	building_time_mult = -0.75				
 	starbase_shipyard_build_speed_mult = 4			# incredibly fast ship building
 	planet_army_build_speed_mult = 9				# instant nano clouds that destroy everything

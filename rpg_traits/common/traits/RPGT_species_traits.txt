@@ -2550,9 +2550,6 @@ trait_titanic = {
 		pop_consumer_goods_mult = 5
 	}
 }
-
-
-
 trait_tiny = {
 	cost = 0
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_titanic" }
@@ -2560,7 +2557,43 @@ trait_tiny = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_tiny.dds"
-	allowed_archetypes = { BIOLOGICAL  MACHINE  }
+	allowed_archetypes = { MACHINE }
+	modifier = {
+		pop_food_req_mult = -0.75
+		tile_resource_minerals_mult = -0.8
+		tile_resource_food_mult = -0.8
+		army_damage_mult = -0.8
+		army_health = -0.8
+		pop_growth_speed = 4
+		pop_consumer_goods_mult = -0.8
+	}
+}
+trait_titanic_machine = {
+	cost = 5
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_tiny" "trait_turtles" "trait_silent_observers" }
+	initial = yes
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_titanic.dds"
+	allowed_archetypes = { MACHINE }
+	modifier = {
+		pop_food_req_mult = 5					# still have doubts about this. Kind of cancels out with their very own production
+		tile_resource_minerals_mult = 5
+		tile_resource_food_mult = 5
+		army_damage_mult = 4
+		army_health = 4
+		pop_growth_speed = -0.9
+		pop_consumer_goods_mult = 5
+	}
+}
+trait_tiny_machine = {
+	cost = 0
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_titanic" }
+	initial = yes
+	randomized = no
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_tiny.dds"
+	allowed_archetypes = { MACHINE }
 	modifier = {
 		pop_food_req_mult = -0.75
 		tile_resource_minerals_mult = -0.8
