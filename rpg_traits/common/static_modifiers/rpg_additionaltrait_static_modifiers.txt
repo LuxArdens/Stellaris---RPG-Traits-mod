@@ -46,8 +46,7 @@ trait_titanic = {
 	planet_army_build_speed_mult = -0.8
 	
 	# Huge robots
-	pop_robot_upkeep_mult = 5					# Figured seeing as machine races will now be able to use this trait it should have its bonuses as well
-	pop_robot_production_output = 5
+	pop_robot_upkeep_mult = 5					# Machine races are considered robot pops in game now.
 	pop_robot_build_speed_mult = -0.9
 	pop_robot_build_cost_mult = 5
 	
@@ -185,7 +184,6 @@ trait_tiny = {
 	
 	# tiny robots
 	pop_robot_upkeep_mult = -0.75
-	pop_robot_production_output = -0.75
 	pop_robot_build_speed_mult = 3
 	pop_robot_build_cost_mult = -0.75
 
