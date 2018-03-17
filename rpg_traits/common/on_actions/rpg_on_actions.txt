@@ -23,6 +23,8 @@ on_yearly_pulse = {
 		trait.1601
 		trait.1602
 		trait.1701
+		trait.40
+		trait.41
 	}
 }
 
@@ -43,6 +45,8 @@ on_game_start = {
 		trait.37
 		trait.38
 		trait.39
+		trait.40
+		trait.41
 		robovents.101
 		robovents.102
 		robovents.103
@@ -106,6 +110,8 @@ on_modification_complete = {
 		trait.1601
 		trait.1701
 		trait.9000
+		trait.40
+		trait.41
 		robovents.101
 		robovents.102
 		robovents.103

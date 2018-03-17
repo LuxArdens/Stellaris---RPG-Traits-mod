@@ -45,10 +45,12 @@ trait_titanic = {
 	planet_army_build_speed_mult = -0.8
 		# Huge robots
 	pop_robot_upkeep_mult = 5					# Machine races are considered robot pops in game now.
+	pop_robot_production_output = 5
 	pop_robot_build_speed_mult = -0.9
 	pop_robot_build_cost_mult = 5
 		# Huge ships
 	shipclass_colonizer_build_cost_mult	= 3
+	shipsize_colonizer_build_speed_mult = -0.5
 	starbase_shipyard_build_speed_mult = -0.75
 	starbase_shipyard_build_cost_mult = 4
 	ship_speed_mult = -0.6
@@ -79,6 +81,7 @@ trait_tiny = {
 	#planet_clear_blocker_cost_mult = 1
 		# tiny robots
 	pop_robot_upkeep_mult = -0.75
+	pop_robot_production_output = -0.75
 	pop_robot_build_speed_mult = 3
 	pop_robot_build_cost_mult = -0.75
 		# tiny soldiers
@@ -88,6 +91,7 @@ trait_tiny = {
 	ship_weapon_range_mult = -0.6			# get up reaaaal close and cosy
 		# tiny ships
 	shipclass_colonizer_build_cost_mult = -0.8
+	shipsize_colonizer_build_speed_mult = 3
 	starbase_shipyard_build_speed_mult = 3
 	starbase_shipyard_build_cost_mult = -0.6 		# shipyard bonus now only applies to "ships in shipyard" so not science etc
 	ship_speed_mult = 1
@@ -124,6 +128,7 @@ trait_titanic_machine = {
 	planet_army_build_speed_mult = -0.8
 		# Huge ships
 	shipclass_colonizer_build_cost_mult	= 3
+	shipsize_colonizer_build_speed_mult = -0.5
 	starbase_shipyard_build_speed_mult = -0.75
 	starbase_shipyard_build_cost_mult = 4
 	ship_speed_mult = -0.6
@@ -159,6 +164,7 @@ trait_tiny_machine = {
 	ship_weapon_range_mult = -0.6			# get up reaaaal close and cosy
 		# tiny ships
 	shipclass_colonizer_build_cost_mult = -0.8
+	shipsize_colonizer_build_speed_mult = 3
 	starbase_shipyard_build_speed_mult = 3
 	starbase_shipyard_build_cost_mult = -0.6 		# shipyard bonus now only applies to "ships in shipyard" so not science etc
 	ship_speed_mult = 1
@@ -225,6 +231,7 @@ trait_uncreative = {
 egg_born = {
 	shipclass_colonizer_build_cost_mult = -0.6
 		planet_colony_development_speed_mult = 1.00
+	shipsize_colonizer_build_speed_mult = 3
 }
 
 silent_observers = {
