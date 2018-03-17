@@ -1,0 +1,113 @@
+namespace = robovents
+
+# pop_event = {
+	# id = robovents.2
+	# hide_window = yes
+	# is_triggered_only = yes
+	
+	# immediate = {
+		# planet_event = { id = robovents.7 }
+		 # if = {
+			 # limit = {
+					 # AND = {
+						 # num_pops < 5
+					 # }
+			 # }
+			 # any_pop = { pop_event = { id = robovents.3 } }
+		 # }
+		 # if = {
+			 # limit = {
+					 # AND = {
+						 # num_pops > 4
+						 # num_pops < 13
+					 # }
+			 # }
+			 # any_pop = { pop_event = { id = robovents.4 } }
+		 # }
+		 # if = {
+			 # limit = {
+					 # AND = {
+						 # num_pops > 11
+						 # num_pops < 20
+					 # }
+			 # }
+			 # any_pop = { pop_event = { id = robovents.5 } }
+		 # }
+		 # if = {
+			 # limit = {
+						 # num_pops > 19
+			 # }
+			 # any_pop = { pop_event = { id = robovents.6 } }
+		 # }
+	# }
+# }
+
+
+
+event = {
+	id = "robovents.101"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_robodesign_nanoswarm
+			}
+			add_modifier = {
+				modifier = trait_robodesign_nanoswarm
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "robovents.102"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = { has_trait = trait_robodesign_nanoswarm } 
+				has_country_modifier = trait_robodesign_nanoswarm
+			}
+			remove_modifier = "trait_robodesign_nanoswarm"
+		}
+	}
+}
+event = {
+	id = "robovents.103"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_robodesign_nanoswarm_synth
+			}
+			add_modifier = {
+				modifier = trait_robodesign_nanoswarm_synth
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "robovents.104"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = { has_trait = trait_robodesign_nanoswarm_synth } 
+				has_country_modifier = trait_robodesign_nanoswarm_synth
+			}
+			remove_modifier = "trait_robodesign_nanoswarm_synth"
+		}
+	}
+}
+
+
+

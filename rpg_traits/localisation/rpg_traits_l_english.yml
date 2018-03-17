@@ -440,6 +440,15 @@
  
  trait_preftl:0 "Pre-FTL"
  trait_preftl_desc:0 "§LAlternative start - Start off without FTL-tech, and some other basic techs. Why would you want that? I don't know, maybe you like shooting yourself in the foot.§!\n"
+ 
+ trait_robodesign_geth:0 "G.E.T.H."
+ trait_robodesign_geth_desc:0 "§L"Gestalt Entity with Transfer Hyperprocessing" - A peculiar AI design, where entities become more effective and more capable when grouped together. Their frames can only hold a small program, and a single entity is only about as smart as an animal, but large groups of frames share their higher-level processes to produce a true intelligence. \n\n Big penalties when underpopulated, but becomes more effective as more units are present on a planet, up to a maximum of 20 pops for almost full 'synthetic' bonuses.§!\n"
+ 
+ trait_robodesign_nanoswarm:0 "Grey Goo"
+ trait_robodesign_nanoswarm_desc:0 "§LThe image of some frail organic is not necessarily the optimal form. State of the art nanobot clouds can house a fully sentient programming and accomplish almost miraculous feats, such as building and deconstructing entire cities and fleets in a matter of hours.§!\n"
+ 
+ trait_robodesign_nanoswarm_synth:0 "Grey Goo"
+ trait_robodesign_nanoswarm_synth_desc:0 "§LOur former shape is not necessarily the optimal form. State of the art nanobot clouds can house a fully sentient programming and accomplish almost miraculous feats, such as building and deconstructing entire cities and fleets in a matter of hours.§!\n"
 
  ########################################
  # Events / oefening creatief schrijven #
@@ -472,8 +481,17 @@
  trait_nerve_stapled_robo:0 "Pacificated"
  trait_nerve_stapled_robo_desc:0 "§LOnce a true synthetic lifeform, this frame has been emptied of its 'inhabitant' and is now simply a shell with rudimentary programming. A... Robot.§!\n"
  
+ geth_1:0 "Animalistic Intelligence"
+ geth_1_desc:0 "These frames are too few to operate in an even remotely intelligent way. Building more than 5 pops will decrease this penalty."
  
+ geth_2:0 "Low Intelligence"
+ geth_2_desc:0 "The Gestalt Network is too small to execute anything but basic tasks. Building more than 12 pops will decrease this penalty further."
  
+ geth_3:0 "Basic Intelligence"
+ geth_3_desc:0 "The network has grown capable of performing basic operations, but lacks the level of cognition required for research and other complex tasks. Building 20 pops will unlock the full potential of the G.E.T.H."
+ 
+ geth_4:0 "Full Intelligence"
+ geth_4_desc:0 "The network is operating at maximum level, bringing the intelligence of individual frames to levels on par or even superior to many organics."
  
  
  trait_broodparasite:0 "Brood Parasite"

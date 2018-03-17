@@ -53,6 +53,10 @@ on_game_start = {
 		trait.37
 		trait.38
 		trait.39
+		robovents.101
+		robovents.102
+		robovents.103
+		robovents.104
 	}
 }
 
@@ -112,5 +116,49 @@ on_modification_complete = {
 		trait.1601
 		trait.1701
 		trait.9000
+		robovents.101
+		robovents.102
+		robovents.103
+		robovents.104
 	}
 }
+
+
+# Geth modfiers
+
+on_pop_resettled = {
+	events = {
+		#robovents.2
+	}
+}
+on_buildable_pop_created = {
+	events = {
+		#robovents.2
+	}
+}
+on_pop_migration_end = {
+	events = {
+		#robovents.2
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

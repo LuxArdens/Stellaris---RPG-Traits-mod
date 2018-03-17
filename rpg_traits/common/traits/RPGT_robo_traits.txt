@@ -84,7 +84,7 @@ trait_robodesign_harvesters = {		# for if you really want to screw yourself
 	modifier = {
 		tile_resource_unity_mult = -0.5
 		tile_resource_energy_mult = -0.75		# can't get shit done
-		tile_resource_food_mult = 9
+		tile_resource_food_mult = 4
 		tile_resource_minerals_mult = -0.75
 		tile_resource_engineering_research_mult = -0.5
 		tile_resource_physics_research_mult = -0.5
@@ -152,10 +152,27 @@ trait_robodesign_synthetic = {		# uploaded organics, gives you the AP perk on ga
 		tile_resource_unity_mult = 0.5							# synths act more in unity by their very nature
 		tile_resource_energy_mult = 1
 		tile_resource_minerals_mult = 0.5
-		pop_consumer_goods_mult = -0.5
 		
 		army_health = 1
 		army_damage_mult = 1
+	}
+}
+trait_robodesign_geth = {		# only capable in large groups
+	cost = 5
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = no
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_geth.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai  }
+
+	modifier = {
+		# set as planetary modifiers instead
+		
+		army_health = 0.5
+		army_damage_mult = 0.5
 	}
 }
 trait_robodesign_fake_ai = {		# makes them really crude machines without high-level intelligence
@@ -516,8 +533,64 @@ trait_robot_learning_algorithms2 = {
 	}
 }
 
+trait_robodesign_nanoswarm = {		# grey goo
+	cost = 4
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_nanoswarm.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robot_complex1 trait_robot_complex2 trait_robot_simple1 trait_robot_simple2 trait_robot_high_maintenance trait_robot_high_maintenance2 trait_robot_durable trait_robot_durable2 }
+	prerequisites = { tech_robomod_3 }
 
+	modifier = {
+		tile_resource_engineering_research_mult = 1
+		tile_resource_physics_research_mult = 1
+		tile_resource_society_research_mult = 1
+		tile_resource_unity_mult = 0.75
+		tile_resource_energy_mult = 1
+		tile_resource_minerals_mult = 1.5
+		tile_resource_food_mult = -10				# turn green into grey
+		
+		pop_robot_build_speed_mult = 10				# almost instantaneously
+		pop_robot_build_cost_mult = -1
+		pop_consumer_goods_mult = -10
+		pop_robot_upkeep_mult = -10
+		
+		army_damage_mult = 1						#
+		#army_health = -0.25						# encourage army spam
+		army_upkeep_mult = -10						# grey goo spam!
+	}
+}
 
+trait_robodesign_nanoswarm_synth = {				# grey goo
+	cost = 4
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_nanoswarm.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robot_complex1 trait_robot_complex2 trait_robot_simple1 trait_robot_simple2 trait_robot_high_maintenance trait_robot_high_maintenance2 trait_robot_durable trait_robot_durable2 }
+	prerequisites = { tech_robomod_3 }
+
+	modifier = {
+		tile_resource_unity_mult = 0.5
+		tile_resource_minerals_mult = 1
+		
+		tile_resource_food_mult = -10				# turn green into grey
+		
+		pop_robot_build_speed_mult = 10				# almost instantaneously
+		pop_robot_build_cost_mult = -1
+		pop_consumer_goods_mult = -10
+		pop_robot_upkeep_mult = -10
+		
+		army_damage_mult = 1						#
+		#army_health = -0.25						# encourage army spam
+		army_upkeep_mult = -10						# grey goo spam!
+	}
+}
 
 
 

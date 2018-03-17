@@ -477,10 +477,134 @@ trait_effects_supercheat = {
 	ship_weapon_damage = 40
 }
 
+#icon_frame = 1 # green frame
+#icon_frame = 2 # yellow frame
+#icon_frame = 3 # red frame
 
+##########################################################################
+# Robo Modifiers
+##########################################################################
 
+geth_1 = {		# 1-5 - animal level / no cognition, cannot perform even basic tasks
+	tile_resource_engineering_research_mult = -2
+	tile_resource_physics_research_mult = -2
+	tile_resource_society_research_mult = -2
+	tile_resource_minerals_mult = -0.75
+	tile_resource_energy_mult = -2
+	tile_resource_food_mult = -1
+	tile_resource_unity_mult = -2
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 3
+}
+geth_2 = {		# from 5-12
+	tile_resource_engineering_research_mult = -1
+	tile_resource_physics_research_mult = -1
+	tile_resource_society_research_mult = -1
+	tile_resource_unity_mult = -0.5
+	tile_resource_energy_mult = -0.75
+	tile_resource_minerals_mult = -0.25
+	tile_resource_food_mult = -0.5
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 2
+}
+geth_3 = {		# from 12-19
+	tile_resource_engineering_research_mult = -0.25
+	tile_resource_physics_research_mult = -0.25
+	tile_resource_society_research_mult = -0.25
+	tile_resource_unity_mult = -0.2
+	tile_resource_energy_mult = -0.25
+	tile_resource_minerals_mult = 0.25
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 2
+}
+geth_4 = {		# >20
+	tile_resource_engineering_research_mult = 0.5
+	tile_resource_physics_research_mult = 0.5
+	tile_resource_society_research_mult = 0.5
+	tile_resource_unity_mult = 0.25
+	tile_resource_energy_mult = 0.5
+	tile_resource_minerals_mult = 0.5
+	tile_resource_food_mult = 0.5
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 1
+}
 
+trait_robot_double_jointed = {
+	shipclass_colonizer_build_cost_mult = -0.5
+	shipsize_colonizer_build_speed_mult = 1
+	planet_colony_development_speed_mult = 0.5
+}
 
+trait_robodesign_nanoswarm = {
+	shipclass_colonizer_build_cost_mult = -1
+	shipsize_colonizer_build_speed_mult = 9
+	planet_colony_development_speed_mult = 1
+	
+	megastructure_build_speed_mult = 1				# much faster building
+	building_time_mult = -0.75				
+	starbase_shipyard_build_speed_mult = 4			# incredibly fast ship building
+	planet_army_build_speed_mult = 9				# instant nano clouds that destroy everything
+	planet_army_build_cost_mult = -0.25
+	ship_hull_regen_add_perc = 1					# big hull and armour regeneration
+	ship_armor_regen_add_perc = 1
+	planet_clear_blocker_time_mult = -1
+	planet_clear_blocker_cost_mult = -1
+	max_minerals = 500000
+	max_energy = 500000
+}
+trait_robodesign_nanoswarm_synth = {
+	shipclass_colonizer_build_cost_mult = -1
+	shipsize_colonizer_build_speed_mult = 9
+	
+	megastructure_build_speed_mult = 1				# much faster building
+	building_time_mult = -0.75				
+	starbase_shipyard_build_speed_mult = 4			# incredibly fast ship building
+	planet_army_build_speed_mult = 9				# instant nano clouds that destroy everything
+	planet_army_build_cost_mult = -0.25
+	ship_hull_regen_add_perc = 1					# big hull and armour regeneration
+	ship_armor_regen_add_perc = 1
+	planet_clear_blocker_time_mult = -1
+	planet_clear_blocker_cost_mult = -1
+	max_minerals = 500000
+	max_energy = 500000
+}
+
+trait_robodesign_warp = {
+	ship_speed_mult = 0.25
+	ship_windup_mult = -0.5
+	ship_winddown_mult = -0.5
+	ship_emergency_ftl_mult = -0.5
+}
+
+trait_robodesign_integration1 = {
+	starbase_shipyard_build_cost_mult = -0.25
+	
+	ship_speed_mult = 0.25
+	ship_hull_mult = 0.2
+	ship_weapon_damage = 0.2
+	ship_fire_rate_mult = 0.25
+	ship_upkeep_mult = -0.1
+	ship_tracking_add = 5
+}
+
+trait_robodesign_integration2 = {
+	starbase_shipyard_build_cost_mult = -0.4
+	
+	ship_speed_mult = 0.5
+	ship_hull_mult = 0.5
+	ship_weapon_damage = 0.5
+	ship_fire_rate_mult = 0.5
+	ship_upkeep_mult = -0.15
+	ship_tracking_add = 10
+	
+	ship_windup_mult = -0.5
+	ship_winddown_mult = -0.5
+	ship_emergency_ftl_mult = -0.5
+}
 
 
 
