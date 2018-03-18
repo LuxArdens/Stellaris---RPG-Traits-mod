@@ -392,6 +392,21 @@
  trait_robodesign_science:0 "Research Bots"
  trait_robodesign_science_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
  
+ trait_robodesign_terminators_robot:0 "War Machines"
+ trait_robodesign_terminators_robot_desc:0 "§LDesigned for war, to the exclusion of some more subtle tasks.§!\n"
+ 
+ trait_robodesign_miners_robot:0 "Mining Bots"
+ trait_robodesign_miners_robot_desc:0 "§LA giant mining network, composed of various specialized mining tools and structures. This machine entity does not perform well at tasks it cannot solve with a larger drill.§!\n"
+ 
+ trait_robodesign_servitors_robot:0 "Servitors"
+ trait_robodesign_servitors_robot_desc:0 "§LBuilt as civil servants originally, these bots do well with administrative and servile tasks. They are not equipped for heavy tasks and complex analysis.§!\n"
+ 
+ trait_robodesign_harvesters_robot:0 "Harvesters"
+ trait_robodesign_harvesters_robot_desc:0 "§LGiant, lumbering farming equipment. These synths were not intended to ever rule engage in philosophy, rule planets, or exterminate their organic creators, yet they somehow did.§!\n"
+ 
+ trait_robodesign_science_robot:0 "Research Bots"
+ trait_robodesign_science_robot_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
+ 
  trait_robodesign_androids:0 "Androids"
  trait_robodesign_androids_desc:0 "§LOrginally designed as androids, these machines emulate their organic makers in a very balanced fashion and eventually gained sentience. \n \n This is the baseline machine trait§!\n"
  

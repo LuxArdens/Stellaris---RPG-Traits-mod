@@ -7,7 +7,7 @@ tech_hollow_asteroids = {
 	area = engineering
 	tier = 2
 	category = { new_worlds }
-	weight = 50
+	weight = 10
 	is_rare = yes
 	
 	modifier = { 
@@ -29,6 +29,16 @@ tech_hollow_asteroids = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
 	}
 
 	ai_weight = {
@@ -49,7 +59,7 @@ tech_planet_modernization = {
 	area = engineering
 	tier = 2
 	category = { new_worlds }
-	weight = 50
+	weight = 10
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -61,12 +71,30 @@ tech_planet_modernization = {
 
 	weight_modifier = {
 		modifier = {
+			factor = 0.25
+			NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		}
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_gestalt_consciousness"
+		}
+		modifier = {
 			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
 	}
 
 	ai_weight = {
@@ -87,7 +115,7 @@ tech_planet_life_restoration = {
 	area = society
 	tier = 2
 	category = { new_worlds }
-	weight = 50
+	weight = 10
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -99,12 +127,30 @@ tech_planet_life_restoration = {
 
 	weight_modifier = {
 		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_gestalt_consciousness"
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		}
+		modifier = {
 			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
 	}
 
 	ai_weight = {
@@ -124,7 +170,7 @@ tech_gas_reforming = {
 	area = physics
 	tier = 3
 	category = { particles }
-	weight = 30
+	weight = 5
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -142,6 +188,16 @@ tech_gas_reforming = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
 	}
 
 	ai_weight = {
@@ -161,7 +217,7 @@ tech_gas_escalation = {
 	area = physics
 	tier = 3
 	category = { particles }
-	weight = 30
+	weight = 5
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -179,6 +235,16 @@ tech_gas_escalation = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
 	}
 
 	ai_weight = {
@@ -199,7 +265,7 @@ tech_asteroid_reforming = {
 	area = engineering
 	tier = 3
 	category = { voidcraft }
-	weight = 30
+	weight = 10
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -217,6 +283,16 @@ tech_asteroid_reforming = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
 	}
 
 	ai_weight = {
@@ -237,7 +313,7 @@ tech_planet_breaking = {
 	area = engineering
 	tier = 3
 	category = { voidcraft }
-	weight = 30
+	weight = 5
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -255,6 +331,16 @@ tech_planet_breaking = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
 	}
 
 	ai_weight = {

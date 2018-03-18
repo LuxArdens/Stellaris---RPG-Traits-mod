@@ -54,6 +54,7 @@
     tech_robomod_3:0 "Advanced Robotics"
     tech_robomod_3_desc:0 "Unlocks the most advanced machine traits."
 	
+  TECH_UNLOCK_PSIONIC_SYNTHETICS_TITLE:0 "Psionic Synthetics"
     tech_psionic_synthetics:0 "Psionic Synthetics"
     tech_psionic_synthetics_desc:0 "Do androids dream of electric sheep? Well not electric ones, but we do dream, yes. Re-opens Psionic Ascension path to Synths."
 	
