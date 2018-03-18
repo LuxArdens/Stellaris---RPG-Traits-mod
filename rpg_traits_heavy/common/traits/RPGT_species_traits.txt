@@ -1250,7 +1250,7 @@ trait_smart2 = {
 }
 trait_smart3 = {
 	cost = 12
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1296,7 +1296,7 @@ trait_agrarian2 = {
 }
 trait_agrarian3 = {   
 	cost = 4
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1336,7 +1336,7 @@ trait_robust2 = {
 }
 trait_robust3 = {
 	cost = 4
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1376,7 +1376,7 @@ trait_thrifty2 = {
 }
 trait_thrifty3 = {
 	cost = 6
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1414,7 +1414,7 @@ trait_rapid_breeders2 = {
 }
 trait_rapid_breeders3 = {
 	cost = 1
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1440,7 +1440,7 @@ trait_gifted1 = {
 }
 trait_gifted2 = {
 	cost = 4
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1479,7 +1479,7 @@ trait_strong2 = {
 }
 trait_strong3 = {
 	cost = 5
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1571,7 +1571,7 @@ trait_communal2 = {
 }
 trait_communal3 = {
 	cost = 4
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1629,7 +1629,7 @@ trait_charismatic2 = {
 }
 trait_charismatic3 = {
 	cost = 3
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1702,7 +1702,7 @@ trait_conformists2 = {
 }
 trait_conformists3 = {
 	cost = 3
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1751,7 +1751,7 @@ trait_venerable2 = {
 }
 trait_venerable3 = {
 	cost = 4
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1789,7 +1789,7 @@ trait_resilient2 = {
 }
 trait_resilient3 = {
 	cost = 3
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
@@ -1826,7 +1826,7 @@ trait_conservational2 = {
 }
 trait_conservational3 = {
 	cost = 4
-	initial = no
+	initial = yes
 	randomized = no
 	modification = yes
 	advanced_trait = yes
