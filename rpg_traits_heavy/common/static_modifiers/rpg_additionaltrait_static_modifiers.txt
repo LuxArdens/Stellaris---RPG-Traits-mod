@@ -223,7 +223,7 @@ trait_curious = {
 	science_ship_survey_speed = -0.5
 }
 trait_uncreative = {
-	num_tech_alternatives_add = -10
+	num_tech_alternatives_add = -2
 	ship_anomaly_generation_chance_mult = -0.5
 	science_ship_survey_speed = 1
 }
