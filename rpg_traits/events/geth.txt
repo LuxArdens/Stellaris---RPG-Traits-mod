@@ -1,0 +1,141 @@
+namespace = geth
+
+planet_event = {
+	id = geth.1
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			has_trait = trait_robodesign_geth
+			is_being_purged = no
+			NOT = { has_modifier = geth_1 }
+		}
+		num_pops < 5
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_robodesign_geth
+				is_being_purged = no
+			}
+			remove_modifier = geth_1
+			remove_modifier = geth_2
+			remove_modifier = geth_3
+			remove_modifier = geth_4
+			add_modifier = {
+				modifier = geth_1
+				days = -1
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = geth.2
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			has_trait = trait_robodesign_geth
+			is_being_purged = no
+			NOT = { has_modifier = geth_2 }
+		}
+		AND = { num_pops > 4 num_pops < 13 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_robodesign_geth
+				is_being_purged = no
+			}
+			remove_modifier = geth_1
+			remove_modifier = geth_2
+			remove_modifier = geth_3
+			remove_modifier = geth_4
+			add_modifier = {
+				modifier = geth_2
+				days = -1
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = geth.3
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			has_trait = trait_robodesign_geth
+			is_being_purged = no
+			NOT = { has_modifier = geth_3 }
+		}
+		AND = { num_pops > 12 num_pops < 20 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_robodesign_geth
+				is_being_purged = no
+			}
+			remove_modifier = geth_1
+			remove_modifier = geth_2
+			remove_modifier = geth_3
+			remove_modifier = geth_4
+			add_modifier = {
+				modifier = geth_3
+				days = -1
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = geth.4
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			has_trait = trait_robodesign_geth
+			is_being_purged = no
+			NOT = { has_modifier = geth_4 }
+		}
+		AND = { num_pops > 20 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_robodesign_geth
+				is_being_purged = no
+			}
+			remove_modifier = geth_1
+			remove_modifier = geth_2
+			remove_modifier = geth_3
+			remove_modifier = geth_4
+			add_modifier = {
+				modifier = geth_4
+				days = -1
+			}
+		}
+	}
+}

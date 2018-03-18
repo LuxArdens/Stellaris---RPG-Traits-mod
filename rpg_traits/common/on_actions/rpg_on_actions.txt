@@ -1,3 +1,9 @@
+on_monthly_pulse = {
+	events = {
+	}
+}
+
+
 # No scope, like on_game_start
 on_yearly_pulse = {
 	events = {
@@ -47,10 +53,10 @@ on_game_start = {
 		trait.39
 		trait.40
 		trait.41
-		robovents.101
-		robovents.102
-		robovents.103
-		robovents.104
+		robovents.1
+		robovents.2
+		robovents.3
+		robovents.4
 	}
 }
 
@@ -112,32 +118,12 @@ on_modification_complete = {
 		trait.9000
 		trait.40
 		trait.41
-		robovents.101
-		robovents.102
-		robovents.103
-		robovents.104
+		robovents.1
+		robovents.2
+		robovents.3
+		robovents.4
 	}
 }
-
-
-# Geth modfiers
-
-on_pop_resettled = {
-	events = {
-		#robovents.2
-	}
-}
-on_buildable_pop_created = {
-	events = {
-		#robovents.2
-	}
-}
-on_pop_migration_end = {
-	events = {
-		#robovents.2
-	}
-}
-
 
 
 
