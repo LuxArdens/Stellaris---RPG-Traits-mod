@@ -240,6 +240,7 @@ trait_decadent = {
 	modifier = {
 		pop_eff_wo_slaves = -0.2
 		pop_consumer_goods_mult = 0.2
+		pop_happiness = 0.05
 	}
 	ai_weight = {
 		weight = 0
@@ -1350,6 +1351,19 @@ trait_rapid_breeders3 = {
 	}
 }
 
+trait_homogenous = {
+	cost = -1
+	initial = yes
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_homogenous.dds"
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted" "trait_gifted2" }
+	
+	modifier = {
+		leader_skill_levels = -2
+	}
+}
 trait_gifted1 = {
 	cost = 1
 	randomized = no

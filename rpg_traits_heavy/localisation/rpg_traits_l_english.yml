@@ -13,7 +13,7 @@
  trait_iconoclastic2_desc:0 "§LThis species members chronically refuse to conform to any standard society makes. They ever seek to be 'more unique' and different from their peers.§!\n"
  
  trait_iconoclastic3:0 "Iconoclasts"
- trait_iconoclastic3_desc:0 "§LThis species is obsessed with non-conformity to the point of complete idiocy. "If it's normal or accepted, it's rubbish and probably racist." said the attack helicopter.§!\n"
+ trait_iconoclastic3_desc:0 "§LThis species is obsessed with non-conformity to the point of complete idiocy. "It's mainstream, so it's rubbish and probably racist too." said the attack helicopter.§!\n"
  
  trait_slow_breeders1:0 "Slow Breeders"
  trait_slow_breeders1_desc:0 "§LThis species has a rather low birthrate.§!\n"
@@ -127,7 +127,7 @@
  trait_smart2_desc:0 "§LThis species learns at a staggering pace. They are far-sighted minds with incredible memories and the capacity to weave complex ideas very fast.§!\n"
  
  trait_smart3:0 "Hyperintelligence"
- trait_smart3_desc:0 "§LGenetically improved neural paths guarantee that every member of society is exceptionally intelligent. Full neural control enables them to truly multitask or hyperfocus on a single task, at will, and develop skills and ideas at an unprecedented pace.§!\n"
+ trait_smart3_desc:0 "§LGenetically improved neural paths guarantee that every member of society is exceptionally intelligent. Full neural control enables them to truly multitask or hyperfocus on a single task, at will, and develop skills and ideas at an unprecedented pace.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_agrarian1:0 "Sparing"
  trait_agrarian1_desc:0 "§LThis species doesn't need much food, and thus needs relatively little farming land.§!\n"
@@ -136,7 +136,7 @@
  trait_agrarian2_desc:0 "§LSymbiotic micro-organisms provide additional energy and nutrition to this species, reducing their required food consumption considerably.§!\n"
  
  trait_agrarian3:0 "Self-Sufficient"
- trait_agrarian3_desc:0 "§LGenetically enhanced micro symbiotics remove almost all need for this species to ingest food; they are fully self-sufficient.§!\n"
+ trait_agrarian3_desc:0 "§LGenetically enhanced micro symbiotics remove almost all need for this species to ingest food; they are fully self-sufficient.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_robust1:0 "Tough"
  trait_robust1_desc:0 "§LThis species endures even in harsh environments and is tough to kill.§!\n"
@@ -145,7 +145,7 @@
  trait_robust2_desc:0 "§LThis species can live and breed even in hostile environments. They have redundant organs and limbs and are notoriously hard to kill.§!\n"
  
  trait_robust3:0 "Adamantium"
- trait_robust3_desc:0 "§LGenetically enhanced tissue structures, bones infused with advanced alloys and nanotics that filter toxins and repair damage; this species is close to indestructible. They can survive on worlds that are completely alien to them and fight on despite sustaining hits that would shred lesser species.§!\n"
+ trait_robust3_desc:0 "§LGenetically enhanced tissue structures, bones infused with advanced alloys and nanotics that filter toxins and repair damage; this species is close to indestructible. They can survive on worlds that are completely alien to them and fight on despite sustaining hits that would shred lesser species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_thrifty1:0 "Motivated"
  trait_thrifty1_desc:0 "§LThis species likes organising stuff. And doing stuff. And writing stuff. And making stuff. And building stuff. Let's do some stuff.§!\n"
@@ -154,7 +154,7 @@
  trait_thrifty2_desc:0 "§LThis species barely ever rests. Literally, because they barely need sleep except for healing physically. As a result they tend to get a lot done.§!\n"
  
  trait_thrifty3:0 "Fully Awake"
- trait_thrifty3_desc:0 "§LEnhanced neural feedback and healing systems remove the need for sleep and make this species fully aware and concentrated on their tasks. They never lack motivation to get things done and can work endlessly.§!\n"
+ trait_thrifty3_desc:0 "§LEnhanced neural feedback and healing systems remove the need for sleep and make this species fully aware and concentrated on their tasks. They never lack motivation to get things done and can work endlessly.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_rapid_breeders1:0 "Fertile"
  trait_rapid_breeders1_desc:0 "§LThis species produces lots of offspring.§!\n"
@@ -163,13 +163,16 @@
  trait_rapid_breeders2_desc:0 "§LThis species doesn't really breed like rabbits. They breed somewhat faster.§!\n"
  
  trait_rapid_breeders3:0 "Machine-assisted reproduction"
- trait_rapid_breeders3_desc:0 "§LArtifical wombs combined with neural implants allow for explosive population growth. Unlike clones these are genetically unique.§!\n"
+ trait_rapid_breeders3_desc:0 "§LArtifical wombs combined with neural imprinting allow for explosive population growth. Unlike clones these are genetically tailored, unique makeup that can continue to multiply naturally as well.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
+ 
+ trait_homogenous:0 "Homogeneous"
+ trait_homogenous_desc:0 "§LThis species is very homogeneous, and lacks individual diversity. Each member is just as smart, just as strong and just as big as the next. While this means few members are particularly incapable, it also deprives them of notable outliers that are more capable.§!\n"
  
  trait_gifted1:0 "Talented"
  trait_gifted1_desc:0 "§LThis species has a great amount of variance. Consequently there are many individuals with very particular talents or skill sets.§!\n"
  
  trait_gifted2:0 "Gifted"
- trait_gifted2_desc:0 "§LArtificial addition and recombination of DNA allows for even greater variance in this species.§!\n"
+ trait_gifted2_desc:0 "§LArtificial addition and recombination of DNA allows for even greater variance in this species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_strong1:0 "Strong"
  trait_strong1_desc:0 "§LThis species has an animal-like high body strength.§!\n"
@@ -178,7 +181,7 @@
  trait_strong2_desc:0 "§LCapable of running at immense speeds, lifting object a dozen times their own weight and breaking through walls of solid rock; this species is exceptionally strong. They can literally rip lesser species in half and can do certain tasks by hand where others would require specialized tools.§!\n"
  
  trait_strong3:0 "Hulking"
- trait_strong3_desc:0 "§LGenetic alterations reach the limit of what biological tissue can output in terms of raw strength. Added with integrated biomechanical actuators, this species has a strength equivalent to that of the best robotic counterparts. They can tear and bend metal like paper.§!\n"
+ trait_strong3_desc:0 "§LGenetic alterations reach the limit of what biological tissue can output in terms of raw strength. Added with integrated biomechanical actuators, this species has a strength equivalent to that of the best robotic counterparts. They can tear and bend metal like paper.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_communal1:0 "Highly Social"
  trait_communal1_desc:0 "§LThis species is naturally social and communal. They tolerate each other well and cooperate nicely.§!\n"
@@ -187,7 +190,7 @@
  trait_communal2_desc:0 "§LThis species loves connecting, cooperating, helping and generally working with others.§!\n"
  
  trait_communal3:0 "Altruistic"
- trait_communal3_desc:0 "§LNeural imprinting has made this species perfectly altruistic to their own. They operate and live in harmony and happiness, without crime or violence.§!\n"
+ trait_communal3_desc:0 "§LNeural imprinting has made this species perfectly altruistic to their own. They operate and live in harmony and happiness, without crime or violence.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_charismatic1:0 "Polite"
  trait_charismatic1_desc:0 "§LThis species is always polite, even to xenos.§!\n"
@@ -196,7 +199,7 @@
  trait_charismatic2_desc:0 "§LThis species manages to come off as charismatic even to alien species.§!\n"
  
  trait_charismatic3:0 "Attractive"
- trait_charismatic3_desc:0 "§LCareful study of xeno communication, in combination with altered pheromone composition, allow this species to be wildly attractive even to completely alien species.§!\n"
+ trait_charismatic3_desc:0 "§LCareful study of xeno communication, in combination with altered pheromone composition, allow this species to be wildly attractive even to completely alien species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_conformists1:0 "Mainstream"
  trait_conformists1_desc:0 "§LIf the majority thinks it's right, it probably is right. Right?§!\n"
@@ -205,7 +208,7 @@
  trait_conformists2_desc:0 "§L"United we stand. Divided we fall."§!\n"
  
  trait_conformists3:0 "Redditors"
- trait_conformists3_desc:0 "§LNeural implants link this species consciousness to their very own subreddit. Though not a true hivemind, they will utterly shred anyone who has a different view on things.§!\n"
+ trait_conformists3_desc:0 "§LNeural implants link this species consciousness to their very own subreddit. Though not a true hivemind, they will utterly shred anyone who has a different view on things.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_venerable1:0 "Venerable"
  trait_venerable1_desc:0 "§LThis species has a generous lifespan.§!\n"
@@ -214,7 +217,7 @@
  trait_venerable2_desc:0 "§L"The centuries pass; I shall remain."§!\n"
  
  trait_venerable3:0 "Clinically Immortal"
- trait_venerable3_desc:0 "§LGenome storage combined with advanced cellular nanotics allows for indefinite repair of damaged DNA in a living organism. Together with ultra-advanced healthcare, this makes an organism clinically immortal.§!\n"
+ trait_venerable3_desc:0 "§LGenome storage combined with advanced cellular nanotics allows for indefinite repair of damaged DNA in a living organism. Together with ultra-advanced healthcare, this makes an organism clinically immortal.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_resilient1:0 "Stubborn"
  trait_resilient1_desc:0 "§LThis species is naturally stubborn and fearless. They will fight on despite overwhelming odds.§!\n"
@@ -223,7 +226,7 @@
  trait_resilient2_desc:0 "§L"Have you learned nothing of the stubbornness of dwarves?"§!\n"
  
  trait_resilient3:0 "Unyielding"
- trait_resilient3_desc:0 "§L"'Tis but a scratch!".§!\n"
+ trait_resilient3_desc:0 "§L"'Tis but a scratch!".\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_conservational1:0 "Conserving"
  trait_conservational1_desc:0 "§L"Waste not, want not."§!\n"
@@ -232,7 +235,7 @@
  trait_conservational2_desc:0 "§L"It is not the xeno who has too little that is poor, but the one who hankers after more."§!\n"
  
  trait_conservational3:0 "Stoic"
- trait_conservational3_desc:0 "§L"Non est ad astra mollis e terris via"§!\n"
+ trait_conservational3_desc:0 "§L"Non est ad astra mollis e terris via"\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it here if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_genemod_pest:0 "Pestilence"
  trait_genemod_pest_desc:0 "§LThis species breeds like insects, and behaves a bit like them too. They are naturally short-lived and not particularly well-educated as a result, and overpopulation is the standard.§!\n"
@@ -241,7 +244,7 @@
  trait_custom_testing_desc:0 "§LPower beyond your wildest beliefs.§!\n"
  
  trait_genemod_enraged:0 "Enraged"
- trait_genemod_enraged_desc:0 "§LAnger inhibitions removed. Hormones at maximum tolerable level. This species will attack anything that is not them on sight; they are in a state of constant and blind RAGE.§!\n"
+ trait_genemod_enraged_desc:0 "§LAnger inhibitions removed. Hormones at maximum effective level. This species will viciously attack anything on sight; robbed of their own willpower, they are in a state of constant and blind RAGE.§!\n"
  
  trait_genemod_lobotomized:0 "Lobotomite"
  trait_genemod_lobotomized_desc:0 "§LAn extremely crude operation. No fancy genetic modding or nanotics for these poor bummers; they had a couple of cuts made in their neural paths and now they're little more than decoration.§!\n"
@@ -259,7 +262,7 @@
  trait_effects_weirdass_desc:0 "§LFire Rate Test Description.§!\n"
  
  trait_decadent:0 "Slave Dependent"
- trait_decadent_desc:0 "§LThis species requires servants to stay happy.§!\n"
+ trait_decadent_desc:0 "§LThis species requires servants to stay happy. Though they do really seem to enjoy life when they have their servants.§!\n"
  
  trait_lingua_idumentis:0 "Lingua Idumentis"
  trait_lingua_idumentis_desc:0 "§LThis species has the peculiar trait of communicating through apparel. They are both fascinating and extremely frustrating to xenos.§!\n"
@@ -310,7 +313,7 @@
  trait_curious_desc:0 "§LThis species is naturally curious and creative, making them very thorough in their searches. They find more anomalies and think of alternative solutions.\n\n 2 research alternatives +100% anomaly chance -50% survey speed§!\n"
  
  trait_uncreative:0 "Uncreative"
- trait_uncreative_desc:0 "§LThis species has no creativity and exploration bores them. They are extremely inept at finding innovative solutions to problems and their usual interstellar exploration protocol is to take one picture and leave.\n\n -10 research alternatives -50% anomaly chance +100% survey speed§!\n"
+ trait_uncreative_desc:0 "§LThis species has no creativity and exploration bores them. They are extremely inept at finding innovative solutions to problems and their usual interstellar exploration protocol is to take one picture and leave.\n\n -2 research alternatives -50% anomaly chance +100% survey speed§!\n"
  
  trait_airborne:0 "Airborne"
  trait_airborne_desc:0 "§L"I believe I can fly... -Wait what? I have no Avian portrait? Well, just imagine I have one then." - This species is comfortable with 3 dimensional engagements and performs better in stellar combat as well.\n\n ship_fire_rate_mult = 0.2 \n\n ship_tracking_add = 10 \n\n ship_evasion_add = 10 §!\n"
@@ -440,7 +443,6 @@
  
  trait_robodesign_fake_ai:0 "No Intelligence"
  trait_robodesign_fake_ai_desc:0 "§LLacking many basic self-writing algorithms, this system is fundementally not yet a true general intelligence. It can still perform a wide array of tasks, but does not evolve naturally. The only way it could ever become a true intelligence is by pure chance, or if some strange power subtly guided them from an armchair.§!\n"
- 
  
  trait_robot_dakka:0 "Dakka"
  trait_robot_dakka_desc:0 "§LEquipped with the latest in small arms, these machines are a menace on the battlefield with their pin-point accuracy and almost zero reaction time.§!\n"
