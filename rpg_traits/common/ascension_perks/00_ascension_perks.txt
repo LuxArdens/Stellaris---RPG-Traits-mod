@@ -378,7 +378,10 @@ ap_mind_over_matter = {
 	possible = {	
 		custom_tooltip = {
 			fail_text = "synthetic_empire_psionic_ascension"
-			NOT = { has_trait = trait_mechanical }
+			OR = {
+				NOT = { has_trait = trait_mechanical }
+				has_technology = tech_psionic_synthetics
+			}
 		}
 		#custom_tooltip = {
 		#	fail_text = "hive_mind_biological_ascension_only1"
@@ -398,7 +401,10 @@ ap_mind_over_matter = {
 		#}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_the_flesh_is_weak"
-			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+			OR = {
+				NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+				has_technology = tech_psionic_synthetics
+			}
 		}
 	}
 	

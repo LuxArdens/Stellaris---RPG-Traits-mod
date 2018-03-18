@@ -375,8 +375,6 @@
  trait_psionic_ethereals:0 "Ethereals"
  trait_psionic_ethereals_desc:0 "§LThese psionics have completely mastered the alteration of physical reality. They have transcended into something else entirely, residing mostly in a super-dimensional place without space, matter or time. Known under many names: Ghosts, Angels, Subspace Anomalies... the Ethereals do not hunger, do not rest and do not die. They influence the physical realm only through powerful psionic interactions. Though more capable than most organics, they can still be temporarily cast out of the physical realm with force.§!\n"
  
- 
- 
  trait_robodesign_terminators:0 "War Machines"
  trait_robodesign_terminators_desc:0 "§LDesigned for war, to the exclusion of some more subtle tasks.§!\n"
  
@@ -406,6 +404,21 @@
  
  trait_robodesign_science_robot:0 "Research Bots"
  trait_robodesign_science_robot_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
+ 
+ trait_robodesign_terminators_synth:0 "War Machines"
+ trait_robodesign_terminators_synth_desc:0 "§LDesigned for war, to the exclusion of some more subtle tasks.§!\n"
+ 
+ trait_robodesign_miners_synth:0 "Mining Bots"
+ trait_robodesign_miners_synth_desc:0 "§LA giant mining network, composed of various specialized mining tools and structures. This machine entity does not perform well at tasks it cannot solve with a larger drill.§!\n"
+ 
+ trait_robodesign_servitors_synth:0 "Servitors"
+ trait_robodesign_servitors_synth_desc:0 "§LBuilt as civil servants originally, these bots do well with administrative and servile tasks. They are not equipped for heavy tasks and complex analysis.§!\n"
+ 
+ trait_robodesign_harvesters_synth:0 "Harvesters"
+ trait_robodesign_harvesters_synth_desc:0 "§LGiant, lumbering farming equipment. These synths were not intended to ever rule engage in philosophy, rule planets, or exterminate their organic creators, yet they somehow did.§!\n"
+ 
+ trait_robodesign_science_synth:0 "Research Bots"
+ trait_robodesign_science_synth_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
  
  trait_robodesign_androids:0 "Androids"
  trait_robodesign_androids_desc:0 "§LOrginally designed as androids, these machines emulate their organic makers in a very balanced fashion and eventually gained sentience. \n \n This is the baseline machine trait§!\n"
@@ -446,6 +459,18 @@
  
  trait_robot_complex2:0 "Cutting Edge"
  trait_robot_complex2_desc:0 "§LNo expenses were spared in the design of these Machine frames. They are powerful, but very time- and resource consuming to produce.§!\n"
+ 
+ trait_robot_simple1_robot:0 "Simple Design"
+ trait_robot_simple1_robot_desc:0 "§LA simple design is both easier and cheaper to mass-produce, but lacks many useful extras.§!\n"
+ 
+ trait_robot_simple2_robot:0 "Minimalist"
+ trait_robot_simple2_robot_desc:0 "§LThis Machine frame was meant to be produced by the billions for a relatively low price. Full of rough edges and certainly not the most elegant design around, but extremely simple to produce.§!\n"
+ 
+ trait_robot_complex1_robot:0 "Complex Design"
+ trait_robot_complex1_robot_desc:0 "§LA complex design is harder and thus more expensive to produce, but allows for installation of more advanced systems.§!\n"
+ 
+ trait_robot_complex2_robot:0 "Cutting Edge"
+ trait_robot_complex2_robot_desc:0 "§LNo expenses were spared in the design of these Machine frames. They are powerful, but very time- and resource consuming to produce.§!\n"
  
  trait_robot_learning_algorithms2:0 "Predictive Learning"
  trait_robot_learning_algorithms2_desc:0 "§LSophisticated quantum state networks predict optimal paths instead of learning through trial-and-error alone. This creates a vastly stronger form of machine intelligence.§!\n"

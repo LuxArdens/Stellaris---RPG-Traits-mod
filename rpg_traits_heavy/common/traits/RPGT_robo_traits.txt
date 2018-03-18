@@ -211,7 +211,7 @@ trait_robodesign_fake_ai = {		# makes them really crude machines without high-le
 #	ROBOT-versions for synths. These are the same minus the inherent synth bonus
 ######################################################################
 
-trait_robodesign_terminators_robot = {		# basically Skynet
+trait_robodesign_terminators_synth = {		# basically Skynet
 	cost = 2
 	sorting_priority = 20
 	initial = no
@@ -219,7 +219,7 @@ trait_robodesign_terminators_robot = {		# basically Skynet
 	modification = yes
 	icon = "gfx/interface/icons/traits/trait_robodesign_terminators.dds"
 	allowed_archetypes = { ROBOT }
-	opposites = { trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
 	prerequisites = { tech_robomod_2 }
 
 	modifier = {
@@ -236,7 +236,7 @@ trait_robodesign_terminators_robot = {		# basically Skynet
 		army_upkeep_mult = 2
 	}
 }
-trait_robodesign_miners_robot = {		# rogue mining drones
+trait_robodesign_miners_synth = {		# rogue mining drones
 	cost = 5
 	sorting_priority = 20
 	initial = no
@@ -244,7 +244,7 @@ trait_robodesign_miners_robot = {		# rogue mining drones
 	modification = yes
 	icon = "gfx/interface/icons/traits/trait_robodesign_miners.dds"
 	allowed_archetypes = { ROBOT }
-	opposites = { trait_robodesign_terminators_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
 	prerequisites = { tech_robomod_2 }
 
 	modifier = {
@@ -257,7 +257,7 @@ trait_robodesign_miners_robot = {		# rogue mining drones
 		army_health = -1
 	}
 }
-trait_robodesign_servitors_robot = {		# rogue servitors, manage civil aspects
+trait_robodesign_servitors_synth = {		# rogue servitors, manage civil aspects
 	cost = 3
 	sorting_priority = 20
 	initial = no
@@ -266,7 +266,7 @@ trait_robodesign_servitors_robot = {		# rogue servitors, manage civil aspects
 	prerequisites = { tech_robomod_2 }
 	icon = "gfx/interface/icons/traits/trait_robodesign_servitors.dds"
 	allowed_archetypes = { ROBOT }
-	opposites = { trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
 
 	modifier = {
 		tile_resource_unity_mult = 0.5
@@ -277,7 +277,7 @@ trait_robodesign_servitors_robot = {		# rogue servitors, manage civil aspects
 		pop_owner_happiness = 0.1
 	}
 }
-trait_robodesign_harvesters_robot = {		# for if you really want to screw yourself
+trait_robodesign_harvesters_synth = {		# for if you really want to screw yourself
 	cost = 3
 	sorting_priority = 20
 	initial = no
@@ -286,7 +286,7 @@ trait_robodesign_harvesters_robot = {		# for if you really want to screw yoursel
 	prerequisites = { tech_robomod_2 }
 	icon = "gfx/interface/icons/traits/trait_robodesign_harvesters.dds"
 	allowed_archetypes = { ROBOT }
-	opposites = { trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
 
 	modifier = {
 		tile_resource_unity_mult = -1
@@ -302,7 +302,7 @@ trait_robodesign_harvesters_robot = {		# for if you really want to screw yoursel
 		army_health = -0.9
 	}
 }
-trait_robodesign_science_robot = {		# giant scientific mainframe
+trait_robodesign_science_synth = {		# giant scientific mainframe
 	cost = 5
 	sorting_priority = 20
 	initial = no
@@ -320,6 +320,106 @@ trait_robodesign_science_robot = {		# giant scientific mainframe
 		
 		pop_robot_upkeep_mult = 3		# will have a constant struggle for MOAR power
 		pop_consumer_goods_mult = 1		# struggle to support large pop, as to not be completely OP in science department
+	}
+}
+
+
+######################################################################
+#	ROBOT-versions for robots. These are the same minus the inherent robot bonus
+######################################################################
+
+trait_robodesign_terminators_robot = {		# basically Skynet
+	cost = 2
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_terminators.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_3 trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	prerequisites = { tech_robomod_1 }
+
+	modifier = {
+		tile_resource_unity_mult = -2
+		tile_resource_food_mult = -2
+		tile_resource_energy_mult = -2
+		tile_resource_minerals_mult = -2
+		
+		pop_robot_build_speed_mult = -0.8
+		pop_robot_build_cost_mult = 5			# very large investment into specialized military hardware
+		pop_consumer_goods_mult = 4
+		pop_robot_upkeep_mult = 1
+		army_damage_mult = 5					# Extremely deadly robotic drones
+		army_health = 5
+		army_upkeep_mult = 2
+	}
+}
+trait_robodesign_miners_robot = {
+	cost = 6
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_miners.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_3 trait_robodesign_terminators_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	prerequisites = { tech_robomod_1 }
+
+	modifier = {
+		tile_resource_unity_mult = -1
+		tile_resource_unity_mult = -1
+		tile_resource_energy_mult = -1
+		tile_resource_food_mult = -1
+		tile_resource_minerals_mult = 1
+		
+		pop_robot_upkeep_mult = 1
+		
+		army_damage_mult = -1
+		army_health = -1
+	}
+}
+trait_robodesign_servitors_robot = {
+	cost = 3
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_servitors.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_3 trait_robotic_1 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+
+	modifier = {
+		tile_resource_unity_mult = 0.25
+		tile_resource_energy_mult = 0.25
+		
+		army_health = -0.25
+		army_damage_mult = -0.25
+		pop_owner_happiness = 0.1
+	}
+}
+trait_robodesign_harvesters_robot = {
+	cost = 5
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_harvesters.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_3 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+
+	modifier = {
+		tile_resource_unity_mult = -1
+		tile_resource_energy_mult = -2		# can't get shit done
+		tile_resource_food_mult = 1
+		tile_resource_minerals_mult = -1.5
+		tile_resource_engineering_research_mult = -1
+		tile_resource_physics_research_mult = -1
+		tile_resource_society_research_mult = -1
+		
+		army_damage_mult = -2
+		army_health = -0.9
 	}
 }
 
@@ -363,7 +463,7 @@ trait_robot_enhanced_memory = {
 	initial = yes
 	randomized = yes
 	modification = yes
-	prerequisites = { trait_robotic_1 trait_robotic_2 tech_robomod_1 }
+	prerequisites = { tech_robomod_1 }
 	allowed_archetypes = { ROBOT MACHINE }
 	
 	opposites = { trait_robotic_1 trait_robotic_2 } # Synth only
@@ -378,8 +478,8 @@ trait_robot_emotion_emulators = {
 	initial = yes
 	randomized = yes
 	modification = yes
-	prerequisites = { tech_robomod_1 trait_robotic_1 trait_robotic_2 }
-	opposites = { "trait_robot_uncanny" }
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robotic_1 trait_robotic_2 "trait_robot_uncanny" }
 	allowed_archetypes = { MACHINE ROBOT }
 	custom_tooltip = TRAIT_EMOTION_EMULATORS_EFFECT
 }
@@ -389,8 +489,8 @@ trait_robot_uncanny = {
 	initial = yes
 	randomized = yes
 	modification = yes
-	prerequisites = { tech_robomod_1 trait_robotic_1 trait_robotic_2 }
-	opposites = { "trait_robot_emotion_emulators" }
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robotic_1 trait_robotic_2 "trait_robot_emotion_emulators" }
 	allowed_archetypes = { MACHINE ROBOT }
 	custom_tooltip = TRAIT_UNCANNY_EFFECT
 }
@@ -507,8 +607,9 @@ trait_robot_simple1 = {
 	modification = yes
 	prerequisites = { tech_robomod_2 }
 	opposites = { trait_robot_complex2 trait_robot_complex1 trait_robot_simple2  }
+	icon = "gfx/interface/icons/traits/trait_robot_simple1.dds"
 
-	allowed_archetypes = { ROBOT MACHINE }
+	allowed_archetypes = { MACHINE }
 
 	modifier = {
 		pop_robot_build_speed_mult = 3
@@ -523,8 +624,9 @@ trait_robot_simple2 = {
 	modification = yes
 	prerequisites = { tech_robomod_2 }
 	opposites = { trait_robot_complex2 trait_robot_complex1 trait_robot_simple1 }
+	icon = "gfx/interface/icons/traits/trait_robot_simple2.dds"
 
-	allowed_archetypes = { ROBOT MACHINE }
+	allowed_archetypes = { MACHINE }
 
 	modifier = {
 		pop_robot_build_speed_mult = 9
@@ -539,8 +641,9 @@ trait_robot_complex1 = {
 	modification = yes
 	prerequisites = { tech_robomod_2 }
 	opposites = { trait_robot_complex2 trait_robot_simple2 trait_robot_simple1 }
+	icon = "gfx/interface/icons/traits/trait_robot_complex1.dds"
 
-	allowed_archetypes = { ROBOT MACHINE }
+	allowed_archetypes = { MACHINE }
 
 	modifier = {
 		pop_robot_build_speed_mult = -0.5
@@ -554,8 +657,76 @@ trait_robot_complex2 = {
 	modification = yes
 	prerequisites = { tech_robomod_2 }
 	opposites = { trait_robot_complex1 trait_robot_simple2 trait_robot_simple1 }
+	icon = "gfx/interface/icons/traits/trait_robot_complex2.dds"
 
-	allowed_archetypes = { ROBOT MACHINE }
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		pop_robot_build_speed_mult = -0.8
+		pop_robot_build_cost_mult = 3
+	}
+}
+
+trait_robot_simple1_robot = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robot_complex2_robot trait_robot_complex1_robot trait_robot_simple2_robot  }
+	icon = "gfx/interface/icons/traits/trait_robot_simple1.dds"
+
+	allowed_archetypes = { ROBOT }
+
+	modifier = {
+		pop_robot_build_speed_mult = 3
+		pop_robot_build_cost_mult = -0.5
+		pop_robot_upkeep_mult = -0.25
+	}
+}
+trait_robot_simple2_robot = {
+	cost = 4
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robot_complex2_robot trait_robot_complex1_robot trait_robot_simple1_robot }
+	icon = "gfx/interface/icons/traits/trait_robot_simple2.dds"
+
+	allowed_archetypes = { ROBOT }
+
+	modifier = {
+		pop_robot_build_speed_mult = 9
+		pop_robot_build_cost_mult = -0.8
+		pop_robot_upkeep_mult = -0.5
+	}
+}
+trait_robot_complex1_robot = {
+	cost = -2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robot_complex2_robot trait_robot_simple2_robot trait_robot_simple1_robot }
+	icon = "gfx/interface/icons/traits/trait_robot_complex1.dds"
+
+	allowed_archetypes = { ROBOT }
+
+	modifier = {
+		pop_robot_build_speed_mult = -0.5
+		pop_robot_build_cost_mult = 1
+	}
+}
+trait_robot_complex2_robot = {
+	cost = -4
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robot_complex1_robot trait_robot_simple2_robot trait_robot_simple1_robot }
+	icon = "gfx/interface/icons/traits/trait_robot_complex2.dds"
+
+	allowed_archetypes = { ROBOT }
 
 	modifier = {
 		pop_robot_build_speed_mult = -0.8
@@ -643,9 +814,9 @@ trait_robot_learning_algorithms2 = {
 	randomized = yes
 	modification = yes
 	prerequisites = { tech_robomod_3 }
-	opposites = { trait_robot_learning_algorithms trait_robotic_1 trait_robotic_2 trait_robodesign_science "trait_robot_crude_neural_network" "trait_robot_crude_neural_network2" }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robot_learning_algorithms trait_robotic_1 trait_robotic_2 trait_robodesign_science "trait_robot_crude_neural_network" "trait_robot_crude_neural_network2" }
 
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { MACHINE ROBOT }
 
 	modifier = {
 		species_leader_exp_gain = 2
