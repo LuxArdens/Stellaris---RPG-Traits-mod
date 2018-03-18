@@ -298,27 +298,6 @@ tech_robomod_1 = {
 			has_ascension_perk = ap_synthetic_age
 		}
 		modifier = {
-			factor = 0.20
-			NOR = {
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_maniacal"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_expertise_industry"
-				}
-			}
-		}
-		modifier = {
 			factor = 1
 			is_ai = yes
 		}
@@ -396,6 +375,42 @@ tech_robomod_3 = {
     weight = 0 # AI can't handle this
   }
 }
+
+tech_genemod_ai_unfriendly = {
+  cost = 30
+  area = society
+  tier = 3		# locked behind significant effort now
+  category = { industry }
+  prerequisites = { "tech_gene_tailoring" }
+  is_rare = yes
+  weight = 200
+
+	weight_modifier = {
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_engineered_evolution
+		}
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_evolutionary_mastery
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0
+  }
+}
+
 #######################################################################
 # "Fake" Technologies. These should ALWAYS be hidden to the user. Made compact for reasons
 #######################################################################

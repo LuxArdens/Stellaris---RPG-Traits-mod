@@ -196,6 +196,7 @@ trait_irradiated = {
 	randomized = no
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_irradiated.dds"
+	prerequisites = { tech_glandular_acclimation }
 	modifier = {
 		pc_nuked_habitability = 0.25
 	}
@@ -203,117 +204,9 @@ trait_irradiated = {
 
 
 
-
-# marker - Robotics
-# Design problematic. Using these traits on simple ROBOTS makes for a very easy early game exploitation. You can simply make a couple of specialized robots and build them on their respective tiles to get an immense output
-
-
-# trait_robot_power_drills = {
-	# cost = 4
-	
-	# sorting_priority = 20
-	# initial = yes
-	# randomized = no
-	# modification = yes
-	
-
-	# allowed_archetypes = { ROBOT MACHINE }
-	# opposites = { "trait_robot_harvesters" "trait_robot_superconductive" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" }
-
-	# modifier = {
-		# tile_resource_minerals_mult = 2		# crippling overspecialisation
-		# tile_resource_food_mult = -10
-		# tile_resource_energy_mult = -1
-		# tile_resource_engineering_research_mult = -1
-		# tile_resource_physics_research_mult = -1
-		# tile_resource_society_research_mult = -1
-		# tile_resource_unity_mult = -1
-		# army_damage_mult = -5
-	# }
-# }
-
-# trait_robot_harvesters = {
-	# cost = 2
-	
-	# sorting_priority = 20
-	# initial = yes
-	# randomized = no
-	# modification = yes
-	
-
-	# allowed_archetypes = { ROBOT MACHINE }
-	# opposites = { "trait_robot_power_drills" "trait_robot_superconductive" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" }
-
-	# modifier = {
-		# tile_resource_food_mult = 10		
-		# tile_resource_minerals_mult = -5
-		# tile_resource_energy_mult = -2
-		# tile_resource_engineering_research_mult = -1
-		# tile_resource_physics_research_mult = -1
-		# tile_resource_society_research_mult = -1
-		# tile_resource_unity_mult = -1
-		# army_damage_mult = -5
-	# }
-# }
-
-# trait_robot_superconductive = {
-	# cost = 4
-	
-	# sorting_priority = 20
-	# initial = yes
-	# randomized = no
-	# modification = yes
-	
-
-	# allowed_archetypes = { ROBOT MACHINE }
-	# opposites = { "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" }
-
-	# modifier = {
-		# tile_resource_energy_mult = 2
-		# tile_resource_food_mult = -10
-		# tile_resource_minerals_mult = -5
-		# tile_resource_engineering_research_mult = -1
-		# tile_resource_physics_research_mult = -1
-		# tile_resource_society_research_mult = -1
-		# tile_resource_unity_mult = -1
-		# army_damage_mult = -5
-	# }
-# }
-
-# trait_robot_efficient_processors = {
-	# cost = 1
-
-	# allowed_archetypes = { ROBOT MACHINE }
-
-	# modifier = {
-		# pop_robot_upkeep_mult = -0.5
-	# }
-# }
-
-# trait_robot_logic_engines = {
-	# cost = 7
-	
-	# sorting_priority = 20
-	# initial = yes
-	# randomized = no
-	# modification = yes
-	
-
-	# allowed_archetypes = { ROBOT MACHINE }
-
-	# opposites = { trait_robotic_1 trait_robotic_2 "trait_robot_superconductive" "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" } # Synth and Machine only
-
-	# modifier = {
-		# tile_resource_engineering_research_mult = 2
-		# tile_resource_physics_research_mult = 2
-		# tile_resource_society_research_mult = 2
-		# tile_resource_energy_mult = 0.50
-		
-		# tile_resource_food_mult = -0.5
-		# tile_resource_minerals_mult = -0.5
-		# army_damage_mult = -5
-	# }
-# }
+##########################################################################################################
+# marker - Robotica
+##########################################################################################################
 
 trait_robot_loyalty_circuits = {
 	cost = 2
@@ -336,108 +229,6 @@ trait_robot_loyalty_circuits = {
 		pop_government_ethic_attraction = 0.50
 	}
 }
-
-# trait_robot_domestic_protocols = {
-	# cost = 1
-	
-	# initial = no
-	# randomized = no
-
-	# allowed_archetypes = { ROBOT }
-	
-	# species_potential_add = {
-		# from = {
-			# NOT = { has_policy_flag = ai_full_rights }
-		# }
-	# }
-
-	# opposites = { trait_robotic_1 } # Droid and Synth only
-
-	# modifier = {
-		# pop_owner_happiness = 0.05
-	# }
-# }
-
-
-# trait_robot_propaganda_machines = {
-	# cost = 3
-	
-	# sorting_priority = 20
-	# initial = yes
-	# randomized = no
-	# modification = yes
-	
-
-	# allowed_archetypes = { ROBOT MACHINE }
-	# opposites = { "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_killer_bots2" "trait_robot_superconductive" }
-
-	# modifier = {
-		# tile_resource_unity_mult = 1
-		
-		# tile_resource_energy_mult = -0.5
-		# tile_resource_food_mult = -0.5
-		# tile_resource_minerals_mult = -0.5
-		# tile_resource_engineering_research_mult = -2
-		# tile_resource_physics_research_mult = -2
-		# tile_resource_society_research_mult = -2
-		
-		# army_damage_mult = 0.25
-	# }
-# }
-
-# trait_robot_killer_bots1 = {
-	# cost = 3
-	
-	# sorting_priority = 20
-	# initial = yes
-	# randomized = no
-	# modification = yes
-	
-
-	# allowed_archetypes = { ROBOT }
-	# opposites = { "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_logic_engines" "trait_robot_killer_bots2" "trait_robot_propaganda_machines" "trait_robot_superconductive" }
-
-	# modifier = {
-		# tile_resource_unity_mult = -10
-		# tile_resource_energy_mult = -10
-		# tile_resource_food_mult = -10
-		# tile_resource_minerals_mult = -10
-		# tile_resource_engineering_research_mult = -10
-		# tile_resource_physics_research_mult = -10
-		# tile_resource_society_research_mult = -10
-		
-		# pop_robot_build_speed_mult = -0.5
-		# pop_robot_build_cost_mult = 10			# very large investment into specialized military hardware
-		# army_damage_mult = 3					# Deadly robotic drones
-	# }
-# }
-
-# trait_robot_killer_bots2 = {
-	# cost = 5
-	
-	# sorting_priority = 20
-	# initial = yes
-	# randomized = no
-	# modification = yes
-	
-
-	# allowed_archetypes = { ROBOT MACHINE }
-	# opposites = { "trait_robot_harvesters" "trait_robot_power_drills" "trait_robot_logic_engines" "trait_robot_killer_bots1" "trait_robot_propaganda_machines" "trait_robot_superconductive" }
-
-	# modifier = {
-		# tile_resource_unity_mult = -10
-		# tile_resource_energy_mult = -10
-		# tile_resource_food_mult = -10
-		# tile_resource_minerals_mult = -10
-		# tile_resource_engineering_research_mult = -10
-		# tile_resource_physics_research_mult = -10
-		# tile_resource_society_research_mult = -10
-		
-		# pop_robot_build_speed_mult = -0.5
-		# pop_robot_build_cost_mult = 10			# very large investment into specialized military hardware
-		# army_damage_mult = 7					# Sentient Machines will be unrivaled on the battlefield, except by the best of the best organic armies
-	# }
-# }
 
 trait_robot_awoken = {			# need to find out what the heck this is first
 	allowed_archetypes = { MACHINE }
@@ -466,10 +257,6 @@ trait_robot_awoken_01 = {
 	}
 }
 
-###############
-# Fancy new Robo-traits
-###############
-
 
 trait_nerve_stapled_robo = {
 	cost = 0
@@ -497,19 +284,9 @@ trait_nerve_stapled_robo = {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+#########################################################################################################
 # BIO traits
+#########################################################################################################
 
 trait_decadent = {
 	cost = -2
@@ -2073,6 +1850,7 @@ trait_genemod_pest = {
 	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_pest.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		pop_happiness = -0.05
 		#pop_growth_req_mult = -0.9
@@ -2185,9 +1963,10 @@ trait_genemod_enraged = {			# perfect for making battle thralls out of defeated 
 	randomized = no
 	modification = yes
 	advanced_trait = yes
-	cost = 1
+	cost = 0
 	icon = "gfx/interface/icons/traits/trait_enraged.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		pop_government_ethic_attraction = -1
 		pop_happiness = -0.8
@@ -2199,7 +1978,7 @@ trait_genemod_enraged = {			# perfect for making battle thralls out of defeated 
 		tile_resource_physics_research_mult = -2
 		tile_resource_society_research_mult = -2
 		army_damage_mult = 0.5
-		army_defense_health_mult = 0.25
+		army_attack_health_mult = 0.25
 		army_attack_morale_mult = 0.25
 		}
 		opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_nerve_stapled" "trait_genemod_lobotomized" }
@@ -2210,10 +1989,10 @@ trait_genemod_lobotomized = {
 	randomized = no
 	modification = yes
 	forced_happiness = yes
-	cost = -1
+	cost = 0
 	icon = "gfx/interface/icons/traits/trait_lobotomized.dds"
 	allowed_archetypes = { BIOLOGICAL }
-	prerequisites = { tech_lobotomization }		# apparently this is possible. My life is a lie
+	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		tile_resource_food_mult = -4
 		tile_resource_minerals_mult = -4
@@ -2224,23 +2003,23 @@ trait_genemod_lobotomized = {
 		tile_resource_unity_mult = -4
 		army_damage_mult = -4
 		army_defense_health_mult = -4
-		#no longer works #pop_fortification_defense = -4
 		species_leader_exp_gain = -10
+		leader_age = -20
 		}
-		opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_nerve_stapled" "trait_genemod_enraged" "trait_resilient1" "trait_resilient2" "trait_resilient3" }
+		opposites = { "trait_nerve_stapled" "trait_genemod_enraged" }
 }
 
 trait_delicious = {
-	cost = 3
+	cost = 0
 	initial = no
 	randomized = no
-	advanced_trait = no
+	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		pop_food_mult = 1
 		army_damage_mult = -0.25
 	}
 		opposites = { "trait_delicious2" }
-	allowed_archetypes = { BIOLOGICAL }
 }
 
 trait_delicious2 = {
@@ -2249,6 +2028,7 @@ trait_delicious2 = {
 	randomized = no
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_delicious2.dds"
+	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		pop_food_mult = 3
 		army_damage_mult = -0.25
@@ -2259,12 +2039,13 @@ trait_delicious2 = {
 }
 
 trait_constant_pain = {
-	cost = -2
+	cost = 0
 	initial = no
 	randomized = no
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_pain.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		leader_age = 2000
 		pop_happiness = -4
@@ -2286,12 +2067,13 @@ trait_nerve_stapled = {
 	randomized = no
 	advanced_trait = yes
 	forced_happiness = yes
+	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		tile_resource_minerals_mult = 0.1
 		tile_resource_food_mult = 0.1
 		tile_resource_energy_mult = -0.25					# nerve-stapling doesn't help cognition 
-		tile_resource_physics_research_mult = -1			
-		tile_resource_engineering_research_mult = -1
+		tile_resource_physics_research_mult = -0.75			
+		tile_resource_engineering_research_mult = -0.75	
 		tile_resource_society_research_mult = -20
 		tile_resource_unity_mult = -2
 		army_defense_health_mult = -2.0			# won't put up a fight
@@ -2301,22 +2083,22 @@ trait_nerve_stapled = {
 }
 
 trait_crippled = {
-	cost = -3
+	cost = 0
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_strong1" "trait_strong2" "trait_strong3" }
 	allowed_archetypes = { BIOLOGICAL }
 	initial = no
 	randomized = no
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_crippled.dds"
+	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		pop_happiness = -0.05
 		tile_resource_minerals_mult = -0.25
-		army_defense_health_mult = -2.0
+		army_attack_health_mult = -2.0
 		army_damage_mult = -2.0
-		pop_environment_tolerance = -0.1
+		pop_environment_tolerance = -0.05
 	}
 }
-
 
 ########################################################################################################################
 ########################################################################################################################
@@ -2633,7 +2415,7 @@ trait_tiny = {
 }
 trait_titanic_machine = {
 	cost = 5
-	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_tiny" "trait_turtles" "trait_silent_observers" }
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_tiny_machine" "trait_turtles" "trait_silent_observers" }
 	initial = yes
 	randomized = no
 	modification = no
@@ -2651,7 +2433,7 @@ trait_titanic_machine = {
 }
 trait_tiny_machine = {
 	cost = 0
-	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_titanic" }
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_titanic_machine" }
 	initial = yes
 	randomized = no
 	modification = no
