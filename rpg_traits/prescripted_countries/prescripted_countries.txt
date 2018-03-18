@@ -131,8 +131,8 @@
 		name="Strogg"
 		plural="Strogg"
 		adjective="Strogg"
-		species_bio="The Strogg are cybernetic constructs of unclear origins which reproduce by taking biological components and fusing them with advanced technology in the brutal surgical process of Stroggification that enslaves their minds and enhances their bodies for war.
-
+		species_bio="The Strogg are cybernetic constructs of unclear origins which reproduce by taking biological components and fusing them with advanced technology in the brutal surgical process of Stroggification that enslaves their minds and enhances their bodies for war.
+
 The Strogg's need to harvest biological components for their own augmentation, and the flesh of slain enemies for the creation of stroyent, is their primary motivation, since it's necessary for their survival."
 		name_list="MOL1"
 		trait="trait_hive_mind"
@@ -675,7 +675,7 @@ The Strogg's need to harvest biological components for their own augmentation, a
 		name="OP Bot"
 		plural="OP Bot"
 		adjective="OP Bot"
-		species_bio="OP bot is here to ruin your day. Hope you had a GG, because it's over now. Naw, OP Bot is really just an example of how you can min-max RPG traits to get something wickedly OP, and on how that is a very, very bad idea. Don't make an OP bot and complain about it being OP. Don't be *that* guy."
+		species_bio="OP bot is here to ruin your day. Hope you had a GG, because it's over now. Naw, OP Bot is really just an example of how you can pick all the good RPG traits to get something wickedly OP, and on how that is a very, very bad idea. Don't make an OP bot and then complain about it being OP! Don't be *that* guy. Or you may find OP Bot \"taking care\" of your pops for you."
 		name_list="ART1"
 		trait="trait_machine_unit"
 		trait="trait_robodesign_synthetic"
@@ -882,28 +882,29 @@ The Strogg's need to harvest biological components for their own augmentation, a
 		name="SCP-682"
 		plural="SCP-682"
 		adjective="SCP-682"
-		species_bio="SCP-682, or more accurately, \"Children of SCP-682\" are a race of ultra-hostile, regenerating and vaguely reptilian-looking beings. They are notoriously hard to kill, and exhibit trans-dimensional properties. One SCP-682 entered Sol in 1980, wreaking havoc on one of the inhabited planets there, until it was eventually captured and kept imprisoned until this day."
+		species_bio="SCP-682 are a race of ultra-hostile, regenerating and vaguely reptilian-looking beings. They are notoriously hard to kill, and exhibit trans-dimensional properties. One SCP-682 entered Sol in 1980, wreaking havoc on one of the inhabited planets there, until it was eventually captured and kept imprisoned until this day."
 		name_list="REP1"
 		trait="trait_ethereal_start"
-		trait="trait_smart2"
-		trait="trait_robust2"
-		trait="trait_thrifty2"
-		trait="trait_strong2"
-		trait="trait_venerable2"
-		trait="trait_conservational2"
-		trait="trait_resilient2"
 		trait="trait_repugnant3"
+		trait="trait_smart3"
+		trait="trait_robust3"
+		trait="trait_thrifty3"
+		trait="trait_strong3"
+		trait="trait_venerable3"
+		trait="trait_resilient3"
+		trait="trait_conservational3"
 		trait="trait_utterly_terrifying"
-		trait="trait_energy_lifeform"
-		trait="trait_custom_race"
+		trait="trait_agrarian3"
+		trait="trait_solitary3"
 		trait="trait_bonus"
+		trait="trait_custom_race"
 	}
 	name="SCP-682"
 	adjective="SCP-682"
 	authority="auth_dictatorial"
 	government="gov_purity_order"
 	planet_name="Tendrakkia"
-	planet_class="pc_a_star"
+	planet_class="pc_nuked"
 	system_name="Tendor"
 	initializer=""
 	graphical_culture="fungoid_01"
@@ -941,5 +942,109 @@ The Strogg's need to harvest biological components for their own augmentation, a
 	civics={
 		"civic_fanatic_purifiers"
 		"civic_warrior_culture"
+	}
+}
+"Demonic Spider Authority"
+={
+	key="Demonic Spider Authority"
+	ship_prefix=""
+	species={
+		class="ART"
+		portrait="art16"
+		name="Demonic Spider"
+		plural="Demonic Spiders"
+		adjective="Demonic Spider"
+		species_bio="Demonic Spiders are an educational tool. Like all educational tools, they come straight from hell. Demonic Spiders teach players that you can always min-max traits to get an OP combination, even with a giant penalty. So don't you dare min-max with RPG Traits! Or Demonic Spiders might just spawn next to your homeworld next game..."
+		name_list="ART4"
+		trait="trait_custom_race"
+		trait="trait_penalty"
+		trait="trait_repugnant3"
+		trait="trait_sedentary"
+		trait="trait_lingua_idumentis"
+		trait="trait_uncreative"
+		trait="trait_precursor"
+		trait="trait_ethereal_start"
+		trait="trait_weakwilled3"
+		trait="trait_frail3"
+		trait="trait_wasteful1"
+		trait="trait_weak3"
+		trait="trait_rapid_breeders3"
+		trait="trait_smart3"
+		trait="trait_euphoria"
+		trait="trait_badfarmers1"
+		trait="trait_egg_born"
+		trait="trait_iconoclastic1"
+		trait="trait_fleeting2"
+	}
+	secondary_species={
+		class="HUM"
+		portrait="human"
+		name="Powergamer"
+		plural="Powergamers"
+		adjective="Powergamer"
+		species_bio="Powergamer is a term that refers to a playstyle focused solely on maximizing progress and achieving the end goal at all costs - the endgoal often being the end of the game. This is to the exclusion of all other aspects of a game, such as immersion, storytelling, or fun. In RPG, powergamer is often used as a derogatory term to denote a player incapable of having fun. Prime characteristics include the powergamer uttering words like \"Stop having fun guys!\" If you see a powergamer, you should report him ASAP at your nearest KGB headquarters."
+		name_list="HUMAN1"
+		trait="trait_syncretic_proles"
+		trait="trait_thrifty3"
+		trait="trait_rapid_breeders3"
+		trait="trait_strong3"
+		trait="trait_lingua_idumentis"
+		trait="trait_uncreative"
+		trait="trait_homogenous"
+		trait="trait_fleeting3"
+		trait="trait_repugnant3"
+		trait="trait_sedentary"
+		trait="trait_iconoclastic3"
+		trait="trait_conservational3"
+		trait="trait_robust3"
+		trait="trait_resilient3"
+		trait="trait_euphoria"
+		trait="trait_decadent"
+		trait="trait_agrarian1"
+	}
+	name="Demonic Spider Authority"
+	adjective="Demonic Spideran"
+	authority="auth_dictatorial"
+	government="gov_military_dictatorship"
+	planet_name="Rothak"
+	planet_class="pc_toxic"
+	system_name="Vsem-Klack"
+	initializer=""
+	graphical_culture="molluscoid_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_11.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"pink"
+			"null"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Be'K va'Bir"
+		portrait="art16"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title_female="Queen"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_militarist"
+	civics={
+		"civic_syncretic_evolution"
+		"civic_environmentalist"
 	}
 }
