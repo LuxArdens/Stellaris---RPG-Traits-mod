@@ -53,7 +53,7 @@
 	spawn_as_fallen=no
 	ignore_portrait_duplication=yes
 	room="personality_federation_builders_room"
-	spawn_enabled=yes
+	spawn_enabled=no
 	ethic="ethic_fanatic_militarist"
 	ethic="ethic_materialist"
 }

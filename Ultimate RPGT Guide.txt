@@ -95,6 +95,8 @@ Rather than a dumb list of all the traits and their modifiers (which is rather h
 
 7. The 3 Repugnant traits, as well as Lingua Idumentis and Olfactory communication give negative modifiers to diplomacy as well.
 
+8. If you wish to remove the prescripted empires, simply delete the folder "prescripted_countries" from the mod. Editing the prescripted empires or forcing them to spawn is done most easily by clicking edit and then saving them as a new species.
+
 
 HEAVY-specific tips:
 5. There are many more colonizable planet types in Heavy, so late-game you can get flooded in habitable worlds. For your own sanity it might be a good idea to play on a smaller Galaxy size, as each system ends up with around 6 habitable-ish planets late-game!
@@ -110,11 +112,13 @@ HEAVY-specific tips:
 ##################
 
 Recommended:
+- All the portrait mods in the world
+- All the flag mods in the world
 - Tradition mods
 - Civic mods
 - RULER traits mods
 - Megastructure mods
-- Autobuild
+- Autobuild - for reducing boring micromanagement
 - Any other 'add-on' only mod that doesn't edit vanilla files
 
 Semi-compatible:
