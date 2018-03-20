@@ -16,6 +16,7 @@ I cannot stress enough that this is an OVERHAUL mod with a different philosophy 
 6. (not) recommended mods
 
 ##################
+
 1. INSTALLATION:
 
 ##################
@@ -32,6 +33,7 @@ Play the game!
 
 
 ##################
+
 2. HEAVY
 
 ##################
@@ -47,9 +49,11 @@ E.g. in Heavy you can start on an Asteroid, or live on Gas Giants. You can even 
 In summary: pick Heavy if you want even MOAR freedom when designing your races, or if you feel like the 9 vanilla planet types are boring af.
 
 ##################
+
 3. Bugs, Troubleshooting, Discussion & Suggestions
 
 ##################
+
 While the Steam workshop is very popular, it's also a horrible platform for discussion, comments being arranged chronologically amongst other bad things. So for bug reporting, discussion, updates and suggestions it's highly recommended to go to the RPG Traits subreddit:
 
 reddit.com/r/stellarisrpg/
@@ -62,6 +66,7 @@ Cheers, LuxArdens
 
 
 ##################
+
 4. Credits
 
 ##################
@@ -79,6 +84,7 @@ Notable Contributors, in no particular order of amount of work:
 RPG Traits is under MIT License - meaning you can do whatever the heck you want with it, but it sure is nice if you give credit where credit is due
 
 ##################
+
 5. RPG Traits tips
 
 ##################
@@ -104,6 +110,7 @@ Rather than a dumb list of all the traits and their modifiers (which is rather h
 
 
 HEAVY-specific tips:
+
 5. There are many more colonizable planet types in Heavy, so late-game you can get flooded in habitable worlds. For your own sanity it might be a good idea to play on a smaller Galaxy size, as each system ends up with around 6 habitable-ish planets late-game!
 
 6. The Terraforming chains in Heavy go through certain keypoints. E.g. you can't terraform a Gas Giant straight into Gaia, you first have to terraform it into a Barren World, et cetera. Use common sense to determine which is closer to your endgoal.
@@ -113,6 +120,7 @@ HEAVY-specific tips:
 8. Stars lack a colonize button on their planet screen. Colonize them through the Expansion screen instead, or by simply clicking a Colony Ship and landing on them. This is a silly background problem that just doesn't work otherwise.
 
 ##################
+
 6. (not) recommended mods
 
 ##################
