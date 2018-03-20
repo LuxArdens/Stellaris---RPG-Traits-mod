@@ -17,6 +17,7 @@ I cannot stress enough that this is an OVERHAUL mod with a different philosophy 
 
 ##################
 1. INSTALLATION:
+
 ##################
 
 Download the repository.
@@ -32,6 +33,7 @@ Play the game!
 
 ##################
 2. HEAVY
+
 ##################
 
 The Heavy version is a heavily expanded version of RPG Traits. While the Core version only overhauls Traits and incompatibility is mostly limited to trait-related mods, the Heavy version goes completely loose and overhauls a more things to allow for more creativity in designing species. The main things that have been overhauled are:
@@ -46,6 +48,7 @@ In summary: pick Heavy if you want even MOAR freedom when designing your races, 
 
 ##################
 3. Bugs, Troubleshooting, Discussion & Suggestions
+
 ##################
 While the Steam workshop is very popular, it's also a horrible platform for discussion, comments being arranged chronologically amongst other bad things. So for bug reporting, discussion, updates and suggestions it's highly recommended to go to the RPG Traits subreddit:
 
@@ -60,6 +63,7 @@ Cheers, LuxArdens
 
 ##################
 4. Credits
+
 ##################
 
 Notable Contributors, in no particular order of amount of work: 
@@ -76,6 +80,7 @@ RPG Traits is under MIT License - meaning you can do whatever the heck you want 
 
 ##################
 5. RPG Traits tips
+
 ##################
 
 Rather than a dumb list of all the traits and their modifiers (which is rather huge), here are some common tips to players for this mod:
@@ -109,6 +114,7 @@ HEAVY-specific tips:
 
 ##################
 6. (not) recommended mods
+
 ##################
 
 Recommended:
