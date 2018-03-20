@@ -95,7 +95,7 @@ Rather than a dumb list of all the traits and their modifiers (which is rather h
 
 7. The 3 Repugnant traits, as well as Lingua Idumentis and Olfactory communication give negative modifiers to diplomacy as well.
 
-8. If you wish to remove the prescripted empires, simply delete the folder "prescripted_countries" from the mod. Editing the prescripted empires or forcing them to spawn is done most easily by clicking edit and then saving them as a new species.
+8. RPGT comes with some premade countries to replace the vanilla ones, which are broken. If you wish to remove the prescripted empires, simply delete the folder "prescripted_countries" from the mod. Editing the prescripted empires or forcing them to spawn is done most easily by clicking edit and then saving them as a new species.
 
 
 HEAVY-specific tips:
@@ -112,6 +112,7 @@ HEAVY-specific tips:
 ##################
 
 Recommended:
+- Enhanced AI
 - All the portrait mods in the world
 - All the flag mods in the world
 - Tradition mods
@@ -122,7 +123,7 @@ Recommended:
 - Any other 'add-on' only mod that doesn't edit vanilla files
 
 Semi-compatible:
-- UI mods. These must not edit the same files that RPG Traits also edit (namely, the ones found in the interface map)
+- UI mods. These must not edit the same files that RPG Traits also edit (namely, the ones found in the interface folder)
 - Mods that add habitability modifiers in combination with the Heavy version. These will cause imbalance. In combination with Core version is fine.
 
 NOT COMPATIBLE:
