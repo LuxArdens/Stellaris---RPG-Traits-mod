@@ -50,7 +50,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -62,7 +62,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -74,7 +74,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -86,7 +86,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -98,7 +98,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -110,7 +110,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -122,7 +122,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -134,7 +134,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -146,7 +146,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -158,7 +158,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -170,7 +170,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -182,7 +182,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -195,7 +195,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -207,7 +207,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -219,7 +219,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -231,7 +231,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -243,7 +243,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -255,7 +255,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -268,7 +268,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -280,7 +280,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -292,7 +292,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -304,7 +304,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -316,7 +316,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -328,7 +328,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -341,7 +341,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -353,7 +353,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -365,7 +365,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -377,7 +377,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -389,7 +389,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -401,7 +401,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -414,7 +414,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -426,7 +426,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -438,7 +438,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -450,7 +450,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -462,7 +462,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -474,7 +474,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -487,7 +487,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -499,7 +499,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -511,7 +511,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -523,7 +523,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -535,7 +535,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -547,7 +547,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -559,7 +559,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -571,7 +571,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -583,7 +583,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -595,7 +595,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -607,7 +607,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -619,7 +619,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -631,7 +631,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -643,7 +643,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -655,7 +655,7 @@ terraform_link = {
 	duration = @d3
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -667,7 +667,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -679,7 +679,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -691,7 +691,7 @@ terraform_link = {
 	duration = @d2
 	
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -821,7 +821,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -833,7 +833,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -845,7 +845,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -857,7 +857,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -869,7 +869,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -881,7 +881,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -893,7 +893,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -905,7 +905,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -917,7 +917,7 @@ terraform_link = {
 	duration = @d3
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -929,7 +929,7 @@ terraform_link = {
 	duration = @d0
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 
@@ -1282,7 +1282,7 @@ terraform_link = {
 	duration = @d3
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 terraform_link = {
@@ -1292,7 +1292,7 @@ terraform_link = {
 	duration = @d3
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 terraform_link = {
@@ -1302,7 +1302,7 @@ terraform_link = {
 	duration = @d3
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 terraform_link = {
@@ -1312,7 +1312,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_atmospheric_manipulation"
+		has_technology = "tech_colonization_2_rpg"
 	}
 }
 #############

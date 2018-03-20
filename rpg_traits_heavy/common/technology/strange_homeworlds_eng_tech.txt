@@ -3,11 +3,11 @@
 @tier3cost3 = 3360
 
 tech_hollow_asteroids = {
-	cost = 4000			# pretty expensive for tier 2
+	cost = 8000			# pretty expensive for tier 2
 	area = engineering
-	tier = 2
+	tier = 3
 	category = { new_worlds }
-	weight = 10
+	weight = 5
 	is_rare = yes
 	
 	modifier = { 
@@ -55,11 +55,11 @@ tech_hollow_asteroids = {
 
 
 tech_planet_modernization = {
-	cost = 8000
+	cost = 15000
 	area = engineering
-	tier = 2
+	tier = 5
 	category = { new_worlds }
-	weight = 10
+	weight = 5
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -111,11 +111,11 @@ tech_planet_modernization = {
 
 
 tech_planet_life_restoration = {
-	cost = 8000
+	cost = 15000
 	area = society
-	tier = 2
+	tier = 5
 	category = { new_worlds }
-	weight = 10
+	weight = 5
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -166,9 +166,9 @@ tech_planet_life_restoration = {
 }
 
 tech_gas_reforming = {
-	cost = 24000
+	cost = 50000
 	area = physics
-	tier = 3
+	tier = 5
 	category = { particles }
 	weight = 5
 	is_rare = yes
@@ -213,9 +213,9 @@ tech_gas_reforming = {
 }
 
 tech_gas_escalation = {
-	cost = 24000
+	cost = 50000
 	area = physics
-	tier = 3
+	tier = 5
 	category = { particles }
 	weight = 5
 	is_rare = yes
@@ -261,11 +261,11 @@ tech_gas_escalation = {
 
 
 tech_asteroid_reforming = {
-	cost = 24000
+	cost = 25000
 	area = engineering
-	tier = 3
+	tier = 4
 	category = { voidcraft }
-	weight = 10
+	weight = 5
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -309,9 +309,9 @@ tech_asteroid_reforming = {
 
 
 tech_planet_breaking = {
-	cost = 24000
+	cost = 50000
 	area = engineering
-	tier = 3
+	tier = 5
 	category = { voidcraft }
 	weight = 5
 	is_rare = yes
