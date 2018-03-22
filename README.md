@@ -73,12 +73,20 @@ Cheers, LuxArdens
 
 Notable Contributors, in no particular order of amount of work: 
 /u/Mithril_Leaf - subterranean trait and various ideas 
+
 /u/2byzantine4med - almost all of the icons 
+
 /u/thefoxymulder - for making some example custom species 
+
 /u/dosaki - for the wonderful Strange Homeworlds mod, which I butchered into the HEAVY version 
+
 /u/hypernova1912 - for various bits and patches 
+
 /u/SiceX - for portrait-specific trait assignment
+
 /u/JJ_of_DisasterCrew, also known as Soviet_Satan on steam - for updating and maintaining the mod during 1.9 and doing several bugfixes
+
+/u/Therlun for making sick trait suggestions
 
 
 RPG Traits is under MIT License - meaning you can do whatever the heck you want with it, but it sure is nice if you give credit where credit is due
