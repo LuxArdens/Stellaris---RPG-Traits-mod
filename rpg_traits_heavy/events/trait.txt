@@ -689,8 +689,12 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_trait = trait_psionic_shifters } 
-				has_country_modifier = trait_psionic_shifters
+				NOT = {
+					any_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_psionic_shifters
+					}
+				}
 			}
 			remove_modifier = "trait_psionic_shifters"
 		}
@@ -704,8 +708,12 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_trait = trait_psionic_ethereals } 
-				has_country_modifier = trait_psionic_ethereals
+				NOT = {
+					any_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_psionic_ethereals
+					}
+				}
 			}
 			remove_modifier = "trait_psionic_ethereals"
 		}
@@ -777,7 +785,12 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_trait = trait_dumb2 }
+				NOT = {
+					any_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_dumb2
+					}
+				}
 			}
 			remove_modifier = "trait_dumb2"
 		}
@@ -792,7 +805,12 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_trait = trait_energy_lifeform }
+				NOT = {
+					any_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_energy_lifeform
+					}
+				}
 			}
 			remove_modifier = "trait_effects_energy_lifeform"
 		}
@@ -807,9 +825,34 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_trait = trait_dumb3 }
+				NOT = {
+					any_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_dumb3
+					}
+				}
 			}
 			remove_modifier = "trait_dumb3"
+		}
+	}
+}
+
+event = {
+	id = "trait.1801"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					any_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_winter
+					}
+				}
+			}
+			remove_modifier = "trait_hibernation"
 		}
 	}
 }
@@ -829,6 +872,7 @@ planet_event = {
 			}
 			planet_size < 25
 			NOT = { is_planet_class = pc_habitat }
+			NOT = { has_planet_flag = eldoc_growth_halted }
 		}
 
 		mean_time_to_happen = {

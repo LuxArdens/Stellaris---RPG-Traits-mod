@@ -1918,7 +1918,7 @@ tech_epigenetic_triggers = {
 	tier = 2
 	category = { biology }
 	prerequisites = { "tech_genome_mapping" }
-	weight = @tier2weight2
+	weight = @tier2weight1
 	
 	feature_flags = {
 		uplifting

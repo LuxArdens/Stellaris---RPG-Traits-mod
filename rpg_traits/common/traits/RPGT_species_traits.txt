@@ -652,7 +652,7 @@ trait_slow_breeders1 = {
 	cost = -1
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_slow_breeders1.dds"
-	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders3" "trait_titanic" }
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders3" "trait_tiny" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
@@ -664,7 +664,7 @@ trait_slow_breeders2 = {
 	cost = -3
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_slow_breeders2.dds"
-	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders3" "trait_titanic" }
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders3" "trait_tiny" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
@@ -676,7 +676,7 @@ trait_slow_breeders3 = {
 	cost = -6
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_slow_breeders3.dds"
-	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders1" "trait_titanic" }
+	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders1" "trait_tiny" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {

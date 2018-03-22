@@ -60,6 +60,8 @@
 	
     tech_genemod_ai_unfriendly:0 "Hostile genemodding"
     tech_genemod_ai_unfriendly_desc:0 "Allows you to give special negative traits to conquered species, turning them into lobotomites or otherwise crippling them."
+    tech_repeatable_trait_points:0 "Refined genemodding"
+    tech_repeatable_trait_points_desc:0 "As we experiment, we continue to learn new ways in improving organics without harming their original design."
 	
 	
 	
