@@ -359,6 +359,10 @@ tech_repeatable_trait_points = {
 	
 	weight_modifier = {
 		factor = @repatableTechFactor
+		modifier = {
+			factor = 2
+			has_civic = civic_bio_assimilator
+		}
 	}
 	
 	ai_weight = {

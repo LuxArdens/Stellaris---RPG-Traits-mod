@@ -1,0 +1,61 @@
+civic_bio_assimilator = {		# fanatical gene-modders, turn themselves (and others) into all kinds of bio-horrors. Get earlier access to fancy stuff. Kind of Hitler, but not literally yet.
+	potential = { authority = { NOT = { value = auth_machine_intelligence } } }
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_strogg
+				value = civic_hive_devouring_swarm
+			}
+		}
+	}
+	modification = yes
+	random_weight = {
+		base = 0		# Ai won't use this
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = civic_tooltip_civic_bio_assimilator_effects
+	modifier = {
+		modify_species_cost_mult = -0.5
+	}
+}
+
+civic_strogg = {		# more like compulsory, hostile cyborg-assimilation. Good for hive species too. Literally Hitler.
+	potential = { authority = { value = auth_hive_mind } }
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_bio_assimilator
+				value = civic_hive_devouring_swarm
+				value = civic_mechanists
+				value = civic_syncretic_evolution
+			}
+		}
+	}
+	modification = yes
+	random_weight = {
+		base = 0		# Ai won't use this
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = civic_tooltip_civic_strogg_effects
+	modifier = {
+		#modify_species_cost_mult = -0.5
+	}
+}

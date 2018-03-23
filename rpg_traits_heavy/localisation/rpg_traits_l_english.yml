@@ -307,7 +307,7 @@
  trait_egg_born_desc:0 "§LThis species matures completely inside eggs. This makes their colonization attempts a lot easier.\n\n Colony ships are cheaper and deploy faster.§!\n"
  
  trait_hoarders:0 "Hoarders"
- trait_hoarders_desc:0 "§LLike dragons, this species hoards its riches into endlessly large piles. The logistics of storing so much material reduce their production efficiency somewhat though.\n\n +200000 storage cap \n\n tiny production penalty§!\n"
+ trait_hoarders_desc:0 "§LLike dragons, this species hoards its riches into endlessly large piles. The logistics of storing so much material reduce their production efficiency somewhat though.\n\n +200000 storage cap\n\n tiny production penalty§!\n"
  
  trait_curious:0 "Curious"
  trait_curious_desc:0 "§LThis species is naturally curious and creative, making them very thorough in their searches. They find more anomalies and think of alternative solutions.\n\n 2 research alternatives +100% anomaly chance -50% survey speed§!\n"
@@ -316,7 +316,7 @@
  trait_uncreative_desc:0 "§LThis species has no creativity and exploration bores them. They are extremely inept at finding innovative solutions to problems and their usual interstellar exploration protocol is to take one picture and leave.\n\n -2 research alternatives -50% anomaly chance +100% survey speed§!\n"
  
  trait_airborne:0 "Airborne"
- trait_airborne_desc:0 "§L"I believe I can fly... -Wait what? I have no Avian portrait? Well, just imagine I have one then." - This species is comfortable with 3 dimensional engagements and performs better in stellar combat as well.\n\n ship_fire_rate_mult = 0.2 \n\n ship_tracking_add = 10 \n\n ship_evasion_add = 10 §!\n"
+ trait_airborne_desc:0 "§L"I believe I can fly... -Wait what? I have no Avian portrait? Well, just imagine I have one then." - This species is comfortable with 3 dimensional engagements and performs better in stellar combat as well.\n\n ship_fire_rate_mult = 0.2\n\n ship_tracking_add = 10\n\n ship_evasion_add = 10 §!\n"
  
  trait_titanic:0 "Titanic"
  trait_titanic_desc:0 "§L"Rise up! Rise up! Rise up you sleeping giant!"\n\n Titanic lifeforms, towering above the trees. Their buildings, tools, weapons and ships fit their size, as do their stomachs.§!\n"
@@ -478,19 +478,22 @@
  trait_robot_learning_algorithms2_desc:0 "§LSophisticated quantum state networks predict optimal paths instead of learning through trial-and-error alone. This creates a vastly stronger form of machine intelligence.§!\n"
  
  trait_precursor:0 "Precursor"
- trait_precursor_desc:0 "§LNot the youngest of civilizations. The precursors have been around for a long time. Though lacking in territory, they have not grown complacent like the Fallen Empires. \n\n Alternative start trait - you start with one very advanced planet, lots of resources and many additional starting techs, in addition to extra trait points due to your ancient-ness. Not as powerful as a true FE, but not limited to their civics either. \n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
+ trait_precursor_desc:0 "§LNot the youngest of civilizations. The precursors have been around for a long time. Though lacking in territory, they have not grown complacent like the Fallen Empires.\n\n Alternative start trait - you start with one very advanced planet, lots of resources and many additional starting techs, in addition to extra trait points due to your ancient-ness. Not as powerful as a true FE, but not limited to their civics either.\n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
  
  trait_psionic_start:0 "Psionics"
- trait_psionic_start_desc:0 "§LThis species mastered the art of psionics long before they ever left the surface of their planet \n\n Alternative Start - start off with the 2 psionic AP already unlocked. \n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
+ trait_psionic_start_desc:0 "§LThis species mastered the art of psionics long before they ever left the surface of their planet\n\n Alternative Start - start off with the 2 psionic AP already unlocked.\n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
  
  trait_ethereal_start:0 "Ethereals"
- trait_ethereal_start_desc:0 "§LThese psionics have completely mastered the alteration of physical reality. They have transcended into something else entirely, residing mostly in a super-dimensional place without space, matter or time. Known under many names: Ghosts, Angels, Subspace Anomalies... the Ethereals do not hunger, do not rest and do not die. They influence the physical realm only through powerful psionic interactions. Though more capable than most organics, they can still be temporarily cast out of the physical realm with force.\n\n Alternative start - Starts you off with the 2 psionic AP perks, as well as the special Ethereal super-duper-psionic trait. \n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
+ trait_ethereal_start_desc:0 "§LThese psionics have completely mastered the alteration of physical reality. They have transcended into something else entirely, residing mostly in a super-dimensional place without space, matter or time. Known under many names: Ghosts, Angels, Subspace Anomalies... the Ethereals do not hunger, do not rest and do not die. They influence the physical realm only through powerful psionic interactions. Though more capable than most organics, they can still be temporarily cast out of the physical realm with force.\n\n Alternative start - Starts you off with the 2 psionic AP perks, as well as the special Ethereal super-duper-psionic trait.\n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
  
  trait_preftl:0 "Pre-FTL"
  trait_preftl_desc:0 "§LAlternative start - Start off without FTL-tech, and some other basic techs. Why would you want that? I don't know, maybe you like shooting yourself in the foot.§!\n"
  
+ trait_strogg:0 "Cybernetic Construct"
+ trait_strogg_desc:0 "§LLittle resemblance is left of what this species once was. It has been cut up, twisted and molded into a mostly cybernetic construct. Mechanical limbs stick out of burned, rotten flesh. An extra pair of eyes here, another pair of arms there, the constructs are often composed of several biological species, mixed and matched with mechanical parts. The members generally have no personality, being linked together with crude neural interfaces.§!\n"
+ 
  trait_robodesign_geth:0 "G.E.T.H."
- trait_robodesign_geth_desc:0 "§L"Gestalt Entity with Transfer Hyperprocessing" - A peculiar AI design, where entities become more effective and more capable when grouped together. Their frames can only hold a small program, and a single entity is only about as smart as an animal, but large groups of frames share their higher-level processes to produce a true intelligence. \n\n Big penalties when underpopulated, but becomes more effective as more units are present on a planet, up to a maximum of 20 pops for almost full 'synthetic' bonuses.§!\n"
+ trait_robodesign_geth_desc:0 "§L"Gestalt Entity with Transfer Hyperprocessing" - A peculiar AI design, where entities become more effective and more capable when grouped together. Their frames can only hold a small program, and a single entity is only about as smart as an animal, but large groups of frames share their higher-level processes to produce a true intelligence.\n\n Big penalties when underpopulated, but becomes more effective as more units are present on a planet, up to a maximum of 20 pops for almost full 'synthetic' bonuses.§!\n"
  
  trait_robodesign_nanoswarm:0 "Grey Goo"
  trait_robodesign_nanoswarm_desc:0 "§LThe image of some frail organic is not necessarily the optimal form. State of the art nanobot clouds can house a fully sentient programming and accomplish almost miraculous feats, such as building and deconstructing entire cities and fleets in a matter of hours.§!\n"
@@ -543,9 +546,56 @@
  
  
  trait_broodparasite:0 "Brood Parasite"
- trait_broodparasite_desc:0 "§LAn asexual parasite, this species can only reproduce inside a living host. They reproduce exceptionally fast in alien lifeforms, rapidly adapting inside their bodies, whilst injecting them with stimulating chemicals. Infected hosts are completely infatuated with their parasite and its offspring, reducing their own reproduction speed, but making them happier... in a very creepy, unhealthy way. \n\n +200% growth speed when xeno pop present on planet, -50% growth speed for infected xeno pop.§!\n"
+ trait_broodparasite_desc:0 "§LAn asexual parasite, this species can only reproduce inside a living host. They reproduce exceptionally fast in alien lifeforms, rapidly adapting inside their bodies, whilst injecting them with stimulating chemicals. Infected hosts are completely infatuated with their parasite and its offspring, reducing their own reproduction speed, but making them happier... in a very creepy, unhealthy way.\n\n +200% growth speed when xeno pop present on planet, -50% growth speed for infected xeno pop.§!\n"
  
  bp_increased_reproduction:0 "Increased Reproduction"
  bp_increased_reproduction_desc:0 "This Pop is mating with and having its kids raised by an alien Pop."
  bp_reduced_reproduction:0 "Reduced Reproduction"
  bp_reduced_reproduction_desc:0 "This Pop is mating with and raising the kids of an alien Pop."
+
+ ########################################
+ # Civics 
+ ########################################
+ 
+ civic_bio_assimilator:0 "Bio-Cultivators"
+ civic_bio_assimilator_desc:0 "This race has a habit of re-shaping anything organic to their own needs, including themselves. They have captured and bred every animal on their homeworld and since the discovery of genetics widely practice eugenics (without much success). They are infatuated with the prospect of new techniques to modify themselves and other organic life."
+ civic_tooltip_civic_bio_assimilator_effects:0 "Genemodding costs half as much.\n\n Greatly increase chances of getting genemodding tech options."
+ 
+ civic_strogg:0 "Organic Assimilators"
+ civic_strogg_desc:0 "A race of heavily modified cyborgs, the Organic Assimilators are fanatical about melding man and machine. They are not as subtle about it as others either, and their modifications are often hideous amalgamations of metal protruding through warped flesh, as well as regularly combining several species into a single abomination. Above all else they seek to merge other lifeforms with themselves; to become a unified race of cyborgs."
+ civic_tooltip_civic_strogg_effects:0 "Cannot engage in diplomacy. Starts with a special cybernetic trait and automatically assimilates organics into more cyborgs."
+ 
+ eldoc_planet_growth_halt:0 "Halt planet growth"
+ eldoc_planet_growth_halt_desc:0 "Halt the excavation efforts on this planet. Purely for cosmetic purposes, if gigantic moons and asteroids break your immersion."
+ 
+ eldoc_planet_growth_resume:0 "Resume planet growth"
+ eldoc_planet_growth_resume_desc:0 "Continue the tunneling again, because you want those sweet, sweet tiles."
+ 
+ lobotomize_population:0 "Lobotomize Population"
+ lobotomize_population_desc:0 "Lobotomize the pops on this planet, pacifying them, but also turning them into useless husks. It will take significant effort to undo this."
+ 
+ lobotomizing_population:0 "Lobotomizing Population"
+ lobotomizing_population_desc:0 "The pops on this planet are being lobotomized en masse, pacifying them, but also turning them into useless shells."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

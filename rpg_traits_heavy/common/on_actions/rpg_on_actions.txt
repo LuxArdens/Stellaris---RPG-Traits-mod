@@ -1,5 +1,6 @@
 on_monthly_pulse = {
 	events = {
+		rpgassimilation.1
 	}
 }
 
@@ -67,6 +68,9 @@ on_game_start = {
 		robovents.2
 		robovents.3
 		robovents.4
+		trait.42
+		trait.43
+		trait.46
 	}
 }
 

@@ -552,8 +552,10 @@ tech_barren_habitation = {
 	}
 }
 tech_asteroid_habitation = {
-cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { 	modifier = { 		factor = 0 	} } ai_weight = { factor = 0 } }
+cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
 #tech_example_tech = {
+cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
+tech_trait_strogg = {
 cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
 
 

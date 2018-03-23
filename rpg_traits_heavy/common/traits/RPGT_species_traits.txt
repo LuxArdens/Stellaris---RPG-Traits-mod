@@ -318,6 +318,9 @@ trait_cybernetic = {
 	alters_species_identity = yes
 
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { "tech_trait_cybernetic" }
+	opposites = { trait_strogg }
+	
 	
 	modifier = {
 		tile_resource_physics_research_mult = 0.25
@@ -330,6 +333,37 @@ trait_cybernetic = {
 		army_health = 0.25
 		
 		leader_age = 40
+		
+		pop_environment_tolerance = 0.05		# reduced for planet overhaul
+		pc_ai_habitability = 0.1
+	}
+}
+
+trait_strogg = {
+	cost = 5
+
+	initial = no
+	randomized = no
+	modification = no
+
+	allowed_archetypes = { BIOLOGICAL MACHINE ROBOT }
+	prerequisites = { "tech_trait_strogg" }
+	opposites = { trait_cybernetic }
+	
+	modifier = {
+		tile_resource_physics_research_mult = 0.25
+		tile_resource_society_research_mult = 0.25
+		tile_resource_engineering_research_mult = 0.25
+		tile_resource_minerals_mult = 0.4
+		tile_resource_energy_mult = 0.1
+		army_damage_mult = 1
+		army_health = 1
+		army_defense_health_mult = 0.5
+		army_defense_damage_mult = 0.5
+		leader_age = 20
+		pop_food_req_mult = -0.75
+		pop_happiness = -0.2			# only in effect if you liberate a strogg species and then remove hive mind trait
+		pop_other_species_happiness = -0.1		# kind of disgusting
 		
 		pop_environment_tolerance = 0.05		# reduced for planet overhaul
 		pc_ai_habitability = 0.1
@@ -610,7 +644,7 @@ trait_presapient_irradiated = {
 }
 
 trait_hive_mind = {
-	allowed_archetypes = { BIOLOGICAL }
+	allowed_archetypes = { BIOLOGICAL MACHINE ROBOT }
 	cost = 0
 	initial = no
 	randomized = no
@@ -1978,7 +2012,7 @@ trait_genemod_enraged = {			# perfect for making battle thralls out of defeated 
 	modification = yes
 	advanced_trait = yes
 	cost = 0
-	icon = "gfx/interface/icons/traits/trait_enraged.dds"
+	icon = "gfx/interface/icons/traits/trait_genemod_enraged.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
@@ -2004,7 +2038,7 @@ trait_genemod_lobotomized = {
 	modification = yes
 	forced_happiness = yes
 	cost = 0
-	icon = "gfx/interface/icons/traits/trait_lobotomized.dds"
+	icon = "gfx/interface/icons/traits/trait_genemod_lobotomized.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
@@ -2057,7 +2091,7 @@ trait_constant_pain = {
 	initial = no
 	randomized = no
 	advanced_trait = yes
-	icon = "gfx/interface/icons/traits/trait_pain.dds"
+	icon = "gfx/interface/icons/traits/trait_constant_pain.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {

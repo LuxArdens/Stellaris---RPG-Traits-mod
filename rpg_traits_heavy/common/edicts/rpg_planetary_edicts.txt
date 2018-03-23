@@ -1,0 +1,77 @@
+planet_edict = { 
+	name = "eldoc_planet_growth_halt" 
+	cost = { influence = 1 } 
+	length = 0
+	
+	potential = {
+		NOT = { is_planet_class = pc_habitat }
+		NOT = { has_planet_flag = eldoc_growth_halted }
+		NOT = { planet_size >= 25 }
+		any_pop = {
+             OR = {
+                    has_trait = trait_subterranean
+                    has_trait = trait_living_planet
+             }
+             is_being_purged = no
+             is_enslaved = no
+        }
+	}
+
+	effect = {
+
+		hidden_effect = { set_planet_flag = eldoc_growth_halted }
+	
+	}
+}
+
+planet_edict = { 
+	name = "eldoc_planet_growth_resume" 
+	cost = { influence = 1 } 
+	length = 0
+
+	potential = {
+		NOT = { is_planet_class = pc_habitat }
+		NOT = { planet_size >= 25 }
+		has_planet_flag = eldoc_growth_halted 
+		any_pop = {
+             OR = {
+                    has_trait = trait_subterranean
+                    has_trait = trait_living_planet
+             }
+             is_being_purged = no
+             is_enslaved = no
+        }
+	}
+	effect = {
+
+		hidden_effect = { remove_planet_flag = eldoc_growth_halted }
+
+	}
+}
+
+# planet_edict = { 
+	# name = "lobotomize_population" 
+	# cost = { influence = 0 } 
+	# length = 0
+
+	# potential = {
+		# any_pop = {
+            # NOT = {
+                # has_trait = trait_genemod_lobotomized
+            # }
+            # is_being_purged = no
+            # is_enslaved = no
+        # }
+	# }
+	# effect = {
+		# hidden_effect = { 
+			# set_timed_planet_flag = { flag = lobotomizing_population days = 365 }
+			# add_modifier = { modifier = lobotomizing_population days = 365 }
+		# }
+		
+	# }
+# }
+
+
+
+

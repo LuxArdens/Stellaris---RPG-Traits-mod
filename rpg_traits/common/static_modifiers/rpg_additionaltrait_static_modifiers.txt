@@ -117,6 +117,23 @@ trait_tiny = {
 	#max_energy = -1000
 }
 
+titan_robot_debuff = {
+	tile_resource_engineering_research_mult = -5
+	tile_resource_physics_research_mult = -5
+	tile_resource_society_research_mult = -5
+}
+
+tiny_robot_buff = {
+	tile_resource_engineering_research_mult = 0.75
+	tile_resource_physics_research_mult = 0.75
+	tile_resource_society_research_mult = 0.75
+}
+
+
+
+
+
+
 trait_titanic_machine = {
 	# big buildings, tile blockers are irrelevant
 	planet_building_cost_mult = 4

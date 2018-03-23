@@ -139,6 +139,7 @@ ap_engineered_evolution = {
 		add_research_option = tech_gene_seed_purification
 		hidden_effect = {
 			country_event = { id = utopia.2700 }
+			country_event = { id = trait.44 }
 		}
 	}
 	possible = {
@@ -201,6 +202,7 @@ ap_evolutionary_mastery = {
 		add_research_option = tech_genetic_resequencing
 		hidden_effect = {
 			country_event = { id = utopia.2703 }
+			country_event = { id = trait.45 }
 		}
 	}
 	possible = {
@@ -253,6 +255,7 @@ ap_the_flesh_is_weak = {
 		custom_tooltip = "flesh_is_weak_tooltip"
 		hidden_effect = {
 			country_event = { id = utopia.2500 }
+			give_technology = "tech_trait_cybernetic"
 		}
 	}
 	modifier = {

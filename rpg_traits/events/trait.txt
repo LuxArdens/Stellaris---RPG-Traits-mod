@@ -481,6 +481,20 @@ event = {
 
 
 event = {
+	id = "trait.36"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_precursor
+			}
+			country_event = { id = altstart.1 }
+		}
+	}
+}
+event = {
 	id = "trait.37"
 	hide_window = yes
 	is_triggered_only = yes
@@ -970,6 +984,105 @@ event = {
 		}
 	}
 }
+
+#######################################
+#	Civics
+#######################################
+
+event = {
+	id = "trait.42"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_bio_assimilator
+			}
+			give_technology = { tech = "tech_civic_bio_assimilator" message = no }
+		}
+	}
+}
+event = {
+	id = "trait.43"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_strogg
+			}
+			give_technology = { tech = "tech_civic_strogg" message = no }
+		}
+	}
+}
+event = {		# reduce genemodding bonus slightly after getting first AP
+	id = "trait.44"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_bio_assimilator
+			}
+			remove_modifier = "civic_bio_assimilator_1"
+			remove_modifier = "civic_bio_assimilator_2"
+			add_modifier = {
+				modifier = civic_bio_assimilator_1
+				days = -1
+			}
+		}
+	}
+}
+event = {		# reduce genemodding bonus slightly after getting second AP
+	id = "trait.45"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_bio_assimilator
+			}
+			remove_modifier = "civic_bio_assimilator_1"
+			remove_modifier = "civic_bio_assimilator_2"
+			add_modifier = {
+				modifier = civic_bio_assimilator_2
+				days = -1
+			}
+		}
+	}
+}
+event = {		# add strogg trait et cetera
+	id = "trait.46"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_strogg
+			}
+		every_owned_pop = {
+			modify_species = {
+				species = this
+				remove_trait = trait_cybernetic
+				add_trait = trait_strogg
+			}
+		}
+			add_modifier = {
+				modifier = trait_strogg
+				days = -1
+			}
+		}
+	}
+}
+
+
+
+
 
 
 
