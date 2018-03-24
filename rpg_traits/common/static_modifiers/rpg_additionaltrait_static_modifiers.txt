@@ -257,12 +257,13 @@ silent_observers = {
 }
 
 turtles = {
-	shipclass_military_station_damage_mult = 2.0
+	shipclass_military_station_damage_mult = 1
 	shipclass_military_station_build_cost_mult = -0.8
 		shipclass_military_station_hull_mult = 1
 		shipsize_military_station_small_hull_add = 500
 		country_naval_cap_add = -20
-		country_starbase_capacity_add = 10
+		country_starbase_capacity_add = 100
+	starbase_defense_platform_capacity_add = 5
 }
 
 trait_dumb1 = {
@@ -689,6 +690,21 @@ trait_robodesign_integration2 = {
 	ship_windup_mult = -0.5
 	ship_winddown_mult = -0.5
 	ship_emergency_ftl_mult = -0.5
+}
+
+
+##########################################################################
+# Civic stuff
+##########################################################################
+
+civic_bio_assimilator_1 = {
+	modify_species_cost_mult = 0.25
+}
+civic_bio_assimilator_2 = {
+	modify_species_cost_mult = 0.375
+}
+lobotomizing_population = {
+	modify_species_cost_mult = 0.375
 }
 
 

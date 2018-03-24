@@ -148,13 +148,13 @@
  trait_robust3_desc:0 "§LGenetically enhanced tissue structures, bones infused with advanced alloys and nanotics that filter toxins and repair damage; this species is close to indestructible. They can survive on worlds that are completely alien to them and fight on despite sustaining hits that would shred lesser species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_thrifty1:0 "Motivated"
- trait_thrifty1_desc:0 "§LThis species likes organising stuff. And doing stuff. And writing stuff. And making stuff. And building stuff. Let's do some stuff.§!\n"
+ trait_thrifty1_desc:0 "§LThis species likes organising stuff. And writing stuff. And making stuff. And building stuff. Just doing stuff. Let's go do some stuff.§!\n"
  
  trait_thrifty2:0 "Restless"
- trait_thrifty2_desc:0 "§LThis species barely ever rests. Literally, because they barely need sleep except for healing physically. As a result they tend to get a lot done.§!\n"
+ trait_thrifty2_desc:0 "§LThis species barely ever rests, or sits still. They are continuously active and work at a very high pace.§!\n"
  
  trait_thrifty3:0 "Fully Awake"
- trait_thrifty3_desc:0 "§LEnhanced neural feedback and healing systems remove the need for sleep and make this species fully aware and concentrated on their tasks. They never lack motivation to get things done and can work endlessly.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
+ trait_thrifty3_desc:0 "§LEnhanced neural feedback and healing systems remove the need for sleep and make this species fully aware and concentrated on their tasks. They never lack motivation to get things done, working endlessly at a very fast pace.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_rapid_breeders1:0 "Fertile"
  trait_rapid_breeders1_desc:0 "§LThis species produces lots of offspring.§!\n"
@@ -163,7 +163,7 @@
  trait_rapid_breeders2_desc:0 "§LThis species doesn't really breed like rabbits. They breed somewhat faster.§!\n"
  
  trait_rapid_breeders3:0 "Machine-assisted reproduction"
- trait_rapid_breeders3_desc:0 "§LArtifical wombs combined with neural imprinting allow for explosive population growth. Unlike clones these are genetically tailored, unique makeup that can continue to multiply naturally as well.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
+ trait_rapid_breeders3_desc:0 "§LArtifical wombs combined with neural imprinting allow for explosive population growth. Unlike clones these have a specially tailored, unique genetic makeup and can continue to multiply naturally as well.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_homogenous:0 "Homogeneous"
  trait_homogenous_desc:0 "§LThis species is very homogeneous, and lacks individual diversity. Each member is just as smart, just as strong and just as big as the next. While this means few members are particularly incapable, it also deprives them of notable outliers that are more capable.§!\n"
@@ -280,7 +280,7 @@
  trait_euphoria_desc:0 "§LIn a constant state of euphoria, this species is always happy and content. Sometimes a little too content with nothing.§!\n"
  
  trait_turtles:0 "Defensive Nature"
- trait_turtles_desc:0 "§LThis race instinctively tends to focus on defence only, preferring to wait out the end of a war rather than just finish it.\n\n military stations have vastly more hitpoints and do more damage, can build more starbases, but has reduced naval capacity §!\n"
+ trait_turtles_desc:0 "§LThis race instinctively tends to focus on defence only, preferring to wait out the end of a war rather than just finish it.\n\nReduced naval capacity, defensive platforms are much cheaper, have +100% hitpoints, +100% damage. Each station can hold 5 more defensive platforms, and has enormous starbase capacity.§!\n"
  
  trait_utterly_terrifying:0 "Dread Masters"
  trait_utterly_terrifying_desc:0 "§LThe stuff of nightmares, these ghostly critters are masters of dread and psychological warfare. They instill fear in even the bravest of soldiers.§!\n"
