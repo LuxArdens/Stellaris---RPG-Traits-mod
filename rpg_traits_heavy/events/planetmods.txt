@@ -8,12 +8,12 @@ planet_event = {
 	show_sound = event_super_explosion
 	
 	trigger = {
-		AND = {
-			owner = { has_technology = "tech_planetmod_gravity" } 
-			OR ={
-				has_planet_modifier = low_gravity
-				has_planet_modifier = high_gravity
-			}
+		has_owner = yes
+		original_owner = yes
+		owner = { has_technology = "tech_planetmod_gravity" }
+		OR ={
+			has_modifier = "low_gravity"
+			has_modifier = "high_gravity"
 		}
 	}
 	
