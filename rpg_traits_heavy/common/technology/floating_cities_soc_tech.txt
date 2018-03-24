@@ -27,6 +27,22 @@ tech_floating_cities = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
 	}
 
 	ai_weight = {

@@ -96,7 +96,7 @@ Rather than a dumb list of all the traits and their modifiers (which is rather h
 
 7. The 3 Repugnant traits, as well as Lingua Idumentis and Olfactory communication give negative modifiers to diplomacy as well.
 
-8. RPGT comes with some premade countries to replace the vanilla ones, which are broken. If you wish to remove the prescripted empires, simply delete the folder "prescripted_countries" from the mod. Editing the prescripted empires or forcing them to spawn is done most easily by clicking edit and then saving them as a new species.
+8. RPGT comes with some custom made countries both to replace the vanilla ones and to serve as examples. If you wish to add these prescripted empires, simply copy and paste the content of the text file "user_empire_designs" into your own "user_empire_designs" (found in the root Stellaris folder). Alternatively you could replace the file entirely, but that deletes your own designs, so be sure to make a back-up.
 
 
 HEAVY-specific tips:

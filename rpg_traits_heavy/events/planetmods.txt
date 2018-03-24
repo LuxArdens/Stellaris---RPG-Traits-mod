@@ -1,0 +1,42 @@
+namespace = planetmods
+
+planet_event = {
+	id = planetmods.1
+	title = "planetmods.1.name"
+	desc = "planetmods.1.desc"
+	picture = "GFX_evt_nuclear_explosion"
+	show_sound = event_super_explosion
+	
+	trigger = {
+		AND = {
+			owner = { has_technology = "tech_planetmod_gravity" } 
+			OR ={
+				has_planet_modifier = low_gravity
+				has_planet_modifier = high_gravity
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	immediate = {
+		remove_modifier = low_gravity
+		remove_modifier = high_gravity
+	}
+	option = {
+		name = planetmods.1.option
+		remove_modifier = low_gravity
+		remove_modifier = high_gravity
+	}
+}
+planet_event = {
+	id = planetmods.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		add_modifier = { modifier = "high_gravity" days = -1 }
+	}
+}

@@ -10,7 +10,7 @@ tech_hollow_asteroids = {
 	weight = 5
 	is_rare = yes
 	
-	modifier = { 
+	modifier = {
 		pc_asteroid_habitability = 0.4
 	}
 
@@ -29,16 +29,32 @@ tech_hollow_asteroids = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
-    modifier = {
-      factor = 3
-      research_leader = {
-        area = physics
-        OR = {
-          has_trait = "leader_trait_maniacal"
-          has_trait = "leader_trait_curator"
-        }
-      }
-    }
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+		modifier = {
+		factor = 3
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
 	}
 
 	ai_weight = {
@@ -84,6 +100,22 @@ tech_planet_modernization = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
 		}
     modifier = {
       factor = 3
@@ -141,6 +173,22 @@ tech_planet_life_restoration = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
     modifier = {
       factor = 3
       research_leader = {
@@ -188,6 +236,22 @@ tech_gas_reforming = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
     modifier = {
       factor = 3
       research_leader = {
@@ -234,6 +298,22 @@ tech_gas_escalation = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
 		}
     modifier = {
       factor = 3
@@ -283,6 +363,22 @@ tech_asteroid_reforming = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
     modifier = {
       factor = 3
       research_leader = {
@@ -331,6 +427,22 @@ tech_planet_breaking = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
     modifier = {
       factor = 3
       research_leader = {
@@ -350,6 +462,66 @@ tech_planet_breaking = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+
+tech_planetmod_gravity = {
+	cost = 10000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	weight = 20
+	is_rare = yes
+
+	prereqfor_desc = {
+		set_country_flag = "tech_planetmod_gravity"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				any_planet_within_border = {
+					has_modifier = "low_gravity"
+				}			
+			}
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				any_controlled_planet = {
+					has_modifier = "low_gravity"
+				}			
 			}
 		}
 	}

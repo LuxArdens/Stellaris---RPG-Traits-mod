@@ -262,7 +262,7 @@ turtles = {
 		shipclass_military_station_hull_mult = 1
 		shipsize_military_station_small_hull_add = 500
 		country_naval_cap_add = -20
-		country_starbase_capacity_add = 10
+		country_starbase_capacity_add = 100
 }
 
 trait_dumb1 = {

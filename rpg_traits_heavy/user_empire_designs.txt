@@ -131,12 +131,11 @@
 		name="Strogg"
 		plural="Strogg"
 		adjective="Strogg"
-		species_bio="The Strogg are cybernetic constructs of unclear origins which reproduce by taking biological components and fusing them with advanced technology in the brutal surgical process of Stroggification that enslaves their minds and enhances their bodies for war.
-
+		species_bio="The Strogg are cybernetic constructs of unclear origins which reproduce by taking biological components and fusing them with advanced technology in the brutal surgical process of Stroggification that enslaves their minds and enhances their bodies for war.
+
 The Strogg's need to harvest biological components for their own augmentation, and the flesh of slain enemies for the creation of stroyent, is their primary motivation, since it's necessary for their survival."
 		name_list="MOL1"
 		trait="trait_hive_mind"
-		trait="trait_cybernetic"
 		trait="trait_repugnant3"
 		trait="trait_robust1"
 		trait="trait_conservational2"
@@ -151,7 +150,7 @@ The Strogg's need to harvest biological components for their own augmentation, a
 	name="Strogg Empire"
 	adjective="Strogg"
 	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
+	government="gov_hive_mind"
 	advisor_voice_type="l_hivemind"
 	planet_name="Stroggos"
 	planet_class="pc_barren"
@@ -191,7 +190,7 @@ The Strogg's need to harvest biological components for their own augmentation, a
 	spawn_enabled=yes
 	ethic="ethic_gestalt_consciousness"
 	civics={
-		"civic_hive_devouring_swarm"
+		"civic_strogg"
 		"civic_hive_ascetic"
 	}
 }
@@ -697,10 +696,11 @@ The Strogg's need to harvest biological components for their own augmentation, a
 		trait="trait_cybernetic"
 		trait="trait_repugnant3"
 		trait="trait_fleeting3"
-		trait="trait_thrifty2"
-		trait="trait_strong2"
-		trait="trait_agrarian2"
-		trait="trait_conservational2"
+		trait="trait_agrarian3"
+		trait="trait_dumb3"
+		trait="trait_thrifty3"
+		trait="trait_strong3"
+		trait="trait_conservational3"
 	}
 	name="OP Bot Directive"
 	adjective="OP Bot"
@@ -865,7 +865,7 @@ The Strogg's need to harvest biological components for their own augmentation, a
 	spawn_as_fallen=no
 	ignore_portrait_duplication=no
 	room="default_room"
-	spawn_enabled=yes
+	spawn_enabled=no
 	ethic="ethic_gestalt_consciousness"
 	civics={
 		"civic_machine_terminator"
@@ -1046,5 +1046,76 @@ The Strogg's need to harvest biological components for their own augmentation, a
 	civics={
 		"civic_syncretic_evolution"
 		"civic_environmentalist"
+	}
+}
+"Free Strogg"
+={
+	key="Free Strogg"
+	ship_prefix="ISS"
+	species={
+		class="HUM"
+		portrait="humanoid_hp_06"
+		name="Strogg"
+		plural="Strogg"
+		adjective="Strogg"
+		species_bio="The free Strogg are Strogg that have been isolated from their brethren for some time.  After this period, their neural implant could be safely removed, resulting in the birth of a new species that is extremely confused, but free."
+		name_list="MOL1"
+		trait="trait_utterly_terrifying"
+		trait="trait_custom_race"
+		trait="trait_bonus"
+		trait="trait_communal3"
+		trait="trait_agrarian2"
+		trait="trait_smart1"
+		trait="trait_venerable1"
+		trait="trait_homogenous"
+		trait="trait_repugnant3"
+		trait="trait_slow_breeders1"
+	}
+	name="Free Strogg"
+	adjective="Free Strogg"
+	authority="auth_dictatorial"
+	government="gov_technocratic_dictatorship"
+	advisor_voice_type="l_hivemind"
+	planet_name="Stroggos"
+	planet_class="pc_barren"
+	system_name="Stroggo"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="miscgame-6364"
+			file="game-warframe-stalker1.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Makron"
+		portrait="humanoid_hp_06"
+		texture=0
+		hair=0
+		clothes=4
+		ruler_title="The"
+		ruler_title_female="makron"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_xenophobe"
+	ethic="ethic_fanatic_materialist"
+	civics={
+		"civic_bio_assimilator"
+		"civic_technocracy"
 	}
 }

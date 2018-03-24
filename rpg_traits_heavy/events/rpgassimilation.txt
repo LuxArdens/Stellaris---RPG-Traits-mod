@@ -139,3 +139,33 @@ planet_event = {
 		}
 	}
 }
+
+planet_event = {
+	id = rpgassimilation.3
+	hide_window = yes
+	
+	trigger = {
+		AND = {
+			is_homeworld = no		# zou extra planeten bij advanced start moeten verwijderen
+			any_pop = {
+				has_trait = trait_living_planet
+				NOT = { has_modifier = living_planet_killed }
+			}
+			owner = { NOT = { has_trait = living_planet } }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_living_planet
+			}
+			# kill it
+			kill_pop = yes
+		}
+	}
+}
