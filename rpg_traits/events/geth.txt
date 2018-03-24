@@ -145,6 +145,7 @@ planet_event = {		# debuffs Titanic robot research
 	hide_window = yes
 	
 	trigger = {
+		has_owner = yes
 		owner = { has_trait = trait_titanic }
 		any_pop = {
 			has_trait = trait_mechanical
@@ -176,6 +177,7 @@ planet_event = {		# buffs Tiny robot research
 	hide_window = yes
 	
 	trigger = {
+		has_owner = yes
 		owner = { has_trait = trait_tiny }
 		any_pop = {
 			has_trait = trait_mechanical
