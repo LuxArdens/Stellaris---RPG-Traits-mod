@@ -525,6 +525,11 @@
  planetmods.1.desc:0 "A new planetary graviton generator has been finished on [Root.Planet.GetName]. The enormous structure, mostly composed of a gigantic zero point reactor, will manipulate the local field to be more in line with what our species prefers."
  planetmods.1.option:0 "Splendid."
  
+ equalizer.14.name:0 "UNLIMITED POWER"
+ equalizer.14.desc:0 "See? THIS one's definitely different! He's planning his moves, counting his steps. Made his titans "Fully Awake", that MUST be on purpose! Did he know how powerful that would be? Or did he guess?\n - 'Well, he couldn't possibly know, with the changes stacking additively and all that. We should warn him about the effect, just in case. It's only the right thing to do.'\n Hmmmpff... I guess you're right, but I'm telling you, one of these players is the strategic mastermind we're looking for. \n\n <KUCH> Human, this is Kragot of the Scutum-Centaurus Arm speaking. We noticed you took a very powerful trait combination, and would like to helpfully inform you that if you use this combination, you'll win this game with ease. Which makes our search for great intellect harder, so please don't? Give yourself a challenge, why don't you. Thank you."
+ equalizer.14.optiona:0 "What the..."
+ equalizer.14.optionb:0 "Oooo-kay"
+ 
  civic_rpg_hive_devouring_swarm:0 "Devouring Swarm"
  
  NAME_Gas:0 "Gas Giant System"

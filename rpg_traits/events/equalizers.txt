@@ -420,7 +420,7 @@ planet_event = {
 			limit = {
 				AND = {
 					has_trait = trait_titanic
-					has_trait = trait_thrifty12
+					has_trait = trait_thrifty2
 				}
 			}
 			remove_modifier = titanic_lazy1
@@ -455,6 +455,10 @@ planet_event = {
 	}
 	
 	immediate = {
+		if = { limit = { NOT = { has_global_flag = "warning_is_op" } }
+			planet_event = { id = equalizer.14 }
+			set_global_flag = "warning_is_op"
+		}
 		every_owned_pop = {
 			limit = {
 				AND = {
@@ -470,6 +474,254 @@ planet_event = {
 			remove_modifier = titanic_thrifty3
 			add_modifier = {
 				modifier = titanic_thrifty3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {		# nothing to see here, move on
+	id = equalizer.14
+	title = "equalizer.14.name"
+	desc = equalizer.14.desc
+	picture = GFX_evt_spy_orb
+	is_triggered_only = yes
+	
+	option = {
+		name = equalizer.14.optiona
+	}
+	option = {
+		name = equalizer.14.optionb
+	}
+}
+planet_event = {
+	id = equalizer.15
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_lazy1
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_lazy1
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_lazy1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.16
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_lazy2
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_lazy2
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_lazy2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.17
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_lazy3
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_lazy3
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_lazy3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.19
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_thrifty1
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_thrifty1
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_thrifty1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.20
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_thrifty2
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_thrifty2
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_thrifty2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.21
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_thrifty3
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_thrifty3
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_thrifty3
 				days = -1
 			}
 		}

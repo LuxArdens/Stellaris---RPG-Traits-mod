@@ -45,7 +45,70 @@ titanic_thrifty2 = {
 		tile_resource_minerals_mult = 2.5
 		tile_resource_food_mult = 2.5
 }
-titanic_thrifty3 = {			# this puts Titanic + Fully Awake combo at 1500% mineral production. Needless to say this is overpowered.
+titanic_thrifty3 = {			# this puts Titanic + Fully Awake combo at 1500% mineral production. Needless to say this is pretty sickeningly overpowered.
 		tile_resource_minerals_mult = 7.5
 		tile_resource_food_mult = 7.5
 }
+
+titanic_dumb2 = {
+		tile_resource_minerals_mult = 7.5
+		tile_resource_food_mult = 7.5
+}
+titanic_dumb3 = {
+		tile_resource_minerals_mult = 7.5
+		tile_resource_food_mult = 7.5
+}
+titanic_smart3 = {
+		tile_resource_minerals_mult = 7.5
+		tile_resource_food_mult = 7.5
+}
+
+tiny_lazy1 = {
+		tile_resource_minerals_mult = 0.16
+		tile_resource_food_mult = 0.16
+}
+tiny_lazy2 = {
+		tile_resource_minerals_mult = 0.4
+		tile_resource_food_mult = 0.4
+}
+tiny_lazy3 = {
+		tile_resource_minerals_mult = 0.6
+		tile_resource_food_mult = 0.6
+}
+tiny_thrifty1 = {
+		tile_resource_minerals_mult = -0.2
+		tile_resource_food_mult = -0.2
+}
+tiny_thrifty2 = {
+		tile_resource_minerals_mult = -0.4
+		tile_resource_food_mult = -0.4
+}
+tiny_thrifty3 = {
+		tile_resource_minerals_mult = -1.2
+		tile_resource_food_mult = -1.2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
