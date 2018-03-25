@@ -755,7 +755,7 @@ trait_weak1 = {
 	
 	modifier = {
 		tile_resource_minerals_mult = -0.3
-		army_damage_mult = -0.25
+		army_damage_mult = -0.3
 	}
 }
 trait_weak2 = {
@@ -779,7 +779,7 @@ trait_weak3 = {
 	
 	modifier = {
 		tile_resource_minerals_mult = -0.8
-		army_damage_mult = -0.75
+		army_damage_mult = -0.8
 	}
 }
 
@@ -917,8 +917,7 @@ trait_frail1 = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		#army_health = -0.25
-		army_defense_health_mult = -0.25
+		army_health = -0.25
 		pop_environment_tolerance = -0.1
 	}
 }
@@ -930,8 +929,7 @@ trait_frail2 = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		#army_health = -0.5
-		army_defense_health_mult = -0.5
+		army_health = -0.5
 		pop_environment_tolerance = -0.2
 	}
 }
@@ -943,8 +941,7 @@ trait_frail3 = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		#army_health = -0.75
-		army_defense_health_mult = -0.75
+		army_health = -0.75
 		pop_environment_tolerance = -0.4
 	}
 }
@@ -1147,7 +1144,6 @@ trait_weakwilled1 = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		#no longer works #pop_fortification_defense = -0.25
 		army_damage_mult = -0.25
 		army_morale = -0.25
 		#army_health = -0.25
@@ -1161,7 +1157,6 @@ trait_weakwilled2 = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		#no longer works #pop_fortification_defense = -0.5
 		army_damage_mult = -0.33
 		army_morale = -0.5
 		#army_health = -0.33
@@ -1175,7 +1170,6 @@ trait_weakwilled3 = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		#no longer works #pop_fortification_defense = -0.75
 		army_damage_mult = -0.5
 		army_morale = -0.75
 		#army_health = -0.5
@@ -1277,7 +1271,7 @@ trait_agrarian3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_agrarian3.dds"
 	modifier = {
-		pop_food_req_mult = -1
+		pop_food_req_mult = -5
 	}
 	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian2" "trait_agrarian1" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1761,7 +1755,6 @@ trait_resilient1 = {
 		army_defense_health_mult = 1.0
 		army_damage_mult = 0.1
 		army_morale = 0.25
-		#no longer works #pop_fortification_defense = 0.5
 	}
 	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient3" }
 }
@@ -1774,7 +1767,6 @@ trait_resilient2 = {
 		army_defense_health_mult = 2.5
 		army_damage_mult = 0.1
 		army_morale = 1
-		#no longer works #pop_fortification_defense = 1
 	}
 	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient1" "trait_resilient3" }
 }
@@ -1790,7 +1782,6 @@ trait_resilient3 = {
 		army_defense_health_mult = 5.0
 		army_damage_mult = 0.1
 		army_morale = 8
-		#no longer works #pop_fortification_defense = 2
 	}
 	opposites = { "trait_weakwilled1" "trait_weakwilled2" "trait_weakwilled3" "trait_resilient2" "trait_resilient1" }
 }
@@ -2268,7 +2259,6 @@ trait_timid = {
 	modifier = {
 			army_attack_health_mult = -0.75
 			pop_government_ethic_attraction = 0.5
-			#no longer works #pop_fortification_defense = -0.75
 	}
 }
 
@@ -2484,7 +2474,6 @@ trait_positive_doom = {
 		army_defense_health_mult = -2
 		army_morale = -2
 		army_damage_mult = -2
-		#no longer works #pop_fortification_defense = -2
 		pop_happiness = -0.2
 	}
 }
@@ -2501,7 +2490,6 @@ trait_negative_doom = {
 		army_defense_health_mult = 2
 		army_morale = 2
 		army_damage_mult = 2
-		#no longer works #pop_fortification_defense = 2
 		pop_happiness = 0.2
 	}
 }
@@ -2518,7 +2506,6 @@ trait_doom_unleashed = {
 		army_defense_health_mult = -2
 		army_morale = -2
 		army_damage_mult = -2
-		#no longer works #pop_fortification_defense = -20
 		pop_happiness = -0.5
 		pop_other_species_happiness = -1
 		pop_food_req_mult = 5

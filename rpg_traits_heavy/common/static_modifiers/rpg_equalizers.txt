@@ -88,11 +88,140 @@ tiny_thrifty3 = {
 		tile_resource_food_mult = -1.2
 }
 
+tiny_dumb2 = {
+		tile_resource_minerals_mult = 0.08
+		tile_resource_food_mult = 0.08
+}
+tiny_dumb3 = {
+		tile_resource_minerals_mult = 0.25
+		tile_resource_food_mult = 0.25
+}
+tiny_smart3 = {
+		tile_resource_minerals_mult = -0.2
+		tile_resource_food_mult = -0.2
+}
 
 
 
+tiny_food1 = {
+	pop_food_req_mult = -0.425
+}
+tiny_food2 = {
+	pop_food_req_mult = -0.75
+}
+tiny_food3 = {
+	pop_food_req_mult = -1.5
+}
+tiny_food4 = {
+	pop_food_req_mult = 0.2465
+}
+tiny_food5 = {
+	pop_food_req_mult = 0.375
+}
+
+titanic_food1 = {
+	pop_food_req_mult = 2.5
+}
+titanic_food2 = {
+	pop_food_req_mult = 5
+}
+titanic_food3 = {
+	pop_food_req_mult = 10
+}
+titanic_food4 = {
+	pop_food_req_mult = -1.66
+}
+titanic_food5 = {
+	pop_food_req_mult = -2.5
+}
 
 
+titanic_strong1 = {
+		tile_resource_minerals_mult = -1.5
+		army_damage_mult = -1.5
+}
+titanic_strong2 = {
+		tile_resource_minerals_mult = -2.5
+		army_damage_mult = -2.5
+}
+titanic_strong3 = {
+		tile_resource_minerals_mult = -4
+		army_damage_mult = -4
+}
+titanic_strong4 = {
+		tile_resource_minerals_mult = 0.5
+		army_damage_mult = 1.125
+}
+titanic_strong5 = {
+		tile_resource_minerals_mult = 1.25
+		army_damage_mult = 2.4
+}
+titanic_strong6 = {
+		tile_resource_minerals_mult = 2.5
+		army_damage_mult = 6
+}
+tiny_strong1 = {
+		tile_resource_minerals_mult = 0.24
+		army_damage_mult = 0.24
+}
+tiny_strong2 = {
+		tile_resource_minerals_mult = 0.4
+		army_damage_mult = 0.4
+}
+tiny_strong3 = {
+		tile_resource_minerals_mult = 0.64
+		army_damage_mult = 0.64
+}
+tiny_strong4 = {
+		tile_resource_minerals_mult = -0.08
+		army_damage_mult = -0.2
+}
+tiny_strong5 = {
+		tile_resource_minerals_mult = -0.2
+		army_damage_mult = -0.48
+}
+tiny_strong6 = {
+		tile_resource_minerals_mult = -0.4
+		army_damage_mult = -1.2
+}
+
+
+titanic_robust1 = {
+	army_health = -1
+}
+titanic_robust2 = {
+	army_health = -2
+}
+titanic_robust3 = {
+	army_health = -3
+}
+titanic_robust4 = {
+	army_health = 2
+}
+titanic_robust5 = {
+	army_health = 4
+}
+titanic_robust6 = {
+	army_health = 12
+}
+tiny_robust1 = {
+	army_health = 0.2
+}
+tiny_robust2 = {
+	army_health = 0.4
+}
+tiny_robust3 = {
+	army_health = 0.6
+}
+tiny_robust4 = {
+	army_health = -0.4
+}
+tiny_robust5 = {
+	army_health = -0.8
+}
+tiny_robust6 = {
+	army_health = -2.4
+}
 
 
 
