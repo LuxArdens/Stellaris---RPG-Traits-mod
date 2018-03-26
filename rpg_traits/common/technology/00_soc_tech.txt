@@ -2386,6 +2386,7 @@ tech_gene_tailoring = {
 	feature_flags = {
 		modify_traits
 		pop_self_modification
+		advanced_gene_modding
 	}
 	
 	potential = {

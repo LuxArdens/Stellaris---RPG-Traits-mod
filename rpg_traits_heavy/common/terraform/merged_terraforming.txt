@@ -1277,6 +1277,26 @@ terraform_link = {
 ###################
 terraform_link = {
   from = "pc_barren"
+	to = "pc_desert"
+	energy = @e2
+	duration = @d2
+
+	condition = {
+		has_technology = "tech_planet_life_restoration"
+	}
+}
+terraform_link = {
+  from = "pc_toxic"
+	to = "pc_barren"
+	energy = @e4
+	duration = @d3
+
+	condition = {
+		has_technology = "tech_colonization_2_rpg"
+	}
+}
+terraform_link = {
+  from = "pc_barren"
 	to = "pc_toxic"
 	energy = @e4
 	duration = @d3

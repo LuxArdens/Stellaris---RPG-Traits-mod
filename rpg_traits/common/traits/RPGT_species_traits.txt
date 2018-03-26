@@ -639,6 +639,7 @@ trait_iconoclastic2 = {
 	icon = "gfx/interface/icons/traits/trait_iconoclastic2.dds"
 	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic1" "trait_iconoclastic3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	valid_for_all_ethics = no
 	allowed_ethics = {
@@ -670,6 +671,7 @@ trait_iconoclastic3 = {
 	icon = "gfx/interface/icons/traits/trait_iconoclastic3.dds"
 	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic2" "trait_iconoclastic1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	valid_for_all_ethics = no
 	allowed_ethics = {
@@ -714,6 +716,7 @@ trait_slow_breeders2 = {
 	icon = "gfx/interface/icons/traits/trait_slow_breeders2.dds"
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders3" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		#pop_growth_req_mult = 1
@@ -726,6 +729,7 @@ trait_slow_breeders3 = {
 	icon = "gfx/interface/icons/traits/trait_slow_breeders3.dds"
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders1" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		#pop_growth_req_mult = 3
@@ -764,6 +768,7 @@ trait_weak2 = {
 	icon = "gfx/interface/icons/traits/trait_weak2.dds"
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak1" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		tile_resource_minerals_mult = -0.5
@@ -776,6 +781,7 @@ trait_weak3 = {
 	icon = "gfx/interface/icons/traits/trait_weak3.dds"
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak2" "trait_weak1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		tile_resource_minerals_mult = -0.8
@@ -804,6 +810,7 @@ trait_dumb2 = {
 	icon = "gfx/interface/icons/traits/trait_dumb2.dds"
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb1" "trait_dumb3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		tile_resource_energy_mult = -0.5
@@ -822,6 +829,7 @@ trait_dumb3 = {
 	icon = "gfx/interface/icons/traits/trait_dumb3.dds"
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb2" "trait_dumb1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		tile_resource_energy_mult = -0.8
@@ -854,6 +862,7 @@ trait_lazy2 = {
 	icon = "gfx/interface/icons/traits/trait_lazy2.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy1" "trait_lazy3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		tile_resource_energy_mult = -0.5
@@ -867,6 +876,7 @@ trait_lazy3 = {
 	icon = "gfx/interface/icons/traits/trait_lazy3.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		tile_resource_energy_mult = -0.75
@@ -892,6 +902,7 @@ trait_badfarmers2 = {
 	icon = "gfx/interface/icons/traits/trait_badfarmers2.dds"
 	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers1" "trait_badfarmers3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		pop_food_req_mult = 1
@@ -903,6 +914,7 @@ trait_badfarmers3 = {
 	icon = "gfx/interface/icons/traits/trait_badfarmers3.dds"
 	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers2" "trait_badfarmers1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		pop_food_req_mult = 2
@@ -927,6 +939,7 @@ trait_frail2 = {
 	icon = "gfx/interface/icons/traits/trait_frail2.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail1" "trait_frail3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		army_health = -0.5
@@ -939,6 +952,7 @@ trait_frail3 = {
 	icon = "gfx/interface/icons/traits/trait_frail3.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail2" "trait_frail1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		army_health = -0.75
@@ -983,6 +997,7 @@ trait_solitary2 = {
 	icon = "gfx/interface/icons/traits/trait_solitary2.dds"
 	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary1" "trait_solitary3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	valid_for_all_ethics = no
 	allowed_ethics = {
@@ -1014,6 +1029,7 @@ trait_solitary3 = {
 	icon = "gfx/interface/icons/traits/trait_solitary3.dds"
 	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary2" "trait_solitary1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	valid_for_all_ethics = no
 	allowed_ethics = {
@@ -1057,6 +1073,7 @@ trait_repugnant2 = {
 	icon = "gfx/interface/icons/traits/trait_repugnant2.dds"
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant1"  "trait_repugnant3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		pop_other_species_happiness = -0.15
@@ -1068,6 +1085,7 @@ trait_repugnant3 = {
 	icon = "gfx/interface/icons/traits/trait_repugnant3.dds"
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant2"  "trait_repugnant1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		pop_other_species_happiness = -0.5
@@ -1089,6 +1107,7 @@ trait_fleeting2 = {
 	modifier = { leader_age = -20 }
 	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting1" "trait_fleeting3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 }
 trait_fleeting3 = {
 	cost = -4
@@ -1097,6 +1116,7 @@ trait_fleeting3 = {
 	modifier = { leader_age = -40 }
 	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting2" "trait_fleeting1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 }
 
 trait_wasteful1 = {
@@ -1117,6 +1137,7 @@ trait_wasteful2 = {
 	icon = "gfx/interface/icons/traits/trait_wasteful2.dds"
 	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful1" "trait_wasteful3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		pop_consumer_goods_mult = 0.5
@@ -1129,6 +1150,7 @@ trait_wasteful3 = {
 	icon = "gfx/interface/icons/traits/trait_wasteful3.dds"
 	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		pop_consumer_goods_mult = 1
@@ -1155,6 +1177,7 @@ trait_weakwilled2 = {
 	icon = "gfx/interface/icons/traits/trait_weakwilled2.dds"
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled1" "trait_weakwilled3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		army_damage_mult = -0.33
@@ -1168,6 +1191,7 @@ trait_weakwilled3 = {
 	icon = "gfx/interface/icons/traits/trait_weakwilled3.dds"
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		army_damage_mult = -0.5
@@ -1208,6 +1232,7 @@ trait_smart2 = {
 	icon = "gfx/interface/icons/traits/trait_smart2.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart1" "trait_smart3" "trait_nerve_stapled" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		tile_resource_energy_mult = 0.6
@@ -1226,6 +1251,7 @@ trait_smart3 = {
 	icon = "gfx/interface/icons/traits/trait_smart3.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart2" "trait_smart1" "trait_nerve_stapled" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		tile_resource_energy_mult = 1
@@ -1262,6 +1288,7 @@ trait_agrarian2 = {
 	}
 	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian1" "trait_agrarian3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 }
 trait_agrarian3 = {   
 	cost = 4
@@ -1275,6 +1302,7 @@ trait_agrarian3 = {
 	}
 	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian2" "trait_agrarian1" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 }
 
 trait_robust1 = {
@@ -1297,6 +1325,7 @@ trait_robust2 = {
 	icon = "gfx/interface/icons/traits/trait_robust2.dds"
 	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust1" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		pop_environment_tolerance = 0.15
@@ -1312,6 +1341,7 @@ trait_robust3 = {
 	icon = "gfx/interface/icons/traits/trait_robust3.dds"
 	opposites = {  "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust2" "trait_robust1" "trait_weak1" "trait_weak2" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		pop_environment_tolerance = 0.3
@@ -1337,6 +1367,7 @@ trait_thrifty2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_thrifty2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		tile_resource_energy_mult = 0.5
@@ -1353,6 +1384,7 @@ trait_thrifty3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_thrifty3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
 		tile_resource_energy_mult = 1.5
@@ -1378,6 +1410,7 @@ trait_rapid_breeders2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_rapid_breeders2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders1" "trait_rapid_breeders3" }
 	
 	modifier = {
@@ -1392,6 +1425,7 @@ trait_rapid_breeders3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_rapid_breeders3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders2" "trait_rapid_breeders1" }
 	
 	modifier = {
@@ -1406,6 +1440,7 @@ trait_homogenous = {
 	modification = yes
 	icon = "gfx/interface/icons/traits/trait_homogenous.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted" "trait_gifted2" }
 	
 	modifier = {
@@ -1417,6 +1452,7 @@ trait_gifted1 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_gifted1.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted2" }
 	
 	modifier = {
@@ -1431,6 +1467,7 @@ trait_gifted2 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_gifted2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted1" }
 	
 	modifier = {
@@ -1455,6 +1492,7 @@ trait_strong2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_strong2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong1" "trait_strong3" "trait_frail1" "trait_frail2" "trait_frail3" }
 	
 	modifier = {
@@ -1470,6 +1508,7 @@ trait_strong3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_strong3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong2" "trait_strong1" "trait_frail1" "trait_frail2" "trait_frail3" }
 	
 	modifier = {
@@ -1483,6 +1522,7 @@ trait_nomadic = {
 	randomized = no
 	opposites = { "trait_sedentary" }
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
 		pop_migration_speed = 1
@@ -1527,6 +1567,7 @@ trait_communal2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_communal2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal1" "trait_communal3" }
 	
 	valid_for_all_ethics = no
@@ -1562,6 +1603,7 @@ trait_communal3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_communal3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal2" "trait_communal1" }
 	
 	valid_for_all_ethics = no
@@ -1606,6 +1648,7 @@ trait_charismatic2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_charismatic2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic1" "trait_charismatic3" }
 	
 	modifier = {
@@ -1620,6 +1663,7 @@ trait_charismatic3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_charismatic3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic2" "trait_charismatic1" }
 	
 	modifier = {
@@ -1661,6 +1705,7 @@ trait_conformists2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_conformists2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	
 	modifier = { pop_government_ethic_attraction = 0.5 }
 	
@@ -1693,6 +1738,7 @@ trait_conformists3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_conformists3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = { pop_government_ethic_attraction = 4 }
 	
@@ -1732,6 +1778,7 @@ trait_venerable2 = {
 	icon = "gfx/interface/icons/traits/trait_venerable2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = { leader_age = 200 }
+	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable1" "trait_venerable3" "trait_frail2" "trait_frail3" }
 }
 trait_venerable3 = {
@@ -1743,6 +1790,7 @@ trait_venerable3 = {
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_venerable3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	opposites = { "trait_fleeting1" "trait_fleeting2" "trait_fleeting3" "trait_venerable2" "trait_venerable1" "trait_frail2" "trait_frail3" }
 }
 
@@ -1763,6 +1811,7 @@ trait_resilient2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_resilient2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	modifier = {
 		army_defense_health_mult = 2.5
 		army_damage_mult = 0.1
@@ -1778,6 +1827,7 @@ trait_resilient3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_resilient3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	modifier = {
 		army_defense_health_mult = 5.0
 		army_damage_mult = 0.1
@@ -1801,6 +1851,7 @@ trait_conservational2 = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/trait_conservational2.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational1" "trait_conservational3" }
 	modifier = {
 		pop_consumer_goods_mult = -0.4
@@ -1814,6 +1865,7 @@ trait_conservational3 = {
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_conservational3.dds"
 	allowed_archetypes = { BIOLOGICAL }
+	prerequisites = { tech_genetic_resequencing }
 	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational2" "trait_conservational1" }
 	modifier = {
 		pop_consumer_goods_mult = -0.75

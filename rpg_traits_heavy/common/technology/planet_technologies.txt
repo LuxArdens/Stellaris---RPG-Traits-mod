@@ -143,7 +143,7 @@ tech_planet_modernization = {
 
 
 tech_planet_life_restoration = {
-	cost = 15000
+	cost = 10000
 	area = society
 	tier = 5
 	category = { new_worlds }
