@@ -500,6 +500,23 @@
  
  trait_robodesign_nanoswarm_synth:0 "Grey Goo"
  trait_robodesign_nanoswarm_synth_desc:0 "§LOur former shape is not necessarily the optimal form. State of the art nanobot clouds can house a fully sentient programming and accomplish almost miraculous feats, such as building and deconstructing entire cities and fleets in a matter of hours.§!\n"
+ 
+ trait_sterilized:0 "Sterilized"
+ trait_sterilized_desc:0 "§LSometimes we have to make hard decisions in life. Decisions that affect other people. Decisions like "NO, I don't want 20 billion more jellyfish in MY. BLOODY. EMPIRE."§!\n"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
  ########################################
  # Events / oefening creatief schrijven #

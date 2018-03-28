@@ -58,14 +58,7 @@ tech_hollow_asteroids = {
 	}
 
 	ai_weight = {
-		factor = 1.5
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
+		factor = 0.25
 	}
 }
 
@@ -130,14 +123,7 @@ tech_planet_modernization = {
 	}
 
 	ai_weight = {
-		factor = 1.5
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
+		factor = 0.25
 	}
 }
 
@@ -202,7 +188,27 @@ tech_planet_life_restoration = {
 	}
 
 	ai_weight = {
-		factor = 1.5
+		factor = 0.25
+	}
+}
+
+
+tech_planet_temperature_control = {
+	cost = 20000
+	area = physics
+	tier = 5
+	category = { new_worlds }
+	weight = 5
+	is_rare = yes
+
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_TITLE"
+			desc = "TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_DESC"
+		}
+	}
+
+	weight_modifier = {
 		modifier = {
 			factor = 1.5
 			research_leader = {
@@ -210,6 +216,36 @@ tech_planet_life_restoration = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				OR = {
+				has_trait = "leader_trait_maniacal"
+				has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 0.25
 	}
 }
 
@@ -265,14 +301,7 @@ tech_gas_reforming = {
 	}
 
 	ai_weight = {
-		factor = 1.5
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
+		factor = 0.25
 	}
 }
 
@@ -328,14 +357,7 @@ tech_gas_escalation = {
 	}
 
 	ai_weight = {
-		factor = 1.5
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
+		factor = 0.25
 	}
 }
 
@@ -392,14 +414,7 @@ tech_asteroid_reforming = {
 	}
 
 	ai_weight = {
-		factor = 1.5
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
+		factor = 0.25
 	}
 }
 
@@ -456,14 +471,7 @@ tech_planet_breaking = {
 	}
 
 	ai_weight = {
-		factor = 1.5
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
+		factor = 0.25
 	}
 }
 
@@ -515,14 +523,6 @@ tech_planetmod_gravity = {
 	}
 
 	ai_weight = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				any_controlled_planet = {
-					has_modifier = "low_gravity"
-				}			
-			}
-		}
+		factor = 0.25
 	}
 }

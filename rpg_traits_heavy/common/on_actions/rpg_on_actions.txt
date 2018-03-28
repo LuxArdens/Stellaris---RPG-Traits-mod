@@ -38,6 +38,10 @@ on_yearly_pulse = {
 		trait.50
 		trait.51
 		trait.52
+		trait.32
+		trait.33
+		trait.34
+		trait.35
 	}
 }
 
@@ -64,6 +68,10 @@ on_game_start = {
 		trait.29
 		trait.30
 		trait.31
+		trait.32
+		trait.33
+		trait.34
+		trait.35
 		trait.36
 		trait.37
 		trait.38
