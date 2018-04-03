@@ -201,12 +201,6 @@ tech_planet_temperature_control = {
 	weight = 5
 	is_rare = yes
 
-	prereqfor_desc = {
-		diplo_action = {
-			title = "TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_TITLE"
-			desc = "TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_DESC"
-		}
-	}
 
 	weight_modifier = {
 		modifier = {
@@ -257,12 +251,6 @@ tech_gas_reforming = {
 	weight = 5
 	is_rare = yes
 
-	prereqfor_desc = {
-		diplo_action = {
-			title = "TECH_UNLOCK_GAS_REFORM_TITLE"
-			desc = "TECH_UNLOCK_GAS_REFORM_DESC"
-		}
-	}
 
 	weight_modifier = {
 		modifier = {
@@ -313,12 +301,6 @@ tech_gas_escalation = {
 	weight = 5
 	is_rare = yes
 
-	prereqfor_desc = {
-		diplo_action = {
-			title = "TECH_UNLOCK_GAS_ESC_TITLE"
-			desc = "TECH_UNLOCK_GAS_ESC_DESC"
-		}
-	}
 
 	weight_modifier = {
 		modifier = {
@@ -370,12 +352,6 @@ tech_asteroid_reforming = {
 	weight = 5
 	is_rare = yes
 
-	prereqfor_desc = {
-		diplo_action = {
-			title = "TECH_UNLOCK_AST_REFORM_TITLE"
-			desc = "TECH_UNLOCK_AST_REFORM_DESC"
-		}
-	}
 
 	weight_modifier = {
 		modifier = {
@@ -427,12 +403,6 @@ tech_planet_breaking = {
 	weight = 5
 	is_rare = yes
 
-	prereqfor_desc = {
-		diplo_action = {
-			title = "TECH_UNLOCK_PLANET_BREAKING_TITLE"
-			desc = "TECH_UNLOCK_PLANET_BREAKING_DESC"
-		}
-	}
 
 	weight_modifier = {
 		modifier = {
@@ -484,7 +454,7 @@ tech_planetmod_gravity = {
 	weight = 20
 	is_rare = yes
 
-	prereqfor_desc = {
+	modifier = {
 		set_country_flag = "tech_planetmod_gravity"
 	}
 

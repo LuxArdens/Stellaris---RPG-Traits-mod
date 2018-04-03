@@ -946,44 +946,44 @@ event = {
 	}
 }
 
-event = {
-	id = "trait.34"
-	hide_window = yes
-	is_triggered_only = yes
+# event = {
+	# id = "trait.34"
+	# hide_window = yes
+	# is_triggered_only = yes
 
-	immediate = {
-		every_country = {
-			limit = {
-				NOT = {
-					any_owned_pop = { 
-						limit = { is_majority_species }
-						has_trait = trait_psionic_shifters
-					}
-				}
-			}
-			remove_modifier = "trait_psionic_shifters"
-		}
-	}
-}
-event = {
-	id = "trait.35"
-	hide_window = yes
-	is_triggered_only = yes
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# NOT = {
+					# any_owned_pop = { 
+						# limit = { is_majority_species }
+						# has_trait = trait_psionic_shifters
+					# }
+				# }
+			# }
+			# remove_modifier = "trait_psionic_shifters"
+		# }
+	# }
+# }
+# event = {
+	# id = "trait.35"
+	# hide_window = yes
+	# is_triggered_only = yes
 
-	immediate = {
-		every_country = {
-			limit = {
-				NOT = {
-					any_owned_pop = { 
-						limit = { is_majority_species }
-						has_trait = trait_psionic_ethereals
-					}
-				}
-			}
-			remove_modifier = "trait_psionic_ethereals"
-		}
-	}
-}
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# NOT = {
+					# any_owned_pop = { 
+						# limit = { is_majority_species }
+						# has_trait = trait_psionic_ethereals
+					# }
+				# }
+			# }
+			# remove_modifier = "trait_psionic_ethereals"
+		# }
+	# }
+# }
 
 #######################################
 #	Civics
