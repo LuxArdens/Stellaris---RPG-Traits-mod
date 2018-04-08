@@ -522,43 +522,43 @@ trait_jerry_riggers = {
 ########################################################################
 
 
-trait_effects_supercheat = {
-	pop_growth_speed = 200
-	country_resource_energy_mult = 50
-	country_resource_minerals_mult = 50
-	country_resource_influence_mult = 50
-	country_resource_unity_mult = 50
-	country_resource_food_mult = 50
-	all_technology_research_speed = 50
-	megastructure_build_speed_mult = 100
-	mod_megastructure_build_cost_mult = -1
-	building_time_mult = -2
-	pop_happiness = 2
-	country_leader_cap = 10
-	country_trade_attractiveness = 2
-	max_minerals = 200000
-	max_energy = 200000
+# trait_effects_supercheat = {
+	# pop_growth_speed = 200
+	# country_resource_energy_mult = 50
+	# country_resource_minerals_mult = 50
+	# country_resource_influence_mult = 50
+	# country_resource_unity_mult = 50
+	# country_resource_food_mult = 50
+	# all_technology_research_speed = 50
+	# megastructure_build_speed_mult = 100
+	# mod_megastructure_build_cost_mult = -1
+	# building_time_mult = -2
+	# pop_happiness = 2
+	# country_leader_cap = 10
+	# country_trade_attractiveness = 2
+	# max_minerals = 200000
+	# max_energy = 200000
 	
-	# Super ships
-	ship_fire_rate_mult = 20
-	ship_speed_mult = 5
-	ship_windup_mult = -1
-	ship_winddown_mult = -1
-	ship_emergency_ftl_mult = -1
-	ship_weapon_range_mult = 50
-	planet_clear_blocker_time_mult = -2
-	planet_clear_blocker_cost_mult = -2
-	shipclass_colonizer_build_cost_mult = -5
-	starbase_shipyard_build_speed_mult = 50
-	starbase_shipyard_build_cost_mult = -5
-	ship_shield_mult = 40
-	ship_shield_regen_add_perc = 40
-	ship_armor_add = 40
-	ship_armor_mult = 40
-	ship_hull_add = 40				# Hitpoints no longer refer to hull
-	ship_hull_mult = 40				# Hitpoints no longer refer to hull
-	ship_weapon_damage = 40
-}
+	# # Super ships
+	# ship_fire_rate_mult = 20
+	# ship_speed_mult = 5
+	# ship_windup_mult = -1
+	# ship_winddown_mult = -1
+	# ship_emergency_ftl_mult = -1
+	# ship_weapon_range_mult = 50
+	# planet_clear_blocker_time_mult = -2
+	# planet_clear_blocker_cost_mult = -2
+	# shipclass_colonizer_build_cost_mult = -5
+	# starbase_shipyard_build_speed_mult = 50
+	# starbase_shipyard_build_cost_mult = -5
+	# ship_shield_mult = 40
+	# ship_shield_regen_add_perc = 40
+	# ship_armor_add = 40
+	# ship_armor_mult = 40
+	# ship_hull_add = 40				# Hitpoints no longer refer to hull
+	# ship_hull_mult = 40				# Hitpoints no longer refer to hull
+	# ship_weapon_damage = 40
+# }
 
 #icon_frame = 1 # green frame
 #icon_frame = 2 # yellow frame

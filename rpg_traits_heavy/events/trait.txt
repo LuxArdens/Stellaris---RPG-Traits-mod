@@ -17,10 +17,10 @@ event = {
 			limit = {
 				has_trait = trait_custom_testing
 			}
-			add_modifier = {
-				modifier = trait_effects_supercheat
-					days = -1
-			}
+			#add_modifier = {
+			#	modifier = trait_effects_supercheat
+			#		days = -1
+			#}
 		}
 	}
 }
@@ -47,10 +47,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		add_modifier = {
-			modifier = trait_effects_supercheat
-			days = -1
-		}
+		#add_modifier = {
+		#	modifier = trait_effects_supercheat
+		#	days = -1
+		#}
 		every_owned_pop = {
 			modify_species = {
 				species = this
