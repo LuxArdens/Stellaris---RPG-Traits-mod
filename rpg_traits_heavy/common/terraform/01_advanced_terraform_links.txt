@@ -1,29 +1,2 @@
 # Empty on purpose
 
-
-terraform_link = {
-  to = "pc_barren"
-	from = "pc_gas_giant"
-
-	energy = 40000
-	minerals = 40000
-	duration = 32000
-
-	condition = {
-		has_technology = "tech_gas_reforming"
-	}
-}
-
-
-terraform_link = {
-  to = "pc_barren"
-	from = "pc_asteroid"
-
-	energy = 10000
-	minerals = 10000
-	duration = 12000
-
-	condition = {
-		has_technology = "tech_asteroid_reforming"
-	}
-}

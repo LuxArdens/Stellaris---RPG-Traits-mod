@@ -1,28 +1,28 @@
 namespace = trait
 
 ##################################################################################################################################
-######### Trait effects  #########################################################################################################
+######### Trait effects	#########################################################################################################
 ##################################################################################################################################
 
 
 event = {
-  id = "trait.1"
-  hide_window = yes
+	id = "trait.1"
+	hide_window = yes
 	title = "Yo your trait overhaul mod works yo"
 	desc = "Great"
-  is_triggered_only = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
-			   has_trait = trait_weirdass
-      }
-      add_modifier = {
-        modifier = trait_effects_weirdass
-          days = -1
-      }
-    }
-  }
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_custom_testing
+			}
+			#add_modifier = {
+			#	modifier = trait_effects_supercheat
+			#		days = -1
+			#}
+		}
+	}
 }
 
 event = {
@@ -33,7 +33,7 @@ event = {
 
 	immediate = {
 		every_country = {
-			limit = { has_trait = trait_weirdass }
+			limit = { has_trait = trait_custom_testing }
 			country_event = { id = trait.1012 }
 		}
 	}
@@ -47,496 +47,881 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-    add_modifier = {
-      modifier = trait_effects_weirdass
-      days = -1
-    }
+		#add_modifier = {
+		#	modifier = trait_effects_supercheat
+		#	days = -1
+		#}
 		every_owned_pop = {
 			modify_species = {
 				species = this
-				add_trait = trait_weirdass
+				add_trait = trait_custom_testing
 			}
 		}
 	}
 }
 
 event = {
-  id = "trait.2"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.2"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_hoarders
-      }
-      add_modifier = {
-        modifier = trait_hoarders
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = trait_hoarders
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.3"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.3"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_titanic
-      }
-      add_modifier = {
-        modifier = trait_titanic
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = trait_titanic
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.15"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				 has_trait = trait_tiny
+			}
+			add_modifier = {
+				modifier = trait_tiny
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.40"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_titanic_machine
+			}
+			add_modifier = {
+				modifier = trait_titanic_machine
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.41"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				 has_trait = trait_tiny_machine
+			}
+			add_modifier = {
+				modifier = trait_tiny_machine
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.4"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.4"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
-			   has_trait = trait_airborne
-      }
-      add_modifier = {
-        modifier = trait_airborne
-        days = -1
-      }
-    }
-  }
+	immediate = {
+		every_country = {
+			limit = {
+				 has_trait = trait_airborne
+			}
+			add_modifier = {
+				modifier = trait_airborne
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.5"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.5"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
-			    has_trait = trait_shield_obsessed
-      }
-		  give_technology = { tech = "tech_shields_1" message = no }
-		  give_technology = { tech = "tech_shields_2" message = no }
-      add_modifier = {
-        modifier = trait_shield_obsessed
-        days = -1
-      }
-    }
-  }
+	immediate = {
+		every_country = {
+			limit = {
+					has_trait = trait_shield_obsessed
+			}
+			give_technology = { tech = "tech_shields_1" message = no }
+			give_technology = { tech = "tech_shields_2" message = no }
+			add_modifier = {
+				modifier = trait_shield_obsessed
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.6"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.6"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
-			   has_trait = trait_effects_energy_lifeform
-      }
-      add_modifier = {
-        modifier = trait_effects_energy_lifeform
-        days = -1
-      }
-    }
-  }
+	immediate = {
+		every_country = {
+			limit = {
+				 has_trait = trait_effects_energy_lifeform
+			}
+			add_modifier = {
+				modifier = trait_effects_energy_lifeform
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.7"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.7"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
-			   has_trait = trait_curious
-      }
-      add_modifier = {
-        modifier = trait_curious
-        days = -1
-      }
-    }
-  }
+	immediate = {
+		every_country = {
+			limit = {
+				 has_trait = trait_curious
+			}
+			add_modifier = {
+				modifier = trait_curious
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.8"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.8"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
-			   has_trait = trait_uncreative
-      }
-      add_modifier = {
-        modifier = trait_uncreative
-        days = -1
-      }
-    }
-  }
+	immediate = {
+		every_country = {
+			limit = {
+				 has_trait = trait_uncreative
+			}
+			add_modifier = {
+				modifier = trait_uncreative
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.9"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.9"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_egg_born
-      }
-      add_modifier = {
-        modifier = egg_born
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = egg_born
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.10"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.10"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_silent_observers
-      }
-      add_modifier = {
-        modifier = silent_observers
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = silent_observers
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.11"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.11"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_turtles
-      }
-      add_modifier = {
-        modifier = turtles
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = turtles
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.12"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.12"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_sociology_elitists
-      }
-      add_modifier = {
-        modifier = sociology_elitists
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = sociology_elitists
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.13"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.13"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_engineering_elitists
-      }
-      add_modifier = {
-        modifier = engineering_elitists
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = engineering_elitists
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.14"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.14"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_physics_elitists
-      }
-      add_modifier = {
-        modifier = physics_elitists
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = physics_elitists
+				days = -1
+			}
+		}
+	}
 }
 
-event = {
-  id = "trait.15"
-  hide_window = yes
-  is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
-			   has_trait = trait_tiny
-      }
-      add_modifier = {
-        modifier = trait_tiny
-        days = -1
-      }
-    }
-  }
-}
 
 event = {
-  id = "trait.16"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.16"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_dumb2
-      }
-      add_modifier = {
-        modifier = trait_dumb2
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = trait_dumb2
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.17"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.17"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_dumb3
-      }
-      add_modifier = {
-        modifier = trait_dumb3
-        days = -1
-      }
-    }
-  }
+			}
+			add_modifier = {
+				modifier = trait_dumb3
+				days = -1
+			}
+		}
+	}
+}
+
+# event = {
+	# id = "trait.18"
+	# hide_window = yes
+	# is_triggered_only = yes
+
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# has_trait = trait_positive_doom
+			# }
+			# country_event = { id = trait.8322 days = 18000 random = 400 } # 50 years
+			# add_modifier = {
+				# modifier = trait_positive_doom
+				# days = -1
+			# }
+		# }
+	# }
+# }
+
+# event = {
+	# id = "trait.19"
+	# hide_window = yes
+	# is_triggered_only = yes
+
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# has_trait = trait_negative_doom
+			# }
+			# #country_event = { id = trait.8323 days = 18000 random = 400 } # 50 years
+			# add_modifier = {
+				# modifier = trait_negative_doom
+				# days = 18
+			# }
+		# }
+	# }
+# }
+
+event = {
+	id = "trait.20"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				 has_trait = trait_quantity
+			}
+			add_modifier = {
+				modifier = trait_quantity
+				days = -1
+			}
+		}
+	}
 }
 
 event = {
-  id = "trait.18"
-  hide_window = yes
-  is_triggered_only = yes
+	id = "trait.21"
+	hide_window = yes
+	is_triggered_only = yes
 
-  immediate = {
-    every_country = {
-      limit = {
-				has_trait = trait_positive_doom
-      }
-			country_event = { id = trait.8322 days = 18000 random = 400 } # 50 years
-      add_modifier = {
-        modifier = trait_positive_doom
-        days = -1
-      }
-    }
-  }
-}
-
-event = {
-  id = "trait.19"
-  hide_window = yes
-  is_triggered_only = yes
-
-  immediate = {
-    every_country = {
-      limit = {
-				has_trait = trait_negative_doom
-      }
-			#country_event = { id = trait.8323 days = 18000 random = 400 } # 50 years
-      add_modifier = {
-        modifier = trait_negative_doom
-        days = 18
-      }
-    }
-  }
-}
-
-event = {
-  id = "trait.20"
-  hide_window = yes
-  is_triggered_only = yes
-
-  immediate = {
-    every_country = {
-      limit = {
-			   has_trait = trait_quantity
-      }
-      add_modifier = {
-        modifier = trait_quantity
-        days = -1
-      }
-    }
-  }
-}
-
-event = {
-  id = "trait.21"
-  hide_window = yes
-  is_triggered_only = yes
-
-  immediate = {
-    every_country = {
-      limit = {
+	immediate = {
+		every_country = {
+			limit = {
 				has_trait = trait_living_planet
-      }
-      add_modifier = {
-        modifier = trait_living_planet
-        days = -1
-      }
+			}
+			add_modifier = {
+				modifier = trait_living_planet
+				days = -1
+			}
 			#change_government = {
 			#	civics = {
 			#		civic = civic_rpg_hive_devouring_swarm		# needed to prevent diplomacy and permanent occupation
 			#	}
 			#}
-    }
-  }
+		}
+	}
 }
 
 event = {
-  id = "trait.22"
-  hide_window = yes
-  is_triggered_only = yes
-
-  immediate = {
-    every_country = {
-      limit = {
-				has_trait = trait_gas_lifeform
-      }
-			country_event = { id = trait.8334 }
-    }
-  }
-}
-
-event = {
-  id = "trait.1601"
-  hide_window = yes
-  is_triggered_only = yes
-
-  immediate = {
-    every_country = {
-      limit = {
-				NOT = { has_trait = trait_dumb2 }
-      }
-			remove_modifier = "trait_dumb2"
-    }
-  }
-}
-
-event = {
-  id = "trait.1701"
-  hide_window = yes
-  is_triggered_only = yes
-
-  immediate = {
-    every_country = {
-      limit = {
-				NOT = { has_trait = trait_dumb3 }
-      }
-			remove_modifier = "trait_dumb3"
-    }
-  }
-}
-
-planet_event = {
-    id = "trait.8321"
-    hide_window = yes
-
-    trigger = {
-      any_pop = {
-			   OR = {
-            has_trait = trait_subterranean
-            has_trait = trait_living_planet
-         }
-         is_being_purged = no
-			   is_enslaved = no
-      }
-      planet_size < 25
-		  NOT = { is_planet_class = pc_habitat }
-    }
-
-    mean_time_to_happen = {
-        months = 30
-    }
-
-    immediate = {
-        change_planet_size = 1
-    }
-}
-
-country_event = {
-  id = "trait.8322"
-  hide_window = yes
+	id = "trait.22"
+	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
-    remove_modifier = "trait_positive_doom"
-    add_modifier = {
-      modifier = doom_lifted
-      days = -1
-    }
+		every_country = {
+			limit = {
+				has_trait = trait_gas_lifeform
+			}
+			country_event = { id = trait.8334 }
+		}
+	}
+}
+
+event = {
+	id = "trait.23"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_armor_obsessed
+			}
+			give_technology = { tech = "tech_ship_armor_2" message = no }
+			give_technology = { tech = "tech_ship_armor_3" message = no }
+			add_modifier = {
+				modifier = trait_armor_obsessed
+				days = -1
+			}
+		}
+	}
+}
+
+event = {
+	id = "trait.25"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+					has_trait = trait_jerry_riggers
+			}
+			add_modifier = {
+				modifier = trait_jerry_riggers
+				days = -1
+			}
+		}
+	}
+}
+
+######################
+# PLANet TEchnology REgulation eveNTS (planterents)
+######################
+
+event = {
+	id = "trait.24"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_desert_preference
+					has_trait = trait_pc_arid_preference
+					has_trait = trait_pc_savannah_preference
+					has_trait = trait_pc_tropical_preference
+					has_trait = trait_pc_continental_preference
+					has_trait = trait_pc_ocean_preference
+					has_trait = trait_pc_arctic_preference
+					has_trait = trait_pc_tundra_preference
+					has_trait = trait_pc_alpine_preference
+					has_trait = trait_pc_nuked_preference
+					has_trait = trait_pc_gaia_preference
+					has_trait = trait_pc_ringworld_habitable_preference
+					has_trait = trait_pc_habitat_preference
+				}
+			}
+			give_technology = { message = no tech = tech_normal_worlds }
+		}
+	}
+}
+event = {
+	id = "trait.26"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_a_star_preference
+				}
+			}
+			give_technology = { message = no tech = tech_star_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.27"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_gas_giant_preference
+				}
+			}
+			give_technology = { message = no tech = tech_gas_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.28"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_molten_preference
+				}
+			}
+			give_technology = { message = no tech = tech_molten_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.29"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_toxic_preference
+				}
+			}
+			give_technology = { message = no tech = tech_toxic_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.30"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_barren_preference
+					has_trait = trait_pc_frozen_preference
+					has_trait = trait_pc_ai_preference
+				}
+			}
+			give_technology = { message = no tech = tech_barren_habitation }
+		}
+	}
+}
+event = {
+	id = "trait.31"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = trait_pc_asteroid_preference
+				}
+			}
+			give_technology = { message = no tech = tech_asteroid_habitation }
+		}
+	}
+}
+
+event = {
+	id = "trait.32"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_psionic_shifters
+			}
+			add_modifier = {
+				modifier = trait_psionic_shifters
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.33"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_psionic_ethereals
+			}
+			add_modifier = {
+				modifier = trait_psionic_ethereals
+				days = -1
+			}
+		}
+	}
+}
+# event = {
+	# id = "trait.34"
+	# hide_window = yes
+	# is_triggered_only = yes
+
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# NOT = {
+					# any_owned_pop = { 
+						# limit = { is_majority_species }
+						# has_trait = trait_psionic_shifters
+					# }
+				# }
+			# }
+			# remove_modifier = "trait_psionic_shifters"
+		# }
+	# }
+# }
+# event = {
+	# id = "trait.35"
+	# hide_window = yes
+	# is_triggered_only = yes
+
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# NOT = {
+					# any_owned_pop = { 
+						# limit = { is_majority_species }
+						# has_trait = trait_psionic_ethereals
+					# }
+				# }
+			# }
+			# remove_modifier = "trait_psionic_ethereals"
+		# }
+	# }
+# }
+event = {
+	id = "trait.36"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_precursor
+			}
+			country_event = { id = altstart.1 }
+		}
+	}
+}
+event = {
+	id = "trait.37"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_psionic_start
+			}
+			country_event = { id = altstart.2 }
+		}
+	}
+}
+event = {
+	id = "trait.38"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_ethereal_start
+			}
+			country_event = { id = altstart.3 }
+		}
+	}
+}
+event = {
+	id = "trait.39"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_preftl
+			}
+			country_event = { id = altstart.4 }
+		}
+	}
+}
+
+
+event = {
+	id = "trait.1601"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					any_owned_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_dumb2
+					}
+				}
+			}
+			remove_modifier = "trait_dumb2"
+		}
+	}
+}
+
+event = {
+	id = "trait.1602"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					any_owned_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_energy_lifeform
+					}
+				}
+			}
+			remove_modifier = "trait_effects_energy_lifeform"
+		}
+	}
+}
+
+event = {
+	id = "trait.1701"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					any_owned_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_dumb3
+					}
+				}
+			}
+			remove_modifier = "trait_dumb3"
+		}
+	}
+}
+
+event = {
+	id = "trait.1801"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					any_owned_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_winter
+					}
+				}
+			}
+			remove_modifier = "trait_hibernation"
+		}
+	}
+}
+
+planet_event = {
+		id = "trait.8321"
+		hide_window = yes
+
+		trigger = {
+			any_pop = {
+				 OR = {
+						has_trait = trait_subterranean
+						has_trait = trait_living_planet
+				 }
+				 is_being_purged = no
+				 is_enslaved = no
+			}
+			planet_size < 25
+			NOT = { is_planet_class = pc_habitat }
+			NOT = { has_planet_flag = eldoc_growth_halted }
+		}
+
+		mean_time_to_happen = {
+				months = 30
+		}
+
+		immediate = {
+				change_planet_size = 1
+		}
+}
+
+country_event = {
+	id = "trait.8322"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_modifier = "trait_positive_doom"
+		add_modifier = {
+			modifier = doom_lifted
+			days = -1
+		}
 	}
 }
 
 country_event = {
-  id = "trait.8323"
-  hide_window = no
+	id = "trait.8323"
+	hide_window = no
 	title = "DOOM HAS COME"
 	desc = "DEATH COMETH"
 
-  trigger = {
-	   AND = {
-			  any_owned_pop = { has_trait = trait_negative_doom }
-			  NOT = { has_country_modifier = trait_negative_doom }
+	trigger = {
+		 AND = {
+				any_owned_pop = { has_trait = trait_negative_doom }
+				NOT = { has_country_modifier = trait_negative_doom }
 		 }
-  }
+	}
 
-  mean_time_to_happen = {
+	mean_time_to_happen = {
 		days = 1
-  }
+	}
 
-  immediate = {
-    add_modifier = {
-        modifier = doom_unleashed
-        days = -1
-    }
-	  country_event = { id = crisis.14 }
+	immediate = {
+		add_modifier = {
+				modifier = doom_unleashed
+				days = -1
+		}
+		country_event = { id = crisis.14 }
 		every_owned_pop = {
 			random_list = {
 				75 = { kill_pop = yes }
@@ -548,61 +933,61 @@ country_event = {
 				}
 			}
 		}
-  }
+	}
 }
 
 planet_event = {
-  id = "trait.8324"
-  hide_window = no
+	id = "trait.8324"
+	hide_window = no
 	title = "DEATH COMETH TO EARTH"
 	desc = "DEATH"
 
-  trigger = {
-    any_pop = {
-      has_trait = trait_doom_unleashed
-      is_being_purged = no
+	trigger = {
+		any_pop = {
+			has_trait = trait_doom_unleashed
+			is_being_purged = no
 			is_enslaved = no
-    }
-    planet_size > 5
-  }
+		}
+		planet_size > 5
+	}
 
-  mean_time_to_happen = {
-    months = 1
-  }
+	mean_time_to_happen = {
+		months = 1
+	}
 
-  immediate = {
-    change_planet_size = -4
-  }
+	immediate = {
+		change_planet_size = -4
+	}
 }
 
-#event = {
-#    id = "trait.8325"
-#    hide_window = yes
-#    is_triggered_only = yes
-#
-#    immediate = {
-#        every_country = {
-#            limit = {
-#				has_trait = trait_winter
-#            }
-#			country_event = { id = trait.8326 }
-#        }
-#    }
-#}
-#country_event = {
-#    id = "trait.8326"
-#	title = "trait.8326.title"
-#	desc = trait.8326.desc
-#    is_triggered_only = yes
-#
-#	option = {
-#		name = trait.8326.a
-#            add_modifier = {
-#                modifier = trait_hibernation
-#                months = 12
-#            }
-#	}
-#}
+event = {
+		id = "trait.8325"
+		hide_window = yes
+		is_triggered_only = yes
+
+		immediate = {
+				every_country = {
+						limit = {
+				has_trait = trait_winter
+						}
+			country_event = { id = trait.8326 }
+				}
+		}
+}
+country_event = {
+		id = "trait.8326"
+		title = "trait.8326.title"
+		desc = trait.8326.desc
+		is_triggered_only = yes
+
+	option = {
+		name = trait.8326.a
+						add_modifier = {
+								modifier = trait_hibernation
+								days = 365
+						}
+	}
+}
 
 
 #####################
@@ -610,45 +995,45 @@ planet_event = {
 #####################
 
 country_event = {
-  id = "trait.8327"
-  hide_window = yes
+	id = "trait.8327"
+	hide_window = yes
 	title = "Stupdity Trigger"
 	desc = "Yay!"
 
-  trigger = {
+	trigger = {
 		OR = {
 			has_trait = trait_dumb1
 			has_trait = trait_dumb2
 			has_trait = trait_dumb3
 		}
-  }
+	}
 
-  mean_time_to_happen = {
-    months = 1200
+	mean_time_to_happen = {
+		months = 1200
 
-	  modifier = {
-		  factor = 5.0
-		  has_trait = trait_dumb1
-	  }
-    modifier = {
-		  factor = 0.2
+		modifier = {
+			factor = 5.0
+			has_trait = trait_dumb1
+		}
+		modifier = {
+			factor = 0.2
 			has_trait = trait_dumb3
 		}
-  }
+	}
 
-  immediate = {
-    random_list ={
+	immediate = {
+		random_list ={
 			25 = { country_event = { id = trait.8332 } }
 			5 = { country_event = { id = trait.8331 } }
 			20 = { country_event = { id = trait.8328 } }
 			25 = { country_event = { id = trait.8329 } }
 			25 = { country_event = { id = trait.8330 } }
 		}
-  }
+	}
 }
 
 country_event = {
-  id = "trait.8328"
+	id = "trait.8328"
 	title = "trait.8328.name"
 	desc = trait.8328.desc
 	picture = GFX_evt_exploding_ship
@@ -659,39 +1044,41 @@ country_event = {
 		random_owned_planet = {
 			limit = { has_building = yes }
 			random_tile = {
-        limit = {
-          has_building = yes
-          has_pop = yes
-        }
-        set_blocker = "tb_failing_infrastructure"
-      }
+				limit = {
+					has_building = yes
+					has_pop = yes
+				}
+				set_blocker = "tb_failing_infrastructure"
+			}
 		}
 	}
 }
 
 planet_event = {
-  id = "trait.8333"
+	id = "trait.8333"
 	title = "trait.8333.name"
 	desc = "trait.8333.desc"
 	picture = "GFX_evt_nuclear_explosion"
 	show_sound = event_super_explosion
 
-  trigger = {
-	   AND = {
-		   owner = { has_trait = trait_living_planet }
-			 any_pop = {
-			    NOT = { has_trait = trait_living_planet }
-			    is_being_purged = yes
-			 }
+	trigger = {
+		 AND = {
+			has_owner = yes
+			owner = { has_trait = trait_living_planet }
+			#any_pop = {
+			#		NOT = { has_trait = trait_living_planet }
+			#		is_being_purged = yes
+			#}
+			is_homeworld = no		# zou extra planeten bij advanced start moeten verwijderen
 		 }
-  }
+	}
 
-  mean_time_to_happen = {
-    days = 30
-  }
+	mean_time_to_happen = {
+		days = 30
+	}
 
 	option = {
-    name = trait.8333.option
+		name = trait.8333.option
 			if = {
 				limit = { is_ringworld = yes }
 				change_pc = pc_ringworld_habitable_damaged
@@ -704,19 +1091,19 @@ planet_event = {
 				limit = { has_building = yes }
 				remove_building = yes
 			}
-		  destroy_colony = { keep_buildings = no }
-  }
+			destroy_colony = yes
+	}
 }
 
 country_event = {
-  id = "trait.8334"
-  hide_window = yes
+	id = "trait.8334"
+	hide_window = yes
 	is_triggered_only = yes
 
-  immediate = {
-	  every_owned_planet = {
-	      change_pc = pc_gas_giant
-	  }
+	immediate = {
+		every_owned_planet = {
+				change_pc = pc_gas_giant
+		}
 
 		#every_owned_pop = {
 		#	modify_species = {
@@ -736,6 +1123,20 @@ country_event = {
 		#}
 	}
 }
+
+country_event = {
+	id = "trait.8100"			# cheat event for rapid start
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+			add_modifier = {
+				modifier = trait_effects_supercheat
+				days = -1
+			}
+	}
+}
+
 
 ########################
 ## Genemod On_Actions ##
@@ -774,3 +1175,233 @@ country_event = {
 		}
 	}
 }
+
+#######################################
+#	Civics
+#######################################
+
+event = {
+	id = "trait.42"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_bio_assimilator
+			}
+			give_technology = { tech = "tech_civic_bio_assimilator" message = no }
+		}
+	}
+}
+event = {
+	id = "trait.43"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_strogg
+			}
+			give_technology = { tech = "tech_civic_strogg" message = no }
+		}
+	}
+}
+event = {		# reduce genemodding bonus slightly after getting first AP
+	id = "trait.44"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_bio_assimilator
+			}
+			remove_modifier = "civic_bio_assimilator_1"
+			remove_modifier = "civic_bio_assimilator_2"
+			add_modifier = {
+				modifier = civic_bio_assimilator_1
+				days = -1
+			}
+		}
+	}
+}
+event = {		# reduce genemodding bonus slightly after getting second AP
+	id = "trait.45"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_bio_assimilator
+			}
+			remove_modifier = "civic_bio_assimilator_1"
+			remove_modifier = "civic_bio_assimilator_2"
+			add_modifier = {
+				modifier = civic_bio_assimilator_2
+				days = -1
+			}
+		}
+	}
+}
+
+event = {		# add strogg trait et cetera
+	id = "trait.46"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_civic = civic_strogg
+			}
+		every_owned_pop = {
+			modify_species = {
+				species = this
+				remove_trait = trait_cybernetic
+				add_trait = trait_strogg
+			}
+			set_living_standard = {
+				type = living_standard_hive_mind
+				country = root.owner
+			}
+			set_citizenship_type = {
+				type = citizenship_full
+				country = root.owner
+			}
+		}
+			add_modifier = {
+				modifier = trait_strogg
+				days = -1
+			}
+		}
+	}
+}
+
+event = {
+	id = "trait.47"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_smart1
+			}
+			add_modifier = {
+				modifier = trait_smart1
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.48"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_smart2
+			}
+			add_modifier = {
+				modifier = trait_smart2
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.49"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_smart3
+			}
+			add_modifier = {
+				modifier = trait_smart3
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.50"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					any_owned_pop = { 
+						limit = { is_majority_species }
+						has_trait = trait_smart1
+					}
+				}
+			}
+			remove_modifier = "trait_smart1"
+		}
+	}
+}
+event = {
+	id = "trait.51"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					any_owned_pop = { 
+						limit = { is_majority_species }
+						OR = {
+							has_trait = trait_robot_learning_algorithms2
+							has_trait = trait_smart2
+						}
+					}
+				}
+			}
+			remove_modifier = "trait_smart2"
+		}
+	}
+}
+event = {
+	id = "trait.52"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					any_owned_pop = {
+						limit = { is_majority_species }
+						OR = {
+							has_trait = trait_robodesign_synthetic
+							has_trait = trait_smart3
+							has_trait = trait_robotic_3
+						}
+					}
+				}
+			}
+			remove_modifier = "trait_smart3"
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

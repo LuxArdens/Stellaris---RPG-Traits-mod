@@ -1,0 +1,498 @@
+@tier2cost1 = 900
+@tier2weight1 = 75
+@tier3cost3 = 3360
+
+tech_hollow_asteroids = {
+	cost = 8000			# pretty expensive for tier 2
+	area = engineering
+	tier = 3
+	category = { new_worlds }
+	weight = 5
+	is_rare = yes
+	
+	modifier = {
+		pc_asteroid_habitability = 0.4
+	}
+
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_HOLLOW_ASTEROIDS_CHANGE_TITLE"
+			desc = "TECH_UNLOCK_HOLLOW_ASTEROIDS_CHANGE_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+		modifier = {
+		factor = 3
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}
+
+
+tech_planet_modernization = {
+	cost = 15000
+	area = engineering
+	tier = 5
+	category = { new_worlds }
+	weight = 5
+	is_rare = yes
+
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_TITLE"
+			desc = "TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		}
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_gestalt_consciousness"
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}
+
+
+tech_planet_life_restoration = {
+	cost = 10000
+	area = society
+	tier = 5
+	category = { new_worlds }
+	weight = 5
+	is_rare = yes
+
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_PLANET_LIFE_RESTORATION_CHANGE_TITLE"
+			desc = "TECH_UNLOCK_PLANET_LIFE_RESTORATION_CHANGE_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_gestalt_consciousness"
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}
+
+
+tech_planet_temperature_control = {
+	cost = 20000
+	area = physics
+	tier = 5
+	category = { new_worlds }
+	weight = 5
+	is_rare = yes
+
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				OR = {
+				has_trait = "leader_trait_maniacal"
+				has_trait = "leader_trait_curator"
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}
+
+tech_gas_reforming = {
+	cost = 50000
+	area = physics
+	tier = 5
+	category = { particles }
+	weight = 5
+	is_rare = yes
+
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}
+
+tech_gas_escalation = {
+	cost = 50000
+	area = physics
+	tier = 5
+	category = { particles }
+	weight = 5
+	is_rare = yes
+
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}
+
+
+tech_asteroid_reforming = {
+	cost = 25000
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	weight = 5
+	is_rare = yes
+
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}
+
+
+tech_planet_breaking = {
+	cost = 50000
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	weight = 5
+	is_rare = yes
+
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}
+
+
+tech_planetmod_gravity = {
+	cost = 10000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	weight = 20
+	is_rare = yes
+
+	modifier = {
+		set_country_flag = "tech_planetmod_gravity"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				any_planet_within_border = {
+					has_modifier = "low_gravity"
+				}			
+			}
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_2_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_3_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_4_rpg"
+		}
+		modifier = {
+			factor = 1.5
+			has_technology = "tech_colonization_5_rpg"
+		}
+	}
+
+	ai_weight = {
+		factor = 0.25
+	}
+}

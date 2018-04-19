@@ -54,84 +54,84 @@ gas_rich_planet = {
 	icon_frame = 1
 }
 gas_rich_planet_fo_realz = {
-	tile_resource_energy_mult = 1.0
+	tile_resource_energy_mult = 0.5
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_aphrodisiac.dds"
 	icon_frame = 1
 }
 food_rich_planet = {
-	pop_growth_req_mult = -0.4
-	pop_happiness = 0.2
+	pop_growth_speed = 0.2
+	pop_happiness = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
 	icon_frame = 1
 }
 super_sensor_array = {
-	planet_sensor_range_mult = 4.0
+	planet_sensor_range_add = 4
 	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
 	icon_frame = 1
 }
 horse_powered_factories_low = {
-	planet_building_cost_mult = -0.10
-	building_time_mult = -0.10
+	planet_building_cost_mult = -0.05
+	planet_building_build_speed_mult = 0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
 }
 horse_powered_factories_medium = {
-	planet_building_cost_mult = -0.20
-	building_time_mult = -0.20
+	planet_building_cost_mult = -0.10
+	planet_building_build_speed_mult = 0.10
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
 }
 horse_powered_factories_high = {
-	planet_building_cost_mult = -0.30
-	building_time_mult = -0.30
-	tile_resource_food_mult = -0.2
+	planet_building_cost_mult = -0.15
+	planet_building_build_speed_mult = 0.15
+	tile_resource_food_mult = -0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
 hostile_animal_life = {
-	pop_happiness = -0.2
-	building_time_mult = 0.40
+	pop_happiness = -0.1
+	planet_building_build_speed_mult = -0.20
 	icon = "gfx/interface/icons/planet_modifiers/pm_dangerous_wildlife.dds"
 	icon_frame = 2
 }
 society_animal_life = {
-	tile_resource_society_research_mult = 0.50
+	tile_resource_society_research_mult = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_dangerous_wildlife.dds"
 	icon_frame = 1
 }
 shifting_sands = {
-	pop_environment_tolerance = -0.40
-	planet_building_cost_mult = 0.66
+	pop_environment_tolerance = -0.1
+	planet_building_cost_mult = 0.33
 	icon = "gfx/interface/icons/planet_modifiers/pm_wasteland.dds"
 	icon_frame = 3
 }
 suppressed_opposition = {
-	pop_happiness = -0.30
+	pop_happiness = -0.15
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 3
 }
 scared_population = {
-	pop_happiness = -0.30
-	pop_environment_tolerance = -0.30
+	pop_happiness = -0.15
+	pop_environment_tolerance = -0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
 	icon_frame = 3
 }
 secured_factory = {
-	edict_influence_cost = 0.50
-	building_time_mult = 0.50
+	edict_cost = 0.25
+	planet_building_build_speed_mult = -0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
 	icon_frame = 3
 }
 fear_as_control = {
-	pop_happiness = -0.40
-	edict_influence_cost = -0.50
-	army_morale = 0.50
+	pop_happiness = -0.20
+	edict_cost = -0.25
+	army_morale = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
 }
 fear_as_control_militarist = {
-	edict_influence_cost = -0.50
-	army_morale = 0.50
+	edict_cost = -0.25
+	army_morale = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 1
 }
@@ -140,8 +140,33 @@ infectious_disease = {
 	icon_frame = 3
 }
 pyramid_wars = {
-	pop_happiness = -0.6
+	pop_happiness = -0.4
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 3
+}
+spiritualist_attraction = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 2
+	pop_ethic_spiritualist_attraction_mult = 1
+}
+materialist_attraction = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
+	icon_frame = 2
+	pop_ethic_materialist_attraction_mult = 1
+}
+syndaw_automated_work = {
+	pop_happiness = -0.05
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 3
+}
+syndaw_unfriendly_robots = {
+	country_resource_unity_mult = -0.10
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 3
+}
+syndaw_research_malus = {
+	tile_resource_society_research_mult = -0.10
+	icon = "gfx/interface/icons/planet_modifiers/pm_faith_in_science.dds"
 	icon_frame = 3
 }
 ##########################################################################
@@ -169,12 +194,11 @@ media_coverage_negative_high = {
 	pop_happiness = -0.3
 }
 health_discovery = {
-	pop_happiness = 0.1
+	biological_pop_happiness = 0.1
 	tile_resource_society_research_mult = 0.20
 }
 army_speed_boost = {
-	ship_evasion_mult = 0.15
-	ship_speed_mult = 0.15
+	ship_speed_mult = 0.10
 }
 solar_harvesting_bacteria = {
 	tile_resource_energy_mult = 0.05
@@ -183,49 +207,54 @@ army_inspiration = {
 	planet_army_build_speed_mult  = 0.20
 	army_morale = 0.20
 }
+army_inspiration_mach = {
+	planet_army_build_speed_mult  = 0.20
+	army_morale = 0.20
+}
 science_inspiration = {
 	science_ship_survey_speed  = 0.20
 	ship_anomaly_research_speed_mult = 0.20
 }
 zero_gravity_revelation = {
-	spaceport_module_cost_mult  = -0.1
+	starbase_module_build_cost_mult  = -0.1
 }
 youthful_elite = {
-	leader_age = 20
+	leader_age = 15
 }
 youthful_people = {
-	pop_happiness = 0.05
-}
-slavery_bad_juju = {
-	pop_happiness = 0.1
-	pop_slavery_tolerance = -0.1
-}
-slavery_very_bad_juju = {
-	pop_slavery_tolerance = -0.25
+	biological_pop_happiness = 0.05
 }
 fertility_virus = {
-	pop_environment_tolerance = -0.20
-	pop_growth_req_mult = 0.20
+	pop_environment_tolerance = -0.05
+	pop_growth_speed = -0.20
 }
 forth_dimension_knowledge = {
 	all_technology_research_speed = 0.15
 }
 immigrants_protection = {
-	influence_gain_mult = 0.25
+	country_resource_influence_mult = 0.25
 	tile_resource_energy_mult = -0.05
 }
 fear_as_control_militarist_p2 = {
-	leader_influence_cost = 0.20
+	leader_cost = 0.20
 }
 alien_genome_research = {
 	army_damage_mult = 0.05
+}
+syndaw_research_bonus = {
+	all_technology_research_speed = 0.05
+}
+syndaw_production_surplus = {
+	pop_consumer_goods_mult = -0.05
 }
 
 ##########################################################################
 # Ship Modifiers
 ##########################################################################
 protege_onboard = {
-	ship_anomaly_research_speed_mult = 0.2
+	ship_anomaly_research_speed_mult = 0.20
+	ship_anomaly_fail_risk = -0.20
+	ship_anomaly_generation_chance_mult = 0.10
 }
 ship_survey_boost = {
 	science_ship_survey_speed = 0.15
@@ -239,9 +268,29 @@ streamlined_ship_design = {
 }
 ship_excess_power = {
 	ship_evasion_mult = 0.1
-	ship_speed_mult = 0.2
-	ship_combat_speed_mult = 0.1
+	ship_speed_mult = 0.1
 	ship_weapon_damage = 0.1
+}
+# Applied when the ship is orbiting a planet where repairs are possible
+ship_orbit_repair = {
+	ship_hull_regen_add_perc = 2
+	ship_armor_regen_add_perc = 2
+}
+# Scaling 1% HP: 100% penalty -> 100% HP: 0% penalty
+# Only ship_fire_rate_mult and ship_speed_mult will have an effect here
+ship_max_damaged_effect = {
+	ship_fire_rate_mult = -0.5
+}
+# Self repair applied to stations when they are not on cooldown
+# Only ship_{hull,armor,shield}_regen_add_{perc,static} modifiers will have an effect here
+station_self_repair = {
+	ship_hull_regen_add_perc = 1
+	ship_armor_regen_add_perc = 1
+}
+
+# For each 100% size disparity between combatants
+fleet_force_disparity_effect = {
+	force_disparity_fire_rate_mult = 0.5
 }
 
 ##########################################################################
@@ -273,7 +322,7 @@ pop_pleased = {
 }
 alien_infection = {
 	pop_happiness = -0.2
-	pop_environment_tolerance = -0.2
+	pop_environment_tolerance = -0.1
 }
 alien_music = {
 	pop_happiness = 0.20

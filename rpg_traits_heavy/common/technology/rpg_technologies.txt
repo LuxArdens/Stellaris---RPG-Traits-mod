@@ -1,0 +1,583 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 360
+@tier1cost2 = 480
+@tier1cost3 = 600
+@tier1cost4 = 720
+
+@tier2cost1 = 1000
+@tier2cost2 = 1400
+@tier2cost3 = 1800
+@tier2cost4 = 2200
+
+@tier3cost1 = 3000
+@tier3cost2 = 4000
+@tier3cost3 = 5000
+@tier3cost4 = 6000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+@tier1weight4 = 85
+
+@tier2weight1 = 75
+@tier2weight2 = 70
+@tier2weight3 = 65
+@tier2weight4 = 60
+
+@tier3weight1 = 50
+@tier3weight2 = 45
+@tier3weight3 = 40
+@tier3weight4 = 35
+
+tech_psionic_synthetics = {
+  cost = 10000
+  area = physics
+  tier = 3
+  category = { psionics }
+  prerequisites = { "tech_synthetic_workers" "tech_synthetic_leaders" "tech_psionic_theory" }
+  is_rare = yes
+  weight = @tier3weight4
+
+  prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_PSIONIC_SYNTHETICS_TITLE"
+			desc = "TECH_UNLOCK_PSIONIC_SYNTHETICS_DESC"
+		}
+	}
+
+  weight_modifier = {
+    factor = 0.5
+    modifier = {
+			factor = 1.10
+			research_leader = {
+				area = physics
+				has_level > 2
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_level > 3
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_level > 4
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+  }
+  ai_weight = {
+    weight = 5 #Very rare tech
+    modifier = {
+      factor = 1.25
+      research_leader = {
+        area = physics
+        has_trait = "leader_trait_expertise_psionics"
+      }
+    }
+  }
+}
+
+tech_psionic_shifters = {
+  cost = 20000
+  area = physics
+  tier = 3
+  category = { psionics }
+  prerequisites = { "tech_psionic_theory" }
+  is_rare = yes
+  weight = 5
+
+  weight_modifier = {
+    factor = 0.5
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_level > 2
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				has_level > 3
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 4
+			research_leader = {
+				area = physics
+				has_level > 4
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ascension_perk = ap_transcendence
+				has_country_flag = psionic_start
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_transcendence
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				OR = {
+					has_trait = "leader_trait_maniacal"
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+  }
+  ai_weight = {
+    weight = 5 #Very rare tech
+  }
+}
+
+tech_psionic_ethereals = {
+  cost = 40000
+  area = physics
+  tier = 3
+  category = { psionics }
+  prerequisites = { "tech_psionic_shifters" }
+  is_rare = yes
+  weight = 15
+
+  weight_modifier = {
+    factor = 0.5
+    modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_level > 2
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				has_level > 3
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 4
+			research_leader = {
+				area = physics
+				has_level > 4
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+    modifier = {
+      factor = 3
+      research_leader = {
+        area = physics
+        OR = {
+          has_trait = "leader_trait_maniacal"
+          has_trait = "leader_trait_curator"
+        }
+      }
+    }
+  }
+  ai_weight = {
+    weight = 5 #Very rare tech
+  }
+}
+
+tech_robo_stapling = {
+  cost = 3000
+  area = engineering
+  tier = 2
+  category = { industry }
+  prerequisites = { "tech_droid_workers" }
+  is_rare = yes
+  weight = 50
+
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = 0 # AI can't handle this
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0 # AI can't handle this
+  }
+}
+
+tech_robomod_1 = {
+  cost = 4000
+  area = engineering
+  tier = 2		# locked behind significant effort now
+  category = { industry }
+  prerequisites = { "tech_powered_exoskeletons" }
+  is_rare = yes
+  weight = 25
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_mechanists
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		}
+		modifier = {
+			factor = 10
+			has_ascension_perk = ap_the_flesh_is_weak
+		}
+		modifier = {
+			factor = 10
+			has_ascension_perk = ap_synthetic_age
+		}
+		modifier = {
+			factor = 1
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 1
+  }
+}
+
+tech_robomod_2 = {			# high-tech
+  cost = 20000
+  area = engineering
+  tier = 5
+  category = { industry }
+  prerequisites = { "tech_robomod_1" }
+  is_rare = yes
+  weight = 20
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ascension_perk = ap_the_flesh_is_weak 
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_the_flesh_is_weak
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 0 # AI can't handle this
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0 # AI can't handle this
+  }
+}
+
+
+tech_robomod_3 = {
+  cost = 50000
+  area = engineering
+  tier = 5
+  category = { industry }
+  prerequisites = { "tech_robomod_2" }
+  is_rare = yes
+  weight = 5
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = { 
+				has_ascension_perk = ap_the_flesh_is_weak 
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = { 
+				has_ascension_perk = ap_synthetic_evolution
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 0 # AI can't handle this
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0 # AI can't handle this
+  }
+}
+
+tech_genemod_ai_unfriendly = {
+  cost = 30
+  area = society
+  tier = 3		# locked behind significant effort now
+  category = { industry }
+  prerequisites = { "tech_gene_tailoring" }
+  is_rare = yes
+  weight = 200
+
+	weight_modifier = {
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_engineered_evolution
+		}
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_evolutionary_mastery
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+  ai_weight = {
+    weight = 0
+  }
+}
+
+#######################################################################
+# "Fake" Technologies. These should ALWAYS be hidden to the user. Made compact for reasons
+#######################################################################
+
+tech_psionic_ascension_get = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_normal_worlds = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_ai_worlds = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_star_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_gas_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_molten_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_toxic_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_barren_habitation = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { industry }
+	tier = 0
+	weight = 0
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+tech_asteroid_habitation = {
+cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
+#tech_example_tech = {
+cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
+tech_trait_strogg = {
+cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
+tech_trait_cybernetic = {
+cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

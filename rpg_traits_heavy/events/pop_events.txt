@@ -22,7 +22,7 @@ pop_event = {
 			NOT = { is_planet_class = pc_habitat }
 			habitability = { 
 				who = root
-				value < 0.5
+				value < 0.4
 			}
 			is_capital = no
 			has_owner = yes
@@ -32,7 +32,7 @@ pop_event = {
 				is_same_species = ROOT
 				NOR = {
 					has_country_flag = pop_modification
-					has_ethic = ethic_hive_mind
+					has_ethic = ethic_gestalt_consciousness
 				}
 				ROOT = {
 					planet = {
@@ -73,6 +73,7 @@ pop_event = {
 				class = this
 				portrait = this
 				traits = {
+					trait = trait_self_modified
 					trait = random_traits
 				}
 				homeworld = this
@@ -677,7 +678,7 @@ planet_event = {
 		hidden_effect = {
 			modify_species = {
 				species = FROM
-				add_trait = trait_strong1
+				add_trait = trait_strong
 			}
 		}
 	}

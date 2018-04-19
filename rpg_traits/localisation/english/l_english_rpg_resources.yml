@@ -1,0 +1,28 @@
+﻿l_english:
+ ####################################
+ # Misc
+ ####################################
+
+ IC_STARVATION:0 "§RWe are lacking industrial capacity, crippling our port facilities.§!"
+ 
+ ####################################
+ # Basic Resources
+ ####################################
+ ic:0 "Industrial Capacity"
+ ic_desc:1 "§E§HIndustrial Capacity§! (£ic ) reflects the ability of a society to manufacture both common and complex goods. It is essential to any post-agrarian society and can be increased by building planetary or orbital factories, as well as increasing the efficiency of existing structures through technological means.§!"
+ 
+ IC_IRO:0 "§HIndustrial Capacity§!"
+ IC_DRO:0 "Industrial Capacity§! (£ic ) reflects the ability of a society to manufacture both common and complex goods. It is essential to any post-agrarian society and can be increased by building planetary or orbital factories, as well as increasing the efficiency of existing structures through technological means."
+ ####################################
+ # Planetary Buildings
+ ####################################
+
+ building_basic_factory:0 "Basic Factory"
+ building_basic_factory_desc:1 "Factories produce Industrial Capacity, necessary for building MOAR factories."
+ 
+ TOOLTIP_RESOURCE_IC:0 "Current Industrial Capacity: $VALUE|Y$"
+ TOOLTIP_IC:0 "Monthly IC generation: $VALUE|Y$!"
+ buildable_ic:0 "Industrial Capacity"
+ buildable_ic:0 "Industrial Capacity"
+ IC_BUDGET:0 "Industrial Capacity Budget"
+ IC_COST:0 "£ic $VALUE|1Y$"

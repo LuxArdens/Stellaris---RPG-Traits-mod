@@ -2,18 +2,12 @@
 ### Traits effects #####################################################
 ########################################################################
 
-trait_effects_weirdass = {
-	ship_fire_rate_mult = 20
-}
-
 
 bp_increased_reproduction = {
-	#pop_growth_req_mult = -0.5 # old
 	pop_growth_speed = 2
 }
 
 bp_reduced_reproduction = {
-	#pop_growth_req_mult = 1
 	pop_growth_speed = -0.5
 }
 
@@ -24,46 +18,191 @@ trait_hoarders = {
 	max_energy = 200000
 }
 
+trait_psionic_shifters = {
+	ship_speed_mult = 0.25
+	ship_windup_mult = -0.1
+	ship_winddown_mult = -0.1
+	ship_emergency_ftl_mult = -0.25
+	ship_evasion_add = 10
+}
+
+trait_psionic_ethereals = {
+	ship_speed_mult = 0.5
+	ship_windup_mult = -0.2
+	ship_winddown_mult = -0.2
+	ship_emergency_ftl_mult = -0.5
+	ship_evasion_add = 20		# very ghostly ships
+}
+
 trait_titanic = {
 	# big buildings, tile blockers are irrelevant
 	planet_building_cost_mult = 4
 	planet_clear_blocker_time_mult = -0.5
 	planet_clear_blocker_cost_mult = -0.5
-	
-	# huge soldiers
-	army_upkeep_mult = 4
+		# huge soldiers
+	army_upkeep_mult = 0.5		# reduced because it's energy
 	planet_army_build_cost_mult = 4
 	planet_army_build_speed_mult = -0.8
-	
-	# Huge ships
-	shipsize_colonizer_construction_speed_mult = -0.25 # downtuned penalty a bit
-	shipsize_colonizer_build_cost_mult = 1 # downtuned penalty a bit
-	spaceport_ship_build_speed_mult = -0.90 # this combined with the other modifier means you can't reasonably build colony ships until a level 2 spaceport is built
-	spaceport_ship_build_cost_mult = 5
-	ship_speed_mult = -0.5
-	ship_combat_speed_mult = -0.5
-	ship_windup_mult = 0.25
+		# Huge robots
+	pop_robot_upkeep_mult = 5					# Machine races are considered robot pops in game now.
+	pop_robot_production_output = 5
+	pop_robot_build_speed_mult = -0.9
+	pop_robot_build_cost_mult = 5
+		# Huge ships
+	shipclass_colonizer_build_cost_mult	= 3
+	shipsize_colonizer_build_speed_mult = -0.5
+	starbase_shipyard_build_speed_mult = -0.75
+	starbase_shipyard_build_cost_mult = 9				# was 4, now TEN times as expensive as normal ships
+	ship_speed_mult = -0.6
+	ship_windup_mult = 0.25			# these make them feel really clunky
 	ship_winddown_mult = 0.25
-	ship_emergency_ftl_mult = 0.25
-	ship_armor_add = 1
+	ship_emergency_ftl_mult = 0.5
+	ship_hull_mult = 4
+	ship_shield_mult = 4
 	ship_armor_mult = 4
-	ship_hitpoints_add = 5
-	ship_hitpoints_mult = 4
 	ship_weapon_damage = 4
 	ship_fire_rate_mult = -0.25
-	ship_shield_hp_mult = 4
-	ship_upkeep_mult = 5
-	ship_tracking_add = -5
-	ship_evasion_add = -25
-	navy_size_mult = -0.8
-	ship_weapon_range_mult = 1
-	
-	
-	ship_shield_regen_mult = 4
-	
-	# huge storages
+	ship_upkeep_mult = 4
+	ship_tracking_add = -15			# was -5, makes enemy corvette spam a more viable strategy
+	ship_evasion_add = -40			# made more hefty because their corvettes are really supposed to be like cruiser-sized
+	country_naval_cap_mult = -0.8	# restricted to ~2 ships early game, up to much more in mid-late
+	ship_weapon_range_mult = 1		# not half as useful as you might expect
+	#ship_shield_regen_add_perc = 4			# But this does work
+		# huge storages
 	max_minerals = 50000
 	max_energy = 50000
+}
+
+trait_tiny = {
+		# tiny buildings, tile blockers are a big problem
+	planet_building_cost_mult = -0.7 			# can get free buildings by stacking modifiers. I don't care.
+	#planet_building_upkeep_mult = -0.7			# removed with the new energy rework
+	#planet_clear_blocker_time_mult = 1			# this was unnecessarily harsh
+	#planet_clear_blocker_cost_mult = 1
+		# tiny robots
+	pop_robot_upkeep_mult = -0.75
+	pop_robot_production_output = -0.75
+	pop_robot_build_speed_mult = 3
+	pop_robot_build_cost_mult = -0.75
+		# tiny soldiers
+	army_upkeep_mult = -0.7
+	planet_army_build_cost_mult = -0.7
+	planet_army_build_speed_mult = 4
+		# tiny ships
+	shipclass_colonizer_build_cost_mult = -0.8
+	shipsize_colonizer_build_speed_mult = 3
+	starbase_shipyard_build_speed_mult = 3
+	starbase_shipyard_build_cost_mult = -0.6 		# shipyard bonus now only applies to "ships in shipyard" so not science etc
+	ship_speed_mult = 1
+	ship_windup_mult = -0.5
+	ship_winddown_mult = -0.5
+	ship_emergency_ftl_mult = -0.25
+	ship_armor_add = -1
+	ship_armor_mult = -0.75
+	ship_hull_add = -1					#Hitpoints no longer refer to hull
+	ship_hull_mult = -0.75				#Hitpoints no longer refer to hull
+	ship_weapon_damage = -0.75
+	ship_fire_rate_mult = 0.25
+	ship_shield_mult = -0.75
+	ship_upkeep_mult = -0.8				# can go negative. Nothing to do be done about that unfortunately
+	ship_tracking_add = 5
+	ship_evasion_add = 20			# make it a tracking hell for enemy
+	country_naval_cap_mult = 4
+	ship_evasion_add = 20
+	country_naval_cap_mult = 4
+	ship_weapon_range_mult = -0.6			# get up reaaaal close and cosy
+		# tiny storages
+	#max_minerals = -1000
+	#max_energy = -1000
+}
+
+titan_robot_debuff = {
+	tile_resource_engineering_research_mult = -5
+	tile_resource_physics_research_mult = -5
+	tile_resource_society_research_mult = -5
+}
+
+tiny_robot_buff = {
+	tile_resource_engineering_research_mult = 0.75
+	tile_resource_physics_research_mult = 0.75
+	tile_resource_society_research_mult = 0.75
+}
+
+
+
+
+
+
+trait_titanic_machine = {
+	# big buildings, tile blockers are irrelevant
+	planet_building_cost_mult = 4
+	planet_clear_blocker_time_mult = -0.5
+	planet_clear_blocker_cost_mult = -0.5
+		# huge soldiers
+	army_upkeep_mult = 0.5		# reduced because it's energy
+	planet_army_build_cost_mult = 4
+	planet_army_build_speed_mult = -0.8
+		# Huge ships
+	shipclass_colonizer_build_cost_mult	= 3
+	shipsize_colonizer_build_speed_mult = -0.5
+	starbase_shipyard_build_speed_mult = -0.75
+	starbase_shipyard_build_cost_mult = 4
+	ship_speed_mult = -0.6
+	ship_windup_mult = 0.25			# these make them feel really clunky
+	ship_winddown_mult = 0.25
+	ship_emergency_ftl_mult = 0.5
+	ship_hull_mult = 4
+	ship_shield_mult = 4
+	ship_armor_mult = 4
+	ship_weapon_damage = 4
+	ship_fire_rate_mult = -0.25
+	ship_upkeep_mult = 4
+	ship_tracking_add = -5			# makes enemy corvette spam a more viable strategy
+	ship_evasion_add = -40			# made more hefty because their corvettes are really supposed to be like cruiser-sized
+	country_naval_cap_mult = -0.8	# restricted to ~2 ships early game, up to much more in mid-late
+	ship_weapon_range_mult = 1		# not half as useful as you might expect
+	#ship_shield_regen_add_perc = 4			# But this does work
+		# huge storages
+	max_minerals = 50000
+	max_energy = 50000
+}
+
+trait_tiny_machine = {
+		# tiny buildings, tile blockers are a big problem
+	planet_building_cost_mult = -0.7 			# can get free buildings by stacking modifiers. I don't care.
+	#planet_building_upkeep_mult = -0.7			# removed with the new energy rework
+	#planet_clear_blocker_time_mult = 1			# this was unnecessarily harsh
+	#planet_clear_blocker_cost_mult = 1
+		# tiny soldiers
+	army_upkeep_mult = -0.7
+	planet_army_build_cost_mult = -0.7
+	planet_army_build_speed_mult = 4
+		# tiny ships
+	shipclass_colonizer_build_cost_mult = -0.8
+	shipsize_colonizer_build_speed_mult = 3
+	starbase_shipyard_build_speed_mult = 3
+	starbase_shipyard_build_cost_mult = -0.6 		# shipyard bonus now only applies to "ships in shipyard" so not science etc
+	ship_speed_mult = 1
+	ship_windup_mult = -0.5
+	ship_winddown_mult = -0.5
+	ship_emergency_ftl_mult = -0.25
+	ship_armor_add = -1
+	ship_armor_mult = -0.75
+	ship_hull_add = -1					#Hitpoints no longer refer to hull
+	ship_hull_mult = -0.75				#Hitpoints no longer refer to hull
+	ship_weapon_damage = -0.75
+	ship_fire_rate_mult = 0.25
+	ship_shield_mult = -0.75
+	ship_upkeep_mult = -0.8				# can go negative. Nothing to do be done about that unfortunately
+	ship_tracking_add = 5
+	ship_evasion_add = 20			# make it a tracking hell for enemy
+	country_naval_cap_mult = 4
+	ship_evasion_add = 20
+	country_naval_cap_mult = 4
+	ship_weapon_range_mult = -0.6			# get up reaaaal close and cosy
+		# tiny storages
+	#max_minerals = -1000
+	#max_energy = -1000
 }
 
 trait_airborne = {
@@ -77,14 +216,19 @@ trait_subterranean = {
 }
 
 trait_shield_obsessed = {
-	ship_shield_hp_mult = 4
-	ship_hitpoints_mult = -0.75
-	ship_shield_regen_mult = 4
+	ship_shield_mult = 2
+	ship_armor_mult = -1
+	ship_shield_regen_add_perc = 4
+}
+
+trait_armor_obsessed = {
+	ship_shield_mult = -1
+	ship_armor_mult = 2
 }
 
 trait_effects_energy_lifeform = {
 	country_resource_energy_mult = -0.2
-	country_resource_food_mult = -10
+	#country_resource_food_mult = -10
 	army_upkeep_mult = 1
 }
 
@@ -94,26 +238,30 @@ trait_curious = {
 	science_ship_survey_speed = -0.5
 }
 trait_uncreative = {
-	num_tech_alternatives_add = -10
+	num_tech_alternatives_add = -2
 	ship_anomaly_generation_chance_mult = -0.5
 	science_ship_survey_speed = 1
 }
 
 egg_born = {
-	shipsize_colonizer_construction_speed_mult = 4
-	shipsize_colonizer_build_cost_mult = -0.5
+	shipclass_colonizer_build_cost_mult = -0.6
+		planet_colony_development_speed_mult = 1.00
+	shipsize_colonizer_build_speed_mult = 3
 }
 
 silent_observers = {
-	planet_sensor_range_mult = 4
-	navy_size_mult = -0.33
+	ship_sensor_range_add = 2			# Sensor range is much bigger in 2.0
+	country_naval_cap_mult = -0.33
 }
 
 turtles = {
-	shipclass_military_station_damage_mult = 2.0
-	shipclass_military_station_hit_points_mult = 5.0
+	shipclass_military_station_damage_mult = 1
 	shipclass_military_station_build_cost_mult = -0.8
-	navy_size_mult = -0.9
+		shipclass_military_station_hull_mult = 1
+		shipsize_military_station_small_hull_add = 500
+		country_naval_cap_add = -20
+		country_starbase_capacity_add = 100
+	starbase_defense_platform_capacity_add = 5
 }
 
 trait_dumb1 = {
@@ -147,75 +295,36 @@ sociology_elitists = {
 
 engineering_elitists = {
 	planet_building_cost_mult = -0.25
-	spaceport_ship_build_speed_mult = 0.2
-	ship_hitpoints_mult = 0.2
+	starbase_shipyard_build_speed_mult = 0.2
+	ship_hull_mult = 0.2
 	ship_armor_mult = 0.2
 }
 
 physics_elitists = {
-	ship_shield_hp_mult = 0.2
+	ship_shield_mult = 0.2
 	ship_weapon_damage = 0.2
 }
 
-trait_tiny = {
-	# tiny buildings, tile blockers are a big problem
-	planet_building_cost_mult = -0.7 # can get free buildings by stacking modifiers. I don't care.
-	planet_building_upkeep_mult = -0.7
-	planet_clear_blocker_time_mult = 1
-	planet_clear_blocker_cost_mult = 1
-	
-	# tiny soldiers
-	army_upkeep_mult = -0.7
-	planet_army_build_cost_mult = -0.7
-	planet_army_build_speed_mult = 2
-	
-	# tiny ships
-	shipsize_colonizer_construction_speed_mult = 1
-	#shipsize_colonizer_build_cost_mult = -0.25 # combined with general bonus means (almost) free colony ships
-	spaceport_ship_build_speed_mult = 3
-	spaceport_ship_build_cost_mult = -0.6 # enough to prevent free ships?
-	ship_speed_mult = 1
-	ship_combat_speed_mult = 1
-	ship_windup_mult = -0.2
-	ship_winddown_mult = -0.2
-	ship_emergency_ftl_mult = -0.2
-	ship_armor_add = -1
-	ship_armor_mult = -0.75
-	ship_hitpoints_add = -1
-	ship_hitpoints_mult = -0.75
-	ship_weapon_damage = -0.75
-	ship_fire_rate_mult = 0.25
-	ship_shield_hp_mult = -0.75
-	ship_upkeep_mult = -0.8
-	ship_tracking_add = 5
-	ship_evasion_add = 20
-	navy_size_mult = 4
-	ship_weapon_range_mult = -0.5
-	
-	# tiny storages
-	#max_minerals = -1000
-	#max_energy = -1000
-}
 
 trait_positive_doom = {
 	country_core_sector_system_cap = -4
 	all_technology_research_speed = -0.5
 	max_minerals = -1000
 	max_energy = -1000
-	
-	spaceport_ship_build_speed_mult = -0.5
+
+	starbase_shipyard_build_speed_mult = -0.5
 	ship_emergency_ftl_mult = 2
 	ship_armor_add = -100
 	ship_armor_mult = -2
-	ship_hitpoints_mult = -0.5
-	ship_shield_hp_mult = -0.5
+	ship_hull_mult = -0.5
+	ship_shield_mult = -0.5
 	ship_tracking_add = -20
 	ship_evasion_add = -200
-	navy_size_mult = -0.5
-	
+	country_naval_cap_mult = -0.5
+
 	country_resource_energy_mult = -0.5
 	country_resource_minerals_mult = -0.5
-	influence_gain_mult = -0.75
+	country_resource_influence_mult = -0.75
 	country_trade_attractiveness = -0.5
 	country_leader_cap = -4
 	ship_anomaly_fail_risk = 1
@@ -226,20 +335,20 @@ trait_negative_doom = {
 	all_technology_research_speed = 1
 	max_minerals = 10000
 	max_energy = 10000
-	
-	spaceport_ship_build_speed_mult = 1
+
+	starbase_shipyard_build_speed_mult = 1
 	ship_emergency_ftl_mult = -0.5
 	ship_armor_add = 1
 	ship_armor_mult = 1
-	ship_hitpoints_mult = 1
-	ship_shield_hp_mult = 1
+	ship_hull_mult = 1
+	ship_shield_mult = 1
 	ship_tracking_add = 20
 	ship_evasion_add = 20
-	navy_size_mult = 1
-	
+	country_naval_cap_mult = 1
+
 	country_resource_energy_mult = 1
 	country_resource_minerals_mult = 1
-	influence_gain_mult = 2
+	country_resource_influence_mult = 2
 	country_trade_attractiveness = 0.5
 	country_leader_cap = 12
 	ship_anomaly_fail_risk = -0.5
@@ -250,18 +359,18 @@ doom_unleashed = {
 	all_technology_research_speed = -2
 	max_minerals = -10000
 	max_energy = -10000
-	
-	spaceport_ship_build_speed_mult = -1
+
+	starbase_shipyard_build_speed_mult = -1
 	ship_emergency_ftl_mult = -0.99
 	ship_armor_mult = -10
-	ship_hitpoints_mult = -0.99
-	ship_shield_hp_mult = -10
+	ship_hull_mult = -0.99
+	ship_shield_mult = -10
 	ship_tracking_add = -50
 	ship_evasion_add = -50
-	
+
 	country_resource_energy_mult = -10
 	country_resource_minerals_mult = -10
-	influence_gain_mult = -20
+	country_resource_influence_mult = -20
 	country_trade_attractiveness = -1
 	country_leader_cap = -24
 	ship_anomaly_fail_risk = 5
@@ -271,97 +380,336 @@ doom_unleashed = {
 trait_quantity = {
 	planet_army_build_cost_mult = -0.75
 	planet_army_build_speed_mult = 3
-	
+
 	# tiny ships
-	spaceport_ship_build_speed_mult = 3
-	spaceport_ship_build_cost_mult = -0.5 # enough to prevent free ships?
+	starbase_shipyard_build_speed_mult = 3
+	starbase_shipyard_build_cost_mult = -0.5 # enough to prevent free ships?
 	ship_speed_mult = -0.25
-	ship_combat_speed_mult = -0.25
 	ship_windup_mult = 0.2
 	ship_winddown_mult = 0.2
 	ship_emergency_ftl_mult = 0.2
 	ship_armor_mult = -0.5
-	ship_hitpoints_mult = -0.5
+	ship_hull_mult = -0.5
 	ship_weapon_damage = -0.5
 	ship_fire_rate_mult = -0.25
-	ship_shield_hp_mult = -0.5
+	ship_shield_mult = -0.5
 	ship_upkeep_mult = -0.75
 	ship_tracking_add = -20
 	ship_evasion_add = -20
 	ship_weapon_range_mult = -0.25
-	navy_size_mult = 1
+		country_naval_cap_add = 1000
 }
 
 trait_hibernation = {
-	# ships disabled
-	spaceport_ship_build_speed_mult = -20
-	ship_speed_mult = -5
-	ship_combat_speed_mult = -5
+	# robots continue at partial efficiency! Yay
+	pop_robot_production_output = 0.75
+	pop_robot_build_speed_mult = -1	# but you can't build em
+
+	# ships check
+	starbase_shipyard_build_speed_mult = -20
+	ship_speed_mult = -2
 	ship_windup_mult = 200
 	ship_winddown_mult = 200
 	ship_emergency_ftl_mult = 200
 	ship_evasion_add = -200
-	ship_upkeep_mult = -10
-	
-	planet_building_cost_mult = 40
+	ship_weapon_range_mult = -0.5
+	ship_fire_rate_mult = -0.5
+	ship_weapon_damage = -0.5
+	ship_upkeep_mult = -1						# ship maintenance can go negative as well.
+
+	planet_building_cost_mult = 40				
 	planet_clear_blocker_time_mult = 40
 	planet_clear_blocker_cost_mult = 40
 	building_time_mult = 100
 	pop_migration_speed = -10
-	planet_building_upkeep_mult = -0.9
-	
+	planet_building_upkeep_mult = -1			# maintenance can go negative
+
+	# stations check 
 	shipsize_military_station_small_build_cost_mult = 10
 	shipsize_military_station_medium_build_cost_mult = 10
 	shipsize_military_station_large_build_cost_mult = 10
-	shipsize_military_station_small_upkeep_mult = -10
-	shipsize_military_station_medium_upkeep_mult = -10
-	shipsize_military_station_large_upkeep_mult = -10
-	
-	pop_consumer_goods_mult = -20
-	pop_happiness = 2
-	pop_growth_speed = -0.9
-	country_resource_energy_mult = -10
-	country_resource_minerals_mult = -10
-	country_resource_unity_mult = -10
-	country_resource_influence_mult = -10
-	all_technology_research_speed = -10
+	shipsize_military_station_small_upkeep_mult = -1
+	shipsize_military_station_medium_upkeep_mult = -1
+	shipsize_military_station_large_upkeep_mult = -1
+
+	pop_consumer_goods_mult = -20				# check
+	pop_happiness = 2							# check
+	pop_growth_speed = -0.9						# negatief mogelijk, exclusief gemaakt
+	country_resource_energy_mult = -1			
+	country_resource_minerals_mult = -1		
+	country_resource_unity_mult = -1			# niet negatief 
+	country_resource_influence_mult = -1
+	tile_resource_engineering_research_mult = -1
+	tile_resource_physics_research_mult = -1
+	tile_resource_society_research_mult = -1
+	all_technology_research_speed = -1			# even the bloody research can go negative!
 	planet_army_build_cost_mult = 40
 	planet_army_build_speed_mult = -10
-	army_upkeep_mult = -10
-	army_morale = -5
-	
+	army_upkeep_mult = -10						# actually doesn't go negative. Good job whoever didn't screw that up
+		army_attack_morale_mult = -2
+		army_defense_health_mult = -1
+
 	country_trade_attractiveness = -10
 	ship_anomaly_fail_risk = 10
 	science_ship_survey_speed = -2
 }
 
 trait_living_planet = {
-	country_resource_influence_mult = 4		# Living planet is reliant on frontier posts
-	country_border_mult = 1					# wider influence area
-	navy_size_mult = 9						# just one planet means cap is too low
-	spaceport_ship_build_speed_mult = 2		# just one spaceport
-	country_core_sector_system_cap = -2		# ehh..
-	#pop_happiness = 2
-	planet_building_cost_mult = -0.75		# (close to) none
-	planet_building_upkeep_mult = -0.75
+	country_resource_influence_mult = 0.5		# Living planet is reliant on frontier posts
+	pop_happiness = 2
+	planet_building_cost_mult = -0.9		# (close to) none
+	planet_building_upkeep_mult = -0.9
 	planet_clear_blocker_time_mult = -1		# for quick game start
 	planet_clear_blocker_cost_mult = -1
 	building_time_mult = -0.5				# extremely fast
-	planet_sensor_range_mult = 1
-	
-	#shipsize_military_station_small_upkeep_mult = -0.5
-	#shipsize_military_station_medium_upkeep_mult = -0.5
-	#shipsize_military_station_large_upkeep_mult = -0.5
-	
+
 	megastructure_build_speed_mult = 1				# late-game living planet should build lots of megastructures to keep up
-	mod_megastructure_build_cost_mult = -0.25		
-	
-	shipsize_colonizer_construction_speed_mult = -2000 		# maybe more zeroes?
-	shipsize_colonizer_build_cost_mult = 2000				# should be fine
+	#mod_megastructure_build_cost_mult = -0.25
+
+	shipclass_colonizer_build_speed_mult = -2000 		# maybe more zeroes?
+	shipclass_colonizer_build_cost_mult = 2000				# should be fine
 }
 
-trait_gas_lifeform = {
+trait_jerry_riggers = {
+	
+	#______Notes______
+	# Cheap stuff
+	# Harder to maintain
+	# Dirty and Quick.
+	# Shoddy Quality
+	# Everyone is skilled at field repairs
+	
+	#Pops
+	pop_consumer_goods_mult = -0.25 # Figure a society of jerry-riggers wouldnt be as wasteful.
+	#Buildings
+	planet_building_cost_mult = -0.75		
+	planet_building_upkeep_mult = 1			
+	building_time_mult = -0.5				
+	#Crappy Cheap Robots
+	pop_robot_upkeep_mult = 1
+	pop_robot_production_output = -0.5
+	pop_robot_build_speed_mult = 2
+	pop_robot_build_cost_mult = -0.5
+	#Ships											Minor debuffs across the board.
+	starbase_shipyard_build_speed_mult = 2
+	starbase_shipyard_build_cost_mult = -0.5
+	ship_windup_mult = 0.1
+	ship_winddown_mult = 0.1
+	ship_armor_add = -1
+	ship_armor_mult = -0.25
+	ship_weapon_damage = -0.1
+	ship_shield_mult = -0.25
+	ship_upkeep_mult = 1
+	ship_tracking_add = -1
+	ship_evasion_add = -1
+	ship_evasion_add = -1
+	ship_weapon_range_mult = -0.25
+	#Armies
+	army_upkeep_mult = 1
+	planet_army_build_cost_mult = -0.25 # They may cut corners in equipment but an army's an army and training costs.
+	planet_army_build_speed_mult = 2
+	#Buffs
+	ship_hull_regen_add_perc = 1 # The big appeal of this trait.
+	ship_armor_regen_add_perc = 0.1 # 
 }
+
+
+
+
+
+########################################################################
+### Testing purposes ###################################################
+########################################################################
+
+
+# trait_effects_supercheat = {
+	# pop_growth_speed = 200
+	# country_resource_energy_mult = 50
+	# country_resource_minerals_mult = 50
+	# country_resource_influence_mult = 50
+	# country_resource_unity_mult = 50
+	# country_resource_food_mult = 50
+	# all_technology_research_speed = 50
+	# megastructure_build_speed_mult = 100
+	# mod_megastructure_build_cost_mult = -1
+	# building_time_mult = -2
+	# pop_happiness = 2
+	# country_leader_cap = 10
+	# country_trade_attractiveness = 2
+	# max_minerals = 200000
+	# max_energy = 200000
+	
+	# # Super ships
+	# ship_fire_rate_mult = 20
+	# ship_speed_mult = 5
+	# ship_windup_mult = -1
+	# ship_winddown_mult = -1
+	# ship_emergency_ftl_mult = -1
+	# ship_weapon_range_mult = 50
+	# planet_clear_blocker_time_mult = -2
+	# planet_clear_blocker_cost_mult = -2
+	# shipclass_colonizer_build_cost_mult = -5
+	# starbase_shipyard_build_speed_mult = 50
+	# starbase_shipyard_build_cost_mult = -5
+	# ship_shield_mult = 40
+	# ship_shield_regen_add_perc = 40
+	# ship_armor_add = 40
+	# ship_armor_mult = 40
+	# ship_hull_add = 40				# Hitpoints no longer refer to hull
+	# ship_hull_mult = 40				# Hitpoints no longer refer to hull
+	# ship_weapon_damage = 40
+# }
+
+#icon_frame = 1 # green frame
+#icon_frame = 2 # yellow frame
+#icon_frame = 3 # red frame
+
+##########################################################################
+# Robo Modifiers
+##########################################################################
+
+geth_1 = {		# 1-5 - animal level / no cognition, cannot perform even basic tasks
+	tile_resource_engineering_research_mult = -2
+	tile_resource_physics_research_mult = -2
+	tile_resource_society_research_mult = -2
+	tile_resource_minerals_mult = -0.75
+	tile_resource_energy_mult = -2
+	tile_resource_food_mult = -1
+	tile_resource_unity_mult = -2
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 3
+}
+geth_2 = {		# from 5-12
+	tile_resource_engineering_research_mult = -1
+	tile_resource_physics_research_mult = -1
+	tile_resource_society_research_mult = -1
+	tile_resource_unity_mult = -0.5
+	tile_resource_energy_mult = -0.75
+	tile_resource_minerals_mult = -0.25
+	tile_resource_food_mult = -0.5
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 2
+}
+geth_3 = {		# from 12-19
+	tile_resource_engineering_research_mult = -0.25
+	tile_resource_physics_research_mult = -0.25
+	tile_resource_society_research_mult = -0.25
+	tile_resource_unity_mult = -0.2
+	tile_resource_energy_mult = -0.25
+	tile_resource_minerals_mult = 0.25
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 2
+}
+geth_4 = {		# >20
+	tile_resource_engineering_research_mult = 0.5
+	tile_resource_physics_research_mult = 0.5
+	tile_resource_society_research_mult = 0.5
+	tile_resource_unity_mult = 0.25
+	tile_resource_energy_mult = 0.5
+	tile_resource_minerals_mult = 0.5
+	tile_resource_food_mult = 0.5
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
+	icon_frame = 1
+}
+
+trait_robot_double_jointed = {
+	shipclass_colonizer_build_cost_mult = -0.5
+	shipsize_colonizer_build_speed_mult = 1
+	planet_colony_development_speed_mult = 0.5
+}
+
+trait_robodesign_nanoswarm = {
+	shipclass_colonizer_build_cost_mult = -1
+	shipsize_colonizer_build_speed_mult = 9
+	planet_colony_development_speed_mult = 1
+	
+	megastructure_build_speed_mult = 1				# much faster building
+	building_time_mult = -0.75				
+	starbase_shipyard_build_speed_mult = 4			# incredibly fast ship building
+	planet_army_build_speed_mult = 9				# instant nano clouds that destroy everything
+	planet_army_build_cost_mult = -0.25
+	ship_hull_regen_add_perc = 1					# big hull and armour regeneration
+	ship_armor_regen_add_perc = 1
+	planet_clear_blocker_time_mult = -1
+	planet_clear_blocker_cost_mult = -1
+	max_minerals = 500000
+	max_energy = 500000
+}
+trait_robodesign_nanoswarm_synth = {
+	shipclass_colonizer_build_cost_mult = -1
+	shipsize_colonizer_build_speed_mult = 9
+	
+	megastructure_build_speed_mult = 1				# much faster building
+	terraform_speed_mult = 1
+	building_time_mult = -0.75				
+	starbase_shipyard_build_speed_mult = 4			# incredibly fast ship building
+	planet_army_build_speed_mult = 9				# instant nano clouds that destroy everything
+	planet_army_build_cost_mult = -0.25
+	ship_hull_regen_add_perc = 1					# big hull and armour regeneration
+	ship_armor_regen_add_perc = 1
+	planet_clear_blocker_time_mult = -1
+	planet_clear_blocker_cost_mult = -1
+	max_minerals = 500000
+	max_energy = 500000
+}
+
+trait_robodesign_warp = {
+	ship_speed_mult = 0.25
+	ship_windup_mult = -0.5
+	ship_winddown_mult = -0.5
+	ship_emergency_ftl_mult = -0.5
+}
+
+trait_robodesign_integration1 = {
+	starbase_shipyard_build_cost_mult = -0.25
+	
+	ship_speed_mult = 0.25
+	ship_hull_mult = 0.2
+	ship_weapon_damage = 0.2
+	ship_fire_rate_mult = 0.25
+	ship_upkeep_mult = -0.1
+	ship_tracking_add = 5
+}
+
+trait_robodesign_integration2 = {
+	starbase_shipyard_build_cost_mult = -0.4
+	
+	ship_speed_mult = 0.5
+	ship_hull_mult = 0.5
+	ship_weapon_damage = 0.5
+	ship_fire_rate_mult = 0.5
+	ship_upkeep_mult = -0.15
+	ship_tracking_add = 10
+	
+	ship_windup_mult = -0.5
+	ship_winddown_mult = -0.5
+	ship_emergency_ftl_mult = -0.5
+}
+
+
+##########################################################################
+# Civic stuff
+##########################################################################
+
+civic_bio_assimilator_1 = {
+	modify_species_cost_mult = 0.25
+}
+civic_bio_assimilator_2 = {
+	modify_species_cost_mult = 0.375
+}
+lobotomizing_population = {
+	modify_species_cost_mult = 0.375
+}
+
+
+
+
+
+
 
 
 

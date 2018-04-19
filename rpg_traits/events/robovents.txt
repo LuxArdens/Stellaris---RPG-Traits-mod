@@ -1,0 +1,84 @@
+namespace = robovents
+
+event = {
+	id = "robovents.1"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_robodesign_nanoswarm
+			}
+			add_modifier = {
+				modifier = trait_robodesign_nanoswarm
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "robovents.2"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = { has_trait = trait_robodesign_nanoswarm } 
+				has_country_modifier = trait_robodesign_nanoswarm
+			}
+			remove_modifier = "trait_robodesign_nanoswarm"
+		}
+	}
+}
+event = {
+	id = "robovents.3"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_robodesign_nanoswarm_synth
+			}
+			add_modifier = {
+				modifier = trait_robodesign_nanoswarm_synth
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "robovents.4"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = { has_trait = trait_robodesign_nanoswarm_synth } 
+				has_country_modifier = trait_robodesign_nanoswarm_synth
+			}
+			remove_modifier = "trait_robodesign_nanoswarm_synth"
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

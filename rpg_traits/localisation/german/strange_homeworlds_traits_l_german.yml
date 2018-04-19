@@ -1,0 +1,7 @@
+﻿l_german:
+  trait_pc_shielded_preference:0 "Abgeschirmte Vorliebe"
+  trait_pc_shielded_preference_desc:1 "§L...§!"
+  pc_shielded_habitability:1 "Geschützte Planetenwohnbarkeit"
+  trait_pc_asteroid_preference:0 "Asteroid Vorliebe"
+  trait_pc_asteroid_preference_desc:1 "§L...§!"
+  pc_asteroid_habitability:1 "Asteroidwohnbarkeit"

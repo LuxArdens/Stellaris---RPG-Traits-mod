@@ -1,0 +1,900 @@
+###############################################
+# Initial traits - These are varied, powerful, and not available early-game
+###############################################
+
+###################
+# Macro Types - all exclusives. (Tier 2)
+###################
+
+trait_robodesign_terminators = {		# basically Skynet
+	cost = 2
+	sorting_priority = 20
+	initial = yes
+	randomized = yes
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_terminators.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
+	prerequisites = { tech_robomod_2 }
+
+	modifier = {
+		tile_resource_energy_mult = 0.5
+	
+	
+		tile_resource_unity_mult = -0.25			# do not write poetry
+		tile_resource_food_mult = -0.5
+		
+		pop_robot_build_speed_mult = -0.75
+		pop_robot_build_cost_mult = 3			# very large investment into specialized military hardware
+		pop_consumer_goods_mult = 3
+		army_damage_mult = 5					# Extremely deadly robotic drones
+		army_health = 5
+		army_upkeep_mult = 2
+	}
+}
+trait_robodesign_miners = {		# rogue mining drones
+	cost = 5
+	sorting_priority = 20
+	initial = yes
+	randomized = yes
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_miners.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators  trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
+	prerequisites = { tech_robomod_2 }
+
+	modifier = {
+		tile_resource_unity_mult = -0.25
+		tile_resource_food_mult = -0.5
+		tile_resource_minerals_mult = 3					# staggering bonus to minerals
+		
+		army_damage_mult = -0.75
+		army_health = -0.75
+	}
+}
+trait_robodesign_servitors = {		# rogue servitors, manage civil aspects
+	cost = 5
+	sorting_priority = 20
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_servitors.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators trait_robodesign_miners  trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
+
+	modifier = {
+		tile_resource_unity_mult = 0.5
+		tile_resource_energy_mult = 1.5
+		
+		army_health = 0.25
+		army_damage_mult = 0.25
+		pop_owner_happiness = 0.1
+	}
+}
+trait_robodesign_harvesters = {		# for if you really want to screw yourself
+	cost = 3
+	sorting_priority = 20
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_harvesters.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors  trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
+
+	modifier = {
+		tile_resource_unity_mult = -0.5
+		tile_resource_energy_mult = -0.75				# only machine type that can't get shit done
+		tile_resource_food_mult = 4
+		tile_resource_minerals_mult = -0.75
+		tile_resource_engineering_research_mult = -0.5
+		tile_resource_physics_research_mult = -0.5
+		tile_resource_society_research_mult = -0.5
+		species_leader_exp_gain = -0.5
+		
+		army_damage_mult = -0.9
+		army_health = -0.9
+	}
+}
+trait_robodesign_science = {		# giant scientific mainframe
+	cost = 5
+	sorting_priority = 20
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_science.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters  trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
+
+	modifier = {
+		tile_resource_energy_mult = 0.25				# smart, but limited by frames
+		tile_resource_engineering_research_mult = 2
+		tile_resource_physics_research_mult = 2
+		tile_resource_society_research_mult = 2
+		
+		pop_robot_upkeep_mult = 3		# will have a constant struggle for MOAR power
+		pop_consumer_goods_mult = 1		# struggle to support large pop, as to not be completely OP in science department
+	}
+}
+trait_robodesign_androids = {		# droids that became self-aware. Good all-rounders, but not like uploaded organics
+	cost = 4
+	sorting_priority = 20
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_androids.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science  trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
+
+	modifier = {
+		tile_resource_energy_mult = 0.5
+		tile_resource_food_mult = 0.25
+		tile_resource_minerals_mult = 0.25
+		tile_resource_unity_mult = 0.25
+		
+		army_health = 0.5
+		army_damage_mult = 0.5
+	}
+}
+trait_robodesign_synthetic = {		# uploaded organics, gives you the AP perk on game_start
+	cost = 10
+	sorting_priority = 20
+	initial = yes
+	randomized = no		# for now. To prevent synths completely taking over
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_synthetic.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids  trait_robodesign_fake_ai trait_robodesign_geth }
+
+	modifier = {
+		# gives the trait_robotic_3 effects
+		tile_resource_engineering_research_mult = 1 			# vastly superior raw data processing, but trouble with creative thinking
+		tile_resource_physics_research_mult = 1
+		tile_resource_society_research_mult = 1
+		tile_resource_unity_mult = 0.5							# synths act more in unity by their very nature
+		tile_resource_energy_mult = 1
+		tile_resource_minerals_mult = 0.5
+		
+		army_health = 1
+		army_damage_mult = 1
+	}
+}
+trait_robodesign_geth = {		# only capable in large groups
+	cost = 4
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_geth.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai  }
+
+	modifier = {
+		# set as planetary modifiers instead
+		
+		army_health = 0.5
+		army_damage_mult = 0.5
+	}
+}
+trait_robodesign_fake_ai = {		# makes them really crude machines without high-level intelligence
+	cost = -20
+	sorting_priority = 20
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_fake_ai.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_geth trait_robot_learning_algorithms trait_robot_learning_algorithms2 }
+
+	modifier = {
+		tile_resource_engineering_research_mult = -0.8
+		tile_resource_physics_research_mult = -0.8
+		tile_resource_society_research_mult = -0.8
+		species_leader_exp_gain = -1
+		tile_resource_unity_mult = -0.9
+		
+		tile_resource_energy_mult = -0.5
+		tile_resource_minerals_mult = 0.25
+		
+		army_defense_health_mult = 0.5
+		army_damage_mult = -0.25			# dumb
+	}
+}
+
+######################################################################
+#	ROBOT-versions for synths. These are the same minus the inherent synth bonus
+######################################################################
+
+trait_robodesign_terminators_synth = {		# basically Skynet
+	cost = 2
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_terminators.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	prerequisites = { tech_robomod_2 }
+
+	modifier = {
+		tile_resource_unity_mult = -0.25			# do not write poetry
+		tile_resource_food_mult = -0.5
+		tile_resource_energy_mult = -0.25
+		tile_resource_minerals_mult = 0.25
+		
+		pop_robot_build_speed_mult = -0.75
+		pop_robot_build_cost_mult = 3			# very large investment into specialized military hardware
+		pop_consumer_goods_mult = 3
+		army_damage_mult = 5					# Extremely deadly robotic drones
+		army_health = 5
+		army_upkeep_mult = 2
+	}
+}
+trait_robodesign_miners_synth = {		# rogue mining drones
+	cost = 5
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_miners.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	prerequisites = { tech_robomod_2 }
+
+	modifier = {
+		tile_resource_unity_mult = -0.5
+		tile_resource_energy_mult = -0.75
+		tile_resource_food_mult = -1
+		tile_resource_minerals_mult = 3					# staggering bonus to minerals
+		
+		army_damage_mult = -1
+		army_health = -1
+	}
+}
+trait_robodesign_servitors_synth = {		# rogue servitors, manage civil aspects
+	cost = 3
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_servitors.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+
+	modifier = {
+		tile_resource_unity_mult = 0.5
+		tile_resource_energy_mult = 0.5
+		
+		army_health = -0.25
+		army_damage_mult = -0.25
+		pop_owner_happiness = 0.1
+	}
+}
+trait_robodesign_harvesters_synth = {		# for if you really want to screw yourself
+	cost = 3
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_harvesters.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+
+	modifier = {
+		tile_resource_unity_mult = -1
+		tile_resource_energy_mult = -2		# can't get shit done
+		tile_resource_food_mult = 4
+		tile_resource_minerals_mult = -1.5
+		tile_resource_engineering_research_mult = -1
+		tile_resource_physics_research_mult = -1
+		tile_resource_society_research_mult = -1
+		species_leader_exp_gain = -0.5
+		
+		army_damage_mult = -2
+		army_health = -0.9
+	}
+}
+trait_robodesign_science_synth = {		# giant scientific mainframe
+	cost = 5
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_science.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_nanoswarm_synth }
+
+	modifier = {
+		tile_resource_engineering_research_mult = 1
+		tile_resource_physics_research_mult = 1
+		tile_resource_society_research_mult = 1
+		
+		pop_robot_upkeep_mult = 3		# will have a constant struggle for MOAR power
+		pop_consumer_goods_mult = 1		# struggle to support large pop, as to not be completely OP in science department
+	}
+}
+
+
+######################################################################
+#	ROBOT-versions for robots. These are the same minus the inherent robot bonus
+######################################################################
+
+trait_robodesign_terminators_robot = {		# basically Skynet
+	cost = 2
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_terminators.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_3 trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	prerequisites = { tech_robomod_1 }
+
+	modifier = {
+		tile_resource_unity_mult = -2
+		tile_resource_food_mult = -2
+		tile_resource_energy_mult = -2
+		tile_resource_minerals_mult = -2
+		
+		pop_robot_build_speed_mult = -0.8
+		pop_robot_build_cost_mult = 5			# very large investment into specialized military hardware
+		pop_consumer_goods_mult = 4
+		pop_robot_upkeep_mult = 1
+		army_damage_mult = 5					# Extremely deadly robotic drones
+		army_health = 5
+		army_upkeep_mult = 2
+	}
+}
+trait_robodesign_miners_robot = {
+	cost = 6
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_miners.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_3 trait_robodesign_terminators_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+	prerequisites = { tech_robomod_1 }
+
+	modifier = {
+		tile_resource_unity_mult = -1
+		tile_resource_unity_mult = -1
+		tile_resource_energy_mult = -1
+		tile_resource_food_mult = -1
+		tile_resource_minerals_mult = 1
+		
+		pop_robot_upkeep_mult = 1
+		
+		army_damage_mult = -1
+		army_health = -1
+	}
+}
+trait_robodesign_servitors_robot = {
+	cost = 3
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_servitors.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_3 trait_robotic_1 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+
+	modifier = {
+		tile_resource_unity_mult = 0.25
+		tile_resource_energy_mult = 0.25
+		
+		army_health = -0.25
+		army_damage_mult = -0.25
+		pop_owner_happiness = 0.1
+	}
+}
+trait_robodesign_harvesters_robot = {
+	cost = 5
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robodesign_harvesters.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_3 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
+
+	modifier = {
+		tile_resource_unity_mult = -1
+		tile_resource_energy_mult = -2		# can't get shit done
+		tile_resource_food_mult = 1
+		tile_resource_minerals_mult = -1.5
+		tile_resource_engineering_research_mult = -1
+		tile_resource_physics_research_mult = -1
+		tile_resource_society_research_mult = -1
+		
+		army_damage_mult = -2
+		army_health = -0.9
+	}
+}
+
+#####################################
+# Tier 1
+#####################################
+
+trait_robot_double_jointed = {
+	cost = 1
+	opposites = { "trait_robot_bulky" }
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		pop_resettlement_cost_mult = -0.5
+		tile_resource_energy_mult = 0.25
+		army_damage_mult = 0.25
+	}
+}
+
+trait_robot_bulky = {
+	cost = -1
+	opposites = { "trait_robot_double_jointed" }
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		pop_resettlement_cost_mult = 3
+		tile_resource_energy_mult = -0.25
+	}
+}
+
+trait_robot_enhanced_memory = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	opposites = { trait_robotic_1 trait_robotic_2 } # Synth only
+
+	modifier = {
+		leader_skill_levels = 40		# screw the limits
+	}
+}
+
+trait_robot_emotion_emulators = {
+	cost = 1
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robotic_1 trait_robotic_2 "trait_robot_uncanny" }
+	allowed_archetypes = { MACHINE ROBOT }
+	custom_tooltip = TRAIT_EMOTION_EMULATORS_EFFECT
+}
+
+trait_robot_uncanny = {
+	cost = -1
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robotic_1 trait_robotic_2 "trait_robot_emotion_emulators" }
+	allowed_archetypes = { MACHINE ROBOT }
+	custom_tooltip = TRAIT_UNCANNY_EFFECT
+}
+
+trait_robot_durable = {
+	cost = 1
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { "trait_robot_durable2" "trait_robot_high_maintenance" "trait_robot_high_maintenance2" }
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		pop_consumer_goods_mult = -0.5
+	}
+}
+
+trait_robot_durable2 = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robot_durable2.dds"
+	opposites = { "trait_robot_durable" "trait_robot_high_maintenance" "trait_robot_high_maintenance2" }
+	prerequisites = { tech_robot_durable2 }
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		pop_consumer_goods_mult = -1
+	}
+}
+
+trait_robot_high_maintenance = {
+	cost = -2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robot_high_maintenance.dds"
+	opposites = { "trait_robot_durable2" "trait_robot_durable" "trait_robot_high_maintenance2" }
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		pop_consumer_goods_mult = 2
+	}
+}
+
+trait_robot_high_maintenance2 = {
+	cost = -4
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robot_high_maintenance2.dds"
+	opposites = { "trait_robot_durable2" "trait_robot_durable" "trait_robot_high_maintenance" }
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		pop_consumer_goods_mult = 4
+	}
+}
+
+trait_robot_dakka = {
+	cost = 1
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robot_dakka.dds"
+	opposites = { trait_robot_more_dakka }
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		army_health = 0.25
+		army_damage_mult = 0.5
+		army_upkeep_mult = 0.25
+	}
+}
+
+trait_robot_more_dakka = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	icon = "gfx/interface/icons/traits/trait_robot_more_dakka.dds"
+	opposites = { trait_robot_dakka }
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		army_health = 0.5
+		army_damage_mult = 1
+		army_upkeep_mult = 0.5
+	}
+}
+
+
+#####################
+# Tier 2
+#####################
+
+trait_robot_simple1 = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	opposites = { trait_robot_complex2 trait_robot_complex1 trait_robot_simple2  }
+	icon = "gfx/interface/icons/traits/trait_robot_simple1.dds"
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		pop_robot_build_speed_mult = 3
+		pop_robot_build_cost_mult = -0.5
+		pop_robot_upkeep_mult = -0.25
+	}
+}
+trait_robot_simple2 = {
+	cost = 4
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	opposites = { trait_robot_complex2 trait_robot_complex1 trait_robot_simple1 }
+	icon = "gfx/interface/icons/traits/trait_robot_simple2.dds"
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		pop_robot_build_speed_mult = 9
+		pop_robot_build_cost_mult = -0.8
+		pop_robot_upkeep_mult = -0.5
+	}
+}
+trait_robot_complex1 = {
+	cost = -2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	opposites = { trait_robot_complex2 trait_robot_simple2 trait_robot_simple1 }
+	icon = "gfx/interface/icons/traits/trait_robot_complex1.dds"
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		pop_robot_build_speed_mult = -0.5
+		pop_robot_build_cost_mult = 1
+	}
+}
+trait_robot_complex2 = {
+	cost = -4
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	opposites = { trait_robot_complex1 trait_robot_simple2 trait_robot_simple1 }
+	icon = "gfx/interface/icons/traits/trait_robot_complex2.dds"
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		pop_robot_build_speed_mult = -0.8
+		pop_robot_build_cost_mult = 3
+	}
+}
+
+trait_robot_simple1_robot = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robot_complex2_robot trait_robot_complex1_robot trait_robot_simple2_robot  }
+	icon = "gfx/interface/icons/traits/trait_robot_simple1.dds"
+
+	allowed_archetypes = { ROBOT }
+
+	modifier = {
+		pop_robot_build_speed_mult = 3
+		pop_robot_build_cost_mult = -0.5
+		pop_robot_upkeep_mult = -0.25
+	}
+}
+trait_robot_simple2_robot = {
+	cost = 4
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robot_complex2_robot trait_robot_complex1_robot trait_robot_simple1_robot }
+	icon = "gfx/interface/icons/traits/trait_robot_simple2.dds"
+
+	allowed_archetypes = { ROBOT }
+
+	modifier = {
+		pop_robot_build_speed_mult = 9
+		pop_robot_build_cost_mult = -0.8
+		pop_robot_upkeep_mult = -0.5
+	}
+}
+trait_robot_complex1_robot = {
+	cost = -2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robot_complex2_robot trait_robot_simple2_robot trait_robot_simple1_robot }
+	icon = "gfx/interface/icons/traits/trait_robot_complex1.dds"
+
+	allowed_archetypes = { ROBOT }
+
+	modifier = {
+		pop_robot_build_speed_mult = -0.5
+		pop_robot_build_cost_mult = 1
+	}
+}
+trait_robot_complex2_robot = {
+	cost = -4
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_1 }
+	opposites = { trait_robot_complex1_robot trait_robot_simple2_robot trait_robot_simple1_robot }
+	icon = "gfx/interface/icons/traits/trait_robot_complex2.dds"
+
+	allowed_archetypes = { ROBOT }
+
+	modifier = {
+		pop_robot_build_speed_mult = -0.8
+		pop_robot_build_cost_mult = 3
+	}
+}
+
+trait_robot_learning_algorithms = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	opposites = { trait_robot_learning_algorithms2 trait_robotic_1 trait_robotic_2 trait_robodesign_science "trait_robot_crude_neural_network" "trait_robot_crude_neural_network2" }
+
+	allowed_archetypes = { MACHINE ROBOT }
+
+	modifier = {
+		species_leader_exp_gain = 1
+		tile_resource_engineering_research_mult = 0.5
+		tile_resource_physics_research_mult = 0.5
+		tile_resource_society_research_mult = 0.5
+	}
+}
+
+trait_robot_crude_neural_network = {
+	cost = -2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robot_crude_neural_network.dds"
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_science "trait_robot_learning_algorithms" trait_robot_crude_neural_network2 }
+
+	allowed_archetypes = { MACHINE ROBOT }
+	
+	modifier = {
+		species_leader_exp_gain = -0.5
+		tile_resource_engineering_research_mult = -0.25
+		tile_resource_physics_research_mult = -0.25
+		tile_resource_society_research_mult = -0.25
+	}
+}
+
+trait_robot_crude_neural_network2 = {
+	cost = -2
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_2 }
+	icon = "gfx/interface/icons/traits/trait_robot_crude_neural_network2.dds"
+	opposites = { "trait_robot_learning_algorithms" }
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robot_crude_neural_network } # Synth only
+	
+	modifier = {
+		species_leader_exp_gain = -0.95
+		tile_resource_engineering_research_mult = -0.5
+		tile_resource_physics_research_mult = -0.5
+		tile_resource_society_research_mult = -0.5
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####################
+# Tier 3
+#####################
+
+trait_robot_learning_algorithms2 = {
+	cost = 4
+	initial = yes
+	randomized = yes
+	modification = yes
+	prerequisites = { tech_robomod_3 }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robot_learning_algorithms trait_robotic_1 trait_robotic_2 trait_robodesign_science "trait_robot_crude_neural_network" "trait_robot_crude_neural_network2" }
+
+	allowed_archetypes = { MACHINE ROBOT }
+
+	modifier = {
+		species_leader_exp_gain = 2
+		tile_resource_engineering_research_mult = 1
+		tile_resource_physics_research_mult = 1
+		tile_resource_society_research_mult = 1
+	}
+}
+
+trait_robodesign_nanoswarm = {		# grey goo
+	cost = 4
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_nanoswarm.dds"
+	allowed_archetypes = { MACHINE }
+	opposites = { trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robot_complex1 trait_robot_complex2 trait_robot_simple1 trait_robot_simple2 trait_robot_high_maintenance trait_robot_high_maintenance2 trait_robot_durable trait_robot_durable2 trait_robodesign_geth }
+	prerequisites = { tech_robomod_3 }
+
+	modifier = {
+		tile_resource_engineering_research_mult = 1
+		tile_resource_physics_research_mult = 1
+		tile_resource_society_research_mult = 1
+		tile_resource_unity_mult = 0.75
+		tile_resource_energy_mult = 1
+		tile_resource_minerals_mult = 1.5
+		tile_resource_food_mult = -10				# turn green into grey
+		
+		pop_robot_build_speed_mult = 10				# almost instantaneously
+		pop_robot_build_cost_mult = -1
+		pop_consumer_goods_mult = -10
+		pop_robot_upkeep_mult = -10
+		
+		army_damage_mult = 1						#
+		#army_health = -0.25						# encourage army spam
+		army_upkeep_mult = -10						# grey goo spam!
+	}
+}
+
+trait_robodesign_nanoswarm_synth = {				# grey goo
+	cost = 4
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	modification = yes
+	icon = "gfx/interface/icons/traits/trait_robodesign_nanoswarm.dds"
+	allowed_archetypes = { ROBOT }
+	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robot_complex1 trait_robot_complex2 trait_robot_simple1 trait_robot_simple2 trait_robot_high_maintenance trait_robot_high_maintenance2 trait_robot_durable trait_robot_durable2 trait_robodesign_geth }
+	prerequisites = { tech_robomod_3 }
+
+	modifier = {
+		tile_resource_unity_mult = 0.5
+		tile_resource_minerals_mult = 1
+		
+		tile_resource_food_mult = -10				# turn green into grey
+		
+		pop_robot_build_speed_mult = 10				# almost instantaneously
+		pop_robot_build_cost_mult = -1
+		pop_consumer_goods_mult = -10
+		pop_robot_upkeep_mult = -10
+		
+		army_damage_mult = 1						#
+		#army_health = -0.25						# encourage army spam
+		army_upkeep_mult = -10						# grey goo spam!
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

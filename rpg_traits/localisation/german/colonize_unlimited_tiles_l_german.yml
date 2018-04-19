@@ -1,0 +1,13 @@
+﻿l_german:
+  pc_barren_tile: "Karges Terrain"
+  pc_barren_tile_desc: "Lebloses Terrain ohne natürliche Atmosphäre"
+  pc_toxic_tile: "Giftiges Terrain"
+  pc_toxic_tile_desc: "Lebloses Terrain versteckt unter einer dicken Schicht giftiger Gase."
+  pc_barren_cold_tile: "Karges Terrain"
+  pc_barren_cold_tile_desc: "Lebloses Terrain ohne natürliche Atmosphäre."
+  pc_frozen_tile: "Gefrorenes Terrain"
+  pc_frozen_tile_desc: "Terrain begraben unter einer dicken Eisschicht mit kaum einer Atmosphäre."
+  pc_molten_tile: "Geschmolzenes Terrain"
+  pc_molten_tile_desc: "Halbgeschmolzenes Lavaterrain mit einer sehr dünnen Atmosphäre."
+  pc_gas_giant_tile: "Gasriesen Atmosphäre"
+  pc_gas_giant_tile_desc: "Mixture dicker Gase. Leben exestiert hier sogut wie nie." 

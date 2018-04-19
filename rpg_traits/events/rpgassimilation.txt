@@ -1,0 +1,171 @@
+namespace = rpgassimilation
+
+
+# fire on monthly interval
+event = {
+	id = rpgassimilation.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			every_owned_planet = {
+				planet_event = { id = rpgassimilation.2 }
+			}
+		}
+	}
+}
+
+# Assimilate Pops
+planet_event = {
+	id = rpgassimilation.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_civic = civic_strogg }
+		OR = {
+			NOT = { has_trait = trait_hive_mind }
+			NOT = { has_trait = trait_strogg }
+		}
+	}
+	immediate = {
+		random_owned_pop = {
+			limit = { NOT = { has_trait = "trait_strogg" } }
+			modify_species = {
+				species = this
+				remove_trait = trait_cybernetic
+				add_trait = trait_strogg
+				#add_traits_at_start_of_list = yes
+			}
+			remove_culture_shock = yes
+			remove_self_modified = yes
+			set_living_standard = {
+				type = living_standard_hive_mind
+				country = root.owner
+			}
+			set_citizenship_type = {
+				type = citizenship_full
+				country = root.owner
+			}
+		}
+		random_owned_pop = {
+			limit = { NOT = { has_trait = "trait_hive_mind" } }
+			modify_species = {
+				species = this
+				remove_trait = trait_cybernetic
+				add_trait = trait_hive_mind
+				#add_traits_at_start_of_list = yes
+			}
+			remove_culture_shock = yes
+			remove_self_modified = yes
+			set_living_standard = {
+				type = living_standard_hive_mind
+				country = root.owner
+			}
+			set_citizenship_type = {
+				type = citizenship_full
+				country = root.owner
+			}
+		}
+		random_owned_pop = {
+			limit = { OR = { 
+				has_trait = "trait_mechanical" 
+				has_trait = "trait_machine_unit"
+				has_trait = "trait_robotic_3"
+			} }
+			modify_species = {
+				species = this
+				remove_trait = trait_mechanical
+				add_trait = trait_hive_mind
+				#add_traits_at_start_of_list = yes
+			}
+			remove_culture_shock = yes
+			remove_self_modified = yes
+			set_living_standard = {
+				type = living_standard_hive_mind
+				country = root.owner
+			}
+			set_citizenship_type = {
+				type = citizenship_full
+				country = root.owner
+			}
+		}
+		random_owned_pop = {
+			limit = { OR = { 
+				has_trait = "trait_mechanical" 
+				has_trait = "trait_machine_unit"
+				has_trait = "trait_robotic_3"
+			} }
+			modify_species = {
+				species = this
+				remove_trait = trait_machine_unit
+				add_trait = trait_hive_mind
+				#add_traits_at_start_of_list = yes
+			}
+			remove_culture_shock = yes
+			remove_self_modified = yes
+			set_living_standard = {
+				type = living_standard_hive_mind
+				country = root.owner
+			}
+			set_citizenship_type = {
+				type = citizenship_full
+				country = root.owner
+			}
+		}
+		random_owned_pop = {
+			limit = { OR = { 
+				has_trait = "trait_mechanical" 
+				has_trait = "trait_machine_unit"
+				has_trait = "trait_robotic_3"
+			} }
+			modify_species = {
+				species = this
+				remove_trait = trait_robotic_3
+				add_trait = trait_hive_mind
+				#add_traits_at_start_of_list = yes
+			}
+			remove_culture_shock = yes
+			remove_self_modified = yes
+			set_living_standard = {
+				type = living_standard_hive_mind
+				country = root.owner
+			}
+			set_citizenship_type = {
+				type = citizenship_full
+				country = root.owner
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = rpgassimilation.3
+	hide_window = yes
+	
+	trigger = {
+		AND = {
+			is_homeworld = no		# zou extra planeten bij advanced start moeten verwijderen
+			any_pop = {
+				has_trait = trait_living_planet
+				NOT = { has_modifier = living_planet_killed }
+			}
+			owner = { NOT = { has_trait = living_planet } }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_living_planet
+			}
+			# kill it
+			kill_pop = yes
+		}
+	}
+}

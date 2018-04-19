@@ -1,4 +1,0 @@
-﻿	NSpecies = {
-		MAX_TRAIT_POINTS 					= 8			# Free trait points at start
-		MAX_TRAITS 							= 80		# Max racial traits.
-	}

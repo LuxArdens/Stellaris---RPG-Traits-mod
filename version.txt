@@ -1,3 +1,8 @@
+0.5.3 - Added more Machine traits. Precursor and Psionic alternative starts
+0.5.2 - Start of Machine traits rework, Ethereal traits added
+0.5	  - Updated from original 1.6 version to 2.0.0 APOCALYPSE.
+0.3.2 - Planet improvements, Hibernation trait added, added missing icons, couple of civs
+0.3.1 - 1.7.2 update + HyperNova fixes + improvements Heavy
 0.3.0 - Butchered Strange Homeworlds and merged into HEAVY Version
 0.2.1 - Improved Living Planet + synth&psionics buff
 0.2.0 - Custom races and Living Planet implemented

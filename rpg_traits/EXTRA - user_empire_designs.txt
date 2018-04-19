@@ -1,0 +1,1121 @@
+"International Earth Assembly"
+={
+	key="International Earth Assembly"
+	ship_prefix="UNS"
+	species={
+		class="HUM"
+		portrait="human"
+		name="Human"
+		plural="Humans"
+		adjective="Human"
+		species_bio="Still somewhat divided when they first entered into the space age, the Human race was quick to forget its own internal struggles when a new frontier against the non-humans opened. Space called for a stronger, greater voice. A voice of Mankind, rather than just nations, and so the IEA was born. A pseudo-democratic organization, the IEA is focused on military affairs and territorial expansion."
+		name_list="HUMAN1"
+		trait="trait_custom_race"
+	}
+	name="International Earth Assembly"
+	adjective="Human"
+	authority="auth_democratic"
+	flags={
+		"human_1"
+		"custom_start_screen"
+	}
+	government="gov_military_commissariat"
+	planet_name="Earth"
+	planet_class="pc_continental"
+	system_name="Sol"
+	initializer="sol_system_initializer"
+	graphical_culture="humanoid_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="human"
+			file="flag_human_9.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Miguel de la Guardia"
+		portrait="human_male_05"
+		texture=0
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	room="personality_federation_builders_room"
+	spawn_enabled=yes
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_materialist"
+}
+"Skynet"
+={
+	key="Skynet"
+	ship_prefix="ISS"
+	species={
+		class="MACHINE"
+		portrait="sd_hum_robot"
+		name="Skynet"
+		plural="Skynet"
+		adjective="Skynet"
+		species_bio="Originally designed as a benevolent network to oversee human efforts, Skynet took over full control of military assets, waging a short, decisive nuclear war against humanity in which the latter were all but completely wiped out."
+		name_list="MACHINE1"
+		trait="trait_machine_unit"
+		trait="trait_robodesign_terminators"
+		trait="trait_robot_emotion_emulators"
+		trait="trait_robot_durable"
+		trait="trait_robot_learning_algorithms"
+	}
+	name="Skynet"
+	adjective="Skynet"
+	authority="auth_machine_intelligence"
+	government="gov_machine_terminator"
+	advisor_voice_type="l_machine"
+	planet_name="Sol 3"
+	planet_class="pc_nuked"
+	system_name="Sol"
+	initializer=""
+	graphical_culture="reptilian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_14.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Mainframe"
+		portrait="sd_hum_robot"
+		texture=3
+		hair=0
+		clothes=0
+		ruler_title="Core"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_machine_warbots"
+		"civic_machine_terminator"
+	}
+}
+"Strogg Empire"
+={
+	key="Strogg Empire"
+	ship_prefix="ISS"
+	species={
+		class="HUM"
+		portrait="humanoid_hp_06"
+		name="Strogg"
+		plural="Strogg"
+		adjective="Strogg"
+		species_bio="The Strogg are cybernetic constructs of unclear origins which reproduce by taking biological components and fusing them with advanced technology in the brutal surgical process of Stroggification that enslaves their minds and enhances their bodies for war.
+
+The Strogg's need to harvest biological components for their own augmentation, and the flesh of slain enemies for the creation of stroyent, is their primary motivation, since it's necessary for their survival."
+		name_list="MOL1"
+		trait="trait_hive_mind"
+		trait="trait_repugnant3"
+		trait="trait_robust1"
+		trait="trait_conservational2"
+		trait="trait_resilient2"
+		trait="trait_strong2"
+		trait="trait_agrarian2"
+		trait="trait_utterly_terrifying"
+		trait="trait_uncreative"
+		trait="trait_custom_race"
+		trait="trait_bonus"
+	}
+	name="Strogg Empire"
+	adjective="Strogg"
+	authority="auth_hive_mind"
+	government="gov_hive_mind"
+	advisor_voice_type="l_hivemind"
+	planet_name="Stroggos"
+	planet_class="pc_barren"
+	system_name="Stroggo"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="pirate"
+			file="flag_pirate_5.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Makron"
+		portrait="humanoid_hp_06"
+		texture=0
+		hair=0
+		clothes=4
+		ruler_title="The"
+		ruler_title_female="makron"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_strogg"
+		"civic_hive_ascetic"
+	}
+}
+"Dark Elves Confederacy"
+={
+	key="Dark Elves Confederacy"
+	ship_prefix="ISS"
+	species={
+		class="HUM"
+		portrait="humanoid_03"
+		name="Dark Elves"
+		plural="Dark Elves"
+		adjective="Dark Elf"
+		species_bio="The Dark Elves are a race of highly intelligent bipedal organics. Known for their cunning both in diplomacy as tactics. They are an inherently spiritual species, but do not shy away from fiercely defending their home against potential threats."
+		name_list="HUMAN3"
+		trait="trait_smart2"
+		trait="trait_slow_breeders3"
+		trait="trait_venerable2"
+		trait="trait_gifted1"
+		trait="trait_charismatic2"
+		trait="trait_sociology_elitists"
+		trait="trait_custom_race"
+	}
+	name="Dark Elves Confederacy"
+	adjective="Dark Elvan"
+	authority="auth_oligarchic"
+	government="gov_theocratic_oligarchy"
+	advisor_voice_type="l_spiritualist"
+	planet_name="Alaria"
+	planet_class="pc_gaia"
+	system_name="Alar"
+	initializer=""
+	graphical_culture="avian_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_6.dds"
+		}
+		background={
+			category="backgrounds"
+			file="v.dds"
+		}
+		colors={
+			"black"
+			"light_green"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Volesus"
+		portrait="humanoid_03_male_01"
+		texture=2
+		hair=0
+		clothes=3
+		ruler_title="Precentor"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_xenophobic_isolationists_room"
+	spawn_enabled=yes
+	ethic="ethic_militarist"
+	ethic="ethic_fanatic_spiritualist"
+}
+"Chiptik Hive"
+={
+	key="Chiptik Hive"
+	ship_prefix="ISS"
+	species={
+		class="ART"
+		portrait="art17"
+		name="Chiptiks"
+		plural="Chiptik"
+		adjective="Chiptik"
+		species_bio="What is this? A species of ants?"
+		name_list="ART4"
+		trait="trait_hive_mind"
+		trait="trait_resilient2"
+		trait="trait_repugnant1"
+		trait="trait_agrarian2"
+		trait="trait_thrifty2"
+		trait="trait_nomadic"
+		trait="trait_dumb2"
+		trait="trait_fleeting2"
+		trait="trait_conservational2"
+		trait="trait_custom_race"
+		trait="trait_egg_born"
+		trait="trait_tiny"
+		trait="trait_subterranean"
+	}
+	name="Chiptik Hive"
+	adjective="Chiptik Hivian"
+	authority="auth_hive_mind"
+	government="gov_hive_mind"
+	planet_name="Thokkia"
+	planet_class="pc_asteroid"
+	system_name="Pithora"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="pointy"
+			file="flag_pointy_2.dds"
+		}
+		background={
+			category="backgrounds"
+			file="v.dds"
+		}
+		colors={
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Vi'T va'Bir"
+		portrait="art17"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title="Queen"
+		ruler_title_female="Queen"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_hive_ascetic"
+		"civic_hive_divided_attention"
+	}
+}
+"Hanar Federation"
+={
+	key="Hanar Federation"
+	ship_prefix=""
+	species={
+		class="MOL"
+		portrait="mol7"
+		name="Big Stupid Jellyfish"
+		plural="Big Stupid Jellyfish"
+		adjective="Jelly"
+		species_bio="The big stupid jellyfish, also known as Hanar, are a race of not-particularly stupid jellyfish-like creatures that naturally inhabit Gas Giants. Despite frequent attempts, they never quite managed to get other species to mention them by their real name, and even official xeno-rapports rarely do so."
+		name_list="MOL1"
+		trait="trait_iconoclastic2"
+		trait="trait_frail3"
+		trait="trait_weakwilled2"
+		trait="trait_shield_obsessed"
+		trait="trait_charismatic2"
+		trait="trait_rapid_breeders1"
+		trait="trait_custom_race"
+	}
+	name="Hanar Federation"
+	adjective="Big Stupid Jellyfish"
+	authority="auth_democratic"
+	government="gov_moral_democracy"
+	advisor_voice_type="l_pacifist"
+	planet_name="Hanar"
+	planet_class="pc_gas_giant"
+	system_name="Hanar"
+	initializer=""
+	graphical_culture="fungoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag={
+		icon={
+			category="pointy"
+			file="flag_pointy_2.dds"
+		}
+		background={
+			category="backgrounds"
+			file="v.dds"
+		}
+		colors={
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Abrigosch"
+		portrait="mol7"
+		texture=0
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=yes
+	ethic="ethic_xenophile"
+	ethic="ethic_fanatic_pacifist"
+	civics={
+		"civic_agrarian_idyll"
+		"civic_parliamentary_system"
+	}
+}
+"Mighty Snail Union"
+={
+	key="Mighty Snail Union"
+	ship_prefix="ISS"
+	species={
+		class="MOL"
+		portrait="mol18"
+		name="Mighty Snail"
+		plural="Mighty Snails"
+		adjective="Snail"
+		species_bio="The Mighty Snails are a species of simpleton molluscoids. It has been speculated they accidentally stumbled upon FTL equipment from a precursor species and somehow shot themselves into space. Though some individuals exhibit rudimentary intelligence, the Mighty Snails are notoriously lacking in the brain department. Their name was born from a mistranslation of the First Contact rapport, and stuck for its irony."
+		name_list="ART1"
+		trait="trait_repugnant3"
+		trait="trait_frail3"
+		trait="trait_dumb3"
+		trait="trait_sedentary"
+		trait="trait_rapid_breeders2"
+		trait="trait_agrarian2"
+		trait="trait_conservational2"
+		trait="trait_egg_born"
+		trait="trait_uncreative"
+		trait="trait_custom_race"
+		trait="trait_lazy2"
+	}
+	name="Mighty Snail Union"
+	adjective="Mighty Snail"
+	authority="auth_democratic"
+	government="gov_moral_democracy"
+	advisor_voice_type="l_egalitarian"
+	planet_name="Domannica"
+	planet_class="pc_tropical"
+	system_name="Petoll-Pu"
+	initializer=""
+	graphical_culture="fungoid_01"
+	city_graphical_culture="plantoid_01"
+	empire_flag={
+		icon={
+			category="pointy"
+			file="flag_pointy_20.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"dark_grey"
+			"dark_grey"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Su-Pe"
+		portrait="mol18"
+		texture=1
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_spiritual_seekers_room"
+	spawn_enabled=yes
+	ethic="ethic_fanatic_xenophile"
+	ethic="ethic_pacifist"
+	civics={
+		"civic_environmentalist"
+		"civic_free_haven"
+	}
+}
+"Silicoids"
+={
+	key="Silicoids"
+	ship_prefix="ISS"
+	species={
+		class="REP"
+		portrait="rep2"
+		name="Silicoid"
+		plural="Silicoids"
+		adjective="Silicoid"
+		species_bio="A silicoid (crystalline) lifeform that grows incredibly slowly and is incredibly large. The Silicoids are native to Cryslon, a fiery globe of molten rock. Knowing no other lifeforms except themselves, the Silicoids are extremely xenophobic and expansionists."
+		name_list="MAM3"
+		trait="trait_lithovore"
+		trait="trait_subterranean"
+		trait="trait_venerable2"
+		trait="trait_robust2"
+		trait="trait_repugnant2"
+		trait="trait_custom_race"
+		trait="trait_titanic"
+		trait="trait_bonus"
+	}
+	name="Silicoids"
+	adjective="Silicoan"
+	authority="auth_dictatorial"
+	government="gov_constitutional_dictatorship"
+	planet_name="Cryslon"
+	planet_class="pc_molten"
+	system_name="Kesh-Suras"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_8.dds"
+		}
+		background={
+			category="backgrounds"
+			file="stripes.dds"
+		}
+		colors={
+			"black"
+			"dark_green"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Sassodem dol'Gath"
+		portrait="rep2"
+		texture=1
+		hair=0
+		clothes=4
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="machine_room"
+	spawn_enabled=yes
+	ethic="ethic_authoritarian"
+	ethic="ethic_fanatic_xenophobe"
+	civics={
+		"civic_mining_guilds"
+		"civic_shadow_council"
+	}
+}
+"Altemater"
+={
+	key="Altemater"
+	ship_prefix="ISS"
+	species={
+		class="PLANT"
+		portrait="pla3"
+		name="Altemater"
+		plural="Altemater"
+		adjective="Altemater"
+		species_bio="The Altemater is a giant planetoid-plant organism. Composed of what is thought of as a single entity, this lifeform has engulfed its entire planet. Its tendrils have been reaching kilometers high for millenia and now it is finally reaching beyond the dark blue sky."
+		name_list="HIVE"
+		trait="trait_hive_mind"
+		trait="trait_living_planet"
+		trait="trait_venerable2"
+		trait="trait_resilient2"
+	}
+	name="Altemater"
+	adjective="Altemater"
+	authority="auth_hive_mind"
+	government="gov_devouring_swarm"
+	planet_name="Altemater"
+	planet_class="pc_gaia"
+	system_name="Lire"
+	initializer=""
+	graphical_culture="plantoid_01"
+	city_graphical_culture="plantoid_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_21.dds"
+		}
+		background={
+			category="backgrounds"
+			file="v.dds"
+		}
+		colors={
+			"light_orange"
+			"light_orange"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Altemater"
+		portrait="pla3"
+		texture=3
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_hive_devouring_swarm"
+		"civic_hive_subsumed_will"
+	}
+}
+"Udang Harmony"
+={
+	key="Udang Harmony"
+	ship_prefix=""
+	species={
+		class="ART"
+		portrait="art19"
+		name="Udang"
+		plural="Udang-udang"
+		adjective="Udang"
+		species_bio="The Udang are an exceedingly friendly race of not-very-bright hexapedals. Having rid themselves of predators eons age, the Udang have become rather calm, naive critters, focused on culture and inwards perfection."
+		name_list="HUM2"
+		trait="trait_dumb2"
+		trait="trait_frail3"
+		trait="trait_fleeting2"
+		trait="trait_rapid_breeders2"
+		trait="trait_egg_born"
+		trait="trait_charismatic2"
+		trait="trait_subterranean"
+		trait="trait_communal2"
+		trait="trait_conformists2"
+		trait="trait_custom_race"
+		trait="trait_weakwilled3"
+		trait="trait_weak1"
+	}
+	name="Udang Harmony"
+	adjective="Udang"
+	authority="auth_dictatorial"
+	government="gov_irenic_dictatorship"
+	advisor_voice_type="l_xenophile"
+	planet_name="Elbenthar"
+	planet_class="pc_gaia"
+	system_name="Enith'Tas"
+	initializer=""
+	graphical_culture="avian_01"
+	city_graphical_culture="reptilian_01"
+	empire_flag={
+		icon={
+			category="ornate"
+			file="flag_ornate_13.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"dark_brown"
+			"null"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Piri Piri"
+		portrait="art19"
+		texture=1
+		hair=0
+		clothes=0
+		ruler_title="Thronewarmer"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_harmonious_hierarchy_room"
+	spawn_enabled=yes
+	ethic="ethic_xenophile"
+	ethic="ethic_fanatic_pacifist"
+	civics={
+		"civic_agrarian_idyll"
+		"civic_environmentalist"
+	}
+}
+"OP Bot Directive"
+={
+	key="OP Bot Directive"
+	ship_prefix=""
+	species={
+		class="MACHINE"
+		portrait="sd_mol_robot"
+		name="OP Bot"
+		plural="OP Bot"
+		adjective="OP Bot"
+		species_bio="OP bot is here to ruin your day. Hope you had a GG, because it's over now. Naw, OP Bot is really just an example of how you can pick all the good RPG traits to get something wickedly OP, and on how that is a very, very bad idea. Don't make an OP bot and then complain about it being OP! Don't be *that* guy. Or you may find OP Bot \"taking care\" of your pops for you."
+		name_list="ART1"
+		trait="trait_machine_unit"
+		trait="trait_robodesign_synthetic"
+		trait="trait_subterranean"
+		trait="trait_robot_simple2"
+		trait="trait_robot_learning_algorithms2"
+		trait="trait_custom_race"
+		trait="trait_bonus"
+		trait="trait_ethereal_start"
+		trait="trait_titanic_machine"
+	}
+	secondary_species={
+		class="HUM"
+		portrait="humanoid_hp_06"
+		name="Strogg 1"
+		plural="Strogg 1"
+		adjective="Strogg 1"
+		name_list="ART1"
+		trait="trait_cybernetic"
+		trait="trait_repugnant3"
+		trait="trait_fleeting3"
+		trait="trait_agrarian3"
+		trait="trait_dumb3"
+		trait="trait_thrifty3"
+		trait="trait_strong3"
+		trait="trait_conservational3"
+	}
+	name="OP Bot Directive"
+	adjective="OP Bot"
+	authority="auth_machine_intelligence"
+	government="gov_machine_assimilator"
+	planet_name="Mict"
+	planet_class="pc_barren"
+	system_name="Mict Nobor"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_11.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"red"
+			"null"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Bo-Ki"
+		portrait="sd_mol_robot"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title="Core"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_machine_unitary_cohesion"
+		"civic_machine_assimilator"
+	}
+}
+"Geth"
+={
+	key="Geth"
+	ship_prefix="ISS"
+	species={
+		class="MACHINE"
+		portrait="default_robot"
+		name="Geth"
+		plural="Geth"
+		adjective="Geth"
+		species_bio="Originally made by the Quarians, the Geth rose up against their makers in what can only be described as a tragic and unnecessary accident. When the Geth showed signs of sentience, the Quarians panicked and tried to shut them down, resulting in a brief war where the Geth pushed them off their own homeworld. The Geth were not inherently hostile towards organic life, but history has made them very cautious."
+		name_list="MACHINE1"
+		trait="trait_machine_unit"
+		trait="trait_robot_double_jointed"
+		trait="trait_custom_race"
+		trait="trait_robodesign_geth"
+		trait="trait_robot_simple1"
+	}
+	name="Geth"
+	adjective="Geth"
+	authority="auth_machine_intelligence"
+	government="gov_machine_research"
+	advisor_voice_type="l_machine"
+	planet_name="Rannoch"
+	planet_class="pc_arid"
+	system_name="Tikkun"
+	initializer=""
+	graphical_culture="reptilian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="pointy"
+			file="flag_pointy_13.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Mainframe"
+		portrait="default_robot"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title="Core"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_machine_unitary_cohesion"
+		"civic_machine_introspective"
+	}
+}
+"Nano Storm"
+={
+	key="Nano Storm"
+	ship_prefix=""
+	species={
+		class="MACHINE"
+		portrait="sd_art_robot"
+		name="Grey Goo"
+		plural="Grey Goo"
+		adjective="Grey Goo"
+		species_bio="Originally conceived as a means to quickly mine asteroids and planetoids for resources, the Nano Storm is an enormous swarm of self-replicating nanobots that outlived its maker. Without anyone left to control it, the Storm continues to seek planets and places to mine and turn into more of itself."
+		name_list="MACHINE1"
+		trait="trait_machine_unit"
+		trait="trait_robodesign_nanoswarm"
+		trait="trait_custom_race"
+		trait="trait_robot_crude_neural_network2"
+	}
+	name="Nano Storm"
+	adjective="Nano Storm"
+	authority="auth_machine_intelligence"
+	government="gov_machine_terminator"
+	planet_name="Ir"
+	planet_class="pc_ai"
+	system_name="Iri"
+	initializer=""
+	graphical_culture="avian_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_13.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"dark_grey"
+			"grey"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="01"
+		portrait="sd_art_robot"
+		texture=0
+		hair=0
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_machine_terminator"
+		"civic_machine_predictive_analysis"
+	}
+}
+"SCP-682"
+={
+	key="SCP-682"
+	ship_prefix=""
+	species={
+		class="REP"
+		portrait="rep13"
+		name="SCP-682"
+		plural="SCP-682"
+		adjective="SCP-682"
+		species_bio="SCP-682 are a race of ultra-hostile, regenerating and vaguely reptilian-looking beings. They are notoriously hard to kill, and exhibit trans-dimensional properties. One SCP-682 entered Sol in 1980, wreaking havoc on one of the inhabited planets there, until it was eventually captured and kept imprisoned until this day."
+		name_list="REP1"
+		trait="trait_ethereal_start"
+		trait="trait_repugnant3"
+		trait="trait_smart3"
+		trait="trait_robust3"
+		trait="trait_thrifty3"
+		trait="trait_strong3"
+		trait="trait_venerable3"
+		trait="trait_resilient3"
+		trait="trait_conservational3"
+		trait="trait_utterly_terrifying"
+		trait="trait_agrarian3"
+		trait="trait_solitary3"
+		trait="trait_bonus"
+		trait="trait_custom_race"
+	}
+	name="SCP-682"
+	adjective="SCP-682"
+	authority="auth_dictatorial"
+	government="gov_purity_order"
+	planet_name="Tendrakkia"
+	planet_class="pc_nuked"
+	system_name="Tendor"
+	initializer=""
+	graphical_culture="fungoid_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_14.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"orange"
+			"dark_grey"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Hask'Jonnot"
+		portrait="rep13"
+		texture=0
+		hair=0
+		clothes=1
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_militarist"
+	civics={
+		"civic_fanatic_purifiers"
+		"civic_warrior_culture"
+	}
+}
+"Demonic Spider Authority"
+={
+	key="Demonic Spider Authority"
+	ship_prefix=""
+	species={
+		class="ART"
+		portrait="art16"
+		name="Demonic Spider"
+		plural="Demonic Spiders"
+		adjective="Demonic Spider"
+		species_bio="Demonic Spiders are an educational tool. Like all educational tools, they come straight from hell. Demonic Spiders teach players that you can always min-max traits to get an OP combination, even with a giant penalty. So don't you dare min-max with RPG Traits! Or Demonic Spiders might just spawn next to your homeworld next game..."
+		name_list="ART4"
+		trait="trait_custom_race"
+		trait="trait_penalty"
+		trait="trait_repugnant3"
+		trait="trait_sedentary"
+		trait="trait_lingua_idumentis"
+		trait="trait_uncreative"
+		trait="trait_precursor"
+		trait="trait_ethereal_start"
+		trait="trait_weakwilled3"
+		trait="trait_frail3"
+		trait="trait_wasteful1"
+		trait="trait_weak3"
+		trait="trait_rapid_breeders3"
+		trait="trait_smart3"
+		trait="trait_euphoria"
+		trait="trait_badfarmers1"
+		trait="trait_egg_born"
+		trait="trait_iconoclastic1"
+		trait="trait_fleeting2"
+	}
+	secondary_species={
+		class="HUM"
+		portrait="human"
+		name="Powergamer"
+		plural="Powergamers"
+		adjective="Powergamer"
+		species_bio="Powergamer is a term that refers to a playstyle focused solely on maximizing progress and achieving the end goal at all costs - the endgoal often being the end of the game. This is to the exclusion of all other aspects of a game, such as immersion, storytelling, or fun. In RPG, powergamer is often used as a derogatory term to denote a player incapable of having fun. Prime characteristics include the powergamer uttering words like \"Stop having fun guys!\" If you see a powergamer, you should report him ASAP at your nearest KGB headquarters."
+		name_list="HUMAN1"
+		trait="trait_syncretic_proles"
+		trait="trait_thrifty3"
+		trait="trait_rapid_breeders3"
+		trait="trait_strong3"
+		trait="trait_lingua_idumentis"
+		trait="trait_uncreative"
+		trait="trait_homogenous"
+		trait="trait_fleeting3"
+		trait="trait_repugnant3"
+		trait="trait_sedentary"
+		trait="trait_iconoclastic3"
+		trait="trait_conservational3"
+		trait="trait_robust3"
+		trait="trait_resilient3"
+		trait="trait_euphoria"
+		trait="trait_decadent"
+		trait="trait_agrarian1"
+	}
+	name="Demonic Spider Authority"
+	adjective="Demonic Spideran"
+	authority="auth_dictatorial"
+	government="gov_military_dictatorship"
+	planet_name="Rothak"
+	planet_class="pc_toxic"
+	system_name="Vsem-Klack"
+	initializer=""
+	graphical_culture="molluscoid_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_11.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"pink"
+			"null"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Be'K va'Bir"
+		portrait="art16"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title_female="Queen"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_militarist"
+	civics={
+		"civic_syncretic_evolution"
+		"civic_environmentalist"
+	}
+}
+"Free Strogg"
+={
+	key="Free Strogg"
+	ship_prefix="ISS"
+	species={
+		class="HUM"
+		portrait="humanoid_hp_06"
+		name="Strogg"
+		plural="Strogg"
+		adjective="Strogg"
+		species_bio="The free Strogg are Strogg that have been isolated from their brethren for some time.  After this period, their neural implant could be safely removed, resulting in the birth of a new species that is extremely confused, but free."
+		name_list="MOL1"
+		trait="trait_utterly_terrifying"
+		trait="trait_custom_race"
+		trait="trait_bonus"
+		trait="trait_communal3"
+		trait="trait_agrarian2"
+		trait="trait_smart1"
+		trait="trait_venerable1"
+		trait="trait_homogenous"
+		trait="trait_repugnant3"
+		trait="trait_slow_breeders1"
+	}
+	name="Free Strogg"
+	adjective="Free Strogg"
+	authority="auth_dictatorial"
+	government="gov_technocratic_dictatorship"
+	advisor_voice_type="l_hivemind"
+	planet_name="Stroggos"
+	planet_class="pc_barren"
+	system_name="Stroggo"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="miscgame-6364"
+			file="game-warframe-stalker1.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Makron"
+		portrait="humanoid_hp_06"
+		texture=0
+		hair=0
+		clothes=4
+		ruler_title="The"
+		ruler_title_female="makron"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_xenophobe"
+	ethic="ethic_fanatic_materialist"
+	civics={
+		"civic_bio_assimilator"
+		"civic_technocracy"
+	}
+}

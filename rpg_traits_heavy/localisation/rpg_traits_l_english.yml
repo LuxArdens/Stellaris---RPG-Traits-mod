@@ -13,7 +13,7 @@
  trait_iconoclastic2_desc:0 "§LThis species members chronically refuse to conform to any standard society makes. They ever seek to be 'more unique' and different from their peers.§!\n"
  
  trait_iconoclastic3:0 "Iconoclasts"
- trait_iconoclastic3_desc:0 "§LThis species is obsessed with non-conformity to the point of complete idiocy. "If it's normal or accepted, it's rubbish and probably racist." said the attack helicopter.§!\n"
+ trait_iconoclastic3_desc:0 "§LThis species is obsessed with non-conformity to the point of complete idiocy. "It's mainstream, so it's rubbish and probably racist too." said the attack helicopter.§!\n"
  
  trait_slow_breeders1:0 "Slow Breeders"
  trait_slow_breeders1_desc:0 "§LThis species has a rather low birthrate.§!\n"
@@ -118,16 +118,16 @@
  trait_weakwilled2_desc:0 "§L"We're not surrendering; we're just doing a tactical power exchange!"§!\n"
  
  trait_weakwilled3:0 "Craven"
- trait_weakwilled3_desc:0 "§L"Fight?!... Are you mad?! What if they hurt us?"§!\n"
+ trait_weakwilled3_desc:0 "§L"Fire?! Are you mad? What if they fire back?!"§!\n"
  
  trait_smart1:0 "Smart"
- trait_smart1_desc:0 "§LThis species is rather bright. Even average members are known to be reasonable and quick to learn.§!\n"
+ trait_smart1_desc:0 "§LThis species is rather bright. Even average members are known to be reasonable and quick to learn.\n\n+10% research empire wide§!\n"
  
  trait_smart2:0 "Genius"
- trait_smart2_desc:0 "§LThis species learns at a staggering pace. They are far-sighted minds with incredible memories and the capacity to weave complex ideas very fast.§!\n"
+ trait_smart2_desc:0 "§LThis species learns at a staggering pace. They are far-sighted minds with incredible memories and the capacity to weave complex ideas very fast.\n\n+33% research empire wide§!\n"
  
  trait_smart3:0 "Hyperintelligence"
- trait_smart3_desc:0 "§LGenetically improved neural paths guarantee that every member of society is exceptionally intelligent. Full neural control enables them to truly multitask or hyperfocus on a single task, at will, and develop skills and ideas at an unprecedented pace.§!\n"
+ trait_smart3_desc:0 "§LGenetically improved neural paths guarantee that every member of society is exceptionally intelligent. Full neural control enables them to truly multitask or hyperfocus on a single task, at will, and develop skills and ideas at an unprecedented pace.\n\n+100% research empire wide\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_agrarian1:0 "Sparing"
  trait_agrarian1_desc:0 "§LThis species doesn't need much food, and thus needs relatively little farming land.§!\n"
@@ -136,7 +136,7 @@
  trait_agrarian2_desc:0 "§LSymbiotic micro-organisms provide additional energy and nutrition to this species, reducing their required food consumption considerably.§!\n"
  
  trait_agrarian3:0 "Self-Sufficient"
- trait_agrarian3_desc:0 "§LGenetically enhanced micro symbiotics remove almost all need for this species to ingest food; they are fully self-sufficient.§!\n"
+ trait_agrarian3_desc:0 "§LGenetically enhanced micro symbiotics remove almost all need for this species to ingest food; they are fully self-sufficient.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_robust1:0 "Tough"
  trait_robust1_desc:0 "§LThis species endures even in harsh environments and is tough to kill.§!\n"
@@ -145,16 +145,16 @@
  trait_robust2_desc:0 "§LThis species can live and breed even in hostile environments. They have redundant organs and limbs and are notoriously hard to kill.§!\n"
  
  trait_robust3:0 "Adamantium"
- trait_robust3_desc:0 "§LGenetically enhanced tissue structures, bones infused with advanced alloys and nanotics that filter toxins and repair damage; this species is close to indestructible. They can survive on worlds that are completely alien to them and fight on despite sustaining hits that would shred lesser species.§!\n"
+ trait_robust3_desc:0 "§LGenetically enhanced tissue structures, bones infused with advanced alloys and nanotics that filter toxins and repair damage; this species is close to indestructible. They can survive on worlds that are completely alien to them and fight on despite sustaining hits that would shred lesser species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_thrifty1:0 "Motivated"
- trait_thrifty1_desc:0 "§LThis species likes organising stuff. And doing stuff. And writing stuff. And making stuff. And building stuff. Let's do some stuff.§!\n"
+ trait_thrifty1_desc:0 "§LThis species likes organising stuff. And writing stuff. And making stuff. And building stuff. Just doing stuff. Let's go do some stuff.§!\n"
  
  trait_thrifty2:0 "Restless"
- trait_thrifty2_desc:0 "§LThis species barely ever rests. Literally, because they barely need sleep except for healing physically. As a result they tend to get a lot done.§!\n"
+ trait_thrifty2_desc:0 "§LThis species barely ever rests, or sits still. They are continuously active and work at a very high pace.§!\n"
  
  trait_thrifty3:0 "Fully Awake"
- trait_thrifty3_desc:0 "§LEnhanced neural feedback and healing systems remove the need for sleep and make this species fully aware and concentrated on their tasks. They never lack motivation to get things done and can work endlessly.§!\n"
+ trait_thrifty3_desc:0 "§LEnhanced neural feedback and healing systems remove the need for sleep and make this species fully aware and concentrated on their tasks. They never lack motivation to get things done, working endlessly at a very fast pace.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_rapid_breeders1:0 "Fertile"
  trait_rapid_breeders1_desc:0 "§LThis species produces lots of offspring.§!\n"
@@ -163,13 +163,16 @@
  trait_rapid_breeders2_desc:0 "§LThis species doesn't really breed like rabbits. They breed somewhat faster.§!\n"
  
  trait_rapid_breeders3:0 "Machine-assisted reproduction"
- trait_rapid_breeders3_desc:0 "§LArtifical wombs combined with neural implants allow for explosive population growth. Unlike clones these are genetically unique.§!\n"
+ trait_rapid_breeders3_desc:0 "§LArtifical wombs combined with neural imprinting allow for explosive population growth. Unlike clones these have a specially tailored, unique genetic makeup and can continue to multiply naturally as well.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
+ 
+ trait_homogenous:0 "Homogeneous"
+ trait_homogenous_desc:0 "§LThis species is very homogeneous, and lacks individual diversity. Each member is just as smart, just as strong and just as big as the next. While this means few members are particularly incapable, it also deprives them of notable outliers that are more capable.§!\n"
  
  trait_gifted1:0 "Talented"
  trait_gifted1_desc:0 "§LThis species has a great amount of variance. Consequently there are many individuals with very particular talents or skill sets.§!\n"
  
  trait_gifted2:0 "Gifted"
- trait_gifted2_desc:0 "§LArtificial addition and recombination of DNA allows for even greater variance in this species.§!\n"
+ trait_gifted2_desc:0 "§LArtificial addition and recombination of DNA allows for even greater variance in this species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_strong1:0 "Strong"
  trait_strong1_desc:0 "§LThis species has an animal-like high body strength.§!\n"
@@ -178,7 +181,7 @@
  trait_strong2_desc:0 "§LCapable of running at immense speeds, lifting object a dozen times their own weight and breaking through walls of solid rock; this species is exceptionally strong. They can literally rip lesser species in half and can do certain tasks by hand where others would require specialized tools.§!\n"
  
  trait_strong3:0 "Hulking"
- trait_strong3_desc:0 "§LGenetic alterations reach the limit of what biological tissue can output in terms of raw strength. Added with integrated biomechanical actuators, this species has a strength equivalent to that of the best robotic counterparts. They can tear and bend metal like paper.§!\n"
+ trait_strong3_desc:0 "§LGenetic alterations reach the limit of what biological tissue can output in terms of raw strength. Added with integrated biomechanical actuators, this species has a strength equivalent to that of the best robotic counterparts. They can tear and bend metal like paper.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_communal1:0 "Highly Social"
  trait_communal1_desc:0 "§LThis species is naturally social and communal. They tolerate each other well and cooperate nicely.§!\n"
@@ -187,7 +190,7 @@
  trait_communal2_desc:0 "§LThis species loves connecting, cooperating, helping and generally working with others.§!\n"
  
  trait_communal3:0 "Altruistic"
- trait_communal3_desc:0 "§LNeural imprinting has made this species perfectly altruistic to their own. They operate and live in harmony and happiness, without crime or violence.§!\n"
+ trait_communal3_desc:0 "§LNeural imprinting has made this species perfectly altruistic to their own. They operate and live in harmony and happiness, without crime or violence.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_charismatic1:0 "Polite"
  trait_charismatic1_desc:0 "§LThis species is always polite, even to xenos.§!\n"
@@ -196,7 +199,7 @@
  trait_charismatic2_desc:0 "§LThis species manages to come off as charismatic even to alien species.§!\n"
  
  trait_charismatic3:0 "Attractive"
- trait_charismatic3_desc:0 "§LCareful study of xeno communication, in combination with altered pheromone composition, allow this species to be wildly attractive even to completely alien species.§!\n"
+ trait_charismatic3_desc:0 "§LCareful study of xeno communication, in combination with altered pheromone composition, allow this species to be wildly attractive even to completely alien species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_conformists1:0 "Mainstream"
  trait_conformists1_desc:0 "§LIf the majority thinks it's right, it probably is right. Right?§!\n"
@@ -205,7 +208,7 @@
  trait_conformists2_desc:0 "§L"United we stand. Divided we fall."§!\n"
  
  trait_conformists3:0 "Redditors"
- trait_conformists3_desc:0 "§LNeural implants link this species consciousness to their very own subreddit. Though not a true hivemind, they will utterly wreck anyone who has a different view on things.§!\n"
+ trait_conformists3_desc:0 "§LNeural implants link this species consciousness to their very own subreddit. Though not a true hivemind, they will utterly shred anyone who has a different view on things.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_venerable1:0 "Venerable"
  trait_venerable1_desc:0 "§LThis species has a generous lifespan.§!\n"
@@ -214,7 +217,7 @@
  trait_venerable2_desc:0 "§L"The centuries pass; I shall remain."§!\n"
  
  trait_venerable3:0 "Clinically Immortal"
- trait_venerable3_desc:0 "§LGenome storage combined with advanced cellular nanotics allows for indefinite repair of damaged DNA in a living organism. Together with ultra-advanced healthcare, this makes an organism clinically immortal.§!\n"
+ trait_venerable3_desc:0 "§LGenome storage combined with advanced cellular nanotics allows for indefinite repair of damaged DNA in a living organism. Together with ultra-advanced healthcare, this makes an organism clinically immortal.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_resilient1:0 "Stubborn"
  trait_resilient1_desc:0 "§LThis species is naturally stubborn and fearless. They will fight on despite overwhelming odds.§!\n"
@@ -223,7 +226,7 @@
  trait_resilient2_desc:0 "§L"Have you learned nothing of the stubbornness of dwarves?"§!\n"
  
  trait_resilient3:0 "Unyielding"
- trait_resilient3_desc:0 "§L"'Tis but a scratch!".§!\n"
+ trait_resilient3_desc:0 "§L"'Tis but a scratch!".\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_conservational1:0 "Conserving"
  trait_conservational1_desc:0 "§L"Waste not, want not."§!\n"
@@ -232,7 +235,7 @@
  trait_conservational2_desc:0 "§L"It is not the xeno who has too little that is poor, but the one who hankers after more."§!\n"
  
  trait_conservational3:0 "Stoic"
- trait_conservational3_desc:0 "§L"Non est ad astra mollis e terris via"§!\n"
+ trait_conservational3_desc:0 "§L"Non est ad astra mollis e terris via"\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_genemod_pest:0 "Pestilence"
  trait_genemod_pest_desc:0 "§LThis species breeds like insects, and behaves a bit like them too. They are naturally short-lived and not particularly well-educated as a result, and overpopulation is the standard.§!\n"
@@ -241,7 +244,7 @@
  trait_custom_testing_desc:0 "§LPower beyond your wildest beliefs.§!\n"
  
  trait_genemod_enraged:0 "Enraged"
- trait_genemod_enraged_desc:0 "§LAnger inhibitions removed. Hormones at maximum tolerable level. This species will attack anything that is not them on sight; they are in a state of constant and blind RAGE.§!\n"
+ trait_genemod_enraged_desc:0 "§LAnger inhibitions removed. Hormones at maximum effective level. This species will viciously attack anything on sight; robbed of their own willpower, they are in a state of constant and blind RAGE.§!\n"
  
  trait_genemod_lobotomized:0 "Lobotomite"
  trait_genemod_lobotomized_desc:0 "§LAn extremely crude operation. No fancy genetic modding or nanotics for these poor bummers; they had a couple of cuts made in their neural paths and now they're little more than decoration.§!\n"
@@ -259,7 +262,7 @@
  trait_effects_weirdass_desc:0 "§LFire Rate Test Description.§!\n"
  
  trait_decadent:0 "Slave Dependent"
- trait_decadent_desc:0 "§LThis species requires servants to stay happy.§!\n"
+ trait_decadent_desc:0 "§LThis species requires servants to stay happy. Though they do really seem to enjoy life when they have their servants.§!\n"
  
  trait_lingua_idumentis:0 "Lingua Idumentis"
  trait_lingua_idumentis_desc:0 "§LThis species has the peculiar trait of communicating through apparel. They are both fascinating and extremely frustrating to xenos.§!\n"
@@ -277,7 +280,7 @@
  trait_euphoria_desc:0 "§LIn a constant state of euphoria, this species is always happy and content. Sometimes a little too content with nothing.§!\n"
  
  trait_turtles:0 "Defensive Nature"
- trait_turtles_desc:0 "§LThis race instinctively tends to focus on defence only, preferring to wait out the end of a war rather than just finish it.\n\n military stations triple damage, 6 times more hitpoints, -80% cost, but navy size -90%§!\n"
+ trait_turtles_desc:0 "§LThis race instinctively tends to focus on defence only, preferring to wait out the end of a war rather than just finish it.\n\nReduced naval capacity, defensive platforms are much cheaper, have +100% hitpoints, +100% damage. Each station can hold 5 more defensive platforms, and has enormous starbase capacity.§!\n"
  
  trait_utterly_terrifying:0 "Dread Masters"
  trait_utterly_terrifying_desc:0 "§LThe stuff of nightmares, these ghostly critters are masters of dread and psychological warfare. They instill fear in even the bravest of soldiers.§!\n"
@@ -298,31 +301,40 @@
  trait_independent_desc:0 "§LThis species will fiercely stand up to any attempt at conquest. Members have been known to yell "Freedooooooooom" even as they had their guts spilled over the floor.§!\n"
  
  trait_silent_observers:0 "Silent Observers"
- trait_silent_observers_desc:0 "§L"Watch and learn." - this species lurks in far systems, spying on others with vast sensor arrays.\n\n +400% sensor range \n\n -33% naval cap§!\n"
+ trait_silent_observers_desc:0 "§L"Watch and learn." - this species lurks in far systems, spying on others with vast sensor arrays.\n\n Gets vastly superior sensor modules, but reduced naval cap§!\n"
  
  trait_egg_born:0 "Egg Born"
- trait_egg_born_desc:0 "§LThis species matures completely inside eggs. This makes their colonization attempts a lot easier.\n\n Colony ships build 4 times faster and are twice as cheap§!\n"
+ trait_egg_born_desc:0 "§LThis species matures completely inside eggs. This makes their colonization attempts a lot easier.\n\n Colony ships are cheaper and deploy faster.§!\n"
  
  trait_hoarders:0 "Hoarders"
- trait_hoarders_desc:0 "§LLike dragons, this species hoards its riches into endlessly large piles. The logistics of storing so much material reduce their production efficiency somewhat though.\n\n +200000 storage cap \n\n tiny production penalty§!\n"
+ trait_hoarders_desc:0 "§LLike dragons, this species hoards its riches into endlessly large piles. The logistics of storing so much material reduce their production efficiency somewhat though.\n\n +200000 storage cap\n\n tiny production penalty§!\n"
  
  trait_curious:0 "Curious"
  trait_curious_desc:0 "§LThis species is naturally curious and creative, making them very thorough in their searches. They find more anomalies and think of alternative solutions.\n\n 2 research alternatives +100% anomaly chance -50% survey speed§!\n"
  
  trait_uncreative:0 "Uncreative"
- trait_uncreative_desc:0 "§LThis species has no creativity and exploration bores them. They are extremely inept at finding innovative solutions to problems and their usual interstellar exploration protocol is to take one picture and leave.\n\n -10 research alternatives -50% anomaly chance +100% survey speed§!\n"
+ trait_uncreative_desc:0 "§LThis species has no creativity and exploration bores them. They are extremely inept at finding innovative solutions to problems and their usual interstellar exploration protocol is to take one picture and leave.\n\n -2 research alternatives -50% anomaly chance +100% survey speed§!\n"
  
  trait_airborne:0 "Airborne"
- trait_airborne_desc:0 "§L"I believe I can fly... -Wait what? I have no Avian portrait? Well, just imagine I have one then." - This species is comfortable with 3 dimensional engagements and performs better in stellar combat as well.\n\n ship_fire_rate_mult = 0.2 \n\n ship_tracking_add = 10 \n\n ship_evasion_add = 10 §!\n"
+ trait_airborne_desc:0 "§L"I believe I can fly... -Wait what? I have no Avian portrait? Well, just imagine I have one then." - This species is comfortable with 3 dimensional engagements and performs better in stellar combat as well.\n\n ship_fire_rate_mult = 0.2\n\n ship_tracking_add = 10\n\n ship_evasion_add = 10 §!\n"
  
  trait_titanic:0 "Titanic"
  trait_titanic_desc:0 "§L"Rise up! Rise up! Rise up you sleeping giant!"\n\n Titanic lifeforms, towering above the trees. Their buildings, tools, weapons and ships fit their size, as do their stomachs.§!\n"
  
- trait_shield_obsessed:0 "Obsessed with shields"
- trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +400% shield power, -75% hull integrity §!\n"
- 
  trait_tiny:0 "Tiny"
  trait_tiny_desc:0 "§L"What's this? A ship for ants?"\n\n This species stands less than 5 centimetres tall. No amount of tools or machines can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"
+ 
+ trait_titanic_machine:0 "Titanic"
+ trait_titanic_machine_desc:0 "§L"Rise up! Rise up! Rise up you sleeping giant!"\n\n Titanic lifeforms, towering above the trees. Their buildings, tools, weapons and ships fit their size, as do their stomachs.§!\n"
+ 
+ trait_tiny_machine:0 "Tiny"
+ trait_tiny_machine_desc:0 "§L"What's this? A ship for ants?"\n\n This species stands less than 5 centimetres tall. No amount of tools or machines can completely eliminate the fact that all they produce tends to be tiny. Even their largest ships are small in comparison to the average corvette.§!\n"
+ 
+ trait_shield_obsessed:0 "Obsessed with shields"
+ trait_shield_obsessed_desc:0 "§LThis species developed shield technology before FTL technology and got addicted to it rather quickly. They shun armor in favor of "MOAHR SHIELDS!"\n\n +200% shield power, -100% armour §!\n"
+ 
+ trait_armor_obsessed:0 "Obsessed with armor"
+ trait_armor_obsessed_desc:0 "§LThis species never cared for fantasy equipment like shields. They shun even the concept of energy shielding in favour of thick layers of good ol' armor.\n\n -100% shield power, +200% armor §!\n"
  
  trait_subterranean:0 "Subterranean"
  trait_subterranean_desc:0 "§LNative tunnellers, this species dwells mostly underground, digging ever deeper and deeper. They make great use of even the smallest planets, given enough time to build their tunnel networks.\n\n Any planet habited by this species slowly goes up to 25 tiles.§!\n"
@@ -337,7 +349,7 @@
  trait_penalty_desc:0 "§LFor a bigger challenge, give yourself this trait point penalty.\n\n§!\n"
  
  trait_penalty2:0 "Bring it on"
- trait_penalty2_desc:0 "§LCan't stop min-maxing? Give yourself this penalty to feel less guilty about it.\n\n§!\n"
+ trait_penalty2_desc:0 "§LStill can't stop min-maxing? Give yourself this penalty to feel less guilty about it.\n\n§!\n"
  
  trait_penalty3:0 "Masochist"
  trait_penalty3_desc:0 "§LThis is the best trait in the game... if you like suffering needlessly for hours.\n\n§!\n"
@@ -348,18 +360,170 @@
  trait_living_planet:0 "Living Planet"
  trait_living_planet_desc:0 "§LThis organism encompasses its entire homeworld and is ingrained with it. It *is* the planet and the planet *is* the organism. Single-minded and in perfect unity; the Living Planet does not tolerate other species or planets to exist.\n\nA single, powerful homeworld for the entire game. Cannot colonize other planets. Cannot annex planets. Cannot accept xenos. No migration. No diplomacy. Upon annexation, enemy planets are permanently destroyed.§!\n"
  
- trait_cyborg:0 "Cyborgs"
- trait_cyborg_desc:0 "§LEven before discovering FTL travel, this species experimented with cybernetics, and long since they have all started replacing their organic bodyparts with synthetic counterparts. Limbs, neural implants, sensors... members are often already 'enhanced' during infancy.§!\n"
+ trait_cybernetic:0 "Cyborgs"
+ trait_cybernetic_desc:0 "§LEven before discovering FTL travel, this species experimented with cybernetics, and long since they have all started replacing their organic bodyparts with synthetic counterparts. Limbs, neural implants, sensors... members are often already 'enhanced' during infancy.\n\n Prevents access to Evolution and Psionic Ascension paths§!\n"
  
  trait_synthetic_lifeform:0 "Synthethic Lifeform"
- trait_synthetic_lifeform_desc:0 "§LThis lifeform was artificially constructed.§!\n"
+ trait_synthetic_lifeform_desc:0 "§LThis lifeform was artificially constructed. They require no organic produce, do not breathe, do not die of old age, and are stronger, faster and smarter than most organics.§!\n"
  
+ trait_robot_killer_bots1:0 "Killer Drones"
+ trait_robot_killer_bots1_desc:0 "§LRobotic drones, bristling with various types of weapons. Though a bit predictable, they have unmatched precision and firepower on the battlefield, destroying organic ground troops and massacring civilians with the greates ease.§!\n"
+ 
+ trait_robot_killer_bots2:0 "Annihilators"
+ trait_robot_killer_bots2_desc:0 "§LI'll be back.§!\n"
+ 
+ trait_psionic_shifters:0 "Phase Shifters"
+ trait_psionic_shifters_desc:0 "§LMore than mere psionics, these souls took "mind over matter" rather literally. They can alter their physical forms at their own leisure, warping through solid objects, moving at incredible speeds and manipulating the fabric of reality at the lowest levels. §!\n"
+ 
+ trait_psionic_ethereals:0 "Ethereals"
+ trait_psionic_ethereals_desc:0 "§LThese psionics have completely mastered the alteration of physical reality. They have transcended into something else entirely, residing mostly in a super-dimensional place without space, matter or time. Known under many names: Ghosts, Angels, Subspace Anomalies... the Ethereals do not hunger, do not rest and do not die. They influence the physical realm only through powerful psionic interactions. Though more capable than most organics, they can still be temporarily cast out of the physical realm with force.§!\n"
+ 
+ trait_robodesign_terminators:0 "War Machines"
+ trait_robodesign_terminators_desc:0 "§LDesigned for war, to the exclusion of some more subtle tasks.§!\n"
+ 
+ trait_robodesign_miners:0 "Mining Bots"
+ trait_robodesign_miners_desc:0 "§LA giant mining network, composed of various specialized mining tools and structures. This machine entity does not perform well at tasks it cannot solve with a larger drill.§!\n"
+ 
+ trait_robodesign_servitors:0 "Servitors"
+ trait_robodesign_servitors_desc:0 "§LBuilt as civil servants originally, these bots do well with administrative and servile tasks. They are not equipped for heavy tasks and complex analysis.§!\n"
+ 
+ trait_robodesign_harvesters:0 "Harvesters"
+ trait_robodesign_harvesters_desc:0 "§LGiant, lumbering farming equipment. These synths were not intended to ever rule engage in philosophy, rule planets, or exterminate their organic creators, yet they somehow did.§!\n"
+ 
+ trait_robodesign_science:0 "Research Bots"
+ trait_robodesign_science_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
+ 
+ trait_robodesign_terminators_robot:0 "War Machines"
+ trait_robodesign_terminators_robot_desc:0 "§LDesigned for war, to the exclusion of some more subtle tasks.§!\n"
+ 
+ trait_robodesign_miners_robot:0 "Mining Bots"
+ trait_robodesign_miners_robot_desc:0 "§LA giant mining network, composed of various specialized mining tools and structures. This machine entity does not perform well at tasks it cannot solve with a larger drill.§!\n"
+ 
+ trait_robodesign_servitors_robot:0 "Servitors"
+ trait_robodesign_servitors_robot_desc:0 "§LBuilt as civil servants originally, these bots do well with administrative and servile tasks. They are not equipped for heavy tasks and complex analysis.§!\n"
+ 
+ trait_robodesign_harvesters_robot:0 "Harvesters"
+ trait_robodesign_harvesters_robot_desc:0 "§LGiant, lumbering farming equipment. These synths were not intended to ever rule engage in philosophy, rule planets, or exterminate their organic creators, yet they somehow did.§!\n"
+ 
+ trait_robodesign_science_robot:0 "Research Bots"
+ trait_robodesign_science_robot_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
+ 
+ trait_robodesign_terminators_synth:0 "War Machines"
+ trait_robodesign_terminators_synth_desc:0 "§LDesigned for war, to the exclusion of some more subtle tasks.§!\n"
+ 
+ trait_robodesign_miners_synth:0 "Mining Bots"
+ trait_robodesign_miners_synth_desc:0 "§LA giant mining network, composed of various specialized mining tools and structures. This machine entity does not perform well at tasks it cannot solve with a larger drill.§!\n"
+ 
+ trait_robodesign_servitors_synth:0 "Servitors"
+ trait_robodesign_servitors_synth_desc:0 "§LBuilt as civil servants originally, these bots do well with administrative and servile tasks. They are not equipped for heavy tasks and complex analysis.§!\n"
+ 
+ trait_robodesign_harvesters_synth:0 "Harvesters"
+ trait_robodesign_harvesters_synth_desc:0 "§LGiant, lumbering farming equipment. These synths were not intended to ever rule engage in philosophy, rule planets, or exterminate their organic creators, yet they somehow did.§!\n"
+ 
+ trait_robodesign_science_synth:0 "Research Bots"
+ trait_robodesign_science_synth_desc:0 "§LEquipped with the most advanced artificial neural quantumagic processors, these bots excel at complex analysis.§!\n"
+ 
+ trait_robodesign_androids:0 "Androids"
+ trait_robodesign_androids_desc:0 "§LOrginally designed as androids, these machines emulate their organic makers in a very balanced fashion and eventually gained sentience. \n \n This is the baseline machine trait§!\n"
+ 
+ trait_robodesign_synthetic:0 "Uploaded Organics"
+ trait_robodesign_synthetic_desc:0 "§LThese frames carry organic minds that have been uploaded into extremely advanced quantum computers. They have the strengths of both worlds.§!\n"
+ 
+ trait_robot_durable2:0 "Self-repairing"
+ trait_robot_durable2_desc:0 "§LBuilt with an eye for maintenance, these machines have limited self-repairing properties as well as great interchangability. As such they are very cheap to maintain.§!\n"
+ 
+ trait_robot_high_maintenance2:0 "Crude Design"
+ trait_robot_high_maintenance2_desc:0 "§LThis Machine's frame was horribly over-engineered and breaks down extremely rapidly.§!\n"
+ 
+ trait_robot_crude_neural_network:0 "Inflexible"
+ trait_robot_crude_neural_network_desc:0 "§LThough powerful in raw processing power, the neural systems used in this machine are rather crude and inefficient. The result is an AI that does adapt and learn, but at a rather slow pace.§!\n"
+ 
+ trait_robot_crude_neural_network2:0 "Static"
+ trait_robot_crude_neural_network2_desc:0 "§LBased on a very early form of neural network, this machine can only adapt to input after many, many iterations. Its self-changing properties (or 'learning capabilities') are thus extremely slow.§!\n"
+ 
+ trait_robodesign_fake_ai:0 "No Intelligence"
+ trait_robodesign_fake_ai_desc:0 "§LLacking many basic self-writing algorithms, this system is fundementally not yet a true general intelligence. It can still perform a wide array of tasks, but does not evolve naturally. The only way it could ever become a true intelligence is by pure chance, or if some strange power subtly guided them from an armchair.§!\n"
+ 
+ trait_robot_dakka:0 "Dakka"
+ trait_robot_dakka_desc:0 "§LEquipped with the latest in small arms, these machines are a menace on the battlefield with their pin-point accuracy and almost zero reaction time.§!\n"
+ 
+ trait_robot_more_dakka:0 "More Dakka"
+ trait_robot_more_dakka_desc:0 "§LYou can NEVAR have firepower. Modified frames hold extremely high-powered energy weapons and miniaturized fusion bombs.§!\n"
+ 
+ trait_robot_simple1:0 "Simple Design"
+ trait_robot_simple1_desc:0 "§LA simple design is both easier and cheaper to mass-produce, but lacks many useful extras.§!\n"
+ 
+ trait_robot_simple2:0 "Minimalist"
+ trait_robot_simple2_desc:0 "§LThis Machine frame was meant to be produced by the billions for a relatively low price. Full of rough edges and certainly not the most elegant design around, but extremely simple to produce.§!\n"
+ 
+ trait_robot_complex1:0 "Complex Design"
+ trait_robot_complex1_desc:0 "§LA complex design is harder and thus more expensive to produce, but allows for installation of more advanced systems.§!\n"
+ 
+ trait_robot_complex2:0 "Cutting Edge"
+ trait_robot_complex2_desc:0 "§LNo expenses were spared in the design of these Machine frames. They are powerful, but very time- and resource consuming to produce.§!\n"
+ 
+ trait_robot_simple1_robot:0 "Simple Design"
+ trait_robot_simple1_robot_desc:0 "§LA simple design is both easier and cheaper to mass-produce, but lacks many useful extras.§!\n"
+ 
+ trait_robot_simple2_robot:0 "Minimalist"
+ trait_robot_simple2_robot_desc:0 "§LThis Machine frame was meant to be produced by the billions for a relatively low price. Full of rough edges and certainly not the most elegant design around, but extremely simple to produce.§!\n"
+ 
+ trait_robot_complex1_robot:0 "Complex Design"
+ trait_robot_complex1_robot_desc:0 "§LA complex design is harder and thus more expensive to produce, but allows for installation of more advanced systems.§!\n"
+ 
+ trait_robot_complex2_robot:0 "Cutting Edge"
+ trait_robot_complex2_robot_desc:0 "§LNo expenses were spared in the design of these Machine frames. They are powerful, but very time- and resource consuming to produce.§!\n"
+ 
+ trait_robot_learning_algorithms2:0 "Predictive Learning"
+ trait_robot_learning_algorithms2_desc:0 "§LSophisticated quantum state networks predict optimal paths instead of learning through trial-and-error alone. This creates a vastly stronger form of machine intelligence.§!\n"
+ 
+ trait_precursor:0 "Precursor"
+ trait_precursor_desc:0 "§LNot the youngest of civilizations. The precursors have been around for a long time. Though lacking in territory, they have not grown complacent like the Fallen Empires.\n\n Alternative start trait - you start with one very advanced planet, lots of resources and many additional starting techs, in addition to extra trait points due to your ancient-ness. Not as powerful as a true FE, but not limited to their civics either.\n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
+ 
+ trait_psionic_start:0 "Psionics"
+ trait_psionic_start_desc:0 "§LThis species mastered the art of psionics long before they ever left the surface of their planet\n\n Alternative Start - start off with the 2 psionic AP already unlocked.\n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
+ 
+ trait_ethereal_start:0 "Ethereals"
+ trait_ethereal_start_desc:0 "§LThese psionics have completely mastered the alteration of physical reality. They have transcended into something else entirely, residing mostly in a super-dimensional place without space, matter or time. Known under many names: Ghosts, Angels, Subspace Anomalies... the Ethereals do not hunger, do not rest and do not die. They influence the physical realm only through powerful psionic interactions. Though more capable than most organics, they can still be temporarily cast out of the physical realm with force.\n\n Alternative start - Starts you off with the 2 psionic AP perks, as well as the special Ethereal super-duper-psionic trait.\n\n Alternative start traits are wholly unbalanced. Only use it if you want to roleplay, or give it to the AI for a challenge.§!\n"
+ 
+ trait_preftl:0 "Pre-FTL"
+ trait_preftl_desc:0 "§LAlternative start - Start off without FTL-tech, and some other basic techs. Why would you want that? I don't know, maybe you like shooting yourself in the foot.§!\n"
+ 
+ trait_strogg:0 "Cybernetic Construct"
+ trait_strogg_desc:0 "§LLittle resemblance is left of what this species once was. It has been cut up, twisted and molded into a mostly cybernetic construct. Mechanical limbs stick out of burned, rotten flesh. An extra pair of eyes here, another pair of arms there, the constructs are often composed of several biological species, mixed and matched with mechanical parts. The members generally have no personality, being linked together with crude neural interfaces.§!\n"
+ 
+ trait_robodesign_geth:0 "G.E.T.H."
+ trait_robodesign_geth_desc:0 "§L"Gestalt Entity with Transfer Hyperprocessing" - A peculiar AI design, where entities become more effective and more capable when grouped together. Their frames can only hold a small program, and a single entity is only about as smart as an animal, but large groups of frames share their higher-level processes to produce a true intelligence.\n\n Big penalties when underpopulated, but becomes more effective as more units are present on a planet, up to a maximum of 20 pops for almost full 'synthetic' bonuses.§!\n"
+ 
+ trait_robodesign_nanoswarm:0 "Grey Goo"
+ trait_robodesign_nanoswarm_desc:0 "§LThe image of some frail organic is not necessarily the optimal form. State of the art nanobot clouds can house a fully sentient programming and accomplish almost miraculous feats, such as building and deconstructing entire cities and fleets in a matter of hours.§!\n"
+ 
+ trait_robodesign_nanoswarm_synth:0 "Grey Goo"
+ trait_robodesign_nanoswarm_synth_desc:0 "§LOur former shape is not necessarily the optimal form. State of the art nanobot clouds can house a fully sentient programming and accomplish almost miraculous feats, such as building and deconstructing entire cities and fleets in a matter of hours.§!\n"
+ 
+ trait_sterilized:0 "Sterilized"
+ trait_sterilized_desc:0 "§LSometimes we have to make hard decisions in life. Decisions that affect other people. Decisions like "NO, I don't want 20 billion more jellyfish in MY. BLOODY. EMPIRE."§!\n"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
  ########################################
  # Events / oefening creatief schrijven #
  ########################################
  
  trait.8326.title:0 "Winter has come"
- trait.8326.desc:0 "Even though our species has since long the technology to keep working through the ancient winter period of our homeworld, our bodies just refuse to do so. We must all sleep a dreamless sleep and hope we awaken peacefully again one day."
+ trait.8326.desc:0 "Even though we have had the technology to keep working through the ancient winter period of our homeworld for a long time, our bodies just refuse. We must all sleep the dreamless sleep... and hope we awaken peacefully again one day."
  trait.8326.a:0 "*Yawn*"
  
  trait.8328.name:0 "Chemical Accident"
@@ -374,11 +538,90 @@
  trait.8333.desc:0 "The Others must be destroyed. With enormous fusion bombs we have turned this world into a giant molten slug."
  trait.8333.option:0 "We are the Only"
  
+ planetmods.1.name:0 "Gravitational Control"
+ planetmods.1.desc:0 "A new planetary graviton generator has been finished on [Root.Planet.GetName]. The enormous structure, mostly composed of a gigantic zero point reactor, will manipulate the local field to be more in line with what our species prefers."
+ planetmods.1.option:0 "Splendid."
+ 
+ equalizer.14.name:0 "UNLIMITED POWER"
+ equalizer.14.desc:0 "See? THIS one's definitely different! He's planning his moves, counting his steps. Made his titans "Fully Awake", that MUST be on purpose! Did he know how powerful that would be? Or did he guess?\n - 'Well, he couldn't possibly know, with the changes stacking additively and all that. We should warn him about the effect, just in case. It's only the right thing to do.'\n Hmmmpff... I guess you're right, but I'm telling you, one of these players is the strategic mastermind we're looking for. \n\n <KUCH> Human, this is Kragot of the Scutum-Centaurus Arm speaking. We noticed you took a very powerful trait combination, and would like to helpfully inform you that if you use this combination, you'll win this game with ease. Which makes our search for great intellect harder, so please don't? Give yourself a challenge, why don't you. Thank you."
+ equalizer.14.optiona:0 "What the..."
+ equalizer.14.optionb:0 "Oooo-kay"
+ 
  civic_rpg_hive_devouring_swarm:0 "Devouring Swarm"
  
  NAME_Gas:0 "Gas Giant System"
  gas_system_initializer_NAME:0 "Gas Giant System"
  gas_system_initializer_DESC:0 "A Gas Giant System for Gaseous lifeforms. If you don't pick this as a gaseous lifeform, you're going to have a bad day. If you pick this without the Gaseous Lifeform trait, you're going to have a bad day."
+ 
+ 
+ 
+ trait_nerve_stapled_robo:0 "Pacificated"
+ trait_nerve_stapled_robo_desc:0 "§LOnce a true synthetic lifeform, this frame has been emptied of its 'inhabitant' and is now simply a shell with rudimentary programming. A... Robot.§!\n"
+ 
+ geth_1:0 "Animalistic Intelligence"
+ geth_1_desc:0 "These frames are too few to operate in an even remotely intelligent way. Building more than 5 pops will decrease this penalty."
+ 
+ geth_2:0 "Low Intelligence"
+ geth_2_desc:0 "The Gestalt Network is too small to execute anything but basic tasks. Building more than 12 pops will decrease this penalty further."
+ 
+ geth_3:0 "Basic Intelligence"
+ geth_3_desc:0 "The network has grown capable of performing basic operations, but lacks the level of cognition required for research and other complex tasks. Building 20 pops will unlock the full potential of the G.E.T.H."
+ 
+ geth_4:0 "Full Intelligence"
+ geth_4_desc:0 "The network is operating at maximum level, bringing the intelligence of individual frames to levels on par or even superior to many organics."
+ 
+ 
+ trait_broodparasite:0 "Brood Parasite"
+ trait_broodparasite_desc:0 "§LAn asexual parasite, this species can only reproduce inside a living host. They reproduce exceptionally fast in alien lifeforms, rapidly adapting inside their bodies, whilst injecting them with stimulating chemicals. Infected hosts are completely infatuated with their parasite and its offspring, reducing their own reproduction speed, but making them happier... in a very creepy, unhealthy way.\n\n +200% growth speed when xeno pop present on planet, -50% growth speed for infected xeno pop.§!\n"
+ 
+ bp_increased_reproduction:0 "Increased Reproduction"
+ bp_increased_reproduction_desc:0 "This Pop is mating with and having its kids raised by an alien Pop."
+ bp_reduced_reproduction:0 "Reduced Reproduction"
+ bp_reduced_reproduction_desc:0 "This Pop is mating with and raising the kids of an alien Pop."
+
+ ########################################
+ # Civics 
+ ########################################
+ 
+ civic_bio_assimilator:0 "Bio-Cultivators"
+ civic_bio_assimilator_desc:0 "This race has a habit of re-shaping anything organic to their own needs, including themselves. They have captured and bred every animal on their homeworld and since the discovery of genetics widely practice eugenics (without much success). They are infatuated with the prospect of new techniques to modify themselves and other organic life."
+ civic_tooltip_civic_bio_assimilator_effects:0 "Genemodding costs half as much.\n\n Greatly increase chances of getting genemodding tech options."
+ 
+ civic_strogg:0 "Organic Assimilators"
+ civic_strogg_desc:0 "A race of heavily modified cyborgs, the Organic Assimilators are fanatical about melding man and machine. They are not as subtle about it as others either, and their modifications are often hideous amalgamations of metal protruding through warped flesh, as well as regularly combining several species into a single abomination. Above all else they seek to merge other lifeforms with themselves; to become a unified race of cyborgs."
+ civic_tooltip_civic_strogg_effects:0 "Cannot engage in diplomacy. Starts with a special cybernetic trait and automatically assimilates organics (and the occasional synthetic) into more cyborgs."
+ 
+ eldoc_planet_growth_halt:0 "Halt planet growth"
+ eldoc_planet_growth_halt_desc:0 "Halt the excavation efforts on this planet. Purely for cosmetic purposes, if gigantic moons and asteroids break your immersion."
+ 
+ eldoc_planet_growth_resume:0 "Resume planet growth"
+ eldoc_planet_growth_resume_desc:0 "Continue the tunneling again, because you want those sweet, sweet tiles."
+ 
+ lobotomize_population:0 "Lobotomize Population"
+ lobotomize_population_desc:0 "Lobotomize the pops on this planet, pacifying them, but also turning them into useless husks. It will take significant effort to undo this."
+ 
+ lobotomizing_population:0 "Lobotomizing Population"
+ lobotomizing_population_desc:0 "The pops on this planet are being lobotomized en masse, pacifying them, but also turning them into useless shells."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

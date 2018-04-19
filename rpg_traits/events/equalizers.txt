@@ -1,0 +1,1636 @@
+namespace = equalizer
+
+planet_event = {
+	id = equalizer.1
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_rapid_breeders1
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_rapid_breeders1
+				}
+			}
+			remove_modifier = titanic_grow1
+			remove_modifier = titanic_grow2
+			remove_modifier = titanic_grow3
+			add_modifier = {
+				modifier = titanic_grow1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.2
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_rapid_breeders2
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_rapid_breeders2
+				}
+			}
+			remove_modifier = titanic_grow1
+			remove_modifier = titanic_grow2
+			remove_modifier = titanic_grow3
+			add_modifier = {
+				modifier = titanic_grow2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.3
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_rapid_breeders3
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_rapid_breeders3
+				}
+			}
+			remove_modifier = titanic_grow1
+			remove_modifier = titanic_grow2
+			remove_modifier = titanic_grow3
+			add_modifier = {
+				modifier = titanic_grow3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.4
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_slow_breeders1
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_slow_breeders1
+				}
+			}
+			remove_modifier = tiny_grow1
+			remove_modifier = tiny_grow2
+			remove_modifier = tiny_grow3
+			add_modifier = {
+				modifier = tiny_grow1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.5
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_slow_breeders2
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_slow_breeders2
+				}
+			}
+			remove_modifier = tiny_grow1
+			remove_modifier = tiny_grow2
+			remove_modifier = tiny_grow3
+			add_modifier = {
+				modifier = tiny_grow2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.6
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_slow_breeders3
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_slow_breeders3
+				}
+			}
+			remove_modifier = tiny_grow1
+			remove_modifier = tiny_grow2
+			remove_modifier = tiny_grow3
+			add_modifier = {
+				modifier = tiny_grow3
+				days = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = equalizer.7
+	hide_window = yes
+	
+	trigger = {
+		any_owned_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_egg_born
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = titanic_egg
+			days = -1
+		}
+	}
+}
+
+planet_event = {
+	id = equalizer.8
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_lazy1
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_lazy1
+				}
+			}
+			remove_modifier = titanic_lazy1
+			remove_modifier = titanic_lazy2
+			remove_modifier = titanic_lazy3
+			remove_modifier = titanic_thrifty1
+			remove_modifier = titanic_thrifty2
+			remove_modifier = titanic_thrifty3
+			add_modifier = {
+				modifier = titanic_lazy1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.9
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_lazy2
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_lazy2
+				}
+			}
+			remove_modifier = titanic_lazy1
+			remove_modifier = titanic_lazy2
+			remove_modifier = titanic_lazy3
+			remove_modifier = titanic_thrifty1
+			remove_modifier = titanic_thrifty2
+			remove_modifier = titanic_thrifty3
+			add_modifier = {
+				modifier = titanic_lazy2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.10
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_lazy3
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_lazy3
+				}
+			}
+			remove_modifier = titanic_lazy1
+			remove_modifier = titanic_lazy2
+			remove_modifier = titanic_lazy3
+			remove_modifier = titanic_thrifty1
+			remove_modifier = titanic_thrifty2
+			remove_modifier = titanic_thrifty3
+			add_modifier = {
+				modifier = titanic_lazy3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.11
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_thrifty1
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_thrifty1
+				}
+			}
+			remove_modifier = titanic_lazy1
+			remove_modifier = titanic_lazy2
+			remove_modifier = titanic_lazy3
+			remove_modifier = titanic_thrifty1
+			remove_modifier = titanic_thrifty2
+			remove_modifier = titanic_thrifty3
+			add_modifier = {
+				modifier = titanic_thrifty1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.12
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_thrifty2
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_thrifty2
+				}
+			}
+			remove_modifier = titanic_lazy1
+			remove_modifier = titanic_lazy2
+			remove_modifier = titanic_lazy3
+			remove_modifier = titanic_thrifty1
+			remove_modifier = titanic_thrifty2
+			remove_modifier = titanic_thrifty3
+			add_modifier = {
+				modifier = titanic_thrifty2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.13
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_titanic
+				has_trait = trait_thrifty3
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = { limit = { NOT = { has_global_flag = "warning_is_op" } }
+			planet_event = { id = equalizer.14 }
+			set_global_flag = "warning_is_op"
+		}
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_titanic
+					has_trait = trait_thrifty3
+				}
+			}
+			remove_modifier = titanic_lazy1
+			remove_modifier = titanic_lazy2
+			remove_modifier = titanic_lazy3
+			remove_modifier = titanic_thrifty1
+			remove_modifier = titanic_thrifty2
+			remove_modifier = titanic_thrifty3
+			add_modifier = {
+				modifier = titanic_thrifty3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {		# nothing to see here, move on
+	id = equalizer.14
+	title = "equalizer.14.name"
+	desc = equalizer.14.desc
+	picture = GFX_evt_spy_orb
+	is_triggered_only = yes
+	
+	option = {
+		name = equalizer.14.optiona
+	}
+	option = {
+		name = equalizer.14.optionb
+	}
+}
+planet_event = {
+	id = equalizer.15
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_lazy1
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_lazy1
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_lazy1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.16
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_lazy2
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_lazy2
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_lazy2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.17
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_lazy3
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_lazy3
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_lazy3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.19
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_thrifty1
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_thrifty1
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_thrifty1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.20
+	hide_window = yes
+	
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_thrifty2
+			}
+			is_being_purged = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_thrifty2
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_thrifty2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.21
+	hide_window = yes
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_thrifty3
+			}
+			is_being_purged = no
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_thrifty3
+				}
+			}
+			remove_modifier = tiny_lazy1
+			remove_modifier = tiny_lazy2
+			remove_modifier = tiny_lazy3
+			remove_modifier = tiny_thrifty1
+			remove_modifier = tiny_thrifty2
+			remove_modifier = tiny_thrifty3
+			add_modifier = {
+				modifier = tiny_thrifty3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.22
+	hide_window = yes
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_dumb2
+			}
+			is_being_purged = no
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_dumb2
+				}
+			}
+			remove_modifier = tiny_dumb2
+			remove_modifier = tiny_dumb3
+			remove_modifier = tiny_smart3
+			add_modifier = {
+				modifier = tiny_dumb2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.23
+	hide_window = yes
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_dumb3
+			}
+			is_being_purged = no
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_dumb3
+				}
+			}
+			remove_modifier = tiny_dumb2
+			remove_modifier = tiny_dumb3
+			remove_modifier = tiny_smart3
+			add_modifier = {
+				modifier = tiny_dumb3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.24
+	hide_window = yes
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_smart3
+			}
+			is_being_purged = no
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_smart3
+				}
+			}
+			remove_modifier = tiny_dumb2
+			remove_modifier = tiny_dumb3
+			remove_modifier = tiny_smart3
+			add_modifier = {
+				modifier = tiny_smart3
+				days = -1
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = equalizer.25
+	hide_window = yes
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_badfarmers1
+			}
+			is_being_purged = no
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = { every_owned_pop = { limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_badfarmers1
+				} }
+			remove_modifier = tiny_food1
+			remove_modifier = tiny_food2
+			remove_modifier = tiny_food3
+			remove_modifier = tiny_food4
+			remove_modifier = tiny_food5
+			add_modifier = {
+				modifier = tiny_food1
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.26
+	hide_window = yes
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_badfarmers2
+			}
+			is_being_purged = no
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = { every_owned_pop = { limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_badfarmers2
+				} }
+			remove_modifier = tiny_food1
+			remove_modifier = tiny_food2
+			remove_modifier = tiny_food3
+			remove_modifier = tiny_food4
+			remove_modifier = tiny_food5
+			add_modifier = {
+				modifier = tiny_food2
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.27
+	hide_window = yes
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_badfarmers3
+			}
+			is_being_purged = no
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = { every_owned_pop = { limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_badfarmers3
+				} }
+			remove_modifier = tiny_food1
+			remove_modifier = tiny_food2
+			remove_modifier = tiny_food3
+			remove_modifier = tiny_food4
+			remove_modifier = tiny_food5
+			add_modifier = {
+				modifier = tiny_food3
+				days = -1
+			}
+		}
+	}
+}
+planet_event = {
+	id = equalizer.28
+	hide_window = yes
+	trigger = {
+		any_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_agrarian1
+			}
+			is_being_purged = no
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = { every_owned_pop = { limit = {
+				AND = {
+					has_trait = trait_tiny
+					has_trait = trait_agrarian1
+				} }
+			remove_modifier = tiny_food1
+			remove_modifier = tiny_food2
+			remove_modifier = tiny_food3
+			remove_modifier = tiny_food4
+			remove_modifier = tiny_food5
+			add_modifier = {
+				modifier = tiny_food4
+				days = -1
+			}
+		}
+	}
+}
+planet_event = { id = equalizer.29 
+hide_window = yes trigger = { any_pop = { AND = {
+
+								has_trait = trait_titanic
+							has_trait = trait_badfarmers1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_badfarmers1
+					
+				} }
+						remove_modifier = titanic_food1
+						remove_modifier = titanic_food2
+						remove_modifier = titanic_food3
+						remove_modifier = titanic_food4
+						remove_modifier = titanic_food5
+						
+			add_modifier = {
+								modifier = titanic_food1
+				days = -1 } } } }
+
+planet_event = { id = equalizer.30
+hide_window = yes trigger = { any_pop = { AND = {
+
+								has_trait = trait_titanic
+							has_trait = trait_badfarmers2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_badfarmers2
+					
+				} }
+						remove_modifier = titanic_food1
+						remove_modifier = titanic_food2
+						remove_modifier = titanic_food3
+						remove_modifier = titanic_food4
+						remove_modifier = titanic_food5
+						
+			add_modifier = {
+								modifier = titanic_food2
+				days = -1 } } } }
+
+planet_event = { id = equalizer.31
+hide_window = yes trigger = { any_pop = { AND = {
+
+								has_trait = trait_titanic
+							has_trait = trait_badfarmers3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_badfarmers3
+					
+				} }
+						remove_modifier = titanic_food1
+						remove_modifier = titanic_food2
+						remove_modifier = titanic_food3
+						remove_modifier = titanic_food4
+						remove_modifier = titanic_food5
+						
+			add_modifier = {
+								modifier = titanic_food3
+				days = -1 } } } }
+
+planet_event = { id = equalizer.32
+hide_window = yes trigger = { any_pop = { AND = {
+
+								has_trait = trait_titanic
+							has_trait = trait_agrarian1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_agrarian1
+					
+				} }
+						remove_modifier = titanic_food1
+						remove_modifier = titanic_food2
+						remove_modifier = titanic_food3
+						remove_modifier = titanic_food4
+						remove_modifier = titanic_food5
+						
+			add_modifier = {
+								modifier = titanic_food4
+				days = -1 } } } }
+
+planet_event = { id = equalizer.33
+hide_window = yes trigger = { any_pop = { AND = {
+
+								has_trait = trait_titanic
+							has_trait = trait_agrarian2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_agrarian2
+					
+				} }
+						remove_modifier = titanic_food1
+						remove_modifier = titanic_food2
+						remove_modifier = titanic_food3
+						remove_modifier = titanic_food4
+						remove_modifier = titanic_food5
+						
+			add_modifier = {
+								modifier = titanic_food5
+				days = -1 } } } }
+
+planet_event = { id = equalizer.34
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_weak1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_weak1
+					
+				} }
+						remove_modifier = titanic_strong1
+						remove_modifier = titanic_strong2
+						remove_modifier = titanic_strong3
+						remove_modifier = titanic_strong4
+						remove_modifier = titanic_strong5
+						remove_modifier = titanic_strong6
+						
+			add_modifier = {
+								modifier = titanic_strong1
+				days = -1 } } } }
+
+planet_event = { id = equalizer.35
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_weak2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_weak2
+					
+				} }
+						remove_modifier = titanic_strong1
+						remove_modifier = titanic_strong2
+						remove_modifier = titanic_strong3
+						remove_modifier = titanic_strong4
+						remove_modifier = titanic_strong5
+						remove_modifier = titanic_strong6
+						
+			add_modifier = {
+								modifier = titanic_strong2
+				days = -1 } } } }
+
+planet_event = { id = equalizer.36
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_weak3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_weak3
+					
+				} }
+						remove_modifier = titanic_strong1
+						remove_modifier = titanic_strong2
+						remove_modifier = titanic_strong3
+						remove_modifier = titanic_strong4
+						remove_modifier = titanic_strong5
+						remove_modifier = titanic_strong6
+						
+			add_modifier = {
+								modifier = titanic_strong3
+				days = -1 } } } }
+
+planet_event = { id = equalizer.37
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_strong1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_strong1
+					
+				} }
+						remove_modifier = titanic_strong1
+						remove_modifier = titanic_strong2
+						remove_modifier = titanic_strong3
+						remove_modifier = titanic_strong4
+						remove_modifier = titanic_strong5
+						remove_modifier = titanic_strong6
+						
+			add_modifier = {
+								modifier = titanic_strong4
+				days = -1 } } } }
+
+planet_event = { id = equalizer.38
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_strong2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_strong2
+					
+				} }
+						remove_modifier = titanic_strong1
+						remove_modifier = titanic_strong2
+						remove_modifier = titanic_strong3
+						remove_modifier = titanic_strong4
+						remove_modifier = titanic_strong5
+						remove_modifier = titanic_strong6
+						
+			add_modifier = {
+								modifier = titanic_strong5
+				days = -1 } } } }
+
+planet_event = { id = equalizer.39
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_strong3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_strong3
+					
+				} }
+						remove_modifier = titanic_strong1
+						remove_modifier = titanic_strong2
+						remove_modifier = titanic_strong3
+						remove_modifier = titanic_strong4
+						remove_modifier = titanic_strong5
+						remove_modifier = titanic_strong6
+						
+			add_modifier = {
+								modifier = titanic_strong6
+				days = -1 } } } }
+
+planet_event = { id = equalizer.40
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_weak1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_weak1
+					
+				} }
+						remove_modifier = tiny_strong1
+						remove_modifier = tiny_strong2
+						remove_modifier = tiny_strong3
+						remove_modifier = tiny_strong4
+						remove_modifier = tiny_strong5
+						remove_modifier = tiny_strong6
+						
+			add_modifier = {
+								modifier = tiny_strong1
+				days = -1 } } } }
+
+planet_event = { id = equalizer.41
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_weak2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_weak2
+					
+				} }
+						remove_modifier = tiny_strong1
+						remove_modifier = tiny_strong2
+						remove_modifier = tiny_strong3
+						remove_modifier = tiny_strong4
+						remove_modifier = tiny_strong5
+						remove_modifier = tiny_strong6
+						
+			add_modifier = {
+								modifier = tiny_strong2
+				days = -1 } } } }
+
+planet_event = { id = equalizer.42
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_weak3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_weak3
+					
+				} }
+						remove_modifier = tiny_strong1
+						remove_modifier = tiny_strong2
+						remove_modifier = tiny_strong3
+						remove_modifier = tiny_strong4
+						remove_modifier = tiny_strong5
+						remove_modifier = tiny_strong6
+						
+			add_modifier = {
+								modifier = tiny_strong3
+				days = -1 } } } }
+
+planet_event = { id = equalizer.43
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_strong1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_strong1
+					
+				} }
+						remove_modifier = tiny_strong1
+						remove_modifier = tiny_strong2
+						remove_modifier = tiny_strong3
+						remove_modifier = tiny_strong4
+						remove_modifier = tiny_strong5
+						remove_modifier = tiny_strong6
+						
+			add_modifier = {
+								modifier = tiny_strong4
+				days = -1 } } } }
+
+planet_event = { id = equalizer.44
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_strong2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_strong2
+					
+				} }
+						remove_modifier = tiny_strong1
+						remove_modifier = tiny_strong2
+						remove_modifier = tiny_strong3
+						remove_modifier = tiny_strong4
+						remove_modifier = tiny_strong5
+						remove_modifier = tiny_strong6
+						
+			add_modifier = {
+								modifier = tiny_strong5
+				days = -1 } } } }
+
+planet_event = { id = equalizer.45
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_strong3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_strong3
+					
+				} }
+						remove_modifier = tiny_strong1
+						remove_modifier = tiny_strong2
+						remove_modifier = tiny_strong3
+						remove_modifier = tiny_strong4
+						remove_modifier = tiny_strong5
+						remove_modifier = tiny_strong6
+						
+			add_modifier = {
+								modifier = tiny_strong6
+				days = -1 } } } }
+
+planet_event = { id = equalizer.46
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_frail1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_frail1
+					
+				} }
+						remove_modifier = titanic_robust1
+						remove_modifier = titanic_robust2
+						remove_modifier = titanic_robust3
+						remove_modifier = titanic_robust4
+						remove_modifier = titanic_robust5
+						remove_modifier = titanic_robust6
+						
+			add_modifier = {
+								modifier = titanic_robust1
+				days = -1 } } } }
+
+planet_event = { id = equalizer.47
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_frail2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_frail2
+					
+				} }
+						remove_modifier = titanic_robust1
+						remove_modifier = titanic_robust2
+						remove_modifier = titanic_robust3
+						remove_modifier = titanic_robust4
+						remove_modifier = titanic_robust5
+						remove_modifier = titanic_robust6
+						
+			add_modifier = {
+								modifier = titanic_robust2
+				days = -1 } } } }
+
+planet_event = { id = equalizer.48
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_frail3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_frail3
+					
+				} }
+						remove_modifier = titanic_robust1
+						remove_modifier = titanic_robust2
+						remove_modifier = titanic_robust3
+						remove_modifier = titanic_robust4
+						remove_modifier = titanic_robust5
+						remove_modifier = titanic_robust6
+						
+			add_modifier = {
+								modifier = titanic_robust3
+				days = -1 } } } }
+
+planet_event = { id = equalizer.49
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_robust1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_robust1
+					
+				} }
+						remove_modifier = titanic_robust1
+						remove_modifier = titanic_robust2
+						remove_modifier = titanic_robust3
+						remove_modifier = titanic_robust4
+						remove_modifier = titanic_robust5
+						remove_modifier = titanic_robust6
+						
+			add_modifier = {
+								modifier = titanic_robust4
+				days = -1 } } } }
+
+planet_event = { id = equalizer.50
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_robust2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_robust2
+					
+				} }
+						remove_modifier = titanic_robust1
+						remove_modifier = titanic_robust2
+						remove_modifier = titanic_robust3
+						remove_modifier = titanic_robust4
+						remove_modifier = titanic_robust5
+						remove_modifier = titanic_robust6
+						
+			add_modifier = {
+								modifier = titanic_robust5
+				days = -1 } } } }
+
+planet_event = { id = equalizer.51
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_titanic
+							has_trait = trait_robust3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_titanic
+							has_trait = trait_robust3
+					
+				} }
+						remove_modifier = titanic_robust1
+						remove_modifier = titanic_robust2
+						remove_modifier = titanic_robust3
+						remove_modifier = titanic_robust4
+						remove_modifier = titanic_robust5
+						remove_modifier = titanic_robust6
+						
+			add_modifier = {
+								modifier = titanic_robust6
+				days = -1 } } } }
+
+planet_event = { id = equalizer.52
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_frail1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_frail1
+					
+				} }
+						remove_modifier = tiny_robust1
+						remove_modifier = tiny_robust2
+						remove_modifier = tiny_robust3
+						remove_modifier = tiny_robust4
+						remove_modifier = tiny_robust5
+						remove_modifier = tiny_robust6
+						
+			add_modifier = {
+								modifier = tiny_robust1
+				days = -1 } } } }
+
+planet_event = { id = equalizer.53
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_frail2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_frail2
+					
+				} }
+						remove_modifier = tiny_robust1
+						remove_modifier = tiny_robust2
+						remove_modifier = tiny_robust3
+						remove_modifier = tiny_robust4
+						remove_modifier = tiny_robust5
+						remove_modifier = tiny_robust6
+						
+			add_modifier = {
+								modifier = tiny_robust2
+				days = -1 } } } }
+
+planet_event = { id = equalizer.54
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_frail3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_frail3
+					
+				} }
+						remove_modifier = tiny_robust1
+						remove_modifier = tiny_robust2
+						remove_modifier = tiny_robust3
+						remove_modifier = tiny_robust4
+						remove_modifier = tiny_robust5
+						remove_modifier = tiny_robust6
+						
+			add_modifier = {
+								modifier = tiny_robust3
+				days = -1 } } } }
+
+planet_event = { id = equalizer.55
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_robust1
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_robust1
+					
+				} }
+						remove_modifier = tiny_robust1
+						remove_modifier = tiny_robust2
+						remove_modifier = tiny_robust3
+						remove_modifier = tiny_robust4
+						remove_modifier = tiny_robust5
+						remove_modifier = tiny_robust6
+						
+			add_modifier = {
+								modifier = tiny_robust4
+				days = -1 } } } }
+
+planet_event = { id = equalizer.56
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_robust2
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_robust2
+					
+				} }
+						remove_modifier = tiny_robust1
+						remove_modifier = tiny_robust2
+						remove_modifier = tiny_robust3
+						remove_modifier = tiny_robust4
+						remove_modifier = tiny_robust5
+						remove_modifier = tiny_robust6
+						
+			add_modifier = {
+								modifier = tiny_robust5
+				days = -1 } } } }
+
+planet_event = { id = equalizer.57
+hide_window = yes trigger = { any_pop = { AND = {
+
+							has_trait = trait_tiny
+							has_trait = trait_robust3
+							
+} is_being_purged = no } } mean_time_to_happen = { days = 1 } immediate = { every_owned_pop = { limit = {
+				AND = {
+				
+							has_trait = trait_tiny
+							has_trait = trait_robust3
+					
+				} }
+						remove_modifier = tiny_robust1
+						remove_modifier = tiny_robust2
+						remove_modifier = tiny_robust3
+						remove_modifier = tiny_robust4
+						remove_modifier = tiny_robust5
+						remove_modifier = tiny_robust6
+						
+			add_modifier = {
+								modifier = tiny_robust6
+				days = -1 } } } }

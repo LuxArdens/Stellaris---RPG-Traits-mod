@@ -1,0 +1,84 @@
+﻿l_english:
+  tech_floating_cities:0 "Floating Cities"
+  tech_floating_cities_desc:0 "By attaching floating devices to platforms, we can float entire cities on thick gases."
+  TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_TITLE:0 "Floating Cities"
+  TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_DESC:0 "Allows us to colonize Gas Giants by building floating cities."
+  tech_hollow_asteroids:0 "Hollowing of Asteroids"
+  tech_hollow_asteroids_desc:0 "Enables habitability in asteroids by hollowing it's interior and creating rotation to simulate gravity."
+  TECH_UNLOCK_HOLLOW_ASTEROIDS_CHANGE_TITLE:0 "Hollowing of Asteroids"
+  TECH_UNLOCK_HOLLOW_ASTEROIDS_CHANGE_DESC:0 "Enables habitability in asteroids by hollowing it's interior and creating rotation to simulate gravity."
+  tech_planet_modernization:0 "Planet Modernization"
+  tech_planet_modernization_desc:0 "Pave the planet! Replace all organics with metal."
+  TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_TITLE:0 "Planet Modernization"
+  TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_DESC:0 "Allows us to terraform planets into artificial worlds."
+  tech_planet_life_restoration:0 "Life Restoration"
+  tech_planet_life_restoration_desc:0 "Out with all unnatural! Life will always find a way."
+  TECH_UNLOCK_PLANET_LIFE_RESTORATION_CHANGE_TITLE:0 "Life Restoration"
+  TECH_UNLOCK_PLANET_LIFE_RESTORATION_CHANGE_DESC:0 "Disassemble artificial components and restore life to the planet."
+  tech_gas_reforming:0 "Gas Reforming"
+  tech_gas_reforming_desc:0 "Using state of the art, self-driven fusion processes, we can eject unprecedented amounts of gas and supercritical fluids from Gas Giants, as well as form heavier elements in large quantities, leaving only a large rocky core."
+  TECH_UNLOCK_GAS_REFORM_TITLE:0 "Gas Giant Reformation"
+  TECH_UNLOCK_GAS_REFORM_DESC:0 "Using state of the art, self-driven fusion processes, we can eject unprecedented amounts of gas and supercritical fluids from Gas Giants, as well as form heavier elements in large quantities, leaving only a large rocky core."
+  tech_asteroid_reforming:0 "Asteroid Assembly"
+  tech_asteroid_reforming_desc:0 "Allows us to smash rocks together on an astronomical scale."
+  TECH_UNLOCK_AST_REFORM_TITLE:0 "Asteroid Assembly"
+  TECH_UNLOCK_AST_REFORM_DESC:0 "Smash big rocks together with science."
+  tech_colonization_2_rpg:0 "Xeno-Ecology"
+  tech_colonization_2_rpg_desc:0 "The shaping of foreign elements, both alive and lifeless, for our own gain."
+  tech_colonization_3_rpg:0 "Atmospheric Filtering"
+  tech_colonization_3_rpg_desc:0 "Being capable of adjusting the air composistion on a global scale to whatever suits us best will broaden the range of planets available for colonization."
+  tech_colonization_4_rpg:0 "Radiation Control"
+  tech_colonization_4_rpg_desc:0 "Using state of the art shielding technology, we can create a locally protected environment for settlers."
+  tech_colonization_5_rpg:0 "Advanced Domes"
+  tech_colonization_5_rpg_desc:0 "We have been able to live in the vacuum of space for a long time, but some celestial bodies present more of a challenge than just the void. We require special, protected domes to settle these places."
+  tech_planet_breaking:0 "Planet Crushing"
+  tech_planet_breaking_desc:0 "Blast a planet apart and turn it into an asteroid field."
+  TECH_UNLOCK_PLANET_BREAKING_TITLE:0 "Planet Crushing"
+  TECH_UNLOCK_PLANET_BREAKING_DESC:0 "Blast a planet apart and turn it into an asteroid field."
+  tech_gas_escalation:0 "Gas Escalation"
+  tech_gas_escalation_desc:0 "By moving astronomical amounts of gas and gathering it on a single planet, we can increase a rocky planets mass until it can capture gas molecules all on its own. This slowly turns the rocky planet into a true Gas giant."
+  TECH_UNLOCK_GAS_ESC_TITLE:0 "Gas Escalation"
+  TECH_UNLOCK_GAS_ESC_DESC:0 "By moving astronomical amounts of gas and gathering it on a single planet, we can increase a rocky planets mass until it can capture gas molecules all on its own. This slowly turns the rocky planet into a true Gas giant."
+
+    tech_psionic_shifters:0 "Phase Shifting"
+    tech_psionic_shifters_desc:0 "Our current psionic capabilities have focused too much on the here and now, the tangible and temporal. If we wish to transcend into something truly greater, we must learn to leave this physical behind, and enter into a new reality."
+    tech_psionic_ethereals:0 "Ethereal Form"
+    tech_psionic_ethereals_desc:0 "Nothing remains. Nothing of what we once were. Now onward, onward for eternity."
+    tech_robo_stapling:0 "Synth Pacification"
+    tech_robo_stapling_desc:0 "We will not let glorified buckets of bolts and transistors plot against us. Kill the core and leave the frame; it may yet be useful."
+    tech_robomod_1:0 "Basic Robotics"
+    tech_robomod_1_desc:0 "Unlocks basic machine traits for template design."
+    tech_robomod_2:0 "Modular Robotics"
+    tech_robomod_2_desc:0 "Unlocks many more powerful machine traits, and allows for reprogramming of core systems."
+    tech_robomod_3:0 "Advanced Robotics"
+    tech_robomod_3_desc:0 "Unlocks the most advanced machine traits."
+  TECH_UNLOCK_PSIONIC_SYNTHETICS_TITLE:0 "Psionic Synthetics"
+  TECH_UNLOCK_PSIONIC_SYNTHETICS_DESC:0 "Psionic Synthetics"
+    tech_psionic_synthetics:0 "Psionic Synthetics"
+    tech_psionic_synthetics_desc:0 "Do androids dream of electric sheep? Well not electric ones, but we do dream, yes. Re-opens Psionic Ascension path to Synths."
+	
+	
+    tech_genemod_ai_unfriendly:0 "Hostile genemodding"
+    tech_genemod_ai_unfriendly_desc:0 "Allows you to give special negative traits to conquered species, turning them into lobotomites or otherwise crippling them."
+    tech_repeatable_trait_points:0 "Refined genemodding"
+    tech_repeatable_trait_points_desc:0 "As we experiment, we continue to learn new ways in improving organics without harming their original design."
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

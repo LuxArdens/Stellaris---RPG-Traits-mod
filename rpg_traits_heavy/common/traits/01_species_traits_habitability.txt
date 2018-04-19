@@ -1,0 +1,1170 @@
+# base habitability appears to be changed. There's no longer a flat +10% for everything, but there's some wonky hidden bonuses going on for identical-to-homeworld planets
+# own homeworld is ALWAYS 100%, so don't worry about it
+
+@10 = 20		# test
+@0 = 0.9		# only for ringworlds (and gaia if organic)
+@1 = 0.70		# identical-to-homeworld and habitats (decided to nerf habitats since they're still just big domes in space, not perfect planets in any way)
+@2 = 0.60		# different climate, slight temperature difference, that kind of minor shit
+@3 = 0.40		# rather different from main planet
+@4 = 0.30		# has very negative features, like ocean planet for non-ocean hab types
+@5 = 0.20		# this is only barely 'colonizable' at game start, but they essentially are stuck to living in big domes
+@6 = 0.10		# requires all the colonization techs to allow living (+10%), or some hardiness traits
+@7 = -0.2		# requires dedicated techs to construct special domes/habitats, like molten worlds, gas giants, asteroids et cetera for humans
+@8 = -2			# for star-nonstar separation
+
+trait_pc_desert_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0			# gaia now represents purposefully terraforming a world to mimic the homeworld. EXTREMELY rarely found at random
+		
+		
+		pc_desert_habitability = @1			#  this does not get a hidden +30%, nor a flat +10% like before, so it's actually the number given
+		
+		pc_arid_habitability = @2
+		pc_savannah_habitability = @2
+		
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arctic_habitability = @3
+		pc_alpine_habitability = @3
+
+		pc_ocean_habitability = @4
+		
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+		
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40				# does this actually work?
+	}
+}
+trait_pc_arid_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0
+		
+		
+		pc_arid_habitability = @1
+		
+		pc_savannah_habitability = @2
+		pc_desert_habitability = @2
+
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arctic_habitability = @3
+		pc_alpine_habitability = @3
+
+		pc_ocean_habitability = @4
+		
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40
+	}
+}
+trait_pc_savannah_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0
+		
+		
+		pc_savannah_habitability = @1
+		
+		pc_arid_habitability = @2
+		pc_desert_habitability = @2
+
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arctic_habitability = @3
+		pc_alpine_habitability = @3
+		
+		pc_ocean_habitability = @4
+
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40
+	}
+}
+trait_pc_tropical_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_tropical_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0
+		
+		
+		pc_tropical_habitability = @1
+		
+		pc_continental_habitability = @2
+
+		pc_arid_habitability = @3
+		pc_savannah_habitability = @3
+		pc_desert_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arctic_habitability = @3
+		pc_alpine_habitability = @3
+
+		pc_ocean_habitability = @4
+		
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40
+	}
+}
+trait_pc_continental_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0
+		
+		
+		pc_continental_habitability = @1
+		
+		pc_tropical_habitability = @2
+		
+		pc_arid_habitability = @3
+		pc_savannah_habitability = @3
+		pc_desert_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arctic_habitability = @3
+		pc_alpine_habitability = @3
+
+		pc_ocean_habitability = @4
+		
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40
+	}
+}
+trait_pc_ocean_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_ocean_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0
+		
+		
+		pc_ocean_habitability = @1
+		
+		pc_tropical_habitability = @4
+		pc_continental_habitability = @4
+		pc_tundra_habitability = @4
+		pc_arctic_habitability = @4
+		pc_desert_habitability = @4
+		pc_alpine_habitability = @4
+		pc_arid_habitability = @4
+		pc_savannah_habitability = @4
+		
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40
+	}
+}
+trait_pc_arctic_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0
+		
+		
+		pc_arctic_habitability = @1
+		
+		pc_alpine_habitability = @2
+		pc_tundra_habitability = @2
+
+		pc_arid_habitability = @3
+		pc_savannah_habitability = @3
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_desert_habitability = @3
+
+		pc_ocean_habitability = @4
+		
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40
+	}
+}
+trait_pc_tundra_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0
+		
+		
+		pc_tundra_habitability = @1
+		
+		pc_alpine_habitability = @2
+		pc_arctic_habitability = @2
+
+		pc_arid_habitability = @3
+		pc_savannah_habitability = @3
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_desert_habitability = @3
+
+		pc_ocean_habitability = @4
+		
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40
+	}
+}
+trait_pc_alpine_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		pc_gaia_habitability = @0
+		
+		
+		pc_alpine_habitability = @1
+		
+		pc_tundra_habitability = @2
+		pc_arctic_habitability = @2
+
+		pc_arid_habitability = @3
+		pc_savannah_habitability = @3
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_desert_habitability = @3
+
+		pc_ocean_habitability = @4
+		
+		pc_frozen_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 40
+	}
+}
+#####################
+# special thingies	#
+#####################
+
+trait_pc_ai_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_ai_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	prerequisites = { tech_ai_worlds }
+	#modification = no		# enabling this now removes the trait from species entirely instead of just disabling gene-modding...
+	modifier = {
+		pc_ai_habitability = @0		# not @1 because AI worlds are always purposefully terraformed, not 'found'
+		
+		pc_ringworld_habitable_habitability = @0
+		
+				# exception because machines really shouldn't care whether they sit in a station or on a planet
+
+		pc_frozen_habitability = @2		# missing the fancy extras of an AI world, but being devoid of life is good for machines
+		pc_barren_habitability = @2
+		pc_barren_cold_habitability = @2
+		pc_nuked_habitability = @2
+		
+		pc_desert_habitability = @3		# organic life is a minor nuisance to machines
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_arctic_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arid_habitability = @3
+		pc_savannah_habitability = @3
+		pc_alpine_habitability = @3
+		pc_gaia_habitability = @3
+		
+		pc_ocean_habitability = @4		# oceans still annoying
+		pc_toxic_habitability = @4		# corrosive stuff
+		
+		pc_molten_habitability = @5		# suboptimal
+		pc_asteroid_habitability = @5	# they can immediately colonize the surface, but still require asteroid hollowing for good habitability
+		
+		pc_gas_giant_habitability = @7	# requires floating cities
+			
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {		# let's see if this works
+			add = 80
+			OR = {
+				is_species_class = ROBOT
+				is_species_class = MACHINE
+			}
+		}
+	}
+}
+trait_pc_nuked_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_nuked_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		
+		
+		pc_nuked_habitability = @1
+		
+		pc_barren_habitability = @2				#similar enough
+		pc_barren_cold_habitability = @2		
+		pc_frozen_habitability = @2				
+		
+		pc_arid_habitability = @3				# too much life
+		pc_savannah_habitability = @3
+		pc_desert_habitability = @3
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arctic_habitability = @3
+		pc_alpine_habitability = @3
+
+		pc_ocean_habitability = @4
+		
+		pc_ai_habitability = @5
+		
+		pc_toxic_habitability = @6		# nuked != corrosive
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {		# let's see if this works
+			add = 20
+			OR = {
+				is_species_class = ART	# cockroaches and shit have higher chance
+			}
+		}
+	}
+}
+trait_pc_gaia_preference = {		# gaia are a challenge to play as because they're so picky and frail they can't colonize shit
+	icon = "gfx/interface/icons/traits/trait_pc_gaia_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		
+		pc_gaia_habitability = @1
+		
+				# not being on a 'real' planet
+
+		pc_tropical_habitability = @4		# closest to the lush gaia worlds
+		pc_continental_habitability = @4
+		
+		pc_arid_habitability = @5			# too harsh, require domes
+		pc_savannah_habitability = @5
+		pc_tundra_habitability = @5
+		pc_desert_habitability = @5
+		pc_alpine_habitability = @5
+		pc_arctic_habitability = @5
+		pc_ocean_habitability = @5
+		
+		pc_nuked_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @5
+		
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 5
+		modifier = {		# let's see if this works
+			add = 5
+			OR = {
+				is_species_class = HUM
+			}
+		}
+	}
+}
+trait_pc_ringworld_habitable_preference = {			# also a significant challenge
+	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		
+		pc_gaia_habitability = @0
+		
+		
+
+		pc_tropical_habitability = @4		# same problem as with gaia, over-adapted to perfect worlds
+		pc_continental_habitability = @4
+		
+		pc_arid_habitability = @5
+		pc_savannah_habitability = @5
+		pc_tundra_habitability = @5
+		pc_desert_habitability = @5
+		pc_alpine_habitability = @5
+		pc_arctic_habitability = @5
+		pc_ocean_habitability = @5
+		
+		pc_nuked_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @5
+		
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 2
+	}
+}
+trait_pc_habitat_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_normal_worlds }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		
+		pc_gaia_habitability = @0
+		
+		
+
+		pc_tropical_habitability = @4		# same problem as with gaia, over-adapted to perfect worlds
+		pc_continental_habitability = @4
+		
+		pc_arid_habitability = @5
+		pc_savannah_habitability = @5
+		pc_tundra_habitability = @5
+		pc_desert_habitability = @5
+		pc_alpine_habitability = @5
+		pc_arctic_habitability = @5
+		pc_ocean_habitability = @5
+		
+		pc_nuked_habitability = @5
+		pc_barren_habitability = @5
+		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @5
+		
+		pc_toxic_habitability = @6
+		pc_ai_habitability = @6
+		
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+
+
+trait_pc_a_star_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_a_star_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no		# Ha, keep dreaming
+	prerequisites = { tech_star_habitation }
+	modifier = {
+			pc_b_star_habitability = @1
+			
+			pc_a_star_habitability = @2
+			pc_f_star_habitability = @2
+			
+			pc_g_star_habitability = @3
+			pc_k_star_habitability = @3
+			pc_m_star_habitability = @4
+			
+			pc_neutron_star_habitability = @5
+			pc_pulsar_habitability = @5
+			
+			pc_gas_giant_habitability = @7
+			pc_gaia_habitability = @8
+			pc_habitat_habitability = @8
+			pc_shielded_habitability = @8
+			pc_ringworld_habitable_habitability = @8
+			pc_frozen_habitability = @8
+			pc_barren_habitability = @8
+			pc_barren_cold_habitability = @8
+			pc_nuked_habitability = @8
+			pc_desert_habitability = @8
+			pc_tropical_habitability = @8
+			pc_continental_habitability = @8
+			pc_arctic_habitability = @8
+			pc_tundra_habitability = @8
+			pc_arid_habitability = @8
+			pc_savannah_habitability = @8
+			pc_alpine_habitability = @8
+			pc_ocean_habitability = @8
+			pc_toxic_habitability = @8
+			pc_molten_habitability = @8
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {		# let's see if this works
+			add = 10
+			OR = {
+				is_species_class = MOL		# Molluscoid look the most like potential 'energy lifeforms', though not much
+			}
+		}
+	}
+}
+
+trait_pc_gas_giant_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_gas_giant_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_gas_habitation }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0			# yea well, their ringworlds are filled with gas alright
+		
+		
+		pc_gas_giant_habitability = @3
+		
+		pc_m_star_habitability = @6			# represent super-heavy Gas giants and brown dwarfs, can be colonized with some effort
+		
+		pc_tropical_habitability = @7			# normal rocky planets are all the same to them. Require special gas domes
+		pc_continental_habitability = @7
+		pc_arid_habitability = @7
+		pc_savannah_habitability = @7
+		pc_tundra_habitability = @7
+		pc_desert_habitability = @7
+		pc_alpine_habitability = @7
+		pc_arctic_habitability = @7
+		pc_ocean_habitability = @7
+		pc_nuked_habitability = @7
+		pc_barren_habitability = @7
+		pc_barren_cold_habitability = @7
+		pc_frozen_habitability = @7
+		pc_toxic_habitability = @7
+		pc_ai_habitability = @7
+		pc_gaia_habitability = @7
+		pc_molten_habitability = @7
+		pc_asteroid_habitability = @7
+			
+			pc_neutron_star_habitability = @8		# real stars are just too extreme
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 8000
+		modifier = {		# let's see if this works
+			add = 20
+			OR = {
+				is_species_class = MOL		# Molluscoid look the most like potential 'energy lifeforms', though not much
+			}
+		}
+	}
+}
+
+trait_pc_molten_preference = { 
+	icon = "gfx/interface/icons/traits/trait_pc_molten_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_molten_habitation }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		
+		
+		pc_molten_habitability = @1
+		
+		pc_barren_habitability = @5					# far too cold. Requires heated domes
+		pc_arid_habitability = @5
+		pc_savannah_habitability = @5
+		pc_desert_habitability = @5
+		pc_tropical_habitability = @5
+		pc_continental_habitability = @5
+		pc_tundra_habitability = @5
+		pc_arctic_habitability = @5
+		pc_alpine_habitability = @5
+		pc_gaia_habitability = @5
+		pc_ocean_habitability = @5
+		pc_ai_habitability = @5
+		
+		pc_toxic_habitability = @6
+		pc_nuked_habitability = @6
+		pc_barren_cold_habitability = @6
+		pc_frozen_habitability = @6
+		
+		pc_asteroid_habitability = @7				# more tech required
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {		# let's see if this works
+			add = 20
+			OR = {
+				is_species_class = MOL
+				is_species_class = FUN
+				is_species_class = ART
+			}
+		}
+	}
+}
+
+trait_pc_toxic_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_toxic_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_toxic_habitation }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		
+		pc_toxic_habitability = @1			# toxic represents a special/rare cocktail of chemicals here that the organism needs to survive
+		
+		
+		pc_barren_habitability = @5
+		pc_arid_habitability = @5
+		pc_savannah_habitability = @5
+		pc_desert_habitability = @5
+		pc_tropical_habitability = @5
+		pc_continental_habitability = @5
+		pc_tundra_habitability = @5
+		pc_arctic_habitability = @5
+		pc_alpine_habitability = @5
+		pc_gaia_habitability = @5
+		pc_ocean_habitability = @5
+		pc_ai_habitability = @5
+		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @5
+		
+		pc_nuked_habitability = @6
+		pc_molten_habitability = @6
+		
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 10
+	}
+}
+
+trait_pc_barren_preference = {		# barren is more compatible with non-barren planets than vice versa
+	icon = "gfx/interface/icons/traits/trait_pc_barren_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_barren_habitation }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		
+		pc_barren_habitability = @1
+		
+		
+		pc_barren_cold_habitability = @2
+		pc_frozen_habitability = @2
+		
+		pc_arid_habitability = @3			# life isn't half as much a problem to Barren organisms as vice versa
+		pc_savannah_habitability = @3
+		pc_desert_habitability = @3
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arctic_habitability = @3
+		pc_alpine_habitability = @3
+		pc_gaia_habitability = @3
+		
+		pc_ocean_habitability = @4
+		pc_ai_habitability = @4
+		
+		pc_nuked_habitability = @6
+		pc_molten_habitability = @6
+		pc_toxic_habitability = @6
+		
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {		# let's see if this works
+			add = 70
+			OR = {
+				is_species_class = ROBOT
+				is_species_class = MACHINE
+			}
+		}
+	}
+}
+
+# trait_pc_barren_cold_preference = {		# barren is more compatible with non-barren planets than vice versa
+	# icon = "gfx/interface/icons/traits/trait_pc_barren_cold_preference.dds"
+	# allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	# sorting_priority = 30
+	# #modification = no
+	# modifier = {
+			# pc_barren_cold_habitability = @1
+			
+			# pc_alpine_habitability = @2
+			# pc_arctic_habitability = @2
+			# pc_barren_habitability = @2
+			# pc_tundra_habitability = @2
+			# pc_frozen_habitability = @2
+			
+			# pc_continental_habitability = @3
+			# pc_arid_habitability = @3
+			# pc_savannah_habitability = @3
+			
+			# # too warm
+			# pc_tropical_habitability = @4
+			# pc_desert_habitability = @4
+			# pc_ocean_habitability = @4
+
+			# # dangerous
+			# pc_toxic_habitability = @5
+			# pc_molten_habitability = @5
+			# pc_nuked_habitability = @5
+			
+			
+			# pc_neutron_star_habitability = @8
+			# pc_pulsar_habitability = @8
+			# pc_a_star_habitability = @8
+			# pc_b_star_habitability = @8
+			# pc_f_star_habitability = @8
+			# pc_g_star_habitability = @8
+			# pc_k_star_habitability = @8
+			# pc_m_star_habitability = @8
+	# }
+	# ai_weight = {
+		# weight = 0
+	# }
+# }
+
+trait_pc_frozen_preference = {	# previous one but different name. Shows up identical in game, not sure why PDX made it at all
+	icon = "gfx/interface/icons/traits/trait_pc_frozen_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_barren_habitation }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0
+		
+		pc_barren_cold_habitability = @1
+		pc_frozen_habitability = @1
+		
+		
+		pc_barren_habitability = @2
+		
+		pc_arid_habitability = @3			# life isn't half as much a problem to Barren organisms as vice versa
+		pc_savannah_habitability = @3
+		pc_desert_habitability = @3
+		pc_tropical_habitability = @3
+		pc_continental_habitability = @3
+		pc_tundra_habitability = @3
+		pc_arctic_habitability = @3
+		pc_alpine_habitability = @3
+		pc_gaia_habitability = @3
+		
+		pc_ocean_habitability = @4
+		pc_ai_habitability = @4
+		
+		pc_nuked_habitability = @6
+		pc_molten_habitability = @6
+		pc_toxic_habitability = @6
+		
+		pc_asteroid_habitability = @7
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 20
+		modifier = {		# let's see if this works
+			add = 50
+			OR = {
+				is_species_class = ROBOT
+				is_species_class = MACHINE
+			}
+		}
+	}
+}
+
+# trait_pc_shielded_preference = {
+	# icon = "gfx/interface/icons/traits/trait_pc_shielded_preference.dds"
+	# allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	# sorting_priority = 30
+	# #modification = no
+	# modifier = {
+		# pc_habitat_habitability = @0
+		# pc_shielded_habitability = @0
+		# pc_ringworld_habitable_habitability = @0
+		
+			# pc_frozen_habitability = @7
+			# pc_barren_habitability = @7
+			# pc_barren_cold_habitability = @7
+			# pc_nuked_habitability = @7
+			# pc_desert_habitability = @7
+			# pc_tropical_habitability = @7
+			# pc_continental_habitability = @7
+			# pc_arctic_habitability = @7
+			# pc_tundra_habitability = @7
+			# pc_arid_habitability = @7
+			# pc_savannah_habitability = @7
+			# pc_alpine_habitability = @7
+			# pc_ocean_habitability = @7
+			# pc_toxic_habitability = @7
+			# pc_molten_habitability = @7
+			
+			
+			# pc_neutron_star_habitability = @8
+			# pc_pulsar_habitability = @8
+			# pc_a_star_habitability = @8
+			# pc_b_star_habitability = @8
+			# pc_f_star_habitability = @8
+			# pc_g_star_habitability = @8
+			# pc_k_star_habitability = @8
+			# pc_m_star_habitability = @8
+	# }
+	# ai_weight = {
+		# weight = 0
+	# }
+# }
+
+trait_pc_asteroid_preference = {		# low gravity
+	icon = "gfx/interface/icons/traits/trait_pc_asteroid_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	sorting_priority = 30
+	#modification = no
+	prerequisites = { tech_asteroid_habitation }
+	modifier = {
+		pc_ringworld_habitable_habitability = @0		# ringworlds can be de-spun to remove gravity
+		
+		pc_asteroid_habitability = @3			# gets a +40% bonus out of bloody nowhere for whatever reason
+		
+		
+		pc_barren_habitability = @7			# gravity too high
+		pc_arid_habitability = @7
+		pc_savannah_habitability = @7
+		pc_desert_habitability = @7
+		pc_tropical_habitability = @7
+		pc_continental_habitability = @7
+		pc_tundra_habitability = @7
+		pc_arctic_habitability = @7
+		pc_alpine_habitability = @7
+		pc_gaia_habitability = @7
+		pc_ocean_habitability = @7
+		pc_ai_habitability = @7
+		pc_barren_cold_habitability = @7
+		pc_frozen_habitability = @7
+		pc_nuked_habitability = @7
+		pc_molten_habitability = @7
+		pc_toxic_habitability = @7
+		
+		pc_gas_giant_habitability = @7
+			
+			pc_neutron_star_habitability = @8
+			pc_pulsar_habitability = @8
+			pc_a_star_habitability = @8
+			pc_b_star_habitability = @8
+			pc_f_star_habitability = @8
+			pc_g_star_habitability = @8
+			pc_k_star_habitability = @8
+			pc_m_star_habitability = @8
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {		# let's see if this works
+			add = 40
+			OR = {
+				is_species_class = ART
+			}
+		}
+	}
+}
