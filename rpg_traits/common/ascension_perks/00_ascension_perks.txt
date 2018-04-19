@@ -139,7 +139,7 @@ ap_engineered_evolution = {
 		add_research_option = tech_gene_seed_purification
 		hidden_effect = {
 			country_event = { id = utopia.2700 }
-			give_technology = "tech_trait_cybernetic"
+			give_technology = { tech = "tech_trait_cybernetic" }
 		}
 	}
 	possible = {
