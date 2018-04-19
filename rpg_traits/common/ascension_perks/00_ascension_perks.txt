@@ -618,6 +618,37 @@ ap_interstellar_dominion = {
 	}
 }
 
+ap_grasp_the_void = {
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+	}
+
+	modifier = {
+		country_starbase_capacity_add = 5
+	}
+	
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_grasp_the_void
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_civic = civic_inwards_perfection
+		}
+		modifier = {
+			factor = 1.5
+			is_xenophobe = yes
+		}		
+	}
+}
+
 ap_eternal_vigilance = {
 	possible = {
 		custom_tooltip = {
@@ -842,9 +873,26 @@ ap_executive_vigor = {
 	}
 }
 
+ap_transcendent_learning = {
+	modifier = {
+		leader_skill_levels = 2
+		country_leader_cap = 2
+	}
+	
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_transcendent_learning
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}
+
 ap_shared_destiny = {
 	modifier = {
-		subject_integration_influence_cost_mult = -0.5
+		subject_integration_influence_cost_mult = -0.75
 	}
 	
 	potential = {
@@ -861,6 +909,14 @@ ap_shared_destiny = {
 	
 	ai_weight = {
 		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				any_subject = {
+					is_subject_type = vassal
+				}
+			}
+		}
 	}
 }
 
@@ -885,46 +941,6 @@ ap_voidborn = {
 	
 	on_enabled = {
 		custom_tooltip = "allow_habitats"
-	}
-	
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 2
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 3
-			has_ethic = ethic_fanatic_pacifist
-		}
-	}
-}
-
-ap_the_circle_of_life = {
-	on_enabled = {
-		custom_tooltip = "allow_ring_world"
-	}
-	
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
-		}
-		custom_tooltip = {
-			fail_text = "requires_ap_voidborn"
-			has_ascension_perk = ap_voidborn
-		}
-		custom_tooltip = {
-			fail_text = "requires_mega_engineering"
-			has_technology = tech_mega_engineering
-		}		
-	}
-
-	potential = {
-		host_has_dlc = "Utopia"
-		NOT = {
-			has_ascension_perk = ap_the_circle_of_life
-		}
 	}
 	
 	ai_weight = {
@@ -995,6 +1011,7 @@ ap_galactic_wonders = {
 		custom_tooltip = "allow_spy_orb"
 		custom_tooltip = "allow_think_tank"
 		custom_tooltip = "allow_dysons_sphere"
+		custom_tooltip = "allow_ring_world"
 	}
 	
 	possible = {
