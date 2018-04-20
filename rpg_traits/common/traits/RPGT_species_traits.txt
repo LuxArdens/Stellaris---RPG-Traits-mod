@@ -252,11 +252,10 @@ trait_cybernetic = {
 
 	initial = yes
 	randomized = no
-	modification = yes
+	modification = no
 	alters_species_identity = yes
 
 	allowed_archetypes = { BIOLOGICAL }
-	prerequisites = { "tech_trait_cybernetic" }
 	opposites = { trait_strogg }
 	
 	modifier = {
