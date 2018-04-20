@@ -1217,6 +1217,7 @@ event = {		# reduce genemodding bonus slightly after getting first AP
 		every_country = {
 			limit = {
 				has_civic = civic_bio_assimilator
+				has_ascension_perk = ap_engineered_evolution
 			}
 			remove_modifier = "civic_bio_assimilator_1"
 			remove_modifier = "civic_bio_assimilator_2"
@@ -1236,6 +1237,7 @@ event = {		# reduce genemodding bonus slightly after getting second AP
 		every_country = {
 			limit = {
 				has_civic = civic_bio_assimilator
+				has_ascension_perk = ap_evolutionary_mastery
 			}
 			remove_modifier = "civic_bio_assimilator_1"
 			remove_modifier = "civic_bio_assimilator_2"
