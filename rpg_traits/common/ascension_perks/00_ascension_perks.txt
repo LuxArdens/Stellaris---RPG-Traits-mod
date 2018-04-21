@@ -416,8 +416,6 @@ ap_mind_over_matter = {
 			has_ascension_perk = ap_mind_over_matter
 			has_authority = "auth_machine_intelligence"
 		}
-		is_mechanical_empire = no
-		is_cyborg_empire = no
 	}
 	
 	ai_weight = {
@@ -468,9 +466,7 @@ ap_transcendence = {
 		NOT = {
 			has_ascension_perk = ap_transcendence
 			has_authority = "auth_machine_intelligence"
-		}
-		is_mechanical_empire = no
-		is_cyborg_empire = no		
+		}		
 	}
 	
 	ai_weight = {
