@@ -183,7 +183,6 @@ ap_engineered_evolution = {
 			has_authority = "auth_machine_intelligence"
 		}
 		is_mechanical_empire = no
-		is_cyborg_empire = no
 	}
 	
 	ai_weight = {
@@ -241,8 +240,7 @@ ap_evolutionary_mastery = {
 			has_ascension_perk = ap_evolutionary_mastery
 			has_authority = "auth_machine_intelligence"
 		}
-		is_mechanical_empire = no
-		is_cyborg_empire = no		
+		is_mechanical_empire = no	
 	}
 	
 	ai_weight = {
