@@ -1,16 +1,17 @@
 # base habitability appears to be changed. There's no longer a flat +10% for everything, but there's some wonky hidden bonuses going on for identical-to-homeworld planets
 # own homeworld is ALWAYS 100%, so don't worry about it
+# damn, all those variables can't start with numbers! "Variable names must start with a letter and only contain letters, numbers, or under scores." -Cit. Game Parser
 
-@10 = 20		# test
-@0 = 0.9		# only for ringworlds (and gaia if organic)
-@1 = 0.70		# identical-to-homeworld and habitats (decided to nerf habitats since they're still just big domes in space, not perfect planets in any way)
-@2 = 0.60		# different climate, slight temperature difference, that kind of minor shit
-@3 = 0.40		# rather different from main planet
-@4 = 0.30		# has very negative features, like ocean planet for non-ocean hab types
-@5 = 0.20		# this is only barely 'colonizable' at game start, but they essentially are stuck to living in big domes
-@6 = 0.10		# requires all the colonization techs to allow living (+10%), or some hardiness traits
-@7 = -0.2		# requires dedicated techs to construct special domes/habitats, like molten worlds, gas giants, asteroids et cetera for humans
-@8 = -2			# for star-nonstar separation
+@test = 20		# test
+@best = 0.9		# only for ringworlds (and gaia if organic)
+@home = 0.70		# identical-to-homeworld and habitats (decided to nerf habitats since they're still just big domes in space, not perfect planets in any way)
+@almost = 0.60		# different climate, slight temperature difference, that kind of minor shit
+@notquite = 0.40		# rather different from main planet
+@meh = 0.30		# has very negative features, like ocean planet for non-ocean hab types
+@ugly = 0.20		# this is only barely 'colonizable' at game start, but they essentially are stuck to living in big domes
+@hard = 0.10		# requires all the colonization techs to allow living (+10%), or some hardiness traits
+@harder = -0.2		# requires dedicated techs to construct special domes/habitats, like molten worlds, gas giants, asteroids et cetera for humans
+@impossible = -2			# for star-nonstar separation
 
 trait_pc_desert_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
@@ -18,44 +19,44 @@ trait_pc_desert_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0			# gaia now represents purposefully terraforming a world to mimic the homeworld. EXTREMELY rarely found at random
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best			# gaia now represents purposefully terraforming a world to mimic the homeworld. EXTREMELY rarely found at random
 		
 		
-		pc_desert_habitability = @1			#  this does not get a hidden +30%, nor a flat +10% like before, so it's actually the number given
+		pc_desert_habitability = @home			#  this does not get a hidden +30%, nor a flat +10% like before, so it's actually the number given
 		
-		pc_arid_habitability = @2
-		pc_savannah_habitability = @2
+		pc_arid_habitability = @almost
+		pc_savannah_habitability = @almost
 		
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arctic_habitability = @3
-		pc_alpine_habitability = @3
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_alpine_habitability = @notquite
 
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 		
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 		
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40				# does this actually work?
@@ -67,43 +68,43 @@ trait_pc_arid_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best
 		
 		
-		pc_arid_habitability = @1
+		pc_arid_habitability = @home
 		
-		pc_savannah_habitability = @2
-		pc_desert_habitability = @2
+		pc_savannah_habitability = @almost
+		pc_desert_habitability = @almost
 
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arctic_habitability = @3
-		pc_alpine_habitability = @3
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_alpine_habitability = @notquite
 
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 		
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -115,43 +116,43 @@ trait_pc_savannah_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best
 		
 		
-		pc_savannah_habitability = @1
+		pc_savannah_habitability = @home
 		
-		pc_arid_habitability = @2
-		pc_desert_habitability = @2
+		pc_arid_habitability = @almost
+		pc_desert_habitability = @almost
 
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arctic_habitability = @3
-		pc_alpine_habitability = @3
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_alpine_habitability = @notquite
 		
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -163,43 +164,43 @@ trait_pc_tropical_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best
 		
 		
-		pc_tropical_habitability = @1
+		pc_tropical_habitability = @home
 		
-		pc_continental_habitability = @2
+		pc_continental_habitability = @almost
 
-		pc_arid_habitability = @3
-		pc_savannah_habitability = @3
-		pc_desert_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arctic_habitability = @3
-		pc_alpine_habitability = @3
+		pc_arid_habitability = @notquite
+		pc_savannah_habitability = @notquite
+		pc_desert_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_alpine_habitability = @notquite
 
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 		
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -211,43 +212,43 @@ trait_pc_continental_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best
 		
 		
-		pc_continental_habitability = @1
+		pc_continental_habitability = @home
 		
-		pc_tropical_habitability = @2
+		pc_tropical_habitability = @almost
 		
-		pc_arid_habitability = @3
-		pc_savannah_habitability = @3
-		pc_desert_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arctic_habitability = @3
-		pc_alpine_habitability = @3
+		pc_arid_habitability = @notquite
+		pc_savannah_habitability = @notquite
+		pc_desert_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_alpine_habitability = @notquite
 
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 		
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -259,41 +260,41 @@ trait_pc_ocean_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best
 		
 		
-		pc_ocean_habitability = @1
+		pc_ocean_habitability = @home
 		
-		pc_tropical_habitability = @4
-		pc_continental_habitability = @4
-		pc_tundra_habitability = @4
-		pc_arctic_habitability = @4
-		pc_desert_habitability = @4
-		pc_alpine_habitability = @4
-		pc_arid_habitability = @4
-		pc_savannah_habitability = @4
+		pc_tropical_habitability = @meh
+		pc_continental_habitability = @meh
+		pc_tundra_habitability = @meh
+		pc_arctic_habitability = @meh
+		pc_desert_habitability = @meh
+		pc_alpine_habitability = @meh
+		pc_arid_habitability = @meh
+		pc_savannah_habitability = @meh
 		
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -305,43 +306,43 @@ trait_pc_arctic_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best
 		
 		
-		pc_arctic_habitability = @1
+		pc_arctic_habitability = @home
 		
-		pc_alpine_habitability = @2
-		pc_tundra_habitability = @2
+		pc_alpine_habitability = @almost
+		pc_tundra_habitability = @almost
 
-		pc_arid_habitability = @3
-		pc_savannah_habitability = @3
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_desert_habitability = @3
+		pc_arid_habitability = @notquite
+		pc_savannah_habitability = @notquite
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_desert_habitability = @notquite
 
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 		
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -353,43 +354,43 @@ trait_pc_tundra_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best
 		
 		
-		pc_tundra_habitability = @1
+		pc_tundra_habitability = @home
 		
-		pc_alpine_habitability = @2
-		pc_arctic_habitability = @2
+		pc_alpine_habitability = @almost
+		pc_arctic_habitability = @almost
 
-		pc_arid_habitability = @3
-		pc_savannah_habitability = @3
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_desert_habitability = @3
+		pc_arid_habitability = @notquite
+		pc_savannah_habitability = @notquite
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_desert_habitability = @notquite
 
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 		
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -401,43 +402,43 @@ trait_pc_alpine_preference = {
 	sorting_priority = 30
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
-		pc_gaia_habitability = @0
+		pc_ringworld_habitable_habitability = @best
+		pc_gaia_habitability = @best
 		
 		
-		pc_alpine_habitability = @1
+		pc_alpine_habitability = @home
 		
-		pc_tundra_habitability = @2
-		pc_arctic_habitability = @2
+		pc_tundra_habitability = @almost
+		pc_arctic_habitability = @almost
 
-		pc_arid_habitability = @3
-		pc_savannah_habitability = @3
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_desert_habitability = @3
+		pc_arid_habitability = @notquite
+		pc_savannah_habitability = @notquite
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_desert_habitability = @notquite
 
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 		
-		pc_frozen_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
+		pc_frozen_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -454,44 +455,44 @@ trait_pc_ai_preference = {
 	prerequisites = { tech_ai_worlds }
 	#modification = no		# enabling this now removes the trait from species entirely instead of just disabling gene-modding...
 	modifier = {
-		pc_ai_habitability = @0		# not @1 because AI worlds are always purposefully terraformed, not 'found'
+		pc_ai_habitability = @best		# not @home because AI worlds are always purposefully terraformed, not 'found'
 		
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
 				# exception because machines really shouldn't care whether they sit in a station or on a planet
 
-		pc_frozen_habitability = @2		# missing the fancy extras of an AI world, but being devoid of life is good for machines
-		pc_barren_habitability = @2
-		pc_barren_cold_habitability = @2
-		pc_nuked_habitability = @2
+		pc_frozen_habitability = @almost		# missing the fancy extras of an AI world, but being devoid of life is good for machines
+		pc_barren_habitability = @almost
+		pc_barren_cold_habitability = @almost
+		pc_nuked_habitability = @almost
 		
-		pc_desert_habitability = @3		# organic life is a minor nuisance to machines
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_arctic_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arid_habitability = @3
-		pc_savannah_habitability = @3
-		pc_alpine_habitability = @3
-		pc_gaia_habitability = @3
+		pc_desert_habitability = @notquite		# organic life is a minor nuisance to machines
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arid_habitability = @notquite
+		pc_savannah_habitability = @notquite
+		pc_alpine_habitability = @notquite
+		pc_gaia_habitability = @notquite
 		
-		pc_ocean_habitability = @4		# oceans still annoying
-		pc_toxic_habitability = @4		# corrosive stuff
+		pc_ocean_habitability = @meh		# oceans still annoying
+		pc_toxic_habitability = @meh		# corrosive stuff
 		
-		pc_molten_habitability = @5		# suboptimal
-		pc_asteroid_habitability = @5	# they can immediately colonize the surface, but still require asteroid hollowing for good habitability
+		pc_molten_habitability = @ugly		# suboptimal
+		pc_asteroid_habitability = @ugly	# they can immediately colonize the surface, but still require asteroid hollowing for good habitability
 		
-		pc_gas_giant_habitability = @7	# requires floating cities
+		pc_gas_giant_habitability = @harder	# requires floating cities
 			
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
@@ -511,42 +512,42 @@ trait_pc_nuked_preference = {
 	#modification = no
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
 		
-		pc_nuked_habitability = @1
+		pc_nuked_habitability = @home
 		
-		pc_barren_habitability = @2				#similar enough
-		pc_barren_cold_habitability = @2		
-		pc_frozen_habitability = @2				
+		pc_barren_habitability = @almost				#similar enough
+		pc_barren_cold_habitability = @almost		
+		pc_frozen_habitability = @almost				
 		
-		pc_arid_habitability = @3				# too much life
-		pc_savannah_habitability = @3
-		pc_desert_habitability = @3
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arctic_habitability = @3
-		pc_alpine_habitability = @3
+		pc_arid_habitability = @notquite				# too much life
+		pc_savannah_habitability = @notquite
+		pc_desert_habitability = @notquite
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_alpine_habitability = @notquite
 
-		pc_ocean_habitability = @4
+		pc_ocean_habitability = @meh
 		
-		pc_ai_habitability = @5
+		pc_ai_habitability = @ugly
 		
-		pc_toxic_habitability = @6		# nuked != corrosive
+		pc_toxic_habitability = @hard		# nuked != corrosive
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 10
@@ -565,43 +566,43 @@ trait_pc_gaia_preference = {		# gaia are a challenge to play as because they're 
 	#modification = no
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
-		pc_gaia_habitability = @1
+		pc_gaia_habitability = @home
 		
 				# not being on a 'real' planet
 
-		pc_tropical_habitability = @4		# closest to the lush gaia worlds
-		pc_continental_habitability = @4
+		pc_tropical_habitability = @meh		# closest to the lush gaia worlds
+		pc_continental_habitability = @meh
 		
-		pc_arid_habitability = @5			# too harsh, require domes
-		pc_savannah_habitability = @5
-		pc_tundra_habitability = @5
-		pc_desert_habitability = @5
-		pc_alpine_habitability = @5
-		pc_arctic_habitability = @5
-		pc_ocean_habitability = @5
+		pc_arid_habitability = @ugly			# too harsh, require domes
+		pc_savannah_habitability = @ugly
+		pc_tundra_habitability = @ugly
+		pc_desert_habitability = @ugly
+		pc_alpine_habitability = @ugly
+		pc_arctic_habitability = @ugly
+		pc_ocean_habitability = @ugly
 		
-		pc_nuked_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
-		pc_frozen_habitability = @5
+		pc_nuked_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
+		pc_frozen_habitability = @ugly
 		
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 5
@@ -620,43 +621,43 @@ trait_pc_ringworld_habitable_preference = {			# also a significant challenge
 	#modification = no
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
-		pc_gaia_habitability = @0
+		pc_gaia_habitability = @best
 		
 		
 
-		pc_tropical_habitability = @4		# same problem as with gaia, over-adapted to perfect worlds
-		pc_continental_habitability = @4
+		pc_tropical_habitability = @meh		# same problem as with gaia, over-adapted to perfect worlds
+		pc_continental_habitability = @meh
 		
-		pc_arid_habitability = @5
-		pc_savannah_habitability = @5
-		pc_tundra_habitability = @5
-		pc_desert_habitability = @5
-		pc_alpine_habitability = @5
-		pc_arctic_habitability = @5
-		pc_ocean_habitability = @5
+		pc_arid_habitability = @ugly
+		pc_savannah_habitability = @ugly
+		pc_tundra_habitability = @ugly
+		pc_desert_habitability = @ugly
+		pc_alpine_habitability = @ugly
+		pc_arctic_habitability = @ugly
+		pc_ocean_habitability = @ugly
 		
-		pc_nuked_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
-		pc_frozen_habitability = @5
+		pc_nuked_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
+		pc_frozen_habitability = @ugly
 		
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 2
@@ -669,43 +670,43 @@ trait_pc_habitat_preference = {
 	#modification = no
 	prerequisites = { tech_normal_worlds }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
-		pc_gaia_habitability = @0
+		pc_gaia_habitability = @best
 		
 		
 
-		pc_tropical_habitability = @4		# same problem as with gaia, over-adapted to perfect worlds
-		pc_continental_habitability = @4
+		pc_tropical_habitability = @meh		# same problem as with gaia, over-adapted to perfect worlds
+		pc_continental_habitability = @meh
 		
-		pc_arid_habitability = @5
-		pc_savannah_habitability = @5
-		pc_tundra_habitability = @5
-		pc_desert_habitability = @5
-		pc_alpine_habitability = @5
-		pc_arctic_habitability = @5
-		pc_ocean_habitability = @5
+		pc_arid_habitability = @ugly
+		pc_savannah_habitability = @ugly
+		pc_tundra_habitability = @ugly
+		pc_desert_habitability = @ugly
+		pc_alpine_habitability = @ugly
+		pc_arctic_habitability = @ugly
+		pc_ocean_habitability = @ugly
 		
-		pc_nuked_habitability = @5
-		pc_barren_habitability = @5
-		pc_barren_cold_habitability = @5
-		pc_frozen_habitability = @5
+		pc_nuked_habitability = @ugly
+		pc_barren_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
+		pc_frozen_habitability = @ugly
 		
-		pc_toxic_habitability = @6
-		pc_ai_habitability = @6
+		pc_toxic_habitability = @hard
+		pc_ai_habitability = @hard
 		
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
@@ -723,38 +724,38 @@ trait_pc_a_star_preference = {
 	#modification = no		# Ha, keep dreaming
 	prerequisites = { tech_star_habitation }
 	modifier = {
-			pc_b_star_habitability = @1
+			pc_b_star_habitability = @home
 			
-			pc_a_star_habitability = @2
-			pc_f_star_habitability = @2
+			pc_a_star_habitability = @almost
+			pc_f_star_habitability = @almost
 			
-			pc_g_star_habitability = @3
-			pc_k_star_habitability = @3
-			pc_m_star_habitability = @4
+			pc_g_star_habitability = @notquite
+			pc_k_star_habitability = @notquite
+			pc_m_star_habitability = @meh
 			
-			pc_neutron_star_habitability = @5
-			pc_pulsar_habitability = @5
+			pc_neutron_star_habitability = @ugly
+			pc_pulsar_habitability = @ugly
 			
-			pc_gas_giant_habitability = @7
-			pc_gaia_habitability = @8
-			pc_habitat_habitability = @8
-			pc_shielded_habitability = @8
-			pc_ringworld_habitable_habitability = @8
-			pc_frozen_habitability = @8
-			pc_barren_habitability = @8
-			pc_barren_cold_habitability = @8
-			pc_nuked_habitability = @8
-			pc_desert_habitability = @8
-			pc_tropical_habitability = @8
-			pc_continental_habitability = @8
-			pc_arctic_habitability = @8
-			pc_tundra_habitability = @8
-			pc_arid_habitability = @8
-			pc_savannah_habitability = @8
-			pc_alpine_habitability = @8
-			pc_ocean_habitability = @8
-			pc_toxic_habitability = @8
-			pc_molten_habitability = @8
+			pc_gas_giant_habitability = @harder
+			pc_gaia_habitability = @impossible
+			pc_habitat_habitability = @impossible
+			pc_shielded_habitability = @impossible
+			pc_ringworld_habitable_habitability = @impossible
+			pc_frozen_habitability = @impossible
+			pc_barren_habitability = @impossible
+			pc_barren_cold_habitability = @impossible
+			pc_nuked_habitability = @impossible
+			pc_desert_habitability = @impossible
+			pc_tropical_habitability = @impossible
+			pc_continental_habitability = @impossible
+			pc_arctic_habitability = @impossible
+			pc_tundra_habitability = @impossible
+			pc_arid_habitability = @impossible
+			pc_savannah_habitability = @impossible
+			pc_alpine_habitability = @impossible
+			pc_ocean_habitability = @impossible
+			pc_toxic_habitability = @impossible
+			pc_molten_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
@@ -774,39 +775,39 @@ trait_pc_gas_giant_preference = {
 	#modification = no
 	prerequisites = { tech_gas_habitation }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0			# yea well, their ringworlds are filled with gas alright
+		pc_ringworld_habitable_habitability = @best			# yea well, their ringworlds are filled with gas alright
 		
 		
-		pc_gas_giant_habitability = @3
+		pc_gas_giant_habitability = @notquite
 		
-		pc_m_star_habitability = @6			# represent super-heavy Gas giants and brown dwarfs, can be colonized with some effort
+		pc_m_star_habitability = @hard			# represent super-heavy Gas giants and brown dwarfs, can be colonized with some effort
 		
-		pc_tropical_habitability = @7			# normal rocky planets are all the same to them. Require special gas domes
-		pc_continental_habitability = @7
-		pc_arid_habitability = @7
-		pc_savannah_habitability = @7
-		pc_tundra_habitability = @7
-		pc_desert_habitability = @7
-		pc_alpine_habitability = @7
-		pc_arctic_habitability = @7
-		pc_ocean_habitability = @7
-		pc_nuked_habitability = @7
-		pc_barren_habitability = @7
-		pc_barren_cold_habitability = @7
-		pc_frozen_habitability = @7
-		pc_toxic_habitability = @7
-		pc_ai_habitability = @7
-		pc_gaia_habitability = @7
-		pc_molten_habitability = @7
-		pc_asteroid_habitability = @7
+		pc_tropical_habitability = @harder			# normal rocky planets are all the same to them. Require special gas domes
+		pc_continental_habitability = @harder
+		pc_arid_habitability = @harder
+		pc_savannah_habitability = @harder
+		pc_tundra_habitability = @harder
+		pc_desert_habitability = @harder
+		pc_alpine_habitability = @harder
+		pc_arctic_habitability = @harder
+		pc_ocean_habitability = @harder
+		pc_nuked_habitability = @harder
+		pc_barren_habitability = @harder
+		pc_barren_cold_habitability = @harder
+		pc_frozen_habitability = @harder
+		pc_toxic_habitability = @harder
+		pc_ai_habitability = @harder
+		pc_gaia_habitability = @harder
+		pc_molten_habitability = @harder
+		pc_asteroid_habitability = @harder
 			
-			pc_neutron_star_habitability = @8		# real stars are just too extreme
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
+			pc_neutron_star_habitability = @impossible		# real stars are just too extreme
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 8000
@@ -826,40 +827,40 @@ trait_pc_molten_preference = {
 	#modification = no
 	prerequisites = { tech_molten_habitation }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
 		
-		pc_molten_habitability = @1
+		pc_molten_habitability = @home
 		
-		pc_barren_habitability = @5					# far too cold. Requires heated domes
-		pc_arid_habitability = @5
-		pc_savannah_habitability = @5
-		pc_desert_habitability = @5
-		pc_tropical_habitability = @5
-		pc_continental_habitability = @5
-		pc_tundra_habitability = @5
-		pc_arctic_habitability = @5
-		pc_alpine_habitability = @5
-		pc_gaia_habitability = @5
-		pc_ocean_habitability = @5
-		pc_ai_habitability = @5
+		pc_barren_habitability = @ugly					# far too cold. Requires heated domes
+		pc_arid_habitability = @ugly
+		pc_savannah_habitability = @ugly
+		pc_desert_habitability = @ugly
+		pc_tropical_habitability = @ugly
+		pc_continental_habitability = @ugly
+		pc_tundra_habitability = @ugly
+		pc_arctic_habitability = @ugly
+		pc_alpine_habitability = @ugly
+		pc_gaia_habitability = @ugly
+		pc_ocean_habitability = @ugly
+		pc_ai_habitability = @ugly
 		
-		pc_toxic_habitability = @6
-		pc_nuked_habitability = @6
-		pc_barren_cold_habitability = @6
-		pc_frozen_habitability = @6
+		pc_toxic_habitability = @hard
+		pc_nuked_habitability = @hard
+		pc_barren_cold_habitability = @hard
+		pc_frozen_habitability = @hard
 		
-		pc_asteroid_habitability = @7				# more tech required
-		pc_gas_giant_habitability = @7
+		pc_asteroid_habitability = @harder				# more tech required
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
@@ -881,40 +882,40 @@ trait_pc_toxic_preference = {
 	#modification = no
 	prerequisites = { tech_toxic_habitation }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
-		pc_toxic_habitability = @1			# toxic represents a special/rare cocktail of chemicals here that the organism needs to survive
+		pc_toxic_habitability = @home			# toxic represents a special/rare cocktail of chemicals here that the organism needs to survive
 		
 		
-		pc_barren_habitability = @5
-		pc_arid_habitability = @5
-		pc_savannah_habitability = @5
-		pc_desert_habitability = @5
-		pc_tropical_habitability = @5
-		pc_continental_habitability = @5
-		pc_tundra_habitability = @5
-		pc_arctic_habitability = @5
-		pc_alpine_habitability = @5
-		pc_gaia_habitability = @5
-		pc_ocean_habitability = @5
-		pc_ai_habitability = @5
-		pc_barren_cold_habitability = @5
-		pc_frozen_habitability = @5
+		pc_barren_habitability = @ugly
+		pc_arid_habitability = @ugly
+		pc_savannah_habitability = @ugly
+		pc_desert_habitability = @ugly
+		pc_tropical_habitability = @ugly
+		pc_continental_habitability = @ugly
+		pc_tundra_habitability = @ugly
+		pc_arctic_habitability = @ugly
+		pc_alpine_habitability = @ugly
+		pc_gaia_habitability = @ugly
+		pc_ocean_habitability = @ugly
+		pc_ai_habitability = @ugly
+		pc_barren_cold_habitability = @ugly
+		pc_frozen_habitability = @ugly
 		
-		pc_nuked_habitability = @6
-		pc_molten_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_molten_habitability = @hard
 		
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 10
@@ -928,42 +929,42 @@ trait_pc_barren_preference = {		# barren is more compatible with non-barren plan
 	#modification = no
 	prerequisites = { tech_barren_habitation }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
-		pc_barren_habitability = @1
+		pc_barren_habitability = @home
 		
 		
-		pc_barren_cold_habitability = @2
-		pc_frozen_habitability = @2
+		pc_barren_cold_habitability = @almost
+		pc_frozen_habitability = @almost
 		
-		pc_arid_habitability = @3			# life isn't half as much a problem to Barren organisms as vice versa
-		pc_savannah_habitability = @3
-		pc_desert_habitability = @3
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arctic_habitability = @3
-		pc_alpine_habitability = @3
-		pc_gaia_habitability = @3
+		pc_arid_habitability = @notquite			# life isn't half as much a problem to Barren organisms as vice versa
+		pc_savannah_habitability = @notquite
+		pc_desert_habitability = @notquite
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_alpine_habitability = @notquite
+		pc_gaia_habitability = @notquite
 		
-		pc_ocean_habitability = @4
-		pc_ai_habitability = @4
+		pc_ocean_habitability = @meh
+		pc_ai_habitability = @meh
 		
-		pc_nuked_habitability = @6
-		pc_molten_habitability = @6
-		pc_toxic_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_molten_habitability = @hard
+		pc_toxic_habitability = @hard
 		
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 10
@@ -983,37 +984,37 @@ trait_pc_barren_preference = {		# barren is more compatible with non-barren plan
 	# sorting_priority = 30
 	# #modification = no
 	# modifier = {
-			# pc_barren_cold_habitability = @1
+			# pc_barren_cold_habitability = @home
 			
-			# pc_alpine_habitability = @2
-			# pc_arctic_habitability = @2
-			# pc_barren_habitability = @2
-			# pc_tundra_habitability = @2
-			# pc_frozen_habitability = @2
+			# pc_alpine_habitability = @almost
+			# pc_arctic_habitability = @almost
+			# pc_barren_habitability = @almost
+			# pc_tundra_habitability = @almost
+			# pc_frozen_habitability = @almost
 			
-			# pc_continental_habitability = @3
-			# pc_arid_habitability = @3
-			# pc_savannah_habitability = @3
+			# pc_continental_habitability = @notquite
+			# pc_arid_habitability = @notquite
+			# pc_savannah_habitability = @notquite
 			
 			# # too warm
-			# pc_tropical_habitability = @4
-			# pc_desert_habitability = @4
-			# pc_ocean_habitability = @4
+			# pc_tropical_habitability = @meh
+			# pc_desert_habitability = @meh
+			# pc_ocean_habitability = @meh
 
 			# # dangerous
-			# pc_toxic_habitability = @5
-			# pc_molten_habitability = @5
-			# pc_nuked_habitability = @5
+			# pc_toxic_habitability = @ugly
+			# pc_molten_habitability = @ugly
+			# pc_nuked_habitability = @ugly
 			
 			
-			# pc_neutron_star_habitability = @8
-			# pc_pulsar_habitability = @8
-			# pc_a_star_habitability = @8
-			# pc_b_star_habitability = @8
-			# pc_f_star_habitability = @8
-			# pc_g_star_habitability = @8
-			# pc_k_star_habitability = @8
-			# pc_m_star_habitability = @8
+			# pc_neutron_star_habitability = @impossible
+			# pc_pulsar_habitability = @impossible
+			# pc_a_star_habitability = @impossible
+			# pc_b_star_habitability = @impossible
+			# pc_f_star_habitability = @impossible
+			# pc_g_star_habitability = @impossible
+			# pc_k_star_habitability = @impossible
+			# pc_m_star_habitability = @impossible
 	# }
 	# ai_weight = {
 		# weight = 0
@@ -1027,42 +1028,42 @@ trait_pc_frozen_preference = {	# previous one but different name. Shows up ident
 	#modification = no
 	prerequisites = { tech_barren_habitation }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0
+		pc_ringworld_habitable_habitability = @best
 		
-		pc_barren_cold_habitability = @1
-		pc_frozen_habitability = @1
+		pc_barren_cold_habitability = @home
+		pc_frozen_habitability = @home
 		
 		
-		pc_barren_habitability = @2
+		pc_barren_habitability = @almost
 		
-		pc_arid_habitability = @3			# life isn't half as much a problem to Barren organisms as vice versa
-		pc_savannah_habitability = @3
-		pc_desert_habitability = @3
-		pc_tropical_habitability = @3
-		pc_continental_habitability = @3
-		pc_tundra_habitability = @3
-		pc_arctic_habitability = @3
-		pc_alpine_habitability = @3
-		pc_gaia_habitability = @3
+		pc_arid_habitability = @notquite			# life isn't half as much a problem to Barren organisms as vice versa
+		pc_savannah_habitability = @notquite
+		pc_desert_habitability = @notquite
+		pc_tropical_habitability = @notquite
+		pc_continental_habitability = @notquite
+		pc_tundra_habitability = @notquite
+		pc_arctic_habitability = @notquite
+		pc_alpine_habitability = @notquite
+		pc_gaia_habitability = @notquite
 		
-		pc_ocean_habitability = @4
-		pc_ai_habitability = @4
+		pc_ocean_habitability = @meh
+		pc_ai_habitability = @meh
 		
-		pc_nuked_habitability = @6
-		pc_molten_habitability = @6
-		pc_toxic_habitability = @6
+		pc_nuked_habitability = @hard
+		pc_molten_habitability = @hard
+		pc_toxic_habitability = @hard
 		
-		pc_asteroid_habitability = @7
-		pc_gas_giant_habitability = @7
+		pc_asteroid_habitability = @harder
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 20
@@ -1082,35 +1083,35 @@ trait_pc_frozen_preference = {	# previous one but different name. Shows up ident
 	# sorting_priority = 30
 	# #modification = no
 	# modifier = {
-		# pc_habitat_habitability = @0
-		# pc_shielded_habitability = @0
-		# pc_ringworld_habitable_habitability = @0
+		# pc_habitat_habitability = @best
+		# pc_shielded_habitability = @best
+		# pc_ringworld_habitable_habitability = @best
 		
-			# pc_frozen_habitability = @7
-			# pc_barren_habitability = @7
-			# pc_barren_cold_habitability = @7
-			# pc_nuked_habitability = @7
-			# pc_desert_habitability = @7
-			# pc_tropical_habitability = @7
-			# pc_continental_habitability = @7
-			# pc_arctic_habitability = @7
-			# pc_tundra_habitability = @7
-			# pc_arid_habitability = @7
-			# pc_savannah_habitability = @7
-			# pc_alpine_habitability = @7
-			# pc_ocean_habitability = @7
-			# pc_toxic_habitability = @7
-			# pc_molten_habitability = @7
+			# pc_frozen_habitability = @harder
+			# pc_barren_habitability = @harder
+			# pc_barren_cold_habitability = @harder
+			# pc_nuked_habitability = @harder
+			# pc_desert_habitability = @harder
+			# pc_tropical_habitability = @harder
+			# pc_continental_habitability = @harder
+			# pc_arctic_habitability = @harder
+			# pc_tundra_habitability = @harder
+			# pc_arid_habitability = @harder
+			# pc_savannah_habitability = @harder
+			# pc_alpine_habitability = @harder
+			# pc_ocean_habitability = @harder
+			# pc_toxic_habitability = @harder
+			# pc_molten_habitability = @harder
 			
 			
-			# pc_neutron_star_habitability = @8
-			# pc_pulsar_habitability = @8
-			# pc_a_star_habitability = @8
-			# pc_b_star_habitability = @8
-			# pc_f_star_habitability = @8
-			# pc_g_star_habitability = @8
-			# pc_k_star_habitability = @8
-			# pc_m_star_habitability = @8
+			# pc_neutron_star_habitability = @impossible
+			# pc_pulsar_habitability = @impossible
+			# pc_a_star_habitability = @impossible
+			# pc_b_star_habitability = @impossible
+			# pc_f_star_habitability = @impossible
+			# pc_g_star_habitability = @impossible
+			# pc_k_star_habitability = @impossible
+			# pc_m_star_habitability = @impossible
 	# }
 	# ai_weight = {
 		# weight = 0
@@ -1124,39 +1125,39 @@ trait_pc_asteroid_preference = {		# low gravity
 	#modification = no
 	prerequisites = { tech_asteroid_habitation }
 	modifier = {
-		pc_ringworld_habitable_habitability = @0		# ringworlds can be de-spun to remove gravity
+		pc_ringworld_habitable_habitability = @best		# ringworlds can be de-spun to remove gravity
 		
-		pc_asteroid_habitability = @3			# gets a +40% bonus out of bloody nowhere for whatever reason
+		pc_asteroid_habitability = @notquite			# gets a +40% bonus out of bloody nowhere for whatever reason
 		
 		
-		pc_barren_habitability = @7			# gravity too high
-		pc_arid_habitability = @7
-		pc_savannah_habitability = @7
-		pc_desert_habitability = @7
-		pc_tropical_habitability = @7
-		pc_continental_habitability = @7
-		pc_tundra_habitability = @7
-		pc_arctic_habitability = @7
-		pc_alpine_habitability = @7
-		pc_gaia_habitability = @7
-		pc_ocean_habitability = @7
-		pc_ai_habitability = @7
-		pc_barren_cold_habitability = @7
-		pc_frozen_habitability = @7
-		pc_nuked_habitability = @7
-		pc_molten_habitability = @7
-		pc_toxic_habitability = @7
+		pc_barren_habitability = @harder			# gravity too high
+		pc_arid_habitability = @harder
+		pc_savannah_habitability = @harder
+		pc_desert_habitability = @harder
+		pc_tropical_habitability = @harder
+		pc_continental_habitability = @harder
+		pc_tundra_habitability = @harder
+		pc_arctic_habitability = @harder
+		pc_alpine_habitability = @harder
+		pc_gaia_habitability = @harder
+		pc_ocean_habitability = @harder
+		pc_ai_habitability = @harder
+		pc_barren_cold_habitability = @harder
+		pc_frozen_habitability = @harder
+		pc_nuked_habitability = @harder
+		pc_molten_habitability = @harder
+		pc_toxic_habitability = @harder
 		
-		pc_gas_giant_habitability = @7
+		pc_gas_giant_habitability = @harder
 			
-			pc_neutron_star_habitability = @8
-			pc_pulsar_habitability = @8
-			pc_a_star_habitability = @8
-			pc_b_star_habitability = @8
-			pc_f_star_habitability = @8
-			pc_g_star_habitability = @8
-			pc_k_star_habitability = @8
-			pc_m_star_habitability = @8
+			pc_neutron_star_habitability = @impossible
+			pc_pulsar_habitability = @impossible
+			pc_a_star_habitability = @impossible
+			pc_b_star_habitability = @impossible
+			pc_f_star_habitability = @impossible
+			pc_g_star_habitability = @impossible
+			pc_k_star_habitability = @impossible
+			pc_m_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
