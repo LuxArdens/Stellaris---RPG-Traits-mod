@@ -2513,58 +2513,6 @@ trait_energy_lifeform = {
 	}
 }
 
-trait_positive_doom = {
-	cost = 0
-	opposites = { "trait_negative_doom" }
-	initial = no
-	randomized = no
-	modification = no
-	icon = "gfx/interface/icons/traits/trait_positive_doom.dds"
-	allowed_archetypes = { BIOLOGICAL }
-	modifier = {
-		army_defense_health_mult = -2
-		army_morale = -2
-		army_damage_mult = -2
-		pop_happiness = -0.2
-	}
-}
-
-trait_negative_doom = {
-	cost = 0
-	opposites = { "trait_positive_doom" }
-	initial = no
-	randomized = no
-	modification = no
-	icon = "gfx/interface/icons/traits/trait_negative_doom.dds"
-	allowed_archetypes = { BIOLOGICAL }
-	modifier = {
-		army_defense_health_mult = 2
-		army_morale = 2
-		army_damage_mult = 2
-		pop_happiness = 0.2
-	}
-}
-
-trait_doom_unleashed = {
-	cost = 0
-	opposites = {  }
-	initial = no
-	randomized = no
-	modification = no
-	icon = "gfx/interface/icons/traits/trait_negative_doom.dds"
-	allowed_archetypes = { BIOLOGICAL }
-	modifier = {
-		army_defense_health_mult = -2
-		army_morale = -2
-		army_damage_mult = -2
-		pop_happiness = -0.5
-		pop_other_species_happiness = -1
-		pop_food_req_mult = 5
-		pop_government_ethic_attraction = -5
-		pop_environment_tolerance = -0.1
-	}
-}
-
 trait_shield_obsessed = {
 	cost = 0
 	opposites = { "trait_armor_obsessed" }
