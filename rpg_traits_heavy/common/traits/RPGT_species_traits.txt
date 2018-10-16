@@ -2408,7 +2408,7 @@ trait_egg_born = {
 
 trait_hoarders = {
 	cost = 0
-	opposites = {  }
+	opposites = { trait_titanic trait_titanic_machine }
 	initial = yes
 	randomized = no
 	modification = no
