@@ -1507,7 +1507,7 @@ trait_homogenous = {
 	icon = "gfx/interface/icons/traits/trait_homogenous.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
-	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted" "trait_gifted2" }
+	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_nerve_stapled" "trait_gifted1" "trait_gifted2" }
 	
 	modifier = {
 		leader_skill_levels = -2
