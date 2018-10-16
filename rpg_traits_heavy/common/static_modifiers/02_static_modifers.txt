@@ -66,6 +66,7 @@ food_rich_planet = {
 }
 super_sensor_array = {
 	planet_sensor_range_add = 4
+	planet_hyperlane_range_add = 6
 	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
 	icon_frame = 1
 }
@@ -100,7 +101,7 @@ society_animal_life = {
 	icon_frame = 1
 }
 shifting_sands = {
-	pop_environment_tolerance = -0.1
+	pop_environment_tolerance = -0.05
 	planet_building_cost_mult = 0.33
 	icon = "gfx/interface/icons/planet_modifiers/pm_wasteland.dds"
 	icon_frame = 3
@@ -112,7 +113,7 @@ suppressed_opposition = {
 }
 scared_population = {
 	pop_happiness = -0.15
-	pop_environment_tolerance = -0.05
+	pop_environment_tolerance = -0.02
 	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
 	icon_frame = 3
 }
@@ -253,8 +254,7 @@ syndaw_production_surplus = {
 ##########################################################################
 protege_onboard = {
 	ship_anomaly_research_speed_mult = 0.20
-	ship_anomaly_fail_risk = -0.20
-	ship_anomaly_generation_chance_mult = 0.10
+	ship_anomaly_generation_chance_mult = 0.20
 }
 ship_survey_boost = {
 	science_ship_survey_speed = 0.15
@@ -322,7 +322,7 @@ pop_pleased = {
 }
 alien_infection = {
 	pop_happiness = -0.2
-	pop_environment_tolerance = -0.1
+	pop_environment_tolerance = -0.2
 }
 alien_music = {
 	pop_happiness = 0.20
