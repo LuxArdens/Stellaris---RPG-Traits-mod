@@ -25,6 +25,7 @@ ap_enigmatic_engineering = {
 	
 	modifier = {		
 		ship_sensor_range_add = 2
+		ship_hyperlane_range_add = 4
 	}
 	
 	ai_weight = {
@@ -46,13 +47,7 @@ ap_nihilistic_acquisition = {
 		NOT = {
 			has_ascension_perk = ap_nihilistic_acquisition
 		}
-		NOR = {
-			has_valid_civic = civic_fanatic_purifiers
-			has_valid_civic = civic_hive_devouring_swarm
-			has_valid_civic = civic_inwards_perfection
-			has_valid_civic = civic_machine_terminator
-			has_valid_civic = civic_barbaric_despoilers
-		}
+		NOT = { has_valid_civic = civic_barbaric_despoilers }
 	}
 	
 	on_enabled = {
@@ -72,6 +67,15 @@ ap_nihilistic_acquisition = {
 		modifier = {
 			factor = 0
 			NOT = { has_ai_personality_behaviour = slaver }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_hive_devouring_swarm
+				has_valid_civic = civic_inwards_perfection
+				has_valid_civic = civic_machine_terminator
+			}
 		}
 	}
 }
@@ -240,7 +244,7 @@ ap_evolutionary_mastery = {
 			has_ascension_perk = ap_evolutionary_mastery
 			has_authority = "auth_machine_intelligence"
 		}
-		is_mechanical_empire = no		
+		is_mechanical_empire = no
 	}
 	
 	ai_weight = {
@@ -375,13 +379,14 @@ ap_mind_over_matter = {
 		}
 		add_research_option = tech_telepathy
 	}
-	possible = {	
+	possible = {
 		custom_tooltip = {
 			fail_text = "synthetic_empire_psionic_ascension"
 			OR = {
 				NOT = { has_trait = trait_mechanical }
 				has_technology = tech_psionic_synthetics
 			}
+	
 		}
 		#custom_tooltip = {
 		#	fail_text = "hive_mind_biological_ascension_only1"
@@ -952,14 +957,6 @@ ap_voidborn = {
 }
 
 ap_master_builders = {
-	on_enabled = {
-		if = {
-			limit = { 
-				NOT = { has_technology = tech_mega_engineering }
-			}
-			add_research_option = tech_mega_engineering
-		}
-	}
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_2"
@@ -979,6 +976,32 @@ ap_master_builders = {
 	}
 	modifier = {
 		megastructure_build_speed_mult = 1
+	}
+	
+	on_enabled = {
+		custom_tooltip = "ap_master_builders_habitat_size"
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					is_planet_class = pc_habitat 
+					planet_size < 15
+				}
+				set_planet_size = 15
+			}	
+			every_planet_within_border = {
+				limit = {
+					is_planet_class = pc_habitat 
+					planet_size < 15
+				}
+				set_planet_size = 15	
+			}			
+		}
+		if = {
+			limit = { 
+				NOT = { has_technology = tech_mega_engineering }
+			}
+			add_research_option = tech_mega_engineering
+		}		
 	}
 	
 	potential = {
@@ -1086,6 +1109,7 @@ ap_machine_worlds = {
 	potential = {
 		host_has_dlc = "Synthetic Dawn Story Pack"
 		has_authority = auth_machine_intelligence
+		NOT = { has_civic = civic_machine_assimilator }
 		NOT = {
 			has_ascension_perk = ap_machine_worlds
 		}
