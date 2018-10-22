@@ -57,6 +57,7 @@ trait_pc_desert_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40				# does this actually work?
@@ -105,6 +106,7 @@ trait_pc_arid_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -153,6 +155,7 @@ trait_pc_savannah_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -201,6 +204,7 @@ trait_pc_tropical_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -249,6 +253,7 @@ trait_pc_continental_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -295,6 +300,7 @@ trait_pc_ocean_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -343,6 +349,7 @@ trait_pc_arctic_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -391,6 +398,7 @@ trait_pc_tundra_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -439,6 +447,7 @@ trait_pc_alpine_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 40
@@ -493,6 +502,7 @@ trait_pc_ai_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
@@ -548,6 +558,7 @@ trait_pc_nuked_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 10
@@ -603,6 +614,7 @@ trait_pc_gaia_preference = {		# gaia are a challenge to play as because they're 
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 5
@@ -658,6 +670,7 @@ trait_pc_ringworld_habitable_preference = {			# also a significant challenge
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 2
@@ -707,6 +720,7 @@ trait_pc_habitat_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
@@ -731,6 +745,7 @@ trait_pc_a_star_preference = {
 			
 			pc_g_star_habitability = @notquite
 			pc_k_star_habitability = @notquite
+			pc_t_star_habitability = @notquite
 			pc_m_star_habitability = @meh
 			
 			pc_neutron_star_habitability = @ugly
@@ -781,6 +796,7 @@ trait_pc_gas_giant_preference = {
 		pc_gas_giant_habitability = @notquite
 		
 		pc_m_star_habitability = @hard			# represent super-heavy Gas giants and brown dwarfs, can be colonized with some effort
+		pc_t_star_habitability = @hard			# not sure on the temperature of T classes
 		
 		pc_tropical_habitability = @harder			# normal rocky planets are all the same to them. Require special gas domes
 		pc_continental_habitability = @harder
@@ -861,6 +877,7 @@ trait_pc_molten_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
@@ -916,6 +933,7 @@ trait_pc_toxic_preference = {
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 10
@@ -965,6 +983,7 @@ trait_pc_barren_preference = {		# barren is more compatible with non-barren plan
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 10
@@ -1015,6 +1034,7 @@ trait_pc_barren_preference = {		# barren is more compatible with non-barren plan
 			# pc_g_star_habitability = @impossible
 			# pc_k_star_habitability = @impossible
 			# pc_m_star_habitability = @impossible
+			# pc_t_star_habitability = @impossible
 	# }
 	# ai_weight = {
 		# weight = 0
@@ -1064,6 +1084,7 @@ trait_pc_frozen_preference = {	# previous one but different name. Shows up ident
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 20
@@ -1112,6 +1133,7 @@ trait_pc_frozen_preference = {	# previous one but different name. Shows up ident
 			# pc_g_star_habitability = @impossible
 			# pc_k_star_habitability = @impossible
 			# pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	# }
 	# ai_weight = {
 		# weight = 0
@@ -1158,6 +1180,7 @@ trait_pc_asteroid_preference = {		# low gravity
 			pc_g_star_habitability = @impossible
 			pc_k_star_habitability = @impossible
 			pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
 	}
 	ai_weight = {
 		weight = 0
