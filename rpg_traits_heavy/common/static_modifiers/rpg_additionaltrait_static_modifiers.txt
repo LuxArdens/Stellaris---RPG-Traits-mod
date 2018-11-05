@@ -45,7 +45,7 @@ trait_titanic = {
 	planet_army_build_speed_mult = -0.8
 		# Huge robots
 	pop_robot_upkeep_mult = 5					# Machine races are considered robot pops in game now.
-	pop_robot_production_output = 5
+	pop_robot_production_output = 5			# now governed by equalizer modifiers
 	pop_robot_build_speed_mult = -0.9
 	pop_robot_build_cost_mult = 5
 		# Huge ships
@@ -114,18 +114,6 @@ trait_tiny = {
 		# tiny storages
 	#max_minerals = -1000
 	#max_energy = -1000
-}
-
-titan_robot_debuff = {
-	tile_resource_engineering_research_mult = -5
-	tile_resource_physics_research_mult = -5
-	tile_resource_society_research_mult = -5
-}
-
-tiny_robot_buff = {
-	tile_resource_engineering_research_mult = 0.75
-	tile_resource_physics_research_mult = 0.75
-	tile_resource_society_research_mult = 0.75
 }
 
 
