@@ -1149,7 +1149,8 @@ trait_pc_asteroid_preference = {		# low gravity
 	modifier = {
 		pc_ringworld_habitable_habitability = @best		# ringworlds can be de-spun to remove gravity
 		
-		pc_asteroid_habitability = @notquite			# gets a +40% bonus out of bloody nowhere for whatever reason
+		pc_asteroid_habitability = @home			# gets a +40% bonus out of bloody nowhere for whatever reason
+		pc_ice_asteroid_habitability = @almost
 		
 		
 		pc_barren_habitability = @harder			# gravity too high
