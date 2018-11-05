@@ -352,8 +352,10 @@ pc_asteroid = {
 	
 	planet_size = 5
 	
-	colonizable = no
+	colonizable = yes
+	starting_planet = no
 	survey_time_factor = 0.5
+	colonization_tech = { "tech_hollow_asteroids" }
 }
 
 pc_ice_asteroid = {

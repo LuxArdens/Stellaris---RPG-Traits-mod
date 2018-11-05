@@ -1,3 +1,6 @@
+# AI Geth empires do not fare well. I compensated a bit for the AI's bad priorities but it's better to keep the trait solely for human players
+
+
 namespace = geth
 
 planet_event = {
@@ -10,7 +13,10 @@ planet_event = {
 			is_being_purged = no
 			NOT = { has_modifier = geth_1 }
 		}
-		num_pops < 5
+		OR = {
+			AND = { ai = no num_pops < 5 }
+			AND = { ai = yes num_pops < 3 }	# make the AI cheat, because it doesn't prioritize pop building enough...
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -45,7 +51,8 @@ planet_event = {
 			is_being_purged = no
 			NOT = { has_modifier = geth_2 }
 		}
-		AND = { num_pops > 4 num_pops < 13 }
+			AND = { ai = no AND = { num_pops > 4 num_pops < 13 } }
+			AND = { ai = yes AND = { num_pops > 2 num_pops < 9 } }	# make the AI cheat, because it doesn't prioritize pop building enough...
 	}
 	
 	mean_time_to_happen = {
@@ -80,7 +87,8 @@ planet_event = {
 			is_being_purged = no
 			NOT = { has_modifier = geth_3 }
 		}
-		AND = { num_pops > 12 num_pops < 20 }
+			AND = { ai = no AND = { num_pops > 12 num_pops < 20 } }
+			AND = { ai = yes AND = { num_pops > 8 num_pops < 15 } }	# make the AI cheat, because it doesn't prioritize pop building enough...
 	}
 	
 	mean_time_to_happen = {
@@ -115,7 +123,7 @@ planet_event = {
 			is_being_purged = no
 			NOT = { has_modifier = geth_4 }
 		}
-		AND = { num_pops > 20 }
+		num_pops > 20		# no more AI cheats for final tier, because that would make it too overpowered
 	}
 	
 	mean_time_to_happen = {
