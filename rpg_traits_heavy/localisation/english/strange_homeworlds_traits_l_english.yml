@@ -1,18 +1,1 @@
 ﻿l_english:
-  trait_pc_shielded_preference:0 "Shielded Planet Preference"
-  trait_pc_shielded_preference_desc:1 "§LThrough skillful genetic manipulation or slow evolution this species can only survived when shielded from the evils of Space.§!"
-  pc_shielded_habitability:1 "Shielded Planet Habitability"
-  trait_pc_asteroid_preference:0 "Asteroid Preference"
-  trait_pc_asteroid_preference_desc:1 "§LThrough skillful genetic manipulation or slow evolution this species is particularly adapted to living inside asteroids.§!"
-  pc_asteroid_habitability:1 "Asteroid Habitability"
-  
-  trait_pc_a_star_preference:0 "Stellar Preference"
-  trait_pc_a_star_preference_desc:1 "§LA rare energy lifeform that exists not through chemical processes but physical phenomena; it lives in stellar cores.§!"
-  pc_b_star_habitability:1 "Star Habitability"
-  pc_a_star_habitability:1 "Star Habitability"
-  pc_f_star_habitability:1 "Star Habitability"
-  pc_g_star_habitability:1 "Star Habitability"
-  pc_k_star_habitability:1 "Star Habitability"
-  pc_m_star_habitability:1 "Star Habitability"
-  pc_neutron_star_habitability:1 "Star Habitability"
-  pc_pulsar_habitability:1 "Star Habitability"

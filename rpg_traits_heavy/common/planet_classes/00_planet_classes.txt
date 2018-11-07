@@ -338,7 +338,7 @@ pc_gas_giant = {
 
 pc_asteroid = {
 	entity = "asteroid"
-	entity_scale = 0.75
+	entity_scale = 0.5
 	icon_frame = 18
 	
 	asteroid = yes
@@ -350,12 +350,13 @@ pc_asteroid = {
 	
 	chance_of_ring = 0
 	
-	planet_size = 5
+	planet_size = { min = 2 max = 7 }
 	
 	colonizable = yes
 	starting_planet = no
 	survey_time_factor = 0.5
 	colonization_tech = { "tech_hollow_asteroids" }
+	show_city = no
 }
 
 pc_ice_asteroid = {

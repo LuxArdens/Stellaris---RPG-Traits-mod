@@ -997,50 +997,6 @@ trait_pc_barren_preference = {		# barren is more compatible with non-barren plan
 	}
 }
 
-# trait_pc_barren_cold_preference = {		# barren is more compatible with non-barren planets than vice versa
-	# icon = "gfx/interface/icons/traits/trait_pc_barren_cold_preference.dds"
-	# allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
-	# sorting_priority = 30
-	# #modification = no
-	# modifier = {
-			# pc_barren_cold_habitability = @home
-			
-			# pc_alpine_habitability = @almost
-			# pc_arctic_habitability = @almost
-			# pc_barren_habitability = @almost
-			# pc_tundra_habitability = @almost
-			# pc_frozen_habitability = @almost
-			
-			# pc_continental_habitability = @notquite
-			# pc_arid_habitability = @notquite
-			# pc_savannah_habitability = @notquite
-			
-			# # too warm
-			# pc_tropical_habitability = @meh
-			# pc_desert_habitability = @meh
-			# pc_ocean_habitability = @meh
-
-			# # dangerous
-			# pc_toxic_habitability = @ugly
-			# pc_molten_habitability = @ugly
-			# pc_nuked_habitability = @ugly
-			
-			
-			# pc_neutron_star_habitability = @impossible
-			# pc_pulsar_habitability = @impossible
-			# pc_a_star_habitability = @impossible
-			# pc_b_star_habitability = @impossible
-			# pc_f_star_habitability = @impossible
-			# pc_g_star_habitability = @impossible
-			# pc_k_star_habitability = @impossible
-			# pc_m_star_habitability = @impossible
-			# pc_t_star_habitability = @impossible
-	# }
-	# ai_weight = {
-		# weight = 0
-	# }
-# }
-
 trait_pc_frozen_preference = {	# previous one but different name. Shows up identical in game, not sure why PDX made it at all
 	icon = "gfx/interface/icons/traits/trait_pc_frozen_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
@@ -1098,48 +1054,6 @@ trait_pc_frozen_preference = {	# previous one but different name. Shows up ident
 	}
 }
 
-# trait_pc_shielded_preference = {
-	# icon = "gfx/interface/icons/traits/trait_pc_shielded_preference.dds"
-	# allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
-	# sorting_priority = 30
-	# #modification = no
-	# modifier = {
-		# pc_habitat_habitability = @best
-		# pc_shielded_habitability = @best
-		# pc_ringworld_habitable_habitability = @best
-		
-			# pc_frozen_habitability = @harder
-			# pc_barren_habitability = @harder
-			# pc_barren_cold_habitability = @harder
-			# pc_nuked_habitability = @harder
-			# pc_desert_habitability = @harder
-			# pc_tropical_habitability = @harder
-			# pc_continental_habitability = @harder
-			# pc_arctic_habitability = @harder
-			# pc_tundra_habitability = @harder
-			# pc_arid_habitability = @harder
-			# pc_savannah_habitability = @harder
-			# pc_alpine_habitability = @harder
-			# pc_ocean_habitability = @harder
-			# pc_toxic_habitability = @harder
-			# pc_molten_habitability = @harder
-			
-			
-			# pc_neutron_star_habitability = @impossible
-			# pc_pulsar_habitability = @impossible
-			# pc_a_star_habitability = @impossible
-			# pc_b_star_habitability = @impossible
-			# pc_f_star_habitability = @impossible
-			# pc_g_star_habitability = @impossible
-			# pc_k_star_habitability = @impossible
-			# pc_m_star_habitability = @impossible
-			pc_t_star_habitability = @impossible
-	# }
-	# ai_weight = {
-		# weight = 0
-	# }
-# }
-
 trait_pc_asteroid_preference = {		# low gravity
 	icon = "gfx/interface/icons/traits/trait_pc_asteroid_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
@@ -1149,8 +1063,8 @@ trait_pc_asteroid_preference = {		# low gravity
 	modifier = {
 		pc_ringworld_habitable_habitability = @best		# ringworlds can be de-spun to remove gravity
 		
-		pc_asteroid_habitability = @home			# gets a +40% bonus out of bloody nowhere for whatever reason
-		pc_ice_asteroid_habitability = @almost
+		pc_asteroid_habitability = @meh			# gets a +40% bonus out of bloody nowhere for whatever reason
+		pc_ice_asteroid_habitability = @ugly
 		
 		
 		pc_barren_habitability = @harder			# gravity too high
@@ -1193,3 +1107,45 @@ trait_pc_asteroid_preference = {		# low gravity
 		}
 	}
 }
+
+# trait_pc_shielded_preference = {
+	# icon = "gfx/interface/icons/traits/trait_pc_shielded_preference.dds"
+	# allowed_archetypes = { BIOLOGICAL PRESAPIENT MACHINE }
+	# sorting_priority = 30
+	# #modification = no
+	# modifier = {
+		# pc_habitat_habitability = @best
+		# pc_shielded_habitability = @best
+		# pc_ringworld_habitable_habitability = @best
+		
+			# pc_frozen_habitability = @harder
+			# pc_barren_habitability = @harder
+			# pc_barren_cold_habitability = @harder
+			# pc_nuked_habitability = @harder
+			# pc_desert_habitability = @harder
+			# pc_tropical_habitability = @harder
+			# pc_continental_habitability = @harder
+			# pc_arctic_habitability = @harder
+			# pc_tundra_habitability = @harder
+			# pc_arid_habitability = @harder
+			# pc_savannah_habitability = @harder
+			# pc_alpine_habitability = @harder
+			# pc_ocean_habitability = @harder
+			# pc_toxic_habitability = @harder
+			# pc_molten_habitability = @harder
+			
+			
+			# pc_neutron_star_habitability = @impossible
+			# pc_pulsar_habitability = @impossible
+			# pc_a_star_habitability = @impossible
+			# pc_b_star_habitability = @impossible
+			# pc_f_star_habitability = @impossible
+			# pc_g_star_habitability = @impossible
+			# pc_k_star_habitability = @impossible
+			# pc_m_star_habitability = @impossible
+			pc_t_star_habitability = @impossible
+	# }
+	# ai_weight = {
+		# weight = 0
+	# }
+# }

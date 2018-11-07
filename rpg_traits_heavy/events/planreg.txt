@@ -34,6 +34,7 @@ event = {
 						is_country_type = enclave
 						is_country_type = ambient
 						is_country_type = rebel
+						is_country_type = dormant_marauders
 						has_trait = trait_custom_race
 						has_country_flag = planet_regulated			# prevent planets from switching multiple times
 					}

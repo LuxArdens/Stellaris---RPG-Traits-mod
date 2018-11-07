@@ -45,11 +45,11 @@ trait_titanic = {
 	planet_army_build_speed_mult = -0.8
 		# Huge robots
 	pop_robot_upkeep_mult = 5					# Machine races are considered robot pops in game now.
-	pop_robot_production_output = 5			# now governed by equalizer modifiers
+	pop_robot_production_output = 5
 	pop_robot_build_speed_mult = -0.9
 	pop_robot_build_cost_mult = 5
 		# Huge ships
-	shipclass_colonizer_build_cost_mult	= 3
+	#shipclass_colonizer_build_cost_mult	= -0.5
 	shipsize_colonizer_build_speed_mult = -0.5
 	starbase_shipyard_build_speed_mult = -0.75
 	starbase_shipyard_build_cost_mult = 9				# was 4, now TEN times as expensive as normal ships

@@ -148,7 +148,7 @@ planet_event = {
 	}
 }
 
-planet_event = {		# debuffs Titanic robot research
+planet_event = {		# debuffs Titanic robot
 	id = geth.5
 	hide_window = yes
 	
@@ -180,7 +180,7 @@ planet_event = {		# debuffs Titanic robot research
 	}
 }
 
-planet_event = {		# buffs Tiny robot research
+planet_event = {		# buffs Tiny robot
 	id = geth.6
 	hide_window = yes
 	
@@ -208,6 +208,62 @@ planet_event = {		# buffs Tiny robot research
 				modifier = tiny_robot_buff
 				days = -1
 			}
+		}
+	}
+}
+
+planet_event = {		# rebuffs Titanic robot
+	id = geth.7
+	hide_window = yes
+	
+	trigger = {
+		has_owner = yes
+		owner = { NOT = {has_trait = trait_titanic } }
+		any_pop = {
+			has_trait = trait_mechanical
+			has_modifier = titan_robot_debuff
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_mechanical
+			}
+			remove_modifier = titan_robot_debuff
+			remove_modifier = tiny_robot_buff
+		}
+	}
+}
+
+planet_event = {		# debuffs Tiny robot
+	id = geth.8
+	hide_window = yes
+	
+	trigger = {
+		has_owner = yes
+		owner = { NOT = {has_trait = trait_tiny } }
+		any_pop = {
+			has_trait = trait_mechanical
+			has_modifier = tiny_robot_debuff
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_mechanical
+			}
+			remove_modifier = titan_robot_debuff
+			remove_modifier = tiny_robot_buff
 		}
 	}
 }
