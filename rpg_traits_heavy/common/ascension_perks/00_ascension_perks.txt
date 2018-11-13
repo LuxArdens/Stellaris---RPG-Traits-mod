@@ -147,10 +147,10 @@ ap_engineered_evolution = {
 		}
 	}
 	possible = {
-		custom_tooltip = {
-			fail_text = "synthetic_empire_biological_ascension"
-			NOT = { has_trait = trait_mechanical }
-		}	
+		#custom_tooltip = {
+		#	fail_text = "synthetic_empire_biological_ascension"
+		#	NOT = { has_trait = trait_mechanical }
+		#}	
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_1"
 			num_ascension_perks > 0
@@ -159,10 +159,10 @@ ap_engineered_evolution = {
 			fail_text = "requires_technology_gene_tailoring"
 			has_technology = tech_gene_tailoring
 		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_the_flesh_is_weak"
-			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_not_ap_the_flesh_is_weak"
+		#	NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+		#}
 		#custom_tooltip = {
 		#	fail_text = "requires_not_ap_mind_over_matter"
 		#	NOT = { has_ascension_perk = ap_mind_over_matter }
@@ -184,9 +184,9 @@ ap_engineered_evolution = {
 		host_has_dlc = "Utopia"
 		NOT = {
 			has_ascension_perk = ap_engineered_evolution
-			has_authority = "auth_machine_intelligence"
+			#has_authority = "auth_machine_intelligence"
 		}
-		is_mechanical_empire = no
+		#is_mechanical_empire = no
 	}
 	
 	ai_weight = {
@@ -194,6 +194,10 @@ ap_engineered_evolution = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 10
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }
@@ -209,10 +213,10 @@ ap_evolutionary_mastery = {
 		}
 	}
 	possible = {
-		custom_tooltip = {
-			fail_text = "synthetic_empire_biological_ascension"
-			NOT = { has_trait = trait_mechanical }
-		}
+		#custom_tooltip = {
+		#	fail_text = "synthetic_empire_biological_ascension"
+		#	NOT = { has_trait = trait_mechanical }
+		#}
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_3"
 			num_ascension_perks > 2
@@ -221,10 +225,10 @@ ap_evolutionary_mastery = {
 			fail_text = "requires_technology_gene_expressions"
 			has_technology = tech_gene_expressions
 		}
-		custom_tooltip = {
-			fail_text = "requires_ap_engineered_evolution"
-			has_ascension_perk = ap_engineered_evolution
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_ap_engineered_evolution"
+		#	has_ascension_perk = ap_engineered_evolution
+		#}
 	}
 	modifier = {
 		description = ap_evolutionary_mastery_modifier_desc
@@ -242,13 +246,17 @@ ap_evolutionary_mastery = {
 		host_has_dlc = "Utopia"
 		NOT = {
 			has_ascension_perk = ap_evolutionary_mastery
-			has_authority = "auth_machine_intelligence"
+		#	has_authority = "auth_machine_intelligence"
 		}
-		is_mechanical_empire = no
+		#is_mechanical_empire = no
 	}
 	
 	ai_weight = {
 		factor = 100
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
+		}
 	}
 }
 

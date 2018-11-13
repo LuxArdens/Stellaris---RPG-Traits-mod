@@ -1289,12 +1289,11 @@ random_list = {
 		"pc_continental"
 		"pc_alpine"
 		"pc_savannah"
-	}
-}
-
-random_list = {
-	name = "rl_habitable_special"
-	planets = {
+		"pc_gas_giant"
+		"pc_molten"
+		"pc_barren"
+		"pc_toxic"
+		"pc_frozen"
 		"pc_gaia"
 		"pc_nuked"
 		"pc_gas_giant"
@@ -1307,13 +1306,14 @@ random_list = {
 }
 
 random_list = {
+	name = "rl_habitable_special"
+	planets = {
+	}
+}
+
+random_list = {
 	name = "rl_unhabitable_planets"
 	planets = {
-		"pc_gas_giant"
-		"pc_molten"
-		"pc_barren"
-		"pc_toxic"
-		"pc_frozen"
 	}
 }
 

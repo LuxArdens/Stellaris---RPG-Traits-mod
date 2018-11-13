@@ -2144,9 +2144,9 @@ tech_gene_banks = {
 		modifier = {
 			factor = 5
 			OR = {
-				has_civic = civic_machine_servitor	
-				has_civic = civic_machine_assimilator
 				has_civic = civic_bio_assimilator
+				has_civic = civic_machine_servitor
+				has_civic = civic_machine_assimilator
 			}
 		}
 	}
@@ -2201,7 +2201,11 @@ tech_gene_seed_purification = {
 		}
 		modifier = {
 			factor = 5
-			has_civic = civic_bio_assimilator
+			OR = {
+				has_civic = civic_bio_assimilator
+				has_civic = civic_machine_servitor
+				has_civic = civic_machine_assimilator
+			}
 		}
 		modifier = {
 			factor = 0.10
@@ -2279,12 +2283,16 @@ tech_morphogenetic_field_mastery = {
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_authority = auth_machine_intelligence
 		}
 		modifier = {
 			factor = 5
-			has_civic = civic_bio_assimilator
+			OR = {
+				has_civic = civic_bio_assimilator
+				has_civic = civic_machine_servitor
+				has_civic = civic_machine_assimilator
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -2402,10 +2410,6 @@ tech_gene_tailoring = {
 		modifier = {
 			factor = 1.25
 			has_authority = auth_hive_mind
-		}		
-		modifier = {
-			factor = 5
-			has_civic = civic_bio_assimilator
 		}
 		modifier = {
 			factor = 1.25
@@ -2421,13 +2425,10 @@ tech_gene_tailoring = {
 		modifier = {
 			factor = 5
 			OR = {
-				has_civic = civic_machine_servitor	
+				has_civic = civic_bio_assimilator
+				has_civic = civic_machine_servitor
 				has_civic = civic_machine_assimilator
 			}
-		}
-		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
 		}
 	}
 	
@@ -2438,6 +2439,10 @@ tech_gene_tailoring = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }
@@ -2468,10 +2473,6 @@ tech_glandular_acclimation = {
 		modifier = {
 			factor = 1.25
 			has_authority = auth_hive_mind
-		}		
-		modifier = {
-			factor = 5
-			has_civic = civic_bio_assimilator
 		}
 		modifier = {
 			factor = 1.25
@@ -2487,7 +2488,8 @@ tech_glandular_acclimation = {
 		modifier = {
 			factor = 5
 			OR = {
-				has_civic = civic_machine_servitor	
+				has_civic = civic_bio_assimilator
+				has_civic = civic_machine_servitor
 				has_civic = civic_machine_assimilator
 			}
 		}
@@ -2530,6 +2532,10 @@ tech_genetic_resequencing = {		# used as tier 3 for RPG Traits genemodding
 				area = society
 				has_trait = "leader_trait_expertise_biology"
 			}
+		}
+		modifier = {
+			factor = 0
+			has_authority = auth_machine_intelligence
 		}
 	}
 }
@@ -2581,7 +2587,11 @@ tech_gene_expressions = {		# used as tier 2 for RPG Traits genemodding
 		}
 		modifier = {
 			factor = 5
-			has_civic = civic_bio_assimilator
+			OR = {
+				has_civic = civic_bio_assimilator
+				has_civic = civic_machine_servitor
+				has_civic = civic_machine_assimilator
+			}
 		}
 		modifier = {
 			factor = 1.50
@@ -2593,13 +2603,6 @@ tech_gene_expressions = {		# used as tier 2 for RPG Traits genemodding
 		modifier = {
 			factor = 0.1
 			has_authority = auth_machine_intelligence
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				has_civic = civic_machine_servitor	
-				has_civic = civic_machine_assimilator
-			}
 		}
 	}	
 	
@@ -2652,7 +2655,11 @@ tech_selected_lineages = {
 		}
 		modifier = {
 			factor = 5
-			has_civic = civic_bio_assimilator
+			OR = {
+				has_civic = civic_bio_assimilator
+				has_civic = civic_machine_servitor
+				has_civic = civic_machine_assimilator
+			}
 		}
 		modifier = {
 			factor = 0.1
