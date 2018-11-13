@@ -1,5 +1,11 @@
 civic_bio_assimilator = {		# fanatical gene-modders, turn themselves (and others) into all kinds of bio-horrors. Get earlier access to fancy stuff. Kind of Hitler, but not literally yet.
-	potential = { authority = { NOT = { value = auth_machine_intelligence } } }
+	potential = { 
+		OR = {
+			authority = { NOT = { value = auth_machine_intelligence } }
+			civics = { value = civic_machine_assimilator }
+			civics = { value = civic_machine_servitor }
+		}
+	}
 	possible = {
 		civics = {
 			NOR = {
