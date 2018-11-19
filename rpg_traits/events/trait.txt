@@ -394,7 +394,10 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				has_trait = trait_dumb2
+					any_owned_pop = {
+						limit = { is_majority_species }
+						has_trait = trait_dumb2
+					}
 			}
 			add_modifier = {
 				modifier = trait_dumb2
@@ -412,7 +415,10 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				has_trait = trait_dumb3
+					any_owned_pop = {
+						limit = { is_majority_species }
+						has_trait = trait_dumb3
+					}
 			}
 			add_modifier = {
 				modifier = trait_dumb3

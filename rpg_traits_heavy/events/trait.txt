@@ -357,7 +357,10 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				has_trait = trait_dumb2
+					any_owned_pop = {
+						limit = { is_majority_species }
+						has_trait = trait_dumb2
+					}
 			}
 			add_modifier = {
 				modifier = trait_dumb2
@@ -375,7 +378,10 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				has_trait = trait_dumb3
+					any_owned_pop = {
+						limit = { is_majority_species }
+						has_trait = trait_dumb3
+					}
 			}
 			add_modifier = {
 				modifier = trait_dumb3
@@ -384,44 +390,6 @@ event = {
 		}
 	}
 }
-
-# event = {
-	# id = "trait.18"
-	# hide_window = yes
-	# is_triggered_only = yes
-
-	# immediate = {
-		# every_country = {
-			# limit = {
-				# has_trait = trait_positive_doom
-			# }
-			# country_event = { id = trait.8322 days = 18000 random = 400 } # 50 years
-			# add_modifier = {
-				# modifier = trait_positive_doom
-				# days = -1
-			# }
-		# }
-	# }
-# }
-
-# event = {
-	# id = "trait.19"
-	# hide_window = yes
-	# is_triggered_only = yes
-
-	# immediate = {
-		# every_country = {
-			# limit = {
-				# has_trait = trait_negative_doom
-			# }
-			# #country_event = { id = trait.8323 days = 18000 random = 400 } # 50 years
-			# add_modifier = {
-				# modifier = trait_negative_doom
-				# days = 18
-			# }
-		# }
-	# }
-# }
 
 event = {
 	id = "trait.20"
