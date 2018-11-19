@@ -1023,7 +1023,10 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				has_trait = trait_smart1
+					any_owned_pop = {
+						limit = { is_majority_species }
+						has_trait = trait_smart1
+					}
 			}
 			add_modifier = {
 				modifier = trait_smart1
@@ -1040,7 +1043,10 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				has_trait = trait_smart2
+					any_owned_pop = {
+						limit = { is_majority_species }
+						has_trait = trait_smart2
+					}
 			}
 			add_modifier = {
 				modifier = trait_smart2
@@ -1057,7 +1063,10 @@ event = {
 	immediate = {
 		every_country = {
 			limit = {
-				has_trait = trait_smart3
+					any_owned_pop = {
+						limit = { is_majority_species }
+						has_trait = trait_smart3
+					}
 			}
 			add_modifier = {
 				modifier = trait_smart3
