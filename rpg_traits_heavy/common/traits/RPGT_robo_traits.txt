@@ -772,7 +772,7 @@ trait_robot_crude_neural_network = {
 }
 
 trait_robot_crude_neural_network2 = {
-	cost = -2
+	cost = -4
 	initial = yes
 	randomized = yes
 	modification = yes
