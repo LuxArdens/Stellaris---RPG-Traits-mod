@@ -118,12 +118,12 @@ trait_robotic_1 = {
 	allowed_archetypes = { ROBOT }
 	
 	modifier = {
-		tile_resource_engineering_research_mult = -1 # mindless robots
-		tile_resource_physics_research_mult = -1
-		tile_resource_society_research_mult = -1
-		tile_resource_unity_mult = -1
-		tile_resource_energy_mult = -0.8	# energy is now considered reflectant of 'trade and organization' rather than actual energy. As such, robots produce almost none
-		tile_resource_minerals_mult = 0.2	# essentially an automated mine
+		planet_jobs_engineering_research_produces_mult = -1 # mindless robots
+		planet_jobs_physics_research_produces_mult = -1
+		planet_jobs_society_research_produces_mult = -1
+		planet_jobs_unity_produces_mult = -1
+		planet_jobs_energy_produces_mult = -0.8	# energy is now considered reflectant of 'trade and organization' rather than actual energy. As such, robots produce almost none
+		planet_jobs_minerals_produces_mult = 0.2	# essentially an automated mine
 	}
 }
 
@@ -139,12 +139,12 @@ trait_robotic_2 = {
 	allowed_archetypes = { ROBOT }
 	
 	modifier = {
-		tile_resource_engineering_research_mult = -0.8		# can't do autonomous research
-		tile_resource_physics_research_mult = -0.8
-		tile_resource_society_research_mult = -0.8
-		tile_resource_unity_mult = -0.9						# humbug
-		tile_resource_energy_mult = -0.5 		# still no good
-		tile_resource_minerals_mult = 0.3
+		planet_jobs_engineering_research_produces_mult = -0.8		# can't do autonomous research
+		planet_jobs_physics_research_produces_mult = -0.8
+		planet_jobs_society_research_produces_mult = -0.8
+		planet_jobs_unity_produces_mult = -0.9						# humbug
+		planet_jobs_energy_produces_mult = -0.5 		# still no good
+		planet_jobs_minerals_produces_mult = 0.3
 		
 		army_defense_health_mult = 0.5
 	}
@@ -161,13 +161,13 @@ trait_robotic_3 = {
 	allowed_archetypes = { ROBOT }
 	
 	modifier = {
-		tile_resource_engineering_research_mult = 1 			# vastly superior raw data processing, but trouble with creative thinking
-		tile_resource_physics_research_mult = 1					# can take trait_robot_learning_algorithms2 for a bonus equal to organic hyperintelligences
-		tile_resource_society_research_mult = 1
-		tile_resource_unity_mult = 0.5							# synths act more in unity by their very nature
-		tile_resource_energy_mult = 1
-		tile_resource_minerals_mult = 0.5
-		pop_consumer_goods_mult = -0.5
+		planet_jobs_engineering_research_produces_mult = 1 			# vastly superior raw data processing, but trouble with creative thinking
+		planet_jobs_physics_research_produces_mult = 1					# can take trait_robot_learning_algorithms2 for a bonus equal to organic hyperintelligences
+		planet_jobs_society_research_produces_mult = 1
+		planet_jobs_unity_produces_mult = 0.5							# synths act more in unity by their very nature
+		planet_jobs_energy_produces_mult = 1
+		planet_jobs_minerals_produces_mult = 0.5
+		planet_pops_consumer_goods_upkeep_mult = -0.5
 		species_leader_exp_gain = 1
 		
 		army_health = 1
@@ -186,12 +186,12 @@ trait_syncretic_proles = {
 	modifier = {
 		pop_happiness = 0.10
 		pop_government_ethic_attraction = 0.25
-		tile_resource_minerals_mult = 0.4
-		tile_resource_food_mult = 0.4
-		tile_resource_energy_mult = -0.6
-		tile_resource_physics_research_mult = -0.75
-		tile_resource_engineering_research_mult = -0.75
-		tile_resource_society_research_mult = -0.75
+		planet_jobs_minerals_produces_mult = 0.4
+		planet_jobs_food_produces_mult = 0.4
+		planet_jobs_energy_produces_mult = -0.6
+		planet_jobs_physics_research_produces_mult = -0.75
+		planet_jobs_engineering_research_produces_mult = -0.75
+		planet_jobs_society_research_produces_mult = -0.75
 		species_leader_exp_gain = -0.5
 		leader_skill_levels = -1
 	}
@@ -209,10 +209,10 @@ trait_latent_psionic = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_engineering_research_mult = 0.1	# buffed slightly
-		tile_resource_physics_research_mult = 0.1
-		tile_resource_society_research_mult = 0.1
-		tile_resource_energy_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.1	# buffed slightly
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.1
 	}
 }
 
@@ -228,12 +228,12 @@ trait_psionic = {
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_engineering_research_mult = 0.4
-		tile_resource_physics_research_mult = 0.4
-		tile_resource_society_research_mult = 0.4
-		tile_resource_unity_mult = 0.4
+		planet_jobs_engineering_research_produces_mult = 0.4
+		planet_jobs_physics_research_produces_mult = 0.4
+		planet_jobs_society_research_produces_mult = 0.4
+		planet_jobs_unity_produces_mult = 0.4
 		army_morale_damage_mult = 0.5		# better at psychological warfare
-		tile_resource_energy_mult = 0.5 		# better organizationally
+		planet_jobs_energy_produces_mult = 0.5 		# better organizationally
 	}
 }
 
@@ -242,6 +242,120 @@ trait_psionic = {
 ### MAJOR MODIFICATION TRAITS 0003 ############################################################################################################################
 ### These traits are significant modifications made to a species during the course of gameplay ################################################################
 ###############################################################################################################################################################
+
+trait_enigmatic_intelligence = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	improves_leaders = yes
+	advanced_trait = yes
+	opposites = { "trait_nerve_stapled" "trait_erudite" "trait_slow_learners" "trait_intelligent" "trait_quick_learners" "trait_talented" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_researchers_produces_mult = 0.1
+		species_leader_exp_gain = 0.25
+	}
+}
+
+trait_enigmatic_intelligence_poor = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	improves_leaders = yes
+	advanced_trait = yes
+	opposites = { "trait_intelligent"}
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+	}
+}
+
+trait_enigmatic_intelligence_failed = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	improves_leaders = yes
+	advanced_trait = yes
+	opposites = { "trait_intelligent"}
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = -0.6
+		planet_jobs_physics_research_produces_mult = -0.6
+		planet_jobs_society_research_produces_mult = -0.6
+	}
+}
+
+trait_bioadaptability = { #green
+	cost = 0
+	potential_crossbreeding_chance = 0.33
+	
+	initial = no
+	modification = no
+	randomized = no
+
+	allowed_archetypes = { BIOLOGICAL }
+	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
+	slave_cost = {
+		energy = 25
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_social_pheromones = { #red
+	cost = 0
+	potential_crossbreeding_chance = 0.33
+	
+	initial = no
+	modification = no
+	randomized = no
+
+	allowed_archetypes = { BIOLOGICAL }
+	
+	modifier = {
+		pop_housing_usage_mult = -0.05
+	}
+	slave_cost = {
+		energy = 25
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_limited_regeneration = { #blue
+	cost = 0
+	potential_crossbreeding_chance = 0.33
+	
+	initial = no
+	modification = no
+	randomized = no
+
+	allowed_archetypes = { BIOLOGICAL }
+	
+	modifier = {
+		army_damage_mult = 0.1
+		leader_age = 10
+	}
+	slave_cost = {
+		energy = 25
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
 
 trait_robot_loyalty_circuits = {
 	cost = 2
@@ -271,10 +385,10 @@ trait_robot_awoken = {			# need to find out what the heck this is first
 	randomized = no
 	modification = no
 	modifier = {
-		tile_resource_society_research_mult = 0.30
-		tile_resource_physics_research_mult = 0.30
-		tile_resource_engineering_research_mult = 0.30
-		pop_consumer_goods_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.30
+		planet_jobs_physics_research_produces_mult = 0.30
+		planet_jobs_engineering_research_produces_mult = 0.30
+		planet_pops_consumer_goods_upkeep_mult = 0.25
 		pop_resettlement_cost_mult = 0.5
 	}
 }
@@ -285,10 +399,10 @@ trait_robot_awoken_01 = {
 	randomized = no
 	modification = no
 	modifier = {
-		tile_resource_society_research_mult = 0.30
-		tile_resource_physics_research_mult = 0.30
-		tile_resource_engineering_research_mult = 0.30
-		pop_consumer_goods_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.30
+		planet_jobs_physics_research_produces_mult = 0.30
+		planet_jobs_engineering_research_produces_mult = 0.30
+		planet_pops_consumer_goods_upkeep_mult = 0.25
 	}
 }
 
@@ -306,13 +420,13 @@ trait_nerve_stapled_robo = {
 	prerequisites = { tech_robo_stapling }
 	
 	modifier = {
-		tile_resource_minerals_mult = -0.2
-		tile_resource_food_mult = -0.2
-		tile_resource_energy_mult = -5					# effectively turn annexed synths into fancy robots
-		tile_resource_physics_research_mult = -5
-		tile_resource_engineering_research_mult = -5
-		tile_resource_society_research_mult = -5
-		tile_resource_unity_mult = -5
+		planet_jobs_minerals_produces_mult = -0.2
+		planet_jobs_food_produces_mult = -0.2
+		planet_jobs_energy_produces_mult = -5					# effectively turn annexed synths into fancy robots
+		planet_jobs_physics_research_produces_mult = -5
+		planet_jobs_engineering_research_produces_mult = -5
+		planet_jobs_society_research_produces_mult = -5
+		planet_jobs_unity_produces_mult = -5
 		army_health = -5			# won't put up a fight
 		army_damage_mult = -5
 		species_leader_exp_gain = -10
@@ -336,10 +450,11 @@ trait_psionic_shifters = {
 		army_damage_mult = 0.5
 		army_health = 2
 		
-		tile_resource_energy_mult = 0.5
-		tile_resource_unity_mult = 0.2
-		pop_consumer_goods_mult = -0.7
+		planet_jobs_energy_produces_mult = 0.5
+		planet_jobs_unity_produces_mult = 0.2
+		planet_pops_consumer_goods_upkeep_mult = -0.7
 		pop_food_req_mult = -0.7
+		planet_jobs_food_produces_mult = 3		# to be changed into something smarter
 		leader_age = 50
 		
 		pop_environment_tolerance = 0.05		# still kind of bound to the occasional physical interaction
@@ -364,10 +479,11 @@ trait_psionic_ethereals = {
 		army_damage_mult = 1
 		army_health = 4
 		
-		tile_resource_energy_mult = 1
-		tile_resource_unity_mult = 0.5
-		pop_consumer_goods_mult = -10			# hope this doesn't go negative, else RIP
+		planet_jobs_energy_produces_mult = 1
+		planet_jobs_unity_produces_mult = 0.5
+		planet_pops_consumer_goods_upkeep_mult = -10			# hope this doesn't go negative, else RIP
 		pop_food_req_mult = -10
+		planet_jobs_food_produces_mult = 50		# to be changed into something smarter
 		
 		pop_environment_tolerance = 2			# because screw the physical world
 	}
@@ -416,9 +532,9 @@ trait_presapient_starborn = {
 	icon = "gfx/interface/icons/traits/trait_primitive.dds"
 	modifier = {
 		pop_migration_speed = 1
-		tile_resource_physics_research_mult = 0.2
-		tile_resource_engineering_research_mult = 0.2
-		tile_resource_society_research_mult = 0.2
+		planet_jobs_physics_research_produces_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.2
+		planet_jobs_society_research_produces_mult = 0.2
 	}
 }
 
@@ -431,8 +547,8 @@ trait_presapient_earthbound = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_primitive.dds"
 	modifier = {
-		tile_resource_minerals_mult = 0.1
-		tile_resource_food_mult = 0.5
+		planet_jobs_minerals_produces_mult = 0.1
+		planet_jobs_food_produces_mult = 0.5
 		army_damage_mult = 0.5
 		pop_migration_speed = -0.9
 	}
@@ -447,9 +563,9 @@ trait_presapient_natural_intellectuals = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_primitive.dds"
 	modifier = {
-		tile_resource_physics_research_mult = 0.4
-		tile_resource_engineering_research_mult = 0.4
-		tile_resource_society_research_mult = 0.4
+		planet_jobs_physics_research_produces_mult = 0.4
+		planet_jobs_engineering_research_produces_mult = 0.4
+		planet_jobs_society_research_produces_mult = 0.4
 	}
 }
 
@@ -462,7 +578,7 @@ trait_presapient_brutes = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_primitive.dds"
 	modifier = {
-		tile_resource_minerals_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.25
 		army_damage_mult = 1
 		#army_health = 1
 	}
@@ -477,11 +593,11 @@ trait_presapient_proles = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_primitive.dds"
 	modifier = {
-		tile_resource_minerals_mult = 0.4
-		tile_resource_food_mult = 0.4
-		tile_resource_physics_research_mult = -0.75
-		tile_resource_engineering_research_mult = -0.75
-		tile_resource_society_research_mult = -0.75
+		planet_jobs_minerals_produces_mult = 0.4
+		planet_jobs_food_produces_mult = 0.4
+		planet_jobs_physics_research_produces_mult = -0.75
+		planet_jobs_engineering_research_produces_mult = -0.75
+		planet_jobs_society_research_produces_mult = -0.75
 		pop_government_ethic_attraction = 0.25
 	}
 }
@@ -523,6 +639,7 @@ trait_presapient_irradiated = {
 trait_iconoclastic3 = {
 	cost = -5
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_iconoclastic3.dds"
 	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic2" "trait_iconoclastic1" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -549,12 +666,16 @@ trait_iconoclastic3 = {
 	}
 	modifier = { 
 		pop_government_ethic_attraction = -1
-		tile_resource_unity_mult = -0.5
+		planet_jobs_unity_produces_mult = -0.5
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 trait_iconoclastic2 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_iconoclastic2.dds"
 	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic1" "trait_iconoclastic3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -581,12 +702,16 @@ trait_iconoclastic2 = {
 	}
 	modifier = { 
 		pop_government_ethic_attraction = -0.5
-		tile_resource_unity_mult = -0.25
+		planet_jobs_unity_produces_mult = -0.25
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 trait_iconoclastic1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_iconoclastic1.dds"
 	opposites = { "trait_conformists1" "trait_conformists2" "trait_conformists3" "trait_iconoclastic2" "trait_iconoclastic3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -612,13 +737,17 @@ trait_iconoclastic1 = {
 	}
 	modifier = { 
 		pop_government_ethic_attraction = -0.25
-		tile_resource_unity_mult = -0.1
+		planet_jobs_unity_produces_mult = -0.1
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
 trait_conformists1 = {
 	cost = 1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_conformists1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	
@@ -648,6 +777,7 @@ trait_conformists1 = {
 trait_conformists2 = {
 	cost = 2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_conformists2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
@@ -715,6 +845,7 @@ trait_conformists3 = {
 trait_slow_breeders3 = {
 	cost = -6
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_slow_breeders3.dds"
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders1" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -724,10 +855,14 @@ trait_slow_breeders3 = {
 		#pop_growth_req_mult = 3
 		pop_growth_speed = -0.75
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 trait_slow_breeders2 = {
 	cost = -3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_slow_breeders2.dds"
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders1" "trait_slow_breeders3" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -737,10 +872,14 @@ trait_slow_breeders2 = {
 		#pop_growth_req_mult = 1
 		pop_growth_speed = -0.5
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 trait_slow_breeders1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_slow_breeders1.dds"
 	opposites = { "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" "trait_slow_breeders2" "trait_slow_breeders3" "trait_titanic" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -749,11 +888,15 @@ trait_slow_breeders1 = {
 		#pop_growth_req_mult = 0.5
 		pop_growth_speed = -0.25
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 trait_rapid_breeders1 = {
 	cost = 1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_rapid_breeders1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders2" "trait_rapid_breeders3" }
@@ -765,6 +908,7 @@ trait_rapid_breeders1 = {
 trait_rapid_breeders2 = {
 	cost = 4
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_rapid_breeders2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
@@ -795,57 +939,87 @@ trait_rapid_breeders3 = {
 trait_weak3 = {
 	cost = -4
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_weak3.dds"
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak2" "trait_weak1" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
-		tile_resource_minerals_mult = -0.8
+		#planet_jobs_minerals_produces_mult = -0.8
+		planet_jobs_worker_produces_mult = -0.8			# haven't decided on which one's best yet
 		army_damage_mult = -0.8
+	}
+	slave_cost = {
+		energy = -150
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 trait_weak2 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_weak2.dds"
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak1" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
-		tile_resource_minerals_mult = -0.5
+		#planet_jobs_minerals_produces_mult = -0.5
+		planet_jobs_worker_produces_mult = -0.5
 		army_damage_mult = -0.5
+	}
+	slave_cost = {
+		energy = -100
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 trait_weak1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_weak1.dds"
 	opposites = { "trait_strong1" "trait_strong2" "trait_strong3" "trait_weak2" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_minerals_mult = -0.3
+		#planet_jobs_minerals_produces_mult = -0.3
+		planet_jobs_worker_produces_mult = -0.3
 		army_damage_mult = -0.3
+	}
+	slave_cost = {
+		energy = -50
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
 trait_strong1 = {
 	cost = 1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_strong1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_weak1" "trait_weak2" "trait_weak3" "trait_strong2" "trait_strong3" "trait_frail1" "trait_frail2" "trait_frail3" }
 	
 	modifier = {
 		army_damage_mult = 0.25
-		tile_resource_minerals_mult = 0.10
+		#planet_jobs_minerals_produces_mult = 0.10
+		planet_jobs_worker_produces_mult = 0.1
+	}
+	slave_cost = {
+		energy = 50
 	}
 }
 trait_strong2 = {
 	cost = 3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_strong2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
@@ -853,7 +1027,11 @@ trait_strong2 = {
 	
 	modifier = {
 		army_damage_mult = 0.6
-		tile_resource_minerals_mult = 0.25
+		#planet_jobs_minerals_produces_mult = 0.25
+		planet_jobs_worker_produces_mult = 0.25
+	}
+	slave_cost = {
+		energy = 100
 	}
 }
 trait_strong3 = {
@@ -869,7 +1047,11 @@ trait_strong3 = {
 	
 	modifier = {
 		army_damage_mult = 1.5
-		tile_resource_minerals_mult = 0.5
+		#planet_jobs_minerals_produces_mult = 0.5
+		planet_jobs_worker_produces_mult = 0.5
+	}
+	slave_cost = {
+		energy = 150
 	}
 }
 
@@ -878,18 +1060,19 @@ trait_strong3 = {
 trait_dumb3 = {
 	cost = -10
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_dumb3.dds"
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb2" "trait_dumb1" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.8
-		tile_resource_minerals_mult = -0.25
-		tile_resource_food_mult = -0.25
-		tile_resource_physics_research_mult = -0.9
-		tile_resource_society_research_mult = -0.9
-		tile_resource_engineering_research_mult = -0.9
+		planet_jobs_energy_produces_mult = -0.8
+		planet_jobs_minerals_produces_mult = -0.25
+		planet_jobs_food_produces_mult = -0.25
+		planet_jobs_physics_research_produces_mult = -0.9
+		planet_jobs_society_research_produces_mult = -0.9
+		planet_jobs_engineering_research_produces_mult = -0.9
 		species_leader_exp_gain = -0.9
 		army_damage_mult = -0.5
 	}
@@ -897,18 +1080,19 @@ trait_dumb3 = {
 trait_dumb2 = {
 	cost = -6
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_dumb2.dds"
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb1" "trait_dumb3" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.5
-		tile_resource_minerals_mult = -0.1
-		tile_resource_food_mult = -0.1
-		tile_resource_physics_research_mult = -0.5
-		tile_resource_society_research_mult = -0.5
-		tile_resource_engineering_research_mult = -0.5
+		planet_jobs_energy_produces_mult = -0.5
+		planet_jobs_minerals_produces_mult = -0.1
+		planet_jobs_food_produces_mult = -0.1
+		planet_jobs_physics_research_produces_mult = -0.5
+		planet_jobs_society_research_produces_mult = -0.5
+		planet_jobs_engineering_research_produces_mult = -0.5
 		species_leader_exp_gain = -0.5
 		army_damage_mult = -0.2
 	}
@@ -916,15 +1100,16 @@ trait_dumb2 = {
 trait_dumb1 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_dumb1.dds"
 	opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_dumb2" "trait_dumb3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.25
-		tile_resource_physics_research_mult = -0.25
-		tile_resource_society_research_mult = -0.25
-		tile_resource_engineering_research_mult = -0.25
+		planet_jobs_energy_produces_mult = -0.25
+		planet_jobs_physics_research_produces_mult = -0.25
+		planet_jobs_society_research_produces_mult = -0.25
+		planet_jobs_engineering_research_produces_mult = -0.25
 		species_leader_exp_gain = -0.25
 	}
 }
@@ -933,16 +1118,17 @@ trait_smart1 = {
 	cost = 3
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_smart1.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart2" "trait_smart3" "trait_nerve_stapled" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_energy_mult = 0.25
-		tile_resource_engineering_research_mult = 0.25
-		tile_resource_physics_research_mult = 0.25
-		tile_resource_society_research_mult = 0.25
+		planet_jobs_energy_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
 		species_leader_exp_gain = 0.25
 	}
 }
@@ -950,6 +1136,7 @@ trait_smart2 = {
 	cost = 7
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_smart2.dds"
 	opposites = { "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart1" "trait_smart3" "trait_nerve_stapled" }
@@ -957,10 +1144,10 @@ trait_smart2 = {
 	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
-		tile_resource_energy_mult = 0.6
-		tile_resource_engineering_research_mult = 0.75
-		tile_resource_physics_research_mult = 0.75
-		tile_resource_society_research_mult = 0.75
+		planet_jobs_energy_produces_mult = 0.6
+		planet_jobs_engineering_research_produces_mult = 0.75
+		planet_jobs_physics_research_produces_mult = 0.75
+		planet_jobs_society_research_produces_mult = 0.75
 		species_leader_exp_gain = 1
 	}
 }
@@ -976,12 +1163,12 @@ trait_smart3 = {
 	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
-		tile_resource_energy_mult = 1
-		tile_resource_food_mult = 0.25
-		tile_resource_minerals_mult = 0.25
-		tile_resource_engineering_research_mult = 2
-		tile_resource_physics_research_mult = 2
-		tile_resource_society_research_mult = 2
+		planet_jobs_energy_produces_mult = 1
+		planet_jobs_food_produces_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 2
+		planet_jobs_physics_research_produces_mult = 2
+		planet_jobs_society_research_produces_mult = 2
 		leader_skill_levels = 1
 		species_leader_exp_gain = 2.5
 		army_damage_mult = 0.25
@@ -993,69 +1180,74 @@ trait_smart3 = {
 trait_lazy3 = {
 	cost = -9
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_lazy3.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy1" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.75
-		tile_resource_minerals_mult = -0.75
-		tile_resource_food_mult = -0.75
+		planet_jobs_energy_produces_mult = -0.75
+		planet_jobs_minerals_produces_mult = -0.75
+		planet_jobs_food_produces_mult = -0.75
 	}
 }
 trait_lazy2 = {
 	cost = -6
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_lazy2.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy1" "trait_lazy3" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.5
-		tile_resource_minerals_mult = -0.5
-		tile_resource_food_mult = -0.5
+		planet_jobs_energy_produces_mult = -0.5
+		planet_jobs_minerals_produces_mult = -0.5
+		planet_jobs_food_produces_mult = -0.5
 	}
 }
 trait_lazy1 = {
 	cost = -3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_lazy1.dds"
 	opposites = { "trait_thrifty1" "trait_thrifty2" "trait_thrifty3" "trait_lazy2" "trait_lazy3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_energy_mult = -0.2
-		tile_resource_minerals_mult = -0.2
-		tile_resource_food_mult = -0.2
+		planet_jobs_energy_produces_mult = -0.2
+		planet_jobs_minerals_produces_mult = -0.2
+		planet_jobs_food_produces_mult = -0.2
 	}
 }
 
 trait_thrifty1 = {
 	cost = 3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_thrifty1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		tile_resource_energy_mult = 0.25
-		tile_resource_minerals_mult = 0.25
-		tile_resource_food_mult = 0.25
+		planet_jobs_energy_produces_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.25
+		planet_jobs_food_produces_mult = 0.25
 	}
 	opposites = { "trait_lazy1" "trait_lazy2" "trait_lazy3" "trait_thrifty2" "trait_thrifty3" }
 }
 trait_thrifty2 = {
 	cost = 5
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_thrifty2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
-		tile_resource_energy_mult = 0.5
-		tile_resource_minerals_mult = 0.5
-		tile_resource_food_mult = 0.5
+		planet_jobs_energy_produces_mult = 0.5
+		planet_jobs_minerals_produces_mult = 0.5
+		planet_jobs_food_produces_mult = 0.5
 	}
 	opposites = { "trait_lazy1" "trait_lazy2" "trait_lazy3" "trait_thrifty1" "trait_thrifty3" }
 }
@@ -1070,9 +1262,9 @@ trait_thrifty3 = {
 	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
-		tile_resource_energy_mult = 1.5
-		tile_resource_minerals_mult = 1.5
-		tile_resource_food_mult = 1.5
+		planet_jobs_energy_produces_mult = 1.5
+		planet_jobs_minerals_produces_mult = 1.5
+		planet_jobs_food_produces_mult = 1.5
 	}
 	opposites = { "trait_lazy1" "trait_lazy2" "trait_lazy3" "trait_thrifty2" "trait_thrifty1"}
 }
@@ -1082,6 +1274,7 @@ trait_thrifty3 = {
 trait_badfarmers3 = {
 	cost = -4
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_badfarmers3.dds"
 	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers2" "trait_badfarmers1" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1089,11 +1282,13 @@ trait_badfarmers3 = {
 	
 	modifier = {
 		pop_food_req_mult = 2
+		planet_jobs_food_produces_mult = -0.8
 	}
 }
 trait_badfarmers2 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_badfarmers2.dds"
 	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers1" "trait_badfarmers3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1101,17 +1296,20 @@ trait_badfarmers2 = {
 	
 	modifier = {
 		pop_food_req_mult = 1
+		planet_jobs_food_produces_mult = -0.5
 	}
 }
 trait_badfarmers1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_badfarmers1.dds"
 	opposites = { "trait_agrarian1" "trait_agrarian2" "trait_agrarian3" "trait_badfarmers2" "trait_badfarmers3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
 		pop_food_req_mult = 0.5
+		planet_jobs_food_produces_mult = -0.25
 	}
 }
 
@@ -1119,9 +1317,11 @@ trait_agrarian1 = {
 	cost = 1
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_agrarian1.dds"
 	modifier = {
 		pop_food_req_mult = -0.33
+		planet_jobs_food_produces_mult = 0.5
 	}
 	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian2" "trait_agrarian3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1131,9 +1331,11 @@ trait_agrarian2 = {
 	cost = 2
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_agrarian2.dds"
 	modifier = {
 		pop_food_req_mult = -0.5
+		planet_jobs_food_produces_mult = 1
 	}
 	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian1" "trait_agrarian3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1148,6 +1350,7 @@ trait_agrarian3 = {
 	icon = "gfx/interface/icons/traits/trait_agrarian3.dds"
 	modifier = {
 		pop_food_req_mult = -5
+		planet_jobs_food_produces_mult = 100		# broken beyond belief. I know. I know. I wish the previous modifier still worked
 	}
 	opposites = { "trait_badfarmers1" "trait_badfarmers2" "trait_badfarmers3" "trait_agrarian2" "trait_agrarian1"}
 	allowed_archetypes = { BIOLOGICAL }
@@ -1159,6 +1362,7 @@ trait_agrarian3 = {
 trait_frail3 = {
 	cost = -3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_frail3.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail2" "trait_frail1" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1172,6 +1376,7 @@ trait_frail3 = {
 trait_frail2 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_frail2.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail1" "trait_frail3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1185,6 +1390,7 @@ trait_frail2 = {
 trait_frail1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_frail1.dds"
 	opposites = { "trait_robust1" "trait_robust2" "trait_robust3" "trait_frail2" "trait_frail3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1199,6 +1405,7 @@ trait_robust1 = {
 	cost = 2
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_robust1.dds"
 	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust2" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1212,6 +1419,7 @@ trait_robust2 = {
 	cost = 3
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_robust2.dds"
 	opposites = { "trait_frail1" "trait_frail2" "trait_frail3" "trait_robust1" "trait_robust3" "trait_weak1" "trait_weak2" "trait_weak3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1242,8 +1450,9 @@ trait_robust3 = {
 ### Happiness/Unity 0005H  ############################################################################################################################################################
 
 trait_solitary3 = {
-	cost = -4
+	cost = -5
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_solitary3.dds"
 	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary2" "trait_solitary1" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1270,12 +1479,13 @@ trait_solitary3 = {
 	}
 	modifier = {
 		pop_happiness = -0.2
-		tile_resource_unity_mult = -0.75
+		pop_housing_usage_mult = 3
 	}
 }
 trait_solitary2 = {
-	cost = -2
+	cost = -3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_solitary2.dds"
 	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary1" "trait_solitary3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1301,13 +1511,14 @@ trait_solitary2 = {
 		ethic_fanatic_pacifist
 	}
 	modifier = {
-		tile_resource_unity_mult = -0.5
+		pop_housing_usage_mult = 1
 		pop_happiness = -0.1
 	}
 }
 trait_solitary1 = {
-	cost = -1
+	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_solitary1.dds"
 	opposites = { "trait_communal1" "trait_communal2" "trait_communal3" "trait_solitary2" "trait_solitary3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1332,14 +1543,15 @@ trait_solitary1 = {
 		ethic_fanatic_pacifist
 	}
 	modifier = {
-		tile_resource_unity_mult = -0.25
+		pop_housing_usage_mult = 0.5
 		pop_happiness = -0.05
 	}
 }
 
 trait_communal1 = {
-	cost = 1
+	cost = 2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_communal1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_solitary1" "trait_solitary2" "trait_solitary3" "trait_communal2" "trait_communal3" }
@@ -1366,12 +1578,13 @@ trait_communal1 = {
 	modifier = {
 		pop_happiness = 0.05
 		pop_other_species_happiness = 0.025
-		tile_resource_unity_mult = 0.25
+		pop_housing_usage_mult = -0.2
 	}
 }
 trait_communal2 = {
-	cost = 2
+	cost = 3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_communal2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
@@ -1399,11 +1612,11 @@ trait_communal2 = {
 	modifier = {
 		pop_happiness = 0.1
 		pop_other_species_happiness = 0.05
-		tile_resource_unity_mult = 0.5
+		pop_housing_usage_mult = -0.4
 	}
 }
 trait_communal3 = {
-	cost = 4
+	cost = 5
 	initial = yes
 	randomized = no
 	modification = yes
@@ -1435,7 +1648,7 @@ trait_communal3 = {
 	modifier = {
 		pop_happiness = 0.4
 		pop_other_species_happiness = 0.1
-		tile_resource_unity_mult = 1
+		pop_housing_usage_mult = -0.6
 	}
 }
 
@@ -1444,6 +1657,7 @@ trait_communal3 = {
 trait_repugnant3 = {
 	cost = -3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_repugnant3.dds"
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant2"  "trait_repugnant1" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1456,6 +1670,7 @@ trait_repugnant3 = {
 trait_repugnant2 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_repugnant2.dds"
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant1"  "trait_repugnant3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1468,6 +1683,7 @@ trait_repugnant2 = {
 trait_repugnant1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_repugnant1.dds"
 	opposites = { "trait_charismatic1" "trait_charismatic2" "trait_charismatic3" "trait_repugnant2"  "trait_repugnant3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1480,6 +1696,7 @@ trait_repugnant1 = {
 trait_charismatic1 = {
 	cost = 1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_charismatic1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_repugnant1" "trait_repugnant2" "trait_repugnant3" "trait_charismatic2" "trait_charismatic3" }
@@ -1491,6 +1708,7 @@ trait_charismatic1 = {
 trait_charismatic2 = {
 	cost = 2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_charismatic2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
@@ -1521,6 +1739,7 @@ trait_charismatic3 = {
 trait_fleeting3 = {
 	cost = -4
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_fleeting3.dds"
 	modifier = { leader_age = -40 }
 	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting2" "trait_fleeting1" }
@@ -1530,6 +1749,7 @@ trait_fleeting3 = {
 trait_fleeting2 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_fleeting2.dds"
 	modifier = { leader_age = -20 }
 	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting1" "trait_fleeting3" }
@@ -1539,6 +1759,7 @@ trait_fleeting2 = {
 trait_fleeting1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_fleeting1.dds"
 	modifier = { leader_age = -10 }
 	opposites = { "trait_venerable1" "trait_venerable2" "trait_venerable3" "trait_fleeting2" "trait_fleeting3" }
@@ -1548,6 +1769,7 @@ trait_fleeting1 = {
 trait_venerable1 = {
 	cost = 2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_venerable1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = { leader_age = 50 }
@@ -1556,6 +1778,7 @@ trait_venerable1 = {
 trait_venerable2 = {
 	cost = 3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_venerable2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = { leader_age = 200 }
@@ -1580,61 +1803,66 @@ trait_venerable3 = {
 trait_wasteful3 = {
 	cost = -3
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_wasteful3.dds"
 	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful1" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genetic_resequencing }
 	
 	modifier = {
-		pop_consumer_goods_mult = 1
-		tile_resource_food_mult = -0.25
+		planet_pops_consumer_goods_upkeep_mult = 1
+		planet_jobs_food_produces_mult = -0.25
 	}
 }
 trait_wasteful2 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_wasteful2.dds"
 	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful1" "trait_wasteful3" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
-		pop_consumer_goods_mult = 0.5
-		tile_resource_food_mult = -0.1
+		planet_pops_consumer_goods_upkeep_mult = 0.5
+		planet_jobs_food_produces_mult = -0.1
 	}
 }
 trait_wasteful1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_wasteful1.dds"
 	opposites = { "trait_conservational1" "trait_conservational2" "trait_conservational3" "trait_wasteful2" "trait_wasteful3" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		pop_consumer_goods_mult = 0.25
-		tile_resource_food_mult = -0.05
+		planet_pops_consumer_goods_upkeep_mult = 0.25
+		planet_jobs_food_produces_mult = -0.05
 	}
 }
 
 trait_conservational1 = {
 	cost = 1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_conservational1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational2" "trait_conservational3" }
 	modifier = {
-		pop_consumer_goods_mult = -0.2
+		planet_pops_consumer_goods_upkeep_mult = -0.2
 	}
 }
 trait_conservational2 = {
 	cost = 2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_conservational2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
 	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational1" "trait_conservational3" }
 	modifier = {
-		pop_consumer_goods_mult = -0.4
+		planet_pops_consumer_goods_upkeep_mult = -0.4
 	}
 }
 trait_conservational3 = {
@@ -1648,7 +1876,7 @@ trait_conservational3 = {
 	prerequisites = { tech_genetic_resequencing }
 	opposites = { "trait_wasteful1" "trait_wasteful2" "trait_wasteful3" "trait_conservational2" "trait_conservational1"}
 	modifier = {
-		pop_consumer_goods_mult = -0.75
+		planet_pops_consumer_goods_upkeep_mult = -0.75
 	}
 }
 
@@ -1657,6 +1885,7 @@ trait_conservational3 = {
 trait_weakwilled3 = {
 	cost = -4
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_weakwilled3.dds"
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled1" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1671,6 +1900,7 @@ trait_weakwilled3 = {
 trait_weakwilled2 = {
 	cost = -2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_weakwilled2.dds"
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled1" "trait_weakwilled3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1685,6 +1915,7 @@ trait_weakwilled2 = {
 trait_weakwilled1 = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_weakwilled1.dds"
 	opposites = { "trait_resilient1" "trait_resilient2" "trait_resilient3" "trait_weakwilled2" "trait_weakwilled3" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -1699,6 +1930,7 @@ trait_weakwilled1 = {
 trait_resilient1 = {
 	cost = 1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_resilient1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
@@ -1711,6 +1943,7 @@ trait_resilient1 = {
 trait_resilient2 = {
 	cost = 2
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_resilient2.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
@@ -1745,6 +1978,7 @@ trait_homogenous = {
 	cost = -1
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = yes
 	icon = "gfx/interface/icons/traits/trait_homogenous.dds"
 	allowed_archetypes = { BIOLOGICAL }
@@ -1758,6 +1992,7 @@ trait_homogenous = {
 trait_gifted1 = {
 	cost = 1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_gifted1.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
@@ -1791,6 +2026,7 @@ trait_decadent = {
 
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	
 	opposites = { "trait_hive_mind" }
@@ -1798,9 +2034,10 @@ trait_decadent = {
 	allowed_archetypes = { BIOLOGICAL  MACHINE}
 	
 	modifier = {
-		pop_eff_wo_slaves = -0.2
-		pop_consumer_goods_mult = 0.2
-		pop_happiness = 0.05
+		planet_pops_consumer_goods_upkeep_mult = 0.1
+		
+		pop_cat_worker_happiness = -0.1
+		pop_cat_slave_happiness = -0.1
 	}
 	ai_weight = {
 		weight = 0
@@ -1810,12 +2047,13 @@ trait_decadent = {
 trait_sedentary = {
 	cost = -1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	icon = "gfx/interface/icons/traits/trait_sedentary.dds"
 	opposites = { "trait_nomadic" }
 	allowed_archetypes = { BIOLOGICAL }
 	
 	modifier = {
-		pop_migration_speed = -0.75
+		pop_growth_from_immigration = -0.75
 		pop_resettlement_cost_mult = 1
 	}
 }
@@ -1823,12 +2061,13 @@ trait_sedentary = {
 trait_nomadic = {
 	cost = 1
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	opposites = { "trait_sedentary" }
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_gene_expressions }
 	
 	modifier = {
-		pop_migration_speed = 1
+		pop_growth_from_immigration = 1
 		pop_resettlement_cost_mult = -0.5
 	}
 }
@@ -1922,6 +2161,7 @@ trait_genemod_pest = {
 	cost = 2
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = yes
 	advanced_trait = no
 	icon = "gfx/interface/icons/traits/trait_pest.dds"
@@ -1932,11 +2172,14 @@ trait_genemod_pest = {
 		#pop_growth_req_mult = -0.9
 		pop_growth_speed = 10
 		leader_age = -20
-		tile_resource_engineering_research_mult = -0.15
-		tile_resource_physics_research_mult = -0.15
-		tile_resource_society_research_mult = -0.15
+		planet_jobs_engineering_research_produces_mult = -0.15
+		planet_jobs_physics_research_produces_mult = -0.15
+		planet_jobs_society_research_produces_mult = -0.15
 		}
 		opposites = { "trait_slow_breeders1" "trait_slow_breeders2" "trait_slow_breeders3" "trait_rapid_breeders1" "trait_rapid_breeders2" "trait_rapid_breeders3" }
+	ai_weight = {
+		weight = 0
+	}
 }
 
 trait_irradiated = {
@@ -1963,8 +2206,11 @@ trait_lingua_idumentis = {
 	icon = "gfx/interface/icons/traits/trait_lingua.dds"
 	modifier = {
 		pop_other_species_happiness = -0.1
-		tile_resource_energy_mult = -0.1
-		tile_resource_unity_mult = 0.1
+		planet_jobs_energy_produces_mult = -0.1
+		planet_jobs_unity_produces_mult = 0.1
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -1978,7 +2224,10 @@ trait_olfactory = {
 	icon = "gfx/interface/icons/traits/trait_olfactory.dds"
 	modifier = {
 		pop_other_species_happiness = -0.1
-		tile_resource_unity_mult = 0.1
+		planet_jobs_unity_produces_mult = 0.1
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -1993,9 +2242,12 @@ trait_euphoria = {
 	modifier = {
 		pop_happiness = 0.5
 		army_morale = 4
-		tile_resource_energy_mult = -0.2
-		tile_resource_food_mult = -0.2
-		tile_resource_minerals_mult = -0.2
+		planet_jobs_energy_produces_mult = -0.2
+		planet_jobs_food_produces_mult = -0.2
+		planet_jobs_minerals_produces_mult = -0.2
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2009,6 +2261,9 @@ trait_turtles = {
 	allowed_archetypes = { BIOLOGICAL MACHINE }
 	modifier = {
 		army_defense_health_mult = 2
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2024,6 +2279,9 @@ trait_utterly_terrifying = {
 		army_attack_morale_mult = 1
 		pop_other_species_happiness = -0.5
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 trait_sociology_elitists = {
@@ -2035,10 +2293,13 @@ trait_sociology_elitists = {
 	icon = "gfx/interface/icons/traits/trait_sociology_elitists.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		tile_resource_society_research_mult = 1.5
-		tile_resource_physics_research_mult = -0.75
-		tile_resource_engineering_research_mult = -0.75
+		planet_jobs_society_research_produces_mult = 1.5
+		planet_jobs_physics_research_produces_mult = -0.75
+		planet_jobs_engineering_research_produces_mult = -0.75
 		
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2051,10 +2312,13 @@ trait_engineering_elitists = {
 	icon = "gfx/interface/icons/traits/trait_engineering_elitists.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		tile_resource_society_research_mult = -0.75
-		tile_resource_physics_research_mult = -0.75
-		tile_resource_engineering_research_mult = 1.5
+		planet_jobs_society_research_produces_mult = -0.75
+		planet_jobs_physics_research_produces_mult = -0.75
+		planet_jobs_engineering_research_produces_mult = 1.5
 		
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2067,10 +2331,13 @@ trait_physics_elitists = {
 	icon = "gfx/interface/icons/traits/trait_physics_elitists.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		tile_resource_society_research_mult = -0.75
-		tile_resource_physics_research_mult = 1.5
-		tile_resource_engineering_research_mult = -0.75
+		planet_jobs_society_research_produces_mult = -0.75
+		planet_jobs_physics_research_produces_mult = 1.5
+		planet_jobs_engineering_research_produces_mult = -0.75
 		
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2087,6 +2354,9 @@ trait_independent = {
 			army_defense_health_mult = 2
 			pop_government_ethic_attraction = -0.5
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 trait_timid = {
@@ -2100,6 +2370,9 @@ trait_timid = {
 	modifier = {
 			army_attack_health_mult = -0.75
 			pop_government_ethic_attraction = 0.5
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2125,8 +2398,11 @@ trait_hoarders = {
 	icon = "gfx/interface/icons/traits/trait_hoarders.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		tile_resource_energy_mult = -0.1
-		tile_resource_minerals_mult = -0.1
+		planet_jobs_energy_produces_mult = -0.1
+		planet_jobs_minerals_produces_mult = -0.1
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2140,6 +2416,9 @@ trait_curious = {
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 trait_uncreative = {
@@ -2151,6 +2430,9 @@ trait_uncreative = {
 	icon = "gfx/interface/icons/traits/trait_uncreative.dds"
 	allowed_archetypes = { BIOLOGICAL MCAHINE }
 	modifier = {
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2176,7 +2458,7 @@ trait_subterranean = {
 	allowed_archetypes = { BIOLOGICAL MACHINE }
 	modifier = {
 		army_defense_health_mult = 1
-		tile_resource_minerals_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.25
 	}
 }
 
@@ -2214,7 +2496,10 @@ trait_winter = {
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		#pop_happiness = 0.5
-		pop_food_req_mult = -0.1
+		#pop_food_req_mult = -0.1
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2230,6 +2515,9 @@ trait_broodparasite = {
 	modification = no
 	modifier = {
 		pop_other_species_happiness = 0.1
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -2248,13 +2536,17 @@ trait_titanic = {
 	icon = "gfx/interface/icons/traits/trait_titanic.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_food_req_mult = 5					# still have doubts about this. Kind of cancels out with their very own production
-		tile_resource_minerals_mult = 5
-		tile_resource_food_mult = 5
+	#	pop_food_req_mult = 5					# still have doubts about this. Kind of cancels out with their very own production
+	#	planet_jobs_food_produces_mult = 5
+	
+		planet_jobs_minerals_produces_mult = 5
 		army_damage_mult = 4
 		army_health = 4
 		pop_growth_speed = -0.9
-		pop_consumer_goods_mult = 5
+		planet_pops_consumer_goods_upkeep_mult = 5
+	}
+	slave_cost = {
+		energy = 400
 	}
 }
 trait_tiny = {
@@ -2266,13 +2558,17 @@ trait_tiny = {
 	icon = "gfx/interface/icons/traits/trait_tiny.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_food_req_mult = -0.75
-		tile_resource_minerals_mult = -0.8
-		tile_resource_food_mult = -0.8
+	#	pop_food_req_mult = -0.75
+	#	planet_jobs_food_produces_mult = -0.8
+		
+		planet_jobs_minerals_produces_mult = -0.8
 		army_damage_mult = -0.8
 		army_health = -0.8
 		pop_growth_speed = 4
-		pop_consumer_goods_mult = -0.8
+		planet_pops_consumer_goods_upkeep_mult = -0.8
+	}
+	slave_cost = {
+		energy = -50
 	}
 }
 trait_titanic_machine = {
@@ -2284,13 +2580,11 @@ trait_titanic_machine = {
 	icon = "gfx/interface/icons/traits/trait_titanic.dds"
 	allowed_archetypes = { MACHINE }
 	modifier = {
-		pop_food_req_mult = 5					# still have doubts about this. Kind of cancels out with their very own production
-		tile_resource_minerals_mult = 5
-		tile_resource_food_mult = 5
+		planet_jobs_minerals_produces_mult = 5
 		army_damage_mult = 4
 		army_health = 4
 		pop_growth_speed = -0.9
-		pop_consumer_goods_mult = 5
+		planet_pops_consumer_goods_upkeep_mult = 5
 	}
 }
 trait_tiny_machine = {
@@ -2302,13 +2596,11 @@ trait_tiny_machine = {
 	icon = "gfx/interface/icons/traits/trait_tiny.dds"
 	allowed_archetypes = { MACHINE }
 	modifier = {
-		pop_food_req_mult = -0.75
-		tile_resource_minerals_mult = -0.8
-		tile_resource_food_mult = -0.8
+		planet_jobs_minerals_produces_mult = -0.8
 		army_damage_mult = -0.8
 		army_health = -0.8
 		pop_growth_speed = 4
-		pop_consumer_goods_mult = -0.8
+		planet_pops_consumer_goods_upkeep_mult = -0.8
 	}
 }
 
@@ -2321,8 +2613,9 @@ trait_lithovore = {
 	icon = "gfx/interface/icons/traits/trait_lithovore.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_food_req_mult = -10
-		pop_consumer_goods_mult = 1
+		#pop_food_req_mult = -10
+		planet_jobs_food_produces_mult = 50		# to be changed into something smarter
+		planet_pops_consumer_goods_upkeep_mult = 1
 	}
 }
 
@@ -2335,8 +2628,9 @@ trait_energy_lifeform = {
 	icon = "gfx/interface/icons/traits/trait_energy_lifeform.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_food_req_mult = -10
-		tile_resource_energy_mult = -0.2
+		#pop_food_req_mult = -10
+		planet_jobs_food_produces_mult = 50		# to be changed into something smarter
+		planet_jobs_energy_produces_mult = -0.1
 		army_upkeep_mult = 1
 	}
 }
@@ -2356,16 +2650,17 @@ trait_living_planet = {
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_living_planet.dds"
 	modifier = {
-		tile_resource_energy_mult = 1		# very good at organizing single planet
-		tile_resource_minerals_mult = 1
+		planet_jobs_energy_produces_mult = 1		# very good at organizing single planet
+		planet_jobs_minerals_produces_mult = 1
 		pop_food_req_mult = -10
-		pop_consumer_goods_mult = -10
+		planet_jobs_food_produces_mult = 50		# to be changed into something smarter
+		planet_pops_consumer_goods_upkeep_mult = -10
 		pop_growth_speed = 100
-		tile_resource_unity_mult = 1
+		planet_jobs_unity_produces_mult = 1
 		
-		tile_resource_physics_research_mult = 0.5
-		tile_resource_society_research_mult = 0.5
-		tile_resource_engineering_research_mult = 0.5
+		planet_jobs_physics_research_produces_mult = 0.5
+		planet_jobs_society_research_produces_mult = 0.5
+		planet_jobs_engineering_research_produces_mult = 0.5
 		
 		pop_migration_speed = -10			# no migration
 		pop_resettlement_cost_mult = 100	# no resettlement
@@ -2393,17 +2688,20 @@ trait_genemod_enraged = {			# perfect for making battle thralls out of defeated 
 		pop_government_ethic_attraction = -1
 		pop_happiness = -0.8
 		pop_other_species_happiness = -0.5
-		tile_resource_food_mult = -0.5
-		tile_resource_minerals_mult = -2
-		tile_resource_energy_mult = -2
-		tile_resource_engineering_research_mult = -2
-		tile_resource_physics_research_mult = -2
-		tile_resource_society_research_mult = -2
+		planet_jobs_food_produces_mult = -0.5
+		planet_jobs_minerals_produces_mult = -2
+		planet_jobs_energy_produces_mult = -2
+		planet_jobs_engineering_research_produces_mult = -2
+		planet_jobs_physics_research_produces_mult = -2
+		planet_jobs_society_research_produces_mult = -2
 		army_damage_mult = 0.5
 		army_attack_health_mult = 0.25
 		army_attack_morale_mult = 0.25
 		}
 		opposites = { "trait_smart1" "trait_smart2" "trait_smart3" "trait_nerve_stapled" "trait_genemod_lobotomized" }
+	ai_weight = {
+		weight = 0
+	}
 }
 
 trait_genemod_lobotomized = {
@@ -2416,32 +2714,42 @@ trait_genemod_lobotomized = {
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
-		tile_resource_food_mult = -4
-		tile_resource_minerals_mult = -4
-		tile_resource_energy_mult = -4
-		tile_resource_engineering_research_mult = -4
-		tile_resource_physics_research_mult = -4
-		tile_resource_society_research_mult = -4
-		tile_resource_unity_mult = -4
+		planet_jobs_food_produces_mult = -4
+		planet_jobs_minerals_produces_mult = -4
+		planet_jobs_energy_produces_mult = -4
+		planet_jobs_engineering_research_produces_mult = -4
+		planet_jobs_physics_research_produces_mult = -4
+		planet_jobs_society_research_produces_mult = -4
+		planet_jobs_unity_produces_mult = -4
 		army_damage_mult = -4
 		army_defense_health_mult = -4
 		species_leader_exp_gain = -10
 		leader_age = -20
 		}
 		opposites = { "trait_nerve_stapled" "trait_genemod_enraged" }
+	ai_weight = {
+		weight = 0
+	}
 }
 
 trait_delicious = {
-	cost = 0
+	cost = 2
+	potential_crossbreeding_chance = 0.5
 	initial = no
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL }
 	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
-		pop_food_mult = 1
-		army_damage_mult = -0.25
+		planet_livestock_food_produces_add = 2
+		army_damage_mult = -0.25	# it's because they're fat.
 	}
 		opposites = { "trait_delicious2" }
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = 100
+	}
 }
 
 trait_delicious2 = {
@@ -2452,18 +2760,25 @@ trait_delicious2 = {
 	icon = "gfx/interface/icons/traits/trait_delicious2.dds"
 	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
-		pop_food_mult = 3
-		army_damage_mult = -0.25
+		planet_livestock_food_produces_add = 5
+		army_damage_mult = -0.25		# it's because they're fat.
 		pop_other_species_happiness = 0.1
 	}
 		opposites = { "trait_delicious" }
 	allowed_archetypes = { BIOLOGICAL }
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = 150
+	}
 }
 
 trait_constant_pain = {
 	cost = 0
 	initial = no
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_constant_pain.dds"
 	allowed_archetypes = { BIOLOGICAL }
@@ -2471,13 +2786,20 @@ trait_constant_pain = {
 	modifier = {
 		leader_age = 2000
 		pop_happiness = -4
-		tile_resource_food_mult = -4
-		tile_resource_minerals_mult = -4
-		tile_resource_energy_mult = -4
-		tile_resource_engineering_research_mult = -4
-		tile_resource_physics_research_mult = -4
-		tile_resource_society_research_mult = -4
-		tile_resource_unity_mult = -4
+		planet_jobs_food_produces_mult = -4
+		planet_jobs_minerals_produces_mult = -4
+		planet_jobs_energy_produces_mult = -4
+		planet_jobs_engineering_research_produces_mult = -4
+		planet_jobs_physics_research_produces_mult = -4
+		planet_jobs_society_research_produces_mult = -4
+		planet_jobs_unity_produces_mult = -4
+		leader_skill_levels = -2
+	}
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = -50
 	}
 }
 
@@ -2487,20 +2809,30 @@ trait_nerve_stapled = {
 	allowed_archetypes = { BIOLOGICAL }
 	initial = no
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	advanced_trait = yes
 	forced_happiness = yes
 	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
-		tile_resource_minerals_mult = 0.1
-		tile_resource_food_mult = 0.1
-		tile_resource_energy_mult = -0.25					# nerve-stapling doesn't help cognition 
-		tile_resource_physics_research_mult = -0.75			
-		tile_resource_engineering_research_mult = -0.75	
-		tile_resource_society_research_mult = -20
-		tile_resource_unity_mult = -2
+		#planet_jobs_minerals_produces_mult = 0.1
+		#planet_jobs_food_produces_mult = 0.1
+		#planet_jobs_energy_produces_mult = -0.25					# nerve-stapling doesn't help cognition 
+		#planet_jobs_physics_research_produces_mult = -0.75			
+		#planet_jobs_engineering_research_produces_mult = -0.75	
+		#planet_jobs_society_research_produces_mult = -20
+		#planet_jobs_unity_produces_mult = -2
+		
+		
+		planet_jobs_produces_mult = 0.05			# update seems to regard nerve stapling as a positive thing?
+		
 		army_defense_health_mult = -2.0			# won't put up a fight
 		army_damage_mult = -2.0
 		species_leader_exp_gain = -10
+		leader_skill_levels = -2
+	}
+	custom_tooltip = TRAIT_NERVE_STAPLED_EFFECT
+	slave_cost = {
+		energy = 150
 	}
 }
 
@@ -2510,12 +2842,13 @@ trait_crippled = {
 	allowed_archetypes = { BIOLOGICAL }
 	initial = no
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	advanced_trait = yes
 	icon = "gfx/interface/icons/traits/trait_crippled.dds"
 	prerequisites = { tech_genemod_ai_unfriendly }
 	modifier = {
 		pop_happiness = -0.05
-		tile_resource_minerals_mult = -0.25
+		planet_jobs_minerals_produces_mult = -0.25
 		army_attack_health_mult = -2.0
 		army_damage_mult = -2.0
 		pop_environment_tolerance = -0.05
@@ -2532,6 +2865,7 @@ trait_cybernetic = {
 
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	alters_species_identity = yes
 
@@ -2539,11 +2873,11 @@ trait_cybernetic = {
 	opposites = { trait_strogg }
 	
 	modifier = {
-		tile_resource_physics_research_mult = 0.25
-		tile_resource_society_research_mult = 0.25
-		tile_resource_engineering_research_mult = 0.25
-		tile_resource_minerals_mult = 0.25
-		tile_resource_energy_mult = 0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.25
+		planet_jobs_energy_produces_mult = 0.25
 		
 		army_damage_mult = 0.1
 		army_health = 0.25
@@ -2561,6 +2895,7 @@ trait_precursor = {
 	opposites = { trait_cybernetic  trait_preftl }
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_precursor.dds"
 	allowed_archetypes = { BIOLOGICAL MACHINE }
@@ -2573,6 +2908,7 @@ trait_psionic_start = {
 	opposites = {  trait_ethereal_start trait_preftl}
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_psionic_start.dds"
 	allowed_archetypes = { BIOLOGICAL MACHINE }
@@ -2585,6 +2921,7 @@ trait_ethereal_start = {
 	opposites = {  trait_psionic_start trait_preftl }
 	initial = yes
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_psionic_ethereals.dds"
 	allowed_archetypes = { BIOLOGICAL MACHINE }
@@ -2602,6 +2939,7 @@ trait_jerry_riggers = {
 	opposites = {  }
 	initial = no
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
@@ -2614,6 +2952,7 @@ trait_silent_observers = {
 	allowed_archetypes = { BIOLOGICAL }
 	initial = no
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_silent_observers.dds"
 	modifier = {
@@ -2625,6 +2964,7 @@ trait_strogg = {
 
 	initial = no
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 
 	allowed_archetypes = { BIOLOGICAL MACHINE ROBOT }
@@ -2632,17 +2972,18 @@ trait_strogg = {
 	opposites = { trait_cybernetic }
 	
 	modifier = {
-		tile_resource_physics_research_mult = 0.25
-		tile_resource_society_research_mult = 0.25
-		tile_resource_engineering_research_mult = 0.25
-		tile_resource_minerals_mult = 0.4
-		tile_resource_energy_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.4
+		planet_jobs_energy_produces_mult = 0.1
 		army_damage_mult = 1
 		army_health = 1
 		army_defense_health_mult = 0.5
 		army_defense_damage_mult = 0.5
 		leader_age = 20
 		pop_food_req_mult = -0.75
+		planet_jobs_food_produces_mult = 3		# to be changed into something smarter
 		pop_happiness = -0.4					# only in effect if you liberate a strogg species and then remove hive mind trait
 		pop_other_species_happiness = -0.25		# kind of disgusting
 		
@@ -2656,22 +2997,23 @@ trait_strogg = {
 	# cost = 1
 	# initial = no		# niet vergeten uit te zetten
 	# randomized = no
+	potential_crossbreeding_chance = 1.0
 	# modification = no
 	# icon = "gfx/interface/icons/traits/trait_cheat.dds"
 	# allowed_archetypes = { BIOLOGICAL ROBOT MACHINE }
 	# opposites = {  }
 	# modifier = {
 		# leader_age = 3000
-		# tile_resource_engineering_research_mult = 200
-		# tile_resource_physics_research_mult = 200
-		# tile_resource_society_research_mult = 200
-		# tile_resource_energy_mult = 200
-		# tile_resource_food_mult = 200
-		# tile_resource_minerals_mult = 200
+		# planet_jobs_engineering_research_produces_mult = 200
+		# planet_jobs_physics_research_produces_mult = 200
+		# planet_jobs_society_research_produces_mult = 200
+		# planet_jobs_energy_produces_mult = 200
+		# planet_jobs_food_produces_mult = 200
+		# planet_jobs_minerals_produces_mult = 200
 		# pop_growth_speed = 100
 		# species_leader_exp_gain = 10
 		# army_damage_mult = 10
-		# tile_resource_unity_mult = 10
+		# planet_jobs_unity_produces_mult = 10
 		# pop_happiness = 1
 		# pop_government_ethic_attraction = 2
 		# pop_environment_tolerance = 2
@@ -2683,6 +3025,7 @@ trait_quantity = {
 	opposites = { "trait_quality" "trait_titanic" "trait_tiny" }
 	initial = no
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_quantity.dds"
 	allowed_archetypes = { BIOLOGICAL MACHINE }
@@ -2701,14 +3044,15 @@ trait_quantity = {
 	
 	# initial = yes
 	# randomized = no
+	potential_crossbreeding_chance = 1.0
 	# modification = no
 	# icon = "gfx/interface/icons/traits/trait_cybernetic.dds"
 	# modifier = {
-		# tile_resource_physics_research_mult = 0.25
-		# tile_resource_society_research_mult = 0.25
-		# tile_resource_engineering_research_mult = 0.25
-		# tile_resource_minerals_mult = 0.25
-		# tile_resource_energy_mult = 0.25
+		# planet_jobs_physics_research_produces_mult = 0.25
+		# planet_jobs_society_research_produces_mult = 0.25
+		# planet_jobs_engineering_research_produces_mult = 0.25
+		# planet_jobs_minerals_produces_mult = 0.25
+		# planet_jobs_energy_produces_mult = 0.25
 		# army_damage_mult = 0.25
 		# #army_health = 0.25
 		
@@ -2723,20 +3067,21 @@ trait_quantity = {
 	
 	# initial = yes
 	# randomized = no
+	potential_crossbreeding_chance = 1.0
 	# modification = no
 	# immortal_leaders = yes
 	# icon = "gfx/interface/icons/traits/trait_mechanical.dds"
 	# modifier = {
-		# tile_resource_engineering_research_mult = 1
-		# tile_resource_physics_research_mult = 1
-		# tile_resource_society_research_mult = 1
-		# tile_resource_energy_mult = 1.0
-		# tile_resource_minerals_mult = 1.0
+		# planet_jobs_engineering_research_produces_mult = 1
+		# planet_jobs_physics_research_produces_mult = 1
+		# planet_jobs_society_research_produces_mult = 1
+		# planet_jobs_energy_produces_mult = 1.0
+		# planet_jobs_minerals_produces_mult = 1.0
 		# army_damage_mult = 1.0
 		# #army_health = 1
 		# army_defense_health_mult = 1.0
 		
-		# pop_consumer_goods_mult = -0.5
+		# planet_pops_consumer_goods_upkeep_mult = -0.5
 		# pop_food_req_mult = -100
 		
 		# pop_environment_tolerance = 0.3		# equivalent to mechanical
@@ -2751,6 +3096,7 @@ trait_preftl = {
 	opposites = { trait_precursor trait_psionic_start trait_ethereal_start }
 	initial = no
 	randomized = no
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_preftl.dds"
 	allowed_archetypes = { BIOLOGICAL MACHINE }

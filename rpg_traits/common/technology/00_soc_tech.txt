@@ -1,56 +1,6 @@
-##################
-### TECH COSTS ###
-##################
-#If you change any of these, use replace in files so the values are the same across all files
-
-@tier1cost1 = 500
-@tier1cost2 = 640
-@tier1cost3 = 780
-
-@tier2cost1 = 1000
-@tier2cost2 = 1500
-@tier2cost3 = 2000
-
-@tier3cost1 = 3000
-@tier3cost2 = 4000
-@tier3cost3 = 5000
-
-@tier4cost1 = 6000
-@tier4cost2 = 8000
-@tier4cost3 = 10000
-
-@tier5cost1 = 14000
-@tier5cost2 = 17000
-@tier5cost3 = 20000
-
-####################
-### TECH WEIGHTS ###
-####################
-
-@tier1weight1 = 100
-@tier1weight2 = 95
-@tier1weight3 = 90
-
-@tier2weight1 = 85
-@tier2weight2 = 75
-@tier2weight3 = 70
-
-@tier3weight1 = 65
-@tier3weight2 = 60
-@tier3weight3 = 50
-
-@tier4weight1 = 45
-@tier4weight2 = 40
-@tier4weight3 = 35
-
-@tier5weight1 = 30
-@tier5weight2 = 25
-@tier5weight3 = 20
-
 # ##################
 # Basic army
 # ##################
-
 tech_planetary_defenses = {
 	cost = 0
 	area = society
@@ -62,36 +12,221 @@ tech_planetary_defenses = {
 }
 
 # ##################
+# Trading
+# ##################
+tech_interplanetary_commerce = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { statecraft }
+	tier = 0
+	
+	potential = {
+		is_gestalt = no
+	}
+	
+	## unlock commercial zone building
+}
+
+# Space Trading
+tech_space_trading = {
+	cost = @tier1cost3
+	area = society
+	tier = 1
+	category = { statecraft }
+	prerequisites = { "tech_interplanetary_commerce" }
+	weight = @tier1weight3
+	
+	potential = {
+		is_gestalt = no
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			OR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_prosperity_adopt
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+# Interstellar Economics
+tech_interstellar_economics = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_space_trading" }
+	weight = @tier3weight1
+	
+	potential = {
+		is_gestalt = no
+	}
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_prosperity_adopt
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+# Galactic Markets
+tech_galactic_markets = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = { statecraft }
+	prerequisites = { "tech_colonial_centralization" "tech_interstellar_economics" }
+	weight = @tier4weight1
+	is_rare = yes
+	
+	# unlocks Galactic Stock Exchange empire wonder
+	
+	potential = {
+		is_gestalt = no
+	}
+	
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_communications < 2
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+tech_prescient_data_modeling = {
+	cost = @tier3cost1
+	area = society
+	category = { statecraft }
+	tier = 3
+	is_rare = yes
+	ai_update_type = all
+	weight = 0
+
+	weight_modifier = {
+		factor = 0
+	}
+
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.05
+	}
+}
+
+# ##################
 # Farming
 # ##################
 
 #Eco Simulation
-tech_eco_simulation = {
+tech_industrial_farming = {
 	cost = 0
 	area = society
 	tier = 0
 	category = { biology }
 	start_tech = yes
 	
-	# unlocks farms level 1
+	# unlocks farming districts
 }
 
-#Hydroponics
-tech_hydroponics = {
+#Eco Simulation
+tech_eco_simulation = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
 	category = { biology }
-	prerequisites = { "tech_eco_simulation" }
+	prerequisites = { "tech_industrial_farming" }
 	weight = @tier1weight1
 	
-	# unlocks farms level 2
-	
-	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+	modifier = {
+		planet_farmers_food_produces_mult = 0.1
 	}
 	
 	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			is_machine_empire = yes
+			NOR = { 
+				has_valid_civic = civic_machine_servitor 
+				has_valid_civic = civic_machine_assimilator 	
+				any_owned_planet = {
+					num_districts = { type = district_farming value > 0 }
+				}
+			}
+		}	
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_pacifist
@@ -135,16 +270,25 @@ tech_gene_crops = {
 	area = society
 	tier = 2
 	category = { biology }
-	prerequisites = { "tech_hydroponics" "tech_colonial_centralization"}
+	prerequisites = { "tech_eco_simulation" "tech_colonial_centralization"}
 	weight = @tier2weight3
 	
-	# unlocks farms level 3
-	
-	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+	modifier = {
+		planet_farmers_food_produces_mult = 0.1
 	}
 	
 	weight_modifier = {
+		modifier = {
+			factor = 0.01
+			is_machine_empire = yes
+			NOR = { 
+				has_valid_civic = civic_machine_servitor 
+				has_valid_civic = civic_machine_assimilator 	
+				any_owned_planet = {
+					num_districts = { type = district_farming value > 0 }
+				}
+			}
+		}	
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_pacifist
@@ -191,13 +335,22 @@ tech_nano_vitality_crops = {
 	prerequisites = { "tech_gene_crops" "tech_galactic_administration"}
 	weight = @tier4weight2
 	
-	# unlocks farms level 4
-	
-	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+	modifier = {
+		planet_farmers_food_produces_mult = 0.1
 	}
 	
 	weight_modifier = {
+		modifier = {
+			factor = 0.01
+			is_machine_empire = yes
+			NOR = { 
+				has_valid_civic = civic_machine_servitor 
+				has_valid_civic = civic_machine_assimilator 	
+				any_owned_planet = {
+					num_districts = { type = district_farming value > 0 }
+				}
+			}
+		}	
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_pacifist
@@ -245,7 +398,7 @@ tech_nutrient_replication = {
 	weight = @tier4weight3
 		
 	modifier = {
-		tile_resource_food_mult = 0.15
+		planet_jobs_food_produces_mult = 0.15
 	}
 	
 	potential = {
@@ -253,6 +406,17 @@ tech_nutrient_replication = {
 	}
 	
 	weight_modifier = {
+		modifier = {
+			factor = 0.01
+			is_machine_empire = yes
+			NOR = { 
+				has_valid_civic = civic_machine_servitor 
+				has_valid_civic = civic_machine_assimilator 	
+				any_owned_planet = {
+					num_districts = { type = district_farming value > 0 }
+				}
+			}
+		}	
 		modifier = {
 			factor = 0.50
 			NOR = {
@@ -295,17 +459,157 @@ tech_nutrient_replication = {
 	}
 }
 
+#Hydroponics
+tech_hydroponics = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { biology }	
+	prerequisites = { "tech_industrial_farming" }
+	weight = @tier1weight1
+		
+	# unlock hydroponics buildings
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 0.01
+			is_machine_empire = yes
+			NOR = { 
+				has_valid_civic = civic_machine_servitor 
+				has_valid_civic = civic_machine_assimilator 	
+				any_owned_planet = {
+					num_districts = { type = district_farming value > 0 }
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_biology"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+#Food Processing
+tech_food_processing_1 = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { biology }	
+	prerequisites = { "tech_eco_simulation" }
+	weight = @tier1weight2
+		
+	# unlock food processing facility
+	
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			OR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+			}
+		}
+		modifier = {
+			factor = 0.01
+			is_machine_empire = yes
+			NOR = { 
+				has_valid_civic = civic_machine_servitor 
+				has_valid_civic = civic_machine_assimilator 	
+				any_owned_planet = {
+					num_districts = { type = district_farming value > 0 }
+				}
+			}
+		}		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_biology"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+#Advanced Food Processing
+tech_food_processing_2 = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { biology }	
+	prerequisites = { "tech_food_processing_1" "tech_colonial_centralization" }
+	weight = @tier3weight1
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 0.01
+			is_machine_empire = yes
+			NOR = { 
+				has_valid_civic = civic_machine_servitor 
+				has_valid_civic = civic_machine_assimilator 	
+				any_owned_planet = {
+					num_districts = { type = district_farming value > 0 }
+				}
+			}
+		}	
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_biology"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
 # ##################
 # Biolab and Colonization
 # ##################
 
-#Bio Lab 1
-tech_biolab_1 = {
+# Biodiversity Studies
+tech_society_1 = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
 	category = { biology }
 	weight = @tier1weight1
+	
+	modifier = {
+		planet_researchers_society_research_produces_mult = 0.2
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -349,14 +653,18 @@ tech_biolab_1 = {
 	}
 }
 
-#Bio Lab 2
-tech_biolab_2 = {
+# Xenobiology
+tech_society_2 = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { biology }
-	prerequisites = { "tech_biolab_1" "tech_colonial_centralization"}
+	prerequisites = { "tech_society_1" }
 	weight = @tier2weight3
+	
+	modifier = {
+		planet_researchers_society_research_produces_mult = 0.2
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -396,14 +704,18 @@ tech_biolab_2 = {
 	}
 }
 
-#Bio Lab 3
-tech_biolab_3 = {
+# Secrets of Life
+tech_society_3 = {
 	cost = @tier4cost2
 	area = society
 	tier = 4
 	category = { biology }	
-	prerequisites = { "tech_biolab_2" "tech_galactic_administration" }
+	prerequisites = { "tech_society_2" }
 	weight = @tier4weight2
+	
+	modifier = {
+		planet_researchers_society_research_produces_mult = 0.2
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -451,6 +763,10 @@ tech_alien_life_studies = {
 	category = { biology }
 	weight = @tier1weight2
 	
+	potential = {
+		is_regular_empire = yes
+	}
+	
 	weight_modifier = {
 		modifier = {
 			factor = 2
@@ -471,12 +787,7 @@ tech_alien_life_studies = {
 			factor = 0
 			NOT = {
 				any_owned_planet = {
-					any_tile = {
-						has_resource = {
-							type = sr_alien_pets
-							amount > 0
-						}
-					}
+					has_deposit = d_alien_pets_deposit
 				}
 			}
 		}		
@@ -531,7 +842,7 @@ tech_colonization_1 = {
 }
 
 #Atmospheric Filtering
-tech_colonization_2_rpg = {
+tech_colonization_2 = {
 	cost = @tier1cost3
 	area = society
 	tier = 2
@@ -540,12 +851,12 @@ tech_colonization_2_rpg = {
 	weight = @tier1weight3
 	
 	modifier = {
-		pop_environment_tolerance = 0.025
+		pop_environment_tolerance = 0.05
 	}
 	
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}		
@@ -581,7 +892,7 @@ tech_colonization_2_rpg = {
 }
 
 #Hostile Environment Adaptation
-tech_colonization_3_rpg = {
+tech_colonization_3 = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
@@ -590,12 +901,12 @@ tech_colonization_3_rpg = {
 	weight = @tier2weight3
 	
 	modifier = {
-		pop_environment_tolerance = 0.025
+		pop_environment_tolerance = 0.05
 	}
 	
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}		
@@ -631,7 +942,7 @@ tech_colonization_3_rpg = {
 }
 
 #Foreign Soil Enrichment
-tech_colonization_4_rpg = {
+tech_colonization_4 = {
 	cost = @tier3cost3
 	area = society
 	tier = 3
@@ -640,12 +951,12 @@ tech_colonization_4_rpg = {
 	weight = @tier3weight3
 	
 	modifier = {
-		pop_environment_tolerance = 0.025
+		pop_environment_tolerance = 0.05
 	}
 	
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}		
@@ -681,7 +992,7 @@ tech_colonization_4_rpg = {
 }
 
 #Eco-Integration Studies
-tech_colonization_5_rpg = {
+tech_colonization_5 = {
 	cost = @tier4cost3
 	area = society
 	tier = 4
@@ -690,12 +1001,12 @@ tech_colonization_5_rpg = {
 	weight = @tier4weight3
 	
 	modifier = {
-		pop_environment_tolerance = 0.025
+		pop_environment_tolerance = 0.05
 	}
 	
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}		
@@ -746,7 +1057,7 @@ tech_tomb_world_adaption = {
 	
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}		
@@ -786,42 +1097,6 @@ tech_tomb_world_adaption = {
 	}
 }
 
-# Space Trading
-tech_space_trading = {
-	cost = @tier1cost3
-	area = society
-	tier = 1
-	category = { statecraft }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight3
-	
-	weight_modifier = {
-		factor = 2
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_prosperity_adopt
-		}
-	}
-	
-	ai_weight = {
-		factor = 2
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-	}
-}
-
 #Frontier Health
 tech_frontier_health = {
 	cost = @tier1cost2
@@ -832,7 +1107,7 @@ tech_frontier_health = {
 	weight = @tier1weight2
 	
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+		is_gestalt = no
 	}
 	
 	weight_modifier = {
@@ -861,11 +1136,17 @@ tech_frontier_hospital = {
 	weight = @tier2weight3
 	
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+		is_gestalt = no
 	}
 	
 	weight_modifier = {
-		factor = 2
+		modifier = {
+			factor = 10
+			OR = {
+				has_technology = tech_mine_exotic_gases
+				has_technology = tech_exotic_gases
+			}
+		}
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_harmony_adopt
@@ -880,7 +1161,7 @@ tech_frontier_hospital = {
 	}
 }
 
-tech_tb_mountain_range = {
+tech_mountain_range = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
@@ -889,10 +1170,10 @@ tech_tb_mountain_range = {
 	weight = @tier2weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -911,9 +1192,7 @@ tech_tb_mountain_range = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_mountain_range"
-					}
+					has_deposit = "d_mountain_range"
 				}
 			}
 		}
@@ -938,9 +1217,7 @@ tech_tb_mountain_range = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_mountain_range"
-					}
+					has_deposit = "d_mountain_range"
 				}
 			}
 		}
@@ -958,7 +1235,7 @@ tech_tb_mountain_range = {
 	}
 }
 
-tech_tb_volcano = {
+tech_volcano = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
@@ -967,10 +1244,10 @@ tech_tb_volcano = {
 	weight = @tier2weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -989,9 +1266,7 @@ tech_tb_volcano = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_active_volcano"
-					}
+					has_deposit = "d_active_volcano"
 				}
 			}
 		}
@@ -1016,9 +1291,7 @@ tech_tb_volcano = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_active_volcano"
-					}
+					has_deposit = "d_active_volcano"
 				}
 			}
 		}
@@ -1036,7 +1309,7 @@ tech_tb_volcano = {
 	}
 }
 
-tech_tb_dangerous_wildlife = {
+tech_dangerous_wildlife = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
@@ -1045,11 +1318,11 @@ tech_tb_dangerous_wildlife = {
 	weight = @tier2weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -1068,9 +1341,7 @@ tech_tb_dangerous_wildlife = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_dangerous_wildlife"
-					}
+					has_deposit = d_dangerous_wildlife_blocker
 				}
 			}
 		}
@@ -1095,9 +1366,7 @@ tech_tb_dangerous_wildlife = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_dangerous_wildlife"
-					}
+					has_deposit = d_dangerous_wildlife_blocker
 				}
 			}
 		}
@@ -1115,7 +1384,7 @@ tech_tb_dangerous_wildlife = {
 	}
 }
 
-tech_tb_dense_jungle = {
+tech_dense_jungle = {
 	cost = @tier1cost2
 	area = society
 	tier = 1
@@ -1124,10 +1393,10 @@ tech_tb_dense_jungle = {
 	weight = @tier1weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -1146,9 +1415,7 @@ tech_tb_dense_jungle = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_dense_jungle"
-					}
+					has_deposit = "d_dense_jungle"
 				}
 			}
 		}
@@ -1173,9 +1440,7 @@ tech_tb_dense_jungle = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_dense_jungle"
-					}
+					has_deposit = "d_dense_jungle"
 				}
 			}
 		}
@@ -1193,7 +1458,7 @@ tech_tb_dense_jungle = {
 	}
 }
 
-tech_tb_quicksand_basin = {
+tech_quicksand_basin = {
 	cost = @tier1cost2
 	area = society
 	tier = 1
@@ -1202,10 +1467,10 @@ tech_tb_quicksand_basin = {
 	weight = @tier1weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -1224,9 +1489,7 @@ tech_tb_quicksand_basin = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_quicksand_basin"
-					}
+					has_deposit = "d_quicksand_basin"
 				}
 			}
 		}
@@ -1251,9 +1514,7 @@ tech_tb_quicksand_basin = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_quicksand_basin"
-					}
+					has_deposit = "d_quicksand_basin"
 				}
 			}
 		}
@@ -1271,7 +1532,7 @@ tech_tb_quicksand_basin = {
 	}
 }
 
-tech_tb_noxious_swamp = {
+tech_noxious_swamp = {
 	cost = @tier1cost2
 	area = society
 	tier = 1
@@ -1280,10 +1541,10 @@ tech_tb_noxious_swamp = {
 	weight = @tier1weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -1302,9 +1563,7 @@ tech_tb_noxious_swamp = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_noxious_swamp"
-					}
+					has_deposit = "d_noxious_swamp"
 				}
 			}
 		}
@@ -1329,9 +1588,7 @@ tech_tb_noxious_swamp = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_noxious_swamp"
-					}
+					has_deposit = "d_noxious_swamp"
 				}
 			}
 		}
@@ -1349,7 +1606,7 @@ tech_tb_noxious_swamp = {
 	}
 }
 
-tech_tb_massive_glacier = {
+tech_massive_glacier = {
 	cost = @tier1cost2
 	area = society
 	tier = 1
@@ -1358,10 +1615,10 @@ tech_tb_massive_glacier = {
 	weight = @tier1weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -1380,9 +1637,7 @@ tech_tb_massive_glacier = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_massive_glacier"
-					}
+					has_deposit = "d_massive_glacier"
 				}
 			}
 		}
@@ -1407,9 +1662,7 @@ tech_tb_massive_glacier = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_massive_glacier"
-					}
+					has_deposit = "d_massive_glacier"
 				}
 			}
 		}
@@ -1427,7 +1680,7 @@ tech_tb_massive_glacier = {
 	}
 }
 
-tech_tb_toxic_kelp = {
+tech_toxic_kelp = {
 	cost = @tier1cost2
 	area = society
 	tier = 1
@@ -1436,10 +1689,10 @@ tech_tb_toxic_kelp = {
 	weight = @tier1weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -1458,9 +1711,7 @@ tech_tb_toxic_kelp = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_toxic_kelp"
-					}
+					has_deposit = "d_toxic_kelp"
 				}
 			}
 		}
@@ -1485,9 +1736,7 @@ tech_tb_toxic_kelp = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_toxic_kelp"
-					}
+					has_deposit = "d_toxic_kelp"
 				}
 			}
 		}
@@ -1505,7 +1754,7 @@ tech_tb_toxic_kelp = {
 	}
 }
 
-tech_tb_deep_sinkhole = {
+tech_deep_sinkhole = {
 	cost = @tier1cost2
 	area = society
 	tier = 1
@@ -1514,10 +1763,10 @@ tech_tb_deep_sinkhole = {
 	weight = @tier1weight2
 	
 	weight_groups = {
-		tile_blockers
+		deposit_blockers
 	}
 	mod_weight_if_group_picked = {
-		tile_blockers = 0.5
+		deposit_blockers = 0.5
 	}
 	
 	weight_modifier = {
@@ -1536,9 +1785,7 @@ tech_tb_deep_sinkhole = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_deep_sinkhole"
-					}
+					has_deposit = "d_deep_sinkhole"
 				}
 			}
 		}
@@ -1563,9 +1810,7 @@ tech_tb_deep_sinkhole = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_deep_sinkhole"
-					}
+					has_deposit = "d_deep_sinkhole"
 				}
 			}
 		}
@@ -1599,11 +1844,8 @@ tech_terrestrial_sculpting = {
 		build_terraform_station
 	}
 	
-	modifier = {
-		max_energy = 5000
-	}
-	
 	weight_modifier = {
+		factor = 1.5 	# terraforming needs to be a bit more common
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_expansion_adopt
@@ -1628,56 +1870,6 @@ tech_terrestrial_sculpting = {
 	}	
 }
 
-#tech_atmospheric_manipulation = {
-#	cost = @tier2cost3
-#	area = society
-#	tier = 2
-#	category = { new_worlds }
-#	prerequisites = { "tech_terrestrial_sculpting" }
-#	weight = @tier2weight3
-#	
-#	# unlocks additional terraforming-options
-#	
-#	prereqfor_desc = {
-#		diplo_action = {
-#			title = "TECH_UNLOCK_TERRAFORMING_TEMP_CHANGE_TITLE"
-#			desc = "TECH_UNLOCK_TERRAFORMING_TEMP_CHANGE_DESC"
-#		}
-#	}
-#	
-#	modifier = {
-#		max_energy = 5000
-#	}
-#	
-#	weight_modifier = {
-#		modifier = {
-#			factor = 1.25
-#			has_tradition = tr_expansion_adopt
-#		}
-#		modifier = {
-#			factor = 1.25
-#			research_leader = {
-#				area = society
-#				has_trait = "leader_trait_expertise_new_worlds"
-#			}
-#		}
-#		modifier = {
-#			factor = 3
-#			has_ascension_perk = ap_world_shaper
-#		}
-#	}
-#	
-#	ai_weight = {
-#		modifier = {
-#			factor = 1.25
-#			research_leader = {
-#				area = society
-#				has_trait = "leader_trait_expertise_new_worlds"
-#			}
-#		}
-#	}
-#}
-
 #Ecological Adaptation
 tech_ecological_adaptation = {
 	cost = @tier3cost2
@@ -1691,10 +1883,6 @@ tech_ecological_adaptation = {
 		terraform_inhabited
 	}
 	
-	modifier = {
-		max_energy = 5000
-	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1706,10 +1894,6 @@ tech_ecological_adaptation = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
-		}
-		modifier = {
-			factor = 3
-			has_ascension_perk = ap_world_shaper
 		}
 	}
 	
@@ -1735,10 +1919,6 @@ tech_climate_restoration = {
 	
 	# unlocks additional terraforming-options
 	
-	modifier = {
-		max_energy = 5000
-	}
-	
 	prereqfor_desc = {
 		diplo_action = {
 			title = "TECH_UNLOCK_TERRAFORMING_NUKED_CHANGE_TITLE"
@@ -1757,10 +1937,6 @@ tech_climate_restoration = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
-		}
-		modifier = {
-			factor = 3
-			has_ascension_perk = ap_world_shaper
 		}
 	}
 	
@@ -2181,7 +2357,6 @@ tech_gene_seed_purification = {
 	potential = {
 		NOT = { has_authority = auth_machine_intelligence }
 	}	
-	
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -2409,6 +2584,10 @@ tech_gene_tailoring = {
 		}
 		modifier = {
 			factor = 1.25
+					 
+	  
+			  
+				
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
@@ -2454,7 +2633,6 @@ tech_glandular_acclimation = {
 	feature_flags = {
 		habitability_gene_modding
 	}
-	
 	potential = {
 		#OR = {
 		#	NOT = { has_authority = auth_machine_intelligence }
@@ -2560,7 +2738,6 @@ tech_gene_expressions = {
 		#	has_civic = civic_machine_servitor
 		#}
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -2709,7 +2886,6 @@ tech_capacity_boosters = {
 	potential = {
 		NOT = { has_authority = auth_machine_intelligence }
 	}
-	
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
@@ -2816,7 +2992,7 @@ tech_doctrine_fleet_size_1 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -2868,7 +3044,7 @@ tech_doctrine_fleet_size_2 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -2920,7 +3096,7 @@ tech_doctrine_fleet_size_3 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -2972,7 +3148,7 @@ tech_doctrine_fleet_size_4 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -3024,7 +3200,7 @@ tech_doctrine_fleet_size_5 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -3102,7 +3278,7 @@ tech_refit_standards = {
 	
 	modifier = { 
 		country_ship_upgrade_cost_mult = -0.20
-		ship_upkeep_mult = -0.05
+		ships_upkeep_mult = -0.05
 	}
 	
 	weight_modifier = {
@@ -3227,7 +3403,7 @@ tech_doctrine_navy_size_1 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -3260,7 +3436,7 @@ tech_doctrine_navy_size_2 = {
 	}
 	
 	weight_modifier = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -3279,6 +3455,7 @@ tech_doctrine_navy_size_2 = {
 	}
 	
 	ai_weight = {
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -3330,6 +3507,7 @@ tech_doctrine_navy_size_3 = {
 	}
 	
 	ai_weight = {
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -3381,6 +3559,7 @@ tech_doctrine_navy_size_4 = {
 	}
 	
 	ai_weight = {
+		factor = 10
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_militarist
@@ -3411,6 +3590,10 @@ tech_centralized_command = {
 	weight = @tier2weight2
 	
 	# unlocks military academy
+	
+	modifier = { 
+		country_occupation_armies_add = 2
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -3512,6 +3695,8 @@ tech_ground_defense_planning = {
 	
 	modifier = {
 		army_defense_damage_mult = 0.33
+		show_only_custom_tooltip = no
+		custom_tooltip = ADD_NAVAL_CAPACITY_FROM_SOLDIERS
 	}
 	
 	weight_modifier = {
@@ -3629,7 +3814,7 @@ tech_psionic_theory = {
 	}
 	
 	modifier = {
-		country_resource_unity_mult = 0.05
+		country_unity_produces_mult = 0.05
 	}
 	
 	weight_modifier = {
@@ -3642,38 +3827,38 @@ tech_psionic_theory = {
 			}
 		}
 		modifier = {
-			factor = 1.10
-			research_leader = {
-				area = society
-				has_level > 2
-				has_trait = "leader_trait_expertise_psionics"
-			}
-		}
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = society
-				has_level > 3
-				has_trait = "leader_trait_expertise_psionics"
-			}
-		}
-		modifier = {
-			factor = 2
-			research_leader = {
-				area = society
-				has_level > 4
-				has_trait = "leader_trait_expertise_psionics"
-			}
-		}
-		modifier = {
 			factor = 2
 			has_ethic = "ethic_fanatic_spiritualist"
 		}
 		modifier = {
-			factor = 5
+			factor = 2
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 2
+			any_owned_pop = {
+				pop_has_trait = trait_psionic
+			}
+		}
+		modifier = {
+			factor = 1.25
+			any_owned_pop = {
+				pop_has_trait = trait_latent_psionic
+			}
+			NOT = {
+				any_owned_pop = {
+					pop_has_trait = trait_psionic
+				}
 			}
 		}
 		modifier = {
@@ -3683,10 +3868,16 @@ tech_psionic_theory = {
 					has_ethic = "ethic_materialist"
 					has_ethic = "ethic_fanatic_materialist"
 				}
-				NOT = {
+				NOR = {
 					research_leader = {
 						area = society
 						has_trait = "leader_trait_expertise_psionics"
+					}
+					any_owned_pop = {
+						pop_has_trait = trait_psionic
+					}
+					any_owned_pop = {
+						pop_has_trait = trait_latent_psionic
 					}
 				}
 			}
@@ -4085,6 +4276,7 @@ tech_interstellar_campaigns = {
 	
 	modifier = {
 		country_claim_influence_cost_mult = -0.1
+		country_war_exhaustion_mult = -0.1
 	}
 	
 	weight_modifier = {
@@ -4150,6 +4342,7 @@ tech_galactic_campaigns = {
 	
 	modifier = {
 		country_claim_influence_cost_mult = -0.1
+		country_war_exhaustion_mult = -0.1
 	}
 	
 	weight_modifier = {
@@ -4237,7 +4430,7 @@ tech_planetary_unification = {
 	# also unlocks planet-happiness edict
 	
 	modifier = {
-		country_resource_unity_add = 2
+		country_base_unity_produces_add = 2
 	}
 	
 	weight_modifier = {
@@ -4321,12 +4514,12 @@ tech_colonial_centralization = {
 
 #Galactic Administration
 tech_galactic_administration = {
-	cost = @tier4cost1
+	cost = @tier3cost3
 	area = society
-	tier = 4
+	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_colonial_centralization" }
-	weight = @tier4weight1
+	weight = @tier3weight3
 	
 	gateway = capital	# unlocks Empire Capital-Complex
 	
@@ -4347,60 +4540,6 @@ tech_galactic_administration = {
 	
 	ai_weight = {
 		factor = 10
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-	}
-}
-
-tech_galactic_markets = {
-	cost = @tier4cost1
-	area = society
-	tier = 4
-	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" }
-	weight = @tier4weight1
-	is_rare = yes
-	
-	# unlocks Galactic Stock Exchange empire wonder
-	
-	potential = {
-		NOT = { has_authority = auth_machine_intelligence	}
-	}
-	
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.25
-			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_statecraft"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_communications < 2
-		}
-	}
-	
-	ai_weight = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -4467,37 +4606,19 @@ tech_subdermal_stimulation = {
 	}
 }
 
-#Galactic Benevolence
-tech_galactic_benevolence = {
-	cost = @tier4cost1
+#Global Manufacturing
+tech_global_production_strategy = {
+	cost = @tier3cost1
 	area = society
-	tier = 4
+	tier = 3
 	category = { statecraft }	
-	prerequisites = { "tech_colonial_centralization" }
-	weight = @tier4weight1
-	is_rare = yes
+	prerequisites = { "tech_alloys_1" "tech_luxuries_1" "tech_colonial_centralization" }
+	weight = @tier3weight1
 	
-	# unlocks Ministry of Benevolence empire wonder
-	
-	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness	}
-	}
+	# unlocks Ministry of Production
 	
 	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.25
-			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_statecraft"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
-			}
-		}
+		factor = 1.5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -4508,6 +4629,7 @@ tech_galactic_benevolence = {
 	}
 	
 	ai_weight = {
+		factor = 1.5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -4528,8 +4650,8 @@ tech_adaptive_bureaucracy = {
 	weight = @tier1weight2
 	
 	modifier = {
-		country_leader_cap = 1
 		country_leader_pool_size = 1
+		leaders_cost_mult = -0.20
 	}
 	
 	weight_modifier = {
@@ -4578,7 +4700,7 @@ tech_colonial_bureaucracy = {
 	weight = @tier2weight1
 	
 	modifier = {
-		country_core_sector_system_cap = 1
+		country_admin_cap_add = 20
 	}
 	
 	weight_modifier = {
@@ -4627,7 +4749,7 @@ tech_galactic_bureaucracy = {
 	weight = @tier3weight1
 	
 	modifier = {
-		country_core_sector_system_cap = 1
+		country_admin_cap_add = 20
 	}
 	
 	weight_modifier = {
@@ -4681,7 +4803,7 @@ tech_living_state = {
 	}
 	
 	modifier = {
-		faction_influence_add = 1
+		pop_factions_produces_add = 1
 	}
 	
 	weight_modifier = {
@@ -4739,8 +4861,8 @@ tech_collective_self = {
 	weight = @tier3weight3
 	
 	modifier = {
-		country_leader_cap = 2
-		leader_cost = -0.20
+		leader_skill_levels = 1
+		leaders_upkeep_mult = -0.10
 	}
 	
 	potential = {
@@ -4805,7 +4927,7 @@ tech_autonomous_agents = {
 	}
 	
 	modifier = {
-		country_resource_influence_add = 1
+		country_base_influence_produces_add = 1
 	}
 	
 	weight_modifier = {
@@ -4856,8 +4978,8 @@ tech_embodied_dynamism = {
 	weight = @tier3weight3
 	
 	modifier = {
-		country_leader_cap = 2
-		leader_cost = -0.20
+		leader_skill_levels = 1
+		leaders_upkeep_mult = -0.10
 	}
 	
 	potential = {
@@ -4917,10 +5039,6 @@ tech_neural_implants = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 2
-			any_owned_pop = { is_enslaved = yes }
-		}
-		modifier = {
 			factor = 1.5
 			count_owned_pops = {
 				limit = {
@@ -4956,7 +5074,10 @@ tech_neural_implants = {
 		}
 		modifier = {
 			factor = 0.0
-			allows_slavery = no
+			OR = {
+				allows_slavery = no
+				NOT = { any_owned_pop = { is_enslaved = yes } }
+			}
 		}
 	}
 	
@@ -4984,15 +5105,15 @@ tech_neural_implants = {
 
 #Artificial Moral Codes
 tech_artificial_moral_codes = {
-	cost = @tier3cost1
+	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { statecraft }
-	weight = @tier3weight1
+	weight = @tier2weight3
 	
 	modifier = {
-		edict_cost = -0.15
-		pop_slave_resource_output = 0.05
+		planet_crime_mult = -0.15
+		planet_amenities_mult = 0.05
 	}
 	
 	potential = {
@@ -5000,6 +5121,7 @@ tech_artificial_moral_codes = {
 	}
 	
 	weight_modifier = {
+		factor = 1.5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -5030,27 +5152,20 @@ tech_synthetic_thought_patterns = {
 	weight = @tier3weight3
 	
 	modifier = {
-		pop_resettlement_cost_mult = -0.15
-		pop_robot_production_output = 0.05
+		planet_jobs_produces_mult = 0.05
 	}
 	
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
+		is_gestalt = no
 	}
 	
 	weight_modifier = {
+		factor = 1.5
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_spark_of_genius"
 			}
 		}
 	}
@@ -5066,6 +5181,224 @@ tech_synthetic_thought_patterns = {
 	}
 }
 
+#Unity of Purpose
+tech_unity_of_purpose = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight3
+	
+	modifier = {
+		planet_crime_no_happiness_mult = -0.15
+		planet_amenities_no_happiness_mult = 0.05
+	}
+	
+	potential = {
+		is_gestalt = yes
+	}
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+# Collective Production Methods
+tech_collective_production_methods = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_unity_of_purpose" }
+	weight = @tier3weight1
+	
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+	potential = {
+		has_authority = auth_hive_mind	
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+# Resource Processing Algorithms
+tech_resource_processing_algorithms = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_unity_of_purpose" }	
+	weight = @tier3weight1
+	
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+	potential = {
+		has_authority = auth_machine_intelligence
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+# ##################
+# Amenities
+# ##################
+tech_holo_entertainment = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { statecraft }
+	tier = 0
+	
+	potential = {
+		is_gestalt = no
+	}
+	
+	## unlock holo-theatres building
+}
+
+tech_hyper_entertainment_forum = {
+	cost = @tier1cost3
+	area = society
+	category = { statecraft }
+	tier = 1
+	prerequisites = { "tech_holo_entertainment" }
+	weight = @tier1weight3
+	
+	potential = {
+		is_gestalt = no
+	}
+
+	weight_modifier = {	
+		modifier = {
+			factor = 10
+			OR = {
+				has_technology = tech_mine_exotic_gases
+				has_technology = tech_exotic_gases
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+tech_paradise_dome = {
+	cost = @tier3cost1
+	area = society
+	category = { statecraft }
+	tier = 3
+	prerequisites = { "tech_housing_1" }
+	weight = @tier3weight1
+	
+	potential = {
+		OR = {
+			is_gestalt = no
+			has_valid_civic = civic_machine_servitor
+		}
+	}
+
+	weight_modifier = {	
+		modifier = {
+			factor = 10
+			OR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+
 # ##################
 # Unity
 # ##################
@@ -5076,6 +5409,10 @@ tech_cultural_heritage = {
 	start_tech = yes
 	category = { statecraft }
 	tier = 0
+	
+	potential = {
+		is_hive_empire = no
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -5099,21 +5436,29 @@ tech_cultural_heritage = {
 }
 
 tech_heritage_site = {
-	cost = @tier1cost2
+	cost = @tier2cost2
 	area = society
 	category = { statecraft }
-	tier = 1
+	tier = 2
 	prerequisites = { "tech_cultural_heritage" }
-	weight = @tier1weight2
+	weight = @tier2weight2
+	
+	potential = {
+		NOR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist		
+			has_valid_civic = civic_machine_servitor
+		}
+	}
 
 	weight_modifier = {
 		modifier = {
-			factor = 0
+			factor = 10
 			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
 			}
-		}		
+		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -5135,21 +5480,22 @@ tech_heritage_site = {
 }
 
 tech_hypercomms_forum = {
-	cost = @tier2cost3
+	cost = @tier3cost2
 	area = society
 	category = { statecraft }
-	tier = 2
+	tier = 3
 	prerequisites = { "tech_heritage_site" "tech_colonial_centralization" }
-	weight = @tier2weight3
+	weight = @tier3weight2
+		
+	potential = {
+		NOR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist		
+			has_valid_civic = civic_machine_servitor
+		}
+	}
 	
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
-		}	
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -5174,18 +5520,19 @@ tech_autocurating_vault = {
 	cost = @tier4cost2
 	area = society
 	category = { statecraft }
-	tier = 3
+	tier = 4
 	prerequisites = { "tech_hypercomms_forum" "tech_administrative_ai" "tech_galactic_administration"}
-	weight = @tier4weight2
+	weight = @tier4weight2	
 	
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
-		}		
+	potential = {
+		NOR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist		
+			has_valid_civic = civic_machine_servitor
+		}
+	}
+	
+	weight_modifier = {	
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -5207,19 +5554,26 @@ tech_autocurating_vault = {
 }
 
 tech_holographic_rituals = {
-	cost = @tier1cost2
+	cost = @tier2cost2
 	area = society
 	category = { statecraft }
-	tier = 1
+	tier = 2
 	prerequisites = { "tech_cultural_heritage" }
-	weight = @tier1weight2
+	weight = @tier2weight2
+	
+	potential = {
+		OR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist		
+		}
+	}
 	
 	weight_modifier = {
 		modifier = {
-			factor = 0
-			NOR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
+			factor = 10
+			OR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
 			}
 		}
 		modifier = {
@@ -5243,21 +5597,21 @@ tech_holographic_rituals = {
 }
 
 tech_consecration_fields = {
-	cost = @tier2cost3
+	cost = @tier3cost2
 	area = society
 	category = { statecraft }
-	tier = 2
+	tier = 3
 	prerequisites = { "tech_holographic_rituals" "tech_colonial_centralization" }
-	weight = @tier2weight3
+	weight = @tier3weight2
+	
+	potential = {
+		OR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist		
+		}
+	}
 	
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
-		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -5286,14 +5640,14 @@ tech_transcendent_faith = {
 	prerequisites = { "tech_consecration_fields" "tech_galactic_administration" }
 	weight = @tier4weight2
 	
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+	potential = {
+		OR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist		
 		}
+	}
+	
+	weight_modifier = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -5314,6 +5668,96 @@ tech_transcendent_faith = {
 	}
 }
 
+# Hive Mind
+tech_hive_node = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { statecraft }
+	tier = 0
+	
+	potential = {
+		is_hive_empire = yes
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+tech_hive_cluster = {
+	cost = @tier2cost2
+	area = society
+	category = { statecraft }
+	tier = 2
+	prerequisites = { "tech_hive_node" }
+	weight = @tier2weight2
+
+	weight_modifier = {		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+tech_hive_confluence = {
+	cost = @tier3cost2
+	area = society
+	category = { statecraft }
+	tier = 3
+	prerequisites = { "tech_hive_cluster" "tech_colonial_centralization" }
+	weight = @tier3weight2
+	
+	weight_modifier = {	
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
 
 # ##################
 # Ascension Perk
@@ -5329,62 +5773,11 @@ tech_ascension_theory = {
 	
 	modifier = {
 		ascension_perks_add = 1
-	}	
-	
-	potential = {
-		NOT = { 
-			host_has_dlc = "Apocalypse"			
-			has_technology = "tech_ascension_theory_apoc"
-		}
 	}
-	
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0
-		}
-		modifier = {
-			factor = 0.20
-			NOR = {
-				has_modifier = "curator_insight"
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_computing"
-				}			
-			}
-		}
-	}
-	
-	ai_weight = {
-		weight = 9999
-	}
-}
 
-tech_ascension_theory_apoc = {
-	area = society
-	cost = @tier5cost2
-	tier = 5
-	category = { statecraft }
-	ai_update_type = all
-	is_rare = yes
-	weight = @tier5weight2
-	
-	modifier = {
-		ascension_perks_add = 1
-	}
-	
-	potential = {
-		host_has_dlc = "Apocalypse"
-		NOT = {	has_technology = "tech_ascension_theory" }
-	}
-	
 	feature_flags = {
 		unity_ambitions
-	}
+	}	
 	
 	weight_modifier = {
 		factor = 0.5
@@ -5399,7 +5792,7 @@ tech_ascension_theory_apoc = {
 				research_leader = {
 					area = physics
 					has_trait = "leader_trait_expertise_computing"
-				}			
+				}
 			}
 		}
 	}
@@ -5412,17 +5805,243 @@ tech_ascension_theory_apoc = {
 # ##################
 # Psionic Shield
 # ##################
-tech_psionic_shield = {
+tech_psionic_barrier = {
 	area = society
-	cost = @tier4cost3
+	cost = @tier3cost1
 	tier = 3
 	category = { psionics }
 	ai_update_type = all	
 	is_rare = yes
 	prerequisites = { "tech_psionic_theory" }
 	weight = 0
+	is_reverse_engineerable = no
+	icon = tech_psionic_barrier
 	
 	weight_modifier = {
 		factor = 0
 	}	
+}
+
+tech_psionic_shield = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	category = { psionics }
+	ai_update_type = all	
+	is_rare = yes
+	prerequisites = { "tech_psionic_theory" }
+	weight = 0
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		factor = 0
+	}	
+}
+
+# ##################
+# Other
+# ##################
+
+# Penal Colonies
+tech_penal_colonies = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_artificial_moral_codes" }
+	weight = @tier3weight1
+	is_rare = yes
+
+	potential = {
+		is_gestalt = no
+	}
+	
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+# Resort Colonies
+tech_resort_colonies = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_artificial_moral_codes" }
+	weight = @tier3weight1
+	is_rare = yes
+
+	potential = {
+		is_gestalt = no
+	}
+	
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+
+# Slave Colonies
+tech_slave_colonies = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_neural_implants" }
+	weight = @tier2weight3
+
+	potential = {
+		is_gestalt = no
+	}
+	
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+		modifier = {
+			factor = 0.0
+			OR = {
+				allows_slavery = no
+				NOT = { any_owned_pop = { is_enslaved = yes } }
+			}
+		}		
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+tech_housing_agrarian_idyll = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	weight = @tier3weight1
+	
+	modifier = {
+		description = district_housing_agrarian_idyll_tech_effect
+	}
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			NOT = { has_valid_civic = civic_agrarian_idyll }
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
 }

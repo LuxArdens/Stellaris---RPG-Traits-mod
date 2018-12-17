@@ -18,13 +18,13 @@ trait_robodesign_terminators = {		# basically Skynet
 	prerequisites = { tech_robomod_2 }
 
 	modifier = {
-		tile_resource_energy_mult = 0.5
+		planet_jobs_energy_produces_mult = 0.5
 	
 	
-		tile_resource_unity_mult = -0.25			# do not write poetry
-		tile_resource_food_mult = -0.5
+		planet_jobs_unity_produces_mult = -0.25			# do not write poetry
+		planet_jobs_food_produces_mult = -0.5
 		
-		pop_robot_build_speed_mult = -0.75
+		pop_assembly_speed = -0.75
 		pop_robot_build_cost_mult = 3			# very large investment into specialized military hardware
 		pop_consumer_goods_mult = 3
 		army_damage_mult = 5					# Extremely deadly robotic drones
@@ -44,9 +44,9 @@ trait_robodesign_miners = {		# rogue mining drones
 	prerequisites = { tech_robomod_2 }
 
 	modifier = {
-		tile_resource_unity_mult = -0.25
-		tile_resource_food_mult = -0.5
-		tile_resource_minerals_mult = 3					# staggering bonus to minerals
+		planet_jobs_unity_produces_mult = -0.25
+		planet_jobs_food_produces_mult = -0.5
+		planet_jobs_minerals_produces_mult = 3					# staggering bonus to minerals
 		
 		army_damage_mult = -0.75
 		army_health = -0.75
@@ -64,8 +64,8 @@ trait_robodesign_servitors = {		# rogue servitors, manage civil aspects
 	opposites = { trait_robodesign_terminators trait_robodesign_miners  trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
 
 	modifier = {
-		tile_resource_unity_mult = 0.5
-		tile_resource_energy_mult = 1.5
+		planet_jobs_unity_produces_mult = 0.5
+		planet_jobs_energy_produces_mult = 1.5
 		
 		army_health = 0.25
 		army_damage_mult = 0.25
@@ -84,13 +84,13 @@ trait_robodesign_harvesters = {		# for if you really want to screw yourself
 	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors  trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
 
 	modifier = {
-		tile_resource_unity_mult = -0.5
-		tile_resource_energy_mult = -0.75				# only machine type that can't get shit done
-		tile_resource_food_mult = 4
-		tile_resource_minerals_mult = -0.75
-		tile_resource_engineering_research_mult = -0.5
-		tile_resource_physics_research_mult = -0.5
-		tile_resource_society_research_mult = -0.5
+		planet_jobs_unity_produces_mult = -0.5
+		planet_jobs_energy_produces_mult = -0.75				# only machine type that can't get shit done
+		planet_jobs_food_produces_mult = 4
+		planet_jobs_minerals_produces_mult = -0.75
+		planet_jobs_engineering_research_produces_mult = -0.5
+		planet_jobs_physics_research_produces_mult = -0.5
+		planet_jobs_society_research_produces_mult = -0.5
 		species_leader_exp_gain = -0.5
 		
 		army_damage_mult = -0.9
@@ -109,12 +109,12 @@ trait_robodesign_science = {		# giant scientific mainframe
 	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters  trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
 
 	modifier = {
-		tile_resource_energy_mult = 0.25				# smart, but limited by frames
-		tile_resource_engineering_research_mult = 2
-		tile_resource_physics_research_mult = 2
-		tile_resource_society_research_mult = 2
+		planet_jobs_energy_produces_mult = 0.25				# smart, but limited by frames
+		planet_jobs_engineering_research_produces_mult = 2
+		planet_jobs_physics_research_produces_mult = 2
+		planet_jobs_society_research_produces_mult = 2
 		
-		pop_robot_upkeep_mult = 3		# will have a constant struggle for MOAR power
+		planet_pops_robotics_upkeep_mult = 3		# will have a constant struggle for MOAR power
 		pop_consumer_goods_mult = 1		# struggle to support large pop, as to not be completely OP in science department
 	}
 }
@@ -130,10 +130,10 @@ trait_robodesign_androids = {		# droids that became self-aware. Good all-rounder
 	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science  trait_robodesign_synthetic trait_robodesign_fake_ai trait_robodesign_geth }
 
 	modifier = {
-		tile_resource_energy_mult = 0.5
-		tile_resource_food_mult = 0.25
-		tile_resource_minerals_mult = 0.25
-		tile_resource_unity_mult = 0.25
+		planet_jobs_energy_produces_mult = 0.5
+		planet_jobs_food_produces_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.25
+		planet_jobs_unity_produces_mult = 0.25
 		
 		army_health = 0.5
 		army_damage_mult = 0.5
@@ -152,12 +152,12 @@ trait_robodesign_synthetic = {		# uploaded organics, gives you the AP perk on ga
 
 	modifier = {
 		# gives the trait_robotic_3 effects
-		tile_resource_engineering_research_mult = 1 			# vastly superior raw data processing, but trouble with creative thinking
-		tile_resource_physics_research_mult = 1
-		tile_resource_society_research_mult = 1
-		tile_resource_unity_mult = 0.5							# synths act more in unity by their very nature
-		tile_resource_energy_mult = 1
-		tile_resource_minerals_mult = 0.5
+		planet_jobs_engineering_research_produces_mult = 1 			# vastly superior raw data processing, but trouble with creative thinking
+		planet_jobs_physics_research_produces_mult = 1
+		planet_jobs_society_research_produces_mult = 1
+		planet_jobs_unity_produces_mult = 0.5							# synths act more in unity by their very nature
+		planet_jobs_energy_produces_mult = 1
+		planet_jobs_minerals_produces_mult = 0.5
 		
 		army_health = 1
 		army_damage_mult = 1
@@ -193,14 +193,14 @@ trait_robodesign_fake_ai = {		# makes them really crude machines without high-le
 	opposites = { trait_robodesign_terminators trait_robodesign_miners trait_robodesign_servitors trait_robodesign_harvesters trait_robodesign_science trait_robodesign_androids trait_robodesign_synthetic trait_robodesign_geth trait_robot_learning_algorithms trait_robot_learning_algorithms2 }
 
 	modifier = {
-		tile_resource_engineering_research_mult = -0.8
-		tile_resource_physics_research_mult = -0.8
-		tile_resource_society_research_mult = -0.8
+		planet_jobs_engineering_research_produces_mult = -0.8
+		planet_jobs_physics_research_produces_mult = -0.8
+		planet_jobs_society_research_produces_mult = -0.8
 		species_leader_exp_gain = -1
-		tile_resource_unity_mult = -0.9
+		planet_jobs_unity_produces_mult = -0.9
 		
-		tile_resource_energy_mult = -0.5
-		tile_resource_minerals_mult = 0.25
+		planet_jobs_energy_produces_mult = -0.5
+		planet_jobs_minerals_produces_mult = 0.25
 		
 		army_defense_health_mult = 0.5
 		army_damage_mult = -0.25			# dumb
@@ -223,12 +223,12 @@ trait_robodesign_terminators_synth = {		# basically Skynet
 	prerequisites = { tech_robomod_2 }
 
 	modifier = {
-		tile_resource_unity_mult = -0.25			# do not write poetry
-		tile_resource_food_mult = -0.5
-		tile_resource_energy_mult = -0.25
-		tile_resource_minerals_mult = 0.25
+		planet_jobs_unity_produces_mult = -0.25			# do not write poetry
+		planet_jobs_food_produces_mult = -0.5
+		planet_jobs_energy_produces_mult = -0.25
+		planet_jobs_minerals_produces_mult = 0.25
 		
-		pop_robot_build_speed_mult = -0.75
+		pop_assembly_speed = -0.75
 		pop_robot_build_cost_mult = 3			# very large investment into specialized military hardware
 		pop_consumer_goods_mult = 3
 		army_damage_mult = 5					# Extremely deadly robotic drones
@@ -248,10 +248,10 @@ trait_robodesign_miners_synth = {		# rogue mining drones
 	prerequisites = { tech_robomod_2 }
 
 	modifier = {
-		tile_resource_unity_mult = -0.5
-		tile_resource_energy_mult = -0.75
-		tile_resource_food_mult = -1
-		tile_resource_minerals_mult = 3					# staggering bonus to minerals
+		planet_jobs_unity_produces_mult = -0.5
+		planet_jobs_energy_produces_mult = -0.75
+		planet_jobs_food_produces_mult = -1
+		planet_jobs_minerals_produces_mult = 3					# staggering bonus to minerals
 		
 		army_damage_mult = -1
 		army_health = -1
@@ -269,8 +269,8 @@ trait_robodesign_servitors_synth = {		# rogue servitors, manage civil aspects
 	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
 
 	modifier = {
-		tile_resource_unity_mult = 0.5
-		tile_resource_energy_mult = 0.5
+		planet_jobs_unity_produces_mult = 0.5
+		planet_jobs_energy_produces_mult = 0.5
 		
 		army_health = -0.25
 		army_damage_mult = -0.25
@@ -289,13 +289,13 @@ trait_robodesign_harvesters_synth = {		# for if you really want to screw yoursel
 	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
 
 	modifier = {
-		tile_resource_unity_mult = -1
-		tile_resource_energy_mult = -2		# can't get shit done
-		tile_resource_food_mult = 4
-		tile_resource_minerals_mult = -1.5
-		tile_resource_engineering_research_mult = -1
-		tile_resource_physics_research_mult = -1
-		tile_resource_society_research_mult = -1
+		planet_jobs_unity_produces_mult = -1
+		planet_jobs_energy_produces_mult = -2		# can't get shit done
+		planet_jobs_food_produces_mult = 4
+		planet_jobs_minerals_produces_mult = -1.5
+		planet_jobs_engineering_research_produces_mult = -1
+		planet_jobs_physics_research_produces_mult = -1
+		planet_jobs_society_research_produces_mult = -1
 		species_leader_exp_gain = -0.5
 		
 		army_damage_mult = -2
@@ -314,11 +314,11 @@ trait_robodesign_science_synth = {		# giant scientific mainframe
 	opposites = { trait_robotic_1 trait_robotic_2 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_harvesters_robot trait_robodesign_nanoswarm_synth }
 
 	modifier = {
-		tile_resource_engineering_research_mult = 1
-		tile_resource_physics_research_mult = 1
-		tile_resource_society_research_mult = 1
+		planet_jobs_engineering_research_produces_mult = 1
+		planet_jobs_physics_research_produces_mult = 1
+		planet_jobs_society_research_produces_mult = 1
 		
-		pop_robot_upkeep_mult = 3		# will have a constant struggle for MOAR power
+		planet_pops_robotics_upkeep_mult = 3		# will have a constant struggle for MOAR power
 		pop_consumer_goods_mult = 1		# struggle to support large pop, as to not be completely OP in science department
 	}
 }
@@ -340,15 +340,15 @@ trait_robodesign_terminators_robot = {		# basically Skynet
 	prerequisites = { tech_robomod_1 }
 
 	modifier = {
-		tile_resource_unity_mult = -2
-		tile_resource_food_mult = -2
-		tile_resource_energy_mult = -2
-		tile_resource_minerals_mult = -2
+		planet_jobs_unity_produces_mult = -2
+		planet_jobs_food_produces_mult = -2
+		planet_jobs_energy_produces_mult = -2
+		planet_jobs_minerals_produces_mult = -2
 		
-		pop_robot_build_speed_mult = -0.8
+		pop_assembly_speed = -0.8
 		pop_robot_build_cost_mult = 5			# very large investment into specialized military hardware
 		pop_consumer_goods_mult = 4
-		pop_robot_upkeep_mult = 1
+		planet_pops_robotics_upkeep_mult = 1
 		army_damage_mult = 5					# Extremely deadly robotic drones
 		army_health = 5
 		army_upkeep_mult = 2
@@ -366,13 +366,13 @@ trait_robodesign_miners_robot = {
 	prerequisites = { tech_robomod_1 }
 
 	modifier = {
-		tile_resource_unity_mult = -1
-		tile_resource_unity_mult = -1
-		tile_resource_energy_mult = -1
-		tile_resource_food_mult = -1
-		tile_resource_minerals_mult = 1
+		planet_jobs_unity_produces_mult = -1
+		planet_jobs_unity_produces_mult = -1
+		planet_jobs_energy_produces_mult = -1
+		planet_jobs_food_produces_mult = -1
+		planet_jobs_minerals_produces_mult = 1
 		
-		pop_robot_upkeep_mult = 1
+		planet_pops_robotics_upkeep_mult = 1
 		
 		army_damage_mult = -1
 		army_health = -1
@@ -390,8 +390,8 @@ trait_robodesign_servitors_robot = {
 	opposites = { trait_robotic_3 trait_robotic_1 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_harvesters_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
 
 	modifier = {
-		tile_resource_unity_mult = 0.25
-		tile_resource_energy_mult = 0.25
+		planet_jobs_unity_produces_mult = 0.25
+		planet_jobs_energy_produces_mult = 0.25
 		
 		army_health = -0.25
 		army_damage_mult = -0.25
@@ -410,13 +410,13 @@ trait_robodesign_harvesters_robot = {
 	opposites = { trait_robotic_3 trait_robodesign_terminators_robot trait_robodesign_miners_robot trait_robodesign_servitors_robot trait_robodesign_science_robot trait_robodesign_nanoswarm_synth }
 
 	modifier = {
-		tile_resource_unity_mult = -1
-		tile_resource_energy_mult = -2		# can't get shit done
-		tile_resource_food_mult = 1
-		tile_resource_minerals_mult = -1.5
-		tile_resource_engineering_research_mult = -1
-		tile_resource_physics_research_mult = -1
-		tile_resource_society_research_mult = -1
+		planet_jobs_unity_produces_mult = -1
+		planet_jobs_energy_produces_mult = -2		# can't get shit done
+		planet_jobs_food_produces_mult = 1
+		planet_jobs_minerals_produces_mult = -1.5
+		planet_jobs_engineering_research_produces_mult = -1
+		planet_jobs_physics_research_produces_mult = -1
+		planet_jobs_society_research_produces_mult = -1
 		
 		army_damage_mult = -2
 		army_health = -0.9
@@ -437,9 +437,9 @@ trait_robot_double_jointed = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_resettlement_cost_mult = -0.5
-		tile_resource_energy_mult = 0.25
-		army_damage_mult = 0.25
+		pop_housing_usage_mult = -0.33
+		planet_jobs_energy_produces_mult = 0.25
+		army_damage_mult = 0.1
 	}
 }
 
@@ -453,8 +453,8 @@ trait_robot_bulky = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_resettlement_cost_mult = 3
-		tile_resource_energy_mult = -0.25
+		pop_housing_usage_mult = 0.5
+		planet_jobs_energy_produces_mult = -0.25
 	}
 }
 
@@ -612,9 +612,9 @@ trait_robot_simple1 = {
 	allowed_archetypes = { MACHINE }
 
 	modifier = {
-		pop_robot_build_speed_mult = 3
+		pop_assembly_speed = 3
 		pop_robot_build_cost_mult = -0.5
-		pop_robot_upkeep_mult = -0.25
+		planet_pops_robotics_upkeep_mult = -0.25
 	}
 }
 trait_robot_simple2 = {
@@ -629,9 +629,9 @@ trait_robot_simple2 = {
 	allowed_archetypes = { MACHINE }
 
 	modifier = {
-		pop_robot_build_speed_mult = 9
+		pop_assembly_speed = 9
 		pop_robot_build_cost_mult = -0.8
-		pop_robot_upkeep_mult = -0.5
+		planet_pops_robotics_upkeep_mult = -0.5
 	}
 }
 trait_robot_complex1 = {
@@ -646,7 +646,7 @@ trait_robot_complex1 = {
 	allowed_archetypes = { MACHINE }
 
 	modifier = {
-		pop_robot_build_speed_mult = -0.5
+		pop_assembly_speed = -0.5
 		pop_robot_build_cost_mult = 1
 	}
 }
@@ -662,7 +662,7 @@ trait_robot_complex2 = {
 	allowed_archetypes = { MACHINE }
 
 	modifier = {
-		pop_robot_build_speed_mult = -0.8
+		pop_assembly_speed = -0.8
 		pop_robot_build_cost_mult = 3
 	}
 }
@@ -679,9 +679,9 @@ trait_robot_simple1_robot = {
 	allowed_archetypes = { ROBOT }
 
 	modifier = {
-		pop_robot_build_speed_mult = 3
+		pop_assembly_speed = 3
 		pop_robot_build_cost_mult = -0.5
-		pop_robot_upkeep_mult = -0.25
+		planet_pops_robotics_upkeep_mult = -0.25
 	}
 }
 trait_robot_simple2_robot = {
@@ -696,9 +696,9 @@ trait_robot_simple2_robot = {
 	allowed_archetypes = { ROBOT }
 
 	modifier = {
-		pop_robot_build_speed_mult = 9
+		pop_assembly_speed = 9
 		pop_robot_build_cost_mult = -0.8
-		pop_robot_upkeep_mult = -0.5
+		planet_pops_robotics_upkeep_mult = -0.5
 	}
 }
 trait_robot_complex1_robot = {
@@ -713,7 +713,7 @@ trait_robot_complex1_robot = {
 	allowed_archetypes = { ROBOT }
 
 	modifier = {
-		pop_robot_build_speed_mult = -0.5
+		pop_assembly_speed = -0.5
 		pop_robot_build_cost_mult = 1
 	}
 }
@@ -729,7 +729,7 @@ trait_robot_complex2_robot = {
 	allowed_archetypes = { ROBOT }
 
 	modifier = {
-		pop_robot_build_speed_mult = -0.8
+		pop_assembly_speed = -0.8
 		pop_robot_build_cost_mult = 3
 	}
 }
@@ -746,9 +746,9 @@ trait_robot_learning_algorithms = {
 
 	modifier = {
 		species_leader_exp_gain = 1
-		tile_resource_engineering_research_mult = 0.5
-		tile_resource_physics_research_mult = 0.5
-		tile_resource_society_research_mult = 0.5
+		planet_jobs_engineering_research_produces_mult = 0.5
+		planet_jobs_physics_research_produces_mult = 0.5
+		planet_jobs_society_research_produces_mult = 0.5
 	}
 }
 
@@ -765,9 +765,9 @@ trait_robot_crude_neural_network = {
 	
 	modifier = {
 		species_leader_exp_gain = -0.5
-		tile_resource_engineering_research_mult = -0.25
-		tile_resource_physics_research_mult = -0.25
-		tile_resource_society_research_mult = -0.25
+		planet_jobs_engineering_research_produces_mult = -0.25
+		planet_jobs_physics_research_produces_mult = -0.25
+		planet_jobs_society_research_produces_mult = -0.25
 	}
 }
 
@@ -786,9 +786,9 @@ trait_robot_crude_neural_network2 = {
 	
 	modifier = {
 		species_leader_exp_gain = -0.95
-		tile_resource_engineering_research_mult = -0.5
-		tile_resource_physics_research_mult = -0.5
-		tile_resource_society_research_mult = -0.5
+		planet_jobs_engineering_research_produces_mult = -0.5
+		planet_jobs_physics_research_produces_mult = -0.5
+		planet_jobs_society_research_produces_mult = -0.5
 	}
 }
 
@@ -820,9 +820,9 @@ trait_robot_learning_algorithms2 = {
 
 	modifier = {
 		species_leader_exp_gain = 2
-		tile_resource_engineering_research_mult = 1
-		tile_resource_physics_research_mult = 1
-		tile_resource_society_research_mult = 1
+		planet_jobs_engineering_research_produces_mult = 1
+		planet_jobs_physics_research_produces_mult = 1
+		planet_jobs_society_research_produces_mult = 1
 	}
 }
 
@@ -838,18 +838,18 @@ trait_robodesign_nanoswarm = {		# grey goo
 	prerequisites = { tech_robomod_3 }
 
 	modifier = {
-		tile_resource_engineering_research_mult = 1
-		tile_resource_physics_research_mult = 1
-		tile_resource_society_research_mult = 1
-		tile_resource_unity_mult = 0.75
-		tile_resource_energy_mult = 1
-		tile_resource_minerals_mult = 1.5
-		tile_resource_food_mult = -10				# turn green into grey
+		planet_jobs_engineering_research_produces_mult = 1
+		planet_jobs_physics_research_produces_mult = 1
+		planet_jobs_society_research_produces_mult = 1
+		planet_jobs_unity_produces_mult = 0.75
+		planet_jobs_energy_produces_mult = 1
+		planet_jobs_minerals_produces_mult = 1.5
+		planet_jobs_food_produces_mult = -10				# turn green into grey
 		
-		pop_robot_build_speed_mult = 10				# almost instantaneously
+		pop_assembly_speed = 10				# almost instantaneously
 		pop_robot_build_cost_mult = -1
 		pop_consumer_goods_mult = -10
-		pop_robot_upkeep_mult = -10
+		planet_pops_robotics_upkeep_mult = -10
 		
 		army_damage_mult = 1						#
 		#army_health = -0.25						# encourage army spam
@@ -869,15 +869,15 @@ trait_robodesign_nanoswarm_synth = {				# grey goo
 	prerequisites = { tech_robomod_3 }
 
 	modifier = {
-		tile_resource_unity_mult = 0.5
-		tile_resource_minerals_mult = 1
+		planet_jobs_unity_produces_mult = 0.5
+		planet_jobs_minerals_produces_mult = 1
 		
-		tile_resource_food_mult = -10				# turn green into grey
+		planet_jobs_food_produces_mult = -10				# turn green into grey
 		
-		pop_robot_build_speed_mult = 10				# almost instantaneously
+		pop_assembly_speed = 10				# almost instantaneously
 		pop_robot_build_cost_mult = -1
 		pop_consumer_goods_mult = -10
-		pop_robot_upkeep_mult = -10
+		planet_pops_robotics_upkeep_mult = -10
 		
 		army_damage_mult = 1						#
 		#army_health = -0.25						# encourage army spam

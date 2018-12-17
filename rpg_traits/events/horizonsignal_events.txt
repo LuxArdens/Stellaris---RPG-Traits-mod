@@ -6,22 +6,6 @@
 
 namespace = akx
 
-@tier1unityreward = 6
-@tier1unitymin = 100
-@tier1unitymax = 500
-@tier2unityreward = 12
-@tier2unitymin = 150
-@tier2unitymax = 1000
-@tier3unityreward = 18
-@tier3unitymin = 250
-@tier3unitymax = 1500
-@tier4unityreward = 24
-@tier4unitymin = 350
-@tier4unitymax = 2000
-@tier5unityreward = 48
-@tier5unitymin = 700
-@tier5unitymax = 4000
-
 fleet_event = {
 	id = akx.8888
 	title = akx.9000.name
@@ -35,6 +19,7 @@ fleet_event = {
 	picture = GFX_evt_black_hole
 	show_sound = event_alien_signal
 	location = event_target:horizonsignal_black_hole
+	trackable = yes
 
 	trigger = { always = no }
 
@@ -78,6 +63,7 @@ fleet_event = {
 	picture = GFX_evt_black_hole
 	show_sound = event_alien_signal
 	location = event_target:horizonsignal_black_hole
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -111,6 +97,7 @@ fleet_event = {
 			}
 			save_global_event_target_as = horizonsignal_system
 		}
+		owner = { observer_event = { id = observer.70 } }
 	}
 
 	option = {
@@ -429,6 +416,7 @@ country_event = {
 	picture = GFX_evt_debris
 	show_sound = event_ship_explosion
 	location = event_target:horizonsignal_system
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -486,19 +474,19 @@ ship_event = {
 				limit = {
 					has_technology = tech_akx_worm_1
 				}
-				else = {
-					if = {
-						limit = {
-							NOT = {
-								has_tech_option = tech_akx_worm_1
-							}
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = {
+							has_tech_option = tech_akx_worm_1
 						}
-						add_research_option = tech_akx_worm_1
 					}
-					add_tech_progress = {
-						tech = tech_akx_worm_1
-						progress = 0.1
-					}
+					add_research_option = tech_akx_worm_1
+				}
+				add_tech_progress = {
+					tech = tech_akx_worm_1
+					progress = 0.1
 				}
 			}
 		}
@@ -614,19 +602,19 @@ country_event = {
 			limit = {
 				has_technology = tech_akx_worm_1
 			}
-			else = {
-				if = {
-					limit = {
-						NOT = {
-							has_tech_option = tech_akx_worm_1
-						}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech_option = tech_akx_worm_1
 					}
-					add_research_option = tech_akx_worm_1
 				}
-				add_tech_progress = {
-					tech = tech_akx_worm_1
-					progress = 0.10
-				}
+				add_research_option = tech_akx_worm_1
+			}
+			add_tech_progress = {
+				tech = tech_akx_worm_1
+				progress = 0.10
 			}
 		}
 		# physics bump
@@ -660,6 +648,7 @@ country_event = {
 	picture = GFX_evt_debris
 	show_sound = event_ship_explosion
 	location = event_target:horizonsignal_system
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -741,6 +730,7 @@ planet_event = {
 	picture = GFX_evt_in_the_dark
 	show_sound = event_mystic_reveal
 	location = root
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -928,6 +918,7 @@ fleet_event = {
 	picture = GFX_evt_space_debris
 	show_sound = event_ship_bridge
 	location = event_target:horizon_pod
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -974,6 +965,7 @@ country_event = {
 	desc = akx.9201.desc
 	picture = GFX_evt_throne_room
 	location = root
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -994,28 +986,26 @@ country_event = {
 				}
 				save_global_event_target_as = researchingscientist
 			}
-			else = {
-				if = {
-					limit = {
-						any_owned_leader = {
-							is_researching_area = society
-						}
-					}
-					random_owned_leader = {
-						limit = {
-							is_researching_area = society
-						}
-						save_global_event_target_as = researchingscientist
-					}
-					else = {
-						random_owned_leader = {
-							limit = {
-								leader_class = scientist
-							}
-							save_global_event_target_as = researchingscientist
-						}
-					}
+		}
+		else_if = {
+			limit = {
+				any_owned_leader = {
+					is_researching_area = society
 				}
+			}
+			random_owned_leader = {
+				limit = {
+					is_researching_area = society
+				}
+				save_global_event_target_as = researchingscientist
+			}
+		}
+		else = {
+			random_owned_leader = {
+				limit = {
+					leader_class = scientist
+				}
+				save_global_event_target_as = researchingscientist
 			}
 		}
 	}
@@ -1040,18 +1030,17 @@ country_event = {
 			limit = {
 				has_technology = tech_genome_mapping
 			}
-			break = yes
-			else = {
-				if = {
-					limit = {
-						NOT = { has_tech_option = tech_genome_mapping }
-					}
-					add_research_option = tech_genome_mapping
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = { has_tech_option = tech_genome_mapping }
 				}
-				add_tech_progress = {
-					tech = tech_genome_mapping
-					progress = 0.15
-				}
+				add_research_option = tech_genome_mapping
+			}
+			add_tech_progress = {
+				tech = tech_genome_mapping
+				progress = 0.15
 			}
 		}
 	}
@@ -1118,11 +1107,12 @@ country_event = {
 	immediate = {
 		if = {
 			limit = { exists = event_target:researchingscientist }
-			else = {
-				random_owned_leader = {
-					limit = { leader_class = scientist }
-					save_global_event_target_as = researchingscientist
-				}
+			# nothing
+		}
+		else = {
+			random_owned_leader = {
+				limit = { leader_class = scientist }
+				save_global_event_target_as = researchingscientist
 			}
 		}
 		event_target:researchingscientist = {
@@ -1198,14 +1188,15 @@ country_event = {
 	immediate = {
 		if = {
 			limit = { exists = event_target:researchingscientist }
-			else = {
-				random_owned_leader = {
-					limit = { leader_class = scientist }
-					save_global_event_target_as = researchingscientist
-				}
-				event_target:researchingscientist = {
-					make_unleashed_messenger = yes
-				}
+			# nothing
+		}
+		else = {
+			random_owned_leader = {
+				limit = { leader_class = scientist }
+				save_global_event_target_as = researchingscientist
+			}
+			event_target:researchingscientist = {
+				make_unleashed_messenger = yes
 			}
 		}
 	}
@@ -1297,11 +1288,11 @@ country_event = {
 			event_target:researchingscientist = {
 				save_global_event_target_as = researchingscientist9220
 			}
-			else = {
-				random_owned_leader = {
-					limit = { leader_class = scientist }
-					save_global_event_target_as = researchingscientist9220
-				}
+		}
+		else = {
+			random_owned_leader = {
+				limit = { leader_class = scientist }
+				save_global_event_target_as = researchingscientist9220
 			}
 		}
 		event_target:researchingscientist9220 = {
@@ -1377,14 +1368,14 @@ country_event = {
 	immediate = {
 		if = {
 			limit = { exists = event_target:researchingscientist9220 }
-			else = {
-				random_owned_leader = {
-					limit = { leader_class = scientist }
-					save_global_event_target_as = researchingscientist9220
-				}
-				event_target:researchingscientist9220 = {
-					make_leashed_messenger = yes
-				}
+		}
+		else = {
+			random_owned_leader = {
+				limit = { leader_class = scientist }
+				save_global_event_target_as = researchingscientist9220
+			}
+			event_target:researchingscientist9220 = {
+				make_leashed_messenger = yes
 			}
 		}
 	}
@@ -1901,6 +1892,8 @@ country_event = {
 						create_ship = {
 							name = "NAME_Syzygy"
 							design = NAME_Corsair
+							graphical_culture = pirate_01
+							prefix = no
 						}
 						set_location = {
 							target = event_target:syzygy_spawn_location
@@ -1951,34 +1944,32 @@ country_event = {
 				}
 			}
 			country_event = { id = akx.9321 }
-			else = {
-				if = {
-					limit = {
-						has_country_flag = worm_events_available
-						exists = event_target:mirrored_syzygy_admiral
-						fromfrom = {
-							exists = leader
-							leader = {
-								is_same_value = event_target:mirrored_syzygy_admiral
-							}
-						}
-					}
-					country_event = { id = akx.9320 }
-					else = {
-						random_country = {
-							limit = {
-								has_country_flag = worm_events_available
-							}
-							root.fromfrom.solar_system = {
-								random_system_planet = {
-									limit = { is_star = no }
-									save_event_target_as = syzygy_location
-								}
-							}
-							country_event = { id = akx.9319 }
-						}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = worm_events_available
+				exists = event_target:mirrored_syzygy_admiral
+				fromfrom = {
+					exists = leader
+					leader = {
+						is_same_value = event_target:mirrored_syzygy_admiral
 					}
 				}
+			}
+			country_event = { id = akx.9320 }
+		}
+		else = {
+			random_country = {
+				limit = {
+					has_country_flag = worm_events_available
+				}
+				root.fromfrom.solar_system = {
+					random_system_planet = {
+						limit = { is_star = no }
+						save_event_target_as = syzygy_location
+					}
+				}
+				country_event = { id = akx.9319 }
 			}
 		}
 		from = { destroy_country = yes }
@@ -1991,6 +1982,7 @@ country_event = {
 	desc = akx.9319.desc
 	picture = GFX_evt_debris
 	location = event_target:syzygy_location
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -2250,6 +2242,7 @@ country_event = {
 	desc = akx.9450.desc
 	picture = GFX_evt_medieval_alien_civilization
 	location = event_target:coils_planet
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -2332,20 +2325,19 @@ country_event = {
 			limit = {
 				has_technology = tech_akx_worm_2
 			}
-			break = yes
-			else = {
-				if = {
-					limit = {
-						NOT = {
-							has_tech_option = tech_akx_worm_2
-						}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech_option = tech_akx_worm_2
 					}
-					add_research_option = tech_akx_worm_2
 				}
-				add_tech_progress = {
-					tech = tech_akx_worm_2
-					progress = 0.1
-				}
+				add_research_option = tech_akx_worm_2
+			}
+			add_tech_progress = {
+				tech = tech_akx_worm_2
+				progress = 0.1
 			}
 		}
 	}
@@ -2381,20 +2373,19 @@ country_event = {
 			limit = {
 				has_technology = tech_akx_worm_2
 			}
-			break = yes
-			else = {
-				if = {
-					limit = {
-						NOT = {
-							has_tech_option = tech_akx_worm_2
-						}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech_option = tech_akx_worm_2
 					}
-					add_research_option = tech_akx_worm_2
 				}
-				add_tech_progress = {
-					tech = tech_akx_worm_2
-					progress = 0.1
-				}
+				add_research_option = tech_akx_worm_2
+			}
+			add_tech_progress = {
+				tech = tech_akx_worm_2
+				progress = 0.1
 			}
 		}
 	}
@@ -2446,19 +2437,19 @@ country_event = {
 				has_technology = tech_akx_worm_2
 			}
 			break = yes
-			else = {
-				if = {
-					limit = {
-						NOT = {
-							has_tech_option = tech_akx_worm_2
-						}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech_option = tech_akx_worm_2
 					}
-					add_research_option = tech_akx_worm_2
 				}
-				add_tech_progress = {
-					tech = tech_akx_worm_2
-					progress = 0.1
-				}
+				add_research_option = tech_akx_worm_2
+			}
+			add_tech_progress = {
+				tech = tech_akx_worm_2
+				progress = 0.1
 			}
 		}
 	}
@@ -2523,19 +2514,19 @@ country_event = {
 			limit = {
 				has_technology = tech_akx_worm_2
 			}
-			else = {
-				if = {
-					limit = {
-						NOT = {
-							has_tech_option = tech_akx_worm_2
-						}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech_option = tech_akx_worm_2
 					}
-					add_research_option = tech_akx_worm_2
 				}
-				add_tech_progress = {
-					tech = tech_akx_worm_2
-					progress = 0.3
-				}
+				add_research_option = tech_akx_worm_2
+			}
+			add_tech_progress = {
+				tech = tech_akx_worm_2
+				progress = 0.3
 			}
 		}
 	}
@@ -2651,45 +2642,22 @@ planet_event = {
 
 	immediate = {
 		save_global_event_target_as = waiting_world
-		while = {
-			count = 2
-			random_tile = {
-				limit = {
-					has_building = no
-					has_blocker = no
-					has_deposit = no
-				}
-				set_building = building_worm_farm
-				set_ruined = yes
-			}
-			random_tile = {
-				limit = {
-					has_building = no
-					has_blocker = no
-					has_deposit = no
-				}
-				set_building = building_worm_mine
-				set_ruined = yes
-			}
-		}
+		add_deposit = d_mothballed_facilities
 	}
 
 	option = {
 		name = akx.9500.a
-		trigger = {
+		allow = {
 			owner = {
-				minerals > 100
+				resource_stockpile_compare = { resource = minerals value >= 100 }
 			}
 		}
-		owner = { add_minerals = -100 }
+		owner = { add_resource = { minerals = -100 } }
+		random_deposit = {
+			limit = { is_deposit_type = d_mothballed_facilities }
+			clear_blocker = yes
+		}
 		hidden_effect = {
-			every_tile = {
-				limit = {
-					has_building = yes
-					is_ruined = yes
-				}
-				set_ruined = no
-			}
 			planet_event = { id = akx.9510 days = 360 }
 		}
 	}
@@ -2697,7 +2665,10 @@ planet_event = {
 	option = {
 		name = akx.9500.b
 		custom_tooltip = akx.9500.b.tooltip
-		hidden_effect = { planet_event = { id = akx.9505 } }
+		hidden_effect = {
+			remove_deposit = d_mothballed_facilities
+			planet_event = { id = akx.9505 }
+		}
 	}
 }
 
@@ -2711,18 +2682,10 @@ planet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		every_tile = {
-			limit = {
-				OR = {
-					has_building = building_worm_mine
-					has_building = building_worm_farm
-				}
-			}
-			remove_building = yes
-		}
 	}
 
 	after = {
+		tooltip = { remove_deposit = d_mothballed_facilities }
 		add_modifier = {
 			modifier = waiting_world_ruins
 			days = -1
@@ -2778,26 +2741,21 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		free_pop_tiles > 1
+		#free_housing > 0
 	}
 
 	immediate = {
-		if = {
+		random_owned_pop = {
 			limit = {
-				free_pop_tiles > 1
+				exists = planet
+				planet = { is_same_value = root }
 			}
-			random_owned_pop = {
-				limit = {
-					exists = planet
-					planet = { is_same_value = root }
-				}
-				root = {
-					best_tile_for_pop = {
-						create_pop = { 
-							species = prevprev
-						}
-					}
-				}
+			save_event_target_as = waiting_world_species
+		}
+		while = {
+			count = 3
+			create_pop = { 
+				species = event_target:waiting_world_species
 			}
 		}
 	}
@@ -2828,38 +2786,27 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		free_pop_tiles > 1
+		#free_housing > 0
 	}
 
 	immediate = {
-		if = {
+		random_owned_pop = {
 			limit = {
-				free_pop_tiles > 1
+				exists = planet
+				planet = { is_same_value = root }
 			}
-			random_owned_pop = {
-				limit = {
-					exists = planet
-					planet = { is_same_value = root }
-				}
-				root = {
-					best_tile_for_pop = {
-						create_pop = { 
-							species = prevprev
-						}
-					}
-					best_tile_for_pop = {
-						create_pop = { 
-							species = prevprev
-						}
-					}
-				}
+			save_event_target_as = waiting_world_species
+		}
+		while = {
+			count = 5
+			create_pop = { 
+				species = event_target:waiting_world_species
 			}
 		}
 	}
 
 	option = {
 		name = akx.9525.a
-		#custom_tooltip = akx.9510.a.tooltip
 		hidden_effect = {
 			planet_event = { id = akx.9505 }
 		}
@@ -2882,27 +2829,15 @@ planet_event = {
 	desc = akx.9530.desc
 	picture = GFX_evt_colony_settlement
 	location = root
+	trackable = yes
 
 	is_triggered_only = yes
 
 	after = {
-		hidden_effect = {
-			every_tile = {
-				if = {
-					limit = {
-						has_building = yes
-					}
-					remove_building = yes
-				}
-				if = {
-					limit = { has_growing_pop = yes }
-					kill_pop = yes
-				}
-			}
-			every_owned_pop = {
-				kill_pop = yes
-			}
+		every_owned_pop = {
+			kill_pop = yes
 		}
+		remove_all_buildings = yes
 	}
 
 	option = {
@@ -2954,20 +2889,20 @@ ship_event = {
 				limit = {
 					has_technology = tech_akx_worm_1
 				}
-				break = yes
-				else = {
-					if = {
-						limit = {
-							NOT = {
-								has_tech_option = tech_akx_worm_1
-							}
+				# nothing
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = {
+							has_tech_option = tech_akx_worm_1
 						}
-						add_research_option = tech_akx_worm_1
 					}
-					add_tech_progress = {
-						tech = tech_akx_worm_1
-						progress = 0.1
-					}
+					add_research_option = tech_akx_worm_1
+				}
+				add_tech_progress = {
+					tech = tech_akx_worm_1
+					progress = 0.1
 				}
 			}
 		}
@@ -2980,6 +2915,7 @@ planet_event = {
 	desc = akx.9540.desc
 	picture = GFX_evt_colony_settlement
 	location = root
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -3084,17 +3020,13 @@ planet_event = {
 	}
 
 	after = {
-		every_tile = {
-			if = {
-				limit = { has_building = yes }
-				remove_building = yes
-			}
-			if = {
-				limit = { has_growing_pop = yes }
+		hidden_effect = {
+			every_owned_pop = {
 				kill_pop = yes
 			}
+			remove_all_buildings = yes
+			destroy_colony = yes
 		}
-		destroy_colony = yes
 	}
 
 	option = {
@@ -3145,20 +3077,20 @@ planet_event = {
 				limit = {
 					has_technology = tech_akx_worm_1
 				}
-				break = yes
-				else = {
-					if = {
-						limit = {
-							NOT = {
-								has_tech_option = tech_akx_worm_1
-							}
+				# nothing
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = {
+							has_tech_option = tech_akx_worm_1
 						}
-						add_research_option = tech_akx_worm_1
 					}
-					add_tech_progress = {
-						tech = tech_akx_worm_1
-						progress = 0.1
-					}
+					add_research_option = tech_akx_worm_1
+				}
+				add_tech_progress = {
+					tech = tech_akx_worm_1
+					progress = 0.1
 				}
 			}
 		}
@@ -3236,13 +3168,15 @@ fleet_event = {
 		name = akx.9600.c
 		allow = {
 			owner = {
-				energy > 800
-				minerals > 800
+				resource_stockpile_compare = { resource = energy value >= 800 }
+				resource_stockpile_compare = { resource = minerals value >= 800 }
 			}
 		}
 		owner = {
-			add_energy = -800
-			add_minerals = -800
+			add_resource = {
+				energy = -800
+				minerals = -800
+			}
 		}
 		hidden_effect = {
 			fleet_event = { id = akx.9620 }
@@ -3322,13 +3256,15 @@ fleet_event = {
 		name = akx.9600.c
 		allow = {
 			owner = {
-				energy > 800
-				minerals > 800
+				resource_stockpile_compare = { resource = energy value >= 800 }
+				resource_stockpile_compare = { resource = minerals value >= 800 }
 			}
 		}
 		owner = {
-			add_energy = -800
-			add_minerals = -800
+			add_resource = {
+				energy = -800
+				minerals = -800
+			}
 		}
 		hidden_effect = {
 			fleet_event = { id = akx.9620 }
@@ -3401,13 +3337,15 @@ fleet_event = {
 		name = akx.9600.c
 		allow = {
 			owner = {
-				energy > 800
-				minerals > 800
+				resource_stockpile_compare = { resource = energy value >= 800 }
+				resource_stockpile_compare = { resource = minerals value >= 800 }
 			}
 		}
 		owner = {
-			add_energy = -800
-			add_minerals = -800
+			add_resource = {
+				energy = -800
+				minerals = -800
+			}
 		}
 		hidden_effect = {
 			fleet_event = { id = akx.9620 }
@@ -3473,13 +3411,15 @@ fleet_event = {
 		name = akx.9610.a
 		allow = {
 			owner = {
-				energy > 800
-				minerals > 800
+				resource_stockpile_compare = { resource = energy value >= 800 }
+				resource_stockpile_compare = { resource = minerals value >= 800 }
 			}
 		}
 		owner = {
-			add_energy = -800
-			add_minerals = -800
+			add_resource = {
+				energy = -800
+				minerals = -800
+			}
 		}
 		hidden_effect = {
 			fleet_event = { id = akx.9620 }
@@ -3535,9 +3475,7 @@ fleet_event = {
 			}
 		}
 		event_target:hole_pets = {
-			orbital_deposit_tile = {
-				add_deposit = d_worm_deposit
-			}
+			add_deposit = d_society_10
 		}
 	}
 }
@@ -3552,6 +3490,7 @@ planet_event = {
 	picture = GFX_evt_metropolis
 	show_sound = event_ship_bridge
 	location = root
+	trackable = yes
 
 	is_triggered_only = yes
 
@@ -3561,12 +3500,10 @@ planet_event = {
 			has_event_chain = WORM_CHAIN_1
 			NOT = { has_country_flag = alignment_built }
 		}
-		from = {
-			has_building = building_akx_worm_3
-		}
+		has_building = building_akx_worm_3
 	}
 
-	immediate = {
+	immediate = { 
 		owner = {
 			set_country_flag = alignment_built
 		}
@@ -3645,9 +3582,10 @@ planet_event = {
 							days = -1
 						}
 						establish_communications_no_message = root.owner
+						establish_contact = { who = root.owner location = root }
 						save_global_event_target_as = worm_enemy
 						create_fleet = {
-							name = "TIME IS SIGHT GRAVITY IS DESIRE"
+							name = "NAME_TIME_IS_SIGHT_GRAVITY_IS_DESIRE"
 							settings = { spawn_debris = no }
 							effect = {
 								set_owner = event_target:worm_enemy
@@ -3667,6 +3605,7 @@ planet_event = {
 					}
 				}
 			}
+			owner = { observer_event = { id = observer.72 } }
 		}
 	}
 }
@@ -3688,7 +3627,6 @@ planet_event = {
 			every_system_planet = {
 				limit = {
 					NOR = {
-						is_asteroid = yes
 						is_planet_class = pc_gas_giant
 						is_planet_class = pc_ringworld_habitable
 						is_planet_class = pc_ringworld_habitable_damaged
@@ -3697,9 +3635,10 @@ planet_event = {
 						is_planet_class = pc_ringworld_seam
 						is_planet_class = pc_ringworld_seam_damaged
 						is_planet_class = pc_habitat
+						is_planet_class = pc_asteroid
+						is_planet_class = pc_ice_asteroid
 						is_star = yes
 					}
-					planet_size > 9
 					planet_size < 26
 				}
 				every_owned_pop = {
@@ -3708,153 +3647,63 @@ planet_event = {
 						is_sapient = yes
 					}
 					if = {
-						limit = {
-							NOT = { has_trait = trait_physics_elitists }
+						limit = { NOT = { has_trait = trait_physics_elitists } }
+						# remove opposite traits
+						if = {
+							limit = { has_trait = trait_engineering_elitists }
+							modify_species = {
+								species = this
+								remove_trait = trait_engineering_elitists
+							}
 						}
+						if = {
+							limit = { has_trait = trait_physics_elitists }
+							modify_species = {
+								species = this
+								remove_trait = trait_sociology_elitists
+							}
+						}
+						if = {
+							limit = { has_trait = trait_nerve_stapled }
+							modify_species = {
+								species = this
+								remove_trait = trait_nerve_stapled
+							}
+						}
+						# add trait
 						modify_species = {
 							species = this
 							add_trait = trait_physics_elitists
 						}
 					}
 					if = {
-						limit = {
-							NOT = { has_trait = trait_repugnant2 }
+						limit = { NOT = { has_trait = trait_repugnant2 } }
+						# remove opposite traits
+						if = {
+							limit = { has_trait = trait_charismatic2 }
+							modify_species = {
+								species = this
+								remove_trait = trait_charismatic2
+							}
 						}
 						modify_species = {
 							species = this
 							add_trait = trait_repugnant2
 						}
 					}
-					if = {
-						limit = {
-							has_trait = trait_pc_nuked_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_nuked_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_desert_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_desert_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_arid_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_arid_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_savannah_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_savannah_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_tropical_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_tropical_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_ocean_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_ocean_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_arctic_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_arctic_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_tundra_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_tundra_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_alpine_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_alpine_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_continental_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_continental_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_ai_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_ai_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_gaia_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_gaia_preference
-						}
-					}
-					if = {
-						limit = {
-							has_trait = trait_pc_ringworld_habitable_preference
-						}
-						modify_species = {
-							species = this
-							remove_trait = trait_pc_ringworld_habitable_preference
-						}
-					}
 					modify_species = {
 						species = this
-						add_trait = trait_pc_nuked_preference
+						ideal_planet_class = pc_nuked
 					}
 				}
 				change_pc = pc_nuked
 			}
 			random_system_planet = {
 				limit = { is_star = yes }
-				# explosion ambient object
 				change_pc = pc_black_hole
 			}
 		}
+		owner = { observer_event = { id = observer.71 } }
 	}
 
 	after = {

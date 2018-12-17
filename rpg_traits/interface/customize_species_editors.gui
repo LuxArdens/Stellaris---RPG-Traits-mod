@@ -28,6 +28,7 @@ guiTypes = {
 			buttonText = "NEXT"
 			position = { x = 250 y = 70 }
 			#shortcut = "RETURN"
+			clicksound = "confirm_click"
 		}
 		
 		instantTextBoxType = {
@@ -110,6 +111,7 @@ guiTypes = {
 			background = {
 				name = "background"
 				spriteType = "GFX_tiles_frame"
+				clicksound = select_click
 			}
 
 			gridBoxType = {
@@ -141,6 +143,7 @@ guiTypes = {
 			position = { x = 0 y = -40 }
 			orientation = LOWER_LEFT
 			shortcut = "BACKSPACE"
+			clicksound = back_click
 		}
 		buttonType={
 			name = "apply_and_close"
@@ -150,6 +153,7 @@ guiTypes = {
 			position = { x = -290 y = -40 }
 			orientation = LOWER_RIGHT
 			#shortcut = "RETURN"
+			clicksound = confirm_click
 		}
 	}
 	
@@ -255,6 +259,7 @@ guiTypes = {
 			position = { x = 350 y = 90 }
 			spriteType = "GFX_button_randomize"
 			pdx_tooltip = "EDIT_SPECIES_NAME_RANDOMIZE_TOOLTIP"
+			clicksound = randomizer_click
 		}
 		
 		###
@@ -356,6 +361,7 @@ guiTypes = {
 			position = { x = 0 y = -40 }
 			orientation = LOWER_LEFT
 			shortcut = "BACKSPACE"
+			clicksound = back_click
 		}
 		buttonType={
 			name = "apply_and_close"
@@ -365,6 +371,7 @@ guiTypes = {
 			position = { x = -290 y = -40 }
 			orientation = LOWER_RIGHT
 			#shortcut = "RETURN"
+			clicksound = confirm_click
 		}
 		
 	}
@@ -543,6 +550,7 @@ guiTypes = {
 			position = { x = 0 y = -40 }
 			orientation = LOWER_LEFT
 			shortcut = "BACKSPACE"
+			clicksound = back_click
 		}
 		buttonType = {
 			name = "apply_and_close"
@@ -551,6 +559,7 @@ guiTypes = {
 			buttonText = "NEXT"
 			position = { x = -290 y = -40 }
 			orientation = LOWER_RIGHT
+			clicksound = confirm_click
 		}
 	}
 
@@ -688,6 +697,7 @@ guiTypes = {
 			position = { x = 545 y = 85 }
 			spriteType = "GFX_button_randomize"
 			pdx_tooltip = "EDIT_SPECIES_NAME_RANDOMIZE_TOOLTIP"
+			clicksound = randomizer_click
 		}
 		
 		buttonType = {
@@ -707,6 +717,7 @@ guiTypes = {
 			position = { x = 0 y = -40 }
 			orientation = LOWER_LEFT
 			shortcut = "BACKSPACE"
+			clicksound = back_click
 		}
 		buttonType={
 			name = "apply_and_close"
@@ -716,6 +727,7 @@ guiTypes = {
 			position = { x = -290 y = -40 }
 			orientation = LOWER_RIGHT
 			#shortcut = "RETURN"
+			clicksound = confirm_click
 		}
 	}
 	
@@ -921,6 +933,7 @@ guiTypes = {
 			position = { x = 0 y = -40 }
 			orientation = LOWER_LEFT
 			shortcut = "BACKSPACE"
+			clicksound = back_click
 		}
 		buttonType={
 			name = "apply_and_close"
@@ -930,6 +943,7 @@ guiTypes = {
 			position = { x = -290 y = -40 }
 			orientation = LOWER_RIGHT
 			#shortcut = "RETURN"
+			clicksound = confirm_click
 		}
 	}
 	
