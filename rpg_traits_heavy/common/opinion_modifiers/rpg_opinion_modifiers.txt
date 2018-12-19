@@ -2,141 +2,273 @@
 # OPINION MODIFIERS
 #########################################################################
 
-opinion_lingua_idumentis_species = {
-	opinion = {
-		base = 0
-		modifier = {
-			add = -25
-			FROM = {
-				exists = ruler
-				ruler = {
-					species = {
-						has_trait = "trait_lingua_idumentis"		
-					}
-				}			
-			}
-		}		
-	}
-}
 
 opinion_trait_olfactory = {
-	opinion = {
-		base = 0
-		modifier = {
-			add = -10
-			FROM = {
-				exists = ruler
-				ruler = {
-					species = {
-						has_trait = "trait_olfactory"		
-					}
-				}			
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_olfactory } }
+				species = { has_trait = trait_olfactory }
 			}
-		}		
-	}
+        }
+    }
+    opinion = {
+        base = -10
+    }
 }
 
-opinion_trait_repugnant1 = {
-	opinion = {
-		base = 0
-		modifier = {
-			add = -10
-			FROM = {
-				exists = ruler
-				ruler = {
-					species = {
-						has_trait = "trait_repugnant1"		
-					}
-				}			
+opinion_lingua_idumentis_species = {
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_lingua_idumentis } }
+				species = { has_trait = trait_lingua_idumentis }
 			}
-		}		
-	}
+        }
+    }
+    opinion = {
+        base = -25
+    }
 }
 
-opinion_trait_repugnant2 = {
-	opinion = {
-		base = 0
-		modifier = {
-			add = -25
-			FROM = {
-				exists = ruler
-				ruler = {
-					species = {
-						has_trait = "trait_repugnant2"		
-					}
-				}			
+opinion_trait_repugnant1_regular = {
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_repugnant1 } }
+				species = { has_trait = trait_repugnant1 }
 			}
-		}		
-	}
+        }
+    }
+    opinion = {
+        base = -50
+    }
+}
+
+opinion_trait_repugnant2_regular = {
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_repugnant2 } }
+				species = { has_trait = trait_repugnant2 }
+			}
+        }
+    }
+    opinion = {
+        base = -100
+    }
 }
 
 opinion_trait_repugnant3 = {
-	opinion = {
-		base = 0
-		modifier = {
-			add = -50
-			FROM = {
-				exists = ruler
-				ruler = {
-					species = {
-						has_trait = "trait_repugnant3"		
-					}
-				}			
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_repugnant3 } }
+				species = { has_trait = trait_repugnant3 }
 			}
-		}		
-	}
+        }
+    }
+    opinion = {
+        base = -1000
+    }
 }
 
 opinion_trait_charismatic1 = {
-	opinion = {
-		base = 0
-		modifier = {
-			add = 10
-			FROM = {
-				exists = ruler
-				ruler = {
-					species = {
-						has_trait = "trait_charismatic1"		
-					}
-				}			
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic1 } }
+				species = { has_trait = trait_charismatic1 }
 			}
-		}		
-	}
+        }
+    }
+    opinion = {
+        base = 25
+    }
 }
 
-opinion_trait_charismatic2 = {
-	opinion = {
-		base = 0
-		modifier = {
-			add = 25
-			FROM = {
-				exists = ruler
-				ruler = {
-					species = {
-						has_trait = "trait_charismatic2"		
-					}
-				}			
+opinion_trait_charismatic2_regular = {
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+			has_ethic = ethic_fanatic_xenophobe 
+			has_ethic = ethic_xenophobe
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic2 } }
+				species = { has_trait = trait_charismatic2 }
 			}
-		}		
-	}
+        }
+    }
+    opinion = {
+        base = 50
+    }
+}
+
+opinion_trait_charismatic2_extra = {
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligencex
+		}
+			has_ethic = ethic_xenophobe
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic2 } }
+				species = { has_trait = trait_charismatic2 }
+			}
+        }
+    }
+    opinion = {
+        base = 20
+    }
+}
+
+opinion_trait_charismatic2_extra2 = {
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+			has_ethic = ethic_xenophobe
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic2 } }
+				species = { has_trait = trait_charismatic2 }
+			}
+        }
+    }
+    opinion = {
+        base = 40
+    }
+}
+
+opinion_trait_charismatic2_extra3 = {
+    trigger = {
+		OR = {
+			has_authority = auth_machine_intelligence
+			has_authority = ethic_gestalt_consciousness
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic2 } }
+				species = { has_trait = trait_charismatic2 }
+			}
+        }
+    }
+    opinion = {
+        base = 30
+    }
 }
 
 opinion_trait_charismatic3 = {
-	opinion = {
-		base = 0
-		modifier = {
-			add = 50
-			FROM = {
-				exists = ruler
-				ruler = {
-					species = {
-						has_trait = "trait_charismatic3"		
-					}
-				}			
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic3 } }
+				species = { has_trait = trait_charismatic3 }
 			}
-		}		
-	}
+        }
+    }
+    opinion = {
+        base = 100
+    }
 }
+
+opinion_trait_charismatic3_extra = {
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+			has_ethic = ethic_fanatic_xenophobe
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic3 } }
+				species = { has_trait = trait_charismatic3 }
+			}
+        }
+    }
+    opinion = {
+        base = 20
+    }
+}
+
+opinion_trait_charismatic3_extra2 = {
+    trigger = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+			has_ethic = ethic_xenophobe
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic3 } }
+				species = { has_trait = trait_charismatic3 }
+			}
+        }
+    }
+    opinion = {
+        base = 40
+    }
+}
+
+opinion_trait_charismatic3_extra3 = {
+    trigger = {
+		OR = {
+			has_authority = auth_machine_intelligence
+			has_authority = ethic_gestalt_consciousness
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic3 } }
+				species = { has_trait = trait_charismatic3 }
+			}
+        }
+    }
+    opinion = {
+        base = 30
+    }
+}
+
+opinion_trait_charismatic3_extra4 = {
+    trigger = {
+		OR = {
+			has_authority = civic_fanatic_purifiers
+			has_authority = civic_hive_devouring_swarm
+			has_authority = civic_machine_terminator
+			has_authority = civic_machine_assimilator
+		}
+        FROM = {
+			OR = {
+				leader = { species = { has_trait = trait_charismatic3 } }
+				species = { has_trait = trait_charismatic3 }
+			}
+        }
+    }
+    opinion = {
+        base = 980
+    }
+}
+
 
 opinion_trait_enraged = {
 	opinion = {

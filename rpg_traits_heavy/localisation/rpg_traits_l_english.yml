@@ -88,10 +88,10 @@
  trait_repugnant1_desc:0 "§LThis species is rather unsettling to be in a room with, or communicate with, even for an alien species.§!\n"
  
  trait_repugnant2:0 "Filthy"
- trait_repugnant2_desc:0 "§LThis species communicates is rather rude and impolite. They also excrete a watery fluid from their skin.§!\n"
+ trait_repugnant2_desc:0 "§LThis species communicates is rude and disgusting. They also excrete a watery fluid from their skin.§!\n"
  
  trait_repugnant3:0 "Utterly Disgusting"
- trait_repugnant3_desc:0 "§LThis species is offensive, impolite and extremely ugly to almost all other species. They excrete disgusting, brown, yellow, white and red bodily fluids from their weird, ugly orifices and fleshy extensions.§!\n"
+ trait_repugnant3_desc:0 "§LThis species is rude and extremely ugly to virtually every other species. They excrete brown, yellow, white and red bodily fluids from various orifices and fleshy extensions.§!\n"
  
  trait_fleeting1:0 "Short-lived"
  trait_fleeting1_desc:0 "§LThis species' lifespan has not improved much since their early days.§!\n"
@@ -505,6 +505,21 @@
  trait_sterilized_desc:0 "§LSometimes we have to make hard decisions in life. Decisions that affect other people. Decisions like "NO, I don't want 20 billion more jellyfish in MY. BLOODY. EMPIRE."§!\n"
  
  
+ opinion_trait_olfactory:0 "Weird smell people"
+ opinion_lingua_idumentis_species:0 "Weird clothing people"
+ opinion_trait_repugnant1_regular:0 "Weird"
+ opinion_trait_repugnant2_regular:0 "Disgusting"
+ opinion_trait_repugnant3:0 "Disgusting filth!"
+ opinion_trait_charismatic1:0 "Pleasant"
+ opinion_trait_charismatic2_regular:0 "Charismatic"
+ opinion_trait_charismatic2_extra:0 "Not all that bad after all"
+ opinion_trait_charismatic2_extra2:0 "Not all that bad after all"
+ opinion_trait_charismatic2_extra3:0 "Intriguing organisms"
+ opinion_trait_charismatic3:0 "Lovely"
+ opinion_trait_charismatic3_extra:0 "Not all that bad after all"
+ opinion_trait_charismatic3_extra2:0 "Not all that bad after all"
+ opinion_trait_charismatic3_extra3:0 "Intriguing organisms"
+ opinion_trait_charismatic3_extra4:0 "Low on the kill list"
  
  
  
