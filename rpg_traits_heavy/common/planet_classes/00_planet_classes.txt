@@ -849,7 +849,8 @@ pc_b_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
+	#planet_size = { min = 25 max = 35 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	colonizable = yes		# ha!
 	starting_planet = no
 }
@@ -875,7 +876,7 @@ pc_a_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	colonizable = yes		# ha!
 	starting_planet = no
 }
@@ -901,7 +902,7 @@ pc_f_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	colonizable = yes		# ha!
 	starting_planet = no
 }
@@ -927,7 +928,8 @@ pc_g_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
+ 
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	colonizable = yes		# ha!
 	starting_planet = no
 }
@@ -953,7 +955,7 @@ pc_k_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	colonizable = yes		# ha!
 	starting_planet = no
 }
@@ -979,7 +981,7 @@ pc_m_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	colonizable = yes		# ha!
 	starting_planet = no
 }
@@ -1005,7 +1007,8 @@ pc_m_giant_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
+ 
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	colonizable = yes		# ha!
 	starting_planet = no
 }
@@ -1032,7 +1035,8 @@ pc_t_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
+ 
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	colonizable = yes		# ha!
 	starting_planet = no
 }
