@@ -557,7 +557,3 @@ cost = 0 area = engineering start_tech = no category = { industry } tier = 0 wei
 cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
 tech_trait_strogg = {
 cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
-tech_civic_bio_assimilator = {
-cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }
-tech_civic_strogg = {
-cost = 0 area = engineering start_tech = no category = { industry } tier = 0 weight = 0 weight_modifier = { modifier = { factor = 0 } } ai_weight = { factor = 0 } }

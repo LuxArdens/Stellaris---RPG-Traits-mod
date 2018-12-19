@@ -13,8 +13,6 @@ on_yearly_pulse = {
 		trait.3
 		trait.4
 		trait.5
-		trait.23
-		trait.25
 		trait.6
 		trait.7
 		trait.8
@@ -27,9 +25,12 @@ on_yearly_pulse = {
 		trait.15
 		trait.16
 		trait.17
-		trait.1601
-		trait.1602
-		trait.1701
+		trait.23
+		trait.25
+		trait.32
+		trait.33
+		trait.34
+		trait.35
 		trait.40
 		trait.41
 		trait.47
@@ -38,10 +39,9 @@ on_yearly_pulse = {
 		trait.50
 		trait.51
 		trait.52
-		trait.32
-		trait.33
-		trait.34
-		trait.35
+		trait.1601
+		trait.1602
+		trait.1701
 	}
 }
 
@@ -56,38 +56,6 @@ on_decade_pulse = {
 # Triggers when the game starts
 on_game_start = {
 	events = {
-		trait.1
-		trait.2
-		trait.3
-		trait.4
-		trait.5
-		trait.6
-		trait.7
-		trait.8
-		trait.9
-		trait.10
-		trait.11
-		trait.12
-		trait.13
-		trait.14
-		trait.15
-		trait.16
-		trait.17
-		trait.23
-		trait.25
-		
-		traitreg.1
-		traitreg.2
-		planreg.3
-		planreg.4
-		planreg.1
-		planreg.2
-		trait.24
-		trait.26
-		trait.27
-		trait.29
-		trait.30
-		trait.31
 		trait.32
 		trait.33
 		trait.34
@@ -98,13 +66,20 @@ on_game_start = {
 		trait.39
 		trait.40
 		trait.41
+		trait.46
 		robovents.1
 		robovents.2
 		robovents.3
 		robovents.4
-		trait.42
-		trait.43
-		trait.46
+		traitreg.1
+		traitreg.2
+		planterents.1
+		planterents.2
+		planterents.3
+		planterents.4
+		planterents.5
+		planterents.6
+		planterents.7
 	}
 }
 
@@ -144,7 +119,6 @@ on_modification_complete = {
 		trait.3
 		trait.4
 		trait.5
-		trait.23
 		trait.6
 		trait.7
 		trait.8
@@ -157,41 +131,27 @@ on_modification_complete = {
 		trait.15
 		trait.16
 		trait.17
+		trait.23
 		trait.32
 		trait.33
 		trait.34
 		trait.35
-		trait.1601
-		trait.1701
-		trait.9000
 		trait.40
 		trait.41
-		robovents.1
-		robovents.2
-		robovents.3
-		robovents.4
 		trait.47
 		trait.48
 		trait.49
 		trait.50
 		trait.51
 		trait.52
+		trait.1601
+		trait.1701
+		robovents.1
+		robovents.2
+		robovents.3
+		robovents.4
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

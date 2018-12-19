@@ -96,6 +96,23 @@ event = {
 	}
 }
 event = {
+	id = "trait.15"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				 has_trait = trait_tiny
+			}
+			add_modifier = {
+				modifier = trait_tiny
+				days = -1
+			}
+		}
+	}
+}
+event = {
 	id = "trait.40"
 	hide_window = yes
 	is_triggered_only = yes
@@ -162,44 +179,6 @@ event = {
 			give_technology = { tech = "tech_shields_2" message = no }
 			add_modifier = {
 				modifier = trait_shield_obsessed
-				days = -1
-			}
-		}
-	}
-}
-
-event = {
-	id = "trait.23"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-					has_trait = trait_armor_obsessed
-			}
-			give_technology = { tech = "tech_ship_armor_2" message = no }
-			give_technology = { tech = "tech_ship_armor_3" message = no }
-			add_modifier = {
-				modifier = trait_armor_obsessed
-				days = -1
-			}
-		}
-	}
-}
-
-event = {
-	id = "trait.25"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-					has_trait = trait_jerry_riggers
-			}
-			add_modifier = {
-				modifier = trait_jerry_riggers
 				days = -1
 			}
 		}
@@ -367,25 +346,6 @@ event = {
 		}
 	}
 }
-
-event = {
-	id = "trait.15"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-				 has_trait = trait_tiny
-			}
-			add_modifier = {
-				modifier = trait_tiny
-				days = -1
-			}
-		}
-	}
-}
-
 event = {
 	id = "trait.16"
 	hide_window = yes
@@ -470,22 +430,117 @@ event = {
 }
 
 event = {
-	id = "trait.22"
+	id = "trait.23"
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
 		every_country = {
 			limit = {
-				has_trait = trait_gas_lifeform
+				has_trait = trait_armor_obsessed
 			}
-			country_event = { id = trait.8334 }
+			give_technology = { tech = "tech_ship_armor_2" message = no }
+			give_technology = { tech = "tech_ship_armor_3" message = no }
+			add_modifier = {
+				modifier = trait_armor_obsessed
+				days = -1
+			}
+		}
+	}
+}
+
+event = {
+	id = "trait.25"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+					has_trait = trait_jerry_riggers
+			}
+			add_modifier = {
+				modifier = trait_jerry_riggers
+				days = -1
+			}
 		}
 	}
 }
 
 
 
+event = {
+	id = "trait.32"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_psionic_shifters
+			}
+			add_modifier = {
+				modifier = trait_psionic_shifters
+				days = -1
+			}
+		}
+	}
+}
+event = {
+	id = "trait.33"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_psionic_ethereals
+			}
+			add_modifier = {
+				modifier = trait_psionic_ethereals
+				days = -1
+			}
+		}
+	}
+}
+# event = {
+	# id = "trait.34"
+	# hide_window = yes
+	# is_triggered_only = yes
+
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# NOT = {
+					# any_owned_pop = { 
+						# limit = { is_majority_species }
+						# has_trait = trait_psionic_shifters
+					# }
+				# }
+			# }
+			# remove_modifier = "trait_psionic_shifters"
+		# }
+	# }
+# }
+# event = {
+	# id = "trait.35"
+	# hide_window = yes
+	# is_triggered_only = yes
+
+	# immediate = {
+		# every_country = {
+			# limit = {
+				# NOT = {
+					# any_owned_pop = { 
+						# limit = { is_majority_species }
+						# has_trait = trait_psionic_ethereals
+					# }
+				# }
+			# }
+			# remove_modifier = "trait_psionic_ethereals"
+		# }
+	# }
+# }
 event = {
 	id = "trait.36"
 	hide_window = yes
@@ -553,7 +608,7 @@ event = {
 		every_country = {
 			limit = {
 				NOT = {
-					any_owned_pop = { 
+					any_owned_pop = {
 						limit = { is_majority_species }
 						has_trait = trait_dumb2
 					}
@@ -630,12 +685,12 @@ planet_event = {
 
 		trigger = {
 			any_pop = {
-				 OR = {
+				OR = {
 						has_trait = trait_subterranean
 						has_trait = trait_living_planet
-				 }
-				 is_being_purged = no
-				 is_enslaved = no
+				}
+				is_being_purged = no
+				is_enslaved = no
 			}
 			planet_size < 25
 			NOT = { is_planet_class = pc_habitat }
@@ -674,10 +729,10 @@ country_event = {
 
 	option = {
 		name = trait.8326.a
-						add_modifier = {
-								modifier = trait_hibernation
-								days = 365
-						}
+		add_modifier = {
+			modifier = trait_hibernation
+				days = 365
+		}
 	}
 }
 
@@ -795,12 +850,13 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-			add_modifier = {
-				modifier = trait_effects_weirdass
-				days = -1
-			}
+		#	add_modifier = {
+		#		modifier = trait_effects_supercheat
+		#		days = -1
+		#	}
 	}
 }
+
 
 ########################
 ## Genemod On_Actions ##
@@ -839,85 +895,7 @@ country_event = {
 		}
 	}
 }
-
-###########################
-# Extra static modifiers
-###########################
-
-event = {
-	id = "trait.32"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-				has_trait = trait_psionic_shifters
-			}
-			add_modifier = {
-				modifier = trait_psionic_shifters
-				days = -1
-			}
-		}
-	}
-}
-event = {
-	id = "trait.33"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-				has_trait = trait_psionic_ethereals
-			}
-			add_modifier = {
-				modifier = trait_psionic_ethereals
-				days = -1
-			}
-		}
-	}
-}
-
-# event = {
-	# id = "trait.34"
-	# hide_window = yes
-	# is_triggered_only = yes
-
-	# immediate = {
-		# every_country = {
-			# limit = {
-				# NOT = {
-					# any_owned_pop = { 
-						# limit = { is_majority_species }
-						# has_trait = trait_psionic_shifters
-					# }
-				# }
-			# }
-			# remove_modifier = "trait_psionic_shifters"
-		# }
-	# }
-# }
-# event = {
-	# id = "trait.35"
-	# hide_window = yes
-	# is_triggered_only = yes
-
-	# immediate = {
-		# every_country = {
-			# limit = {
-				# NOT = {
-					# any_owned_pop = { 
-						# limit = { is_majority_species }
-						# has_trait = trait_psionic_ethereals
-					# }
-				# }
-			# }
-			# remove_modifier = "trait_psionic_ethereals"
-		# }
-	# }
-# }
-
+   
 #######################################
 #	Civics
 #######################################
@@ -990,6 +968,7 @@ event = {		# reduce genemodding bonus slightly after getting second AP
 		}
 	}
 }
+
 event = {		# add strogg trait et cetera
 	id = "trait.46"
 	hide_window = yes
@@ -1005,6 +984,14 @@ event = {		# add strogg trait et cetera
 				species = this
 				remove_trait = trait_cybernetic
 				add_trait = trait_strogg
+			}
+			set_living_standard = {
+				type = living_standard_hive_mind
+				country = root.owner
+			}
+			set_citizenship_type = {
+				type = citizenship_full
+				country = root.owner
 			}
 		}
 			add_modifier = {

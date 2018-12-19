@@ -70,6 +70,7 @@ pc_desert = {
 	production_spawn_chance = 0.4
 	
 	colonizable = yes
+	uses_alternative_skies_for_moons = no
 }
 
 pc_arid = {
@@ -98,6 +99,7 @@ pc_arid = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
+	uses_alternative_skies_for_moons = yes
 }
 
 pc_savannah = {
@@ -126,6 +128,7 @@ pc_savannah = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
+	uses_alternative_skies_for_moons = yes
 }
 
 # Temperate
@@ -155,6 +158,7 @@ pc_tropical = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
+	uses_alternative_skies_for_moons = no
 }
 
 pc_continental = {
@@ -184,6 +188,7 @@ pc_continental = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
+	uses_alternative_skies_for_moons = no
 }
 
 pc_ocean = {
@@ -213,6 +218,7 @@ pc_ocean = {
 	
 	colonizable = yes
 	#colonization_tech = { "tech_ocean_colonization" }
+	uses_alternative_skies_for_moons = no
 }
 
 # Cold
@@ -242,6 +248,7 @@ pc_tundra = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
+	uses_alternative_skies_for_moons = no
 }
 
 pc_arctic = {
@@ -270,6 +277,7 @@ pc_arctic = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
+	uses_alternative_skies_for_moons = yes
 }
 
 pc_alpine = {
@@ -298,6 +306,7 @@ pc_alpine = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
+	uses_alternative_skies_for_moons = yes
 }
 
 # ###########
@@ -570,6 +579,44 @@ pc_nuked = {
 	starting_planet = no
 	colonizable = yes
 	colonization_tech = { "tech_atmospheric_manipulation" }
+	uses_alternative_skies_for_moons = no
+}
+
+pc_hive = {
+	entity = "infested_planet"
+	picture = pc_infested
+	tile_set = pc_infested
+	entity_scale = @planet_standard_scale
+	
+	icon_frame = 16
+	
+	atmosphere_color 		= hsv { 0.75 0.2 0.7 }
+	atmosphere_intensity 	= 0.1
+	atmosphere_width 		= 1.2
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+	
+	min_distance_from_sun = 40
+	max_distance_from_sun = 1000
+	
+	modifier = {
+		planet_jobs_produces_mult = 0.10
+	}
+	
+	spawn_odds = 0
+	extra_orbit_size = 1
+	extra_planet_count = 2
+	
+	can_be_moon = no
+	chance_of_ring = 0.0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
 }
 
 pc_machine = {
@@ -590,7 +637,8 @@ pc_machine = {
 	max_distance_from_sun = 1000
 	
 	modifier = {
-		pop_robot_production_output = 0.20
+		planet_jobs_produces_mult = 0.10
+		pop_housing_usage_mult = -0.10
 	}
 	
 	spawn_odds = 0
@@ -614,7 +662,7 @@ pc_machine = {
 pc_shielded = {
 	entity = "shielded_planet"
 	overlay_entity = "planet_shield_effect_entity"
-	icon_frame = 1
+	icon_frame = 1 # Uses custom logic
 	
 	entity_scale = @planet_standard_scale
 	
@@ -729,13 +777,13 @@ pc_gaia = {
 	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
 	
 	modifier = {
-		pop_resource_output = 0.10
-		biological_pop_happiness = 0.05
+		planet_jobs_produces_mult = 0.2
+		biological_pop_happiness = 0.15
 	}
 
 	min_distance_from_sun = 60
 	max_distance_from_sun = 95
-	spawn_odds = 0.03
+	spawn_odds = 0.025		# made twice as rare and twice as good
 	
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -748,6 +796,7 @@ pc_gaia = {
 	colonizable = yes
 	ideal = no		# because HEAVY
 	starting_planet = no
+	uses_alternative_skies_for_moons = no
 }
 
 pc_cybrex = {
@@ -765,7 +814,7 @@ pc_cybrex = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 25
+	planet_size = 50
 	moon_size = 1
 	colonizable = no
 	show_city = no
@@ -782,6 +831,7 @@ pc_b_star = {
 	entity = "b_star_class_star_entity"
 	entity_scale = 20.0
 	picture = "pc_b_star"
+	icon_frame = 29
 
 	atmosphere_color 		= hsv { 0.71 0.6 0.7 }
 	atmosphere_intensity 	= 0.8
@@ -808,6 +858,7 @@ pc_a_star = {
 	entity = "a_star_class_star_entity"
 	entity_scale = 20.0
 	picture = "pc_a_star"
+	icon_frame = 29
 
 	atmosphere_color 		= hsv { 0.56 0.4 0.7 }
 	atmosphere_intensity 	= 0.5
@@ -833,6 +884,7 @@ pc_f_star = {
 	entity = "f_star_class_star_entity"
 	entity_scale = 20.0
 	picture = "pc_f_star"
+	icon_frame = 27
 
 	atmosphere_color 		= hsv { 0.6 0.3 0.6 }
 	atmosphere_intensity 	= 1.0
@@ -858,6 +910,7 @@ pc_g_star = {
 	entity = "g_star_class_star_entity"
 	entity_scale = 20.0
 	picture = "pc_g_star"
+	icon_frame = 27
 
 	atmosphere_color 		= hsv { 0.09 0.7 0.7 }
 	atmosphere_intensity 	= 0.5
@@ -883,6 +936,7 @@ pc_k_star = {
 	entity = "k_star_class_star_entity"
 	entity_scale = 20.0
 	picture = "pc_k_star"
+	icon_frame = 28
 
 	atmosphere_color 		= hsv { 0.06 0.65 0.7 }
 	atmosphere_intensity 	= 0.6
@@ -908,6 +962,7 @@ pc_m_star = {
 	entity = "m_star_class_star_entity"
 	entity_scale = 20.0
 	picture = "pc_m_star"
+	icon_frame = 26
 
 	atmosphere_color 		= hsv { 0.01 0.9 0.6 }
 	atmosphere_intensity 	= 0.10
@@ -933,6 +988,7 @@ pc_m_giant_star = {
 	entity = "m_giant_star_class_star_entity"
 	entity_scale = 20.0
 	picture = "pc_m_star"
+	icon_frame = 26
 
 	atmosphere_color 		= hsv { 0.01 0.9 0.6 }
 	atmosphere_intensity 	= 0.10
@@ -958,6 +1014,7 @@ pc_t_star = {
 	entity = "t_star_class_star_entity"
 	entity_scale = 30.0
 	picture = "pc_browndwarf"
+	icon_frame = 14
 
 	atmosphere_color 		= hsv { 0.87 0.6 0.4 }
 	atmosphere_intensity 	= 0.7
@@ -983,6 +1040,7 @@ pc_t_star = {
 pc_black_hole = {
 	entity = "black_hole_entity"
 	entity_scale = 20.0
+	icon_frame = 32
 	
 	atmosphere_color 		= hsv { 0.075 0.13 1.5 }
 	atmosphere_intensity 	= 1.0
@@ -1008,6 +1066,7 @@ pc_black_hole = {
 pc_neutron_star = {
 	entity = "neutron_star_entity"
 	entity_scale = 20.0
+	icon_frame = 31
 
 	star = yes
 	
@@ -1028,6 +1087,7 @@ pc_neutron_star = {
 pc_pulsar = {
 	entity = "pulsar_entity"
 	entity_scale = 20.0
+	icon_frame = 30
 
 	atmosphere_color 		= hsv { 0.58 0.35 0.7 }
 	atmosphere_intensity 	= 1.0
@@ -1072,7 +1132,7 @@ pc_ringworld_habitable = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 25
+	planet_size = 50
 	moon_size = 1
 	colonizable = yes
 	ideal = yes
@@ -1189,7 +1249,7 @@ pc_ringworld_seam_damaged = {
 pc_habitat = {
 	habitat = yes
 	entity = "orbital_habitat"
-	outliner_planet_type = special
+	#outliner_planet_type = special
 	icon_frame = 22
 	entity_scale = 1.0
 	enable_tilt = no
@@ -1204,13 +1264,17 @@ pc_habitat = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 25
+	planet_size = 6
 	moon_size = 1
 	colonizable = yes
 	ideal = yes
 	starting_planet = no
 	orbit_lines = no
 	has_colonization_influence_cost = no			# applies when within own borders
+	
+	modifier = {
+		planet_colony_development_speed_mult = 2.0 # Habitats should be fast to colonize
+	}
 }
 
 pc_shrouded = {

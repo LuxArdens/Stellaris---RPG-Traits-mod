@@ -240,6 +240,30 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = equalizer.7a
+	hide_window = yes
+	
+	trigger = {
+		any_owned_pop = {
+			AND = {
+				has_trait = trait_tiny
+				has_trait = trait_egg_born
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = tiny_egg
+			days = -1
+		}
+	}
+}
 
 planet_event = {
 	id = equalizer.8

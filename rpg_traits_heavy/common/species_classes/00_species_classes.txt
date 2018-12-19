@@ -197,6 +197,8 @@ AI = {
 	
 	graphical_culture = ai_01
 	move_pop_sound_effect = "moving_pop_confirmation"
+
+	resources = {}
 }
 
 SWARM = {
@@ -271,6 +273,8 @@ ROBOT = {
 	
 	graphical_culture = ai_01
 	move_pop_sound_effect = "robot_pops_move"
+
+	resources = {}
 }
 
 MACHINE = {
@@ -308,4 +312,6 @@ MACHINE = {
 
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "robot_pops_move"
+
+	resources = {}
 }

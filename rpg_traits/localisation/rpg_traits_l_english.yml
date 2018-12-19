@@ -58,13 +58,13 @@
  trait_lazy3_desc:0 "§LWhy?... Ah whatever§!\n"
  
  trait_badfarmers1:0 "Carnivorous"
- trait_badfarmers1_desc:0 "§LCURRENTLY BROKEN! \n This species can only eat meat, and requires more farms to feed their population.§!\n"
+ trait_badfarmers1_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n This species can only eat meat, and requires more farms to feed their population.§!\n"
  
  trait_badfarmers2:0 "Big Stomachs"
- trait_badfarmers2_desc:0 "§LCURRENTLY BROKEN! \n This species has a rather large daily food intake.§!\n"
+ trait_badfarmers2_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n This species has a rather large daily food intake.§!\n"
  
  trait_badfarmers3:0 "Glutton"
- trait_badfarmers3_desc:0 "§LCURRENTLY BROKEN! \n This species consumes ridiculous amounts of food.§!\n"
+ trait_badfarmers3_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n This species consumes ridiculous amounts of food.§!\n"
  
  trait_frail1:0 "Soft"
  trait_frail1_desc:0 "§LThis species is soft-skinned and easily harmed by harsh environments.§!\n"
@@ -130,13 +130,13 @@
  trait_smart3_desc:0 "§LGenetically improved neural paths guarantee that every member of society is exceptionally intelligent. Full neural control enables them to truly multitask or hyperfocus on a single task, at will, and develop skills and ideas at an unprecedented pace.\n\n+100% research empire wide\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_agrarian1:0 "Sparing"
- trait_agrarian1_desc:0 "§LCURRENTLY BROKEN! \n This species doesn't need much food, and thus needs relatively little farming land.§!\n"
+ trait_agrarian1_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n This species doesn't need much food, and thus needs relatively little farming land.§!\n"
  
  trait_agrarian2:0 "Efficient tracts"
- trait_agrarian2_desc:0 "§LCURRENTLY BROKEN! \n Symbiotic micro-organisms provide additional energy and nutrition to this species, reducing their required food consumption considerably.§!\n"
+ trait_agrarian2_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n Symbiotic micro-organisms provide additional energy and nutrition to this species, reducing their required food consumption considerably.§!\n"
  
  trait_agrarian3:0 "Self-Sufficient"
- trait_agrarian3_desc:0 "§LCURRENTLY BROKEN! \n Genetically enhanced micro symbiotics remove almost all need for this species to ingest food; they are fully self-sufficient.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
+ trait_agrarian3_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n Genetically enhanced micro symbiotics remove almost all need for this species to ingest food; they are fully self-sufficient.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_robust1:0 "Tough"
  trait_robust1_desc:0 "§LThis species endures even in harsh environments and is tough to kill.§!\n"
@@ -271,10 +271,10 @@
  trait_olfactory_desc:0 "§LThis species has developed a method of communication which relies entirely on the secretion and subtle interpretation of gaseous expulsions.§!\n"
  
  trait_lithovore:0 "Lithovore"
- trait_lithovore_desc:0 "§LCURRENTLY BROKEN! \n A silicon-based lifeform, lithovore species grow no crops. Or as they like to put it: "We do not sow.".§!\n"
+ trait_lithovore_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n A silicon-based lifeform, lithovore species grow no crops. Or as they like to put it: "We do not sow.".§!\n"
  
  trait_energy_lifeform:0 "Energy Lifeform"
- trait_energy_lifeform_desc:0 "§LCURRENTLY BROKEN! \n A pure energy lifeform. These creatures consume electricity instead of organic matter.§!\n"
+ trait_energy_lifeform_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n A pure energy lifeform. These creatures consume electricity instead of organic matter.§!\n"
  
  trait_euphoria:0 "Euphoria"
  trait_euphoria_desc:0 "§LIn a constant state of euphoria, this species is always happy and content. Sometimes a little too content with nothing.§!\n"
@@ -578,6 +578,27 @@
  bp_increased_reproduction_desc:0 "This Pop is mating with and having its kids raised by an alien Pop."
  bp_reduced_reproduction:0 "Reduced Reproduction"
  bp_reduced_reproduction_desc:0 "This Pop is mating with and raising the kids of an alien Pop."
+ 
+ doom_ticking:0 "Tick Tock"
+ doom_ticking_desc:0 "The clock is ticking..."
+ 
+ doom_triggered_1:0 "???"
+ doom_triggered_1_desc:0 "Something is not right..."
+ 
+ doom_triggered_2:0 "Accident"
+ doom_triggered_2_desc:0 "Something went wrong..."
+ 
+ doom_triggered_3:0 "Accident"
+ doom_triggered_3_desc:0 "We're in trouble"
+ 
+ doom_triggered_4:0 "Catastrophe"
+ doom_triggered_4_desc:0 "We are doomed"
+ 
+ doom.1.name:0 "Great Filter"
+ doom.1.desc:0 "Our species is not exactly known for great intelligence, but occasionally we produce individuals with an above average intelligence. One of these individuals, our lead researcher, was known to need the occasional 'percussive maintenance' to kickstart his brain; generally done by bashing his head against the wall a couple of times. Today he bashed it a little too hard however, critically damaging his central nervous system and reducing him to a vegetative state."
+ trait.8329.option:0 "I told you not to hire a head-banger!"
+ 
+ 
 
  ########################################
  # Civics 
