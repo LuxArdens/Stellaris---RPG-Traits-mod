@@ -37,15 +37,17 @@ trait_psionic_ethereals = {
 trait_titanic = {
 	# big buildings, tile blockers are irrelevant
 	planet_building_cost_mult = 4
+	planet_districts_cost_mult = 4
 	planet_clear_blocker_time_mult = -0.5
 	planet_clear_blocker_cost_mult = -0.5
 		# huge soldiers
 	army_upkeep_mult = 0.5		# reduced because it's energy
-	planet_army_build_cost_mult = 4
+	$planet_army_build_cost_mult = 4
+	armies_cost_mult = 4
 	planet_army_build_speed_mult = -0.8
 		# Huge robots
-	pop_robot_upkeep_mult = 5					# Machine races are considered robot pops in game now.
-	pop_robot_production_output = 5
+	planet_pops_robotics_upkeep_mult = 5					# Machine races are considered robot pops in game now.
+	planet_jobs_robotic_produces_mult = 5
 	pop_robot_build_speed_mult = -0.9
 	pop_robot_build_cost_mult = 5
 		# Huge ships
@@ -63,7 +65,7 @@ trait_titanic = {
 	ship_weapon_damage = 4
 	ship_fire_rate_mult = -0.25
 	ship_upkeep_mult = 4
-	ship_tracking_add = -15			# was -5, makes enemy corvette spam a more viable strategy
+	ship_tracking_add = -15			# makes enemy corvette spam a more viable strategy
 	ship_evasion_add = -40			# made more hefty because their corvettes are really supposed to be like cruiser-sized
 	country_naval_cap_mult = -0.8	# restricted to ~2 ships early game, up to much more in mid-late
 	ship_weapon_range_mult = 1		# not half as useful as you might expect
@@ -76,17 +78,19 @@ trait_titanic = {
 trait_tiny = {
 		# tiny buildings, tile blockers are a big problem
 	planet_building_cost_mult = -0.7 			# can get free buildings by stacking modifiers. I don't care.
+	planet_districts_cost_mult = -0.7
 	#planet_building_upkeep_mult = -0.7			# removed with the new energy rework
 	#planet_clear_blocker_time_mult = 1			# this was unnecessarily harsh
 	#planet_clear_blocker_cost_mult = 1
 		# tiny robots
-	pop_robot_upkeep_mult = -0.75
-	pop_robot_production_output = -0.75
+	planet_pops_robotics_upkeep_mult = -0.75
+	planet_jobs_robotic_produces_mult = -0.75
 	pop_robot_build_speed_mult = 3
 	pop_robot_build_cost_mult = -0.75
 		# tiny soldiers
 	army_upkeep_mult = -0.7
-	planet_army_build_cost_mult = -0.7
+	$planet_army_build_cost_mult = -0.7
+	armies_cost_mult = -0.7
 	planet_army_build_speed_mult = 4
 		# tiny ships
 	shipclass_colonizer_build_cost_mult = -0.8
@@ -124,11 +128,13 @@ trait_tiny = {
 trait_titanic_machine = {
 	# big buildings, tile blockers are irrelevant
 	planet_building_cost_mult = 4
+	planet_districts_cost_mult = 4
 	planet_clear_blocker_time_mult = -0.5
 	planet_clear_blocker_cost_mult = -0.5
 		# huge soldiers
 	army_upkeep_mult = 0.5		# reduced because it's energy
-	planet_army_build_cost_mult = 4
+	#planet_army_build_cost_mult = 4
+	armies_cost_mult = 4
 	planet_army_build_speed_mult = -0.8
 		# Huge ships
 	shipclass_colonizer_build_cost_mult	= 3
@@ -158,12 +164,14 @@ trait_titanic_machine = {
 trait_tiny_machine = {
 		# tiny buildings, tile blockers are a big problem
 	planet_building_cost_mult = -0.7 			# can get free buildings by stacking modifiers. I don't care.
+	planet_districts_cost_mult = -0.7
 	#planet_building_upkeep_mult = -0.7			# removed with the new energy rework
 	#planet_clear_blocker_time_mult = 1			# this was unnecessarily harsh
 	#planet_clear_blocker_cost_mult = 1
 		# tiny soldiers
 	army_upkeep_mult = -0.7
-	planet_army_build_cost_mult = -0.7
+	#planet_army_build_cost_mult = -0.7
+	armies_cost_mult = -0.7
 	planet_army_build_speed_mult = 4
 		# tiny ships
 	shipclass_colonizer_build_cost_mult = -0.8
@@ -214,8 +222,27 @@ trait_armor_obsessed = {
 	ship_armor_mult = 2
 }
 
+zero_consumption_planet = {
+	planet_pops_organics_food_upkeep_mult = -10
+}
+half_consumption_planet = {
+	planet_pops_organics_food_upkeep_mult = -0.5
+}
+quarter_consumption_planet = {
+	planet_pops_organics_food_upkeep_mult = -0.33
+}
+extra_quarter_consumption_planet = {
+	planet_pops_organics_food_upkeep_mult = 0.5
+}
+extra_half_consumption_planet = {
+	planet_pops_organics_food_upkeep_mult = 1
+}
+extra_double_consumption_planet = {
+	planet_pops_organics_food_upkeep_mult = 3
+}
+
 trait_effects_energy_lifeform = {
-	country_resource_energy_mult = -0.2
+	#country_resource_energy_mult = -0.2
 	#country_resource_food_mult = -10
 	army_upkeep_mult = 1
 }
@@ -247,10 +274,13 @@ turtles = {
 	shipclass_military_station_build_cost_mult = -0.8
 	shipclass_military_station_hull_mult = 1
 	shipsize_military_station_small_hull_add = 500
-	country_naval_cap_add = -20
+	country_naval_cap_add = -10
+	country_naval_cap_mult = -0.5
 	country_command_limit_add = -10
 	country_starbase_capacity_add = 100
 	starbase_defense_platform_capacity_add = 5
+	starbase_shipyard_build_time_mult = -0.5
+	starbases_upkeep_mult = -0.25
 }
 
 trait_dumb1 = {
@@ -284,6 +314,7 @@ sociology_elitists = {
 
 engineering_elitists = {
 	planet_building_cost_mult = -0.25
+	planet_districts_cost_mult = -0.25
 	starbase_shipyard_build_speed_mult = 0.2
 	ship_hull_mult = 0.2
 	ship_armor_mult = 0.2
@@ -318,7 +349,8 @@ doom_unleashed = {
 
 
 trait_quantity = {
-	planet_army_build_cost_mult = -0.75
+	#planet_army_build_cost_mult = -0.75
+	armies_cost_mult = -0.75
 	planet_army_build_speed_mult = 3
 
 	# tiny ships
@@ -342,7 +374,7 @@ trait_quantity = {
 
 trait_hibernation = {
 	# robots continue at partial efficiency! Yay
-	pop_robot_production_output = 0.75
+	planet_jobs_robotic_produces_mult = 0.75
 	pop_robot_build_speed_mult = -1	# but you can't build em
 
 	# ships check
@@ -357,7 +389,8 @@ trait_hibernation = {
 	ship_weapon_damage = -0.5
 	ship_upkeep_mult = -1						# ship maintenance can go negative as well.
 
-	planet_building_cost_mult = 40				
+	planet_building_cost_mult = 40		
+	planet_districts_cost_mult = 40		
 	planet_clear_blocker_time_mult = 40
 	planet_clear_blocker_cost_mult = 40
 	building_time_mult = 100
@@ -384,6 +417,7 @@ trait_hibernation = {
 	tile_resource_society_research_mult = -1
 	all_technology_research_speed = -1			# even the bloody research can go negative!
 	planet_army_build_cost_mult = 40
+	armies_cost_mult = 40
 	planet_army_build_speed_mult = -10
 	army_upkeep_mult = -10						# actually doesn't go negative. Good job whoever didn't screw that up
 		army_attack_morale_mult = -2
@@ -398,6 +432,7 @@ trait_living_planet = {
 	country_resource_influence_mult = 0.5		# Living planet is reliant on frontier posts
 	pop_happiness = 2
 	planet_building_cost_mult = -0.9		# (close to) none
+	planet_districts_cost_mult = -0.9
 	planet_building_upkeep_mult = -0.9
 	planet_clear_blocker_time_mult = -1		# for quick game start
 	planet_clear_blocker_cost_mult = -1
@@ -423,11 +458,12 @@ trait_jerry_riggers = {
 	pop_consumer_goods_mult = -0.25 # Figure a society of jerry-riggers wouldnt be as wasteful.
 	#Buildings
 	planet_building_cost_mult = -0.75		
+	planet_districts_cost_mult = -0.75
 	planet_building_upkeep_mult = 1			
 	building_time_mult = -0.5				
 	#Crappy Cheap Robots
-	pop_robot_upkeep_mult = 1
-	pop_robot_production_output = -0.5
+	planet_pops_robotics_upkeep_mult = 1
+	planet_jobs_robotic_produces_mult = -0.5
 	pop_robot_build_speed_mult = 2
 	pop_robot_build_cost_mult = -0.5
 	#Ships											Minor debuffs across the board.
@@ -446,7 +482,8 @@ trait_jerry_riggers = {
 	ship_weapon_range_mult = -0.25
 	#Armies
 	army_upkeep_mult = 1
-	planet_army_build_cost_mult = -0.25 # They may cut corners in equipment but an army's an army and training costs.
+	$planet_army_build_cost_mult = -0.25 # They may cut corners in equipment but an army's an army and training costs.
+	armies_cost_mult = -0.25
 	planet_army_build_speed_mult = 2
 	#Buffs
 	ship_hull_regen_add_perc = 1 # The big appeal of this trait.

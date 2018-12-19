@@ -1,0 +1,37 @@
+namespace = doom
+
+event = {
+	id = "doom.1"
+	title = "doom.1.name"
+	desc = doom.1.desc
+	picture = GFX_evt_spy_orb
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = trait_doom
+			}
+			add_modifier = {
+				modifier = doom_ticking
+				days = 18250				# 50 years
+			}
+		}
+	}
+
+	option = {
+		name = doom.1.optiona
+	}
+}
+
+event = {
+	id = "doom.2"
+	title = "doom.2.name"
+	desc = doom.2.desc
+	picture = GFX_evt_spy_orb
+	is_triggered_only = yes
+
+	option = {
+		name = doom.2.optiona
+	}
+}

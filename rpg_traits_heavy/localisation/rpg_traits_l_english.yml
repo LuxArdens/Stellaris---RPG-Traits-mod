@@ -578,6 +578,27 @@
  bp_increased_reproduction_desc:0 "This Pop is mating with and having its kids raised by an alien Pop."
  bp_reduced_reproduction:0 "Reduced Reproduction"
  bp_reduced_reproduction_desc:0 "This Pop is mating with and raising the kids of an alien Pop."
+ 
+ doom_ticking:0 "Tick Tock"
+ doom_ticking_desc:0 "The clock is ticking..."
+ 
+ doom_triggered_1:0 "???"
+ doom_triggered_1_desc:0 "Something is not right..."
+ 
+ doom_triggered_2:0 "Accident"
+ doom_triggered_2_desc:0 "Something went wrong..."
+ 
+ doom_triggered_3:0 "Accident"
+ doom_triggered_3_desc:0 "We're in trouble"
+ 
+ doom_triggered_4:0 "Catastrophe"
+ doom_triggered_4_desc:0 "We are doomed"
+ 
+ doom.1.name:0 "Great Filter"
+ doom.1.desc:0 "Our species is not exactly known for great intelligence, but occasionally we produce individuals with an above average intelligence. One of these individuals, our lead researcher, was known to need the occasional 'percussive maintenance' to kickstart his brain; generally done by bashing his head against the wall a couple of times. Today he bashed it a little too hard however, critically damaging his central nervous system and reducing him to a vegetative state."
+ trait.8329.option:0 "I told you not to hire a head-banger!"
+ 
+ 
 
  ########################################
  # Civics 
