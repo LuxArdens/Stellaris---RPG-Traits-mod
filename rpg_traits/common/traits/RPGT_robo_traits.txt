@@ -26,7 +26,8 @@ trait_robodesign_terminators = {		# basically Skynet
 		
 		pop_assembly_speed = -0.75
 		pop_robot_build_cost_mult = 3			# very large investment into specialized military hardware
-		pop_consumer_goods_mult = 3
+		planet_pops_consumer_goods_upkeep_mult = 3
+		planet_pop_assemblers_upkeep_mult = 3
 		army_damage_mult = 5					# Extremely deadly robotic drones
 		army_health = 5
 		army_upkeep_mult = 2
@@ -115,7 +116,8 @@ trait_robodesign_science = {		# giant scientific mainframe
 		planet_jobs_society_research_produces_mult = 2
 		
 		planet_pops_robotics_upkeep_mult = 3		# will have a constant struggle for MOAR power
-		pop_consumer_goods_mult = 1		# struggle to support large pop, as to not be completely OP in science department
+		planet_pops_consumer_goods_upkeep_mult = 1		# struggle to support large pop, as to not be completely OP in science department
+		planet_pop_assemblers_upkeep_mult = 1
 	}
 }
 trait_robodesign_androids = {		# droids that became self-aware. Good all-rounders, but not like uploaded organics
@@ -230,7 +232,8 @@ trait_robodesign_terminators_synth = {		# basically Skynet
 		
 		pop_assembly_speed = -0.75
 		pop_robot_build_cost_mult = 3			# very large investment into specialized military hardware
-		pop_consumer_goods_mult = 3
+		planet_pops_consumer_goods_upkeep_mult = 3
+		planet_pop_assemblers_upkeep_mult = 3
 		army_damage_mult = 5					# Extremely deadly robotic drones
 		army_health = 5
 		army_upkeep_mult = 2
@@ -319,7 +322,8 @@ trait_robodesign_science_synth = {		# giant scientific mainframe
 		planet_jobs_society_research_produces_mult = 1
 		
 		planet_pops_robotics_upkeep_mult = 3		# will have a constant struggle for MOAR power
-		pop_consumer_goods_mult = 1		# struggle to support large pop, as to not be completely OP in science department
+		planet_pops_consumer_goods_upkeep_mult = 1		# struggle to support large pop, as to not be completely OP in science department
+		planet_pop_assemblers_upkeep_mult = 1
 	}
 }
 
@@ -347,7 +351,8 @@ trait_robodesign_terminators_robot = {		# basically Skynet
 		
 		pop_assembly_speed = -0.8
 		pop_robot_build_cost_mult = 5			# very large investment into specialized military hardware
-		pop_consumer_goods_mult = 4
+		planet_pops_consumer_goods_upkeep_mult = 4
+		planet_pop_assemblers_upkeep_mult = 4
 		planet_pops_robotics_upkeep_mult = 1
 		army_damage_mult = 5					# Extremely deadly robotic drones
 		army_health = 5
@@ -506,7 +511,8 @@ trait_robot_durable = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_consumer_goods_mult = -0.5
+		planet_pops_consumer_goods_upkeep_mult = -0.5
+		planet_pop_assemblers_upkeep_mult = -0.5
 	}
 }
 
@@ -523,7 +529,8 @@ trait_robot_durable2 = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_consumer_goods_mult = -1
+		planet_pops_consumer_goods_upkeep_mult = -0.8
+		planet_pop_assemblers_upkeep_mult = -0.75
 	}
 }
 
@@ -539,7 +546,8 @@ trait_robot_high_maintenance = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_consumer_goods_mult = 2
+		planet_pops_consumer_goods_upkeep_mult = 2
+		planet_pop_assemblers_upkeep_mult = 2
 	}
 }
 
@@ -555,7 +563,8 @@ trait_robot_high_maintenance2 = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_consumer_goods_mult = 4
+		planet_pops_consumer_goods_upkeep_mult = 4
+		planet_pop_assemblers_upkeep_mult = 4
 	}
 }
 
@@ -848,7 +857,7 @@ trait_robodesign_nanoswarm = {		# grey goo
 		
 		pop_assembly_speed = 10				# almost instantaneously
 		pop_robot_build_cost_mult = -1
-		pop_consumer_goods_mult = -10
+		planet_pops_consumer_goods_upkeep_mult = -10
 		planet_pops_robotics_upkeep_mult = -10
 		
 		army_damage_mult = 1						#
@@ -876,7 +885,7 @@ trait_robodesign_nanoswarm_synth = {				# grey goo
 		
 		pop_assembly_speed = 10				# almost instantaneously
 		pop_robot_build_cost_mult = -1
-		pop_consumer_goods_mult = -10
+		planet_pops_consumer_goods_upkeep_mult = -10
 		planet_pops_robotics_upkeep_mult = -10
 		
 		army_damage_mult = 1						#
