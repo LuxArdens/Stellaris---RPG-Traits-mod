@@ -55,7 +55,6 @@ dyson_sphere_0 = {
 					}
 				}
 			}
-		}
 		custom_tooltip = {
 			fail_text = "requires_no_black_hole_neutron_star_pulsar"
 			NOT = {

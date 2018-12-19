@@ -45,6 +45,9 @@ event = {
 				}
 			}
 			give_technology = { message = no tech = tech_star_habitation }
+			every_owned_planet = {
+				generate_earth_deposits_and_blockers = yes
+			}
 		}
 	}
 }
@@ -61,6 +64,9 @@ event = {
 				}
 			}
 			give_technology = { message = no tech = tech_gas_habitation }
+			every_owned_planet = {
+				generate_earth_deposits_and_blockers = yes
+			}
 			#every_owned_planet = {
 			#		change_pc = pc_gas_giant
 			#}
@@ -80,6 +86,9 @@ event = {
 				}
 			}
 			give_technology = { message = no tech = tech_molten_habitation }
+			every_owned_planet = {
+				generate_earth_deposits_and_blockers = yes
+			}
 		}
 	}
 }
@@ -96,6 +105,9 @@ event = {
 				}
 			}
 			give_technology = { message = no tech = tech_toxic_habitation }
+			every_owned_planet = {
+				generate_earth_deposits_and_blockers = yes
+			}
 		}
 	}
 }
@@ -114,6 +126,9 @@ event = {
 				}
 			}
 			give_technology = { message = no tech = tech_barren_habitation }
+			every_owned_planet = {
+				generate_earth_deposits_and_blockers = yes
+			}
 		}
 	}
 }
@@ -130,6 +145,9 @@ event = {
 				}
 			}
 			give_technology = { message = no tech = tech_asteroid_habitation }
+			every_owned_planet = {
+				generate_earth_deposits_and_blockers = yes
+			}
 		}
 	}
 }

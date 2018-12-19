@@ -332,8 +332,8 @@ pc_gas_giant = {
 	can_be_moon = no
 	chance_of_ring = 0.6
 	
-	planet_size = { min = 20 max = 30 }
-	moon_size = { min = 8 max = 15 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	production_spawn_chance = 0.5
 	
@@ -359,7 +359,7 @@ pc_asteroid = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 2 max = 7 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	
 	colonizable = yes
 	starting_planet = no
@@ -382,7 +382,7 @@ pc_ice_asteroid = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 3 max = 7 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	
 	colonizable = yes
 	starting_planet = no
@@ -408,7 +408,7 @@ pc_crystal_asteroid_2 = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 3 max = 7 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	
 	colonizable = yes
 	starting_planet = no
@@ -438,8 +438,8 @@ pc_molten = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 14 max = 30 }
-	moon_size = { min = 6 max = 12 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	colonizable = yes
 	starting_planet = no 
 }
@@ -462,8 +462,8 @@ pc_barren = {
 	
 	chance_of_ring = 0.2
 	
-	planet_size = { min = 12 max = 30 }
-	moon_size = { min = 6 max = 10 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
 	starting_planet = no
@@ -489,8 +489,8 @@ pc_barren_cold = {
 	
 	chance_of_ring = 0.2
 	
-	planet_size = { min = 12 max = 30 }
-	moon_size = { min = 6 max = 10 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
 	starting_planet = no
@@ -515,8 +515,8 @@ pc_toxic = {
 	
 	chance_of_ring = 0.2
 	
-	planet_size = { min = 12 max = 25 }
-	moon_size = { min = 6 max = 10 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
 	starting_planet = no
@@ -540,8 +540,8 @@ pc_frozen = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 10 max = 25 }
-	moon_size = { min = 6 max = 10 }
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes
 	starting_planet = no
