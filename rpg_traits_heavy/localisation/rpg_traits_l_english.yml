@@ -85,13 +85,13 @@
  trait_solitary3_desc:0 "§LMembers of this species tend to seclude themselves completely and live in isolation as much as possible. Encounters are frequently met with insults, violence and war. They seem to be very fond of walls as well.§!\n"
  
  trait_repugnant1:0 "Weird"
- trait_repugnant1_desc:0 "§LThis species is rather unsettling to be in a room with, or communicate with, even for an alien species.§!\n"
+ trait_repugnant1_desc:0 "§LThis species is rather unsettling to be in a room with, or communicate with, even for an alien species.\nIncurs a 50 opinion penalty§!\n"
  
  trait_repugnant2:0 "Filthy"
- trait_repugnant2_desc:0 "§LThis species communicates is rude and disgusting. They also excrete a watery fluid from their skin.§!\n"
+ trait_repugnant2_desc:0 "§LThis species communicates is rude and disgusting. They also excrete a watery fluid from their skin.\nIncurs a 100 opinion penalty§!\n"
  
  trait_repugnant3:0 "Utterly Disgusting"
- trait_repugnant3_desc:0 "§LThis species is rude and extremely ugly to virtually every other species. They excrete brown, yellow, white and red bodily fluids from various orifices and fleshy extensions.§!\n"
+ trait_repugnant3_desc:0 "§LThis species is rude and extremely ugly to virtually every other species. They excrete brown, yellow, white and red bodily fluids from various orifices and fleshy extensions.\nIncurs a 1000 opinion penalty§!\n"
  
  trait_fleeting1:0 "Short-lived"
  trait_fleeting1_desc:0 "§LThis species' lifespan has not improved much since their early days.§!\n"
@@ -193,13 +193,13 @@
  trait_communal3_desc:0 "§LNeural imprinting has made this species perfectly altruistic to their own. They operate and live in harmony and happiness, without crime or violence.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
  
  trait_charismatic1:0 "Polite"
- trait_charismatic1_desc:0 "§LThis species is always polite, even to xenos.§!\n"
+ trait_charismatic1_desc:0 "§LThis species is always polite, even to xenos.\nIncurs a 25 opinion bonus§!\n"
  
  trait_charismatic2:0 "Charismatic"
- trait_charismatic2_desc:0 "§LThis species manages to come off as charismatic even to alien species.§!\n"
+ trait_charismatic2_desc:0 "§LThis species manages to come off as charismatic even to alien species.\nIncurs a 40 opinion bonus and eliminates Xenophobe and Hivemind opinion penalties§!\n"
  
  trait_charismatic3:0 "Attractive"
- trait_charismatic3_desc:0 "§LCareful study of xeno communication, in combination with altered pheromone composition, allow this species to be wildly attractive even to completely alien species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.§!\n"
+ trait_charismatic3_desc:0 "§LCareful study of xeno communication, in combination with altered pheromone composition, allow this species to be wildly attractive even to completely alien species.\n\n Advanced Genemodding trait. In-game this is locked behind really fancy techs, but you can pick it at the start if you really want to. Just don't expect it to be balanced in the slightest.\nIncurs a 50 opinion bonus, eliminates Xenophobe and Hivemind opinion penalties. Makes Fanatic purifiers hate you less then your neighbours.§!\n"
  
  trait_conformists1:0 "Mainstream"
  trait_conformists1_desc:0 "§LIf the majority thinks it's right, it probably is right. Right?§!\n"

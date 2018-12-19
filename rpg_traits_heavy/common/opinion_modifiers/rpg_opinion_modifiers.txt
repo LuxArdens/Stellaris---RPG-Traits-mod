@@ -120,7 +120,7 @@ opinion_trait_charismatic2_regular = {
         }
     }
     opinion = {
-        base = 50
+        base = 40
     }
 }
 
@@ -191,7 +191,7 @@ opinion_trait_charismatic3 = {
         }
     }
     opinion = {
-        base = 100
+        base = 50
     }
 }
 
