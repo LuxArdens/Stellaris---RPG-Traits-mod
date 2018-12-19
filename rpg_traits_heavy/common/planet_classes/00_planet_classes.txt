@@ -370,7 +370,7 @@ pc_asteroid = {
 
 pc_ice_asteroid = {
 	entity = "asteroid_ice_large"
-	entity_scale = 1.5
+	entity_scale = 0.5
 	icon_frame = 18
 	
 	asteroid = yes
@@ -396,7 +396,7 @@ pc_ice_asteroid = {
 pc_crystal_asteroid_2 = {
 	entity = "asteroid_crystal_large"
 	picture = pc_crystal_asteroid
-	entity_scale = 0.75
+	entity_scale = 0.5
 	icon_frame = 18
 	
 	asteroid = yes
