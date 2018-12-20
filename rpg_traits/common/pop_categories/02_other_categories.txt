@@ -69,7 +69,28 @@ robot_servant = {
 	resources = {
 		category = pop_category_robot
 		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
+				is_robotic_species = yes
+			}
 			energy = @living_standard_energy_normal
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_titanic
 		}
 	}		
 }
@@ -107,45 +128,243 @@ slave = {
 		# Organic Upkeep
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_very_high_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_low
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_high_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_low
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
 					has_academic_living_standard_type = yes
 				}
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_low
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				OR = {
 					has_low_living_standard_type = yes
 					has_stratified_living_standard_type = yes
 				}			
 			}
-			food = @living_standard_food_normal
 		}	
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			consumer_goods = @living_standard_luxuries_very_low_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				OR = {
+					has_low_living_standard_type = yes
+					has_stratified_living_standard_type = yes
+				}			
+			}
+		}	
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			consumer_goods = @living_standard_luxuries_very_low_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				OR = {
+					has_low_living_standard_type = yes
+					has_stratified_living_standard_type = yes
+				}			
+			}
+		}	
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				is_organic_species = yes
+			}
+			food = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_titanic
+		}
 		
 		# Robotic Upkeep
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_very_high_living_standard_type = yes
 			}
@@ -154,6 +373,10 @@ slave = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_high_living_standard_type = yes
 			}
@@ -162,6 +385,10 @@ slave = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
@@ -173,11 +400,91 @@ slave = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_stratified_living_standard_type = yes
 			}
 			energy = @living_standard_energy_normal
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_low_tiny
 		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+		}
 	}		
 }
 
@@ -209,9 +516,142 @@ bio_trophy = {
 	resources = {
 		category = pop_category_bio_trophy
 		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				is_organic_species = yes
+			}
 			food = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = @living_standard_food_titanic
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_titanic
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = {
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
+			}
 			consumer_goods = @living_standard_luxuries_very_high
 		}
+		upkeep = {
+			trigger = {
+				has_trait = trait_tiny
+			}
+			consumer_goods = @living_standard_luxuries_very_high_tiny
+		}
+		upkeep = {
+			trigger = {
+				has_trait = trait_titanic
+			}
+			consumer_goods = @living_standard_luxuries_very_high_titanic
+		}	
 	}		
 }
 
@@ -298,59 +738,291 @@ criminal = {
 		# Organic Upkeep
 		upkeep = {
 			trigger = {
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_shared_burden
 		}			
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_very_high_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_high
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_high_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_high
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
 					has_academic_living_standard_type = yes
 				}
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_normal
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_stratified_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_low
 		}	
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_low_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_low
+		}
+		upkeep = {
+			trigger = {
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_shared_burden_tiny
+		}			
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_high_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_high_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			consumer_goods = @living_standard_luxuries_normal_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}	
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_low_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_low_tiny
+		}
+		upkeep = {
+			trigger = {
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_shared_burden_titanic
+		}			
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_high_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_high_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			consumer_goods = @living_standard_luxuries_normal_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}	
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_low_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_low_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				is_organic_species = yes
+			}
+			food = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_titanic
 		}
 		
 		# Robotic Upkeep
 		upkeep = {
 			trigger = {
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
@@ -359,6 +1031,10 @@ criminal = {
 		}			
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_very_high_living_standard_type = yes
 			}
@@ -367,6 +1043,10 @@ criminal = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_high_living_standard_type = yes
 			}
@@ -375,14 +1055,25 @@ criminal = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes 
-				has_normal_living_standard_type = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
 			}
 			energy = @living_standard_energy_normal
 			consumer_goods = @living_standard_luxuries_normal
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_stratified_living_standard_type = yes
 			}
@@ -391,11 +1082,129 @@ criminal = {
 		}	
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_low_living_standard_type = yes
 			}
 			energy = @living_standard_energy_normal
 			consumer_goods = @living_standard_luxuries_very_low
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_shared_burden_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_very_high_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_high_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_normal_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_low_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_very_low_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_shared_burden_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_very_high_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_high_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_normal_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_low_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_very_low_titanic
 		}
 	}		
 }
@@ -483,59 +1292,291 @@ deviant_drone = {
 		# Organic Upkeep
 		upkeep = {
 			trigger = {
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_shared_burden
 		}			
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_very_high_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_high
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_high_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_high
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
 					has_academic_living_standard_type = yes
 				}
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_normal
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_stratified_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_low
 		}	
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_low_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_low
+		}
+		upkeep = {
+			trigger = {
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_shared_burden_tiny
+		}			
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_high_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_high_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			consumer_goods = @living_standard_luxuries_normal_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}	
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_low_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_low_tiny
+		}
+		upkeep = {
+			trigger = {
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_shared_burden_titanic
+		}			
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_high_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_high_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			consumer_goods = @living_standard_luxuries_normal_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}	
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_low_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_low_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				is_organic_species = yes
+			}
+			food = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_titanic
 		}
 		
 		# Robotic Upkeep
 		upkeep = {
 			trigger = {
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
@@ -544,6 +1585,10 @@ deviant_drone = {
 		}			
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_very_high_living_standard_type = yes
 			}
@@ -552,6 +1597,10 @@ deviant_drone = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_high_living_standard_type = yes
 			}
@@ -560,14 +1609,25 @@ deviant_drone = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes 
-				has_normal_living_standard_type = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
 			}
 			energy = @living_standard_energy_normal
 			consumer_goods = @living_standard_luxuries_normal
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_stratified_living_standard_type = yes
 			}
@@ -576,11 +1636,129 @@ deviant_drone = {
 		}	
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_low_living_standard_type = yes
 			}
 			energy = @living_standard_energy_normal
 			consumer_goods = @living_standard_luxuries_very_low
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_shared_burden_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_very_high_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_high_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_normal_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_low_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_very_low_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_shared_burden_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_very_high_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_high_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_normal_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_low_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_very_low_titanic
 		}
 	}		
 }
@@ -668,59 +1846,291 @@ corrupt_drone = {
 		# Organic Upkeep
 		upkeep = {
 			trigger = {
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_shared_burden
 		}			
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_very_high_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_high
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_high_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_high
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
 					has_academic_living_standard_type = yes
 				}
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_normal
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_stratified_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_low
 		}	
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_organic_species = yes
 				has_low_living_standard_type = yes
 			}
-			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_low
+		}
+		upkeep = {
+			trigger = {
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_shared_burden_tiny
+		}			
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_high_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_high_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			consumer_goods = @living_standard_luxuries_normal_tiny
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}	
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_organic_species = yes
+				has_low_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_low_tiny
+		}
+		upkeep = {
+			trigger = {
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_shared_burden_titanic
+		}			
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_high_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_high_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_high_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			consumer_goods = @living_standard_luxuries_normal_titanic
+		}		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}	
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_organic_species = yes
+				has_low_living_standard_type = yes
+			}
+			consumer_goods = @living_standard_luxuries_very_low_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				is_organic_species = yes
+			}
+			food = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_titanic
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_tiny
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_titanic
 		}
 		
 		# Robotic Upkeep
 		upkeep = {
 			trigger = {
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
@@ -729,6 +2139,10 @@ corrupt_drone = {
 		}			
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_very_high_living_standard_type = yes
 			}
@@ -737,6 +2151,10 @@ corrupt_drone = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_high_living_standard_type = yes
 			}
@@ -745,14 +2163,25 @@ corrupt_drone = {
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes 
-				has_normal_living_standard_type = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
 			}
 			energy = @living_standard_energy_normal
 			consumer_goods = @living_standard_luxuries_normal
 		}		
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_stratified_living_standard_type = yes
 			}
@@ -761,11 +2190,129 @@ corrupt_drone = {
 		}	
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 				has_low_living_standard_type = yes
 			}
 			energy = @living_standard_energy_normal
 			consumer_goods = @living_standard_luxuries_very_low
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_shared_burden_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_very_high_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_high_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_normal_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_low_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+				has_low_living_standard_type = yes
+			}
+			energy = @living_standard_energy_tiny
+			consumer_goods = @living_standard_luxuries_very_low_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_shared_burden_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_shared_burden_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_very_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_very_high_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_high_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_high_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				OR = {
+					has_normal_living_standard_type = yes
+					has_academic_living_standard_type = yes
+				}
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_normal_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_stratified_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_low_titanic
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+				has_low_living_standard_type = yes
+			}
+			energy = @living_standard_energy_titanic
+			consumer_goods = @living_standard_luxuries_very_low_titanic
 		}
 	}		
 }
@@ -809,34 +2356,282 @@ precursor = {
 		# Organic Upkeep
 		upkeep = {
 			trigger = { 
-				is_organic_species = yes
-				exists = owner
-				owner = { 
-					is_spiritualist = no
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
 				}
+				owner = { is_spiritualist = no }
+				is_organic_species = yes
 			}
 			food = 2.0
 			consumer_goods = 2.0
-		}	
-
+		}
 		upkeep = {
 			trigger = { 
-				is_organic_species = yes
-				exists = owner
-				owner = { 
-					is_spiritualist = yes
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
 				}
+				owner = { is_spiritualist = no }
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = 4.0
+			consumer_goods = 4.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = no }
+				has_trait = trait_tiny
+				is_organic_species = yes
 			}
 			food = 1.0
 			consumer_goods = 1.0
-		}			
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = no }
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = 2.0
+			consumer_goods = 2.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = no }
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = 1.0
+			consumer_goods = 1.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = no }
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = 4.0
+			consumer_goods = 4.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				owner = { is_spiritualist = no }
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = 2.0
+			consumer_goods = 2.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				owner = { is_spiritualist = no }
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = 1.0
+			consumer_goods = 1.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				owner = { is_spiritualist = no }
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = 4.0
+			consumer_goods = 4.0
+		}
+
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = yes }
+				is_organic_species = yes
+			}
+			food = 1.0
+			consumer_goods = 1.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = yes }
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = 2.0
+			consumer_goods = 2.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = yes }
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = 0.5
+			consumer_goods = 0.5
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = yes }
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = 1.0
+			consumer_goods = 1.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = yes }
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = 0.5
+			consumer_goods = 0.5
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				owner = { is_spiritualist = yes }
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = 2.0
+			consumer_goods = 2.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				owner = { is_spiritualist = yes }
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = 1.0
+			consumer_goods = 1.0
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				owner = { is_spiritualist = yes }
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = 0.5
+			consumer_goods = 0.5
+		}
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				owner = { is_spiritualist = yes }
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = 2.0
+			consumer_goods = 2.0
+		}		
 		
 		# Robotic Upkeep
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 			}
 			energy = @living_standard_energy_normal
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_tiny
+		}
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_titanic
 		}				
 	}		
 }
@@ -862,19 +2657,148 @@ xeno_ward = {
 		# Organic Upkeep
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
 				is_organic_species = yes
 			}
 			food = @living_standard_food_normal
-			consumer_goods = @living_standard_luxuries_very_high
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = @living_standard_food_titanic
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_titanic
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_titanic
 		}			
 		
 		# Robotic Upkeep
 		upkeep = {
 			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
 				is_robotic_species = yes
 			}
 			energy = @living_standard_energy_normal
-		}				
+		}		
+
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_tiny
+		}		
+		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_titanic
+		}		
 	}		
 }
 
