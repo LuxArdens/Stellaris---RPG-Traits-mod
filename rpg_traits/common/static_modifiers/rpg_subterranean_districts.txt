@@ -1,0 +1,63 @@
+########################################################################
+### Traits effects #####################################################
+########################################################################
+
+rpg_dug_out_1 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 2
+}
+
+rpg_dug_out_2 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 4
+}
+
+rpg_dug_out_3 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 6
+}
+
+rpg_dug_out_4 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 8
+}
+
+rpg_dug_out_5 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 10
+}
+
+rpg_dug_out_6 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 12
+}
+
+rpg_dug_out_7 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 14
+}
+
+rpg_dug_out_8 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 16
+}
+
+rpg_dug_out_9 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 18
+}
+
+rpg_dug_out_10 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 20
+}

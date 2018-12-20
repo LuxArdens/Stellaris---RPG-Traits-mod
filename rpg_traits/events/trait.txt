@@ -686,7 +686,7 @@ planet_event = {
 		trigger = {
 			any_pop = {
 				OR = {
-						has_trait = trait_subterranean
+						#has_trait = trait_subterranean
 						has_trait = trait_living_planet
 				}
 				is_being_purged = no
