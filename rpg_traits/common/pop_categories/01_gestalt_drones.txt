@@ -1,0 +1,414 @@
+complex_drone = {
+	rank = 0
+	clothes_texture_index = 2
+	
+	weight = {
+		weight = 2
+	}	
+	
+	pop_modifier = {
+		trigger = {
+			NOR = {
+			has_trait = trait_titanic
+			has_trait = trait_tiny
+			}
+		}
+		pop_housing_usage_base = 1
+		pop_amenities_usage_no_happiness_base = 1
+	}
+	pop_modifier = {
+		trigger = {
+			has_trait = trait_tiny
+		}
+		pop_housing_usage_base = 0.5
+		pop_amenities_usage_no_happiness_base = 1
+	}
+	pop_modifier = {
+		trigger = {
+			has_trait = trait_titanic
+		}
+		pop_housing_usage_base = 2.0
+		pop_amenities_usage_no_happiness_base = 1
+	}
+	
+	# scope: pop to be resettled
+	allow_resettlement = {
+		always = yes
+	}
+
+	resettlement_cost = {
+		energy = 100
+	}
+
+	unemployment_resources = {
+		category = unemployment_resources
+		# Standby Mode Crime event
+		upkeep = {
+			trigger = {
+				planet = {
+					has_modifier = standby_mode
+				}
+			}
+			energy = 2
+		}
+	}
+	
+	resources = {
+		category = pop_category_drones
+
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				is_organic_species = yes
+			}
+			food = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = @living_standard_food_titanic
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_titanic
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_titanic
+		}
+
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_normal
+		}		
+
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_tiny
+		}		
+		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_titanic
+		}
+	}	
+}
+
+simple_drone = {
+	rank = 0
+	clothes_texture_index = 2
+	
+	# This is called whenever a Pop is created, moved to a different planet, or gets a new owner
+	assign_to_pop = {
+		exists = owner
+		owner = { is_gestalt = yes }
+	}
+	weight = {
+		weight = 1
+	}	
+	
+	pop_modifier = {
+		pop_housing_usage_base = 1
+		pop_amenities_usage_no_happiness_base = 1
+	}
+	
+	# scope: pop to be resettled
+	allow_resettlement = {
+		always = yes
+	}
+
+	resettlement_cost = {
+		energy = 100
+	}
+
+	unemployment_resources = {
+		category = unemployment_resources
+		produces = {
+			trigger = {
+				owner = {
+					is_hive_empire = yes 
+				}
+			}
+			minerals = 1
+		}
+		# Standby Mode Crime event
+		upkeep = {
+			trigger = {
+				planet = {
+					has_modifier = standby_mode
+				}
+				owner = {
+						is_machine_empire = yes
+				}
+			}
+			energy = 2
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					has_modifier = standby_mode
+				}
+				owner = {
+						is_hive_empire = yes
+				}
+			}
+			energy = 2
+		}
+	}
+	
+	resources = {
+		category = pop_category_drones
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				is_organic_species = yes
+			}
+			food = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				is_organic_species = yes
+			}
+			food = @living_standard_food_titanic
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				is_organic_species = yes
+			}
+			food = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				}
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				is_organic_species = yes
+			}
+			minerals = @living_standard_food_titanic
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_normal
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_tiny
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_tiny
+		}
+		
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_tiny
+				has_trait = trait_lithovore
+				}
+				has_trait = trait_titanic
+				has_trait = trait_energy_lifeform
+				is_organic_species = yes
+			}
+			energy = @living_standard_food_titanic
+		}
+
+		upkeep = {
+			trigger = { 
+				NOR = {
+				has_trait = trait_titanic
+				has_trait = trait_tiny
+				}
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_normal
+		}		
+
+		upkeep = {
+			trigger = { 
+				has_trait = trait_tiny
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_tiny
+		}		
+		
+		upkeep = {
+			trigger = { 
+				has_trait = trait_titanic
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_titanic
+		}
+	}	
+}
