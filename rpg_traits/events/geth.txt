@@ -10,13 +10,10 @@ planet_event = {
 	trigger = {
 		any_pop = {
 			has_trait = trait_robodesign_geth
-			is_being_purged = no
+			#is_being_purged =# no
 			NOT = { has_modifier = geth_1 }
 		}
-		OR = {
-			AND = { ai = no num_pops < 5 }
-			AND = { ai = yes num_pops < 3 }	# make the AI cheat, because it doesn't prioritize pop building enough...
-		}
+		num_pops < 10
 	}
 	
 	mean_time_to_happen = {
@@ -27,9 +24,9 @@ planet_event = {
 		every_owned_pop = {
 			limit = {
 				has_trait = trait_robodesign_geth
-				is_being_purged = no
+				#is_being_purged =# no
 			}
-			remove_modifier = geth_1
+			#remove_modifier = geth_1
 			remove_modifier = geth_2
 			remove_modifier = geth_3
 			remove_modifier = geth_4
@@ -48,11 +45,10 @@ planet_event = {
 	trigger = {
 		any_pop = {
 			has_trait = trait_robodesign_geth
-			is_being_purged = no
+			#is_being_purged =# no
 			NOT = { has_modifier = geth_2 }
 		}
-			AND = { ai = no AND = { num_pops > 4 num_pops < 13 } }
-			AND = { ai = yes AND = { num_pops > 2 num_pops < 9 } }	# make the AI cheat, because it doesn't prioritize pop building enough...
+		AND = { num_pops > 9 num_pops < 25 }
 	}
 	
 	mean_time_to_happen = {
@@ -63,10 +59,10 @@ planet_event = {
 		every_owned_pop = {
 			limit = {
 				has_trait = trait_robodesign_geth
-				is_being_purged = no
+				#is_being_purged =# no
 			}
 			remove_modifier = geth_1
-			remove_modifier = geth_2
+			#remove_modifier = geth_2
 			remove_modifier = geth_3
 			remove_modifier = geth_4
 			add_modifier = {
@@ -84,11 +80,10 @@ planet_event = {
 	trigger = {
 		any_pop = {
 			has_trait = trait_robodesign_geth
-			is_being_purged = no
+			#is_being_purged =# no
 			NOT = { has_modifier = geth_3 }
 		}
-			AND = { ai = no AND = { num_pops > 12 num_pops < 20 } }
-			AND = { ai = yes AND = { num_pops > 8 num_pops < 15 } }	# make the AI cheat, because it doesn't prioritize pop building enough...
+		AND = { num_pops > 24 num_pops < 40 }
 	}
 	
 	mean_time_to_happen = {
@@ -99,11 +94,11 @@ planet_event = {
 		every_owned_pop = {
 			limit = {
 				has_trait = trait_robodesign_geth
-				is_being_purged = no
+				#is_being_purged =# no
 			}
 			remove_modifier = geth_1
 			remove_modifier = geth_2
-			remove_modifier = geth_3
+			#remove_modifier = geth_3
 			remove_modifier = geth_4
 			add_modifier = {
 				modifier = geth_3
@@ -120,10 +115,10 @@ planet_event = {
 	trigger = {
 		any_pop = {
 			has_trait = trait_robodesign_geth
-			is_being_purged = no
+			#is_being_purged =# no
 			NOT = { has_modifier = geth_4 }
 		}
-		num_pops > 20		# no more AI cheats for final tier, because that would make it too overpowered
+		num_pops > 40		# no more AI cheats for final tier, because that would make it too overpowered
 	}
 	
 	mean_time_to_happen = {
@@ -134,12 +129,12 @@ planet_event = {
 		every_owned_pop = {
 			limit = {
 				has_trait = trait_robodesign_geth
-				is_being_purged = no
+				#is_being_purged =# no
 			}
 			remove_modifier = geth_1
 			remove_modifier = geth_2
 			remove_modifier = geth_3
-			remove_modifier = geth_4
+			#remove_modifier = geth_4
 			add_modifier = {
 				modifier = geth_4
 				days = -1

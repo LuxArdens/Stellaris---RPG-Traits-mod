@@ -52,6 +52,15 @@
 ###############################################################################################################################################################
 
 
+	#	planet_pops_consumer_goods_upkeep_mult = 1
+	#	planet_pops_organics_energy_upkeep_mult = 1
+	#	planet_pops_organics_minerals_upkeep_mult = 1
+	#	planet_pops_organics_food_upkeep_mult = 1
+	#	planet_pops_unemployed_food_upkeep_add = 1
+	#	planet_pops_minerals_upkeep_add = 1
+	#	planet_pops_organics_food_upkeep_add = 1
+	#	planet_pops_organics_minerals_upkeep_add = 1
+
 
 ###############################################################################################################################################################
 ####  CORE ATTRIBUTES  0002 ###################################################################################################################################
@@ -250,7 +259,7 @@ trait_enigmatic_intelligence = {
 	modification = no
 	improves_leaders = yes
 	advanced_trait = yes
-	opposites = { "trait_nerve_stapled" "trait_erudite" "trait_slow_learners" "trait_intelligent" "trait_quick_learners" "trait_talented" }
+	opposites = { "trait_nerve_stapled" "trait_erudite" "trait_dumb1" "trait_dumb2" "trait_dumb3" "trait_smart1" "trait_smart2" "trait_smart3" "trait_quick_learners" "trait_gifted1" "trait_gifted2" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		planet_researchers_produces_mult = 0.1
@@ -2398,8 +2407,8 @@ trait_hoarders = {
 	icon = "gfx/interface/icons/traits/trait_hoarders.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		planet_jobs_energy_produces_mult = -0.1
-		planet_jobs_minerals_produces_mult = -0.1
+		#planet_jobs_energy_produces_mult = -0.05		# penalty already in static modifiers
+		#planet_jobs_minerals_produces_mult = -0.05
 	}
 	ai_weight = {
 		weight = 0
@@ -2613,9 +2622,16 @@ trait_lithovore = {
 	icon = "gfx/interface/icons/traits/trait_lithovore.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		#pop_food_req_mult = -10
-		planet_jobs_food_produces_mult = 50		# to be changed into something smarter
-		planet_pops_consumer_goods_upkeep_mult = 1
+		planet_jobs_food_produces_mult = -1		# bad at growing stuff
+		
+		# these all work
+	#	planet_pops_organics_food_upkeep_add = -10
+	#	planet_pops_organics_minerals_upkeep_add = 1
+	#	planet_pops_consumer_goods_upkeep_mult = -0.10
+	#	planet_pops_organics_minerals_upkeep_mult = -0.10
+	#	planet_pops_organics_food_upkeep_mult = -0.10
+	#	planet_pops_minerals_upkeep_add = 1
+	#	planet_pops_organics_minerals_upkeep_add = 1
 	}
 }
 
@@ -2628,10 +2644,7 @@ trait_energy_lifeform = {
 	icon = "gfx/interface/icons/traits/trait_energy_lifeform.dds"
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		#pop_food_req_mult = -10
-		planet_jobs_food_produces_mult = 50		# to be changed into something smarter
-		planet_jobs_energy_produces_mult = -0.1
-		army_upkeep_mult = 1
+		planet_jobs_food_produces_mult = -1		# bad at growing stuff
 	}
 }
 

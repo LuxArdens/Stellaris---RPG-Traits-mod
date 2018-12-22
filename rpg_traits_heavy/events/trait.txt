@@ -430,21 +430,6 @@ event = {
 }
 
 event = {
-	id = "trait.22"
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-			limit = {
-				has_trait = trait_gas_lifeform
-			}
-			country_event = { id = trait.8334 }
-		}
-	}
-}
-
-event = {
 	id = "trait.23"
 	hide_window = yes
 	is_triggered_only = yes
@@ -701,7 +686,7 @@ planet_event = {
 		trigger = {
 			any_pop = {
 				OR = {
-						has_trait = trait_subterranean
+						#has_trait = trait_subterranean
 						has_trait = trait_living_planet
 				}
 				is_being_purged = no

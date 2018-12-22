@@ -1,0 +1,33 @@
+# Add global variables here that will be available in all script files.
+# @something = 42
+# They can be overridden in each normal script file.
+
+@living_standard_energy_tiny = 0.25
+@living_standard_energy_titanic = 4.0
+
+@living_standard_food_tiny = 0.25
+@living_standard_food_titanic = 4.0
+
+@living_standard_luxuries_shared_burden_titanic = 0.8
+@living_standard_luxuries_very_high_titanic = 2.0
+@living_standard_luxuries_high_titanic = 1.0
+@living_standard_luxuries_normal_titanic = 0.5
+@living_standard_luxuries_low_titanic = 0.2
+@living_standard_luxuries_very_low_titanic = 0.1
+
+@living_standard_luxuries_shared_burden_tiny = 0.2
+@living_standard_luxuries_very_high_tiny = 0.5
+@living_standard_luxuries_high_tiny = 0.25
+@living_standard_luxuries_normal_tiny = 0.125
+@living_standard_luxuries_low_tiny = 0.05
+@living_standard_luxuries_very_low_tiny = 0.025
+
+# Spawners
+@spawner_food_standard = 5
+@spawner_food_titanic = 20
+@spawner_food_tiny = 1.25
+
+# Hive Synapse
+@synapse_food_standard = 2
+@synapse_food_titanic = 8
+@synapse_food_tiny = 0.5

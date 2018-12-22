@@ -1,6 +1,8 @@
 on_monthly_pulse = {
 	events = {
 		rpgassimilation.1
+		vores.1
+		vores.3
 	}
 }
 

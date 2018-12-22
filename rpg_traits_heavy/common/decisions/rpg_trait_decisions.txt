@@ -1,0 +1,785 @@
+##########################################################################
+# Decisions
+##########################################################################
+
+decision_create_underground_districts_rpg_traits_1 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 200
+			minerals = 400
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_1
+			has_modifier = rpg_dug_out_2
+			has_modifier = rpg_dug_out_3
+			has_modifier = rpg_dug_out_4
+			has_modifier = rpg_dug_out_5
+			has_modifier = rpg_dug_out_6
+			has_modifier = rpg_dug_out_7
+			has_modifier = rpg_dug_out_8
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 12
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 9
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 15
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_1
+			days = -1
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_2 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 250
+			minerals = 500
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_2
+			has_modifier = rpg_dug_out_3
+			has_modifier = rpg_dug_out_4
+			has_modifier = rpg_dug_out_5
+			has_modifier = rpg_dug_out_6
+			has_modifier = rpg_dug_out_7
+			has_modifier = rpg_dug_out_8
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 26
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 20
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 33
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_1
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_2
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_1
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_3 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 300
+			minerals = 600
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_3
+			has_modifier = rpg_dug_out_4
+			has_modifier = rpg_dug_out_5
+			has_modifier = rpg_dug_out_6
+			has_modifier = rpg_dug_out_7
+			has_modifier = rpg_dug_out_8
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 42
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 32
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 53
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_2
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_3
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_2
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_4 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 350
+			minerals = 700
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_4
+			has_modifier = rpg_dug_out_5
+			has_modifier = rpg_dug_out_6
+			has_modifier = rpg_dug_out_7
+			has_modifier = rpg_dug_out_8
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 60
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 45
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 75
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_3
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_4
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_3
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_5 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 400
+			minerals = 800
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_6
+			has_modifier = rpg_dug_out_7
+			has_modifier = rpg_dug_out_8
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 80
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 60
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 100
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_4
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_5
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_4
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_6 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 450
+			minerals = 900
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_6
+			has_modifier = rpg_dug_out_7
+			has_modifier = rpg_dug_out_8
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 102
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 77
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 128
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_5
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_6
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_5
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_7 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+			minerals = 1000
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_7
+			has_modifier = rpg_dug_out_8
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 126
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 95
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 158
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_6
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_7
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_6
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_8 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 550
+			minerals = 1100
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_8
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 152
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 114
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 190
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_7
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_8
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_7
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_9 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 600
+			minerals = 1200
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOR = {
+			has_modifier = rpg_dug_out_9
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 180
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 135
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 225
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_8
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_9
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_8
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_create_underground_districts_rpg_traits_10 = {
+	owned_planets_only = yes
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			minerals = 2000
+		}
+	}
+	
+	potential = {
+		habitable_structure = no
+		NOT = {
+			has_modifier = rpg_dug_out_10
+		}
+		OR = {
+			count_pops = {
+				count > 210
+				limit = {
+					has_trait = trait_subterranean
+					NOR = {
+						has_trait = trait_tiny
+						has_trait = trait_titanic
+					}
+				}
+			}
+			count_pops = {
+				count > 158
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_titanic
+				}
+			}
+			count_pops = {
+				count > 263
+				limit = {
+					has_trait = trait_subterranean
+					has_trait = trait_tiny
+				}
+			}
+		}
+		has_modifier = rpg_dug_out_9
+	}
+	
+	effect = {
+		custom_tooltip = rpg_subterranean_develop_cavern_tooltip
+		hidden_effect = {
+			random_list = {
+				32 = { add_deposit = d_ore_rich_caverns }
+				16 = { add_deposit = d_fungal_caves }
+				8 = { add_deposit = d_geothermal_vent }
+				2 = { add_deposit = d_dust_caverns }
+				2 = { add_deposit = d_crystalline_caverns }
+				20 = {}
+			}
+		}
+		add_modifier = {
+			modifier = rpg_dug_out_10
+			days = -1
+		}
+		remove_modifier = rpg_dug_out_9
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}

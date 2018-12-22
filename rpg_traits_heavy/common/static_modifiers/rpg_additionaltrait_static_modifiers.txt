@@ -14,8 +14,7 @@ bp_reduced_reproduction = {
 trait_hoarders = {
 	country_resource_energy_mult = -0.05
 	country_resource_minerals_mult = -0.05
-	max_minerals = 200000
-	max_energy = 200000
+	country_resource_max_add = 200000
 }
 
 trait_psionic_shifters = {
@@ -42,7 +41,7 @@ trait_titanic = {
 	planet_clear_blocker_cost_mult = -0.5
 		# huge soldiers
 	army_upkeep_mult = 0.5		# reduced because it's energy
-	$planet_army_build_cost_mult = 4
+	planet_army_build_cost_mult = 4
 	armies_cost_mult = 4
 	planet_army_build_speed_mult = -0.8
 		# Huge robots
@@ -51,8 +50,6 @@ trait_titanic = {
 	pop_robot_build_speed_mult = -0.9
 	pop_robot_build_cost_mult = 5
 		# Huge ships
-	#shipclass_colonizer_build_cost_mult	= -0.5
-	shipsize_colonizer_build_speed_mult = -0.5
 	starbase_shipyard_build_speed_mult = -0.75
 	starbase_shipyard_build_cost_mult = 9				# was 4, now TEN times as expensive as normal ships
 	ship_speed_mult = -0.6
@@ -71,8 +68,8 @@ trait_titanic = {
 	ship_weapon_range_mult = 1		# not half as useful as you might expect
 	#ship_shield_regen_add_perc = 4			# But this does work
 		# huge storages
-	max_minerals = 50000
-	max_energy = 50000
+	country_resource_max_add = 50000
+				 
 }
 
 trait_tiny = {
@@ -93,8 +90,6 @@ trait_tiny = {
 	armies_cost_mult = -0.7
 	planet_army_build_speed_mult = 4
 		# tiny ships
-	shipclass_colonizer_build_cost_mult = -0.8
-	shipsize_colonizer_build_speed_mult = 3
 	starbase_shipyard_build_speed_mult = 3
 	starbase_shipyard_build_cost_mult = -0.6 		# shipyard bonus now only applies to "ships in shipyard" so not science etc
 	ship_speed_mult = 1
@@ -116,8 +111,8 @@ trait_tiny = {
 	country_naval_cap_mult = 4
 	ship_weapon_range_mult = -0.6			# get up reaaaal close and cosy
 		# tiny storages
-	#max_minerals = -1000
-	#max_energy = -1000
+	country_resource_max_add = -1000
+						   
 }
 
 
@@ -137,8 +132,6 @@ trait_titanic_machine = {
 	armies_cost_mult = 4
 	planet_army_build_speed_mult = -0.8
 		# Huge ships
-	shipclass_colonizer_build_cost_mult	= 3
-	shipsize_colonizer_build_speed_mult = -0.5
 	starbase_shipyard_build_speed_mult = -0.75
 	starbase_shipyard_build_cost_mult = 4
 	ship_speed_mult = -0.6
@@ -157,8 +150,8 @@ trait_titanic_machine = {
 	ship_weapon_range_mult = 1		# not half as useful as you might expect
 	#ship_shield_regen_add_perc = 4			# But this does work
 		# huge storages
-	max_minerals = 50000
-	max_energy = 50000
+	country_resource_max_add = 50000
+																												
 }
 
 trait_tiny_machine = {
@@ -174,8 +167,6 @@ trait_tiny_machine = {
 	armies_cost_mult = -0.7
 	planet_army_build_speed_mult = 4
 		# tiny ships
-	shipclass_colonizer_build_cost_mult = -0.8
-	shipsize_colonizer_build_speed_mult = 3
 	starbase_shipyard_build_speed_mult = 3
 	starbase_shipyard_build_cost_mult = -0.6 		# shipyard bonus now only applies to "ships in shipyard" so not science etc
 	ship_speed_mult = 1
@@ -197,8 +188,8 @@ trait_tiny_machine = {
 	country_naval_cap_mult = 4
 	ship_weapon_range_mult = -0.6			# get up reaaaal close and cosy
 		# tiny storages
-	#max_minerals = -1000
-	#max_energy = -1000
+	country_resource_max_add = -1000
+					  
 }
 
 trait_airborne = {
@@ -222,25 +213,25 @@ trait_armor_obsessed = {
 	ship_armor_mult = 2
 }
 
-zero_consumption_planet = {
-	planet_pops_organics_food_upkeep_mult = -10
-}
-half_consumption_planet = {
-	planet_pops_organics_food_upkeep_mult = -0.5
-}
-quarter_consumption_planet = {
-	planet_pops_organics_food_upkeep_mult = -0.33
-}
-extra_quarter_consumption_planet = {
-	planet_pops_organics_food_upkeep_mult = 0.5
-}
-extra_half_consumption_planet = {
-	planet_pops_organics_food_upkeep_mult = 1
-}
-extra_double_consumption_planet = {
-	planet_pops_organics_food_upkeep_mult = 3
-}
+							   
+ 
 
+						
+					  
+					
+ 
+
+						   
+											
+ 
+						   
+											 
+ 
+							  
+											  
+ 
+									
+											
 trait_effects_energy_lifeform = {
 	#country_resource_energy_mult = -0.2
 	#country_resource_food_mult = -10
@@ -259,9 +250,8 @@ trait_uncreative = {
 }
 
 egg_born = {
-	shipclass_colonizer_build_cost_mult = -0.6
 	planet_colony_development_speed_mult = -0.5
-	shipsize_colonizer_build_speed_mult = 3
+	shipsize_colonizer_build_speed_mult = 1
 }
 
 silent_observers = {
@@ -412,9 +402,9 @@ trait_hibernation = {
 	country_resource_minerals_mult = -1		
 	country_resource_unity_mult = -1			# niet negatief 
 	country_resource_influence_mult = -1
-	tile_resource_engineering_research_mult = -1
-	tile_resource_physics_research_mult = -1
-	tile_resource_society_research_mult = -1
+	planet_jobs_physics_research_produces_mult = -1
+	planet_jobs_physics_research_produces_mult = -1
+	planet_jobs_society_research_produces_mult = -1
 	all_technology_research_speed = -1			# even the bloody research can go negative!
 	planet_army_build_cost_mult = 40
 	armies_cost_mult = 40
@@ -546,48 +536,48 @@ trait_jerry_riggers = {
 ##########################################################################
 
 geth_1 = {		# 1-5 - animal level / no cognition, cannot perform even basic tasks
-	tile_resource_engineering_research_mult = -2
-	tile_resource_physics_research_mult = -2
-	tile_resource_society_research_mult = -2
-	tile_resource_minerals_mult = -0.75
-	tile_resource_energy_mult = -2
-	tile_resource_food_mult = -1
-	tile_resource_unity_mult = -2
+	planet_jobs_physics_research_produces_mult = -2
+	planet_jobs_physics_research_produces_mult = -2
+	planet_jobs_society_research_produces_mult = -2
+	planet_jobs_minerals_produces_mult = -0.75
+	planet_jobs_energy_produces_mult = -2
+	planet_jobs_food_produces_mult = -1
+	planet_jobs_unity_produces_mult = -2
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
 	icon_frame = 3
 }
 geth_2 = {		# from 5-12
-	tile_resource_engineering_research_mult = -1
-	tile_resource_physics_research_mult = -1
-	tile_resource_society_research_mult = -1
-	tile_resource_unity_mult = -0.5
-	tile_resource_energy_mult = -0.75
-	tile_resource_minerals_mult = -0.25
-	tile_resource_food_mult = -0.5
+	planet_jobs_physics_research_produces_mult = -1
+	planet_jobs_physics_research_produces_mult = -1
+	planet_jobs_society_research_produces_mult = -1
+	planet_jobs_unity_produces_mult = -0.5
+	planet_jobs_energy_produces_mult = -0.75
+	planet_jobs_minerals_produces_mult = -0.25
+	planet_jobs_food_produces_mult = -0.5
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
 	icon_frame = 2
 }
 geth_3 = {		# from 12-19
-	tile_resource_engineering_research_mult = -0.25
-	tile_resource_physics_research_mult = -0.25
-	tile_resource_society_research_mult = -0.25
-	tile_resource_unity_mult = -0.2
-	tile_resource_energy_mult = -0.25
-	tile_resource_minerals_mult = 0.25
+	planet_jobs_physics_research_produces_mult = -0.25
+	planet_jobs_physics_research_produces_mult = -0.25
+	planet_jobs_society_research_produces_mult = -0.25
+	planet_jobs_unity_produces_mult = -0.2
+	planet_jobs_energy_produces_mult = -0.25
+	planet_jobs_minerals_produces_mult = 0.25
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
 	icon_frame = 2
 }
 geth_4 = {		# >20
-	tile_resource_engineering_research_mult = 0.5
-	tile_resource_physics_research_mult = 0.5
-	tile_resource_society_research_mult = 0.5
-	tile_resource_unity_mult = 0.25
-	tile_resource_energy_mult = 0.5
-	tile_resource_minerals_mult = 0.5
-	tile_resource_food_mult = 0.5
+	planet_jobs_physics_research_produces_mult = 0.5
+	planet_jobs_physics_research_produces_mult = 0.5
+	planet_jobs_society_research_produces_mult = 0.5
+	planet_jobs_unity_produces_mult = 0.25
+	planet_jobs_energy_produces_mult = 0.5
+	planet_jobs_minerals_produces_mult = 0.5
+	planet_jobs_food_produces_mult = 0.5
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_robots.dds"
 	icon_frame = 1

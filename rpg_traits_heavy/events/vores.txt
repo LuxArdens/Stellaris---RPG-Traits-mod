@@ -1,0 +1,47 @@
+namespace = vores
+
+# fire on monthly interval
+event = {
+	id = vores.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = { has_trait = trait_lithovore }
+			country_event = { id = vores.2 }
+		}
+	}
+}
+country_event = {
+	id = vores.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_resource = { food = -10	}
+		add_resource = { minerals = 10	}
+	}
+}
+event = {
+	id = vores.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = { has_trait = trait_energy_lifeform }
+			country_event = { id = vores.4 }
+		}
+	}
+}
+country_event = {
+	id = vores.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_resource = { food = -10	}
+		add_resource = { energy = 10	}
+	}
+}

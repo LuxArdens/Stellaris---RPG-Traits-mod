@@ -16,7 +16,7 @@ d_minerals_1 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -44,7 +44,7 @@ d_minerals_2 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -84,7 +84,7 @@ d_minerals_3 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -124,7 +124,7 @@ d_minerals_4 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -164,7 +164,7 @@ d_minerals_5 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -204,7 +204,7 @@ d_minerals_6 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -218,7 +218,7 @@ d_minerals_7 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -232,7 +232,7 @@ d_minerals_8 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -246,7 +246,7 @@ d_minerals_9 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -260,7 +260,7 @@ d_minerals_10 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -277,7 +277,7 @@ d_energy_1 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -308,7 +308,7 @@ d_energy_2 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -366,7 +366,7 @@ d_energy_3 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -424,7 +424,7 @@ d_energy_4 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -482,7 +482,7 @@ d_energy_5 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -540,7 +540,7 @@ d_energy_6 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -554,7 +554,7 @@ d_energy_7 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -568,7 +568,7 @@ d_energy_8 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -582,7 +582,7 @@ d_energy_9 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -596,7 +596,7 @@ d_energy_10 = {
 		}
 	}
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -613,7 +613,7 @@ d_society_1 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		is_planet_class = pc_toxic
@@ -632,7 +632,7 @@ d_society_2 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		is_planet_class = pc_toxic
@@ -651,7 +651,7 @@ d_society_3 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		is_planet_class = pc_toxic
@@ -670,7 +670,7 @@ d_society_4 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		is_planet_class = pc_toxic
@@ -689,7 +689,7 @@ d_society_5 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		is_planet_class = pc_toxic
@@ -708,7 +708,7 @@ d_society_6 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0	 }
@@ -722,7 +722,7 @@ d_society_7 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0	 }
@@ -736,7 +736,7 @@ d_society_8 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0	 }
@@ -750,7 +750,7 @@ d_society_9 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0	 }
@@ -764,7 +764,7 @@ d_society_10 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -781,7 +781,7 @@ d_physics_1 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -809,7 +809,7 @@ d_physics_2 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -860,7 +860,7 @@ d_physics_3 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -922,7 +922,7 @@ d_physics_4 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -984,7 +984,7 @@ d_physics_5 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -1046,7 +1046,7 @@ d_physics_6 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -1060,7 +1060,7 @@ d_physics_7 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -1074,7 +1074,7 @@ d_physics_8 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -1088,7 +1088,7 @@ d_physics_9 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -1102,7 +1102,7 @@ d_physics_10 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }
 	drop_weight = { weight = 0 }
@@ -1119,7 +1119,7 @@ d_engineering_1 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -1141,7 +1141,7 @@ d_engineering_2 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -1163,7 +1163,7 @@ d_engineering_3 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -1196,7 +1196,7 @@ d_engineering_4 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -1229,7 +1229,7 @@ d_engineering_5 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = {
 		OR = {
@@ -1262,7 +1262,7 @@ d_engineering_6 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }	
 	drop_weight = { weight = 0 }
@@ -1276,7 +1276,7 @@ d_engineering_7 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }	
 	drop_weight = { weight = 0 }
@@ -1290,7 +1290,7 @@ d_engineering_8 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }	
 	drop_weight = { weight = 0 }
@@ -1304,7 +1304,7 @@ d_engineering_9 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }	
 	drop_weight = { weight = 0 }
@@ -1318,7 +1318,7 @@ d_engineering_10 = {
 		}
 	}
 	station = shipclass_research_station 
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	potential = { always = no }	
 	drop_weight = { weight = 0 }
@@ -1329,7 +1329,7 @@ d_engineering_10 = {
 ##################################
 d_trade_value_1 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = { 
 		trade_value_add = 1
@@ -1351,7 +1351,7 @@ d_trade_value_1 = {
 
 d_trade_value_2 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 2
@@ -1381,7 +1381,7 @@ d_trade_value_2 = {
 
 d_trade_value_3 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 3
@@ -1411,7 +1411,7 @@ d_trade_value_3 = {
 
 d_trade_value_4 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 4
@@ -1441,7 +1441,7 @@ d_trade_value_4 = {
 
 d_trade_value_5 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 5
@@ -1471,7 +1471,7 @@ d_trade_value_5 = {
 
 d_trade_value_6 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 6
@@ -1483,7 +1483,7 @@ d_trade_value_6 = {
 
 d_trade_value_7 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 7
@@ -1495,7 +1495,7 @@ d_trade_value_7 = {
 
 d_trade_value_8 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 8
@@ -1507,7 +1507,7 @@ d_trade_value_8 = {
 
 d_trade_value_9 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 9
@@ -1519,7 +1519,7 @@ d_trade_value_9 = {
 
 d_trade_value_10 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 		
 	planet_modifier = {
 		trade_value_add = 10
@@ -1535,7 +1535,7 @@ d_trade_value_10 = {
 
 d_alloys_1 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	resources = {
 		category = orbital_mining_deposits
@@ -1561,7 +1561,7 @@ d_alloys_1 = {
 
 d_alloys_2 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	resources = {
 		category = orbital_mining_deposits
@@ -1585,7 +1585,7 @@ d_alloys_2 = {
 
 d_alloys_3 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	resources = {
 		category = orbital_mining_deposits
@@ -1600,7 +1600,7 @@ d_alloys_3 = {
 
 d_alloys_4 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	resources = {
 		category = orbital_mining_deposits
@@ -1615,7 +1615,7 @@ d_alloys_4 = {
 
 d_alloys_5 = {
 	station = shipclass_mining_station
-	is_for_colonizeable = no
+	is_for_colonizeable = yes
 	
 	resources = {
 		category = orbital_mining_deposits

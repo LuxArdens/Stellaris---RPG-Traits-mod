@@ -271,10 +271,10 @@
  trait_olfactory_desc:0 "§LThis species has developed a method of communication which relies entirely on the secretion and subtle interpretation of gaseous expulsions.§!\n"
  
  trait_lithovore:0 "Lithovore"
- trait_lithovore_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n A silicon-based lifeform, lithovore species grow no crops. Or as they like to put it: "We do not sow.".§!\n"
+ trait_lithovore_desc:0 "§LA silicon-based lifeform, lithovore species grow no crops. Or as they like to put it: "We do not sow.".§!\n"
  
  trait_energy_lifeform:0 "Energy Lifeform"
- trait_energy_lifeform_desc:0 "§LCURRENTLY VERY EXPLOITABLE! \n A pure energy lifeform. These creatures consume electricity instead of organic matter.§!\n"
+ trait_energy_lifeform_desc:0 "§LA pure energy lifeform. These creatures consume electricity instead of organic matter.§!\n"
  
  trait_euphoria:0 "Euphoria"
  trait_euphoria_desc:0 "§LIn a constant state of euphoria, this species is always happy and content. Sometimes a little too content with nothing.§!\n"
