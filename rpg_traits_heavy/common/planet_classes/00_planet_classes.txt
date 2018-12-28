@@ -345,6 +345,35 @@ pc_gas_giant = {
 	show_city = no
 }
 
+pc_gas_giant_un = {
+	entity = "gas_giant"
+	entity_scale = 14
+	icon_frame = 14
+	
+	atmosphere_color 		= hsv { 0.1 0.15 1.1 }		#DONE
+	atmosphere_intensity 	= 1.1
+	atmosphere_width 		= 0.5
+	
+	min_distance_from_sun = 40
+	max_distance_from_sun = 1000
+	
+	spawn_odds = 6
+	extra_orbit_size = 1
+	extra_planet_count = 2
+	
+	can_be_moon = no
+	chance_of_ring = 0.6
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	production_spawn_chance = 0.5
+	
+	space_monster_target = yes
+
+	colonizable = no
+}
+
 pc_asteroid = {
 	entity = "asteroid"
 	entity_scale = 0.5
@@ -366,6 +395,25 @@ pc_asteroid = {
 	survey_time_factor = 0.5
 	colonization_tech = { "tech_hollow_asteroids" }
 	show_city = no
+}
+
+pc_asteroid_un = {
+	entity = "asteroid"
+	entity_scale = 0.4
+	icon_frame = 18
+	
+	asteroid = yes
+	
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	colonizable = no
+	survey_time_factor = 0.5
 }
 
 pc_ice_asteroid = {
@@ -390,6 +438,25 @@ pc_ice_asteroid = {
 	colonization_tech = { "tech_hollow_asteroids" }
 
 	show_city = no
+	survey_time_factor = 0.5
+}
+
+pc_ice_asteroid_un = {
+	entity = "asteroid_ice_large"
+	entity_scale = 0.4
+	icon_frame = 18
+	
+	asteroid = yes
+	
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	colonizable = no
 	survey_time_factor = 0.5
 }
 
@@ -420,6 +487,26 @@ pc_crystal_asteroid_2 = {
 	survey_time_factor = 0.5
 }
 
+pc_crystal_asteroid_2_un = {
+	entity = "asteroid_crystal_large"
+	picture = pc_crystal_asteroid
+	entity_scale = 0.4
+	icon_frame = 18
+	
+	asteroid = yes
+	
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	colonizable = no
+	survey_time_factor = 0.5
+}
+
 pc_molten = {
 	entity = "molten_planet"
 	entity_scale = @planet_standard_scale
@@ -442,6 +529,28 @@ pc_molten = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	colonizable = yes
 	starting_planet = no 
+}
+
+pc_molten_un = {
+	entity = "molten_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 12
+	
+	atmosphere_color 		= hsv { 0.05 0.65 1.4 }		#DONE
+	atmosphere_intensity 	= 0.05
+	atmosphere_width 		= 1.0
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 60
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	colonizable = no
 }
 
 pc_barren = {
@@ -469,6 +578,30 @@ pc_barren = {
 	starting_planet = no
 	starting_planet = no
 	show_city = no
+}
+
+pc_barren_un = {
+	entity = "barren_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 10
+	
+	atmosphere_color 		= hsv { 0.1 0.4 0.7 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	min_distance_from_sun = 40
+	max_distance_from_sun = 200
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0.2
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = no
 }
 
 pc_barren_cold = {
@@ -522,6 +655,31 @@ pc_toxic = {
 	starting_planet = no
 }
 
+pc_toxic_un = {
+	entity = "toxic_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 11
+
+	atmosphere_color 		= hsv { 0.19 0.45 0.9 }		#DONE
+	atmosphere_intensity 	= 0.1
+	atmosphere_width 		= 1.2
+	
+	min_distance_from_sun = 60
+	max_distance_from_sun = 110
+	
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0.2
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = no
+}
+
 pc_frozen = {
 	entity = "frozen_planet"		#DONE
 	entity_scale = @planet_standard_scale
@@ -547,6 +705,30 @@ pc_frozen = {
 	starting_planet = no
 	starting_planet = no
 	show_city = no
+}
+
+pc_frozen_un = {
+	entity = "frozen_planet"		#DONE
+	entity_scale = @planet_standard_scale
+	icon_frame = 13
+	
+	atmosphere_color 		= hsv { 0.55 0.15 0.7 }
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	min_distance_from_sun = 120
+	max_distance_from_sun = 1000
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = no
 }
 
 # ###########
@@ -850,9 +1032,7 @@ pc_b_star = {
 	chance_of_ring = 0
 	
 	#planet_size = { min = 25 max = 35 }
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	colonizable = yes		# ha!
-	starting_planet = no
+	colonizable = no
 }
 
 pc_a_star = {
@@ -876,9 +1056,8 @@ pc_a_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	colonizable = yes		# ha!
-	starting_planet = no
+	#planet_size = { min = 25 max = 35 }
+	colonizable = no
 }
 
 pc_f_star = {
@@ -902,9 +1081,8 @@ pc_f_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	colonizable = yes		# ha!
-	starting_planet = no
+	#planet_size = { min = 25 max = 35 }
+	colonizable = no
 }
 
 pc_g_star = {
@@ -955,9 +1133,8 @@ pc_k_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	colonizable = yes		# ha!
-	starting_planet = no
+	#planet_size = { min = 25 max = 35 }
+	colonizable = no
 }
 
 pc_m_star = {
@@ -981,9 +1158,8 @@ pc_m_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	colonizable = yes		# ha!
-	starting_planet = no
+	#planet_size = { min = 25 max = 35 }
+	colonizable = no
 }
 
 pc_m_giant_star = {
@@ -1007,10 +1183,8 @@ pc_m_giant_star = {
 	
 	chance_of_ring = 0
 	
- 
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	colonizable = yes		# ha!
-	starting_planet = no
+	#planet_size = { min = 25 max = 35 }
+	colonizable = no
 }
 
 pc_t_star = {
@@ -1035,10 +1209,8 @@ pc_t_star = {
 	
 	chance_of_ring = 0
 	
- 
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	colonizable = yes		# ha!
-	starting_planet = no
+	#planet_size = { min = 25 max = 35 }
+	colonizable = no
 }
 
 pc_black_hole = {
@@ -1083,9 +1255,8 @@ pc_neutron_star = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
-	colonizable = yes		# ha!
-	starting_planet = no
+	#planet_size = { min = 25 max = 35 }
+	colonizable = no
 }
 
 pc_pulsar = {
@@ -1110,9 +1281,8 @@ pc_pulsar = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 25 max = 35 }
-	colonizable = yes		# ha!
-	starting_planet = no
+	#planet_size = { min = 25 max = 35 }
+	colonizable = no
 }
 
 # ###########
@@ -1382,6 +1552,12 @@ random_list = {
 random_list = {
 	name = "rl_unhabitable_planets"
 	planets = {
+			is_planet_class = pc_asteroid_un
+			is_planet_class = pc_molten_un
+			is_planet_class = pc_toxic_un
+			is_planet_class = pc_frozen_un
+			is_planet_class = pc_barren	_un
+			is_planet_class = pc_gas_giant_un
 	}
 }
 

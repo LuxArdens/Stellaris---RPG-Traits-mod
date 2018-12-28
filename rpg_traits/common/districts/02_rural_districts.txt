@@ -429,6 +429,7 @@ district_farming = {
 		}
 		modifier = {
 			job_mining_drone_add = 3
+			job_agri_drone_add = 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -439,6 +440,7 @@ district_farming = {
 		}
 		modifier = {
 			gas_extraction_drone_add = 3
+			job_agri_drone_add = 1
 		}
 	}
 	
@@ -481,6 +483,7 @@ district_farming = {
 		}
 		modifier = {
 			job_miner_add = 2
+			job_farmer_add = 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -494,6 +497,7 @@ district_farming = {
 		}
 		modifier = {
 			job_technician_add = 2
+			job_farmer_add = 1
 		}
 	}
 
@@ -980,9 +984,37 @@ district_farming_uncapped = {
 		potential = {
 			exists = owner
 			owner = { is_hive_empire = yes }
+			owner = {
+				NOR = {
+					has_trait = trait_lithovore
+					has_trait = trait_energy_lifeform
+				}
+			}
 		}
 		modifier = {
 			job_agri_drone_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+			owner = { has_trait = trait_lithovore }
+		}
+		modifier = {
+			job_mining_drone_add = 3
+			job_agri_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+			owner = { has_trait = trait_energy_lifeform }
+		}
+		modifier = {
+			gas_extraction_drone_add = 3
+			job_agri_drone_add = 1
 		}
 	}
 	
@@ -1003,9 +1035,43 @@ district_farming_uncapped = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
 			}
+			owner = {
+				NOR = {
+					has_trait = trait_lithovore
+					has_trait = trait_energy_lifeform
+				}
+			}
 		}
 		modifier = {
 			job_farmer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+			owner = { has_trait = trait_lithovore }
+		}
+		modifier = {
+			job_miner_add = 2
+			job_farmer_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+			owner = { has_trait = trait_energy_lifeform }
+		}
+		modifier = {
+			job_technician_add = 2
+			job_farmer_add = 1
 		}
 	}
 
